@@ -1,0 +1,30 @@
+{
+  "id": "99xAgency/GodModeSkill",
+  "title": "GodModeSkill",
+  "source": "github-trending",
+  "source_url": "https://github.com/99xAgency/GodModeSkill",
+  "url": "https://github.com/99xAgency/GodModeSkill",
+  "collected_at": "2026-05-01T15:48:59Z",
+  "analyzed_at": "2026-05-01T15:51:52Z",
+  "summary": "多 LLM 交叉审查工作流，同一个任务让 3 个不同模型族（如 Claude、GPT、Gemini）分别完成，投票决定最终输出，并在计划/实现/Bug 修复各阶段都执行独立审查。",
+  "tags": [
+    "multi-agent",
+    "code-generation",
+    "llm-evaluation",
+    "workflow-automation"
+  ],
+  "relevance_score": 0.8,
+  "score_breakdown": {
+    "tech_depth": 0.78,
+    "practical_value": 0.72,
+    "timeliness": 0.82,
+    "community_heat": 0.45,
+    "domain_match": 0.85
+  },
+  "status": "published",
+  "stars": 190,
+  "forks": 15,
+  "language": "Shell",
+  "description": "Multi-LLM cross-review workflow for Claude Code. /work orchestrates plan/implement/bug-fix with 3 different model families voting on every gate.",
+  "topics": []
+}

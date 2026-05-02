@@ -1,0 +1,30 @@
+{
+  "id": "noonghunna/club-3090",
+  "title": "club-3090",
+  "source": "github-trending",
+  "source_url": "https://github.com/noonghunna/club-3090",
+  "url": "https://github.com/noonghunna/club-3090",
+  "collected_at": "2026-05-01T15:48:59Z",
+  "analyzed_at": "2026-05-01T15:51:52Z",
+  "summary": "社区维护的 RTX 3090 LLM 部署配置集，支持 vLLM、llama.cpp、SGLang 多引擎，提供 Qwen3.6-27B 在单卡和双卡场景的现成配置。",
+  "tags": [
+    "large-language-model",
+    "inference",
+    "deployment",
+    "fine-tuning"
+  ],
+  "relevance_score": 0.8,
+  "score_breakdown": {
+    "tech_depth": 0.78,
+    "practical_value": 0.85,
+    "timeliness": 0.85,
+    "community_heat": 0.55,
+    "domain_match": 0.9
+  },
+  "status": "published",
+  "stars": 258,
+  "forks": 10,
+  "language": "Shell",
+  "description": "Community recipes for serving LLMs on RTX 3090. Multi-engine (vLLM, llama.cpp, SGLang) and model-agnostic. Currently shipping Qwen3.6-27B configs for 1× and 2× cards.",
+  "topics": []
+}

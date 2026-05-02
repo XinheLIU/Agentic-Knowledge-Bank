@@ -1,0 +1,152 @@
+{
+  "sources": {
+    "github-trending": 9
+  },
+  "articles": [
+    {
+      "id": "willchen96/mike",
+      "title": "mike",
+      "source": "github-trending",
+      "url": "https://github.com/willchen96/mike",
+      "summary": "开源 AI 法律服务平台，将合同审查、法律文档生成等场景通过 LLM 实现自动化。核心架构为 Next.js + Express + Supabase，支持文档解析与迁移，代码完全开源可自部署。",
+      "tags": [
+        "large-language-model",
+        "document-qa",
+        "open-source",
+        "legal-tech"
+      ],
+      "relevance_score": 0.72,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "sandeco/reversa",
+      "title": "reversa",
+      "source": "github-trending",
+      "url": "https://github.com/sandeco/reversa",
+      "summary": "将遗留系统反向工程为 AI Agent 可执行的规格说明文件。通过分析代码库生成结构化文档，使 AI 编码 Agent 能准确理解遗留业务逻辑并生成兼容代码。",
+      "tags": [
+        "agent-framework",
+        "code-generation",
+        "legacy-system",
+        "reverse-engineering"
+      ],
+      "relevance_score": 0.81,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "mattpocock/dictionary-of-ai-coding",
+      "title": "dictionary-of-ai-coding",
+      "source": "github-trending",
+      "url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "summary": "AI 编程领域术语释义词典，用平实的语言解释 Agent、MCP、RAG、Fine-tuning 等核心概念背后的原理，而非停留在表面定义。",
+      "tags": [
+        "prompt-engineering",
+        "documentation",
+        "reference",
+        "large-language-model"
+      ],
+      "relevance_score": 0.72,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "browser-use/bux",
+      "title": "bux",
+      "source": "github-trending",
+      "url": "https://github.com/browser-use/bux",
+      "summary": "在任何服务器上部署 24/7 Claude Code Agent，配备真实浏览器环境。一条命令完成部署，支持手机短信交互，让 AI Agent 像人类一样操作网页。",
+      "tags": [
+        "agent-framework",
+        "browser-automation",
+        "claude-code",
+        "multi-agent"
+      ],
+      "relevance_score": 0.88,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "noonghunna/club-3090",
+      "title": "club-3090",
+      "source": "github-trending",
+      "url": "https://github.com/noonghunna/club-3090",
+      "summary": "社区维护的 RTX 3090 LLM 部署配置集，支持 vLLM、llama.cpp、SGLang 多引擎，提供 Qwen3.6-27B 在单卡和双卡场景的现成配置。",
+      "tags": [
+        "large-language-model",
+        "inference",
+        "deployment",
+        "fine-tuning"
+      ],
+      "relevance_score": 0.8,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "stainlu/hermes-labyrinth",
+      "title": "hermes-labyrinth",
+      "source": "github-trending",
+      "url": "https://github.com/stainlu/hermes-labyrinth",
+      "summary": "Hermes Agent 的可观测性仪表盘插件，可视化 Agent 的运行轨迹、决策节点与执行报告。只读设计，用于开发调试和性能分析。",
+      "tags": [
+        "agent-observability",
+        "autonomous-agents",
+        "dashboard-plugin",
+        "monitoring"
+      ],
+      "relevance_score": 0.68,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "tiangolo/library-skills",
+      "title": "library-skills",
+      "source": "github-trending",
+      "url": "https://github.com/tiangolo/library-skills",
+      "summary": "为 FastAPI、SQLModel 等知名 Python 库编写 Agent Skills，让 AI 编码 Agent 能准确理解和调用这些库的 API。由 FastAPI 作者维护。",
+      "tags": [
+        "agent-skills",
+        "python",
+        "fastapi",
+        "code-generation"
+      ],
+      "relevance_score": 0.72,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "99xAgency/GodModeSkill",
+      "title": "GodModeSkill",
+      "source": "github-trending",
+      "url": "https://github.com/99xAgency/GodModeSkill",
+      "summary": "多 LLM 交叉审查工作流，同一个任务让 3 个不同模型族（如 Claude、GPT、Gemini）分别完成，投票决定最终输出，并在计划/实现/Bug 修复各阶段都执行独立审查。",
+      "tags": [
+        "multi-agent",
+        "code-generation",
+        "llm-evaluation",
+        "workflow-automation"
+      ],
+      "relevance_score": 0.8,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    },
+    {
+      "id": "appergb/openless",
+      "title": "openless",
+      "source": "github-trending",
+      "url": "https://github.com/appergb/openless",
+      "summary": "全局快捷键语音输入工具：按住说话松开即得 AI 润色文本。无需切换窗口，在任何应用中按住快捷键即可语音输入，集成 ASR 与 LLM 后处理。",
+      "tags": [
+        "asr",
+        "voice-input",
+        "llm",
+        "productivity"
+      ],
+      "relevance_score": 0.6,
+      "status": "published",
+      "collected_at": "2026-05-01T15:48:59Z"
+    }
+  ],
+  "updated_at": "2026-05-01T15:53:24Z"
+}

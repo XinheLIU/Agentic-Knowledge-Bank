@@ -1,0 +1,24 @@
+AI
+LLM
+agent
+RAG
+MCP
+agentic
+large language model
+model context protocol
+embedding
+vector
+diffusion
+transformer
+GPT
+multimodal
+fine-tuning
+inference
+quantization
+prompt
+reasoning
+synthetic
+benchmark
+eval
+orchestration
+workflow

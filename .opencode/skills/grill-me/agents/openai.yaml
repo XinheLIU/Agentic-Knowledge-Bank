@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Stress-test plans by interviewing users relentlessly."
+  default_prompt: "Grill me relentlessly about my plan or design. Ask one question at a time, exploring the codebase when possible, and provide your recommended answer for each."
