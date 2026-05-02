@@ -31,6 +31,5 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Pipeline output (local captures; keep dirs via .gitkeep)
-knowledge/raw/**/*.json
-knowledge/articles/**/*.json
+# Pipeline output — committed by daily automation workflow
+# Directories kept via .gitkeep inside knowledge/raw/ and knowledge/articles/

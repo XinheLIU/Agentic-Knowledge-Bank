@@ -1,6 +1,6 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-02
+> Last updated: 2026-05-03
 > 本文件是项目的"大脑"——OpenCode 启动时自动加载，指导所有 Agent 的行为。
 
 ## 项目定义
@@ -81,7 +81,7 @@ ai-kb/
 - 知识条目：`knowledge/articles/{YYYY-MM-DD}-{source}-{slug}.json`
   - 例：`knowledge/articles/2026-05-01-github-trending-library-skills.json`
 - 索引文件：`knowledge/articles/index.json`
-- **版本库**：上述目录中的 `*.json` 由 `.gitignore` 排除，仅为本地流水线产出；仓库内保留空目录占位（`.gitkeep`）。要对格式与质量脚本做手动校验，可使用 `tests/fixtures/articles/example-published.json`。
+- **版本库**：`knowledge/raw/` 和 `knowledge/articles/` 中的 `*.json` 由每日 GitHub Actions 自动提交至仓库。要对格式与质量脚本做手动校验，可使用 `tests/fixtures/articles/example-published.json`。
 
 ### JSON 格式(知识条目格式)
 - 使用 2 空格缩进
