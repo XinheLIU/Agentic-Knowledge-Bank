@@ -7,6 +7,10 @@
 node_modules/
 **/node_modules/
 
+# Python virtual environment & package management
+.venv/
+uv.lock
+
 # Logs and runtime artifacts
 *.log
 npm-debug.log*
@@ -20,6 +24,13 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Python cache (if scripts are added later)
+# Python cache
 __pycache__/
 *.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Pipeline output (local captures; keep dirs via .gitkeep)
+knowledge/raw/**/*.json
+knowledge/articles/**/*.json

@@ -1,0 +1,12 @@
+{
+  "id": "github-20260501-001",
+  "title": "Example OSS project for local validation",
+  "source": "fixture",
+  "source_url": "https://github.com/example/sample-repo",
+  "url": "https://github.com/example/sample-repo",
+  "collected_at": "2026-05-01T12:00:00Z",
+  "summary": "Synthetic fixture article for CI and manual hook checks. It describes a sample repository layout without real captured content.",
+  "tags": ["llm", "agent", "evaluation"],
+  "status": "published",
+  "score": 8
+}
