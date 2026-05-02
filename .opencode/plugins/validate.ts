@@ -23,13 +23,12 @@ function formatProcessBlock(
 
 export const ValidateHook: Plugin = async (pluginInput) => {
   const { $, directory } = pluginInput;
-  const root = directory;
-  const shell = $.cwd(root);
+  const shell = $.cwd(directory);
 
   return {
     "tool.execute.after": async (hookInput, hookOutput) => {
       const tool = hookInput.tool?.toLowerCase() ?? "";
-      if (tool !== "write" && tool !== "edit") return;
+      if (!["write", "edit"].includes(tool)) return;
 
       const filePath = hookInput.args?.file_path ?? hookInput.args?.filePath;
       if (!filePath || typeof filePath !== "string") return;
@@ -100,10 +99,13 @@ export const ValidateHook: Plugin = async (pluginInput) => {
 
       hookOutput.output = `${hookOutput.output ?? ""}${appendix}`;
 
-      hookOutput.metadata = {
-        ...(hookOutput.metadata && typeof hookOutput.metadata === "object"
+      const existingMetadata =
+        hookOutput.metadata && typeof hookOutput.metadata === "object"
           ? hookOutput.metadata
-          : {}),
+          : {};
+
+      hookOutput.metadata = {
+        ...existingMetadata,
         validateHook: {
           at: stamp,
           filePath,

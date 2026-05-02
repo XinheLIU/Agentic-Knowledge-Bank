@@ -1,7 +1,7 @@
-"""scripts/rss_reader.py — re-export 自 pipeline/rss_reader.py
+"""Compatibility re-export for pipeline/rss_reader.py.
 
-真实实现在 pipeline/rss_reader.py 下。本文件保留 scripts/ 路径别名，
-供 PPT 里按旧路径引用的代码能定位到。
+The implementation lives in pipeline/rss_reader.py. This module keeps the old
+scripts/ import path available for references that still point there.
 """
 
 import importlib.util

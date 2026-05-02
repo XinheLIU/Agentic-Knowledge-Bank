@@ -1,1 +1,1 @@
-# pipeline 模块
+"""Pipeline package."""

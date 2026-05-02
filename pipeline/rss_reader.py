@@ -1,14 +1,14 @@
 """
-pipeline/rss_reader.py — RSS 数据源采集模块
+RSS source collection module.
 
-支持从任意 RSS 源采集内容，配置文件见 pipeline/rss_sources.yaml。
+Configured sources live in pipeline/rss_sources.yaml.
 
-用法:
-    # 作为模块被 pipeline.py 导入
+Usage:
+    # Imported by pipeline.py.
     from pipeline.rss_reader import collect_rss
     items = collect_rss(limit=10)
 
-    # 独立运行（调试）
+    # Standalone debugging.
     python3 -m pipeline.rss_reader
     python3 -m pipeline.rss_reader --limit 5
 """
@@ -26,19 +26,19 @@ import yaml
 
 logger = logging.getLogger(__name__)
 
-# RSS 配置文件与 pipeline.py 共享同一份
+# Shared with pipeline.py.
 RSS_CONFIG = Path(__file__).parent / "rss_sources.yaml"
 
 
 def collect_rss(limit: int = 10) -> list[dict[str, Any]]:
     """
-    从配置的 RSS 源采集内容。
+    Collect entries from configured RSS sources.
 
     Args:
-        limit: 最大采集数量（所有源合计）
+        limit: Maximum number of entries across all sources.
 
     Returns:
-        原始数据列表，每条包含 id/title/source/source_url/... 字段
+        Raw records with id/title/source/source_url fields.
     """
     if not RSS_CONFIG.exists():
         logger.warning("RSS 配置文件不存在: %s", RSS_CONFIG)
@@ -92,8 +92,6 @@ def collect_rss(limit: int = 10) -> list[dict[str, Any]]:
     logger.info("RSS 采集完成: 共 %d 条", len(results))
     return results
 
-
-# ── 独立调试入口 ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     import argparse

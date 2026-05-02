@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-JSON 格式校验脚本 — 检查知识库文章是否符合标准格式。
+JSON validation script for knowledge-base articles.
 
-用法：
+Usage:
     python hooks/validate_json.py knowledge/articles/github-20260317-001.json
     python hooks/validate_json.py knowledge/articles/*.json
 
-退出码：
-    0 — 全部通过
-    1 — 存在校验失败
+Exit codes:
+    0: all files passed
+    1: at least one file failed
 """
 
 from __future__ import annotations
@@ -19,9 +19,6 @@ import sys
 from pathlib import Path
 from typing import Any
 
-# ── 校验规则 ─────────────────────────────────────────────────────────────
-
-# 必填字段及其类型
 REQUIRED_FIELDS: dict[str, type] = {
     "id": str,
     "title": str,
@@ -31,41 +28,33 @@ REQUIRED_FIELDS: dict[str, type] = {
     "status": str,
 }
 
-# ID 格式：{source}-{YYYYMMDD}-{NNN}
+# ID format: {source}-{YYYYMMDD}-{NNN}.
 ID_PATTERN = re.compile(r"^[a-z][\w:-]+-\d{8}-\d{3}$")
 
-# 合法的 status 值
 VALID_STATUSES = {"draft", "review", "published", "archived"}
 
-# score 范围
 SCORE_MIN = 1
 SCORE_MAX = 10
 
-# URL 基本格式
 URL_PATTERN = re.compile(r"^https?://\S+$")
 
-# 摘要最小长度（字符数）
 SUMMARY_MIN_LENGTH = 20
 
-# 合法的 audience 值
 VALID_AUDIENCES = {"beginner", "intermediate", "advanced"}
 
 
-# ── 校验函数 ─────────────────────────────────────────────────────────────
-
 def validate_article(data: dict[str, Any]) -> list[str]:
     """
-    校验单篇文章，返回错误列表。
+    Validate one article and return all errors.
 
     Args:
-        data: 文章 JSON 数据
+        data: Article JSON data.
 
     Returns:
-        错误消息列表，空列表表示校验通过
+        Error messages. An empty list means the article is valid.
     """
     errors: list[str] = []
 
-    # 检查必填字段
     for field_name, field_type in REQUIRED_FIELDS.items():
         if field_name not in data:
             errors.append(f"缺少必填字段: {field_name}")
@@ -75,11 +64,9 @@ def validate_article(data: dict[str, Any]) -> list[str]:
                 f"实际为 {type(data[field_name]).__name__}"
             )
 
-    # 如果必填字段缺失，后续校验无意义
     if errors:
         return errors
 
-    # ID 格式
     article_id = data["id"]
     if not ID_PATTERN.match(article_id):
         errors.append(
@@ -87,16 +74,13 @@ def validate_article(data: dict[str, Any]) -> list[str]:
             f"应为 '{{source}}-{{YYYYMMDD}}-{{NNN}}'"
         )
 
-    # 标题非空
     if not data["title"].strip():
         errors.append("标题不能为空")
 
-    # URL 格式
     source_url = data["source_url"]
     if not URL_PATTERN.match(source_url):
         errors.append(f"URL 格式错误: '{source_url}'")
 
-    # 摘要长度
     summary = data["summary"]
     if len(summary.strip()) < SUMMARY_MIN_LENGTH:
         errors.append(
@@ -104,7 +88,6 @@ def validate_article(data: dict[str, Any]) -> list[str]:
             f"要求至少 {SUMMARY_MIN_LENGTH} 字"
         )
 
-    # 标签非空
     tags = data["tags"]
     if len(tags) == 0:
         errors.append("至少需要 1 个标签")
@@ -112,7 +95,6 @@ def validate_article(data: dict[str, Any]) -> list[str]:
         if not isinstance(tag, str) or not tag.strip():
             errors.append(f"标签格式错误: '{tag}'")
 
-    # status 值
     status = data["status"]
     if status not in VALID_STATUSES:
         errors.append(
@@ -120,7 +102,6 @@ def validate_article(data: dict[str, Any]) -> list[str]:
             f"允许值: {', '.join(sorted(VALID_STATUSES))}"
         )
 
-    # score 范围（可选字段，存在时校验）
     if "score" in data:
         score = data["score"]
         if not isinstance(score, (int, float)):
@@ -131,7 +112,6 @@ def validate_article(data: dict[str, Any]) -> list[str]:
                 f"允许范围: {SCORE_MIN}-{SCORE_MAX}"
             )
 
-    # audience（可选字段，存在时校验）
     if "audience" in data:
         audience = data["audience"]
         if audience not in VALID_AUDIENCES:
@@ -142,8 +122,6 @@ def validate_article(data: dict[str, Any]) -> list[str]:
 
     return errors
 
-
-# ── CLI 入口 ─────────────────────────────────────────────────────────────
 
 def main() -> int:
     if len(sys.argv) < 2:
@@ -180,7 +158,6 @@ def main() -> int:
             all_errors[filepath] = errors
             failed_files += 1
 
-    # 输出结果
     print(f"\n{'='*50}")
     print(f"JSON 格式校验结果")
     print(f"{'='*50}")

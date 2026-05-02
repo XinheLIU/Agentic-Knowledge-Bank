@@ -2,7 +2,7 @@
 name = "ai-kb"
 version = "0.1.0"
 description = "AI 知识库 — 自动化技术情报收集与分析系统"
-readme = "AGENTS.md"
+readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.27.0",

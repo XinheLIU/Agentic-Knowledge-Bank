@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 """
-质量评分脚本 — 五维度评估文章质量。
+Quality scoring script for knowledge-base articles.
 
-五个维度（加权总分 100 分）：
-  1. 摘要质量   — 25 分
-  2. 技术深度   — 25 分
-  3. 格式规范   — 20 分
-  4. 标签精度   — 15 分
-  5. 空洞词检测 — 15 分
+Five dimensions with a total score of 100:
+  1. Summary quality: 25
+  2. Technical depth: 25
+  3. Format completeness: 20
+  4. Tag precision: 15
+  5. Hollow-word detection: 15
 
-等级：A (>=80) / B (>=60) / C (<60)
+Grades: A (>=80), B (>=60), C (<60)
 
-用法：
+Usage:
     python hooks/check_quality.py knowledge/articles/github-20260317-001.json
     python hooks/check_quality.py knowledge/articles/*.json
 
-退出码：
-    0 — 全部 B 级以上
-    1 — 存在 C 级文章
+Exit codes:
+    0: all files are grade B or above
+    1: at least one file is grade C
 """
 
 from __future__ import annotations
@@ -28,8 +28,6 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
-
-# ── 空洞词列表 ───────────────────────────────────────────────────────────
 
 HOLLOW_WORDS_ZH = [
     "赋能", "抓手", "闭环", "打通", "全链路", "底层逻辑",
@@ -44,8 +42,6 @@ HOLLOW_WORDS_EN = [
 
 HOLLOW_WORDS = HOLLOW_WORDS_ZH + HOLLOW_WORDS_EN
 
-# ── 合法标签列表 ─────────────────────────────────────────────────────────
-
 VALID_TAGS = {
     "agent", "rag", "mcp", "llm", "fine-tuning", "prompt-engineering",
     "multi-agent", "tool-use", "evaluation", "deployment", "security",
@@ -53,11 +49,9 @@ VALID_TAGS = {
 }
 
 
-# ── 评分结构 ─────────────────────────────────────────────────────────────
-
 @dataclass
 class DimensionScore:
-    """单维度评分"""
+    """Score for one quality dimension."""
     name: str
     score: float
     max_score: float
@@ -70,7 +64,7 @@ class DimensionScore:
 
 @dataclass
 class QualityReport:
-    """质量评估报告"""
+    """Quality evaluation report."""
     filepath: str
     dimensions: list[DimensionScore]
 
@@ -93,18 +87,16 @@ class QualityReport:
             return "C"
 
 
-# ── 五维度评分函数 ───────────────────────────────────────────────────────
-
 def score_summary_quality(data: dict[str, Any]) -> DimensionScore:
     """
-    维度 1：摘要质量（25 分）
+    Dimension 1: summary quality (25 points).
 
-    评分规则：
-    - 有摘要且长度 >= 50 字：20 分
-    - 有摘要且长度 >= 20 字：15 分
-    - 有摘要但太短：5 分
-    - 无摘要：0 分
-    - 包含技术关键词（+5 分）
+    Scoring rules:
+    - Summary length >= 50 chars: 20 points
+    - Summary length >= 20 chars: 15 points
+    - Short summary: 5 points
+    - Missing summary: 0 points
+    - Technical keyword bonus: up to 5 points
     """
     max_score = 25.0
     summary = data.get("summary", "").strip()
@@ -112,7 +104,6 @@ def score_summary_quality(data: dict[str, Any]) -> DimensionScore:
     if not summary:
         return DimensionScore("摘要质量", 0, max_score, "无摘要")
 
-    # 基础分
     length = len(summary)
     if length >= 50:
         base = 20.0
@@ -124,7 +115,6 @@ def score_summary_quality(data: dict[str, Any]) -> DimensionScore:
         base = 5.0
         detail = f"太短 ({length} 字)"
 
-    # 技术关键词奖励
     tech_keywords = [
         "模型", "训练", "推理", "API", "框架", "agent", "LLM", "RAG",
         "token", "向量", "embedding", "transformer", "微调",
@@ -141,9 +131,9 @@ def score_summary_quality(data: dict[str, Any]) -> DimensionScore:
 
 def score_tech_depth(data: dict[str, Any]) -> DimensionScore:
     """
-    维度 2：技术深度（25 分）
+    Dimension 2: technical depth (25 points).
 
-    基于文章 score 字段映射。
+    This maps the article score field onto the dimension score.
     """
     max_score = 25.0
     article_score = data.get("score", 5)
@@ -151,7 +141,6 @@ def score_tech_depth(data: dict[str, Any]) -> DimensionScore:
     if not isinstance(article_score, (int, float)):
         return DimensionScore("技术深度", 10, max_score, "score 字段类型异常")
 
-    # 将 1-10 的 score 映射到 0-25
     mapped = (article_score / 10) * max_score
     detail = f"文章评分 {article_score}/10 → {mapped:.1f}/{max_score}"
 
@@ -160,14 +149,14 @@ def score_tech_depth(data: dict[str, Any]) -> DimensionScore:
 
 def score_format(data: dict[str, Any]) -> DimensionScore:
     """
-    维度 3：格式规范（20 分）
+    Dimension 3: format completeness (20 points).
 
-    检查项：
-    - 有 id (+4)
-    - 有 title (+4)
-    - 有 source_url (+4)
-    - 有 status (+4)
-    - 有 updated_at 或 collected_at (+4)
+    Checks:
+    - id (+4)
+    - title (+4)
+    - source_url (+4)
+    - status (+4)
+    - updated_at or collected_at (+4)
     """
     max_score = 20.0
     score = 0.0
@@ -187,7 +176,6 @@ def score_format(data: dict[str, Any]) -> DimensionScore:
         else:
             checks.append(f"缺少 {field_name}")
 
-    # 时间戳
     if data.get("updated_at") or data.get("collected_at"):
         score += 4
     else:
@@ -199,13 +187,13 @@ def score_format(data: dict[str, Any]) -> DimensionScore:
 
 def score_tags(data: dict[str, Any]) -> DimensionScore:
     """
-    维度 4：标签精度（15 分）
+    Dimension 4: tag precision (15 points).
 
-    评分规则：
-    - 有 1-3 个合法标签：15 分
-    - 有标签但不在合法列表：10 分
-    - 标签过多 (>5)：扣分
-    - 无标签：0 分
+    Scoring rules:
+    - 1 to 3 valid tags: 15 points
+    - Some valid tags: 10 points
+    - Too many tags (>5): penalty
+    - No tags: 0 points
     """
     max_score = 15.0
     tags = data.get("tags", [])
@@ -236,9 +224,9 @@ def score_tags(data: dict[str, Any]) -> DimensionScore:
 
 def score_hollow_words(data: dict[str, Any]) -> DimensionScore:
     """
-    维度 5：空洞词检测（15 分）
+    Dimension 5: hollow-word detection (15 points).
 
-    摘要和标题中每出现一个空洞词，扣 3 分。
+    Each hollow word in the title or summary costs 3 points.
     """
     max_score = 15.0
     text = (data.get("summary", "") + " " + data.get("title", "")).lower()
@@ -259,18 +247,16 @@ def score_hollow_words(data: dict[str, Any]) -> DimensionScore:
     return DimensionScore("空洞词检测", score, max_score, detail)
 
 
-# ── 综合评估 ─────────────────────────────────────────────────────────────
-
 def evaluate_quality(filepath: str, data: dict[str, Any]) -> QualityReport:
     """
-    对单篇文章进行五维度综合评估。
+    Evaluate one article across all five quality dimensions.
 
     Args:
-        filepath: 文件路径
-        data: 文章 JSON 数据
+        filepath: Article file path.
+        data: Article JSON data.
 
     Returns:
-        质量评估报告
+        Quality report.
     """
     dimensions = [
         score_summary_quality(data),
@@ -284,13 +270,13 @@ def evaluate_quality(filepath: str, data: dict[str, Any]) -> QualityReport:
 
 
 def print_report(report: QualityReport) -> None:
-    """格式化输出评估报告"""
+    """Print a formatted quality report."""
     print(f"\n{'─'*50}")
     print(f"文件: {report.filepath}")
     print(f"{'─'*50}")
 
     for d in report.dimensions:
-        bar_len = int(d.percentage / 5)  # 20 格满分
+        bar_len = int(d.percentage / 5)
         bar = "█" * bar_len + "░" * (20 - bar_len)
         print(f"  {d.name:8s} [{bar}] {d.score:5.1f}/{d.max_score:.0f}  {d.details}")
 
@@ -299,8 +285,6 @@ def print_report(report: QualityReport) -> None:
     print(f"\n  总分: {report.total_score:.1f}/{report.max_total:.0f}  "
           f"等级: {emoji} {report.grade}")
 
-
-# ── CLI 入口 ─────────────────────────────────────────────────────────────
 
 def main() -> int:
     if len(sys.argv) < 2:
@@ -335,7 +319,6 @@ def main() -> int:
         if report.grade == "C":
             has_c_grade = True
 
-    # 汇总
     print(f"\n{'='*50}")
     print(f"质量评估汇总: {total_files} 文件")
     print(f"  A 级 (>=80): {grade_counts.get('A', 0)}")

@@ -1,9 +1,9 @@
-"""scripts/pipeline.py — re-export 自 pipeline/pipeline.py
+"""Compatibility re-export for pipeline/pipeline.py.
 
-真实实现在 pipeline/pipeline.py 下。本文件保留 scripts/ 路径别名，
-供 PPT 里按旧路径引用的代码能定位到。
+The implementation lives in pipeline/pipeline.py. This module keeps the old
+scripts/ import path available for references that still point there.
 
-也可直接运行：
+It can also be run directly:
     python3 scripts/pipeline.py --sources github --limit 5
 """
 
@@ -11,14 +11,13 @@ import importlib.util
 import sys
 from pathlib import Path
 
-# 直接加载 pipeline/pipeline.py 这个具体文件，避开"pipeline 是包还是模块"的歧义
+# Load the concrete file to avoid ambiguity between the package and this module.
 _real_path = Path(__file__).parent.parent / "pipeline" / "pipeline.py"
 _spec = importlib.util.spec_from_file_location("pipeline_real", _real_path)
 _real = importlib.util.module_from_spec(_spec)
 sys.modules["pipeline_real"] = _real
 _spec.loader.exec_module(_real)
 
-# 重导出所有 public 符号
 collect_github = _real.collect_github
 collect_rss = _real.collect_rss
 step_collect = _real.step_collect
