@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "knowledge": {
+      "command": "python3",
+      "args": ["/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/mcp_knowledge_server.py"]
+    }
+  }
+}

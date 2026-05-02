@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "knowledge": {
+      "type": "local",
+      "command": [
+        "python3",
+        "/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/mcp_knowledge_server.py"
+      ],
+      "enabled": true
+    }
+  }
+}

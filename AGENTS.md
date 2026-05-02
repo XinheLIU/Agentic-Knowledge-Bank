@@ -53,6 +53,10 @@ ai-kb/
 │   ├── pipeline.py                    # → pipeline/pipeline.py
 │   ├── rss_reader.py                  # → pipeline/rss_reader.py
 │   └── model_client.py                # → pipeline/model_client.py
+├── mcp_knowledge_server.py            # MCP Server：知识库搜索（JSON-RPC 2.0 over stdio）
+├── opencode.json                      # OpenCode MCP 配置
+├── .claude/mcp.json                   # Claude Code MCP 配置
+├── .codex/mcp.json                    # Codex MCP 配置
 ├── hooks/                             # 质量门控脚本
 │   ├── validate_json.py               # JSON Schema 校验
 │   └── check_quality.py               # 五维度质量评分
@@ -203,6 +207,30 @@ uv run pytest tests/test_model_client.py -q
 uv run pytest -v
 ```
 
+### MCP Server (`mcp_knowledge_server.py`)
+
+零外部依赖的 MCP Server，让 AI 工具可以直接搜索和查询本地知识库。
+
+**提供的工具**：
+
+| 工具名 | 参数 | 功能 |
+|--------|------|------|
+| `search_articles` | `keyword` (必填), `limit` (可选，默认 5) | 按关键词搜索文章标题和摘要 |
+| `get_article` | `article_id` (必填) | 按 ID 获取文章完整信息 |
+| `knowledge_stats` | 无 | 返回文章总数、来源分布、热门标签 |
+
+**协议**：JSON-RPC 2.0 over stdio，支持 MCP `initialize`、`tools/list`、`tools/call` 方法。
+
+**三种 AI 工具的 MCP 配置文件**：
+
+| 文件 | 适用工具 |
+|------|----------|
+| `opencode.json` | OpenCode（`"type":"local"` + array `command` 格式） |
+| `.claude/mcp.json` | Claude Code（`mcpServers` 格式） |
+| `.codex/mcp.json` | Codex（`mcpServers` 格式） |
+
+重启对应工具后自动加载，即可在对话中调用这三个知识库工具。
+
 ## 技术栈
 - **运行时**：Python 3.12+ (uv 管理依赖)
 - **流水线框架**：纯 Python 四步脚本（pipeline/）
@@ -212,3 +240,4 @@ uv run pytest -v
 - **版本管理**：Git
 - **测试**：pytest
 - **Hooks**：OpenCode TypeScript 插件 + Python 校验脚本
+- **MCP**：`mcp_knowledge_server.py`（Python stdlib only）
