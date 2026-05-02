@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-017",
+  "title": "continuedev/continue",
+  "source": "github",
+  "source_url": "https://github.com/continuedev/continue",
+  "author": "continuedev",
+  "published_at": "2026-05-02T06:48:04Z",
+  "collected_at": "2026-05-02T13:53:22.422332+00:00",
+  "summary": "continuedev/continue 是一个开源的 AI 编程助手 CLI，支持源码控制的 AI 检查（如代码审查、补全、重构），并可集成到 CI/CD 流程中强制执行。它通过插件化架构与主流 LLMs 集成，强调开发流程中的可审计性、可复现性和自动化治理。其核心价值在于将 AI 编程能力工程化， bridging the gap between experimental LLM usage and production-grade software engineering practices.",
+  "score": 8,
+  "tags": [
+    "agent",
+    "code-generation",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211793+00:00"
+}

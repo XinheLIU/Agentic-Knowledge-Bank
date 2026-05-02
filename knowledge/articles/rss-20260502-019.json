@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260502-019",
+  "title": "Seems ICML is rejecting MANY unanimous positively rated papers [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t04vk3/seems_icml_is_rejecting_many_unanimous_positively/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891561+00:00",
+  "collected_at": "2026-05-02T13:53:23.891561+00:00",
+  "summary": "该帖揭示了ICML 2024同行评审机制中因 rebuttal 流程与AC协调策略引发的系统性偏差： reviewers 面临非独立打分压力，导致分数通胀与评分僵化并存，进而造成高共识（如全positive）但被拒的反直觉现象。作者批判当前流程削弱了评审的诚实性与AC的裁量权，呼吁回归以AC主导、独立评审为基础的传统模式。该分析对AI顶会治理、评审机制设计及学术公平性具有重要反思价值。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211906+00:00"
+}

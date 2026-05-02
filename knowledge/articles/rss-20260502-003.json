@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260502-003",
+  "title": "Uber torches 2026 AI budget on Claude Code in four months",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-02T13:53:22.935368+00:00",
+  "collected_at": "2026-05-02T13:53:22.935368+00:00",
+  "summary": "Uber reportedly exhausted its entire 2026 AI budget in just four months by aggressively adopting Anthropic's Claude Code for large-scale code generation and developer productivity. The move highlights real-world enterprise adoption of LLM-powered coding assistants beyond experimentation, with implications for AI budgeting, tooling ROI, and engineering workflow transformation. While details on implementation scope and metrics are sparse, the scale and speed of adoption signal strong internal validation of Claude Code’s utility in production software development.",
+  "score": 7,
+  "tags": [
+    "llm",
+    "code-generation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211824+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260502-002",
+  "title": "Spotify adds 'Verified' badges to distinguish human artists from AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.bbc.com/news/articles/c5yerr4m1yno",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-02T13:53:22.935357+00:00",
+  "collected_at": "2026-05-02T13:53:22.935357+00:00",
+  "summary": "Spotify has introduced 'Verified' badges to explicitly distinguish human artists from AI-generated profiles, addressing growing concerns about authenticity and transparency in music streaming platforms. This initiative reflects broader industry efforts to mitigate AI impersonation and maintain trust in creative attribution. While not a technical AI model advancement, it represents a meaningful product-level governance mechanism for AI identity in digital media.",
+  "score": 7,
+  "tags": [
+    "security",
+    "audio",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211820+00:00"
+}

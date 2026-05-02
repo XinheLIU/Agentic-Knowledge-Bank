@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-014",
+  "title": "aaif-goose/goose",
+  "source": "github",
+  "source_url": "https://github.com/aaif-goose/goose",
+  "author": "aaif-goose",
+  "published_at": "2026-05-02T13:51:24Z",
+  "collected_at": "2026-05-02T13:53:22.422317+00:00",
+  "summary": "aaif-goose/goose 是一个开源、可扩展的 AI 智能体框架，支持通过任意大语言模型（LLM）执行端到端开发任务，包括安装依赖、运行代码、编辑文件和自动化测试。它超越了传统代码补全工具，强调自主工具调用与工作流编排能力。其设计聚焦于提升 AI 代理在真实软件工程场景中的实用性与可集成性。",
+  "score": 7,
+  "tags": [
+    "agent",
+    "tool-use",
+    "llm"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211774+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-016",
+  "title": "ZhuLinsen/daily_stock_analysis",
+  "source": "github",
+  "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "author": "ZhuLinsen",
+  "published_at": "2026-05-02T09:26:50Z",
+  "collected_at": "2026-05-02T13:53:22.422327+00:00",
+  "summary": "这是一个基于大语言模型（LLM）构建的跨市场（A股/H股/美股）自动化股票分析系统，整合多源实时行情数据、新闻资讯与LLM决策推理能力，提供可视化仪表盘和多渠道推送功能。其亮点在于零成本定时运行、纯开源白嫖部署，强调端到端的轻量化智能投研实践。系统隐含了RAG增强检索、工具调用（tool-use）及可能的多阶段推理架构。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "tool-use",
+    "rag"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211788+00:00"
+}

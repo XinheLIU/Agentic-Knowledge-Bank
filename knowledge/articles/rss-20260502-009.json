@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260502-009",
+  "title": "I spent years building a 103B-token Usenet corpus (1980–2013) and finally documented it [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t10xaf/i_spent_years_building_a_103btoken_usenet_corpus/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891497+00:00",
+  "collected_at": "2026-05-02T13:53:23.891497+00:00",
+  "summary": "该技术内容介绍了一个历时多年构建的103B-token Usenet历史语料库（1980–2013），涵盖408M帖子、18K+新闻组，具备完整时间跨度、严格清洗流程（去重、二进制过滤、引文处理、隐私脱敏）及多语言覆盖（96.6%英语，100+语言）。其核心价值在于提供未经现代网络干扰（如SEO、AI生成内容）的纯净、时序连贯的语言演化数据，适用于LLM预训练与历史语言建模研究。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "fine-tuning",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211856+00:00"
+}

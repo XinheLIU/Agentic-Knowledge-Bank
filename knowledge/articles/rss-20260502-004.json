@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260502-004",
+  "title": "Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-02T13:53:22.935377+00:00",
+  "collected_at": "2026-05-02T13:53:22.935377+00:00",
+  "summary": "A malicious package named 'Shai-Hulud' was discovered in the PyTorch Lightning ecosystem on PyPI, compromising the legitimate 'lightning' training library with obfuscated backdoor code. The attack involved typosquatting and supply-chain injection, enabling remote code execution and credential exfiltration. This incident highlights critical security risks in AI/ML dependency management and underscores the need for stricter package verification and supply-chain integrity practices.",
+  "score": 7,
+  "tags": [
+    "security",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211829+00:00"
+}

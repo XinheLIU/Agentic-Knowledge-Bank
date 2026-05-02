@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260502-012",
+  "title": "Why ML conference reviews sometimes feel like a “lottery“ [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0y5pa/why_ml_conference_reviews_sometimes_feel_like_a/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891517+00:00",
+  "collected_at": "2026-05-02T13:53:23.891517+00:00",
+  "summary": "该帖深入剖析了机器学习顶会审稿结果看似随机（'lottery'）现象的本质：并非系统性失效，而是大量投稿集中在质量临界区，导致评审结果对细微因素（如表述清晰度、 reviewer 匹配度、评审标准差异）高度敏感；指出顶尖研究组的优势在于系统性规避临界区，而非审稿本身更公平。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211871+00:00"
+}

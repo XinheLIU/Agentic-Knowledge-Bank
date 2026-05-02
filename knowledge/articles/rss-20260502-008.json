@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260502-008",
+  "title": "ICML final decisions rant [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1393a/icml_final_decisions_rant_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891490+00:00",
+  "collected_at": "2026-05-02T13:53:23.891490+00:00",
+  "summary": "该帖是对ICML论文评审机制的批判性反思，指出高拒稿率、评审意见质量参差、AC未充分考虑rebuttal、评分调整机制存在负向激励等问题，并质疑当前顶会发表文化背离了科研本意——深度思考与长期问题求解。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "reasoning",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211851+00:00"
+}

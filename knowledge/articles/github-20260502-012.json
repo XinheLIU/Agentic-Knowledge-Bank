@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-012",
+  "title": "zhayujie/CowAgent",
+  "source": "github",
+  "source_url": "https://github.com/zhayujie/CowAgent",
+  "author": "zhayujie",
+  "published_at": "2026-04-28T07:30:59Z",
+  "collected_at": "2026-05-02T13:53:22.422305+00:00",
+  "summary": "CowAgent 是一个面向多平台（微信、飞书、钉钉等）的轻量级大模型智能体框架，支持多种主流 LLM（如 Qwen、GLM、DeepSeek、Claude 等），具备主动推理、任务规划、OS/外部工具调用、Skill 动态创建与执行、长期记忆及知识库持续演进能力。其设计目标是兼顾功能完备性与部署便捷性，定位为 OpenClaw 的更轻量替代方案，适用于个人AI助理与企业数字员工快速落地。",
+  "score": 7,
+  "tags": [
+    "agent",
+    "tool-use",
+    "llm"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211764+00:00"
+}

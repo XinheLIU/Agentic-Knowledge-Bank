@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-011",
+  "title": "CherryHQ/cherry-studio",
+  "source": "github",
+  "source_url": "https://github.com/CherryHQ/cherry-studio",
+  "author": "CherryHQ",
+  "published_at": "2026-05-02T13:02:56Z",
+  "collected_at": "2026-05-02T13:53:22.422300+00:00",
+  "summary": "Cherry Studio is an AI productivity platform that integrates smart chat, autonomous agents, and over 300 pre-built assistants to provide unified access to state-of-the-art LLMs. It emphasizes workflow automation and seamless tooling for practical AI application across diverse tasks. The platform appears designed to lower the barrier for users to leverage advanced LLM capabilities without deep infrastructure or engineering overhead.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "llm",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211758+00:00"
+}

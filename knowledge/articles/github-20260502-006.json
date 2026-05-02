@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-006",
+  "title": "OpenHands/OpenHands",
+  "source": "github",
+  "source_url": "https://github.com/OpenHands/OpenHands",
+  "author": "OpenHands",
+  "published_at": "2026-05-02T03:30:14Z",
+  "collected_at": "2026-05-02T13:53:22.422271+00:00",
+  "summary": "OpenHands is an open-source framework for AI-driven software development, enabling LLM-based agents to autonomously perform coding tasks by interacting with real development environments (e.g., file systems, terminals, IDEs). It emphasizes tool use, code generation, and step-by-step reasoning in realistic dev workflows. The project supports reproducible agent evaluation and integration with modern dev tooling, bridging the gap between LLM capabilities and practical engineering automation.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "tool-use",
+    "code-generation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211729+00:00"
+}

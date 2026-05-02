@@ -1,0 +1,20 @@
+{
+  "id": "github-20260502-013",
+  "title": "badlogic/pi-mono",
+  "source": "github",
+  "source_url": "https://github.com/badlogic/pi-mono",
+  "author": "badlogic",
+  "published_at": "2026-05-02T12:58:52Z",
+  "collected_at": "2026-05-02T13:53:22.422311+00:00",
+  "summary": "badlogic/pi-mono 是一个面向 AI agent 开发的综合工具包，提供命令行编码代理、统一的 LLM 接口抽象、TUI/Web UI 库、Slack 集成机器人以及基于 vLLM 的轻量级推理服务部署能力。它聚焦于简化 agent 工程化流程，降低多模态交互与生产集成门槛。核心价值在于将 agent 构建、LLM 调用、UI 快速对接和边缘/本地部署（如 vLLM pods）整合为一致开发体验。",
+  "score": 7,
+  "tags": [
+    "agent",
+    "llm",
+    "deployment",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211769+00:00"
+}

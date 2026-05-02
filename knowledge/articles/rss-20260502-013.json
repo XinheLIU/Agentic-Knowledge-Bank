@@ -1,0 +1,20 @@
+{
+  "id": "rss-20260502-013",
+  "title": "Looking for feedback on OpenVidya: an open-source AI classroom layer for NCERT/CBSE [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1dqwo/looking_for_feedback_on_openvidya_an_opensource/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891524+00:00",
+  "collected_at": "2026-05-02T13:53:23.891524+00:00",
+  "summary": "OpenVidya is an open-source, multi-agent AI classroom system tailored for Indian NCERT/CBSE education, featuring curriculum-grounded knowledge registries, concept dependency graphs, board-aligned question generation, and five pedagogy-specific modes. It moves beyond generic LLM tutoring by embedding local exam patterns, revision behaviors, and pedagogical workflows into its architecture. The project emphasizes structured RAG-like grounding and mode-aware prompting rather than fine-tuning or generic chat interfaces.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "rag",
+    "prompt-engineering",
+    "multi-agent"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211875+00:00"
+}

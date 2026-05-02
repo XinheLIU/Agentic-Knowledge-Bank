@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260502-007",
+  "title": "Real World Physics-Informed AI Applications [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1lmq0/real_world_physicsinformed_ai_applications_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891482+00:00",
+  "collected_at": "2026-05-02T13:53:23.891482+00:00",
+  "summary": "该帖子探讨了物理信息AI（Physics-Informed AI）在现实工业场景中的落地应用，聚焦于将物理定律（如PDEs、守恒律）嵌入神经网络以提升模型的可解释性、数据效率和泛化能力。尽管学术界已有大量研究，发帖者关注其在能源、制造、航空航天等高可靠性要求领域的实际部署案例。此类技术对解决小样本、高精度建模问题具有显著工程价值。",
+  "score": 7,
+  "tags": [
+    "reasoning",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211847+00:00"
+}

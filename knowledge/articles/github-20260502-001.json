@@ -1,0 +1,19 @@
+{
+  "id": "github-20260502-001",
+  "title": "langgenius/dify",
+  "source": "github",
+  "source_url": "https://github.com/langgenius/dify",
+  "author": "langgenius",
+  "published_at": "2026-05-02T09:34:01Z",
+  "collected_at": "2026-05-02T13:53:22.422207+00:00",
+  "summary": "Dify is an open-source, production-ready platform designed to streamline the development and deployment of agentic workflows. It provides a visual interface and SDK for building LLM-powered applications with support for RAG, prompt engineering, tool integration, and evaluation. Its focus on developer experience and operational readiness makes it valuable for teams moving from prototyping to scalable AI applications.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "rag",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211687+00:00"
+}

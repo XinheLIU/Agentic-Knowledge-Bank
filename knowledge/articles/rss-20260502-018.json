@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260502-018",
+  "title": "AI/ML Conferences [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0dd1j/aiml_conferences_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891555+00:00",
+  "collected_at": "2026-05-02T13:53:23.891555+00:00",
+  "summary": "该帖反映了当前顶级AI/ML会议（如ICML）同行评审系统面临的公平性与可重复性挑战，尤其指出即使作者充分回应审稿意见、评分显著提升，论文仍可能被拒，凸显评审流程的不透明与机制缺陷。讨论聚焦于如何改进学术评审体系，属于AI研究生态治理的关键议题。其价值在于引发社区对科研基础设施可持续性的深度反思。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211902+00:00"
+}

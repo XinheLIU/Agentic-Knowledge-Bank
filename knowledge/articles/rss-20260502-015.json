@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260502-015",
+  "title": "Why Is Table Extraction with VLM Models Still Challenging? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0txco/why_is_table_extraction_with_vlm_models_still/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-02T13:53:23.891536+00:00",
+  "collected_at": "2026-05-02T13:53:23.891536+00:00",
+  "summary": "该 Reddit 帖子探讨了当前视觉语言模型（VLM）在 PDF 表格提取任务中仍面临的关键挑战，尤其是对无边框表格和宽列（>5–6 列）结构的鲁棒性不足；作者对比了多个开源工具（如 docling、marker）与商业方案（LandingAI），突显了高质量开源表格理解方案的稀缺性；内容为实践导向的技术痛点总结，对文档智能领域开发者具有明确参考价值。",
+  "score": 7,
+  "tags": [
+    "vision",
+    "llm",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-02T13:55:50.211885+00:00"
+}
