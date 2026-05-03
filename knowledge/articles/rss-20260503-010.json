@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260503-010",
+  "title": "Have teams evaluated and rejected Flyte, Prefect, or Temporal? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2d0a3/have_teams_evaluated_and_rejected_flyte_prefect/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-03T09:24:42.828410+00:00",
+  "collected_at": "2026-05-03T09:24:42.828410+00:00",
+  "summary": "该 Reddit 帖子探讨了机器学习工程团队对三个主流工作流编排框架（Flyte、Prefect、Temporal）的实际评估与弃用原因，聚焦于真实落地中的痛点，如设置复杂度、运维负担和抽象层级不匹配等，而非仅基于文档的浅层判断。其价值在于提供一线工程反馈，有助于规避选型陷阱并理解不同框架在生产环境中的适用边界。",
+  "score": 7,
+  "tags": [
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-03T09:27:05.696611+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260503-007",
+  "title": "Anyone submit ML articles to ACM journals (eg. TOPML or TIST)? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t28twe/anyone_submit_ml_articles_to_acm_journals_eg/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-03T09:24:42.828390+00:00",
+  "collected_at": "2026-05-03T09:24:42.828390+00:00",
+  "summary": "该 Reddit 帖子探讨了机器学习研究者向 ACM 旗下期刊（如 TOPML 和 TIST）投稿的实际经验，聚焦于审稿周期、评审质量及与 TMLR 等新兴开放期刊的难度对比，为 ML 社区提供实证性出版策略参考。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-03T09:27:05.696602+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260503-016",
+  "title": "I implemented meta paper [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-03T09:24:42.828446+00:00",
+  "collected_at": "2026-05-03T09:24:42.828446+00:00",
+  "summary": "该 Reddit 帖子分享了一个针对 Meta AI 新论文（arXiv:2604.16529v1）的开源实现，聚焦于‘Scaling Test-Time Compute for Agentic Coding’，核心为 PDR+RTV 推理流程。项目支持 Gemini-3.1-Pro 模型，在 SWE-bench 上进行代理式代码生成评估，并提供最小可行研究级代码。这是目前首个公开可用的该论文实现，填补了社区空白。",
+  "score": 8,
+  "tags": [
+    "agent",
+    "code-generation",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-03T09:27:05.696618+00:00"
+}

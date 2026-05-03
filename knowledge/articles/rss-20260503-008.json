@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260503-008",
+  "title": "Question regarding Transformer's pipeline module [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2cvdc/question_regarding_transformers_pipeline_module_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-03T09:24:42.828398+00:00",
+  "collected_at": "2026-05-03T09:24:42.828398+00:00",
+  "summary": "用户尝试使用 Hugging Face Transformers 的 pipeline 模块进行零样本问答（'question-answering'），但发现该任务名已被移除；当前支持的文本问答替代方案是 'table-question-answering'（需表格）或更合适的 'document-question-answering'（但要求图文输入），而纯文本问答实际仍可通过加载兼容的 QA 模型（如 'distilbert-base-cased-distilled-squad'）+ custom pipeline 或使用 'feature-extraction' + 自定义逻辑实现。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-03T09:27:05.696607+00:00"
+}

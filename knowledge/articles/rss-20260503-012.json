@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260503-012",
+  "title": "Toy experiment: frozen Pythia-70M can use a forward-derived fast memory for contextual one-shot symbolic recall [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-03T09:24:42.828422+00:00",
+  "collected_at": "2026-05-03T09:24:42.828422+00:00",
+  "summary": "该实验探索了在冻结的 Pythia-70M 模型上构建前向推导（forward-derived）的轻量级外部记忆机制，实现上下文感知的一次性符号绑定与回忆，无需反向传播或权重更新；核心创新在于利用输出嵌入几何定义‘校正向量’作为记忆值，并通过隐藏状态几何实现上下文区分的检索；结果表明冻结模型隐含的表征几何足以支持有限但可泛化的快速记忆操作。",
+  "score": 8,
+  "tags": [
+    "llm",
+    "reasoning",
+    "rag"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-03T09:27:05.696615+00:00"
+}
