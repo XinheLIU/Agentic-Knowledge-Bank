@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260504-016",
+  "title": "Built a efficient and fast MRI compression program called KMRI [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2hd9b/built_a_efficient_and_fast_mri_compression/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612952+00:00",
+  "collected_at": "2026-05-04T10:18:37.612952+00:00",
+  "summary": "KMRI is a chunk-based MRI compression tool designed for .nii files, combining Python and C++ with Zstd for high-speed, efficient compression. It achieves up to ~900× compression on synthetic smooth MRI volumes by skipping zero-valued blocks—a domain-optimized strategy for medical imaging data. The open-source implementation prioritizes both speed and ratio, making it practical for storage and transfer of large neuroimaging datasets.",
+  "score": 7,
+  "tags": [
+    "vision",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980905+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-008",
+  "title": "torch-nvenc-compress: GPU NVENC silicon as a PCIe bandwidth multiplier — PCA + pure-ctypes Video Codec SDK wrapper. Parallel-path overlap measured at 67% of theoretical max on a real GEMM + encode workload. [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2zy4h/torchnvenccompress_gpu_nvenc_silicon_as_a_pcie/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612899+00:00",
+  "collected_at": "2026-05-04T10:18:37.612899+00:00",
+  "summary": "torch-nvenc-compress leverages idle NVIDIA NVENC/NVDEC hardware to compress LLM/diffusion activations and KV cache on-the-fly using PCA preprocessing and a low-overhead pure-ctypes Video Codec SDK wrapper, turning GPU video silicon into a PCIe bandwidth multiplier. It achieves up to 6.1× lossless compression and 67% of theoretical parallel-path overlap between compute and encoding, enabling significant effective bandwidth gains in multi-GPU and networked inference scenarios.",
+  "score": 8,
+  "tags": [
+    "llm",
+    "deployment",
+    "vision"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980883+00:00"
+}

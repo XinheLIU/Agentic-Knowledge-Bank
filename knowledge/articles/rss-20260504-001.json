@@ -1,0 +1,20 @@
+{
+  "id": "rss-20260504-001",
+  "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://github.com/aattaran/deepclaude",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-04T10:18:36.931056+00:00",
+  "collected_at": "2026-05-04T10:18:36.931056+00:00",
+  "summary": "DeepClaude is an open-source code agent framework that integrates Anthropic's Claude with DeepSeek V4 Pro in a recursive reasoning loop, enabling iterative code generation, self-reflection, and tool-augmented execution. It demonstrates a practical architecture for enhancing LLM-based coding agents through model collaboration and structured feedback loops. The project emphasizes real-world usability, with runnable examples and clear documentation on GitHub.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "code-generation",
+    "reasoning",
+    "llm"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980860+00:00"
+}

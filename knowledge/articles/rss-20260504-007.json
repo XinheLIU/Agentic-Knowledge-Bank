@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-007",
+  "title": "Excellent discussion about LLM scaling [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3ao9m/excellent_discussion_about_llm_scaling_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612892+00:00",
+  "collected_at": "2026-05-04T10:18:37.612892+00:00",
+  "summary": "该内容推荐了一段深度技术讨论视频，重点分析了大语言模型（LLM）在内存与计算资源上的扩展规律，指出大规模批处理（large batching）能显著提升推理效率，因此本地或私有云部署LLM通常存在资源浪费问题。视频涵盖GPT、Claude和Gemini等主流模型的实际训练与服务架构，由Reiner Pope主讲，具有较强的工程实践参考价值。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "deployment",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980880+00:00"
+}

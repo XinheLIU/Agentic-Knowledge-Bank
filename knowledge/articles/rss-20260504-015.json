@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-015",
+  "title": "I Trained an AI to Beat Final Fight… Here’s What Happened [p]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2vfz7/i_trained_an_ai_to_beat_final_fight_heres_what/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612946+00:00",
+  "collected_at": "2026-05-04T10:18:37.612946+00:00",
+  "summary": "该帖分享了使用行为克隆（Behavior Cloning）在经典街机游戏《Final Fight》上训练AI代理的实践过程，重点探讨了演示数据驱动的模仿学习挑战，如动作空间映射、轨迹对齐、LSTM策略不一致性及内存高效rollout管理。作者计划进一步结合GAIL与PPO进行强化学习微调，并开源了完整代码与实验笔记，为游戏AI和离线RL研究提供了可复现的工程参考。",
+  "score": 7,
+  "tags": [
+    "agent",
+    "evaluation",
+    "fine-tuning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980902+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260504-012",
+  "title": "UAI Reviews disappeared [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2p1w8/uai_reviews_disappeared_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612927+00:00",
+  "collected_at": "2026-05-04T10:18:37.612927+00:00",
+  "summary": "该 Reddit 帖子报告了 UAI（Uncertainty in Artificial Intelligence）会议投稿系统中审稿意见（reviews）意外消失的问题，影响作者查看评审反馈，可能涉及系统故障或数据同步异常。此类问题对学术交流透明度和作者修订流程构成实质性干扰，凸显AI会议平台在评审系统可靠性与数据持久性方面的工程挑战。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980896+00:00"
+}

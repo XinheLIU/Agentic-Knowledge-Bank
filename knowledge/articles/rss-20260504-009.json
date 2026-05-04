@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-009",
+  "title": "Struggling with Chebyshev Filter Integration in CNN — Any Advice? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2wybh/struggling_with_chebyshev_filter_integration_in/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612906+00:00",
+  "collected_at": "2026-05-04T10:18:37.612906+00:00",
+  "summary": "A practitioner explores integrating classical Chebyshev filters—typically used in signal processing—into CNN pipelines for improved feature extraction, but observes no performance gain over baseline. The post highlights practical challenges in hybridizing handcrafted filter design with learned deep representations, raising questions about architectural compatibility, placement (preprocessing vs. in-network), and empirical validity. It serves as a valuable reality check on the non-triviality of combining domain-specific signal priors with modern deep learning.",
+  "score": 7,
+  "tags": [
+    "vision",
+    "audio",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980886+00:00"
+}

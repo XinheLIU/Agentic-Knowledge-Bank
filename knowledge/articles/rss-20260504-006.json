@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-006",
+  "title": "Are modern ML PhDs becoming too incremental, or is this just what research looks like now? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t311vb/are_modern_ml_phds_becoming_too_incremental_or_is/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612884+00:00",
+  "collected_at": "2026-05-04T10:18:37.612884+00:00",
+  "summary": "该帖深入反思了当前机器学习博士研究的增量性趋势，指出大量工作聚焦于方法组合、基准提升和经验分析，而非机制理解、通用知识或可复用工具的构建；核心价值在于引发对领域激励机制、科研质量评估标准及博士培养目标的批判性讨论；问题直指ML作为经验科学在高速发展中的范式张力。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "reasoning",
+    "research-methodology"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980876+00:00"
+}

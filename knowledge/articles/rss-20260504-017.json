@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260504-017",
+  "title": "Evolving Deep Learning Optimizers [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2jt4m/evolving_deep_learning_optimizers_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-04T10:18:37.612958+00:00",
+  "collected_at": "2026-05-04T10:18:37.612958+00:00",
+  "summary": "该研究提出一种基于遗传算法的框架，自动发现深度学习优化器，将优化算法编码为包含原始更新项（如梯度、动量、RMS归一化、Adam式自适应项和符号更新）及其超参数与调度策略的基因组。通过50代进化搜索，在多个视觉任务上发现的新优化器在整体性能上超越Adam 2.6%，并在CIFAR-10上实现7.7%相对提升，揭示了非传统设计原则（如禁用偏置校正、启用warmup与cosine decay）。这项工作验证了进化方法在自动化算法设计中的有效性与实用性。",
+  "score": 8,
+  "tags": [
+    "optimization",
+    "evolutionary-algorithms",
+    "vision"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-04T10:21:02.980908+00:00"
+}
