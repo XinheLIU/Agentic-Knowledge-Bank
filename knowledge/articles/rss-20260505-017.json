@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260505-017",
+  "title": "Parax v0.5: Parametric Modeling in JAX [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3jmdc/parax_v05_parametric_modeling_in_jax_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403981+00:00",
+  "collected_at": "2026-05-05T10:07:04.403981+00:00",
+  "summary": "Parax v0.5 is a JAX-native library for parametric modeling, redesigned to support general-purpose JAX workflows with an opt-in, composable API. It introduces expressive abstractions for constrained/derived parameters, metadata-aware PyTrees, and flexible parameterization—enabling safer, more maintainable model definitions in scientific computing and ML. Its emphasis on extensibility and functional purity aligns with JAX’s philosophy while filling a gap in structured parameter management.",
+  "score": 7,
+  "tags": [
+    "code-generation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064988+00:00"
+}

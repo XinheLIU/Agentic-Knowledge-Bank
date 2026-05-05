@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260505-007",
+  "title": "Building a 9-ball AI player: Candidate generation for direct cut shots [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3xplr/building_a_9ball_ai_player_candidate_generation/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403916+00:00",
+  "collected_at": "2026-05-05T10:07:04.403916+00:00",
+  "summary": "该技术分享提出了一种高效生成9球台球直接切杆候选击球方案的方法，通过预计算的Acceptance Window查找表、Shot-index索引表和轻量级MLP throw模型（50k参数，0.2°平均角度误差）实现10000x加速的候选评估，显著降低物理仿真开销；结合p(win)价值网络与噪声鲁棒性筛选，支撑高质量自博弈数据生成与渐进式课程学习。",
+  "score": 8,
+  "tags": [
+    "agent",
+    "reasoning",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064964+00:00"
+}

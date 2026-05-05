@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260505-006",
+  "title": "Is there a notable increase in demand for privacy-preserving AI/ML with the advent of LLMs? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3u2jh/is_there_a_notable_increase_in_demand_for/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403908+00:00",
+  "collected_at": "2026-05-05T10:07:04.403908+00:00",
+  "summary": "该帖探讨了大语言模型（LLMs）兴起背景下隐私保护AI/ML需求的显著增长，尤其关联到用户去匿名化风险加剧和企业对可信执行环境（TEE）等隐私增强技术的实际采用。作者结合实证观察（如朋友团队部署TEE支持的私有LLM）与学术依据（如arXiv论文揭示的隐私威胁），引发社区对隐私-preserving AI商业化驱动力的讨论。核心价值在于将监管趋势、技术风险与工程实践结合，反映产业界真实演进方向。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064961+00:00"
+}

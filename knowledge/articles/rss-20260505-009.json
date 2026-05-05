@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260505-009",
+  "title": "How do you experiment with a (very) large model architecture? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3savv/how_do_you_experiment_with_a_very_large_model/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403930+00:00",
+  "collected_at": "2026-05-05T10:07:04.403930+00:00",
+  "summary": "该帖探讨了在计算资源受限条件下对超大规模模型（如特定扩散模型）进行高效实验验证的实用策略，聚焦于训练加速与假设检验的权衡。除常见的数据子采样、小批量+学习率缩放、减少训练步数外，还隐含对梯度累积、混合精度训练、架构蒸馏、合成数据代理任务等进阶方法的讨论需求。其核心价值在于为研究者提供可落地的低成本验证范式，缓解大模型研发中的算力瓶颈。",
+  "score": 7,
+  "tags": [
+    "fine-tuning",
+    "evaluation",
+    "reasoning"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064971+00:00"
+}

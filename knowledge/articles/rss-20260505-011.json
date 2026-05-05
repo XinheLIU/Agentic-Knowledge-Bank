@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260505-011",
+  "title": "Fixing Unsupervised Hyperbolic Contrastive Loss [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t45ggk/fixing_unsupervised_hyperbolic_contrastive_loss_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403943+00:00",
+  "collected_at": "2026-05-05T10:07:04.403943+00:00",
+  "summary": "该帖探讨了在ImageNet-1k上实现无监督双曲对比学习时性能低于欧氏/余弦对比损失的问题，作者提供了基于Lorentz流形的双曲距离计算代码，并观察到1-NN准确率显著偏低（57% vs 64%），反映出双曲嵌入在实际训练中存在稳定性、优化或几何适配性挑战。",
+  "score": 7,
+  "tags": [
+    "vision",
+    "contrastive-learning",
+    "geometry"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064977+00:00"
+}

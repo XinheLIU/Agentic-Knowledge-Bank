@@ -1,0 +1,20 @@
+{
+  "id": "rss-20260505-001",
+  "title": "Agent Skills",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://addyosmani.com/blog/agent-skills/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-05T10:07:03.727745+00:00",
+  "collected_at": "2026-05-05T10:07:03.727745+00:00",
+  "summary": "文章系统性地探讨了构建实用 AI Agent 所需的关键技能，涵盖工具调用（tool-use）、规划与推理（reasoning）、记忆管理、多步骤任务编排，以及与 RAG、LLM 基础能力的协同设计。强调从工程实践出发，避免过度依赖提示词技巧，转而关注可测试、可调试、可监控的 Agent 系统架构。内容对构建生产级 Agent 具有明确的方法论指导价值。",
+  "score": 8,
+  "tags": [
+    "agent",
+    "tool-use",
+    "reasoning",
+    "rag"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064947+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260505-010",
+  "title": "NeurIPS openreview - can I upload paper pdf after abstract deadline or should I upload something first to be able to update it later? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t46wzz/neurips_openreview_can_i_upload_paper_pdf_after/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403936+00:00",
+  "collected_at": "2026-05-05T10:07:04.403936+00:00",
+  "summary": "该帖子聚焦于NeurIPS会议OpenReview平台的投稿流程实操问题，特别是PDF论文上传和代码URL提交的时间灵活性与合规性要求。作者作为首次投稿者，关注抽象截止后能否补传PDF、是否需预先占位上传，以及NeurIPS如何防止代码在论文截止后被篡改或延迟发布。内容虽非技术研究本身，但对AI研究者规范参与顶级会议具有关键实操指导价值。",
+  "score": 7,
+  "tags": [
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064974+00:00"
+}

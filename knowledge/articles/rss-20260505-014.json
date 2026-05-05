@@ -1,0 +1,20 @@
+{
+  "id": "rss-20260505-014",
+  "title": "[P] QLoRA Fine-Tuning of Qwen2.5-1.5B for CEFR English Proficiency Classification (A1–C2) [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3ogbw/p_qlora_finetuning_of_qwen2515b_for_cefr_english/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403962+00:00",
+  "collected_at": "2026-05-05T10:07:04.403962+00:00",
+  "summary": "This post presents a practical, resource-efficient fine-tuning of Qwen2.5-1.5B using QLoRA (4-bit NF4) for CEFR English proficiency classification (A1–C2), achieving 84.9% accuracy on a synthetically generated, domain-balanced dataset. It demonstrates end-to-end NLP application development—from synthetic data generation with Llama-3.3-70B/Groq to FastAPI/Docker deployment—and highlights challenges in distinguishing high-proficiency levels (C1/C2). The work delivers an accessible, production-ready classifier with open weights and clear evaluation insights.",
+  "score": 8,
+  "tags": [
+    "fine-tuning",
+    "llm",
+    "evaluation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064983+00:00"
+}

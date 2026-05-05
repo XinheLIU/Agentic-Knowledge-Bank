@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260505-015",
+  "title": "Neurips, how can i submit the \"link\" to the code? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3zovv/neurips_how_can_i_submit_the_link_to_the_code_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403969+00:00",
+  "collected_at": "2026-05-05T10:07:04.403969+00:00",
+  "summary": "该帖子探讨了NeurIPS会议投稿中如何合规提交代码链接的问题，反映出作者对会议提交系统限制（如补充材料不支持纯文本链接）的困惑。用户询问是否可通过PDF文档嵌入代码仓库链接来满足要求，属于学术实践中的技术流程适配问题。此类问题对正在准备顶会投稿的研究者具有实际参考价值。",
+  "score": 7,
+  "tags": [
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064985+00:00"
+}

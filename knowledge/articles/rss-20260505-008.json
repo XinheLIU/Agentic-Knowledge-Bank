@@ -1,0 +1,19 @@
+{
+  "id": "rss-20260505-008",
+  "title": "Why SSMs struggle in parameter-constrained training: empirical findings at 25M parameters [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3hxsy/why_ssms_struggle_in_parameterconstrained/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403923+00:00",
+  "collected_at": "2026-05-05T10:07:04.403923+00:00",
+  "summary": "该分析基于OpenAI Parameter Golf竞赛的实证实验，揭示了状态空间模型（SSMs）在参数严格受限（25M参数、16MB压缩权重、10分钟训练）场景下相比Transformer的结构性劣势，核心归因于SSM的in_proj权重LZMA压缩率显著低于Attention QKV，以及架构优势随序列长度和词表变化出现反转。文中还报告了Mamba-3 Triton内核层面的三项低开销优化实践，具有强工程指导价值。",
+  "score": 7,
+  "tags": [
+    "llm",
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064968+00:00"
+}

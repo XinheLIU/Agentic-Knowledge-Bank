@@ -1,0 +1,18 @@
+{
+  "id": "rss-20260505-018",
+  "title": "Confusion about the NeurIPS 2026 page limit [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3y3nu/confusion_about_the_neurips_2026_page_limit_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-05T10:07:04.403988+00:00",
+  "collected_at": "2026-05-05T10:07:04.403988+00:00",
+  "summary": "该 Reddit 帖子反映了研究者对 NeurIPS 2026 论文提交页数限制（8页正文+1页仅限参考文献）的政策理解困惑，核心在于官方说明与模板套件文档不一致所引发的合规性疑虑。此类问题虽非技术突破，但直接影响投稿成功率，凸显学术会议流程透明度与文档一致性的重要性。准确解读格式规范对保障研究成果顺利进入同行评审至关重要。",
+  "score": 7,
+  "tags": [
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "updated_at": "2026-05-05T10:09:39.064992+00:00"
+}
