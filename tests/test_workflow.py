@@ -11,6 +11,7 @@ from workflows.graph import (
     initial_state,
     parse_sources,
     route_after_review,
+    warn_on_human_flag,
 )
 from workflows.human_flag import write_pending_review
 from workflows.human_flag import human_flag_node
@@ -49,6 +50,12 @@ def test_route_after_review_flags_human_at_max_iterations():
     state["iteration"] = 2
     state["plan"]["max_iterations"] = 2
     assert route_after_review(state) == "human_flag"
+
+
+def test_initial_state_omits_unset_output_directories():
+    state = initial_state(["github"], limit=5, dry_run=True)
+    assert "articles_dir" not in state
+    assert "pending_review_dir" not in state
 
 
 def test_calculate_weighted_score_uses_code_weights():
@@ -192,3 +199,9 @@ def test_enforce_run_policies_fails_when_published_below_minimum():
             {"needs_human_review": False, "published": 0},
             min_published=1,
         )
+
+
+def test_warn_on_human_flag_emits_github_actions_warning(monkeypatch, capsys):
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    warn_on_human_flag({"needs_human_review": True})
+    assert "::warning title=Human review required::" in capsys.readouterr().out

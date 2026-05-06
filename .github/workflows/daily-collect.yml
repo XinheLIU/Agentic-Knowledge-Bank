@@ -36,16 +36,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          stats_json="$(uv run python -m workflows.graph \
+          uv run python -m workflows.graph \
             --sources github,rss \
             --limit 20 \
-            --verbose \
-            --json)"
-          echo "$stats_json"
-
-          if echo "$stats_json" | uv run python -c 'import json, sys; raise SystemExit(0 if json.load(sys.stdin)["needs_human_review"] else 1)'; then
-            echo "::warning title=Human review required::Workflow entered human_flag terminal state. Review knowledge/pending_review artifacts."
-          fi
+            --verbose
 
       - name: Validate collected articles
         run: |

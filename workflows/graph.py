@@ -69,7 +69,7 @@ def initial_state(
     articles_dir: Path | None = None,
     pending_review_dir: Path | None = None,
 ) -> KBState:
-    return {
+    state: KBState = {
         "requested_sources": sources,
         "dry_run": dry_run,
         "plan": {
@@ -91,9 +91,12 @@ def initial_state(
             "completion_tokens": 0,
             "total_cost_usd": 0.0,
         },
-        "articles_dir": articles_dir,
-        "pending_review_dir": pending_review_dir,
     }
+    if articles_dir is not None:
+        state["articles_dir"] = articles_dir
+    if pending_review_dir is not None:
+        state["pending_review_dir"] = pending_review_dir
+    return state
 
 
 def parse_sources(raw_sources: str) -> list[SourceName]:
@@ -148,6 +151,17 @@ def enforce_run_policies(
         )
 
 
+def warn_on_human_flag(stats: dict[str, Any]) -> None:
+    if not stats.get("needs_human_review", False):
+        return
+
+    message = "Workflow entered human_flag terminal state. Review knowledge/pending_review artifacts."
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        print(f"::warning title=Human review required::{message}")
+    else:
+        print(f"[Workflow] WARNING: {message}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="AI-KB LangGraph workflow")
     parser.add_argument("--sources", default="github,rss", help="Comma-separated: github,rss")
@@ -194,6 +208,9 @@ def main() -> None:
             f"采集={stats['collected']} 分析={stats['analyzed']} "
             f"发布={stats['published']} 人工介入={stats['needs_human_review']}"
         )
+
+    if not args.fail_on_human_flag:
+        warn_on_human_flag(stats)
 
     enforce_run_policies(
         stats,
