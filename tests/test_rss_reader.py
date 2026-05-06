@@ -1,11 +1,13 @@
-"""Tests for pipeline/rss_reader.py"""
+"""Tests for workflows/collector.py RSS collection."""
 
 from datetime import datetime
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-from rss_reader import collect_rss
+from workflows.collector import collect_rss
+
+pytestmark = pytest.mark.non_llm
 
 
 class TestCollectRss:
@@ -32,8 +34,7 @@ sources:
         mock_feed = MagicMock()
         mock_feed.entries = [mock_entry]
 
-        mocker.patch("rss_reader.RSS_CONFIG", config)
-        mocker.patch("rss_reader.feedparser.parse", return_value=mock_feed)
+        mocker.patch("workflows.collector.feedparser.parse", return_value=mock_feed)
 
         # Mock httpx.Client to return empty text (feedparser.parse receives text)
         mock_response = MagicMock()
@@ -42,9 +43,9 @@ sources:
         mock_client.__enter__ = MagicMock(return_value=mock_client)
         mock_client.__exit__ = MagicMock(return_value=False)
         mock_client.get.return_value = mock_response
-        mocker.patch("rss_reader.httpx.Client", return_value=mock_client)
+        mocker.patch("workflows.collector.httpx.Client", return_value=mock_client)
 
-        items = collect_rss(limit=5)
+        items = collect_rss(limit=5, config_path=config)
 
         assert len(items) == 1
         assert items[0]["title"] == "Test Title"
@@ -78,8 +79,7 @@ sources:
         mock_feed = MagicMock()
         mock_feed.entries = [mock_entry_empty, mock_entry_valid]
 
-        mocker.patch("rss_reader.RSS_CONFIG", config)
-        mocker.patch("rss_reader.feedparser.parse", return_value=mock_feed)
+        mocker.patch("workflows.collector.feedparser.parse", return_value=mock_feed)
 
         mock_response = MagicMock()
         mock_response.text = "<rss></rss>"
@@ -87,17 +87,16 @@ sources:
         mock_client.__enter__ = MagicMock(return_value=mock_client)
         mock_client.__exit__ = MagicMock(return_value=False)
         mock_client.get.return_value = mock_response
-        mocker.patch("rss_reader.httpx.Client", return_value=mock_client)
+        mocker.patch("workflows.collector.httpx.Client", return_value=mock_client)
 
-        items = collect_rss(limit=5)
+        items = collect_rss(limit=5, config_path=config)
         assert len(items) == 1
         assert items[0]["title"] == "Valid Title"
 
     def test_returns_empty_when_config_missing(self, mocker):
         mock_path = mocker.MagicMock()
         mock_path.exists.return_value = False
-        mocker.patch("rss_reader.RSS_CONFIG", mock_path)
-        items = collect_rss(limit=5)
+        items = collect_rss(limit=5, config_path=mock_path)
         assert items == []
 
     def test_respects_limit_across_sources(self, tmp_path, mocker):
@@ -130,8 +129,7 @@ sources:
             for i in range(10)
         ]
 
-        mocker.patch("rss_reader.RSS_CONFIG", config)
-        mocker.patch("rss_reader.feedparser.parse", return_value=mock_feed)
+        mocker.patch("workflows.collector.feedparser.parse", return_value=mock_feed)
 
         mock_response = MagicMock()
         mock_response.text = "<rss></rss>"
@@ -139,7 +137,7 @@ sources:
         mock_client.__enter__ = MagicMock(return_value=mock_client)
         mock_client.__exit__ = MagicMock(return_value=False)
         mock_client.get.return_value = mock_response
-        mocker.patch("rss_reader.httpx.Client", return_value=mock_client)
+        mocker.patch("workflows.collector.httpx.Client", return_value=mock_client)
 
-        items = collect_rss(limit=3)
+        items = collect_rss(limit=3, config_path=config)
         assert len(items) == 3

@@ -33,3 +33,4 @@ __pycache__/
 
 # Pipeline output — committed by daily automation workflow
 # Directories kept via .gitkeep inside knowledge/raw/ and knowledge/articles/
+knowledge/pending_review/

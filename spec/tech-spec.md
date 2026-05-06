@@ -1,67 +1,87 @@
 # AI 知识库 · 技术规格
-> Last updated: 2026-05-02
+> Last updated: 2026-05-06
 
-## 1. 采集层（Collector）
+## 1. 工作流拓扑
+
+当前版本使用 LangGraph，节点顺序如下：
+
+```text
+plan -> collect -> analyze -> review
+                             | pass -> organize -> END
+                             | fail & iteration < max -> revise -> review
+                             | fail & iteration >= max -> human_flag -> END
+```
+
+共享状态定义在 `workflows/state.py`，核心字段包括：
+- `plan`
+- `requested_sources`
+- `sources`
+- `analyses`
+- `articles`
+- `review_feedback`
+- `review_passed`
+- `iteration`
+- `needs_human_review`
+- `cost_tracker`
+
+## 2. Planner
+- 根据目标条数选择 `lite` / `standard` / `full`
+- 输出 `per_source_limit`、`relevance_threshold`、`max_iterations`
+- 只规划，不执行采集或分析
+
+## 3. Collector
 - **数据源**：
-  - **GitHub Trending**：GitHub Search API v3 (`/search/repositories`)，OR 连接关键词 + 时间过滤 + stars 排序。认证使用 `GITHUB_TOKEN`。
-  - **Hacker News**：Algolia HN Search API，关键词匹配 AI 相关故事。
-  - **arXiv**：arXiv API，按分类（cs.AI 等）获取最新论文。
-- **输出**：`knowledge/raw/{source}-{YYYY-MM-DD}.json`，顶层包含 `source`, `collected_at`, `query`, `count`, `items`。
-- **每条 item 字段**：`id`(owner/repo), `title`, `description`, `url`, `stars`, `forks`, `language`, `topics`, `license`, `created_at`, `updated_at`, `open_issues`, `readme_excerpt`(可选)。
-- **容错**：单条目失败应记录错误并跳过，不影响其他条目；API 限流时等待后重试，最多 3 次。
+  - GitHub Search API v3 (`/search/repositories`)
+  - RSS（配置文件 `workflows/rss_sources.yaml`）
+- **输入**：`requested_sources` + `plan.per_source_limit`
+- **输出**：原始条目列表，字段包括 `id`, `title`, `source`, `source_url`, `url`, `raw_description`, `collected_at`
+- **容错**：单一数据源失败不应阻塞其他源
 
-## 2. 分析层（Analyzer）
-- **运行时**：OpenCode + LLM，Agent 通过 Skill 调用 LLM 分析。
-- **输入**：`knowledge/raw/` 中的原始采集 JSON。
-- **输出**：在原始 JSON 上 enrichment，每条 item 增加以下字段：
+## 4. Analyzer
+- 对每条原始条目单独调用 LLM
+- 输出：
   ```json
   {
-    "summary": "一句话中文摘要",
-    "tags": ["tag1", "tag2"],
+    "summary": "中文技术摘要",
+    "tags": ["llm", "agent"],
     "relevance_score": 0.8,
-    "score_breakdown": {
-      "tech_depth": 0.6,
-      "practical_value": 0.7,
-      "timeliness": 0.9,
-      "community_heat": 0.85,
-      "domain_match": 0.7
-    },
-    "analyzed_at": "2026-05-01T15:51:52Z"
+    "category": "agent",
+    "key_insight": "一句话洞察",
+    "score": 7,
+    "audience": "intermediate",
+    "status": "review"
   }
   ```
-- **评分说明**：`relevance_score` 为 5 维度均值，低于 0.6 的条目由 Organizer 丢弃。
-- **Prompt 原则**：摘要使用中文，标签使用英文小写连字符格式，不添加与内容无关的寒暄。
+- LLM 失败时降级为低分草稿，保留溯源字段
 
-## 3. 整理层（Organizer）
-- **输入**：`knowledge/raw/` 中已 enriched 的 JSON。
-- **输出**：
-  - 每条合格条目写入 `knowledge/articles/{YYYY-MM-DD}-{source}-{slug}.json`
-  - 更新 `knowledge/articles/index.json`（含所有条目摘要和 `sources` 统计）
-- **质量门控**：`relevance_score < 0.6` 的条目丢弃。
-- **幂等性**：重复运行同一天不应产生重复条目。
+## 5. Reviewer / Reviser
+- Reviewer 让 LLM 给出五维分数：
+  - `summary_quality`
+  - `technical_depth`
+  - `relevance`
+  - `originality`
+  - `formatting`
+- 加权总分由代码重算，阈值 `>= 7.0` 视为通过
+- 未通过且未达到 `max_iterations` 时进入 Reviser
+- Reviser 读取 `review_feedback`，只修改 `analyses`
 
-## 4. 校验层（Hooks）
-- **validate_json.py**：校验知识条目 JSON 必填字段、ID 格式、URL 格式、摘要长度、标签数量、status 合法性等。
-- **check_quality.py**：5 维度质量评分（摘要质量/技术深度/格式规范/标签精度/空洞词检测），输出等级 A/B/C。
-- **详见**：`spec/hooks-spec.md`
+## 6. Organizer / HumanFlag
+- Organizer 按 `relevance_threshold` 过滤、按 `source_url` 去重、生成 hook 兼容文章 JSON、更新 `knowledge/articles/index.json`
+- HumanFlag 在审核循环用尽时将现场写入 `knowledge/pending_review/`
+- Organizer 输出应满足 `hooks/validate_json.py` 的必填与 ID 规则
 
-## 5. 触发层（Scheduler）
-- **当前**：手动在 OpenCode 中调用 Agent 或使用 `@` 语法触发流水线。
-- **调用方式**：
-  ```
-  @collector 采集今天的 GitHub Trending 数据
-  @analyzer 分析 knowledge/raw/github-trending-2026-05-01.json
-  @organizer 整理今天所有已分析的原始数据
-  ```
-- **未来**：迁移到 GitHub Actions 或定时触发。
+## 7. 校验层（Hooks）
+- `validate_json.py`：校验必填字段、ID 格式、URL、摘要长度、标签、status、score、audience
+- `check_quality.py`：五维质量评分，等级 A/B/C
+- 文章发布目标：至少达到 B
 
-## 6. 环境依赖
-- **运行时**：OpenCode + LLM
-- **数据源认证**：`GITHUB_TOKEN`（见 `.env.example`）
-- **校验脚本**：Python 3.11+（hooks/ 目录），仅使用标准库
-- **版本管理**：Git
+## 8. 运行与调度
+- CLI：`uv run python -m workflows.graph --sources github,rss --limit 20`
+- CI：GitHub Actions 每日触发 `uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag`
+- CI 只提交 `knowledge/articles/` 与 `knowledge/raw/`，不提交 `knowledge/pending_review/`
+- notebook：`notebooks/langgraph_workflow_demo.ipynb` 用于演示状态与节点职责
 
-## 7. 风险与兜底
-- **GitHub API 限流**：读取 `X-RateLimit-Reset`，报告剩余等待时间；未认证 10 次/分钟，认证 30 次/分钟。
-- **LLM 分析失败**：单条失败应记录错误并跳过，不影响其他条目。
-- **数据格式异常**：写入 `knowledge/raw/errors-{date}.json` 供人工排查。
+## 9. 测试分层
+- `non_llm`：默认 deterministic pytest 路径，所有 LLM 调用均 mock 或绕开
+- `llm_e2e`：真实 provider 的端到端验证，运行真实 `run_workflow()`，并在临时目录验证产出
+- 独立文档：`spec/testing-strategy.md`

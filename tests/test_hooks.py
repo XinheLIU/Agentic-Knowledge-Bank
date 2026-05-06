@@ -8,6 +8,8 @@ import pytest
 from check_quality import evaluate_quality
 from validate_json import validate_article
 
+pytestmark = pytest.mark.non_llm
+
 
 class TestValidateArticle:
     def test_valid_article_passes(self):

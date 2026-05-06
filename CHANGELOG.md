@@ -1,6 +1,18 @@
 # Changelog
+> Last updated: 2026-05-06
 
 All notable changes to this project are listed by release. Version numbers are chronological milestones aligned with git history (there are no `git` tags yet); each section names the commit hash for traceability.
+
+## [0.5.0] — 2026-05-06
+
+- Replace the old `pipeline/` + `scripts/` runtime with the LangGraph-based `workflows/` package and the `uv run python -m workflows.graph` CLI.
+- Add the seven-node stateful execution model: `Planner`, `Collector`, `Analyzer`, `Reviewer`, `Reviser`, `Organizer`, `HumanFlag`.
+- Add the `knowledge/pending_review/` handoff for batches that exhaust the review loop, and keep those artifacts out of git.
+- Keep GitHub + RSS collection, move RSS config to `workflows/rss_sources.yaml`, and retain the shared OpenAI-compatible `httpx` client.
+- Add pattern demos in `patterns/` and the `notebooks/langgraph_workflow_demo.ipynb` walkthrough.
+- Bump project metadata to `0.5.0`, add `langgraph`, and split pytest into explicit `non_llm` and `llm_e2e` tracks with new workflow/node coverage.
+- Refresh project docs and planning notes (`README*`, `AGENTS.md`, `TODO.md`, `spec/*`, `.env.example`) to match the new architecture, plus add migration and testing strategy documents.
+- Update GitHub Actions to use the LangGraph CLI, add a dedicated `llm-e2e.yml` workflow, commit only `knowledge/articles` and `knowledge/raw`, and surface `human_flag` in daily collection as a warning instead of a hard failure.
 
 ## [0.4.0] — 2026-05-02
 

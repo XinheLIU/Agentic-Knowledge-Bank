@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Run collection pipeline
+      - name: Run LangGraph workflow
         env:
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -36,10 +36,16 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          uv run python pipeline/pipeline.py \
+          stats_json="$(uv run python -m workflows.graph \
             --sources github,rss \
             --limit 20 \
-            --verbose
+            --verbose \
+            --json)"
+          echo "$stats_json"
+
+          if echo "$stats_json" | uv run python -c 'import json, sys; raise SystemExit(0 if json.load(sys.stdin)["needs_human_review"] else 1)'; then
+            echo "::warning title=Human review required::Workflow entered human_flag terminal state. Review knowledge/pending_review artifacts."
+          fi
 
       - name: Validate collected articles
         run: |
@@ -55,7 +61,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add knowledge/
+          git add knowledge/articles knowledge/raw
           if git diff --staged --quiet; then
             echo "No new articles to commit"
           else

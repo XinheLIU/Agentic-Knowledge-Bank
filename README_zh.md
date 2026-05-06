@@ -1,44 +1,36 @@
 # AI 知识库
-> Last updated: 2026-05-02
+> Last updated: 2026-05-06
 
-AI 知识库是一个本地技术情报流水线，面向 AI、LLM、RAG 和 Agent 工具方向。它从 GitHub、Hacker News、arXiv 和 RSS 源采集最新内容，使用 LLM 做分析整理，并输出结构化 JSON 知识条目，方便检索和下游应用消费。
+AI 知识库是一个本地技术情报系统，面向 AI、LLM、RAG 和 Agent 工具方向。`0.5.0` 版本已从旧的线性 `pipeline/` 迁移到 `workflows/` 下的 LangGraph 工作流。
 
-## 功能
+## v0.5.0 变化
 
-- 采集 AI 相关仓库、新闻、论文和 RSS 文章。
-- 为原始条目补充摘要、标签、相关性评分和评分明细。
-- 将合格条目发布到 `knowledge/articles/`。
-- 维护 `knowledge/articles/index.json`，用于轻量检索。
-- 提供基于 stdio 的 MCP Server，支持搜索、查询和统计。
-- 通过本地 hook 脚本校验 JSON 格式与条目质量。
+- `workflows/` 成为唯一支持的运行时入口。
+- 工作流显式建模为 `Planner -> Collector -> Analyzer -> Reviewer -> Reviser -> Organizer`，异常终点为 `HumanFlag`。
+- `pipeline/` 和 `scripts/` 已移除，不保留向后兼容。
+- 数据采集仍支持 GitHub 与 RSS。
+
+迁移原因与权衡见 [spec/upgrade-0.4.0-to-0.5.0.md](/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/spec/upgrade-0.4.0-to-0.5.0.md:1)。
 
 ## 项目结构
 
 ```text
 ai-kb/
-├── pipeline/                 # 采集、分析、整理、保存流水线
-├── hooks/                    # JSON 校验与质量评分
-├── scripts/                  # 兼容旧路径的 CLI 入口
-├── tests/                    # pytest 测试
-├── spec/                     # 需求与技术规格
+├── workflows/               # LangGraph 节点、状态、图 CLI、RSS 配置
+├── patterns/                # Router / Supervisor 模式示例
+├── hooks/                   # JSON 校验与质量评分
+├── tests/                   # pytest 测试
+├── notebooks/               # 工作流演示 notebook
+├── spec/                    # 需求、技术规格、升级说明
 ├── knowledge/
-│   ├── raw/                  # 原始采集 JSON
-│   └── articles/             # 发布后的知识条目与索引
-├── mcp_knowledge_server.py   # JSON-RPC stdio MCP 搜索服务
-├── opencode.json             # OpenCode MCP 配置
-├── .claude/mcp.json          # Claude Code MCP 配置
-└── .codex/mcp.json           # Codex MCP 配置
+│   ├── raw/                 # 原始采集 JSON
+│   ├── articles/            # 发布后的知识条目与索引
+│   └── pending_review/      # 审核循环失败后的待人工处理数据
+├── mcp_knowledge_server.py  # JSON-RPC stdio MCP 搜索服务
+├── opencode.json            # OpenCode MCP 配置
+├── .claude/mcp.json         # Claude Code MCP 配置
+└── .codex/mcp.json          # Codex MCP 配置
 ```
-
-## 环境要求
-
-- Python 3.12+
-- `uv`
-- `.env` 中可选配置：
-  - `GITHUB_TOKEN`
-  - `DEEPSEEK_API_KEY`
-  - `DASHSCOPE_API_KEY`
-  - `OPENAI_API_KEY`
 
 ## 初始化
 
@@ -47,24 +39,41 @@ uv sync
 cp .env.example .env
 ```
 
-按需编辑 `.env`。默认 LLM 提供商是 `qwen`。
+`.env` 中按需配置：
 
-## 运行流水线
+- `GITHUB_TOKEN`
+- `DEEPSEEK_API_KEY`
+- `DASHSCOPE_API_KEY`
+- `OPENAI_API_KEY`
+
+默认 LLM 提供商是 `qwen`。
+
+## 运行工作流
 
 ```bash
-uv run python pipeline/pipeline.py --sources github,rss --limit 20
+uv run python -m workflows.graph --sources github,rss --limit 20
 ```
 
 常用命令：
 
 ```bash
-uv run python pipeline/pipeline.py --sources github --limit 5 --dry-run
-uv run python pipeline/pipeline.py --sources github --limit 10 --step 1 --step 2
-uv run python pipeline/pipeline.py --sources rss --limit 5 --provider openai
-uv run python pipeline/pipeline.py --sources github --limit 5 --verbose
+uv run python -m workflows.graph --sources github --limit 5 --dry-run
+uv run python -m workflows.graph --sources rss --limit 5 --provider openai
+uv run python -m workflows.graph --sources github,rss --limit 10 --verbose
+uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag
 ```
 
-原始采集结果写入 `knowledge/raw/`。发布后的知识条目写入 `knowledge/articles/`。
+审核通过的条目写入 `knowledge/articles/`。超过审核迭代上限的批次写入 `knowledge/pending_review/`。
+
+## 定时运行
+
+每日 GitHub Actions 使用的入口为：
+
+```bash
+uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag
+```
+
+这意味着自动化环境把 `HumanFlag` 视为失败信号。`knowledge/pending_review/` 仅用于本地排查，不会被定时工作流提交到仓库。
 
 ## 校验文章
 
@@ -80,44 +89,33 @@ uv run python hooks/validate_json.py knowledge/articles/*.json
 uv run python hooks/check_quality.py knowledge/articles/*.json
 ```
 
-## MCP 工具
-
-`mcp_knowledge_server.py` 提供三个工具：
-
-| 工具 | 功能 |
-| --- | --- |
-| `search_articles` | 按关键词搜索文章标题和摘要。 |
-| `get_article` | 按 ID 返回完整文章。 |
-| `knowledge_stats` | 返回文章总数、来源分布和热门标签。 |
-
-仓库已包含 OpenCode、Claude Code 和 Codex 的 MCP 配置文件。修改配置后重启对应客户端即可加载。
-
 ## 开发
 
-运行全部测试：
-
 ```bash
-uv run pytest -q
+uv run pytest -q -m non_llm
+uv run python -m compileall workflows hooks mcp_knowledge_server.py
 ```
 
-编译 Python 源码：
+## 测试
+
+当前测试明确分成两条独立路径：
 
 ```bash
-uv run python -m compileall pipeline hooks scripts mcp_knowledge_server.py
+uv run pytest -q -m non_llm
+uv run pytest -q -m llm_e2e
 ```
+
+`non_llm` 是默认的确定性测试路径。`llm_e2e` 是独立的真实 LLM 端到端验证，需要配置 provider 凭证。详情见 [spec/testing-strategy.md](/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/spec/testing-strategy.md:1)。
 
 ## 数据契约
 
-发布后的文章 JSON 应包含：
+发布后的文章 JSON 至少需要满足 hook 约束：
 
 - `id`
 - `title`
-- `source`
 - `source_url`
-- `url`
-- `collected_at`
 - `summary`
 - `tags`
-- `relevance_score`
+- `status`
 
-常见可选字段包括 `analyzed_at`、`score_breakdown`、`status`、`stars`、`forks`、`language`、`description`、`topics` 和 `audience`。
+工作流通常还会输出 `source`、`url`、`collected_at`、`score`、`audience`、`relevance_score`、`category`、`key_insight`。

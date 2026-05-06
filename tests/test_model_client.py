@@ -1,4 +1,4 @@
-"""Tests for pipeline/model_client.py"""
+"""Tests for workflows/model_client.py"""
 
 import os
 from unittest.mock import MagicMock, patch
@@ -6,14 +6,17 @@ from unittest.mock import MagicMock, patch
 import httpx
 import pytest
 
-from model_client import (
+from workflows.model_client import (
     LLMResponse,
     OpenAICompatibleProvider,
     Usage,
+    parse_json_response,
     chat_with_retry,
     create_provider,
     estimate_cost,
 )
+
+pytestmark = pytest.mark.non_llm
 
 
 class TestCreateProvider:
@@ -96,7 +99,7 @@ class TestChatWithRetry:
             LLMResponse(content="hello", usage=Usage()),
         ]
 
-        with patch("model_client.time.sleep", return_value=None):
+        with patch("workflows.model_client.time.sleep", return_value=None):
             response = chat_with_retry(provider, messages=[{"role": "user", "content": "hi"}])
 
         assert response.content == "hello"
@@ -106,7 +109,7 @@ class TestChatWithRetry:
         provider = MagicMock(spec=OpenAICompatibleProvider)
         provider.chat.side_effect = httpx.ConnectError("Connection refused")
 
-        with patch("model_client.time.sleep", return_value=None):
+        with patch("workflows.model_client.time.sleep", return_value=None):
             with pytest.raises(httpx.ConnectError):
                 chat_with_retry(
                     provider,
@@ -129,3 +132,13 @@ class TestUsage:
             "completion_tokens": 5,
             "total_tokens": 15,
         }
+
+
+class TestParseJsonResponse:
+    def test_parses_markdown_wrapped_json(self):
+        result = parse_json_response("```json\n{\"ok\": true}\n```")
+        assert result == {"ok": True}
+
+    def test_parses_json_with_surrounding_text(self):
+        result = parse_json_response("answer:\n{\"score\": 7}\nthanks")
+        assert result == {"score": 7}

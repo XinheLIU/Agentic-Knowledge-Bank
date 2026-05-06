@@ -1,243 +1,162 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-03
-> 本文件是项目的"大脑"——OpenCode 启动时自动加载，指导所有 Agent 的行为。
+> Last updated: 2026-05-06
+> 本文件是项目的长期记忆，描述当前版本 `0.5.0` 的真实结构与运行方式。
 
 ## 项目定义
 
 **AI Knowledge Base（AI 知识库）** 是一个自动化技术情报收集与分析系统。
-它持续追踪 GitHub Trending、Hacker News、arXiv 等来源，将分散的技术资讯
-转化为结构化、可检索的 JSON 知识条目。
+当前版本使用 LangGraph 将采集、分析、审核、修订、整理显式建模为有状态工作流，
+将分散的 AI/LLM/Agent 资讯转成结构化 JSON 知识条目。
 
 ### 核心价值
-- 每日自动采集 AI/LLM/Agent 领域的高质量技术文章与开源项目
-- 通过 Agent 协作完成 **采集 → 分析 → 整理 → 保存** 四步流水线
-- 输出格式统一的 JSON 知识条目，便于下游应用消费
-- 写入知识条目时自动触发 JSON 格式校验与质量评分钩子
+- 每日自动采集 AI/LLM/Agent 领域的高质量 GitHub 与 RSS 内容
+- 通过显式工作流完成 **规划 → 采集 → 分析 → 审核 → 修订 → 入库**
+- 输出统一 JSON 知识条目，便于检索与下游消费
+- 写入知识条目时自动触发 JSON 校验与质量评分
 
 ## 项目结构
 
-```
+```text
 ai-kb/
 ├── AGENTS.md                          # 项目记忆文件（本文件）
 ├── project-vision.md                  # 项目愿景与 go/no-go 验收标准
-├── TODO.md                            # 待办事项
+├── TODO.md                            # 待办事项（可能含用户未完成编辑）
 ├── pyproject.toml                     # Python 依赖与工具配置
 ├── .env.example                       # 环境变量模板
-├── .gitignore
+├── .github/workflows/daily-collect.yml
 ├── .opencode/
 │   ├── agents/
-│   │   ├── collector.md               # 采集 Agent 角色定义
-│   │   ├── analyzer.md                # 分析 Agent 角色定义
-│   │   └── organizer.md               # 整理 Agent 角色定义
 │   ├── skills/
-│   │   ├── github-trending/SKILL.md   # GitHub Trending 采集技能
-│   │   ├── hackernews/SKILL.md        # Hacker News 采集技能
-│   │   ├── arxiv/SKILL.md             # arXiv 论文采集技能
-│   │   ├── tech-summary/SKILL.md      # 技术摘要生成技能
-│   │   ├── markdown-writer/SKILL.md   # Markdown 写入技能
-│   │   ├── metrics-tracker/SKILL.md   # Pipeline 指标记录技能
-│   │   ├── grill-me/SKILL.md          # 设计压力测试技能
-│   │   ├── write-a-skill/SKILL.md     # 技能创建技能
-│   │   └── to-issues/SKILL.md         # 计划拆解为 issue 技能
-│   └── plugins/
-│       └── validate.ts                # OpenCode 写入钩子：自动校验 + 质量评分
-├── pipeline/                          # 核心流水线代码
-│   ├── __init__.py
-│   ├── pipeline.py                    # 四步流水线主控
-│   ├── rss_reader.py                  # RSS 采集（feedparser）
-│   ├── model_client.py                # 多模型 LLM 客户端
+│   └── plugins/validate.ts            # OpenCode 写入钩子：自动校验 + 质量评分
+├── workflows/
+│   ├── graph.py                       # LangGraph 图定义与 CLI
+│   ├── state.py                       # 工作流状态定义
+│   ├── planner.py                     # 节点 ① 动态规划策略
+│   ├── collector.py                   # 节点 ② GitHub + RSS 采集
+│   ├── analyzer.py                    # 节点 ③ 单条 LLM 分析
+│   ├── reviewer.py                    # 节点 ④ 五维加权审核
+│   ├── reviser.py                     # 节点 ⑤ 根据反馈定向修订
+│   ├── organizer.py                   # 节点 ⑥ 整理入库
+│   ├── human_flag.py                  # 节点 ⑦ 人工介入终点
+│   ├── model_client.py                # OpenAI-compatible LLM 客户端
 │   └── rss_sources.yaml               # RSS 源配置
-├── scripts/                           # 兼容旧路径的别名入口
-│   ├── __init__.py
-│   ├── pipeline.py                    # → pipeline/pipeline.py
-│   ├── rss_reader.py                  # → pipeline/rss_reader.py
-│   └── model_client.py                # → pipeline/model_client.py
-├── mcp_knowledge_server.py            # MCP Server：知识库搜索（JSON-RPC 2.0 over stdio）
-├── opencode.json                      # OpenCode MCP 配置
-├── .claude/mcp.json                   # Claude Code MCP 配置
-├── .codex/mcp.json                    # Codex MCP 配置
-├── hooks/                             # 质量门控脚本
+├── patterns/
+│   ├── router.py                      # Router 模式示例
+│   └── supervisor.py                  # Supervisor 模式示例
+├── hooks/
 │   ├── validate_json.py               # JSON Schema 校验
 │   └── check_quality.py               # 五维度质量评分
 ├── tests/                             # pytest 测试套件
+├── notebooks/
+│   └── langgraph_workflow_demo.ipynb  # 新工作流演示 notebook
 ├── spec/
-│   ├── requirements.md                # 需求规格
-│   ├── tech-spec.md                   # 技术规格
-│   ├── keywords-v0.1.txt              # 关键词过滤词表
-│   └── github-trending-skill-sepc.md  # GitHub Trending 技能规格
-└── knowledge/
-    ├── raw/                           # 原始采集数据（JSON）
-    └── articles/                      # 整理后的知识条目（JSON）
+│   ├── requirements.md
+│   ├── tech-spec.md
+│   ├── hooks-spec.md
+│   ├── testing-strategy.md
+│   ├── upgrade-0.4.0-to-0.5.0.md
+│   └── keywords-v0.1.txt
+├── knowledge/
+│   ├── raw/
+│   ├── articles/
+│   └── pending_review/
+├── mcp_knowledge_server.py            # MCP Server：知识库搜索
+├── opencode.json
+├── .claude/mcp.json
+└── .codex/mcp.json
 ```
 
 ## 编码规范
 
 ### 文件命名
-- 原始数据：`knowledge/raw/{source}-{YYYY-MM-DD}.json`
-  - 例：`knowledge/raw/github-trending-2026-05-01.json`
-  - 例：`knowledge/raw/hackernews-top-2026-05-01.json`
-  - 例：`knowledge/raw/arxiv-csai-2026-05-01.json`
-- 知识条目：`knowledge/articles/{YYYY-MM-DD}-{source}-{slug}.json`
-  - 例：`knowledge/articles/2026-05-01-github-trending-library-skills.json`
+- 知识条目：`knowledge/articles/{source_slug}-{YYYYMMDD}-{NNN}.json`
+  - 例：`knowledge/articles/github-20260506-001.json`
+  - 例：`knowledge/articles/rss-openai-blog-20260506-001.json`
 - 索引文件：`knowledge/articles/index.json`
-- **版本库**：`knowledge/raw/` 和 `knowledge/articles/` 中的 `*.json` 由每日 GitHub Actions 自动提交至仓库。要对格式与质量脚本做手动校验，可使用 `tests/fixtures/articles/example-published.json`。
+- 待人工审核：`knowledge/pending_review/pending-{YYYYMMDD-HHMMSS}.json`
+- **版本库**：`knowledge/raw/` 与 `knowledge/articles/` 中的 JSON 由自动流程产出；格式与质量手动校验使用 `tests/fixtures/articles/example-published.json`。
 
-### JSON 格式(知识条目格式)
+### JSON 格式
 - 使用 2 空格缩进
-- 日期格式：ISO 8601（`YYYY-MM-DDTHH:mm:ssZ`）
+- 日期格式：ISO 8601
 - 字符编码：UTF-8
-- 知识条目必须包含的字段：`id`, `title`, `source`, `source_url`, `collected_at`, `summary`, `tags`, `score`
-- 知识条目常见附加字段：`analyzed_at`, `score_breakdown`, `status`, `stars`, `forks`, `language`, `description`, `topics`, `audience`
+- 文章必须满足 hook 约束：`id`, `title`, `source_url`, `summary`, `tags`, `status`
+- 常见附加字段：`source`, `url`, `collected_at`, `score`, `audience`, `relevance_score`, `category`, `key_insight`
 
 ### 语言约定
 - 代码、JSON 键名、文件名：英文
 - 摘要、分析、注释：中文
-- 标签（tags）：英文小写，用连字符分隔（如 `large-language-model`）
+- 标签：英文小写，优先使用质量脚本认可的标准标签
 
 ## 工作流规则
 
-### 四步流水线
+### LangGraph 节点图
 
-```
-[Collector]  ──采集──→ knowledge/raw/
-                           │
-[Analyzer]   ──分析──→ knowledge/raw/ (enriched)
-                           │
-[Organizer]  ──整理──→ knowledge/articles/
-                           │
-[Save]       ──保存──→ knowledge/articles/*.json
-                           │
-[Hook]       ──校验──→ JSON 格式 + 质量评分（>= B 级）
+```text
+plan -> collect -> analyze -> review
+                             | pass -> organize -> END
+                             | fail & iteration < max -> revise -> review
+                             | fail & iteration >= max -> human_flag -> END
 ```
 
 ### Agent 协作规则
+1. **单向数据流**：Planner → Collector → Analyzer → Reviewer → Reviser/Organizer/HumanFlag
+2. **职责隔离**：每个节点只修改自己负责的状态字段
+3. **幂等性**：Organizer 以 `source_url` 去重，避免重复文章
+4. **质量门控**：Reviewer 用代码重算五维加权分；未通过且达到上限则进入 `pending_review/`
+5. **可追溯**：每个条目保留 `source_url` 与 `collected_at`
+6. **自动校验**：写入 `knowledge/articles/*.json` 时自动运行 `validate_json.py` + `check_quality.py`
 
-1. **单向数据流**：Collector → Analyzer → Organizer → Save，不可反向
-2. **职责隔离**：每个 Agent 只操作自己权限范围内的文件
-3. **幂等性**：重复运行同一天的采集不应产生重复条目
-4. **质量门控**：Analyzer 评分低于 0.6 的条目，Organizer 应丢弃；Hook 评分低于 B 级会发出警告
-5. **可追溯**：每个条目保留 `source_url` 和 `collected_at` 用于溯源
-6. **自动校验**：通过 OpenCode 插件，每次写入 `knowledge/articles/*.json` 时自动运行 `validate_json.py` + `check_quality.py`
-
-### Agent 调用方式
-
-在 OpenCode 中使用 `@` 语法调用特定 Agent：
-
-```
-@collector 采集今天的 GitHub Trending 数据
-@analyzer 分析 knowledge/raw/github-trending-2026-05-01.json
-@organizer 整理今天所有已分析的原始数据
-```
-
-也可以直接运行流水线：
-
-```bash
-python3 pipeline/pipeline.py --sources github,rss --limit 20
-```
-
-### 错误处理
-- 网络请求失败时，记录错误并跳过该条目，不中断整体流程
-- API 限流时，等待后重试，最多 3 次
-- 数据格式异常时，写入 `knowledge/raw/errors-{date}.json` 供人工排查
-
-## CLI 命令参考
+### CLI 命令
 
 所有命令均需在项目根目录执行，并确保 `.env` 已配置。
 
-### 流水线主控 (`pipeline/pipeline.py`)
-
 ```bash
-# 完整四步流水线（采集 + 分析 + 整理 + 保存）
-python3 pipeline/pipeline.py --sources github,rss --limit 20
+# 完整 LangGraph 工作流
+uv run python -m workflows.graph --sources github,rss --limit 20
 
-# 仅采集 GitHub，不调用 LLM
-python3 pipeline/pipeline.py --sources github --limit 5 --dry-run
+# 仅采集 GitHub，跳过落盘
+uv run python -m workflows.graph --sources github --limit 5 --dry-run
 
-# 只执行 Step 1 和 Step 2（采集 + 分析）
-python3 pipeline/pipeline.py --sources github --limit 10 --step 1 --step 2
-
-# 切换 LLM 提供商（默认 qwen，覆盖环境变量 LLM_PROVIDER）
-python3 pipeline/pipeline.py --sources rss --limit 5 --provider openai
+# 切换 LLM 提供商
+uv run python -m workflows.graph --sources rss --limit 5 --provider openai
 
 # 显示详细日志
-python3 pipeline/pipeline.py --sources github --limit 5 --verbose
+uv run python -m workflows.graph --sources github,rss --limit 10 --verbose
+
+# 在自动化中将 human_flag 视为失败
+uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag
+
+# Non-LLM 测试
+uv run pytest -q -m non_llm
+
+# Real-LLM 端到端验证
+uv run pytest -q -m llm_e2e
 ```
 
-### RSS 调试 (`pipeline/rss_reader.py`)
+### 错误处理
+- 网络请求失败时记录错误并继续，不中断整批流程
+- LLM 调用失败时节点降级：Analyzer 生成低分草稿，Reviewer 自动放行避免阻塞，Reviser 保留原结果
+- 审核循环超过上限时，写入 `knowledge/pending_review/`，不污染 `knowledge/articles/`
 
-```bash
-# 独立运行 RSS 采集，查看前 5 条
-python3 pipeline/rss_reader.py --limit 10
-
-# 采集并保存到文件
-python3 pipeline/rss_reader.py --limit 20 --output /tmp/rss_debug.json
-```
-
-### LLM 客户端测试 (`pipeline/model_client.py`)
-
-```bash
-# 测试当前配置的 LLM 提供商连通性
-python3 pipeline/model_client.py
-# 输出示例: 回复: AI Agent 是一种能够自主感知环境、做出决策并执行动作的智能系统。
-```
-
-### 质量门控脚本 (`hooks/`)
-
-```bash
-# 使用仓库内示例条目（无本地采集数据时）
-python3 hooks/validate_json.py tests/fixtures/articles/example-published.json
-python3 hooks/check_quality.py tests/fixtures/articles/example-published.json
-
-# 有本地流水线产出时
-python3 hooks/validate_json.py knowledge/articles/*.json
-python3 hooks/check_quality.py knowledge/articles/*.json
-```
-
-### 测试
-
-```bash
-# 运行全部测试（推荐）
-uv run pytest -q
-
-# 运行指定测试文件
-uv run pytest tests/test_model_client.py -q
-
-# 显示详细输出
-uv run pytest -v
-```
-
-### MCP Server (`mcp_knowledge_server.py`)
-
-零外部依赖的 MCP Server，让 AI 工具可以直接搜索和查询本地知识库。
-
-**提供的工具**：
-
-| 工具名 | 参数 | 功能 |
-|--------|------|------|
-| `search_articles` | `keyword` (必填), `limit` (可选，默认 5) | 按关键词搜索文章标题和摘要 |
-| `get_article` | `article_id` (必填) | 按 ID 获取文章完整信息 |
-| `knowledge_stats` | 无 | 返回文章总数、来源分布、热门标签 |
-
-**协议**：JSON-RPC 2.0 over stdio，支持 MCP `initialize`、`tools/list`、`tools/call` 方法。
-
-**三种 AI 工具的 MCP 配置文件**：
-
-| 文件 | 适用工具 |
-|------|----------|
-| `opencode.json` | OpenCode（`"type":"local"` + array `command` 格式） |
-| `.claude/mcp.json` | Claude Code（`mcpServers` 格式） |
-| `.codex/mcp.json` | Codex（`mcpServers` 格式） |
-
-重启对应工具后自动加载，即可在对话中调用这三个知识库工具。
+## 自动化规则
+- GitHub Actions 每日执行 `uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag`
+- 自动化环境中，`HumanFlag` 是失败信号，不是正常产物
+- 定时工作流只提交 `knowledge/articles/` 和 `knowledge/raw/`，不提交 `knowledge/pending_review/`
+- 测试工作流与生产采集工作流分离：真实 LLM 验证使用独立 `.github/workflows/llm-e2e.yml`
 
 ## 技术栈
-- **运行时**：Python 3.12+ (uv 管理依赖)
-- **流水线框架**：纯 Python 四步脚本（pipeline/）
-- **数据源**：GitHub Search API v3、RSS（feedparser）、Hacker News API (Algolia)、arXiv API
-- **LLM 客户端**：DeepSeek / Qwen (DashScope) / OpenAI，统一 OpenAI-compatible 接口
+- **运行时**：Python 3.12+（uv 管理依赖）
+- **工作流框架**：LangGraph
+- **数据源**：GitHub Search API v3、RSS（feedparser）
+- **LLM 客户端**：DeepSeek / Qwen / OpenAI，统一 OpenAI-compatible HTTP 接口
 - **输出格式**：JSON
-- **版本管理**：Git
 - **测试**：pytest
 - **Hooks**：OpenCode TypeScript 插件 + Python 校验脚本
 - **MCP**：`mcp_knowledge_server.py`（Python stdlib only）
+
+## 实施约束
+- `pipeline/` 与 `scripts/` 已移除，不支持旧入口
+- `TODO.md` 可能包含用户手工编辑，除非任务明确要求，不要顺手改动
+- `patterns/` 是演示代码，不是生产入口，但应保持可导入

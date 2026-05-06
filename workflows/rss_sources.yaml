@@ -1,8 +1,7 @@
 # RSS 数据源配置
-# 用于 pipeline.py 自动采集 AI 技术内容
+# 用于 LangGraph Collector 节点自动采集 AI 技术内容
 
 sources:
-  # --- 综合技术 ---
   - name: "Hacker News (Best)"
     url: "https://hnrss.org/best?q=AI+OR+LLM+OR+agent"
     category: "general"
@@ -18,7 +17,6 @@ sources:
     category: "open-source"
     enabled: true
 
-  # --- AI 研究 ---
   - name: "arXiv cs.AI"
     url: "https://rss.arxiv.org/rss/cs.AI"
     category: "research"
@@ -27,9 +25,8 @@ sources:
   - name: "arXiv cs.CL"
     url: "https://rss.arxiv.org/rss/cs.CL"
     category: "research"
-    enabled: false  # 量太大，按需开启
+    enabled: false
 
-  # --- 公司博客 ---
   - name: "OpenAI Blog"
     url: "https://openai.com/blog/rss.xml"
     category: "industry"
@@ -45,7 +42,6 @@ sources:
     category: "industry"
     enabled: true
 
-  # --- 开发者社区 ---
   - name: "Hugging Face Blog"
     url: "https://huggingface.co/blog/feed.xml"
     category: "open-source"
@@ -56,13 +52,12 @@ sources:
     category: "framework"
     enabled: true
 
-  # --- 中文社区 ---
   - name: "机器之心"
     url: "https://www.jiqizhixin.com/rss"
     category: "chinese"
-    enabled: false  # 需确认 RSS 可用性
+    enabled: false
 
   - name: "量子位"
     url: "https://www.qbitai.com/feed"
     category: "chinese"
-    enabled: false  # 需确认 RSS 可用性
+    enabled: false
