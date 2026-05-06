@@ -132,7 +132,7 @@ def update_index(articles: list[dict[str, Any]], articles_dir: Path = ARTICLES_D
 
 def organize_node(state: KBState) -> dict[str, Any]:
     plan = state.get("plan", {})
-    articles_dir = Path(state.get("articles_dir", ARTICLES_DIR))
+    articles_dir = Path(state.get("articles_dir") or ARTICLES_DIR)
     articles = build_articles(
         analyses=state.get("analyses", []),
         relevance_threshold=float(plan.get("relevance_threshold", 0.6)),

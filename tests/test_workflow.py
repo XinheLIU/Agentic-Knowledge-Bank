@@ -13,7 +13,9 @@ from workflows.graph import (
     route_after_review,
 )
 from workflows.human_flag import write_pending_review
+from workflows.human_flag import human_flag_node
 from workflows.organizer import build_articles, save_articles
+from workflows.organizer import organize_node
 from workflows.planner import plan_strategy
 from workflows.reviewer import calculate_weighted_score
 
@@ -151,6 +153,29 @@ def test_write_pending_review_persists_outside_articles(tmp_path):
     assert path.exists()
     data = json.loads(path.read_text(encoding="utf-8"))
     assert data["iterations_used"] == 2
+
+
+def test_organize_node_falls_back_to_default_articles_dir_when_state_value_is_none():
+    result = organize_node({
+        "plan": {"relevance_threshold": 0.5},
+        "analyses": [],
+        "articles_dir": None,
+        "dry_run": True,
+        "cost_tracker": {},
+    })
+    assert result["articles"] == []
+
+
+def test_human_flag_node_falls_back_to_default_pending_dir_when_state_value_is_none():
+    result = human_flag_node({
+        "plan": {"max_iterations": 2},
+        "iteration": 2,
+        "review_feedback": "needs work",
+        "analyses": [],
+        "pending_review_dir": None,
+        "dry_run": True,
+    })
+    assert result["needs_human_review"] is True
 
 
 def test_enforce_run_policies_fails_on_human_flag():

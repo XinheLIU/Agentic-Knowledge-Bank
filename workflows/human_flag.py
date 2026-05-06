@@ -26,7 +26,7 @@ def write_pending_review(
 
 def human_flag_node(state: KBState) -> dict[str, bool]:
     plan = state.get("plan", {})
-    pending_review_dir = Path(state.get("pending_review_dir", PENDING_REVIEW_DIR))
+    pending_review_dir = Path(state.get("pending_review_dir") or PENDING_REVIEW_DIR)
     payload = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "iterations_used": state.get("iteration", 0),
