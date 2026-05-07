@@ -52,9 +52,10 @@ jobs:
 
       - name: Validate collected articles
         run: |
-          if ls knowledge/articles/*.json 1>/dev/null 2>&1; then
-            uv run python hooks/validate_json.py knowledge/articles/*.json
-            uv run python hooks/check_quality.py knowledge/articles/*.json
+          article_files="$(find knowledge/articles -maxdepth 1 -type f -name '*.json' ! -name 'index.json' | sort)"
+          if [ -n "$article_files" ]; then
+            uv run python hooks/validate_json.py $article_files
+            uv run python hooks/check_quality.py $article_files
           else
             echo "No articles to validate"
           fi
