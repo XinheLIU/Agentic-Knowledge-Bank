@@ -142,5 +142,37 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
     "category": "evaluation",
     "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-001",
+    "title": "META Superintelligence Lab Presents: ProgramBench: Can SOTA AI Recreate Real Executable Programs(ffmpeg, SQLite, ripgrep) From Scratch Without The Internet?",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-002",
+    "title": "Dataset of 150k+ stool images and not sure how to fully use it [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vy2i/dataset_of_150k_stool_images_and_not_sure_how_to/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-003",
+    "title": "Visual Perceptual to Conceptual First-Order Rule Learning Networks [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-004",
+    "title": "NeurIPS Submission Number [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4oykt/neurips_submission_number_d/",
+    "category": "other",
+    "relevance_score": 0.9
   }
 ]

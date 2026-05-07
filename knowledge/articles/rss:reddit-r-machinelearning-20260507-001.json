@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-001",
+  "title": "META Superintelligence Lab Presents: ProgramBench: Can SOTA AI Recreate Real Executable Programs(ffmpeg, SQLite, ripgrep) From Scratch Without The Internet?",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T10:28:44.632102+00:00",
+  "collected_at": "2026-05-07T10:28:44.632102+00:00",
+  "summary": "ProgramBench 是 META 超智能实验室推出的新型基准测试，评估当前最先进AI模型（如LLM）能否从零开始、离线复现真实可执行程序（如ffmpeg、SQLite、ripgrep），聚焦代码生成能力与系统级理解，不依赖互联网检索。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "该基准将程序正确性、可编译性、可执行性及功能等价性作为硬性指标，标志着AI代码能力评估正从片段生成迈向端到端系统构建。",
+  "updated_at": "2026-05-07T10:31:49.837190+00:00"
+}
