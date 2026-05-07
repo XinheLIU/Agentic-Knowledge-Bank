@@ -1,0 +1,146 @@
+[
+  {
+    "id": "github-20260507-001",
+    "title": "infiniflow/ragflow",
+    "source": "github",
+    "source_url": "https://github.com/infiniflow/ragflow",
+    "category": "rag",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260507-002",
+    "title": "patchy631/ai-engineering-hub",
+    "source": "github",
+    "source_url": "https://github.com/patchy631/ai-engineering-hub",
+    "category": "llm|agent|rag",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260507-003",
+    "title": "Three Inverse Laws of AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://susam.net/inverse-laws-of-robotics.html",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260507-004",
+    "title": "AI didn't delete your database, you did",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260507-005",
+    "title": "When everyone has AI and the company still learns nothing",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260507-006",
+    "title": "Google Chrome silently installs a 4 GB AI model on your device without consent",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:hacker-news-best-20260507-007",
+    "title": "Train Your Own LLM from Scratch",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://github.com/angelos-p/llm-from-scratch",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-008",
+    "title": "Stop letting LLMs edit your .bib [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5anla/stop_letting_llms_edit_your_bib_d/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-009",
+    "title": "Weights & Biases New Master Service Agreement Questions [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-010",
+    "title": "Running scope enforcement on every agent action in production — what I'm seeing after launch [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5whgk/running_scope_enforcement_on_every_agent_action/",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-011",
+    "title": "Exploring Black‑Box Optimization [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5rfrk/exploring_blackbox_optimization_r/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-012",
+    "title": "NeurIPS 2026 AC-Pilot, how much would you trust this? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t59w5e/neurips_2026_acpilot_how_much_would_you_trust/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-013",
+    "title": "Transformers with Selective Access to Early Representations [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4z3af/transformers_with_selective_access_to_early/",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-014",
+    "title": "Struggling to reproduce paper results before improving them — stuck below reported accuracy [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4dkew/struggling_to_reproduce_paper_results_before/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-015",
+    "title": "Production AI very different from the demos [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4mzm3/production_ai_very_different_from_the_demos_d/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-016",
+    "title": "Model automatically developed by the AIBuildAI Agent ranked among top 5.7% out of 3,219 human teams in the Kaggle TGS Salt Identification Challenge [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5i56v/model_automatically_developed_by_the_aibuildai/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-017",
+    "title": "Competition - League of Robot Runners 2026: Multi-robot coordination under uncertainty [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4sjr7/competition_league_of_robot_runners_2026/",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260507-018",
+    "title": "Question about PLS-DA hyperparameter tuning [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  }
+]

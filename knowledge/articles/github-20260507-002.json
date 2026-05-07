@@ -1,0 +1,23 @@
+{
+  "id": "github-20260507-002",
+  "title": "patchy631/ai-engineering-hub",
+  "source": "github",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub",
+  "url": "https://github.com/patchy631/ai-engineering-hub",
+  "author": "patchy631",
+  "published_at": "2026-05-05T23:11:24Z",
+  "collected_at": "2026-05-07T02:28:04.837056+00:00",
+  "summary": "提供LLM、RAG及AI智能体在真实场景中落地应用的深度教程，聚焦工程实践与系统集成，适合希望从理论迈向生产部署的开发者。",
+  "tags": [
+    "llm",
+    "agent",
+    "rag"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm|agent|rag",
+  "key_insight": "将前沿AI技术（如RAG、Agent）与可复现的工程案例结合，填补学术与工业落地间的实践鸿沟。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-016",
+  "title": "Model automatically developed by the AIBuildAI Agent ranked among top 5.7% out of 3,219 human teams in the Kaggle TGS Salt Identification Challenge [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5i56v/model_automatically_developed_by_the_aibuildai/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t5i56v/model_automatically_developed_by_the_aibuildai/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152787+00:00",
+  "collected_at": "2026-05-07T02:28:09.152787+00:00",
+  "summary": "AIBuildAI Agent全自动构建的模型在Kaggle TGS盐体识别挑战赛中击败94.3%的人类团队（3219支），证明LLM驱动的AI-Agent可在真实图像分割任务中实现端到端自动化建模与调优。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "AI-Agent已具备在复杂视觉竞赛中替代人类完成数据预处理、架构搜索、训练优化和提交部署全流程的能力。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

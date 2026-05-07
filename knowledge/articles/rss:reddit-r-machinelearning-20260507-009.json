@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-009",
+  "title": "Weights & Biases New Master Service Agreement Questions [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152724+00:00",
+  "collected_at": "2026-05-07T02:28:09.152724+00:00",
+  "summary": "Weights & Biases 更新服务协议，扩大对用户数据（含模型、日志、可视化结果）的使用权，允许用于AI功能开发与训练，且未明确提供免费/学术用户以外的数据使用限制或opt-out机制，引发IP与数据安全担忧。",
+  "tags": [
+    "security",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "security",
+  "key_insight": "协议删除原属客户独占的数据所有权声明，并将客户数据授权范围扩展至AI训练与新产品开发，削弱用户对ML研究产出的控制权。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

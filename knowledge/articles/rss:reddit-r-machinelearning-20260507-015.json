@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-015",
+  "title": "Production AI very different from the demos [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4mzm3/production_ai_very_different_from_the_demos_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t4mzm3/production_ai_very_different_from_the_demos_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152781+00:00",
+  "collected_at": "2026-05-07T02:28:09.152781+00:00",
+  "summary": "生产环境AI成本远超演示阶段，主因流量增长、用户提问更长更模糊，导致上下文检索使输入token翻倍，且缺乏细粒度成本归因能力。",
+  "tags": [
+    "llm",
+    "rag",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "AI产品化核心挑战不在模型性能，而在可观测性、成本可归因性与真实用户行为驱动的规模效应。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-018",
+  "title": "Question about PLS-DA hyperparameter tuning [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152800+00:00",
+  "collected_at": "2026-05-07T02:28:09.152800+00:00",
+  "summary": "该帖探讨PLS-DA（偏最小二乘判别分析）在R中进行超参数调优时出现的反直觉现象：增加潜变量组件数后分类错误率反而上升，涉及模型过拟合、稀疏性约束与评估偏差等核心问题。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "PLS-DA的错误率不随组件数单调下降，因潜变量引入噪声、类别可分性饱和或交叉验证策略不当导致过拟合。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

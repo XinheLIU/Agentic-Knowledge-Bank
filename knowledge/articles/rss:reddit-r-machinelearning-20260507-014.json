@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-014",
+  "title": "Struggling to reproduce paper results before improving them — stuck below reported accuracy [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4dkew/struggling_to_reproduce_paper_results_before/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t4dkew/struggling_to_reproduce_paper_results_before/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152774+00:00",
+  "collected_at": "2026-05-07T02:28:09.152774+00:00",
+  "summary": "该帖反映AI研究中普遍存在的论文复现难题：因实现细节缺失、超参模糊或作者不响应，导致无法复现基线结果，进而阻碍后续改进工作。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "复现失败往往不是能力问题，而是学术实践不透明与可复现性基础设施缺失的系统性问题。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

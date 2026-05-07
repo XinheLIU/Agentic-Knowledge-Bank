@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260507-007",
+  "title": "Train Your Own LLM from Scratch",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://github.com/angelos-p/llm-from-scratch",
+  "url": "https://github.com/angelos-p/llm-from-scratch",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-07T02:28:08.365975+00:00",
+  "collected_at": "2026-05-07T02:28:08.365975+00:00",
+  "summary": "提供从零开始训练小型语言模型（LLM）的完整实践指南，涵盖数据预处理、模型架构实现（Transformer）、训练循环与评估，适合动手学习LLM底层原理。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "llm",
+  "key_insight": "真正的‘from scratch’意味着不依赖Hugging Face等高级封装，而是用PyTorch逐层构建并训练可运行的LLM。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

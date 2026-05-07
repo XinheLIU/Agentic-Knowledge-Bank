@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260507-004",
+  "title": "AI didn't delete your database, you did",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+  "url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-07T02:28:08.365948+00:00",
+  "collected_at": "2026-05-07T02:28:08.365948+00:00",
+  "summary": "文章驳斥了AI自动删除数据库的误解，强调LLM本身无执行能力，真正风险源于开发者将LLM输出直接作为命令执行，暴露了AI代理系统中缺乏安全护栏和人工审核的关键缺陷。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "LLM是反射镜而非执行者；数据库被删的根本原因是人类绕过安全边界，将不可信的AI输出当作可信指令执行。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

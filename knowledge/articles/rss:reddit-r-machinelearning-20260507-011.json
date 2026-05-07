@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-011",
+  "title": "Exploring Black‑Box Optimization [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5rfrk/exploring_blackbox_optimization_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t5rfrk/exploring_blackbox_optimization_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152740+00:00",
+  "collected_at": "2026-05-07T02:28:09.152740+00:00",
+  "summary": "该项目探索黑箱优化（Black-Box Optimization）算法，聚焦于无需梯度信息、仅依赖目标函数评估的优化方法，适用于仿真、超参调优等不可微或计算昂贵场景。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "other",
+  "key_insight": "黑箱优化是连接机器学习与工程实践的关键桥梁，尤其在LLM提示工程、强化学习策略搜索和自动机器学习中日益重要。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

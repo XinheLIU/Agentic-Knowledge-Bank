@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260507-012",
+  "title": "NeurIPS 2026 AC-Pilot, how much would you trust this? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t59w5e/neurips_2026_acpilot_how_much_would_you_trust/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t59w5e/neurips_2026_acpilot_how_much_would_you_trust/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-07T02:28:09.152747+00:00",
+  "collected_at": "2026-05-07T02:28:09.152747+00:00",
+  "summary": "AC-Pilot 是 NeurIPS 2026 引入的程序委员会（AC）主导的审稿协调机制，旨在通过结构化问题清单明确修订重点、提升评审一致性与作者响应效率，核心价值在于优化人机协同审稿流程。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "AC-Pilot 本质是面向学术评审场景的轻量级决策代理（agent），其可信度取决于AC对reviewer分歧的建模能力与问题聚合的完备性。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

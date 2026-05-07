@@ -1,0 +1,23 @@
+{
+  "id": "rss:hacker-news-best-20260507-006",
+  "title": "Google Chrome silently installs a 4 GB AI model on your device without consent",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+  "url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-07T02:28:08.365967+00:00",
+  "collected_at": "2026-05-07T02:28:08.365967+00:00",
+  "summary": "Google Chrome 在用户不知情的情况下静默下载并安装约4 GB的本地AI模型（Nano LLM），用于增强搜索、翻译等端侧功能，引发隐私与磁盘空间占用争议。",
+  "tags": [
+    "llm",
+    "deployment",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "deployment",
+  "key_insight": "静默部署大型本地AI模型凸显AI时代客户端软件在透明度、用户控制权与资源管理上的根本性缺失。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}

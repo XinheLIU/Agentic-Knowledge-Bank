@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260507-003",
+  "title": "Three Inverse Laws of AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://susam.net/inverse-laws-of-robotics.html",
+  "url": "https://susam.net/inverse-laws-of-robotics.html",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-07T02:28:08.365920+00:00",
+  "collected_at": "2026-05-07T02:28:08.365920+00:00",
+  "summary": "文章提出三条‘AI逆定律’，以幽默反讽方式揭示当前AI系统（尤其LLM与智能体）的现实缺陷：能力越强越不可控、越拟人越不可信、越自主越不可靠，警示开发者警惕过度拟人化与盲目信任。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "agent",
+  "key_insight": "AI系统的可靠性与其表面智能程度常呈负相关，拟人化表象掩盖了底层确定性缺失与可解释性危机。",
+  "updated_at": "2026-05-07T02:31:38.153381+00:00"
+}
