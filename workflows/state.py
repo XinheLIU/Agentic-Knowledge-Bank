@@ -41,5 +41,5 @@ class KBState(TypedDict, total=False):
     iteration: int
     needs_human_review: bool
     cost_tracker: CostTracker
-    articles_dir: Path
-    pending_review_dir: Path
+    articles_dir: Path | None
+    pending_review_dir: Path | None

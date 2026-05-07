@@ -18,6 +18,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Show workflow revision
+        run: |
+          echo "github.ref=${GITHUB_REF}"
+          echo "github.sha=${GITHUB_SHA}"
+          echo "checked_out_sha=$(git rev-parse HEAD)"
+          grep -n 'articles_dir = Path' workflows/organizer.py
 
       - name: Setup uv
         uses: astral-sh/setup-uv@v5
