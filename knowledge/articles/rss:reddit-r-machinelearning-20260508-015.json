@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-015",
+  "title": "ECCV Stupid Reviewer Behavior (Any AC here?) [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6ybtk/eccv_stupid_reviewer_behavior_any_ac_here_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6ybtk/eccv_stupid_reviewer_behavior_any_ac_here_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283453+00:00",
+  "collected_at": "2026-05-08T09:44:17.283453+00:00",
+  "summary": "该帖反映计算机视觉顶会ECCV审稿流程中评审意见不一致、评分逻辑模糊的问题，尤其关注低分评审在rebuttal后是否可能大幅上调评分，揭示学术评价体系中主观性与透明度的矛盾。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "评审分数变动缺乏明确规则和可追溯依据，暴露了AI领域会议同行评议机制在标准化与公平性上的结构性缺陷。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

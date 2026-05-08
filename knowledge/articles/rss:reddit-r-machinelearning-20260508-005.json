@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-005",
+  "title": "Disillusionment with mechanistic interpretability research [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6zdj6/disillusionment_with_mechanistic_interpretability/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6zdj6/disillusionment_with_mechanistic_interpretability/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283365+00:00",
+  "collected_at": "2026-05-08T09:44:17.283365+00:00",
+  "summary": "该帖质疑Anthropic近期‘自然语言自动编码器’研究偏离机械可解释性初衷，指出其黑箱性、缺乏基线对比、存在不可控的幻觉解释，反映领域正从可解释性转向对齐与控制优先。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "interpretability",
+  "key_insight": "机械可解释性正面临方法论异化风险：以‘可读性’替代‘可验证性’，用语言表征掩盖内部机制缺失。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

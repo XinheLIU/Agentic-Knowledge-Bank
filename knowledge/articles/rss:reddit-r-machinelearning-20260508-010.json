@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-010",
+  "title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283405+00:00",
+  "collected_at": "2026-05-08T09:44:17.283405+00:00",
+  "summary": "分析PyTorch复现TensorFlow论文性能差距的典型跨框架问题，聚焦Gabor滤波实现、归一化、数据预处理、优化器行为等关键差异点。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "4个百分点的性能差距极可能源于Gabor滤波器零均值/L2归一化实现不一致、灰度转换系数差异、池化/填充边界处理偏差，或验证集/测试集划分与评估协议未对齐。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

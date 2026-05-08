@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260508-002",
+  "title": "AI slop is killing online communities",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
+  "url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-08T09:44:16.524278+00:00",
+  "collected_at": "2026-05-08T09:44:16.524278+00:00",
+  "summary": "文章批判当前LLM生成的低质、冗余、无上下文内容（'AI slop'）正侵蚀在线社区的信息质量与用户信任，导致真实讨论被淹没、社区活力下降，呼吁平台加强内容审核与人机协同机制。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI生成内容的泛滥正在从信息生态层面破坏社区的可信度与可持续性，而非仅是技术性能问题。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

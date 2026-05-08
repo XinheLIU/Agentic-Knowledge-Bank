@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-008",
+  "title": "Quantization and Fast Inference (MEAP) - How much performance are you actually getting from quantization in production? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6oa4e/quantization_and_fast_inference_meap_how_much/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6oa4e/quantization_and_fast_inference_meap_how_much/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283391+00:00",
+  "collected_at": "2026-05-08T09:44:17.283391+00:00",
+  "summary": "本书聚焦量化与快速推理的生产实践，深入探讨PTQ/QAT、激活异常值、KV缓存压力、硬件适配等真实部署痛点，平衡理论推导与工程落地，助力模型降本增效。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "量化的真实收益不取决于理论精度，而取决于对硬件特性、内存带宽和实际工作负载（如LLM中activation outliers）的深度建模与协同优化。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260508-003",
+  "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
+  "url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-08T09:44:16.524305+00:00",
+  "collected_at": "2026-05-08T09:44:16.524305+00:00",
+  "summary": "AI芯片需求激增导致晶圆产能向H100/MI300等AI加速器倾斜，主板厂商（如华硕、技嘉）2025年出货量预计下滑超25%，凸显AI算力扩张对传统PC供应链的结构性挤压。",
+  "tags": [
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "deployment",
+  "key_insight": "AI算力军备竞赛正通过半导体制造资源再分配，重塑底层硬件产业格局。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

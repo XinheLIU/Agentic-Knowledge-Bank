@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-009",
+  "title": "People Interested in Continual Learning Research[R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283398+00:00",
+  "collected_at": "2026-05-08T09:44:17.283398+00:00",
+  "summary": "该帖聚焦持续学习（Continual Learning）研究，强调AI系统需具备动态适应新任务、避免灾难性遗忘的能力，对构建真正自主演化的智能体具有基础性价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "beginner",
+  "relevance_score": 0.92,
+  "category": "agent",
+  "key_insight": "持续学习是通往通用人工智能的关键能力之一，其核心挑战在于平衡稳定性（保留旧知识）与可塑性（获取新知识）。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

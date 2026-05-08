@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-011",
+  "title": "What should a PyTorch training end-of-run performance summary show? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283412+00:00",
+  "collected_at": "2026-05-08T09:44:17.283412+00:00",
+  "summary": "探讨PyTorch训练结束时轻量级性能摘要应包含的关键指标，如步时间分解、计算/IO/等待瓶颈识别、多卡负载均衡性及显存趋势，旨在快速定位性能瓶颈，无需依赖重型profiling工具。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "端到端训练的可观察性不应依赖事后深度分析，而需在每次运行后自动生成紧凑、语义明确的瓶颈诊断摘要。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

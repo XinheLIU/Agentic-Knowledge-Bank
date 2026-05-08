@@ -1,0 +1,22 @@
+{
+  "id": "github-20260508-001",
+  "title": "earendil-works/pi",
+  "source": "github",
+  "source_url": "https://github.com/earendil-works/pi",
+  "url": "https://github.com/earendil-works/pi",
+  "author": "earendil-works",
+  "published_at": "2026-05-07T22:56:19Z",
+  "collected_at": "2026-05-08T09:44:14.892262+00:00",
+  "summary": "earendil-works/pi 是一个面向 AI 工程师的轻量级 AI Agent 工具包，提供统一 LLM API 抽象、命令行编码代理、TUI/Web UI 库、Slack 集成及 vLLM 部署支持，显著降低多模型、多端交互与生产集成的开发复杂度。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "通过抽象层统一异构 LLM 接口与交互形态（CLI/TUI/Web/Slack），使 Agent 开发聚焦于逻辑而非适配。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

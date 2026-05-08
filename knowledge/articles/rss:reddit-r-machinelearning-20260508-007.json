@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-007",
+  "title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283381+00:00",
+  "collected_at": "2026-05-08T09:44:17.283381+00:00",
+  "summary": "该帖反映学术评审中因双盲机制导致的自我引用困境：审稿人要求作者对比其本人已公开但未署名的预印本，暴露了当前AI会议评审流程在版本追踪与作者识别上的结构性矛盾。",
+  "tags": [
+    "evaluation",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "双盲评审与开放科学实践（如arXiv预印本）存在根本张力，亟需机制设计平衡透明性与公平性。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

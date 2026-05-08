@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260508-004",
+  "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+  "url": "https://deepmind.google/blog/alphaevolve-impact/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-08T09:44:16.524316+00:00",
+  "collected_at": "2026-05-08T09:44:16.524316+00:00",
+  "summary": "AlphaEvolve 是 DeepMind 推出的基于 Gemini 的自主编码智能体，能自动完成代码生成、调试、优化与跨项目迁移，显著提升开发效率并已在科学计算、基础设施和AI系统开发中验证规模化影响。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "将大语言模型从被动工具升级为可自主规划、执行与迭代的工程化编码代理，标志LLM向通用软件工程师角色演进的关键一步。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}

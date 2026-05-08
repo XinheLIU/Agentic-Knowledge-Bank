@@ -174,5 +174,125 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4oykt/neurips_submission_number_d/",
     "category": "other",
     "relevance_score": 0.9
+  },
+  {
+    "id": "github-20260508-001",
+    "title": "earendil-works/pi",
+    "source": "github",
+    "source_url": "https://github.com/earendil-works/pi",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260508-002",
+    "title": "AI slop is killing online communities",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260508-003",
+    "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:hacker-news-best-20260508-004",
+    "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-005",
+    "title": "Disillusionment with mechanistic interpretability research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6zdj6/disillusionment_with_mechanistic_interpretability/",
+    "category": "interpretability",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-006",
+    "title": "Steam Similarity Recommender [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6x2zw/steam_similarity_recommender_p/",
+    "category": "rag",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-007",
+    "title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-008",
+    "title": "Quantization and Fast Inference (MEAP) - How much performance are you actually getting from quantization in production? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6oa4e/quantization_and_fast_inference_meap_how_much/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-009",
+    "title": "People Interested in Continual Learning Research[R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr/",
+    "category": "agent",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-010",
+    "title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-011",
+    "title": "What should a PyTorch training end-of-run performance summary show? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-012",
+    "title": "ROCm Status in mid 2026 [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-013",
+    "title": "Diffusion for generating/editing ASTs? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6hv55/diffusion_for_generatingediting_asts_d/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-014",
+    "title": "How much can a video generated by the same diffusion model differ across GPU architectures if the initial noise latent is fixed? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t69dvx/how_much_can_a_video_generated_by_the_same/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260508-015",
+    "title": "ECCV Stupid Reviewer Behavior (Any AC here?) [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6ybtk/eccv_stupid_reviewer_behavior_any_ac_here_r/",
+    "category": "evaluation",
+    "relevance_score": 0.92
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260508-006",
+  "title": "Steam Similarity Recommender [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6x2zw/steam_similarity_recommender_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t6x2zw/steam_similarity_recommender_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-08T09:44:17.283373+00:00",
+  "collected_at": "2026-05-08T09:44:17.283373+00:00",
+  "summary": "基于LLM解析Steam游戏评论，提取非标准语义标签（如'爵士融合'、'日程循环'）并构建细粒度游戏特征向量，实现可解释的相似性推荐，突破传统协同过滤的同质化瓶颈。",
+  "tags": [
+    "llm",
+    "rag"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "rag",
+  "key_insight": "用LLM将主观游戏体验（vibe/structure）结构化为可检索、可比对、可解释的微标签向量，使推荐从‘类似用户喜欢’转向‘类似体验维度’。",
+  "updated_at": "2026-05-08T09:47:24.549237+00:00"
+}
