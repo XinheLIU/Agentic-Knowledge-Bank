@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-004",
+  "title": "NeurIPS reviewers, any word after the invite email? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7mfqr/neurips_reviewers_any_word_after_the_invite_email/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7mfqr/neurips_reviewers_any_word_after_the_invite_email/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303525+00:00",
+  "collected_at": "2026-05-09T09:24:12.303525+00:00",
+  "summary": "该帖反映NeurIPS 2024审稿流程中AI辅助评审实验的落地进展，聚焦审稿人受邀后的系统响应延迟与参与意愿，体现顶会正探索LLM在学术评审中的实际应用边界。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "顶级会议正将LLM从技术演示转向真实科研基础设施，但流程协同（如邀约-投标系统）和人类审稿人信任机制仍是关键瓶颈。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

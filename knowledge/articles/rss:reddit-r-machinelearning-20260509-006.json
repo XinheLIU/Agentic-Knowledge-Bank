@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-006",
+  "title": "Formalizing statistical learning theory in Lean 4 [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7bgve/formalizing_statistical_learning_theory_in_lean_4/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7bgve/formalizing_statistical_learning_theory_in_lean_4/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303550+00:00",
+  "collected_at": "2026-05-09T09:24:12.303550+00:00",
+  "summary": "该项目使用Lean 4形式化统计学习理论核心定理（如VC维、Rademacher复杂度、PAC-Bayes、算法稳定性），强调可读性、显式假设与端到端证明链，旨在构建教学友好的形式化理论阶梯。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "形式化不是只为正确性，更是为厘清ML理论中隐含假设、边界条件与逻辑依赖，提升教学严谨性与跨学科可验证性。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

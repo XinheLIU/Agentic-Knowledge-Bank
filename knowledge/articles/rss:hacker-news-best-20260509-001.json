@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260509-001",
+  "title": "AI is breaking two vulnerability cultures",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+  "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-09T09:24:11.605518+00:00",
+  "collected_at": "2026-05-09T09:24:11.605518+00:00",
+  "summary": "文章指出AI正颠覆传统漏洞披露文化：一是绕过人工安全研究者直接生成PoC，削弱‘负责任披露’流程；二是LLM自身成为新型漏洞载体（如提示注入、模型窃取），迫使安全范式从代码层转向模型与交互层。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "security",
+  "key_insight": "AI不仅加速漏洞发现，更重构了漏洞的定义、归属与缓解责任边界。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

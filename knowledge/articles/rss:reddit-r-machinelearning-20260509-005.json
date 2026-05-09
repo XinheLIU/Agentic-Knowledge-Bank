@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-005",
+  "title": "Neurips : Pushing anonymous repo after rebuttal [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303537+00:00",
+  "collected_at": "2026-05-09T09:24:12.303537+00:00",
+  "summary": "探讨NeurIPS评审期间匿名代码仓库在 rebuttal 阶段是否允许更新README以修正论文中非数值性标签错误，聚焦学术诚信、匿名性与可复现性之间的边界。",
+  "tags": [
+    "evaluation",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "微小语义修正（如标签更正）若不改变结果且严格保持匿名与无新增实验，通常被接受，但必须通过OpenReview官方渠道同步说明以避免合规风险。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

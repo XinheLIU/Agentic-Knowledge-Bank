@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-007",
+  "title": "Embedding models for time series data [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7avgp/embedding_models_for_time_series_data_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7avgp/embedding_models_for_time_series_data_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303563+00:00",
+  "collected_at": "2026-05-09T09:24:12.303563+00:00",
+  "summary": "探讨面向时序数据的开源嵌入模型，尤其关注支持变长序列的频域（如傅里叶变换）建模方法，旨在提升时序表征能力与下游任务泛化性。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "other",
+  "key_insight": "频域嵌入可规避时序长度对齐问题，为变长、多尺度时序提供更鲁棒的低维表征。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

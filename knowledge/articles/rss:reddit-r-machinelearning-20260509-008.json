@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-008",
+  "title": "Backcasting forecast errors: model collapsing to mean [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7knyd/backcasting_forecast_errors_model_collapsing_to/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7knyd/backcasting_forecast_errors_model_collapsing_to/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303569+00:00",
+  "collected_at": "2026-05-09T09:24:12.303569+00:00",
+  "summary": "该帖探讨时间序列反向预测（backcasting）中模型预测值坍缩至均值（零误差）的问题，聚焦于气象预报误差建模的弱信号、高噪声场景下的特征工程与模型校准挑战。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "forecasting",
+  "key_insight": "模型坍缩至均值本质反映目标变量信噪比极低、特征未能捕获误差生成机制的非平稳性与horizon-dependent不确定性。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}

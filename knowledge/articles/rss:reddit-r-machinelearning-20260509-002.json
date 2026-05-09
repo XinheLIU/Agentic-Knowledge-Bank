@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260509-002",
+  "title": "DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7yrvr/deepseek_v4_paper_full_version_is_out_fp4_qat/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t7yrvr/deepseek_v4_paper_full_version_is_out_fp4_qat/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-09T09:24:12.303511+00:00",
+  "collected_at": "2026-05-09T09:24:12.303511+00:00",
+  "summary": "DeepSeek V4发布完整论文，核心突破为FP4量化感知训练（QAT）直接应用于MoE专家权重与CSA索引器QK路径，实现推理零精度损失、2倍QK加速及KV缓存降至7%；辅以 anticipatory routing 和 SwiGLU clamping 提升万亿参数MoE训练稳定性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "FP4 QAT在训练末期直接落地且保持高召回率，标志着低比特训练-推理一体化进入实用阶段，显著降低多智能体场景下的调用成本。",
+  "updated_at": "2026-05-09T09:27:18.151424+00:00"
+}
