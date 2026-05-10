@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260510-005",
+  "title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-10T09:41:24.323611+00:00",
+  "collected_at": "2026-05-10T09:41:24.323611+00:00",
+  "summary": "提出用有向图建模LLM在各基准上的胜出关系，揭示排名非线性、存在大量能力反转现象，挑战单一‘智力阶梯’假设，支持细粒度能力评估与基准优化。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "LLM能力是基准依赖的多维图结构，而非全局可排序的标量 ladder。",
+  "updated_at": "2026-05-10T09:44:23.299053+00:00"
+}

@@ -358,5 +358,45 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7knyd/backcasting_forecast_errors_model_collapsing_to/",
     "category": "forecasting",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260510-001",
+    "title": "What is an average publication outcome for an ML PhD? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260510-002",
+    "title": "\"colss\" a math-style expression evaluator for NumPy arrays [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8zja2/colss_a_mathstyle_expression_evaluator_for_numpy/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260510-003",
+    "title": "My experience interviewing with Huawei Vancouver for an ML research role: strong mismatch between how it was pitched and how it was evaluated [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t80awj/my_experience_interviewing_with_huawei_vancouver/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260510-004",
+    "title": "Parax v0.7: Parametric Modeling in JAX [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260510-005",
+    "title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
+    "category": "evaluation",
+    "relevance_score": 0.95
   }
 ]

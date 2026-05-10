@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260510-001",
+  "title": "What is an average publication outcome for an ML PhD? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-10T09:41:24.323552+00:00",
+  "collected_at": "2026-05-10T09:41:24.323552+00:00",
+  "summary": "该帖探讨ML博士毕业时在顶会（如NeurIPS、ICML、CVPR等）的平均一作论文数量，反映学术产出基准，对博士生规划、导师评估及招聘标准具现实参考价值。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "3–5篇顶会一作论文在当前ML博士群体中普遍被视为‘高于平均’而非‘平均’，真实平均值更接近1–3篇。",
+  "updated_at": "2026-05-10T09:44:23.299053+00:00"
+}

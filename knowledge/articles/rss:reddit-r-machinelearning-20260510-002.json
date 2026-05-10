@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260510-002",
+  "title": "\"colss\" a math-style expression evaluator for NumPy arrays [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8zja2/colss_a_mathstyle_expression_evaluator_for_numpy/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t8zja2/colss_a_mathstyle_expression_evaluator_for_numpy/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-10T09:41:24.323561+00:00",
+  "collected_at": "2026-05-10T09:41:24.323561+00:00",
+  "summary": "colss 是一个面向 NumPy 数组的数学风格表达式求值库，支持 sin、log、条件运算等紧凑语法，基于 C++/ExprTk 实现高性能计算，显著提升复杂数学公式的可读性与编写效率。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "other",
+  "key_insight": "通过嵌入式领域专用表达式引擎（ExprTk）桥接数学直觉与数组计算，规避 Python 解释器开销，实现接近原生 C++ 的数值表达式执行效率。",
+  "updated_at": "2026-05-10T09:44:23.299053+00:00"
+}

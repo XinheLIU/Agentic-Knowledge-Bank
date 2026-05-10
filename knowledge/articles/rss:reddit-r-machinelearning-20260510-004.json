@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260510-004",
+  "title": "Parax v0.7: Parametric Modeling in JAX [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-10T09:41:24.323577+00:00",
+  "collected_at": "2026-05-10T09:41:24.323577+00:00",
+  "summary": "Parax v0.7 是一个面向 JAX 的参数化建模库，弥合纯 PyTree 函数式风格与面向对象建模（如 Equinox）之间的鸿沟，支持带元数据的约束参数、可计算 PyTree、以及面向固定/有界/概率化参数的抽象接口。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "other",
+  "key_insight": "Parax 通过声明式参数约束与可组合的抽象接口，使 JAX 模型具备更强的工程可控性与领域语义表达能力。",
+  "updated_at": "2026-05-10T09:44:23.299053+00:00"
+}
