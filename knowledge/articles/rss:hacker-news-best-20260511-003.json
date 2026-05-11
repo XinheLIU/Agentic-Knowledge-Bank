@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260511-003",
+  "title": "Task Paralysis and AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
+  "url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-11T11:29:25.329474+00:00",
+  "collected_at": "2026-05-11T11:29:25.329474+00:00",
+  "summary": "文章探讨AI（尤其是LLM与智能体）如何加剧或缓解任务瘫痪（Task Paralysis）——即因选项过载、决策疲劳或目标模糊导致的行动停滞。提出AI可通过结构化任务分解、优先级排序和渐进式引导来增强人类执行能力，而非单纯替代决策。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "AI的价值不在于替人做决定，而在于将模糊意图转化为可执行、低认知负荷的微任务流。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

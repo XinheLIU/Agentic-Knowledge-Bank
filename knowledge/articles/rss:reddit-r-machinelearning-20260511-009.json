@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260511-009",
+  "title": "Why is human LLM annotation so expensive? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-11T11:29:26.305979+00:00",
+  "collected_at": "2026-05-11T11:29:26.305979+00:00",
+  "summary": "探讨人类标注LLM数据成本高昂的根源：专业标注服务（如Scale AI）价格高，众包平台（如MTurk）质量差，中小团队缺乏高性价比、高质量的中间方案。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.9,
+  "category": "evaluation",
+  "key_insight": "LLM数据标注的‘质量-成本-规模’三角矛盾尚未被现有工具链有效破解。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

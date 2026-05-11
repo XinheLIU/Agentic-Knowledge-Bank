@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260511-004",
+  "title": "Meta's embrace of AI is making its employees miserable",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+  "url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-11T11:29:25.329483+00:00",
+  "collected_at": "2026-05-11T11:29:25.329483+00:00",
+  "summary": "文章揭示Meta激进推进AI战略导致员工高压、倦怠与职业焦虑，反映大模型时代组织变革与技术落地间的深层张力，警示AI规模化应用中人力成本与工程文化的关键性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "AI技术落地的最大瓶颈往往不在模型性能，而在组织适配能力与可持续的工程人文生态。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

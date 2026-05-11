@@ -1,0 +1,23 @@
+{
+  "id": "rss:hacker-news-best-20260511-002",
+  "title": "Local AI needs to be the norm",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+  "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-11T11:29:25.329464+00:00",
+  "collected_at": "2026-05-11T11:29:25.329464+00:00",
+  "summary": "文章主张将本地运行的AI（Local AI）作为默认范式，强调隐私保护、数据主权、离线可用性及对集中式云AI服务的去依赖，倡导轻量级模型、高效推理优化与开源工具链的普及。",
+  "tags": [
+    "llm",
+    "deployment",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "deployment",
+  "key_insight": "真正的AI民主化始于用户设备端的可控、可审计、可持续运行，而非云端黑箱服务。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

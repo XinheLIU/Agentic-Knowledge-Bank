@@ -398,5 +398,77 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
     "category": "evaluation",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260511-001",
+    "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:hacker-news-best-20260511-002",
+    "title": "Local AI needs to be the norm",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:hacker-news-best-20260511-003",
+    "title": "Task Paralysis and AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260511-004",
+    "title": "Meta's embrace of AI is making its employees miserable",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260511-005",
+    "title": "PhD students in ML, how many hours on average do you work? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260511-006",
+    "title": "Is reproducing or implementing a paper considered research? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9zre0/is_reproducing_or_implementing_a_paper_considered/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260511-007",
+    "title": "Signals: finding the most informative agent traces without LLM judges [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260511-008",
+    "title": "Any implementations similar to D4RT? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260511-009",
+    "title": "Why is human LLM annotation so expensive? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/",
+    "category": "evaluation",
+    "relevance_score": 0.9
   }
 ]

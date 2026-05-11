@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260511-007",
+  "title": "Signals: finding the most informative agent traces without LLM judges [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-11T11:29:26.305951+00:00",
+  "collected_at": "2026-05-11T11:29:26.305951+00:00",
+  "summary": "Signals是一种轻量级、无需GPU的在线信号提取方法，通过结构化分类（如错位、停滞、循环等）自动识别高信息量智能体轨迹，显著提升人工或LLM审核效率，在τ-bench上实现82% informativeness率，较随机采样提升1.52倍效率。",
+  "tags": [
+    "llm",
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "用可解释、低成本的规则化信号替代昂贵的LLM judge或人工标注，实现智能体行为质量监控的范式转移。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

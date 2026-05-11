@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260511-006",
+  "title": "Is reproducing or implementing a paper considered research? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9zre0/is_reproducing_or_implementing_a_paper_considered/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t9zre0/is_reproducing_or_implementing_a_paper_considered/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-11T11:29:26.305944+00:00",
+  "collected_at": "2026-05-11T11:29:26.305944+00:00",
+  "summary": "探讨在缺乏正式科研经历的情况下，独立复现或实现机器学习论文是否构成可信研究行为，强调其在验证、扩展与对比分析中的学术价值及对研究生申请的实际助益。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "beginner",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "高质量的论文复现（含代码、消融实验与误差分析）可被视为实质性研究贡献，尤其在缺乏导师指导的自主探索场景中。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

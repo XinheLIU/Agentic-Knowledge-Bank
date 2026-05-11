@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260511-001",
+  "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+  "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-11T11:29:25.329443+00:00",
+  "collected_at": "2026-05-11T11:29:25.329443+00:00",
+  "summary": "马里兰州居民被征收20亿美元电网升级费用，以支撑邻州AI数据中心的激增电力需求，引发对能源成本转嫁、监管缺位及AI基础设施外部性问题的争议。",
+  "tags": [
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "deployment",
+  "key_insight": "AI算力扩张正通过隐性基础设施成本转嫁给非直接受益公众，暴露跨区域能源治理与成本分摊机制的严重滞后。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

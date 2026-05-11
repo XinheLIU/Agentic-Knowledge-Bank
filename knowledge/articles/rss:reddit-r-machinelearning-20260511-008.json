@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260511-008",
+  "title": "Any implementations similar to D4RT? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-11T11:29:26.305958+00:00",
+  "collected_at": "2026-05-11T11:29:26.305958+00:00",
+  "summary": "D4RT是一种从单目动态视频中重建4D（3D空间+时间）场景的AI方法，支持运动物体点云重建与相机位姿估计，但未开源；当前社区亟需类似开源实现。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "动态场景的4D重建是具身智能与机器人视觉的关键瓶颈，D4RT代表了从静态NeRF向时序几何理解的重要范式跃迁。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}

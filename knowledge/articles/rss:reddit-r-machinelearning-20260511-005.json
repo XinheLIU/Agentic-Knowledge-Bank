@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260511-005",
+  "title": "PhD students in ML, how many hours on average do you work? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-11T11:29:26.305936+00:00",
+  "collected_at": "2026-05-11T11:29:26.305936+00:00",
+  "summary": "PhD学生分享ML研究日常时间分配与AI工具使用体验，揭示LLM编码代理在提升效率的同时可能引发虚假生产力感和等待焦虑，反映真实科研工作流中人机协作的张力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "编码代理虽被高频采用，但其异步响应特性易导致‘伪忙碌’，暴露当前AI辅助科研中任务调度与认知负荷管理的关键矛盾。",
+  "updated_at": "2026-05-11T11:32:38.744004+00:00"
+}
