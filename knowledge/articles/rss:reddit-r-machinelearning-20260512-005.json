@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-005",
+  "title": "How can I check whether my paper follows the required ARR formatting before submission? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1taheqp/how_can_i_check_whether_my_paper_follows_the/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1taheqp/how_can_i_check_whether_my_paper_follows_the/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339267+00:00",
+  "collected_at": "2026-05-12T10:36:47.339267+00:00",
+  "summary": "该帖探讨AI领域论文投稿前的格式合规性检查方法，聚焦于ACL/ARR等会议要求的自动化校验工具（如aclpubcheck）及人工核查流程，对提升投稿成功率具有实践价值。",
+  "tags": [
+    "evaluation",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "格式合规性是AI学术投稿中常被忽视但直接影响接收结果的关键非技术门槛，需结合工具验证与模板精读双重保障。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

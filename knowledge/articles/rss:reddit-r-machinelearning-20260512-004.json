@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-004",
+  "title": "Where are small Models like Qwen3 0.6B and Qwen3.5 0.8B used ? Huggingface shows 2.88 million downloads this month.[D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta9w3j/where_are_small_models_like_qwen3_06b_and_qwen35/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ta9w3j/where_are_small_models_like_qwen3_06b_and_qwen35/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339247+00:00",
+  "collected_at": "2026-05-12T10:36:47.339247+00:00",
+  "summary": "小参数量Qwen模型（如0.6B/0.8B）因轻量、低成本和可本地部署特性，适用于边缘设备、嵌入式AI、教学实验及低资源Agent原型开发，但存在语义理解浅、JSON输出不稳定、响应慢等实用瓶颈。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm|agent",
+  "key_insight": "下载量高反映社区对轻量化LLM的工程适配热情，但实际落地受限于基础能力短板，需配套后处理与场景收敛。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

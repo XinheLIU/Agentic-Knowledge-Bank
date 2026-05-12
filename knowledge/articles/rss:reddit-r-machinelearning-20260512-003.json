@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-003",
+  "title": "Interactive Jensen–Shannon Divergence Visualisation [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta5ybv/interactive_jensenshannon_divergence/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ta5ybv/interactive_jensenshannon_divergence/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339241+00:00",
+  "collected_at": "2026-05-12T10:36:47.339241+00:00",
+  "summary": "提供交互式Jensen-Shannon散度（JSD）可视化工具，支持实时调整两个概率分布形状，并动态展示JSD值、其理论上限（1 bit）及各点贡献，帮助用户直观理解该对称、有界的信息论距离度量。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "JSD作为KL散度的对称、有界替代，在模型评估和分布比较中更鲁棒且更适合教学与调试。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

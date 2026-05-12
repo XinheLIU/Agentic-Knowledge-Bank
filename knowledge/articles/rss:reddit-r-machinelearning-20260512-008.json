@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-008",
+  "title": "What to expect from AlphaZero's value predictions [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta1ugy/what_to_expect_from_alphazeros_value_predictions_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ta1ugy/what_to_expect_from_alphazeros_value_predictions_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339288+00:00",
+  "collected_at": "2026-05-12T10:36:47.339288+00:00",
+  "summary": "AlphaZero的价值预测反映其在自博弈历史中对抗自身及前辈模型的平均胜率，受采样策略与Dirichlet噪声影响；其泛化能力依赖训练数据中对手行为的覆盖密度与权重分布。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.92,
+  "category": "agent|evaluation",
+  "key_insight": "AlphaZero的价值预测并非对任意对手的普适胜率估计，而是对其训练分布内（尤其近期、高频）对手风格的经验性加权平均。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

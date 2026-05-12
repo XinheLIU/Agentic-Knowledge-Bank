@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-002",
+  "title": "Interaction Models from Thinking Machines Lab [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tavn2e/interaction_models_from_thinking_machines_lab_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tavn2e/interaction_models_from_thinking_machines_lab_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339233+00:00",
+  "collected_at": "2026-05-12T10:36:47.339233+00:00",
+  "summary": "Thinking Machines Lab 提出的 Interaction Models 是一种可扩展的人机交互建模范式，聚焦于建模用户与AI系统间的动态、多轮、目标导向的交互过程，而非孤立的单次响应，提升智能体在真实场景中的适应性与协作能力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "将交互本身作为一等公民建模，使AI系统能显式学习和优化交互策略，而非仅优化单步输出。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

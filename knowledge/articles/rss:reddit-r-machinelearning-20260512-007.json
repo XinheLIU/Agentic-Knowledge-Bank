@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-007",
+  "title": "Passing Multidimensional time series to VLM [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tabsvp/passing_multidimensional_time_series_to_vlm_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tabsvp/passing_multidimensional_time_series_to_vlm_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339281+00:00",
+  "collected_at": "2026-05-12T10:36:47.339281+00:00",
+  "summary": "探讨将多维时间序列数据有效输入视觉语言模型（VLM）的方法，指出纯文本编码和图表图像化两种主流方案在实际任务中效果不佳，亟需更鲁棒的跨模态对齐表示方法。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "VLM原生不支持结构化时序信号，需设计专用嵌入适配器或联合编码器，而非简单模态转换。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}

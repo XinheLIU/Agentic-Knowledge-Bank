@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260512-006",
+  "title": "A hackable compiler to generate efficient fused GPU kernels for AI models [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-12T10:36:47.339274+00:00",
+  "collected_at": "2026-05-12T10:36:47.339274+00:00",
+  "summary": "提出一个仅5000行Python实现的可调试ML编译器，通过6级IR逐步将LLM算子（如RMSNorm）自动优化为高效融合CUDA内核，在RTX 5090上对TinyLlama/Qwen2.5-7B达到1.11× eager / 1.20× torch.compile性能，核心价值在于透明、可复现、工程友好的GPU kernel生成范式。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "将资深CUDA工程师的手动调优经验系统化为可组合、可验证、CLI驱动的16步IR lowering规则链，实现编译器与硬件专家知识的精准对齐。",
+  "updated_at": "2026-05-12T10:39:49.238291+00:00"
+}
