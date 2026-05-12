@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Knowledge Base</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1>📚 AI Knowledge</h1>
+        <span class="version">v0.5</span>
+      </div>
+      <nav class="nav-sections">
+        <div class="nav-group">
+          <div class="nav-title">日期范围</div>
+          <div class="date-filters">
+            <input type="date" id="date-from" placeholder="开始">
+            <input type="date" id="date-to" placeholder="结束">
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-title">来源</div>
+          <ul id="source-filters"></ul>
+        </div>
+        <div class="nav-group">
+          <div class="nav-title">分类</div>
+          <ul id="category-filters"></ul>
+        </div>
+        <div class="nav-group">
+          <div class="nav-title">标签</div>
+          <ul id="tag-filters"></ul>
+        </div>
+        <div class="nav-group">
+          <div class="nav-title">状态</div>
+          <ul id="status-filters"></ul>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="theme-toggle" title="切换主题">🌙 暗黑</button>
+        <div class="shortcuts-hint">
+          <kbd>j</kbd>/<kbd>k</kbd> 导航 &nbsp; <kbd>esc</kbd> 关闭
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Top bar -->
+      <header class="topbar">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="搜索标题或摘要...">
+        </div>
+        <div class="actions">
+          <select id="sort-select">
+            <option value="updated_at">最近更新</option>
+            <option value="published_at">发布时间</option>
+            <option value="score">评分</option>
+            <option value="title">标题</option>
+          </select>
+          <button id="export-btn" title="导出选中">⬇</button>
+          <button id="import-btn" title="导入 JSON">⬆</button>
+          <input type="file" id="import-file" accept=".json" style="display:none">
+          <button id="refresh-btn" title="刷新">↻</button>
+        </div>
+      </header>
+
+      <!-- Stats -->
+      <section class="stats-bar" id="stats-bar">
+        <div class="stat-card" id="stat-total">0 <span>条目</span></div>
+        <div class="stat-card" id="stat-sources">0 <span>来源</span></div>
+        <div class="stat-card" id="stat-tags">0 <span>标签</span></div>
+      </section>
+
+      <!-- Article List -->
+      <section class="content" id="content">
+        <div class="articles-list" id="articles-list"></div>
+        <div class="pagination" id="pagination"></div>
+      </section>
+    </main>
+
+    <!-- Detail Drawer -->
+    <aside class="drawer" id="drawer">
+      <div class="drawer-header">
+        <button class="drawer-close" id="drawer-close">✕</button>
+      </div>
+      <div class="drawer-body" id="drawer-body"></div>
+    </aside>
+
+    <!-- Batch Actions Bar -->
+    <div class="batch-bar" id="batch-bar">
+      <span id="batch-count">已选中 0 项</span>
+      <div class="batch-actions">
+        <select id="batch-tag-select"><option value="">打标签...</option></select>
+        <select id="batch-untag-select"><option value="">删标签...</option></select>
+        <select id="batch-cat-select"><option value="">改分类...</option></select>
+        <select id="batch-status-select"><option value="">改状态...</option></select>
+        <button id="batch-archive">归档</button>
+        <button id="batch-delete" class="danger">删除</button>
+        <button id="batch-clear">清除</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

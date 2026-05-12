@@ -1,7 +1,12 @@
 # Changelog
-> Last updated: 2026-05-07
+> Last updated: 2026-05-12
 
 All notable changes to this project are listed by release. Version numbers are chronological milestones aligned with git history (there are no `git` tags yet); each section names the commit hash for traceability.
+
+## [Unreleased]
+
+- Narrow daily workflow validation to only **newly staged** article files (`git diff --staged --name-only`) instead of re-validating the entire `knowledge/articles/` directory on every run.
+- Remove `knowledge/raw/` from the daily workflow commit step. Raw dumps stopped being produced after the `0.5.0` LangGraph migration, so the directory is no longer tracked in daily commits.
 
 ## [0.5.0] — 2026-05-06
 
@@ -16,6 +21,7 @@ All notable changes to this project are listed by release. Version numbers are c
 - Fix unset workflow output directories by falling back to default article and pending-review paths when LangGraph state carries `None`.
 - Add daily workflow revision diagnostics so GitHub Actions logs show the triggering ref, checked-out SHA, and active organizer path fallback line.
 - Exclude `knowledge/articles/index.json` from daily article validation because it is an index manifest, not an article record.
+- Update daily workflow actions to Node 24-compatible releases and remove the temporary Node runtime force flag.
 
 ## [0.4.0] — 2026-05-02
 

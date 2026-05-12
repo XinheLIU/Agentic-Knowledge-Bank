@@ -12,12 +12,10 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
 
@@ -29,7 +27,7 @@ jobs:
           grep -n 'articles_dir = Path' workflows/organizer.py
 
       - name: Setup uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.12"
           cache-dependency-glob: "pyproject.toml"
@@ -50,14 +48,14 @@ jobs:
             --limit 20 \
             --verbose
 
-      - name: Validate collected articles
+      - name: Validate newly collected articles
         run: |
-          article_files="$(find knowledge/articles -maxdepth 1 -type f -name '*.json' ! -name 'index.json' | sort)"
+          article_files="$(git diff --staged --name-only | grep '^knowledge/articles/.*\.json$' | grep -v 'index.json' | sort)"
           if [ -n "$article_files" ]; then
             uv run python hooks/validate_json.py $article_files
             uv run python hooks/check_quality.py $article_files
           else
-            echo "No articles to validate"
+            echo "No new articles to validate"
           fi
 
       - name: Commit and push results
@@ -65,7 +63,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add knowledge/articles knowledge/raw
+          git add knowledge/articles
           if git diff --staged --quiet; then
             echo "No new articles to commit"
           else

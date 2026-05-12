@@ -1,6 +1,6 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-06
+> Last updated: 2026-05-12
 > 本文件是项目的长期记忆，描述当前版本 `0.5.0` 的真实结构与运行方式。
 
 ## 项目定义
@@ -61,6 +61,13 @@ ai-kb/
 │   ├── raw/
 │   ├── articles/
 │   └── pending_review/
+├── ui/                                # Notion-like 知识库管理面板
+│   ├── app.py                         # Flask API + Article 模型
+│   ├── static/
+│   │   ├── index.html                 # SPA 入口
+│   │   ├── css/style.css              # Notion 风格样式
+│   │   └── js/app.js                  # 前端逻辑
+│   └── requirements.txt               # Flask + flask-cors
 ├── mcp_knowledge_server.py            # MCP Server：知识库搜索
 ├── opencode.json
 ├── .claude/mcp.json
@@ -133,6 +140,9 @@ uv run pytest -q -m non_llm
 
 # Real-LLM 端到端验证
 uv run pytest -q -m llm_e2e
+
+# 启动知识库管理 UI（本地浏览 http://localhost:5050）
+uv run python ui/app.py
 ```
 
 ### 错误处理
@@ -155,6 +165,7 @@ uv run pytest -q -m llm_e2e
 - **测试**：pytest
 - **Hooks**：OpenCode TypeScript 插件 + Python 校验脚本
 - **MCP**：`mcp_knowledge_server.py`（Python stdlib only）
+- **UI**：Flask + Vanilla JS/CSS，Notion-like 管理面板
 
 ## 实施约束
 - `pipeline/` 与 `scripts/` 已移除，不支持旧入口
