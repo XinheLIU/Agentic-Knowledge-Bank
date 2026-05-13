@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-017",
+  "title": "Does THINKING MODE significantly improve translation?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716258+00:00",
+  "collected_at": "2026-05-13T10:34:03.716258+00:00",
+  "summary": "探讨‘Thinking Mode’（如Chain-of-Thought、Self-Refine等推理增强机制）对本地部署小模型（Qwen/Gemma-4）翻译质量的实际提升效果，关注其是否带来可感知的准确性、流畅性或文化适配性改进。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "Thinking Mode 对翻译质量的提升取决于任务复杂度和模型基础能力，在低资源或高歧义场景下更显著，但对简单句可能收益甚微。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-012",
+  "title": "Is using vLLM actually worth it if you aren't serving the model to other people?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716224+00:00",
+  "collected_at": "2026-05-13T10:34:03.716224+00:00",
+  "summary": "vLLM 在单用户本地推理场景下性能优势有限，其核心价值在于高并发服务优化；对仅自用、低请求量的 llama.cpp 用户，迁移成本可能高于实际收益。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "vLLM 的吞吐与内存效率优势在单请求、非持续交互场景中难以体现，架构设计目标与个人本地使用模式存在错配。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

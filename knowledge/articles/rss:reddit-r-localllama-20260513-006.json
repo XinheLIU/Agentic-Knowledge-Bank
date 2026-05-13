@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-006",
+  "title": "My First Official AI Research Paper Accepted on SSRN",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716181+00:00",
+  "collected_at": "2026-05-13T10:34:03.716181+00:00",
+  "summary": "提出新型优化算法STAM，提升深度学习训练稳定性，降低最高50%计算成本，在基准测试中优于主流优化器。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "training",
+  "key_insight": "自适应动量机制可兼顾收敛速度与训练鲁棒性，无需额外超参调优即可显著降本。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

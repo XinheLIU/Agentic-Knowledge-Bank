@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-011",
+  "title": "server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716216+00:00",
+  "collected_at": "2026-05-13T10:34:03.716216+00:00",
+  "summary": "llama.cpp 新增对推理模型（如 DeepSeek-R1、Qwen2.5-Math）的续写生成支持，使 WebUI 和 HTTP Server 能在 reasoning 模型输出中断后继续生成，提升复杂推理任务的交互连贯性与实用性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "续生成能力是推理模型走向实用化交互的关键桥梁，尤其对分步思维链（CoT）场景至关重要。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-008",
+  "title": "I've seen a lot of folks ask \"can local LLMs actually do anything useful?\"",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716196+00:00",
+  "collected_at": "2026-05-13T10:34:03.716196+00:00",
+  "summary": "本地大模型（如Qwen3.6-35B-A3B）可构建端到端自动化工作流：语义检索、数据库评估、邮件交互、文档生成与协作编辑、PDF格式化输出，实现真正可用的AI代理系统。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "本地LLM通过多步工具调用与人类反馈闭环，已能替代传统脚本完成复杂知识工作流。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

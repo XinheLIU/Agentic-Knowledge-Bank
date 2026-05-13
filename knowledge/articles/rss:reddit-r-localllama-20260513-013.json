@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-013",
+  "title": "AntAngelMed - 100a6b Healthcare LLM",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbm3j4/antangelmed_100a6b_healthcare_llm/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbm3j4/antangelmed_100a6b_healthcare_llm/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716231+00:00",
+  "collected_at": "2026-05-13T10:34:03.716231+00:00",
+  "summary": "AntAngelMed 是一个专为医疗健康领域微调的开源大语言模型（LLM），基于MedAIBase发布，强调临床相关性与本地化部署能力，适用于医疗问答、病历辅助生成等场景。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "llm",
+  "key_insight": "面向垂直医疗场景的轻量级开源LLM，填补了本地化、合规性医疗AI助手的空白。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

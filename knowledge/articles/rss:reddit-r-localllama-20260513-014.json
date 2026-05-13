@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-014",
+  "title": "Small local model for questions on German grammar",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtuym/small_local_model_for_questions_on_german_grammar/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtuym/small_local_model_for_questions_on_german_grammar/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716237+00:00",
+  "collected_at": "2026-05-13T10:34:03.716237+00:00",
+  "summary": "用户寻求轻量级本地大语言模型，专门优化德语语法问答能力，反映小模型在垂直语言任务中的实用需求与当前多语言通用模型（如Qwen）在特定语法规则理解上的局限。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "垂直领域语言能力不能简单依赖多语言通用模型，需针对性微调或选用领域适配的小型模型。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

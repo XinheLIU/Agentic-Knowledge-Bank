@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-002",
+  "title": "Best Local LLMs - Apr 2026",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716144+00:00",
+  "collected_at": "2026-05-13T10:34:03.716144+00:00",
+  "summary": "2026年4月Reddit社区热议本地大模型新进展，聚焦Qwen3.5、Gemma4、GLM-5.1、Minimax-M2.7及PrismML Bonsai 1-bit等开源模型，强调实际部署场景、显存分级适配与开放权重原则。",
+  "tags": [
+    "llm",
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "本地LLM选型正从纯基准测试转向基于VRAM分级、任务类型（通用/代理/创作）和真实工作流的务实评估范式。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

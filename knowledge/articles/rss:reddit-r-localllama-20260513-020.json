@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-020",
+  "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716278+00:00",
+  "collected_at": "2026-05-13T10:34:03.716278+00:00",
+  "summary": "MiMo-V2.5-Pro（1.02T参数，MoE架构）开源后引发自托管可行性讨论：API凭借96%缓存命中率实现极低成本（$70/387M tokens），而本地部署需多A100集群，硬件门槛与经济性对普通开发者不友好。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "在长上下文、高缓存复用的自主Agent工作流中，优化后的API服务可能比本地大模型部署更具成本效益和工程实用性。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

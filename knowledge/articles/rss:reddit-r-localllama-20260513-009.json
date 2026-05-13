@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-009",
+  "title": "Stop wasting electricity",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tayu5t/stop_wasting_electricity/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tayu5t/stop_wasting_electricity/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716203+00:00",
+  "collected_at": "2026-05-13T10:34:03.716203+00:00",
+  "summary": "通过调整NVIDIA GPU功耗限制（如nvidia-smi -pl），可在不损失LLM推理性能的前提下降低40%功耗，显著减少发热、噪音并延长GPU寿命，适用于本地部署的llama.cpp量化模型。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "GPU功耗限制常被忽视，合理调低可实现能效与性能的帕累托最优。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

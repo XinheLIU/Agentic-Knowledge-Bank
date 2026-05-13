@@ -534,5 +534,165 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta1ugy/what_to_expect_from_alphazeros_value_predictions_d/",
     "category": "agent|evaluation",
     "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-001",
+    "title": "AMA Announcement: Nous Research, The Opensource Lab Behind Hermes Agent (Wednesday, 8AM-11AM PST)",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-002",
+    "title": "Best Local LLMs - Apr 2026",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-003",
+    "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-004",
+    "title": "Dad why is my sisters name Lora?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbemwa/dad_why_is_my_sisters_name_lora/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-005",
+    "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-006",
+    "title": "My First Official AI Research Paper Accepted on SSRN",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
+    "category": "training",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-007",
+    "title": "Save and invest your money for future rigs",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-008",
+    "title": "I've seen a lot of folks ask \"can local LLMs actually do anything useful?\"",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-009",
+    "title": "Stop wasting electricity",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tayu5t/stop_wasting_electricity/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-010",
+    "title": "Let's build claude code from scratch!",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb6nkx/lets_build_claude_code_from_scratch/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-011",
+    "title": "server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-012",
+    "title": "Is using vLLM actually worth it if you aren't serving the model to other people?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-013",
+    "title": "AntAngelMed - 100a6b Healthcare LLM",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbm3j4/antangelmed_100a6b_healthcare_llm/",
+    "category": "llm",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-014",
+    "title": "Small local model for questions on German grammar",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtuym/small_local_model_for_questions_on_german_grammar/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-015",
+    "title": "High VRAM local coding model — still Qwen 3.6 27B?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-016",
+    "title": "How many of you tried BeeLlama.cpp? How's it? Agentic coding possible with 8GB VRAM?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-017",
+    "title": "Does THINKING MODE significantly improve translation?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-018",
+    "title": "has anyone tried local VLMs for desktop GUI automation?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsojv/has_anyone_tried_local_vlms_for_desktop_gui/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-019",
+    "title": "Q: Does DFlash (and PFlash) work with Heretic models?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsl57/q_does_dflash_and_pflash_work_with_heretic_models/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260513-020",
+    "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
+    "category": "deployment",
+    "relevance_score": 0.95
   }
 ]

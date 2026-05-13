@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-007",
+  "title": "Save and invest your money for future rigs",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716189+00:00",
+  "collected_at": "2026-05-13T10:34:03.716189+00:00",
+  "summary": "讨论AI硬件投资策略：因当前高端GPU（如RTX Blackwell）和Apple M5 Studio严重缺货涨价，建议暂缓升级，转而储蓄并等待2-3年内DDR5内存（9200MT/s+）、多通道平台及国产DRAM产能释放带来的高性价比本地大模型推理系统。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "硬件摩尔定律在AI内存带宽与国产化供给端正加速兑现，短期成本压力反而是长期本地LLM部署的优化窗口。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

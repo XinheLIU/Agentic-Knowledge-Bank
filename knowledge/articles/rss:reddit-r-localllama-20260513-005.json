@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-005",
+  "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716174+00:00",
+  "collected_at": "2026-05-13T10:34:03.716174+00:00",
+  "summary": "Needle 是一个仅 26M 参数的开源函数调用模型，专为手机等消费级设备优化，通过纯注意力+门控架构（无 MLP/FFN）实现高效工具调用，预填充达 6000 tok/s，支持单次精准 JSON 工具调用。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "工具调用本质是检索与结构化组装，无需大模型推理能力，跨注意力足以建模，FFN 参数在外部知识可用时属冗余。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

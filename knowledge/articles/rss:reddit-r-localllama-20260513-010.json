@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-010",
+  "title": "Let's build claude code from scratch!",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb6nkx/lets_build_claude_code_from_scratch/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb6nkx/lets_build_claude_code_from_scratch/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716209+00:00",
+  "collected_at": "2026-05-13T10:34:03.716209+00:00",
+  "summary": "该项目‘nanoclaude’是一个极简、可本地运行的Claude风格代码代理实现，基于轻量级LLM构建，支持工具调用与结构化推理，旨在教学与实验目的，帮助开发者理解类Claude系统的核心架构。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "Claude-style code agents can be distilled into minimal, transparent, and runnable code—demystifying proprietary agent logic through pedagogical open-source implementation.",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

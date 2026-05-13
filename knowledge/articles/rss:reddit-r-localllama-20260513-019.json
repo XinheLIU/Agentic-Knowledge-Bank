@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-019",
+  "title": "Q: Does DFlash (and PFlash) work with Heretic models?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsl57/q_does_dflash_and_pflash_work_with_heretic_models/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsl57/q_does_dflash_and_pflash_work_with_heretic_models/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716271+00:00",
+  "collected_at": "2026-05-13T10:34:03.716271+00:00",
+  "summary": "探讨DFlash/PFlash等多模型加速技术与Heretic类‘智能剪枝’解封模型的兼容性，关注如何结合小模型加速（如Qwen3.6、Gemma 4）实现5–10倍推理提速。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "Heretic等解封模型若基于标准架构微调，理论上可兼容DFlash/PFlash等KV缓存共享型加速方法，但需验证权重对齐与层间适配性。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

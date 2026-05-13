@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-018",
+  "title": "has anyone tried local VLMs for desktop GUI automation?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsojv/has_anyone_tried_local_vlms_for_desktop_gui/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsojv/has_anyone_tried_local_vlms_for_desktop_gui/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716265+00:00",
+  "collected_at": "2026-05-13T10:34:03.716265+00:00",
+  "summary": "用户探索在Apple Silicon本地运行量化视觉语言模型（VLM）实现桌面GUI自动化，通过截图理解界面并执行操作，但面临小图标识别不准、UI密度高导致精度下降及视觉token过多拖慢prefill速度等实际瓶颈。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "本地VLM用于GUI自动化受限于视觉token效率与细粒度OCR/图标识别能力，尚未达到可靠生产级交互水平。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

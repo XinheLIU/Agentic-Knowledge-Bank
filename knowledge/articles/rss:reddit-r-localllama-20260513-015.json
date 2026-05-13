@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-015",
+  "title": "High VRAM local coding model — still Qwen 3.6 27B?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716244+00:00",
+  "collected_at": "2026-05-13T10:34:03.716244+00:00",
+  "summary": "讨论在高VRAM（224GB）环境下本地部署大参数量代码模型的选型，聚焦Qwen 3.6-27B与GPT-OSS、Deepseek等百B级开源模型的智能表现对比，强调推理质量优先于吞吐量。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "高显存不再只是‘能跑’的门槛，而是释放百B级开源模型真实编码智能的关键杠杆。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

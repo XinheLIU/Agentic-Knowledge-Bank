@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-003",
+  "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716157+00:00",
+  "collected_at": "2026-05-13T10:34:03.716157+00:00",
+  "summary": "在原装Game Boy Color上本地运行真实Transformer语言模型（TinyStories-260K），通过INT8量化、固定点运算、MBC5银行切换ROM和外置SRAM实现，全程离线、无云依赖，验证了极资源受限设备运行LLM的可行性。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "LLM部署边界已被推向8位微控制器级硬件，核心瓶颈从算力转向内存架构与数值表示的协同优化。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-004",
+  "title": "Dad why is my sisters name Lora?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbemwa/dad_why_is_my_sisters_name_lora/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbemwa/dad_why_is_my_sisters_name_lora/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716166+00:00",
+  "collected_at": "2026-05-13T10:34:03.716166+00:00",
+  "summary": "该Reddit帖子以幽默方式探讨本地运行LLM（如Llama）时出现的幻觉问题——模型虚构人物关系与姓名，凸显当前开源大模型在事实一致性与上下文 grounding 方面的局限性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "模型输出看似合理但缺乏真实依据，暴露了无RAG/无约束推理下幻觉的普遍性与隐蔽性。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

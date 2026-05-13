@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-016",
+  "title": "How many of you tried BeeLlama.cpp? How's it? Agentic coding possible with 8GB VRAM?",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716251+00:00",
+  "collected_at": "2026-05-13T10:34:03.716251+00:00",
+  "summary": "BeeLlama.cpp 是 Llama.cpp 的高性能分支，支持 DFlash 和 TurboQuant，可在 8GB VRAM 上运行 Qwen3.6-27B 等大模型并实现基础 agentic 编码，显著提升吞吐（峰值 135 tps）与长上下文（200k）能力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "通过量化与内存优化技术，BeeLlama.cpp 将原本需高端显卡的 agentic 编码能力下放到消费级 8GB VRAM 设备。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

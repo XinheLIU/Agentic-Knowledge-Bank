@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-localllama-20260513-001",
+  "title": "AMA Announcement: Nous Research, The Opensource Lab Behind Hermes Agent (Wednesday, 8AM-11AM PST)",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+  "author": "Reddit r/LocalLLaMA",
+  "published_at": "2026-05-13T10:34:03.716114+00:00",
+  "collected_at": "2026-05-13T10:34:03.716114+00:00",
+  "summary": "Nous Research 是开源 Hermes Agent 背后的实验室，本次 AMA 将深入探讨其基于 LLM 的智能体架构、本地化部署实践及开源贡献策略，对本地大模型应用开发者具有重要参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "Hermes Agent 代表了轻量级、可本地运行的开源智能体范式，强调推理-行动闭环与社区驱动演进。",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}
