@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-007",
+  "title": "Scenema Audio: Zero-shot expressive voice cloning and speech generation [N]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464057+00:00",
+  "collected_at": "2026-05-14T10:24:21.464057+00:00",
+  "summary": "Scenema Audio 是一个零样本、情感可控的语音克隆与生成模型，解耦语音身份（参考音频）与情感表现（文本提示），支持任意情绪在任意声音上的自然演绎，基于扩散架构，强调后编辑工作流与高表现力输出。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "通过将‘谁说话’（voice identity）与‘如何说话’（emotional performance）解耦，实现了传统TTS无法达成的情感泛化能力，且扩散模型在表现力上显著优于自回归TTS。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

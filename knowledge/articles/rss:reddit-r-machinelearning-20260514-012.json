@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-012",
+  "title": "Best examples of ML projects with good dataset/task code abstractions? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc24to/best_examples_of_ml_projects_with_good/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tc24to/best_examples_of_ml_projects_with_good/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464106+00:00",
+  "collected_at": "2026-05-14T10:24:21.464106+00:00",
+  "summary": "该帖探讨如何通过数据类（如Dataclasses/Pydantic）构建类型安全、低冗余的ML项目抽象层，聚焦数据集元信息、任务Schema和实验组合的结构化建模，对可复现性与模块化基准开发具有重要工程参考价值。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "高质量ML项目的核心抽象不在于算法创新，而在于用强类型数据结构将数据、任务、实验三者解耦并显式建模。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

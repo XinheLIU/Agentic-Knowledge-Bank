@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-016",
+  "title": "TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464134+00:00",
+  "collected_at": "2026-05-14T10:24:21.464134+00:00",
+  "summary": "TabPFN-3 是新一代免训练、单次前向传播即可预测的表格数据基础模型，支持百万行规模、160类分类与校准分位数回归，推理速度提升10–1000倍，并在TabArena上以93%胜率超越传统机器学习方法。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "通过KV缓存压缩、行分块推理和‘Thinking Mode’机制，TabPFN-3首次实现超大规模表格数据在单卡H100上的高效零样本推理，重新定义了表格AI的实用性边界。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

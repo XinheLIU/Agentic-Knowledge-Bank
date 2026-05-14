@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-015",
+  "title": "I created a minimal one-file implementations (160loc) of JEPA family (ijepa, vjepa, vjepa2, cjepa) for educational purposes [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbhwbn/i_created_a_minimal_onefile_implementations/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tbhwbn/i_created_a_minimal_onefile_implementations/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464127+00:00",
+  "collected_at": "2026-05-14T10:24:21.464127+00:00",
+  "summary": "提供JEPA系列模型（iJEPA、vJEPA等）的极简单文件PyTorch实现（仅160–200行），剥离工程冗余，聚焦数学本质，配套教程文档便于对照论文理解核心机制。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "极简实现是理解前沿自监督表征学习算法（如JEPA）数学结构与训练范式的最高效教学工具。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-006",
+  "title": "Built Support Vector Machine(SVM) from scratch in Rust [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc16zk/built_support_vector_machinesvm_from_scratch_in/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tc16zk/built_support_vector_machinesvm_from_scratch_in/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464049+00:00",
+  "collected_at": "2026-05-14T10:24:21.464049+00:00",
+  "summary": "作者用Rust从零实现支持向量机（SVM），集成SMO优化算法、线性与RBF核函数及网格搜索超参调优，在Banknote Auth和Breast Cancer数据集上分别取得96%和93%准确率，体现对经典ML算法底层原理与系统编程的扎实掌握。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "从零实现SVM不仅验证了算法理解深度，更凸显Rust在数值计算与内存安全兼顾场景下的工程潜力。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

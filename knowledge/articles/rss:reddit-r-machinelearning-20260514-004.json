@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-004",
+  "title": "Have the \"on-hold\" durations been getting longer for arXiv submissions? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc91ok/have_the_onhold_durations_been_getting_longer_for/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tc91ok/have_the_onhold_durations_been_getting_longer_for/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464034+00:00",
+  "collected_at": "2026-05-14T10:24:21.464034+00:00",
+  "summary": "该帖反映arXiv近期对AI生成论文的审核压力增大，导致‘on-hold’状态持续时间延长，凸显学术预印本平台在LLM爆发背景下审稿流程与质量管控的挑战。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "arXiv审核延迟加剧是AI论文泛滥引发的基础设施级信任危机，倒逼平台优化自动化初筛与人工复核协同机制。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

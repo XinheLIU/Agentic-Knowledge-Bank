@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-001",
+  "title": "Human-level performance via ML was *not* proven impossible with complexity theory [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.463989+00:00",
+  "collected_at": "2026-05-14T10:24:21.463989+00:00",
+  "summary": "该分析驳斥了声称‘ML无法实现人类水平性能’的复杂性理论证明，指出其核心缺陷在于未精确定义‘人类水平分类器’，导致论证不成立，为AGI可行性保留理论空间。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "复杂性理论不能直接否定ML实现人类水平智能的可能性，因其依赖于严格、可计算的形式化定义，而‘人类水平行为’尚未被数学建模。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

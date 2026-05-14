@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-013",
+  "title": "Sharing all KGC 2026 decks. More production-grade KG systems than I've seen at any conference. [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbt6wl/sharing_all_kgc_2026_decks_more_productiongrade/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tbt6wl/sharing_all_kgc_2026_decks_more_productiongrade/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464113+00:00",
+  "collected_at": "2026-05-14T10:24:21.464113+00:00",
+  "summary": "KGC 2026 展示了多个企业级知识图谱（KG）生产系统，强调KG作为推理基础设施（而非向量检索辅助层）的核心角色，如Bloomberg的本体治理、AbbVie的药物智能KG+LLM接口、Morgan Stanley的SHACL语义漂移检测。",
+  "tags": [
+    "llm",
+    "reasoning"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "知识图谱正从Poc走向核心生产基础设施，承担形式化推理与语义治理职责，LLM仅作为其上层自然语言交互界面。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-009",
+  "title": "OpenAI's deployment company move says more about the AI gap than any benchmark[D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsnng/openais_deployment_company_move_says_more_about/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcsnng/openais_deployment_company_move_says_more_about/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464071+00:00",
+  "collected_at": "2026-05-14T10:24:21.464071+00:00",
+  "summary": "OpenAI成立40亿美元部署公司，派驻工程师深入企业落地AI，揭示模型能力与实际生产部署之间鸿沟持续扩大，凸显部署层（而非模型层）成为当前AI价值实现的关键瓶颈。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "当顶级基础模型公司被迫自建咨询式部署团队时，说明AI的‘最后一公里’仍是高度人工化、场景化、非自动化的系统工程问题。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

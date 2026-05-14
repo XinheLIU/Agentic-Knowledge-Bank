@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-008",
+  "title": "Elastic Attention Cores for Scalable Vision Transformers [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbxbfp/elastic_attention_cores_for_scalable_vision/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tbxbfp/elastic_attention_cores_for_scalable_vision/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464064+00:00",
+  "collected_at": "2026-05-14T10:24:21.464064+00:00",
+  "summary": "提出弹性注意力核心（Elastic Attention Cores），通过块稀疏的'核心-外围'注意力结构替代传统ViT的O(N²)密集自注意力，将计算复杂度降至O(2NC + C²)，支持测试时动态调整核心数以弹性权衡精度与成本，并在256–1024分辨率下保持稳定高性能。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "注意力模式随网络深度从各向同性自发演化为语义对齐，且核心数量可调引发注意力感受野的连续、可解释缩放。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

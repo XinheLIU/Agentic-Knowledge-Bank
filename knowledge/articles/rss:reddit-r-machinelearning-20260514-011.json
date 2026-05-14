@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-011",
+  "title": "What kinds of models are people training with document data? [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc92u9/what_kinds_of_models_are_people_training_with/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tc92u9/what_kinds_of_models_are_people_training_with/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464099+00:00",
+  "collected_at": "2026-05-14T10:24:21.464099+00:00",
+  "summary": "探讨面向文档数据（如PDF、PNG格式的税务/医疗表单）的AI模型训练需求，聚焦于合成数据生成、标注格式兼容性（FUNSD/BIO/YOLO/Donut/COCO）及交付方式（API/SDK/ZIP），解决PII敏感数据获取难问题。",
+  "tags": [
+    "rag",
+    "deployment",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "rag",
+  "key_insight": "文档智能领域正迫切需要隐私安全的合成数据基础设施，其核心挑战在于标注格式标准化与下游模型训练 pipeline 的无缝集成。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

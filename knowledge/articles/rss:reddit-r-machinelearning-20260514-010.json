@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-010",
+  "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464078+00:00",
+  "collected_at": "2026-05-14T10:24:21.464078+00:00",
+  "summary": "提出Fast-Slow学习框架，将LLM参数作为‘慢权重’、优化上下文作为‘快权重’，兼顾快速适应与长期稳定性，在样本效率、抗遗忘性、持续学习能力上显著优于纯参数微调。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "解耦学习速率：用可丢弃的上下文承载任务特异性，用冻结参数保留通用能力，模拟人类双系统学习机制。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

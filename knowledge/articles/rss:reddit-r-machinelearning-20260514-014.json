@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-014",
+  "title": "Steam Recommender using similarity! (Undergraduate Student Project) [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb8k3n/steam_recommender_using_similarity_undergraduate/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tb8k3n/steam_recommender_using_similarity_undergraduate/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464120+00:00",
+  "collected_at": "2026-05-14T10:24:21.464120+00:00",
+  "summary": "该项目构建了一个基于游戏特征向量相似性的Steam游戏推荐系统，通过人工定义的细粒度维度（如'日循环'、'社交模拟'、'爵士融合音乐'等）表征游戏核心体验，实现可解释、去偏见、面向小众/优质游戏的个性化推荐。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "recommendation",
+  "key_insight": "用语义丰富、人工校准的游戏焦点向量替代粗粒度标签或隐式协同过滤，显著提升推荐可解释性与长尾游戏发现能力。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

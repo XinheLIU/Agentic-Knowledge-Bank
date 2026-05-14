@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-005",
+  "title": "Rare event prediction on time series that change structure mid-stream? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsiik/rare_event_prediction_on_time_series_that_change/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcsiik/rare_event_prediction_on_time_series_that_change/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464042+00:00",
+  "collected_at": "2026-05-14T10:24:21.464042+00:00",
+  "summary": "探讨在结构突变（如设备空闲/活跃双模态）且正样本稀疏（<2%）的时序数据中，如何构建鲁棒的罕见事件（如充电器故障）预测模型，涉及多模态建模、采样策略与损失设计。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "结构动态变化的稀疏事件预测需联合解决模态偏移、长尾分布和时序依赖三重挑战，架构解耦（如双编码器）比单纯重采样更有效。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

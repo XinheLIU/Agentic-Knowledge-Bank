@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-002",
+  "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.463998+00:00",
+  "collected_at": "2026-05-14T10:24:21.463998+00:00",
+  "summary": "提出Continual Harness框架，实现基础大模型与执行 harness 的在线协同进化，支持长时程自主代理的自我改进，已在Pokémon游戏任务中验证其从人工调优到模型自编辑的演进路径。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "agent",
+  "key_insight": "真正的长时程智能体必须具备模型与harness联合学习、持续自优化的能力，而非仅依赖静态提示或微调。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

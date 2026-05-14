@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260514-003",
+  "title": "Trained transformer-based chess models to play like humans (including thinking time) [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-14T10:24:21.464026+00:00",
+  "collected_at": "2026-05-14T10:24:21.464026+00:00",
+  "summary": "基于Transformer的轻量级（9M参数）人类风格国际象棋模型，按100分段分档建模，同步预测走法、思考时长和胜负概率，首次实现对人类时间压力行为的端到端建模。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "llm",
+  "key_insight": "将人类决策的时序约束（思考时间）与策略输出（走法+胜率）联合建模，突破传统AI仅优化胜率的范式，更贴近真实人类认知局限。",
+  "updated_at": "2026-05-14T10:27:31.804503+00:00"
+}

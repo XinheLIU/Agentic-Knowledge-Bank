@@ -694,5 +694,133 @@
     "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
     "category": "deployment",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-001",
+    "title": "Human-level performance via ML was *not* proven impossible with complexity theory [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-002",
+    "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-003",
+    "title": "Trained transformer-based chess models to play like humans (including thinking time) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-004",
+    "title": "Have the \"on-hold\" durations been getting longer for arXiv submissions? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc91ok/have_the_onhold_durations_been_getting_longer_for/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-005",
+    "title": "Rare event prediction on time series that change structure mid-stream? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsiik/rare_event_prediction_on_time_series_that_change/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-006",
+    "title": "Built Support Vector Machine(SVM) from scratch in Rust [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc16zk/built_support_vector_machinesvm_from_scratch_in/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-007",
+    "title": "Scenema Audio: Zero-shot expressive voice cloning and speech generation [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-008",
+    "title": "Elastic Attention Cores for Scalable Vision Transformers [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbxbfp/elastic_attention_cores_for_scalable_vision/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-009",
+    "title": "OpenAI's deployment company move says more about the AI gap than any benchmark[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsnng/openais_deployment_company_move_says_more_about/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-010",
+    "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-011",
+    "title": "What kinds of models are people training with document data? [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc92u9/what_kinds_of_models_are_people_training_with/",
+    "category": "rag",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-012",
+    "title": "Best examples of ML projects with good dataset/task code abstractions? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc24to/best_examples_of_ml_projects_with_good/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-013",
+    "title": "Sharing all KGC 2026 decks. More production-grade KG systems than I've seen at any conference. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbt6wl/sharing_all_kgc_2026_decks_more_productiongrade/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-014",
+    "title": "Steam Recommender using similarity! (Undergraduate Student Project) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb8k3n/steam_recommender_using_similarity_undergraduate/",
+    "category": "recommendation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-015",
+    "title": "I created a minimal one-file implementations (160loc) of JEPA family (ijepa, vjepa, vjepa2, cjepa) for educational purposes [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbhwbn/i_created_a_minimal_onefile_implementations/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260514-016",
+    "title": "TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
+    "category": "deployment",
+    "relevance_score": 0.95
   }
 ]
