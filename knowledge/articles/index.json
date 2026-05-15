@@ -822,5 +822,53 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
     "category": "deployment",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260515-001",
+    "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260515-002",
+    "title": "AI is making me dumb",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260515-003",
+    "title": "The US is winning the AI race where it matters most: commercialization",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260515-004",
+    "title": "arXiv implements 1-year ban for papers containing incontrovertible evidence of unchecked LLM-generated errors, such as hallucinated references or results. [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260515-005",
+    "title": "Would a 2000-2021 ML paper even get accepted today? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260515-006",
+    "title": "Follow the Mean: Reference-Guided Flow Matching [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
+    "category": "generative_model",
+    "relevance_score": 0.92
   }
 ]

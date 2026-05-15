@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260515-006",
+  "title": "Follow the Mean: Reference-Guided Flow Matching [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-15T10:29:32.538807+00:00",
+  "collected_at": "2026-05-15T10:29:32.538807+00:00",
+  "summary": "提出Reference-Guided Flow Matching新范式，通过引导扩散路径向参考样本均值流动，提升生成质量与可控性，在图像生成任务中实现更稳定、高效的分布对齐。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.92,
+  "category": "generative_model",
+  "key_insight": "将参考样本的统计均值作为动态引导信号嵌入流匹配过程，替代传统噪声调度，实现语义感知的生成路径优化。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}

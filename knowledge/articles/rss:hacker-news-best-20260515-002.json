@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260515-002",
+  "title": "AI is making me dumb",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+  "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-15T10:29:31.839238+00:00",
+  "collected_at": "2026-05-15T10:29:31.839238+00:00",
+  "summary": "文章反思过度依赖AI（尤其是LLM）导致认知能力退化，如批判性思维减弱、知识内化不足和问题解决能力下降，强调需主动设计人机协作模式以维持深度思考能力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI工具的便利性正悄然侵蚀人类高阶认知肌肉，真正的智能增强需以‘认知抗阻训练’为前提。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}

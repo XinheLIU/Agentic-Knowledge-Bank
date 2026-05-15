@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260515-005",
+  "title": "Would a 2000-2021 ML paper even get accepted today? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-15T10:29:32.538800+00:00",
+  "collected_at": "2026-05-15T10:29:32.538800+00:00",
+  "summary": "讨论2000–2021年间发表的机器学习论文在当今顶会评审标准下是否仍具竞争力，指出评估严格性、基线完整性、消融实验和创新显著性等要求大幅提升，反映领域成熟度与评审标准演进。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "ML领域的接受门槛提升主因是方法论严谨性标准系统性升级，而非单纯竞争加剧。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}

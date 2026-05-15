@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260515-003",
+  "title": "The US is winning the AI race where it matters most: commercialization",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+  "url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-15T10:29:31.839250+00:00",
+  "collected_at": "2026-05-15T10:29:31.839250+00:00",
+  "summary": "文章指出美国在AI商业化落地层面领先全球，依托成熟风投生态、云基础设施与企业级应用能力，将大模型快速转化为生产力工具，而非仅比拼算力或论文数量。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "AI竞争胜负手正从基础研究转向规模化商业集成与闭环价值交付能力。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}

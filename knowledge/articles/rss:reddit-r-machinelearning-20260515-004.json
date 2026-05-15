@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260515-004",
+  "title": "arXiv implements 1-year ban for papers containing incontrovertible evidence of unchecked LLM-generated errors, such as hallucinated references or results. [N]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-15T10:29:32.538792+00:00",
+  "collected_at": "2026-05-15T10:29:32.538792+00:00",
+  "summary": "arXiv对含确凿LLM生成错误（如幻觉参考文献、模型元提示）的论文实施1年投稿禁令，强调作者对全部内容负最终责任，倒逼AI辅助科研中的严格人工核查机制。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "学术平台正通过强惩罚机制将LLM使用责任完全锚定在人类作者身上，而非归咎于工具本身。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}

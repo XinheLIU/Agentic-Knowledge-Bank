@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260515-001",
+  "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+  "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-15T10:29:31.839210+00:00",
+  "collected_at": "2026-05-15T10:29:31.839210+00:00",
+  "summary": "安大略省审计发现，医生使用的AI病历生成工具频繁错误记录基础临床事实（如药物剂量、诊断日期），暴露LLM在高可靠性医疗场景中的事实一致性与领域校准严重不足。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "医疗场景下，未经严格领域对齐和事实验证的通用LLM无法满足临床文档的准确性基线要求。",
+  "updated_at": "2026-05-15T10:32:32.924144+00:00"
+}
