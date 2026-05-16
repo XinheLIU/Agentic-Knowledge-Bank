@@ -1,0 +1,23 @@
+{
+  "id": "github-20260516-001",
+  "title": "firecrawl/firecrawl",
+  "source": "github",
+  "source_url": "https://github.com/firecrawl/firecrawl",
+  "url": "https://github.com/firecrawl/firecrawl",
+  "author": "firecrawl",
+  "published_at": "2026-05-16T06:54:36Z",
+  "collected_at": "2026-05-16T09:44:47.312249+00:00",
+  "summary": "Firecrawl 是一个专为 AI 代理设计的开源 Web 数据获取工具，支持自动化搜索、结构化网页抓取与内容清洗，可将原始网页转化为高质量、LLM 友好的文本或结构化数据，显著降低 RAG 和智能体开发中的数据准备门槛。",
+  "tags": [
+    "llm",
+    "agent",
+    "rag"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "rag",
+  "key_insight": "将传统爬虫升级为面向 LLM 输入优化的数据管道，实现‘抓取即可用’的语义就绪数据供给。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

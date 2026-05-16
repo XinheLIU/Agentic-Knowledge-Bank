@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-006",
+  "title": "KDD 2026 Cycle 2 Results [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1teito1/kdd_2026_cycle_2_results_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1teito1/kdd_2026_cycle_2_results_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670709+00:00",
+  "collected_at": "2026-05-16T09:44:48.670709+00:00",
+  "summary": "KDD 2026 Cycle 2 研究轨道录用结果公布，反映当前AI领域（尤其LLM、智能体、评估等方向）前沿研究趋势与学术认可标准。",
+  "tags": [
+    "evaluation",
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "顶级会议录用结果是AI技术成熟度与研究价值的重要风向标，尤其凸显对可信赖评估方法和复杂智能体行为建模的关注。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

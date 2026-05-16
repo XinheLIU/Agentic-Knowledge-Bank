@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-007",
+  "title": "ROCm with PyTorch and PyTorch Lightning seems to still suck for research [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670724+00:00",
+  "collected_at": "2026-05-16T09:44:48.670724+00:00",
+  "summary": "用户实测ROCm 7.2 + PyTorch 2.12在训练SANA架构流匹配模型时出现反向传播NaN问题，而相同代码在CUDA上正常，表明ROCm对非标准/新兴模型支持仍不成熟，兼容性与稳定性存在显著短板。",
+  "tags": [
+    "deployment",
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.92,
+  "category": "deployment",
+  "key_insight": "ROCm当前生态虽能运行主流基准（如nanoGPT），但在实际研究场景中对自定义或前沿模型的算子覆盖、梯度计算和数值稳定性支持仍严重不足。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

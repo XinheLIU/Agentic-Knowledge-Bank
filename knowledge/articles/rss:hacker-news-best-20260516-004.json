@@ -1,0 +1,23 @@
+{
+  "id": "rss:hacker-news-best-20260516-004",
+  "title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://github.com/Andyyyy64/whichllm",
+  "url": "https://github.com/Andyyyy64/whichllm",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-16T09:44:47.897741+00:00",
+  "collected_at": "2026-05-16T09:44:47.897741+00:00",
+  "summary": "WhichLLM 是一个开源工具，通过标准化基准测试（如 MMLU、MT-Bench）为不同硬件配置（CPU/GPU/内存）推荐最优本地大语言模型，支持一键对比与部署适配，降低 LLM 本地化选型门槛。",
+  "tags": [
+    "llm",
+    "evaluation",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "将 LLM 选型从经验驱动转向数据驱动，以硬件约束为第一优先级的基准即服务（BaaS）范式。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-009",
+  "title": "PINN is predicting trivial solution for stiff ODE [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te0tpg/pinn_is_predicting_trivial_solution_for_stiff_ode/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1te0tpg/pinn_is_predicting_trivial_solution_for_stiff_ode/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670738+00:00",
+  "collected_at": "2026-05-16T09:44:48.670738+00:00",
+  "summary": "PINN在求解刚性常微分方程（如高刚度阻尼谐振子）时易陷入零解，暴露其对刚性、尺度失衡和梯度病态的敏感性，需针对性改进损失加权、网络架构或引入自适应时间采样。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "刚性ODE导致PINN残差梯度失衡，使优化器收敛至平凡解（y≡0），本质是物理约束与数值刚性间的隐式冲突。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

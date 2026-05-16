@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-011",
+  "title": "[R] Which LLMs are actually best for bleeding-edge Linux/ML debugging workflows in 2026? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670751+00:00",
+  "collected_at": "2026-05-16T09:44:48.670751+00:00",
+  "summary": "聚焦真实Linux/ML调试场景（Arch/CUDA/unsloth等），探讨哪些LLM在执行层具备强实践性、低摩擦、长程稳定性与最新生态感知力，强调工程实效而非基准分数。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "llm|agent",
+  "key_insight": "调试工作流中‘执行/logistics’角色的核心需求是精准适配快速演进的开源工具链（如micromamba vs Podman），而非通用推理能力。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

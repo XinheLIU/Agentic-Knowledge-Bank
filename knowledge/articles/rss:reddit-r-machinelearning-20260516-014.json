@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-014",
+  "title": "software trying to catch software is officially a dead en [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670779+00:00",
+  "collected_at": "2026-05-16T09:44:48.670779+00:00",
+  "summary": "文章指出，传统基于软件的行为分析和验证码已无法有效识别LLM驱动的自动化代理，生物特征硬件验证（如虹膜哈希+零知识证明）正成为抵御Sybil攻击、保障‘一人一账户’的唯一可靠技术路径。",
+  "tags": [
+    "llm",
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "security",
+  "key_insight": "当AI代理在行为与感知层面全面超越人类交互能力时，数字身份认证的根基正从算法逻辑不可逆地迁移至物理生物特征与专用硬件。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

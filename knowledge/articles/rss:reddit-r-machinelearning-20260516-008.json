@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-008",
+  "title": "Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te2x04/orthrus_memoryefficient_parallel_token_generation/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1te2x04/orthrus_memoryefficient_parallel_token_generation/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670731+00:00",
+  "collected_at": "2026-05-16T09:44:48.670731+00:00",
+  "summary": "Orthrus提出双视图扩散机制，在冻结AR Transformer上注入可训练扩散注意力模块，实现并行token生成与验证，内存开销极低（KV缓存O(1)），吞吐提升7.8×且精度零损失。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "无需修改基础模型权重、不引入额外推理组件，即可在保持原模型输出分布严格一致的前提下，大幅提升生成吞吐与内存效率。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

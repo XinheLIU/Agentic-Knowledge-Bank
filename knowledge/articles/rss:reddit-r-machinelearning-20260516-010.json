@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-010",
+  "title": "Struggling with Overfitting on Medical Imaging Task [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te7vkj/struggling_with_overfitting_on_medical_imaging/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1te7vkj/struggling_with_overfitting_on_medical_imaging/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670745+00:00",
+  "collected_at": "2026-05-16T09:44:48.670745+00:00",
+  "summary": "该帖探讨了在小样本（~900帧）、高相似度医学影像（LCA/RCA冠状动脉X光血管造影）分类任务中严重的过拟合问题，揭示了标准迁移学习与增强策略在领域适配不足时的局限性。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "医学影像过拟合主因是域偏移（DICOM采集差异、解剖纹理混淆）而非单纯数据量少，需针对性解耦患者身份与病理特征。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

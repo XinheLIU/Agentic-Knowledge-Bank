@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260516-002",
+  "title": "I believe there are entire companies right now under AI psychosis",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://twitter.com/mitchellh/status/2055380239711457578",
+  "url": "https://twitter.com/mitchellh/status/2055380239711457578",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-16T09:44:47.897706+00:00",
+  "collected_at": "2026-05-16T09:44:47.897706+00:00",
+  "summary": "该推文以讽刺口吻指出部分初创公司陷入‘AI妄想症’——过度依赖LLM幻觉输出、混淆演示与产品、缺乏真实工程闭环，暴露了当前AI创业中技术认知偏差与落地能力断层问题。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "LLM不是万能胶，将幻觉当功能、把prompt当架构，是AI产品失败的典型认知陷阱。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

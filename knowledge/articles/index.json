@@ -870,5 +870,117 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
     "category": "generative_model",
     "relevance_score": 0.92
+  },
+  {
+    "id": "github-20260516-001",
+    "title": "firecrawl/firecrawl",
+    "source": "github",
+    "source_url": "https://github.com/firecrawl/firecrawl",
+    "category": "rag",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260516-002",
+    "title": "I believe there are entire companies right now under AI psychosis",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://twitter.com/mitchellh/status/2055380239711457578",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260516-003",
+    "title": "Amazon workers under pressure to up their AI usage are making up tasks",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260516-004",
+    "title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://github.com/Andyyyy64/whichllm",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-005",
+    "title": "Backlash against Arxiv's proposed 1 year ban is genuinely perplexing. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
+    "category": "security",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-006",
+    "title": "KDD 2026 Cycle 2 Results [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1teito1/kdd_2026_cycle_2_results_d/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-007",
+    "title": "ROCm with PyTorch and PyTorch Lightning seems to still suck for research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-008",
+    "title": "Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te2x04/orthrus_memoryefficient_parallel_token_generation/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-009",
+    "title": "PINN is predicting trivial solution for stiff ODE [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te0tpg/pinn_is_predicting_trivial_solution_for_stiff_ode/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-010",
+    "title": "Struggling with Overfitting on Medical Imaging Task [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te7vkj/struggling_with_overfitting_on_medical_imaging/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-011",
+    "title": "[R] Which LLMs are actually best for bleeding-edge Linux/ML debugging workflows in 2026? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
+    "category": "llm|agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-012",
+    "title": "Looking for a real world dataset (or website where i can find it) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdybl4/looking_for_a_real_world_dataset_or_website_where/",
+    "category": "security",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-013",
+    "title": "Does anyone know any ready-to-go Emotion Cause Extraction (ECE) model? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdsyz1/does_anyone_know_any_readytogo_emotion_cause/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260516-014",
+    "title": "software trying to catch software is officially a dead en [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
+    "category": "security",
+    "relevance_score": 0.95
   }
 ]

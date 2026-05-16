@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-005",
+  "title": "Backlash against Arxiv's proposed 1 year ban is genuinely perplexing. [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670701+00:00",
+  "collected_at": "2026-05-16T09:44:48.670701+00:00",
+  "summary": "arXiv拟对引用幻觉及AI生成内容造假作者实施一年禁发令，引发学界激烈争议，暴露学术出版中责任缺位、质量管控失效等系统性风险。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "AI生成内容滥用正倒逼学术基础设施重构责任认定与质量验证机制，而非单纯拥抱技术便利。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

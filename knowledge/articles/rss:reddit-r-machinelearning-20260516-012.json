@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-012",
+  "title": "Looking for a real world dataset (or website where i can find it) [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdybl4/looking_for_a_real_world_dataset_or_website_where/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tdybl4/looking_for_a_real_world_dataset_or_website_where/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670758+00:00",
+  "collected_at": "2026-05-16T09:44:48.670758+00:00",
+  "summary": "用户寻求真实世界数据集用于数据隐私、偏见和可解释性分析，强调低匿名性以支持差分隐私、k-匿名等技术实践，反映实际AI治理与合规研究需求。",
+  "tags": [
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "security",
+  "key_insight": "真实、低匿名化数据集是评估隐私增强技术（PETs）有效性的关键前提，但需在合规与实用性间谨慎权衡。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

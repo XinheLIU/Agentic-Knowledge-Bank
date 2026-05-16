@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260516-013",
+  "title": "Does anyone know any ready-to-go Emotion Cause Extraction (ECE) model? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdsyz1/does_anyone_know_any_readytogo_emotion_cause/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tdsyz1/does_anyone_know_any_readytogo_emotion_cause/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-16T09:44:48.670773+00:00",
+  "collected_at": "2026-05-16T09:44:48.670773+00:00",
+  "summary": "该帖子询问是否有开箱即用的情感原因抽取（ECE）模型，聚焦于无需训练、可直接部署的预训练模型，对情感分析下游任务（如对话系统、舆情监控）具实用价值。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "ECE作为细粒度情感理解任务，目前缺乏标准化、易集成的开源推理模型，多数方案仍需微调或自定义pipeline。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}

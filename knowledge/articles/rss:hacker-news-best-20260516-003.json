@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260516-003",
+  "title": "Amazon workers under pressure to up their AI usage are making up tasks",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks",
+  "url": "https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-16T09:44:47.897730+00:00",
+  "collected_at": "2026-05-16T09:44:47.897730+00:00",
+  "summary": "亚马逊员工因KPI压力被迫增加AI使用率，导致虚构非必要任务以满足指标，暴露AI落地中目标错位与工具滥用风险，警示组织需关注真实价值而非表面使用率。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "当AI采用率被简化为可量化的管理指标时，会诱发行为扭曲，削弱AI赋能的真实效能。",
+  "updated_at": "2026-05-16T09:47:51.561792+00:00"
+}
