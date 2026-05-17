@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260517-006",
+  "title": "ML lead vs PM on eval-methodology layer independence. who's actually right here? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfkgbx/ml_lead_vs_pm_on_evalmethodology_layer/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tfkgbx/ml_lead_vs_pm_on_evalmethodology_layer/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-17T09:50:45.633298+00:00",
+  "collected_at": "2026-05-17T09:50:45.633298+00:00",
+  "summary": "讨论ML工程师与非技术PM在AI评估方法论上的认知冲突：PM采用简化分层框架（如行为检查/对抗探测/传统指标）提升协作效率，但该框架隐含的‘层间独立性’假设在统计上不成立，易导致误判。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "评估框架的工程实用性与统计严谨性存在天然张力，需通过联合建模、条件依赖可视化和共设评估SLO来弥合。",
+  "updated_at": "2026-05-17T09:53:44.159232+00:00"
+}

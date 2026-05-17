@@ -982,5 +982,69 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
     "category": "security",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:hacker-news-best-20260517-001",
+    "title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://crates.io/crates/zerostack/1.0.0",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260517-002",
+    "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.seangoedecke.com/steering-vectors/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260517-003",
+    "title": "Frontier AI has broken the open CTF format",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://kabir.au/blog/the-ctf-scene-is-dead",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260517-004",
+    "title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260517-005",
+    "title": "Do you agree with Judea that learning from data is not everything? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tevot1/do_you_agree_with_judea_that_learning_from_data/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260517-006",
+    "title": "ML lead vs PM on eval-methodology layer independence. who's actually right here? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfkgbx/ml_lead_vs_pm_on_evalmethodology_layer/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260517-007",
+    "title": "Help with CNNs.[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfjajb/help_with_cnnsd/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260517-008",
+    "title": "Made and Published a Paper Comparing Analysis of CNN and Vision Transformer Architectures for Brain Tumor Detection [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1texa4d/made_and_published_a_paper_comparing_analysis_of/",
+    "category": "evaluation",
+    "relevance_score": 0.92
   }
 ]
