@@ -1046,5 +1046,77 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1texa4d/made_and_published_a_paper_comparing_analysis_of/",
     "category": "evaluation",
     "relevance_score": 0.92
+  },
+  {
+    "id": "rss:hacker-news-best-20260518-001",
+    "title": "AI is a technology not a product",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260518-002",
+    "title": "I don't think AI will make your processes go faster",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:hacker-news-best-20260518-003",
+    "title": "AI subscriptions are a ticking time bomb for enterprise",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.thestateofbrand.com/news/ai-subscription-time-bomb",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260518-004",
+    "title": "US is starting to see heavy job losses in roles exposed to AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260518-005",
+    "title": "Slop is making me feel disconnected from AI Research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfv0vh/slop_is_making_me_feel_disconnected_from_ai/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260518-006",
+    "title": "could refusal layers be masking dialect-conditioned safety failures in MoE models [d]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260518-007",
+    "title": "Would a new result in pre-print be considered by reviewers? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tg7qq3/would_a_new_result_in_preprint_be_considered_by/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260518-008",
+    "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/",
+    "category": "llm",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260518-009",
+    "title": "model-agnostic sensitivity approximator [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgemq5/modelagnostic_sensitivity_approximator_p/",
+    "category": "evaluation",
+    "relevance_score": 0.92
   }
 ]

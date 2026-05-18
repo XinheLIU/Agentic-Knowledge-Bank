@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260518-009",
+  "title": "model-agnostic sensitivity approximator [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgemq5/modelagnostic_sensitivity_approximator_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tgemq5/modelagnostic_sensitivity_approximator_p/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-18T11:48:28.408243+00:00",
+  "collected_at": "2026-05-18T11:48:28.408243+00:00",
+  "summary": "提出一种模型无关的敏感性近似器（MASA），通过加权扰动与线性回归估计黑盒模型（如随机森林、XGBoost）在单样本上的局部梯度∂f/∂x，解决不可微模型的敏感性分析难题，优于传统中心有限差分法的稳定性。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "对不可微黑盒模型，局部敏感性比特征归因更能支撑风险可控的决策干预。",
+  "updated_at": "2026-05-18T11:51:23.893083+00:00"
+}
