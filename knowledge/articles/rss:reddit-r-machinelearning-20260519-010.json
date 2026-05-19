@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-010",
+  "title": "How does loss functions work in PINN? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thitoz/how_does_loss_functions_work_in_pinn_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1thitoz/how_does_loss_functions_work_in_pinn_d/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-19T11:25:23.628080+00:00",
+  "collected_at": "2026-05-19T11:25:23.628080+00:00",
+  "summary": "本文探讨PINN中加权损失函数的作用机制，澄清权重λ并非仅影响总损失数值大小，而是通过梯度缩放调控反向传播中各损失项对参数更新的贡献强度，从而引导模型优先满足物理约束或初始条件。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "损失权重λ直接缩放对应损失项的梯度，决定其在参数更新中的相对影响力，而非仅改变标量损失值。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

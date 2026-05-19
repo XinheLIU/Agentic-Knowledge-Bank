@@ -1,0 +1,22 @@
+{
+  "id": "rss:hacker-news-best-20260519-002",
+  "title": "AI eats the world (Spring 26) [pdf]",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf",
+  "url": "https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf",
+  "author": "Hacker News (Best)",
+  "published_at": "2026-05-19T11:25:22.805852+00:00",
+  "collected_at": "2026-05-19T11:25:22.805852+00:00",
+  "summary": "该PDF报告探讨AI技术在2026年春季的规模化落地趋势，强调大模型从‘能用’走向‘好用’的关键路径：智能体（Agent）编排、多步骤任务自动化及与现实系统深度集成，核心价值在于推动AI从工具演进为自主工作流引擎。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "AI正从单次响应模型转向具备规划、工具调用与环境交互能力的持续性智能体系统。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

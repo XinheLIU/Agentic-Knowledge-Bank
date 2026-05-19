@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-015",
+  "title": "Witchcraft, fast local semantic search on top of SQLite [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgqyo8/witchcraft_fast_local_semantic_search_on_top_of/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tgqyo8/witchcraft_fast_local_semantic_search_on_top_of/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-19T11:25:23.628116+00:00",
+  "collected_at": "2026-05-19T11:25:23.628116+00:00",
+  "summary": "Witchcraft 是一个基于 SQLite 的轻量级本地语义搜索引擎，用 Rust 实现，无需 API、向量数据库或复杂预处理，支持毫秒级端到端搜索；配套工具 Pickbrain 可索引和检索 LLM 会话与文档，赋能 Agent 全局记忆与上下文续写。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "agent",
+  "key_insight": "将语义搜索深度嵌入本地 Agent 工作流，以零依赖、低延迟方式实现跨会话长期记忆，重新定义轻量级 RAG 的边界。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

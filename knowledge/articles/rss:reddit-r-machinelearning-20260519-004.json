@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-004",
+  "title": "A Simple Solution to Improve Broken Peer Review System at AI Conferences [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1the441/a_simple_solution_to_improve_broken_peer_review/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1the441/a_simple_solution_to_improve_broken_peer_review/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-19T11:25:23.628035+00:00",
+  "collected_at": "2026-05-19T11:25:23.628035+00:00",
+  "summary": "提出一种分组隔离式同行评审机制，将作者与评审任务严格分属互斥组别（A/B），阻断‘互惠拒稿’动机，提升AI顶会评审公平性与可靠性。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "evaluation",
+  "key_insight": "通过结构化利益隔离而非依赖道德约束，从机制设计层面根除评审中的系统性激励偏差。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

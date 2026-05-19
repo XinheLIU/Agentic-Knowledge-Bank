@@ -1,0 +1,22 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-007",
+  "title": "Released a free 9.8M doc Indic multilingual corpus — Hindi, Bengali, Tamil, Telugu + 7 more (CC0, HuggingFace) [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1th4po3/released_a_free_98m_doc_indic_multilingual_corpus/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1th4po3/released_a_free_98m_doc_indic_multilingual_corpus/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-19T11:25:23.628059+00:00",
+  "collected_at": "2026-05-19T11:25:23.628059+00:00",
+  "summary": "发布了一个免费、CC0许可的980万文档印度多语言语料库，覆盖11种语言（含印地语、孟加拉语、泰米尔语等）及英语，总计约84亿token，已托管于Hugging Face，显著降低低资源语种LLM训练与RAG数据构建门槛。",
+  "tags": [
+    "llm",
+    "rag"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "llm",
+  "key_insight": "高质量、大规模、免版权限制的本土化多语言语料是推动印度及其他低资源语言AI公平发展的关键基础设施。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

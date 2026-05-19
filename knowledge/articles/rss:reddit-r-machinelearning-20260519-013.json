@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-013",
+  "title": "MLRC 2026 is open for submissions - an official track at NeurIPS 2026 [N]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1th31er/mlrc_2026_is_open_for_submissions_an_official/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1th31er/mlrc_2026_is_open_for_submissions_an_official/",
+  "author": "Reddit r/MachineLearning",
+  "published_at": "2026-05-19T11:25:23.628101+00:00",
+  "collected_at": "2026-05-19T11:25:23.628101+00:00",
+  "summary": "MLRC 2026作为NeurIPS 2026官方赛道，聚焦机器学习可复现性验证，要求作者复现实有论文并提交经TMLR评审的报告，推动科研透明性与严谨性。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "将可复现性从辅助实践提升为顶级会议核心评审维度，标志着AI科研范式向实证主义深化。",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}
