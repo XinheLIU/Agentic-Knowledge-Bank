@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-001",
+  "title": "Machine Learning on Spherical Manifold [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tif576/machine_learning_on_spherical_manifold_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tif576/machine_learning_on_spherical_manifold_r/",
+  "author": "/u/eesuck0",
+  "published_at": "2026-05-20T08:13:57+00:00",
+  "collected_at": "2026-05-20T10:56:39.428531+00:00",
+  "summary": "探讨在球面流形（spherical manifold）上进行机器学习的几何深度学习方法，聚焦对称性建模与不变特征提取，为处理球面数据（如气候、天文、分子结构）提供理论基础与实践路径。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "other",
+  "key_insight": "球面流形上的学习需兼顾旋转等变性与全局拓扑约束，现有方法在可扩展性与离散化误差间存在根本张力。"
+}

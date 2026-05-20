@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-002",
+  "title": "Instructions for (ICML) workshop reviews [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ticoy5/instructions_for_icml_workshop_reviews_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ticoy5/instructions_for_icml_workshop_reviews_d/",
+  "author": "/u/Ok-Painter573",
+  "published_at": "2026-05-20T05:59:26+00:00",
+  "collected_at": "2026-05-20T10:56:39.430125+00:00",
+  "summary": "该帖探讨ICML workshop审稿是否沿用主会审稿规范，核心价值在于澄清学术会议中workshop评审流程的模糊性，帮助新审稿人快速适配标准。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "ICML workshop通常无统一审稿指南，多数沿用主会评审框架，但最终以workshop chairs具体指示为准。"
+}

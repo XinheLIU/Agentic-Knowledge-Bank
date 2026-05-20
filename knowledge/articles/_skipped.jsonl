@@ -1,3 +1,4 @@
 {"id": "unknown", "source": "github", "source_url": "https://example.com/repo", "stage": "analyzer", "reason": "relevance_score 0.0 < threshold 0.5", "ts": "2026-05-19T10:45:32.189114+00:00"}
 {"id": "rss:test-feed-20260519-001", "source": "rss:Test Feed", "source_url": "https://example.com/low", "stage": "organizer", "reason": "schema validation failed: missing key_insight", "ts": "2026-05-19T10:50:31.869573+00:00"}
 {"id": "rss:test-feed-20260519-001", "source": "rss:Test Feed", "source_url": "https://example.com/new", "stage": "organizer", "reason": "schema validation failed: missing key_insight", "ts": "2026-05-19T10:50:31.870198+00:00"}
+{"id": "reddit-ml-20260520-001", "source": "rss:Reddit r/MachineLearning", "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ti1tgw/icml_proceedingsonly_d/", "stage": "analyzer", "reason": "relevance_score 0.3 < threshold 0.4", "ts": "2026-05-20T10:58:39.570127+00:00"}

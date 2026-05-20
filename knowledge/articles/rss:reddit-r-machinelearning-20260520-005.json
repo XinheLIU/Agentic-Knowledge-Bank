@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-005",
+  "title": "All fundamental knowledge in ML Course by Andrew NG that I noted and create into a repo github [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tho7b2/all_fundamental_knowledge_in_ml_course_by_andrew/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tho7b2/all_fundamental_knowledge_in_ml_course_by_andrew/",
+  "author": "/u/Far_Extreme_9737",
+  "published_at": "2026-05-19T14:12:02+00:00",
+  "collected_at": "2026-05-20T10:56:39.432470+00:00",
+  "summary": "该资源整理了Andrew Ng机器学习课程全部核心知识点，涵盖线性回归到强化学习共10章，以清晰易懂的LaTeX笔记形式呈现，并自动编译为PDF，适合系统性学习与复习。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "高质量、结构化、可复现的学习笔记仓库，将经典MOOC内容转化为工程友好的开源知识资产。"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-006",
+  "title": "I built a tool that shows you what GPT-2 is \"thinking\" in real-time as it generates 3D graph of concept activations per token [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thwad9/i_built_a_tool_that_shows_you_what_gpt2_is/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1thwad9/i_built_a_tool_that_shows_you_what_gpt2_is/",
+  "author": "/u/Financial_World_9730",
+  "published_at": "2026-05-19T18:46:30+00:00",
+  "collected_at": "2026-05-20T10:56:39.435580+00:00",
+  "summary": "AXON 是一个实时可视化工具，利用稀疏自编码器（SAE）解析 GPT-2 每个生成步骤中残差流的语义特征，并以动态3D力导向图呈现概念激活与共现关系，揭示模型决策前的内部机制。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "llm",
+  "key_insight": "模型在输出 token 前的残差流激活模式已蕴含高度结构化的语义线索（如地理、语法、命名实体），验证了SAE在机制可解释性中的表征解耦能力。"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-003",
+  "title": "What do you think about Tabular Foundation Models [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thofoe/what_do_you_think_about_tabular_foundation_models/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1thofoe/what_do_you_think_about_tabular_foundation_models/",
+  "author": "/u/pplonski",
+  "published_at": "2026-05-19T14:20:20+00:00",
+  "collected_at": "2026-05-20T10:56:39.430886+00:00",
+  "summary": "讨论Tabular Foundation Models（如TabPFN-3、TabICL）在小规模结构化数据上的卓越性能与工程合理性矛盾，质疑其GPU资源消耗与数据规模不匹配的问题，并对比传统机器学习方法的可解释性与效率优势。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "llm",
+  "key_insight": "面向结构化数据的Foundation Model正面临‘大模型小数据’的实用性悖论：高性能以高计算开销和低部署灵活性为代价。"
+}

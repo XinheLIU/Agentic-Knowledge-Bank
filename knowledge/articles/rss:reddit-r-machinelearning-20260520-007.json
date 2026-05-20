@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-007",
+  "title": "Backprop-free Pong: PC + distributional Hebbian plasticity vs. PPO: 57% vs. 59%, ~1500 lines from scratch [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thrlix/backpropfree_pong_pc_distributional_hebbian/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1thrlix/backpropfree_pong_pc_distributional_hebbian/",
+  "author": "/u/ConfusionSpiritual19",
+  "published_at": "2026-05-19T16:09:54+00:00",
+  "collected_at": "2026-05-20T10:56:39.437256+00:00",
+  "summary": "探索完全生物可解释的无反向传播强化学习方法，在Pong任务中以57%胜率逼近PPO（59%），揭示Hebbian可塑性在非平稳环境下的稳定性-可塑性困境。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "生物可塑性RL的真正瓶颈不是缺乏反向传播，而是自博弈等非平稳动态下Hebbian规则引发的灾难性遗忘。"
+}

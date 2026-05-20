@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260520-004",
+  "title": "[ECCV 2026] No modified date next to reviews [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thxv15/eccv_2026_no_modified_date_next_to_reviews_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1thxv15/eccv_2026_no_modified_date_next_to_reviews_d/",
+  "author": "/u/Healthy_Horse_2183",
+  "published_at": "2026-05-19T19:38:46+00:00",
+  "collected_at": "2026-05-20T10:56:39.431674+00:00",
+  "summary": "该帖反映 ECCV 2026 审稿系统中 OpenReview 平台缺乏审稿修改时间戳，导致作者无法确认审稿人是否阅读并响应 rebuttal，暴露学术评审透明性与可追溯性缺陷。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "审稿修改时间戳是验证审稿人是否实质性响应作者 rebuttal 的关键可审计信号，缺失即削弱双盲评审的公平性与可信度。"
+}
