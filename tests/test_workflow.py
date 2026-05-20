@@ -91,46 +91,53 @@ def test_build_articles_filters_deduplicates_and_matches_hook_schema(tmp_path):
             "title": "Duplicate",
             "source": "github",
             "source_url": "https://example.com/existing",
+            "url": "https://example.com/existing",
             "collected_at": "2026-05-01T00:00:00Z",
             "summary": "A useful summary about an LLM agent framework and API.",
             "tags": ["llm"],
             "score": 8,
             "relevance_score": 0.9,
+            "category": "llm",
+            "key_insight": "insight",
         },
         {
-            "title": "Too Low",
+            "title": "New Low",
             "source": "rss:Test Feed",
             "source_url": "https://example.com/low",
+            "url": "https://example.com/low",
             "collected_at": "2026-05-01T00:00:00Z",
             "summary": "A useful summary about a model.",
             "tags": ["llm"],
             "score": 6,
             "relevance_score": 0.1,
+            "category": "llm",
+            "key_insight": "insight",
         },
         {
             "title": "New",
             "source": "rss:Test Feed",
             "source_url": "https://example.com/new",
+            "url": "https://example.com/new",
             "collected_at": "2026-05-01T00:00:00Z",
             "summary": "A useful summary about an LLM agent framework and API.",
             "tags": ["agent"],
             "score": 9,
             "relevance_score": 0.8,
             "audience": "advanced",
+            "category": "agent",
+            "key_insight": "insight",
         },
     ]
 
     articles = build_articles(analyses, relevance_threshold=0.5, articles_dir=tmp_path)
-    assert len(articles) == 1
-    article = articles[0]
-    assert article["title"] == "New"
-    assert article["id"].startswith("rss:test-feed-")
-    assert article["source_url"] == "https://example.com/new"
-    assert article["status"] == "published"
-    assert article["score"] == 9
+    # relevance filtering moved to analyzer; organizer only deduplicates and validates
+    assert len(articles) == 2
+    titles = {a["title"] for a in articles}
+    assert "New" in titles
+    assert "New Low" in titles
 
 
-def test_save_articles_writes_files_and_index(tmp_path):
+def test_save_articles_writes_files_without_index(tmp_path):
     articles = [
         {
             "id": "github-20260501-001",
@@ -148,8 +155,8 @@ def test_save_articles_writes_files_and_index(tmp_path):
     paths = save_articles(articles, articles_dir=tmp_path)
     assert len(paths) == 1
     assert paths[0].exists()
-    index = json.loads((tmp_path / "index.json").read_text(encoding="utf-8"))
-    assert index[0]["id"] == "github-20260501-001"
+    # index.json is no longer written by organizer (derived artifact built by build_index.py)
+    assert not (tmp_path / "index.json").exists()
 
 
 def test_write_pending_review_persists_outside_articles(tmp_path):

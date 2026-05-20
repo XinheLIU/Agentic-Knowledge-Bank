@@ -17,11 +17,15 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "A Valid Article",
             "source_url": "https://github.com/example/repo",
+            "url": "https://github.com/example/repo",
             "summary": "This is a sufficiently long summary that explains what the article is about.",
             "tags": ["llm", "agent"],
             "status": "review",
             "score": 7,
             "audience": "intermediate",
+            "key_insight": "A key insight.",
+            "category": "llm",
+            "relevance_score": 0.8,
         }
         errors = validate_article(data)
         assert errors == []
@@ -37,9 +41,13 @@ class TestValidateArticle:
             "id": "bad-id",
             "title": "Test",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "A sufficiently long summary for the test to pass.",
             "tags": ["llm"],
             "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("ID 格式错误" in e for e in errors)
@@ -49,9 +57,13 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "   ",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "A sufficiently long summary for the test to pass.",
             "tags": ["llm"],
             "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("标题不能为空" in e for e in errors)
@@ -61,9 +73,13 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "Test",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "Too short",
             "tags": ["llm"],
             "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("摘要太短" in e for e in errors)
@@ -73,9 +89,13 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "Test",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "A sufficiently long summary for the test to pass.",
             "tags": ["llm"],
             "status": "invalid-status",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("无效的 status" in e for e in errors)
@@ -85,10 +105,14 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "Test",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "A sufficiently long summary for the test to pass.",
             "tags": ["llm"],
             "status": "review",
             "score": 15,
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("score 超出范围" in e for e in errors)
@@ -98,13 +122,67 @@ class TestValidateArticle:
             "id": "github-20260501-001",
             "title": "Test",
             "source_url": "https://example.com",
+            "url": "https://example.com",
             "summary": "A sufficiently long summary for the test to pass.",
             "tags": ["llm"],
             "status": "review",
             "audience": "expert",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
         }
         errors = validate_article(data)
         assert any("无效的 audience" in e for e in errors)
+
+    def test_id_with_colon_rejected(self):
+        data = {
+            "id": "rss:reddit-ml-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+        }
+        errors = validate_article(data)
+        assert any("禁止冒号" in e for e in errors)
+
+    def test_invalid_category_rejected(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "invalid",
+            "relevance_score": 0.5,
+        }
+        errors = validate_article(data)
+        assert any("无效的 category" in e for e in errors)
+
+    def test_author_and_published_at_may_be_null(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "author": None,
+            "published_at": None,
+        }
+        errors = validate_article(data)
+        assert errors == []
 
 
 class TestFixtures:

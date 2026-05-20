@@ -1,5 +1,165 @@
 [
   {
+    "id": "github-20260502-021",
+    "title": "langgenius/dify",
+    "source": "github",
+    "source_url": "https://github.com/langgenius/dify",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-022",
+    "title": "langchain-ai/langchain",
+    "source": "github",
+    "source_url": "https://github.com/langchain-ai/langchain",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-023",
+    "title": "NousResearch/hermes-agent",
+    "source": "github",
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-024",
+    "title": "Shubhamsaboo/awesome-llm-apps",
+    "source": "github",
+    "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-025",
+    "title": "browser-use/browser-use",
+    "source": "github",
+    "source_url": "https://github.com/browser-use/browser-use",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-026",
+    "title": "OpenHands/OpenHands",
+    "source": "github",
+    "source_url": "https://github.com/OpenHands/OpenHands",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-027",
+    "title": "hiyouga/LlamaFactory",
+    "source": "github",
+    "source_url": "https://github.com/hiyouga/LlamaFactory",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-028",
+    "title": "bytedance/deer-flow",
+    "source": "github",
+    "source_url": "https://github.com/bytedance/deer-flow",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-029",
+    "title": "mem0ai/mem0",
+    "source": "github",
+    "source_url": "https://github.com/mem0ai/mem0",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-030",
+    "title": "jeecgboot/JeecgBoot",
+    "source": "github",
+    "source_url": "https://github.com/jeecgboot/JeecgBoot",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-031",
+    "title": "CherryHQ/cherry-studio",
+    "source": "github",
+    "source_url": "https://github.com/CherryHQ/cherry-studio",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-032",
+    "title": "zhayujie/CowAgent",
+    "source": "github",
+    "source_url": "https://github.com/zhayujie/CowAgent",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-033",
+    "title": "badlogic/pi-mono",
+    "source": "github",
+    "source_url": "https://github.com/badlogic/pi-mono",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-034",
+    "title": "aaif-goose/goose",
+    "source": "github",
+    "source_url": "https://github.com/aaif-goose/goose",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-035",
+    "title": "HKUDS/nanobot",
+    "source": "github",
+    "source_url": "https://github.com/HKUDS/nanobot",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-036",
+    "title": "ZhuLinsen/daily_stock_analysis",
+    "source": "github",
+    "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-037",
+    "title": "continuedev/continue",
+    "source": "github",
+    "source_url": "https://github.com/continuedev/continue",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-038",
+    "title": "AstrBotDevs/AstrBot",
+    "source": "github",
+    "source_url": "https://github.com/AstrBotDevs/AstrBot",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-039",
+    "title": "langchain-ai/langgraph",
+    "source": "github",
+    "source_url": "https://github.com/langchain-ai/langgraph",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "github-20260502-040",
+    "title": "CopilotKit/CopilotKit",
+    "source": "github",
+    "source_url": "https://github.com/CopilotKit/CopilotKit",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
     "id": "github-20260507-001",
     "title": "infiniflow/ragflow",
     "source": "github",
@@ -12,168 +172,8 @@
     "title": "patchy631/ai-engineering-hub",
     "source": "github",
     "source_url": "https://github.com/patchy631/ai-engineering-hub",
-    "category": "llm|agent|rag",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260507-003",
-    "title": "Three Inverse Laws of AI",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://susam.net/inverse-laws-of-robotics.html",
-    "category": "agent",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:hacker-news-best-20260507-004",
-    "title": "AI didn't delete your database, you did",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260507-005",
-    "title": "When everyone has AI and the company still learns nothing",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260507-006",
-    "title": "Google Chrome silently installs a 4 GB AI model on your device without consent",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260507-007",
-    "title": "Train Your Own LLM from Scratch",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://github.com/angelos-p/llm-from-scratch",
-    "category": "llm",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-008",
-    "title": "Stop letting LLMs edit your .bib [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5anla/stop_letting_llms_edit_your_bib_d/",
     "category": "llm",
     "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-009",
-    "title": "Weights & Biases New Master Service Agreement Questions [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
-    "category": "security",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-010",
-    "title": "Running scope enforcement on every agent action in production — what I'm seeing after launch [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5whgk/running_scope_enforcement_on_every_agent_action/",
-    "category": "security",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-011",
-    "title": "Exploring Black‑Box Optimization [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5rfrk/exploring_blackbox_optimization_r/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-012",
-    "title": "NeurIPS 2026 AC-Pilot, how much would you trust this? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t59w5e/neurips_2026_acpilot_how_much_would_you_trust/",
-    "category": "evaluation",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-013",
-    "title": "Transformers with Selective Access to Early Representations [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4z3af/transformers_with_selective_access_to_early/",
-    "category": "llm",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-014",
-    "title": "Struggling to reproduce paper results before improving them — stuck below reported accuracy [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4dkew/struggling_to_reproduce_paper_results_before/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-015",
-    "title": "Production AI very different from the demos [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4mzm3/production_ai_very_different_from_the_demos_d/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-016",
-    "title": "Model automatically developed by the AIBuildAI Agent ranked among top 5.7% out of 3,219 human teams in the Kaggle TGS Salt Identification Challenge [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5i56v/model_automatically_developed_by_the_aibuildai/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-017",
-    "title": "Competition - League of Robot Runners 2026: Multi-robot coordination under uncertainty [N]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4sjr7/competition_league_of_robot_runners_2026/",
-    "category": "agent",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-018",
-    "title": "Question about PLS-DA hyperparameter tuning [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-001",
-    "title": "META Superintelligence Lab Presents: ProgramBench: Can SOTA AI Recreate Real Executable Programs(ffmpeg, SQLite, ripgrep) From Scratch Without The Internet?",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
-    "category": "evaluation",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-002",
-    "title": "Dataset of 150k+ stool images and not sure how to fully use it [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vy2i/dataset_of_150k_stool_images_and_not_sure_how_to/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-003",
-    "title": "Visual Perceptual to Conceptual First-Order Rule Learning Networks [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260507-004",
-    "title": "NeurIPS Submission Number [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4oykt/neurips_submission_number_d/",
-    "category": "other",
-    "relevance_score": 0.9
   },
   {
     "id": "github-20260508-001",
@@ -184,694 +184,6 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260508-002",
-    "title": "AI slop is killing online communities",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260508-003",
-    "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260508-004",
-    "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-005",
-    "title": "Disillusionment with mechanistic interpretability research [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6zdj6/disillusionment_with_mechanistic_interpretability/",
-    "category": "interpretability",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-006",
-    "title": "Steam Similarity Recommender [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6x2zw/steam_similarity_recommender_p/",
-    "category": "rag",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-007",
-    "title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-008",
-    "title": "Quantization and Fast Inference (MEAP) - How much performance are you actually getting from quantization in production? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6oa4e/quantization_and_fast_inference_meap_how_much/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-009",
-    "title": "People Interested in Continual Learning Research[R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr/",
-    "category": "agent",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-010",
-    "title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-011",
-    "title": "What should a PyTorch training end-of-run performance summary show? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-012",
-    "title": "ROCm Status in mid 2026 [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/",
-    "category": "deployment",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-013",
-    "title": "Diffusion for generating/editing ASTs? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6hv55/diffusion_for_generatingediting_asts_d/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-014",
-    "title": "How much can a video generated by the same diffusion model differ across GPU architectures if the initial noise latent is fixed? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t69dvx/how_much_can_a_video_generated_by_the_same/",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260508-015",
-    "title": "ECCV Stupid Reviewer Behavior (Any AC here?) [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6ybtk/eccv_stupid_reviewer_behavior_any_ac_here_r/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260509-001",
-    "title": "AI is breaking two vulnerability cultures",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
-    "category": "security",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-002",
-    "title": "DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7yrvr/deepseek_v4_paper_full_version_is_out_fp4_qat/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-003",
-    "title": "Interactive KL Divergence Visualisation [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7lmu4/interactive_kl_divergence_visualisation_p/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-004",
-    "title": "NeurIPS reviewers, any word after the invite email? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7mfqr/neurips_reviewers_any_word_after_the_invite_email/",
-    "category": "evaluation",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-005",
-    "title": "Neurips : Pushing anonymous repo after rebuttal [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-006",
-    "title": "Formalizing statistical learning theory in Lean 4 [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7bgve/formalizing_statistical_learning_theory_in_lean_4/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-007",
-    "title": "Embedding models for time series data [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7avgp/embedding_models_for_time_series_data_d/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260509-008",
-    "title": "Backcasting forecast errors: model collapsing to mean [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7knyd/backcasting_forecast_errors_model_collapsing_to/",
-    "category": "forecasting",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260510-001",
-    "title": "What is an average publication outcome for an ML PhD? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260510-002",
-    "title": "\"colss\" a math-style expression evaluator for NumPy arrays [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8zja2/colss_a_mathstyle_expression_evaluator_for_numpy/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260510-003",
-    "title": "My experience interviewing with Huawei Vancouver for an ML research role: strong mismatch between how it was pitched and how it was evaluated [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t80awj/my_experience_interviewing_with_huawei_vancouver/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260510-004",
-    "title": "Parax v0.7: Parametric Modeling in JAX [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260510-005",
-    "title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:hacker-news-best-20260511-001",
-    "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260511-002",
-    "title": "Local AI needs to be the norm",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260511-003",
-    "title": "Task Paralysis and AI",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260511-004",
-    "title": "Meta's embrace of AI is making its employees miserable",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
-    "category": "deployment",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260511-005",
-    "title": "PhD students in ML, how many hours on average do you work? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260511-006",
-    "title": "Is reproducing or implementing a paper considered research? [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9zre0/is_reproducing_or_implementing_a_paper_considered/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260511-007",
-    "title": "Signals: finding the most informative agent traces without LLM judges [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260511-008",
-    "title": "Any implementations similar to D4RT? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260511-009",
-    "title": "Why is human LLM annotation so expensive? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/",
-    "category": "evaluation",
-    "relevance_score": 0.9
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-001",
-    "title": "Online RL Reading Group[D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1takowq/online_rl_reading_groupd/",
-    "category": "other",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-002",
-    "title": "Interaction Models from Thinking Machines Lab [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tavn2e/interaction_models_from_thinking_machines_lab_p/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-003",
-    "title": "Interactive Jensen–Shannon Divergence Visualisation [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta5ybv/interactive_jensenshannon_divergence/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-004",
-    "title": "Where are small Models like Qwen3 0.6B and Qwen3.5 0.8B used ? Huggingface shows 2.88 million downloads this month.[D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta9w3j/where_are_small_models_like_qwen3_06b_and_qwen35/",
-    "category": "llm|agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-005",
-    "title": "How can I check whether my paper follows the required ARR formatting before submission? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1taheqp/how_can_i_check_whether_my_paper_follows_the/",
-    "category": "evaluation",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-006",
-    "title": "A hackable compiler to generate efficient fused GPU kernels for AI models [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-007",
-    "title": "Passing Multidimensional time series to VLM [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tabsvp/passing_multidimensional_time_series_to_vlm_r/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260512-008",
-    "title": "What to expect from AlphaZero's value predictions [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta1ugy/what_to_expect_from_alphazeros_value_predictions_d/",
-    "category": "agent|evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-001",
-    "title": "AMA Announcement: Nous Research, The Opensource Lab Behind Hermes Agent (Wednesday, 8AM-11AM PST)",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-002",
-    "title": "Best Local LLMs - Apr 2026",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
-    "category": "deployment",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-003",
-    "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-004",
-    "title": "Dad why is my sisters name Lora?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbemwa/dad_why_is_my_sisters_name_lora/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-005",
-    "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-006",
-    "title": "My First Official AI Research Paper Accepted on SSRN",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
-    "category": "training",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-007",
-    "title": "Save and invest your money for future rigs",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
-    "category": "deployment",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-008",
-    "title": "I've seen a lot of folks ask \"can local LLMs actually do anything useful?\"",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-009",
-    "title": "Stop wasting electricity",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tayu5t/stop_wasting_electricity/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-010",
-    "title": "Let's build claude code from scratch!",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb6nkx/lets_build_claude_code_from_scratch/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-011",
-    "title": "server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/",
-    "category": "deployment",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-012",
-    "title": "Is using vLLM actually worth it if you aren't serving the model to other people?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
-    "category": "deployment",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-013",
-    "title": "AntAngelMed - 100a6b Healthcare LLM",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbm3j4/antangelmed_100a6b_healthcare_llm/",
-    "category": "llm",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-014",
-    "title": "Small local model for questions on German grammar",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtuym/small_local_model_for_questions_on_german_grammar/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-015",
-    "title": "High VRAM local coding model — still Qwen 3.6 27B?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-016",
-    "title": "How many of you tried BeeLlama.cpp? How's it? Agentic coding possible with 8GB VRAM?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic/",
-    "category": "deployment",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-017",
-    "title": "Does THINKING MODE significantly improve translation?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-018",
-    "title": "has anyone tried local VLMs for desktop GUI automation?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsojv/has_anyone_tried_local_vlms_for_desktop_gui/",
-    "category": "agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-019",
-    "title": "Q: Does DFlash (and PFlash) work with Heretic models?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsl57/q_does_dflash_and_pflash_work_with_heretic_models/",
-    "category": "deployment",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-localllama-20260513-020",
-    "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
-    "source": "rss:Reddit r/LocalLLaMA",
-    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-001",
-    "title": "Human-level performance via ML was *not* proven impossible with complexity theory [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven/",
-    "category": "evaluation",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-002",
-    "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
-    "category": "agent",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-003",
-    "title": "Trained transformer-based chess models to play like humans (including thinking time) [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
-    "category": "llm",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-004",
-    "title": "Have the \"on-hold\" durations been getting longer for arXiv submissions? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc91ok/have_the_onhold_durations_been_getting_longer_for/",
-    "category": "evaluation",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-005",
-    "title": "Rare event prediction on time series that change structure mid-stream? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsiik/rare_event_prediction_on_time_series_that_change/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-006",
-    "title": "Built Support Vector Machine(SVM) from scratch in Rust [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc16zk/built_support_vector_machinesvm_from_scratch_in/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-007",
-    "title": "Scenema Audio: Zero-shot expressive voice cloning and speech generation [N]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-008",
-    "title": "Elastic Attention Cores for Scalable Vision Transformers [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbxbfp/elastic_attention_cores_for_scalable_vision/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-009",
-    "title": "OpenAI's deployment company move says more about the AI gap than any benchmark[D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsnng/openais_deployment_company_move_says_more_about/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-010",
-    "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-011",
-    "title": "What kinds of models are people training with document data? [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc92u9/what_kinds_of_models_are_people_training_with/",
-    "category": "rag",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-012",
-    "title": "Best examples of ML projects with good dataset/task code abstractions? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc24to/best_examples_of_ml_projects_with_good/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-013",
-    "title": "Sharing all KGC 2026 decks. More production-grade KG systems than I've seen at any conference. [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbt6wl/sharing_all_kgc_2026_decks_more_productiongrade/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-014",
-    "title": "Steam Recommender using similarity! (Undergraduate Student Project) [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb8k3n/steam_recommender_using_similarity_undergraduate/",
-    "category": "recommendation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-015",
-    "title": "I created a minimal one-file implementations (160loc) of JEPA family (ijepa, vjepa, vjepa2, cjepa) for educational purposes [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbhwbn/i_created_a_minimal_onefile_implementations/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260514-016",
-    "title": "TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:hacker-news-best-20260515-001",
-    "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:hacker-news-best-20260515-002",
-    "title": "AI is making me dumb",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
-    "category": "llm",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:hacker-news-best-20260515-003",
-    "title": "The US is winning the AI race where it matters most: commercialization",
-    "source": "rss:Hacker News (Best)",
-    "source_url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
-    "category": "deployment",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260515-004",
-    "title": "arXiv implements 1-year ban for papers containing incontrovertible evidence of unchecked LLM-generated errors, such as hallucinated references or results. [N]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
-    "category": "evaluation",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260515-005",
-    "title": "Would a 2000-2021 ML paper even get accepted today? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260515-006",
-    "title": "Follow the Mean: Reference-Guided Flow Matching [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
-    "category": "generative_model",
-    "relevance_score": 0.92
-  },
-  {
     "id": "github-20260516-001",
     "title": "firecrawl/firecrawl",
     "source": "github",
@@ -880,7 +192,207 @@
     "relevance_score": 0.95
   },
   {
-    "id": "rss:hacker-news-best-20260516-002",
+    "id": "hn-best-20260502-001",
+    "title": "AI uses less water than the public thinks",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260502-002",
+    "title": "Spotify adds 'Verified' badges to distinguish human artists from AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.bbc.com/news/articles/c5yerr4m1yno",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260502-003",
+    "title": "Uber torches 2026 AI budget on Claude Code in four months",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260502-004",
+    "title": "Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260503-001",
+    "title": "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://arxiv.org/abs/2509.00462",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260504-001",
+    "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://github.com/aattaran/deepclaude",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260504-002",
+    "title": "Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://acai.sh/blog/specsmaxxing",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260505-001",
+    "title": "Agent Skills",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://addyosmani.com/blog/agent-skills/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260505-002",
+    "title": "How OpenAI delivers low-latency voice AI at scale",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260507-003",
+    "title": "Three Inverse Laws of AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://susam.net/inverse-laws-of-robotics.html",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "hn-best-20260507-004",
+    "title": "AI didn't delete your database, you did",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260507-005",
+    "title": "When everyone has AI and the company still learns nothing",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260507-006",
+    "title": "Google Chrome silently installs a 4 GB AI model on your device without consent",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "hn-best-20260507-007",
+    "title": "Train Your Own LLM from Scratch",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://github.com/angelos-p/llm-from-scratch",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "hn-best-20260508-002",
+    "title": "AI slop is killing online communities",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260508-003",
+    "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "hn-best-20260508-004",
+    "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260509-001",
+    "title": "AI is breaking two vulnerability cultures",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+    "category": "security",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "hn-best-20260511-001",
+    "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "hn-best-20260511-002",
+    "title": "Local AI needs to be the norm",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "hn-best-20260511-003",
+    "title": "Task Paralysis and AI",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260511-004",
+    "title": "Meta's embrace of AI is making its employees miserable",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260515-001",
+    "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "hn-best-20260515-002",
+    "title": "AI is making me dumb",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "hn-best-20260515-003",
+    "title": "The US is winning the AI race where it matters most: commercialization",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "hn-best-20260516-002",
     "title": "I believe there are entire companies right now under AI psychosis",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://twitter.com/mitchellh/status/2055380239711457578",
@@ -888,7 +400,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260516-003",
+    "id": "hn-best-20260516-003",
     "title": "Amazon workers under pressure to up their AI usage are making up tasks",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks",
@@ -896,7 +408,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260516-004",
+    "id": "hn-best-20260516-004",
     "title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://github.com/Andyyyy64/whichllm",
@@ -904,87 +416,7 @@
     "relevance_score": 0.92
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260516-005",
-    "title": "Backlash against Arxiv's proposed 1 year ban is genuinely perplexing. [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
-    "category": "security",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-006",
-    "title": "KDD 2026 Cycle 2 Results [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1teito1/kdd_2026_cycle_2_results_d/",
-    "category": "evaluation",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-007",
-    "title": "ROCm with PyTorch and PyTorch Lightning seems to still suck for research [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
-    "category": "deployment",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-008",
-    "title": "Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te2x04/orthrus_memoryefficient_parallel_token_generation/",
-    "category": "deployment",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-009",
-    "title": "PINN is predicting trivial solution for stiff ODE [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te0tpg/pinn_is_predicting_trivial_solution_for_stiff_ode/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-010",
-    "title": "Struggling with Overfitting on Medical Imaging Task [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te7vkj/struggling_with_overfitting_on_medical_imaging/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-011",
-    "title": "[R] Which LLMs are actually best for bleeding-edge Linux/ML debugging workflows in 2026? [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
-    "category": "llm|agent",
-    "relevance_score": 0.8
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-012",
-    "title": "Looking for a real world dataset (or website where i can find it) [P]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdybl4/looking_for_a_real_world_dataset_or_website_where/",
-    "category": "security",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-013",
-    "title": "Does anyone know any ready-to-go Emotion Cause Extraction (ECE) model? [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdsyz1/does_anyone_know_any_readytogo_emotion_cause/",
-    "category": "deployment",
-    "relevance_score": 0.85
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260516-014",
-    "title": "software trying to catch software is officially a dead en [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
-    "category": "security",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:hacker-news-best-20260517-001",
+    "id": "hn-best-20260517-001",
     "title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://crates.io/crates/zerostack/1.0.0",
@@ -992,7 +424,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260517-002",
+    "id": "hn-best-20260517-002",
     "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://www.seangoedecke.com/steering-vectors/",
@@ -1000,7 +432,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260517-003",
+    "id": "hn-best-20260517-003",
     "title": "Frontier AI has broken the open CTF format",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://kabir.au/blog/the-ctf-scene-is-dead",
@@ -1008,47 +440,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260517-004",
-    "title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
-    "category": "security",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260517-005",
-    "title": "Do you agree with Judea that learning from data is not everything? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tevot1/do_you_agree_with_judea_that_learning_from_data/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260517-006",
-    "title": "ML lead vs PM on eval-methodology layer independence. who's actually right here? [D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfkgbx/ml_lead_vs_pm_on_evalmethodology_layer/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260517-007",
-    "title": "Help with CNNs.[D]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfjajb/help_with_cnnsd/",
-    "category": "other",
-    "relevance_score": 0.95
-  },
-  {
-    "id": "rss:reddit-r-machinelearning-20260517-008",
-    "title": "Made and Published a Paper Comparing Analysis of CNN and Vision Transformer Architectures for Brain Tumor Detection [R]",
-    "source": "rss:Reddit r/MachineLearning",
-    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1texa4d/made_and_published_a_paper_comparing_analysis_of/",
-    "category": "evaluation",
-    "relevance_score": 0.92
-  },
-  {
-    "id": "rss:hacker-news-best-20260518-001",
+    "id": "hn-best-20260518-001",
     "title": "AI is a technology not a product",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
@@ -1056,7 +448,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260518-002",
+    "id": "hn-best-20260518-002",
     "title": "I don't think AI will make your processes go faster",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
@@ -1064,7 +456,7 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:hacker-news-best-20260518-003",
+    "id": "hn-best-20260518-003",
     "title": "AI subscriptions are a ticking time bomb for enterprise",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://www.thestateofbrand.com/news/ai-subscription-time-bomb",
@@ -1072,7 +464,7 @@
     "relevance_score": 0.85
   },
   {
-    "id": "rss:hacker-news-best-20260518-004",
+    "id": "hn-best-20260518-004",
     "title": "US is starting to see heavy job losses in roles exposed to AI",
     "source": "rss:Hacker News (Best)",
     "source_url": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
@@ -1080,7 +472,1199 @@
     "relevance_score": 0.8
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260518-005",
+    "id": "reddit-localllama-20260513-001",
+    "title": "AMA Announcement: Nous Research, The Opensource Lab Behind Hermes Agent (Wednesday, 8AM-11AM PST)",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-002",
+    "title": "Best Local LLMs - Apr 2026",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-003",
+    "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-localllama-20260513-004",
+    "title": "Dad why is my sisters name Lora?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbemwa/dad_why_is_my_sisters_name_lora/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-005",
+    "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-006",
+    "title": "My First Official AI Research Paper Accepted on SSRN",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-localllama-20260513-007",
+    "title": "Save and invest your money for future rigs",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-localllama-20260513-008",
+    "title": "I've seen a lot of folks ask \"can local LLMs actually do anything useful?\"",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-009",
+    "title": "Stop wasting electricity",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tayu5t/stop_wasting_electricity/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-localllama-20260513-010",
+    "title": "Let's build claude code from scratch!",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tb6nkx/lets_build_claude_code_from_scratch/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-011",
+    "title": "server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-012",
+    "title": "Is using vLLM actually worth it if you aren't serving the model to other people?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-013",
+    "title": "AntAngelMed - 100a6b Healthcare LLM",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbm3j4/antangelmed_100a6b_healthcare_llm/",
+    "category": "llm",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-localllama-20260513-014",
+    "title": "Small local model for questions on German grammar",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtuym/small_local_model_for_questions_on_german_grammar/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-015",
+    "title": "High VRAM local coding model — still Qwen 3.6 27B?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-016",
+    "title": "How many of you tried BeeLlama.cpp? How's it? Agentic coding possible with 8GB VRAM?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbshsl/how_many_of_you_tried_beellamacpp_hows_it_agentic/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-017",
+    "title": "Does THINKING MODE significantly improve translation?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-018",
+    "title": "has anyone tried local VLMs for desktop GUI automation?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsojv/has_anyone_tried_local_vlms_for_desktop_gui/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-localllama-20260513-019",
+    "title": "Q: Does DFlash (and PFlash) work with Heretic models?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbsl57/q_does_dflash_and_pflash_work_with_heretic_models/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-localllama-20260513-020",
+    "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-001",
+    "title": "[D] Self-Promotion Thread",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1d2m0/d_selfpromotion_thread/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-002",
+    "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0gle1/d_monthly_whos_hiring_and_who_wants_to_be_hired/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-003",
+    "title": "Real World Physics-Informed AI Applications [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1lmq0/real_world_physicsinformed_ai_applications_d/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-004",
+    "title": "ICML final decisions rant [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1393a/icml_final_decisions_rant_d/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-005",
+    "title": "I spent years building a 103B-token Usenet corpus (1980–2013) and finally documented it [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t10xaf/i_spent_years_building_a_103btoken_usenet_corpus/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-006",
+    "title": "[ECCV 2026] Review Discussion [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0rtx3/eccv_2026_review_discussion_d/",
+    "category": "evaluation",
+    "relevance_score": 0.9
+  },
+  {
+    "id": "reddit-ml-20260502-007",
+    "title": "Is it just me or is the Conference Lottery culture killing research? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0mct7/is_it_just_me_or_is_the_conference_lottery/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-008",
+    "title": "Why ML conference reviews sometimes feel like a “lottery“ [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0y5pa/why_ml_conference_reviews_sometimes_feel_like_a/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-009",
+    "title": "Looking for feedback on OpenVidya: an open-source AI classroom layer for NCERT/CBSE [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1dqwo/looking_for_feedback_on_openvidya_an_opensource/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-010",
+    "title": "public reviews in conferences [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0shbq/public_reviews_in_conferences_d/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-011",
+    "title": "Why Is Table Extraction with VLM Models Still Challenging? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0txco/why_is_table_extraction_with_vlm_models_still/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-012",
+    "title": "Chinese nexus/network in A* conferences rejecting non chinese papers [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t06564/chinese_nexusnetwork_in_a_conferences_rejecting/",
+    "category": "evaluation",
+    "relevance_score": 0.6
+  },
+  {
+    "id": "reddit-ml-20260502-013",
+    "title": "UAI Rebuttal [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t17kf3/uai_rebuttal_d/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-014",
+    "title": "AI/ML Conferences [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0dd1j/aiml_conferences_d/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260502-015",
+    "title": "Seems ICML is rejecting MANY unanimous positively rated papers [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t04vk3/seems_icml_is_rejecting_many_unanimous_positively/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260502-016",
+    "title": "ICML 2026 Position Track Decision [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t0ilfn/icml_2026_position_track_decision_d/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260503-001",
+    "title": "Anyone submit ML articles to ACM journals (eg. TOPML or TIST)? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t28twe/anyone_submit_ml_articles_to_acm_journals_eg/",
+    "category": "other",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260503-002",
+    "title": "Question regarding Transformer's pipeline module [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2cvdc/question_regarding_transformers_pipeline_module_d/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260503-003",
+    "title": "Have teams evaluated and rejected Flyte, Prefect, or Temporal? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2d0a3/have_teams_evaluated_and_rejected_flyte_prefect/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260503-004",
+    "title": "Toy experiment: frozen Pythia-70M can use a forward-derived fast memory for contextual one-shot symbolic recall [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t23wug/toy_experiment_frozen_pythia70m_can_use_a/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260503-005",
+    "title": "I implemented meta paper [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t1rni9/i_implemented_meta_paper_p/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-001",
+    "title": "Are modern ML PhDs becoming too incremental, or is this just what research looks like now? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t311vb/are_modern_ml_phds_becoming_too_incremental_or_is/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-002",
+    "title": "Excellent discussion about LLM scaling [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3ao9m/excellent_discussion_about_llm_scaling_d/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-003",
+    "title": "torch-nvenc-compress: GPU NVENC silicon as a PCIe bandwidth multiplier — PCA + pure-ctypes Video Codec SDK wrapper. Parallel-path overlap measured at 67% of theoretical max on a real GEMM + encode workload. [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2zy4h/torchnvenccompress_gpu_nvenc_silicon_as_a_pcie/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-004",
+    "title": "Struggling with Chebyshev Filter Integration in CNN — Any Advice? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2wybh/struggling_with_chebyshev_filter_integration_in/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-005",
+    "title": "Thoughts on independent researcher affiliation? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2h3y2/thoughts_on_independent_researcher_affiliation_d/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260504-006",
+    "title": "Serious Study Partner for Deep Learning Mathematics (Beyond the Basics) [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3a1mo/serious_study_partner_for_deep_learning/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-007",
+    "title": "UAI Reviews disappeared [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2p1w8/uai_reviews_disappeared_d/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260504-008",
+    "title": "Should I follow-up with the editor for a TMLR paper awaiting final decision? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2i1pu/should_i_followup_with_the_editor_for_a_tmlr/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-009",
+    "title": "I Trained an AI to Beat Final Fight… Here’s What Happened [p]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2vfz7/i_trained_an_ai_to_beat_final_fight_heres_what/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-010",
+    "title": "Built a efficient and fast MRI compression program called KMRI [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2hd9b/built_a_efficient_and_fast_mri_compression/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260504-011",
+    "title": "Evolving Deep Learning Optimizers [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t2jt4m/evolving_deep_learning_optimizers_r/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260505-001",
+    "title": "Is there a notable increase in demand for privacy-preserving AI/ML with the advent of LLMs? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3u2jh/is_there_a_notable_increase_in_demand_for/",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-002",
+    "title": "Building a 9-ball AI player: Candidate generation for direct cut shots [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3xplr/building_a_9ball_ai_player_candidate_generation/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-003",
+    "title": "Why SSMs struggle in parameter-constrained training: empirical findings at 25M parameters [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3hxsy/why_ssms_struggle_in_parameterconstrained/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-004",
+    "title": "How do you experiment with a (very) large model architecture? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3savv/how_do_you_experiment_with_a_very_large_model/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260505-005",
+    "title": "NeurIPS openreview - can I upload paper pdf after abstract deadline or should I upload something first to be able to update it later? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t46wzz/neurips_openreview_can_i_upload_paper_pdf_after/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-006",
+    "title": "Fixing Unsupervised Hyperbolic Contrastive Loss [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t45ggk/fixing_unsupervised_hyperbolic_contrastive_loss_d/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-007",
+    "title": "[D] What Happened to Neurips Creative AI Track? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3hfcs/d_what_happened_to_neurips_creative_ai_track_r/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-008",
+    "title": "[P] QLoRA Fine-Tuning of Qwen2.5-1.5B for CEFR English Proficiency Classification (A1–C2) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3ogbw/p_qlora_finetuning_of_qwen2515b_for_cefr_english/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-009",
+    "title": "Neurips, how can i submit the \"link\" to the code? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3zovv/neurips_how_can_i_submit_the_link_to_the_code_d/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-010",
+    "title": "Parax v0.5: Parametric Modeling in JAX [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3jmdc/parax_v05_parametric_modeling_in_jax_p/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-011",
+    "title": "Confusion about the NeurIPS 2026 page limit [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3y3nu/confusion_about_the_neurips_2026_page_limit_r/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260505-012",
+    "title": "AutoBe benchmark: structured harness narrows frontier-vs-local gap in backend generation [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3hks9/autobe_benchmark_structured_harness_narrows/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260507-001",
+    "title": "META Superintelligence Lab Presents: ProgramBench: Can SOTA AI Recreate Real Executable Programs(ffmpeg, SQLite, ripgrep) From Scratch Without The Internet?",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260507-002",
+    "title": "Dataset of 150k+ stool images and not sure how to fully use it [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vy2i/dataset_of_150k_stool_images_and_not_sure_how_to/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-003",
+    "title": "Visual Perceptual to Conceptual First-Order Rule Learning Networks [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260507-004",
+    "title": "NeurIPS Submission Number [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4oykt/neurips_submission_number_d/",
+    "category": "other",
+    "relevance_score": 0.9
+  },
+  {
+    "id": "reddit-ml-20260507-008",
+    "title": "Stop letting LLMs edit your .bib [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5anla/stop_letting_llms_edit_your_bib_d/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260507-009",
+    "title": "Weights & Biases New Master Service Agreement Questions [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5qq1a/weights_biases_new_master_service_agreement/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-010",
+    "title": "Running scope enforcement on every agent action in production — what I'm seeing after launch [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5whgk/running_scope_enforcement_on_every_agent_action/",
+    "category": "security",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260507-011",
+    "title": "Exploring Black‑Box Optimization [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5rfrk/exploring_blackbox_optimization_r/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260507-012",
+    "title": "NeurIPS 2026 AC-Pilot, how much would you trust this? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t59w5e/neurips_2026_acpilot_how_much_would_you_trust/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260507-013",
+    "title": "Transformers with Selective Access to Early Representations [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4z3af/transformers_with_selective_access_to_early/",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-014",
+    "title": "Struggling to reproduce paper results before improving them — stuck below reported accuracy [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4dkew/struggling_to_reproduce_paper_results_before/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-015",
+    "title": "Production AI very different from the demos [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4mzm3/production_ai_very_different_from_the_demos_d/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-016",
+    "title": "Model automatically developed by the AIBuildAI Agent ranked among top 5.7% out of 3,219 human teams in the Kaggle TGS Salt Identification Challenge [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5i56v/model_automatically_developed_by_the_aibuildai/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260507-017",
+    "title": "Competition - League of Robot Runners 2026: Multi-robot coordination under uncertainty [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4sjr7/competition_league_of_robot_runners_2026/",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260507-018",
+    "title": "Question about PLS-DA hyperparameter tuning [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260508-005",
+    "title": "Disillusionment with mechanistic interpretability research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6zdj6/disillusionment_with_mechanistic_interpretability/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260508-006",
+    "title": "Steam Similarity Recommender [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6x2zw/steam_similarity_recommender_p/",
+    "category": "rag",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260508-007",
+    "title": "ECCV reviewer wants me to compare and contrast to my own paper. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6e4i7/eccv_reviewer_wants_me_to_compare_and_contrast_to/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260508-008",
+    "title": "Quantization and Fast Inference (MEAP) - How much performance are you actually getting from quantization in production? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6oa4e/quantization_and_fast_inference_meap_how_much/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260508-009",
+    "title": "People Interested in Continual Learning Research[R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr/",
+    "category": "agent",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260508-010",
+    "title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260508-011",
+    "title": "What should a PyTorch training end-of-run performance summary show? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260508-012",
+    "title": "ROCm Status in mid 2026 [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6cng3/rocm_status_in_mid_2026_d/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260508-013",
+    "title": "Diffusion for generating/editing ASTs? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6hv55/diffusion_for_generatingediting_asts_d/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260508-014",
+    "title": "How much can a video generated by the same diffusion model differ across GPU architectures if the initial noise latent is fixed? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t69dvx/how_much_can_a_video_generated_by_the_same/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260508-015",
+    "title": "ECCV Stupid Reviewer Behavior (Any AC here?) [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6ybtk/eccv_stupid_reviewer_behavior_any_ac_here_r/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260509-002",
+    "title": "DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7yrvr/deepseek_v4_paper_full_version_is_out_fp4_qat/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260509-003",
+    "title": "Interactive KL Divergence Visualisation [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7lmu4/interactive_kl_divergence_visualisation_p/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260509-004",
+    "title": "NeurIPS reviewers, any word after the invite email? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7mfqr/neurips_reviewers_any_word_after_the_invite_email/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260509-005",
+    "title": "Neurips : Pushing anonymous repo after rebuttal [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7zwrx/neurips_pushing_anonymous_repo_after_rebuttal_d/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260509-006",
+    "title": "Formalizing statistical learning theory in Lean 4 [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7bgve/formalizing_statistical_learning_theory_in_lean_4/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260509-007",
+    "title": "Embedding models for time series data [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7avgp/embedding_models_for_time_series_data_d/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260509-008",
+    "title": "Backcasting forecast errors: model collapsing to mean [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7knyd/backcasting_forecast_errors_model_collapsing_to/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260510-001",
+    "title": "What is an average publication outcome for an ML PhD? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8bnmp/what_is_an_average_publication_outcome_for_an_ml/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260510-002",
+    "title": "\"colss\" a math-style expression evaluator for NumPy arrays [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8zja2/colss_a_mathstyle_expression_evaluator_for_numpy/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260510-003",
+    "title": "My experience interviewing with Huawei Vancouver for an ML research role: strong mismatch between how it was pitched and how it was evaluated [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t80awj/my_experience_interviewing_with_huawei_vancouver/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260510-004",
+    "title": "Parax v0.7: Parametric Modeling in JAX [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260510-005",
+    "title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t8f61o/llm_rankings_are_not_a_ladder_experimental/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260511-005",
+    "title": "PhD students in ML, how many hours on average do you work? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9mwqy/phd_students_in_ml_how_many_hours_on_average_do/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260511-006",
+    "title": "Is reproducing or implementing a paper considered research? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9zre0/is_reproducing_or_implementing_a_paper_considered/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260511-007",
+    "title": "Signals: finding the most informative agent traces without LLM judges [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9d3et/signals_finding_the_most_informative_agent_traces/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260511-008",
+    "title": "Any implementations similar to D4RT? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t95gc6/any_implementations_similar_to_d4rt_d/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260511-009",
+    "title": "Why is human LLM annotation so expensive? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t9nc40/why_is_human_llm_annotation_so_expensive_d/",
+    "category": "evaluation",
+    "relevance_score": 0.9
+  },
+  {
+    "id": "reddit-ml-20260512-001",
+    "title": "Online RL Reading Group[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1takowq/online_rl_reading_groupd/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260512-002",
+    "title": "Interaction Models from Thinking Machines Lab [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tavn2e/interaction_models_from_thinking_machines_lab_p/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260512-003",
+    "title": "Interactive Jensen–Shannon Divergence Visualisation [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta5ybv/interactive_jensenshannon_divergence/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260512-004",
+    "title": "Where are small Models like Qwen3 0.6B and Qwen3.5 0.8B used ? Huggingface shows 2.88 million downloads this month.[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta9w3j/where_are_small_models_like_qwen3_06b_and_qwen35/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260512-005",
+    "title": "How can I check whether my paper follows the required ARR formatting before submission? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1taheqp/how_can_i_check_whether_my_paper_follows_the/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260512-006",
+    "title": "A hackable compiler to generate efficient fused GPU kernels for AI models [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tag07l/a_hackable_compiler_to_generate_efficient_fused/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260512-007",
+    "title": "Passing Multidimensional time series to VLM [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tabsvp/passing_multidimensional_time_series_to_vlm_r/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260512-008",
+    "title": "What to expect from AlphaZero's value predictions [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ta1ugy/what_to_expect_from_alphazeros_value_predictions_d/",
+    "category": "agent",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260514-001",
+    "title": "Human-level performance via ML was *not* proven impossible with complexity theory [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc1xr3/humanlevel_performance_via_ml_was_not_proven/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260514-002",
+    "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcmj6v/continual_harness_online_adaptation_for/",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-003",
+    "title": "Trained transformer-based chess models to play like humans (including thinking time) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcemdg/trained_transformerbased_chess_models_to_play/",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-004",
+    "title": "Have the \"on-hold\" durations been getting longer for arXiv submissions? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc91ok/have_the_onhold_durations_been_getting_longer_for/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260514-005",
+    "title": "Rare event prediction on time series that change structure mid-stream? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsiik/rare_event_prediction_on_time_series_that_change/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-006",
+    "title": "Built Support Vector Machine(SVM) from scratch in Rust [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc16zk/built_support_vector_machinesvm_from_scratch_in/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-007",
+    "title": "Scenema Audio: Zero-shot expressive voice cloning and speech generation [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcdj2d/scenema_audio_zeroshot_expressive_voice_cloning/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-008",
+    "title": "Elastic Attention Cores for Scalable Vision Transformers [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbxbfp/elastic_attention_cores_for_scalable_vision/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-009",
+    "title": "OpenAI's deployment company move says more about the AI gap than any benchmark[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcsnng/openais_deployment_company_move_says_more_about/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-010",
+    "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260514-011",
+    "title": "What kinds of models are people training with document data? [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc92u9/what_kinds_of_models_are_people_training_with/",
+    "category": "rag",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260514-012",
+    "title": "Best examples of ML projects with good dataset/task code abstractions? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tc24to/best_examples_of_ml_projects_with_good/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-013",
+    "title": "Sharing all KGC 2026 decks. More production-grade KG systems than I've seen at any conference. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbt6wl/sharing_all_kgc_2026_decks_more_productiongrade/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-014",
+    "title": "Steam Recommender using similarity! (Undergraduate Student Project) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb8k3n/steam_recommender_using_similarity_undergraduate/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260514-015",
+    "title": "I created a minimal one-file implementations (160loc) of JEPA family (ijepa, vjepa, vjepa2, cjepa) for educational purposes [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tbhwbn/i_created_a_minimal_onefile_implementations/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260514-016",
+    "title": "TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260515-004",
+    "title": "arXiv implements 1-year ban for papers containing incontrovertible evidence of unchecked LLM-generated errors, such as hallucinated references or results. [N]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdje2d/arxiv_implements_1year_ban_for_papers_containing/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260515-005",
+    "title": "Would a 2000-2021 ML paper even get accepted today? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tcvk8s/would_a_20002021_ml_paper_even_get_accepted_today/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260515-006",
+    "title": "Follow the Mean: Reference-Guided Flow Matching [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdbxwg/follow_the_mean_referenceguided_flow_matching_r/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260516-005",
+    "title": "Backlash against Arxiv's proposed 1 year ban is genuinely perplexing. [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tens5n/backlash_against_arxivs_proposed_1_year_ban_is/",
+    "category": "security",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260516-006",
+    "title": "KDD 2026 Cycle 2 Results [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1teito1/kdd_2026_cycle_2_results_d/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260516-007",
+    "title": "ROCm with PyTorch and PyTorch Lightning seems to still suck for research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tedjwo/rocm_with_pytorch_and_pytorch_lightning_seems_to/",
+    "category": "deployment",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260516-008",
+    "title": "Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te2x04/orthrus_memoryefficient_parallel_token_generation/",
+    "category": "deployment",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260516-009",
+    "title": "PINN is predicting trivial solution for stiff ODE [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te0tpg/pinn_is_predicting_trivial_solution_for_stiff_ode/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260516-010",
+    "title": "Struggling with Overfitting on Medical Imaging Task [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1te7vkj/struggling_with_overfitting_on_medical_imaging/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260516-011",
+    "title": "[R] Which LLMs are actually best for bleeding-edge Linux/ML debugging workflows in 2026? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tejwbl/r_which_llms_are_actually_best_for_bleedingedge/",
+    "category": "llm",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "reddit-ml-20260516-012",
+    "title": "Looking for a real world dataset (or website where i can find it) [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdybl4/looking_for_a_real_world_dataset_or_website_where/",
+    "category": "security",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260516-013",
+    "title": "Does anyone know any ready-to-go Emotion Cause Extraction (ECE) model? [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdsyz1/does_anyone_know_any_readytogo_emotion_cause/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "reddit-ml-20260516-014",
+    "title": "software trying to catch software is officially a dead en [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tdy8ix/software_trying_to_catch_software_is_officially_a/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260517-004",
+    "title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
+    "category": "security",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260517-005",
+    "title": "Do you agree with Judea that learning from data is not everything? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tevot1/do_you_agree_with_judea_that_learning_from_data/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260517-006",
+    "title": "ML lead vs PM on eval-methodology layer independence. who's actually right here? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfkgbx/ml_lead_vs_pm_on_evalmethodology_layer/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260517-007",
+    "title": "Help with CNNs.[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfjajb/help_with_cnnsd/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "reddit-ml-20260517-008",
+    "title": "Made and Published a Paper Comparing Analysis of CNN and Vision Transformer Architectures for Brain Tumor Detection [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1texa4d/made_and_published_a_paper_comparing_analysis_of/",
+    "category": "evaluation",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "reddit-ml-20260518-005",
     "title": "Slop is making me feel disconnected from AI Research [D]",
     "source": "rss:Reddit r/MachineLearning",
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfv0vh/slop_is_making_me_feel_disconnected_from_ai/",
@@ -1088,7 +1672,7 @@
     "relevance_score": 0.92
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260518-006",
+    "id": "reddit-ml-20260518-006",
     "title": "could refusal layers be masking dialect-conditioned safety failures in MoE models [d]",
     "source": "rss:Reddit r/MachineLearning",
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/",
@@ -1096,7 +1680,7 @@
     "relevance_score": 0.95
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260518-007",
+    "id": "reddit-ml-20260518-007",
     "title": "Would a new result in pre-print be considered by reviewers? [D]",
     "source": "rss:Reddit r/MachineLearning",
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tg7qq3/would_a_new_result_in_preprint_be_considered_by/",
@@ -1104,7 +1688,7 @@
     "relevance_score": 0.92
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260518-008",
+    "id": "reddit-ml-20260518-008",
     "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention [P]",
     "source": "rss:Reddit r/MachineLearning",
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfpvod/recent_developments_in_llm_architectures_kv/",
@@ -1112,7 +1696,7 @@
     "relevance_score": 0.92
   },
   {
-    "id": "rss:reddit-r-machinelearning-20260518-009",
+    "id": "reddit-ml-20260518-009",
     "title": "model-agnostic sensitivity approximator [P]",
     "source": "rss:Reddit r/MachineLearning",
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgemq5/modelagnostic_sensitivity_approximator_p/",

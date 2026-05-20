@@ -20,6 +20,8 @@ from workflows.reviewer import review_node
 from workflows.reviser import revise_node
 from workflows.state import KBState, SourceName
 
+from scripts.build_index import build_index, save_index
+
 
 def route_after_review(state: KBState) -> str:
     plan = state.get("plan", {})
@@ -125,6 +127,13 @@ def run_workflow(
             pending_review_dir=pending_review_dir,
         )
     )
+
+    # Rebuild index.json at pipeline end (spec: index is a derived artifact)
+    if not dry_run and articles_dir is not None:
+        index = build_index(articles_dir)
+        save_index(index, articles_dir)
+        print(f"[Workflow] 重建 index.json ({len(index)} 条)")
+
     return {
         "collected": len(final_state.get("sources", [])),
         "analyzed": len(final_state.get("analyses", [])),

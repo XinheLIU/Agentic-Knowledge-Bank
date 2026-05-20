@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from workflows.model_client import Usage, accumulate_usage, chat_json_with_model
+from workflows.skipped import append_skipped
 from workflows.state import KBState
 
 VALID_TAGS = {
@@ -55,11 +56,19 @@ JSON 格式:
   "summary": "50-160字中文技术摘要，说明核心价值",
   "tags": ["llm", "agent"],
   "relevance_score": 0.8,
-  "category": "llm|agent|rag|mcp|evaluation|deployment|security|other",
+  "category": "从下列单一值中选一个：llm、agent、rag、mcp、evaluation、deployment、security、other",
   "key_insight": "一句话洞察",
   "score": 7,
   "audience": "beginner|intermediate|advanced"
-}}"""
+}}
+
+重要约束：
+- category 必须是单个字符串，不要返回 "agent|evaluation" 这种多值字符串，也不要返回数组。
+- audience 判断请先输出理由，再给出取值。示例：
+  1. 这是一篇介绍 Transformer 基础原理的科普文章，面向刚接触 NLP 的读者 → beginner
+  2. 本文深入讨论多智能体协作中的共识机制与消息路由，需要读者具备 LLM 应用开发经验 → intermediate
+  3. 论文提出了新的注意力复杂度下界证明，并给出了形式化推导，面向领域研究者 → advanced
+"""
 
     result, usage, model = chat_json_with_model(prompt, temperature=0.3, max_tokens=700)
     if not isinstance(result, dict):
@@ -84,15 +93,32 @@ JSON 格式:
 def analyze_node(state: KBState) -> dict[str, Any]:
     analyses: list[dict[str, Any]] = []
     tracker = dict(state.get("cost_tracker", {}))
+    plan = state.get("plan", {})
+    relevance_threshold = float(plan.get("relevance_threshold", 0.5))
 
     for item in state.get("sources", []):
         try:
             analysis, usage, model = analyze_item(item)
             tracker = accumulate_usage(tracker, usage, model)
-            analyses.append(analysis)
         except Exception as error:
             print(f"[Analyzer] 分析失败: {item.get('title', '?')} - {error}")
-            analyses.append(_fallback_analysis(item, error))
+            analysis = _fallback_analysis(item, error)
+
+        # Write full relevance_score regardless of threshold (D7)
+        # If below threshold, record to skipped log and drop from pipeline
+        if float(analysis.get("relevance_score", 0.0)) < relevance_threshold:
+            item_id = analysis.get("id", "unknown")
+            append_skipped(
+                item_id=item_id,
+                source=str(analysis.get("source", "unknown")),
+                source_url=analysis.get("source_url") or analysis.get("url", ""),
+                stage="analyzer",
+                reason=f"relevance_score {analysis.get('relevance_score')} < threshold {relevance_threshold}",
+            )
+            print(f"[Analyzer] 淘汰 (低分): {item.get('title', '?')} score={analysis.get('relevance_score')}")
+            continue
+
+        analyses.append(analysis)
 
     print(f"[Analyzer] 完成 {len(analyses)} 条分析")
     return {"analyses": analyses, "cost_tracker": tracker}

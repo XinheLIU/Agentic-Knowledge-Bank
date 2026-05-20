@@ -1,0 +1,22 @@
+{
+  "id": "reddit-ml-20260517-004",
+  "title": "Program misleading high school students into paying to perform academic misconduct in ML Research [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tfh2s9/program_misleading_high_school_students_into/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-17T09:50:45.633275+00:00",
+  "summary": "揭露一个面向高中生收费的AI研究项目（Algoverse），其通过低质量、AI生成、存在严重学术不端的论文批量投稿NeurIPS等会议 workshops，误导学生付费参与虚假科研经历。",
+  "tags": [
+    "security",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "security",
+  "key_insight": "低门槛workshop评审机制被滥用于商业化学术欺诈，暴露AI生成内容在学术出版链中的监管失效与伦理风险。",
+  "updated_at": "2026-05-17T09:53:44.159232+00:00"
+}

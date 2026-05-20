@@ -1,0 +1,22 @@
+{
+  "id": "hn-best-20260518-001",
+  "title": "AI is a technology not a product",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+  "url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-18T11:48:27.565668+00:00",
+  "summary": "文章强调AI本质是底层技术而非开箱即用的产品，类比于数据库或网络——需嵌入具体场景、结合工程实践与领域知识才能产生真实价值，警示过度产品化包装导致的期望偏差与落地失效。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "AI的价值不在于模型本身，而在于其作为可集成、可编排、需定制的技术组件如何赋能实际系统。",
+  "updated_at": "2026-05-18T11:51:23.893083+00:00"
+}

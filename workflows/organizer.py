@@ -8,10 +8,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from workflows.skipped import append_skipped
 from workflows.state import KBState
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_DIR = PROJECT_ROOT / "knowledge" / "articles"
+
+CATEGORIES = {"llm", "agent", "rag", "mcp", "evaluation", "deployment", "security", "other"}
 
 
 def _slug_source(source: str) -> str:
@@ -25,7 +28,7 @@ def _existing_urls(articles_dir: Path) -> set[str]:
         return urls
 
     for path in articles_dir.glob("*.json"):
-        if path.name == "index.json":
+        if path.name in ("index.json", "_skipped.jsonl"):
             continue
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
@@ -35,6 +38,48 @@ def _existing_urls(articles_dir: Path) -> set[str]:
         if isinstance(source_url, str) and source_url:
             urls.add(source_url)
     return urls
+
+
+def _normalize_category(item: dict[str, Any]) -> dict[str, Any]:
+    """Ensure category is a single valid value.
+
+    Multi-value strings are downgraded: first part becomes category,
+    rest are appended to tags, and status is set to review.
+    """
+    cat = item.get("category", "other")
+    if not isinstance(cat, str):
+        cat = str(cat) if cat is not None else "other"
+
+    cat = cat.strip()
+
+    if "|" in cat:
+        parts = [p.strip() for p in cat.split("|") if p.strip()]
+        item["category"] = parts[0] if parts else "other"
+        for p in parts[1:]:
+            tag = p.lower()
+            if tag not in item.get("tags", []):
+                item.setdefault("tags", []).append(tag)
+        item["status"] = "review"
+        return item
+
+    if cat not in CATEGORIES:
+        item["category"] = "other"
+        item["status"] = "review"
+    else:
+        item["category"] = cat
+
+    return item
+
+
+def _validate_article(item: dict[str, Any]) -> list[str]:
+    """Lightweight schema validation before persistence."""
+    errors: list[str] = []
+    required = ["id", "title", "source_url", "summary", "tags", "status",
+                "key_insight", "category", "relevance_score", "url"]
+    for field in required:
+        if field not in item or item[field] in ("", None):
+            errors.append(f"missing {field}")
+    return errors
 
 
 def build_articles(
@@ -48,9 +93,6 @@ def build_articles(
     now = datetime.now(timezone.utc).isoformat()
 
     for item in analyses:
-        if float(item.get("relevance_score", 0.0)) < relevance_threshold:
-            continue
-
         source_url = item.get("source_url") or item.get("url", "")
         if not source_url or source_url in seen_urls:
             continue
@@ -63,14 +105,14 @@ def build_articles(
         if len(summary) < 20:
             summary = f"{summary}。该条目摘要不足，需后续复核补充技术细节。"
 
-        articles.append({
+        article = {
             "id": article_id,
             "title": item.get("title", ""),
             "source": source,
             "source_url": source_url,
-            "url": source_url,
-            "author": item.get("author", "unknown"),
-            "published_at": item.get("published_at", ""),
+            "url": item.get("url") or source_url,
+            "author": item.get("author") if item.get("author") is not None else None,
+            "published_at": item.get("published_at") if item.get("published_at") is not None else None,
             "collected_at": item.get("collected_at", now),
             "summary": summary,
             "tags": item.get("tags") or ["llm"],
@@ -82,8 +124,22 @@ def build_articles(
             "relevance_score": float(item.get("relevance_score", 0.5)),
             "category": item.get("category", "other"),
             "key_insight": item.get("key_insight", ""),
-            "updated_at": now,
-        })
+        }
+
+        article = _normalize_category(article)
+
+        validation_errors = _validate_article(article)
+        if validation_errors:
+            append_skipped(
+                item_id=article_id,
+                source=source,
+                source_url=source_url,
+                stage="organizer",
+                reason=f"schema validation failed: {', '.join(validation_errors)}",
+            )
+            continue
+
+        articles.append(article)
 
     return articles
 
@@ -99,35 +155,7 @@ def save_articles(articles: list[dict[str, Any]], articles_dir: Path = ARTICLES_
         path.write_text(json.dumps(article, ensure_ascii=False, indent=2), encoding="utf-8")
         saved_paths.append(path)
 
-    update_index(articles, articles_dir)
     return saved_paths
-
-
-def update_index(articles: list[dict[str, Any]], articles_dir: Path = ARTICLES_DIR) -> None:
-    index_path = articles_dir / "index.json"
-    index: list[dict[str, Any]] = []
-    if index_path.exists():
-        try:
-            existing = json.loads(index_path.read_text(encoding="utf-8"))
-            if isinstance(existing, list):
-                index = existing
-        except json.JSONDecodeError:
-            index = []
-
-    existing_ids = {entry.get("id") for entry in index if isinstance(entry, dict)}
-    for article in articles:
-        if article["id"] in existing_ids:
-            continue
-        index.append({
-            "id": article["id"],
-            "title": article["title"],
-            "source": article["source"],
-            "source_url": article["source_url"],
-            "category": article.get("category", "other"),
-            "relevance_score": article.get("relevance_score", 0.5),
-        })
-
-    index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def organize_node(state: KBState) -> dict[str, Any]:

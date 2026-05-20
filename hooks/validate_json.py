@@ -26,10 +26,14 @@ REQUIRED_FIELDS: dict[str, type] = {
     "summary": str,
     "tags": list,
     "status": str,
+    "key_insight": str,
+    "category": str,
+    "relevance_score": (int, float),
+    "url": str,
 }
 
-# ID format: {source}-{YYYYMMDD}-{NNN}.
-ID_PATTERN = re.compile(r"^[a-z][\w:-]+-\d{8}-\d{3}$")
+# ID format: <source-slug>-<YYYYMMDD>-<NNN> (lowercase, digits, hyphens only; no colon)
+ID_PATTERN = re.compile(r"^[a-z0-9-]+-\d{8}-\d{3}$")
 
 VALID_STATUSES = {"draft", "review", "published", "archived"}
 
@@ -41,6 +45,14 @@ URL_PATTERN = re.compile(r"^https?://\S+$")
 SUMMARY_MIN_LENGTH = 20
 
 VALID_AUDIENCES = {"beginner", "intermediate", "advanced"}
+
+VALID_CATEGORIES = {"llm", "agent", "rag", "mcp", "evaluation", "deployment", "security", "other"}
+
+
+def _is_valid_type(value: Any, expected: type | tuple[type, ...]) -> bool:
+    if isinstance(expected, tuple):
+        return isinstance(value, expected)
+    return isinstance(value, expected)
 
 
 def validate_article(data: dict[str, Any]) -> list[str]:
@@ -58,9 +70,9 @@ def validate_article(data: dict[str, Any]) -> list[str]:
     for field_name, field_type in REQUIRED_FIELDS.items():
         if field_name not in data:
             errors.append(f"缺少必填字段: {field_name}")
-        elif not isinstance(data[field_name], field_type):
+        elif not _is_valid_type(data[field_name], field_type):
             errors.append(
-                f"字段类型错误: {field_name} 应为 {field_type.__name__}，"
+                f"字段类型错误: {field_name} 应为 {_type_name(field_type)}，"
                 f"实际为 {type(data[field_name]).__name__}"
             )
 
@@ -71,7 +83,7 @@ def validate_article(data: dict[str, Any]) -> list[str]:
     if not ID_PATTERN.match(article_id):
         errors.append(
             f"ID 格式错误: '{article_id}'，"
-            f"应为 '{{source}}-{{YYYYMMDD}}-{{NNN}}'"
+            f"应为 '{{source-slug}}-{{YYYYMMDD}}-{{NNN}}' (禁止冒号)"
         )
 
     if not data["title"].strip():
@@ -80,6 +92,10 @@ def validate_article(data: dict[str, Any]) -> list[str]:
     source_url = data["source_url"]
     if not URL_PATTERN.match(source_url):
         errors.append(f"URL 格式错误: '{source_url}'")
+
+    url = data["url"]
+    if not URL_PATTERN.match(url):
+        errors.append(f"url 格式错误: '{url}'")
 
     summary = data["summary"]
     if len(summary.strip()) < SUMMARY_MIN_LENGTH:
@@ -102,6 +118,13 @@ def validate_article(data: dict[str, Any]) -> list[str]:
             f"允许值: {', '.join(sorted(VALID_STATUSES))}"
         )
 
+    category = data["category"]
+    if category not in VALID_CATEGORIES:
+        errors.append(
+            f"无效的 category: '{category}'，"
+            f"允许值: {', '.join(sorted(VALID_CATEGORIES))}"
+        )
+
     if "score" in data:
         score = data["score"]
         if not isinstance(score, (int, float)):
@@ -120,7 +143,23 @@ def validate_article(data: dict[str, Any]) -> list[str]:
                 f"允许值: {', '.join(sorted(VALID_AUDIENCES))}"
             )
 
+    # author and published_at may be null (v0.5 honesty rule)
+    for nullable_field in ("author", "published_at"):
+        if nullable_field in data:
+            value = data[nullable_field]
+            if value is not None and not isinstance(value, str):
+                errors.append(
+                    f"字段类型错误: {nullable_field} 应为 str 或 null，"
+                    f"实际为 {type(value).__name__}"
+                )
+
     return errors
+
+
+def _type_name(expected: type | tuple[type, ...]) -> str:
+    if isinstance(expected, tuple):
+        return " or ".join(t.__name__ for t in expected)
+    return expected.__name__
 
 
 def main() -> int:

@@ -1,0 +1,21 @@
+{
+  "id": "reddit-ml-20260502-013",
+  "title": "UAI Rebuttal [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t17kf3/uai_rebuttal_d/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-02T13:53:23.891548+00:00",
+  "summary": "该帖子分享了一篇提交至UAI（Uncertainty in Artificial Intelligence）会议的论文在 rebuttal 阶段的审稿评分变化：四名审稿人中，两名维持原分（6/4），另两名分别从 (4/3) 和 (3/3) 提升至 (5/3) 和 (4/3)，表明 rebuttal 成功回应了部分质疑，但未显著提升信心分。内容虽非技术性研究，但为AI研究者提供了真实、具参考价值的顶会投稿与 rebuttal 经验。",
+  "score": 7,
+  "tags": [
+    "evaluation",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "rebuttal的效果具有边际递减性——澄清事实可提升分数，但难以逆转审稿人对方法本质缺陷的根本质疑。",
+  "category": "evaluation",
+  "relevance_score": 0.8,
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t17kf3/uai_rebuttal_d/"
+}

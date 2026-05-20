@@ -1,0 +1,22 @@
+{
+  "id": "hn-best-20260505-002",
+  "title": "How OpenAI delivers low-latency voice AI at scale",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-05T10:07:03.727768+00:00",
+  "summary": "OpenAI details its end-to-end infrastructure and optimization strategies for delivering real-time, low-latency voice AI—covering speech recognition, LLM inference, and speech synthesis—while maintaining quality at scale. Key techniques include model distillation, speculative decoding, custom CUDA kernels, and tight orchestration across audio preprocessing and streaming I/O. The article emphasizes production-grade latency SLOs (e.g., <300ms end-to-end) and tradeoffs between speed, accuracy, and resource efficiency.",
+  "score": 8,
+  "tags": [
+    "audio",
+    "deployment",
+    "llm"
+  ],
+  "audience": "advanced",
+  "status": "review",
+  "key_insight": "低延迟语音AI的瓶颈不在单一模块，而在跨组件（ASR→LLM→TTS）的系统级时序对齐与硬件感知优化。",
+  "category": "deployment",
+  "relevance_score": 0.8,
+  "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "reddit-ml-20260505-012",
+  "title": "AutoBe benchmark: structured harness narrows frontier-vs-local gap in backend generation [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3hks9/autobe_benchmark_structured_harness_narrows/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-05T10:07:04.403994+00:00",
+  "summary": "AutoBe is a novel, statically scored benchmark for end-to-end backend generation that enforces structured function-calling to produce six deterministic artifacts (e.g., ERD, OpenAPI spec, NestJS code) via AST filling—not free-form code generation. It reveals tight score clustering across models, showing local and cost-efficient models (e.g., Qwen3.5-27B) rivaling frontier LLMs when the harness is well-structured—highlighting harness design over model scale as the primary quality bottleneck. The benchmark emphasizes reproducibility, compile-time correctness, and cost-aware evaluation, with explicit caveats about generalization beyond procedural, reference-guided tasks.",
+  "score": 8,
+  "tags": [
+    "evaluation",
+    "code-generation",
+    "tool-use",
+    "llm"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "在结构化任务中，高质量harness设计可显著缩小前沿大模型与低成本本地模型的性能差距。",
+  "category": "evaluation",
+  "relevance_score": 0.8,
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t3hks9/autobe_benchmark_structured_harness_narrows/"
+}

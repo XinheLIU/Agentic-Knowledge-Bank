@@ -1,0 +1,22 @@
+{
+  "id": "github-20260502-038",
+  "title": "AstrBotDevs/AstrBot",
+  "source": "github",
+  "source_url": "https://github.com/AstrBotDevs/AstrBot",
+  "author": "AstrBotDevs",
+  "published_at": "2026-05-04T02:59:07Z",
+  "collected_at": "2026-05-02T13:53:22.422337+00:00",
+  "summary": "AstrBot is an open-source AI Agent Assistant designed to unify multiple instant messaging platforms, large language models (LLMs), and extensible plugins into a single interface. It emphasizes flexibility and customization, positioning itself as an open-source alternative to commercial solutions like OpenClaw. Its architecture supports modular AI features including tool use, multi-platform integration, and plugin-driven functionality.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "llm",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "以轻量级、模块化架构实现 LLM 智能体在真实通讯场景中的可部署性与可定制性。",
+  "category": "agent",
+  "relevance_score": 0.8,
+  "url": "https://github.com/AstrBotDevs/AstrBot"
+}

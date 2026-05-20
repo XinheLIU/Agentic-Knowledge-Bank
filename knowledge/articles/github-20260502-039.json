@@ -1,0 +1,22 @@
+{
+  "id": "github-20260502-039",
+  "title": "langchain-ai/langgraph",
+  "source": "github",
+  "source_url": "https://github.com/langchain-ai/langgraph",
+  "author": "langchain-ai",
+  "published_at": "2026-05-04T10:14:32Z",
+  "collected_at": "2026-05-02T13:53:22.422343+00:00",
+  "summary": "LangGraph is a library built on LangChain for constructing stateful, resilient language agents using directed acyclic graphs (DAGs). It enables developers to model complex agent workflows—such as loops, conditional branching, and parallel execution—with explicit state management and fault tolerance. This approach improves reliability and debuggability of LLM-powered agents compared to linear or ad-hoc orchestration.",
+  "score": 8,
+  "tags": [
+    "agent",
+    "reasoning",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "将 Agent 编排从隐式控制流升级为显式、可验证、带状态的图结构，是 Agent 工程化的重要范式演进。",
+  "category": "agent",
+  "relevance_score": 0.8,
+  "url": "https://github.com/langchain-ai/langgraph"
+}

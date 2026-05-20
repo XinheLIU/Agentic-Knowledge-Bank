@@ -70,6 +70,7 @@ def test_analyze_node_falls_back_on_llm_error(mocker):
             }
         ],
         "cost_tracker": {},
+        "plan": {"relevance_threshold": 0.0},
     }
     result = analyze_node(state)
     assert result["analyses"][0]["status"] == "draft"
@@ -202,3 +203,119 @@ def test_build_graph_invokes_with_mocked_nodes(mocker, tmp_path):
     )
     assert result["review_passed"] is True
     assert result["articles"][0]["id"] == "github-20260506-001"
+
+
+def test_organizer_does_not_write_index(tmp_path):
+    from workflows.organizer import organize_node
+
+    articles_dir = tmp_path / "articles"
+    articles_dir.mkdir()
+    state = {
+        "plan": {"relevance_threshold": 0.5},
+        "analyses": [
+            {
+                "title": "Test",
+                "source": "github",
+                "source_url": "https://example.com/1",
+                "url": "https://example.com/1",
+                "summary": "A sufficiently long summary for validation.",
+                "tags": ["llm"],
+                "score": 8,
+                "relevance_score": 0.8,
+                "category": "agent",
+                "key_insight": "insight",
+                "audience": "intermediate",
+            }
+        ],
+        "cost_tracker": {},
+        "articles_dir": articles_dir,
+        "dry_run": False,
+    }
+    organize_node(state)
+    assert not (articles_dir / "index.json").exists()
+
+
+def test_organizer_downgrades_multi_value_category(tmp_path):
+    from workflows.organizer import organize_node
+
+    articles_dir = tmp_path / "articles"
+    articles_dir.mkdir()
+    state = {
+        "plan": {"relevance_threshold": 0.5},
+        "analyses": [
+            {
+                "title": "Test",
+                "source": "github",
+                "source_url": "https://example.com/2",
+                "url": "https://example.com/2",
+                "summary": "A sufficiently long summary for validation.",
+                "tags": ["llm"],
+                "score": 8,
+                "relevance_score": 0.8,
+                "category": "agent|evaluation",
+                "key_insight": "insight",
+                "audience": "intermediate",
+            }
+        ],
+        "cost_tracker": {},
+        "articles_dir": articles_dir,
+        "dry_run": False,
+    }
+    result = organize_node(state)
+    articles = result["articles"]
+    assert len(articles) == 1
+    assert articles[0]["category"] == "agent"
+    assert "evaluation" in articles[0]["tags"]
+    assert articles[0]["status"] == "review"
+
+
+def test_analyzer_skips_low_relevance_and_logs_skipped(mocker, tmp_path):
+    mocker.patch(
+        "workflows.analyzer.chat_json_with_model",
+        return_value=(
+            {
+                "summary": "短",
+                "tags": ["llm"],
+                "relevance_score": 0.2,
+                "category": "other",
+                "key_insight": "",
+                "score": 3,
+                "audience": "beginner",
+            },
+            MagicMock(prompt_tokens=10, completion_tokens=5),
+            "qwen-plus",
+        ),
+    )
+    mocker.patch(
+        "workflows.analyzer.accumulate_usage",
+        return_value={"prompt_tokens": 10, "completion_tokens": 5, "total_cost_usd": 0.01},
+    )
+    mocker.patch("workflows.analyzer.append_skipped")
+
+    state = {
+        "sources": [
+            {
+                "id": "github-20260501-001",
+                "title": "Low relevance",
+                "source": "github",
+                "source_url": "https://example.com/low",
+                "raw_description": "desc",
+            }
+        ],
+        "cost_tracker": {},
+        "plan": {"relevance_threshold": 0.5},
+    }
+    result = analyze_node(state)
+    assert len(result["analyses"]) == 0
+
+
+def test_collector_raises_on_missing_slug(mocker, tmp_path):
+    import yaml
+
+    config = tmp_path / "rss_sources.yaml"
+    config.write_text(yaml.safe_dump({"sources": [{"name": "NoSlug", "url": "https://example.com/feed", "enabled": True}]}))
+
+    from workflows.collector import collect_rss
+
+    with pytest.raises(ValueError, match="missing required 'slug' field"):
+        collect_rss(limit=1, config_path=config, articles_dir=tmp_path)

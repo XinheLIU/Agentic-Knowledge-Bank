@@ -3,61 +3,73 @@
 
 sources:
   - name: "Hacker News (Best)"
+    slug: "hn-best"
     url: "https://hnrss.org/best?q=AI+OR+LLM+OR+agent"
     category: "general"
     enabled: true
 
   - name: "Reddit r/MachineLearning"
+    slug: "reddit-ml"
     url: "https://www.reddit.com/r/MachineLearning/hot.rss"
     category: "research"
     enabled: true
 
   - name: "Reddit r/LocalLLaMA"
+    slug: "reddit-localllama"
     url: "https://www.reddit.com/r/LocalLLaMA/hot.rss"
     category: "open-source"
     enabled: true
 
   - name: "arXiv cs.AI"
+    slug: "arxiv-cs-ai"
     url: "https://rss.arxiv.org/rss/cs.AI"
     category: "research"
     enabled: true
 
   - name: "arXiv cs.CL"
+    slug: "arxiv-cs-cl"
     url: "https://rss.arxiv.org/rss/cs.CL"
     category: "research"
     enabled: false
 
   - name: "OpenAI Blog"
+    slug: "openai-blog"
     url: "https://openai.com/blog/rss.xml"
     category: "industry"
     enabled: true
 
   - name: "Anthropic Research"
+    slug: "anthropic-research"
     url: "https://www.anthropic.com/research/rss.xml"
     category: "industry"
     enabled: true
 
   - name: "Google AI Blog"
+    slug: "google-ai-blog"
     url: "https://blog.google/technology/ai/rss/"
     category: "industry"
     enabled: true
 
   - name: "Hugging Face Blog"
+    slug: "huggingface-blog"
     url: "https://huggingface.co/blog/feed.xml"
     category: "open-source"
     enabled: true
 
   - name: "LangChain Blog"
+    slug: "langchain-blog"
     url: "https://blog.langchain.dev/rss/"
     category: "framework"
     enabled: true
 
   - name: "机器之心"
+    slug: "jiqizhixin"
     url: "https://www.jiqizhixin.com/rss"
     category: "chinese"
     enabled: false
 
   - name: "量子位"
+    slug: "qbitai"
     url: "https://www.qbitai.com/feed"
     category: "chinese"
     enabled: false

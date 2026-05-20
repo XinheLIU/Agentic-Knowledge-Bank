@@ -13,11 +13,11 @@
     "agent",
     "rag"
   ],
-  "status": "published",
+  "status": "review",
   "score": 7,
   "audience": "intermediate",
   "relevance_score": 0.8,
-  "category": "llm|agent|rag",
+  "category": "llm",
   "key_insight": "将前沿AI技术（如RAG、Agent）与可复现的工程案例结合，填补学术与工业落地间的实践鸿沟。",
   "updated_at": "2026-05-07T02:31:38.153381+00:00"
 }

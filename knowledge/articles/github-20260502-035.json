@@ -1,0 +1,22 @@
+{
+  "id": "github-20260502-035",
+  "title": "HKUDS/nanobot",
+  "source": "github",
+  "source_url": "https://github.com/HKUDS/nanobot",
+  "author": "HKUDS",
+  "published_at": "2026-05-04T04:14:39Z",
+  "collected_at": "2026-05-02T13:53:22.422322+00:00",
+  "summary": "nanobot 是一个极简、轻量级的个人 AI 智能体（Personal AI Agent），专为本地化、低资源环境下的快速部署与个性化交互设计。它强调最小依赖、高可定制性与用户可控性，可能采用模块化架构支持工具调用与上下文感知行为。其核心价值在于降低 AI agent 的使用门槛，兼顾隐私性与响应效率。",
+  "score": 7,
+  "tags": [
+    "agent",
+    "tool-use",
+    "deployment"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "将 AI agent 范式从云端重负载服务转向可本地运行、用户完全掌控的极简终端智能体。",
+  "category": "agent",
+  "relevance_score": 0.8,
+  "url": "https://github.com/HKUDS/nanobot"
+}

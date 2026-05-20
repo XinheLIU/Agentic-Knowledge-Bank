@@ -1,0 +1,23 @@
+{
+  "id": "github-20260502-022",
+  "title": "langchain-ai/langchain",
+  "source": "github",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "author": "langchain-ai",
+  "published_at": "2026-05-04T10:14:29Z",
+  "collected_at": "2026-05-02T13:53:22.422240+00:00",
+  "summary": "LangChain is an open-source framework designed to simplify the development of applications powered by large language models (LLMs), with a strong focus on agent-based architectures. It provides modular abstractions for chaining components like prompts, models, tools, and memory, enabling flexible agent engineering and integration with external data sources or APIs. Its value lies in accelerating prototyping and production deployment of LLM-driven agents, especially in RAG and tool-augmented reasoning scenarios.",
+  "score": 8,
+  "tags": [
+    "agent",
+    "llm",
+    "tool-use",
+    "rag"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "LangChain 的核心创新在于将 LLM 应用抽象为可组合、可复用的 Agent 工作流，而非单纯模型调用管道。",
+  "category": "agent",
+  "relevance_score": 0.8,
+  "url": "https://github.com/langchain-ai/langchain"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hn-best-20260504-002",
+  "title": "Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://acai.sh/blog/specsmaxxing",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-04T10:18:36.931081+00:00",
+  "summary": "文章提出 'specsmaxxing' 概念，主张通过在 YAML 中严谨编写系统规格（specs）来对抗 LLM 应用开发中的‘AI 精神病’——即模型幻觉、行为不一致与需求漂移问题；强调规格先行（spec-first）作为可验证、可协作、可版本化的工程实践，提升 AI 系统的可靠性与可维护性；YAML 选择源于其人类可读性、结构化表达力及与 CI/CD 和验证工具链的良好集成能力。",
+  "score": 8,
+  "tags": [
+    "llm",
+    "prompt-engineering",
+    "tool-use"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "规格先行（spec-first）不是流程装饰，而是对 LLM 非确定性的关键工程制衡机制。",
+  "category": "llm",
+  "relevance_score": 0.8,
+  "url": "https://acai.sh/blog/specsmaxxing"
+}

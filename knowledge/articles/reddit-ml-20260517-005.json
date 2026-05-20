@@ -1,0 +1,21 @@
+{
+  "id": "reddit-ml-20260517-005",
+  "title": "Do you agree with Judea that learning from data is not everything? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tevot1/do_you_agree_with_judea_that_learning_from_data/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tevot1/do_you_agree_with_judea_that_learning_from_data/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-17T09:50:45.633291+00:00",
+  "summary": "Judea Pearl argues—via formal causal inference theory—that purely data-driven learning (e.g., correlation-based ML) cannot infer causation or explanation without structural assumptions; this is mathematically provable, not philosophical opinion.",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "Causal reasoning requires explicit modeling of mechanisms—not just pattern recognition—and is fundamentally unattainable from observational data alone without assumptions.",
+  "updated_at": "2026-05-17T09:53:44.159232+00:00"
+}

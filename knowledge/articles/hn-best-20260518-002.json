@@ -1,0 +1,22 @@
+{
+  "id": "hn-best-20260518-002",
+  "title": "I don't think AI will make your processes go faster",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+  "url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-18T11:48:27.565692+00:00",
+  "summary": "文章指出AI（尤其是LLM和智能体）本身不会自动加速业务流程，真正的提效依赖于对现有工作流的深度重构、人机协作设计及明确的价值对齐，而非简单替换人工环节。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "AI不是加速器，而是需要被精心编排的协作者；流程提速的关键在于系统性重设计，而非模型能力堆砌。",
+  "updated_at": "2026-05-18T11:51:23.893083+00:00"
+}

@@ -17,6 +17,7 @@ class TestCollectRss:
             """
 sources:
   - name: "Test Feed"
+    slug: "test-feed"
     url: "http://example.com/feed.xml"
     category: "test"
     enabled: true
@@ -59,6 +60,7 @@ sources:
             """
 sources:
   - name: "Test Feed"
+    slug: "test-feed"
     url: "http://example.com/feed.xml"
     category: "test"
     enabled: true
@@ -105,10 +107,12 @@ sources:
             """
 sources:
   - name: "Feed A"
+    slug: "feed-a"
     url: "http://a.com/feed.xml"
     category: "test"
     enabled: true
   - name: "Feed B"
+    slug: "feed-b"
     url: "http://b.com/feed.xml"
     category: "test"
     enabled: true

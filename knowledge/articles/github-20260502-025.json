@@ -1,0 +1,22 @@
+{
+  "id": "github-20260502-025",
+  "title": "browser-use/browser-use",
+  "source": "github",
+  "source_url": "https://github.com/browser-use/browser-use",
+  "author": "browser-use",
+  "published_at": "2026-05-03T02:02:20Z",
+  "collected_at": "2026-05-02T13:53:22.422266+00:00",
+  "summary": "browser-use is a GitHub project that enables AI agents to interact with websites programmatically by providing browser automation capabilities tailored for LLM-based agents. It bridges the gap between language models and real-world web interfaces, supporting task automation like form filling, navigation, and data extraction. Its value lies in making the open web accessible as an actionable environment for AI agents without requiring custom APIs or scrapers.",
+  "score": 7,
+  "tags": [
+    "agent",
+    "tool-use",
+    "llm"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "将浏览器作为智能体的通用动作执行环境，实现了 LLM 规划能力与真实 Web 交互能力的解耦与标准化对接。",
+  "category": "agent",
+  "relevance_score": 0.8,
+  "url": "https://github.com/browser-use/browser-use"
+}

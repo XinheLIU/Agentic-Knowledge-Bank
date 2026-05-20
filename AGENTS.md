@@ -1,7 +1,7 @@
 # AGENTS.md — AI 知识库项目
 
 > Last updated: 2026-05-12
-> 本文件是项目的长期记忆，描述当前版本 `0.5.0` 的真实结构与运行方式。
+> 本文件是项目的长期记忆，描述当前版本 `0.5.1` 的真实结构与运行方式。
 
 ## 项目定义
 
@@ -50,13 +50,7 @@ ai-kb/
 ├── tests/                             # pytest 测试套件
 ├── notebooks/
 │   └── langgraph_workflow_demo.ipynb  # 新工作流演示 notebook
-├── spec/
-│   ├── requirements.md
-│   ├── tech-spec.md
-│   ├── hooks-spec.md
-│   ├── testing-strategy.md
-│   ├── upgrade-0.4.0-to-0.5.0.md
-│   └── keywords-v0.1.txt
+├── docs/archive/                      # 历史审计与策略备忘（见 docs/archive/README.md）
 ├── knowledge/
 │   ├── raw/
 │   ├── articles/

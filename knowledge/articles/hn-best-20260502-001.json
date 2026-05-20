@@ -1,0 +1,21 @@
+{
+  "id": "hn-best-20260502-001",
+  "title": "AI uses less water than the public thinks",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-02T13:53:22.935331+00:00",
+  "summary": "The article debunks the widespread misconception that AI systems consume large amounts of water, clarifying that while training large models does require cooling (and thus water), total AI-related water use remains negligible compared to agriculture or power generation—especially in drought-prone California. It emphasizes data-driven quantification over sensationalism and draws policy-relevant lessons about resource trade-offs in tech infrastructure. The analysis serves as a corrective case study for sustainable AI deployment planning.",
+  "score": 7,
+  "tags": [
+    "deployment",
+    "evaluation"
+  ],
+  "audience": "intermediate",
+  "status": "review",
+  "key_insight": "AI的环境影响需放在全系统资源消耗背景下评估，孤立夸大其水足迹会扭曲技术治理优先级。",
+  "category": "deployment",
+  "relevance_score": 0.8,
+  "url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/"
+}

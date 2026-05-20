@@ -1,0 +1,21 @@
+{
+  "id": "reddit-ml-20260504-006",
+  "title": "Serious Study Partner for Deep Learning Mathematics (Beyond the Basics) [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t3a1mo/serious_study_partner_for_deep_learning/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-04T10:18:37.612920+00:00",
+  "summary": "This Reddit post seeks a serious study partner to collaboratively master the advanced mathematical foundations of deep learning—including matrix calculus, probability theory, and optimization—beyond standard implementations. It emphasizes rigorous textbook- and paper-based learning (e.g., Goodfellow's 'Deep Learning') and active derivation/discussion of formulas, targeting conceptual depth over surface-level intuition. The collaboration values mutual technical contribution (e.g., PyTorch implementation, research ideation) and structured, high-fidelity knowledge co-construction.",
+  "score": 7,
+  "tags": [
+    "reasoning",
+    "evaluation"
+  ],
+  "audience": "advanced",
+  "status": "review",
+  "key_insight": "深度学习的真正瓶颈常不在工程实现，而在数学直觉与严格推导能力的缺失；协作式知识共建是突破该瓶颈的有效路径。",
+  "category": "other",
+  "relevance_score": 0.8,
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1t3a1mo/serious_study_partner_for_deep_learning/"
+}

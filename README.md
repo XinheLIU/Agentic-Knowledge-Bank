@@ -1,35 +1,45 @@
 # AI Knowledge Base
-> Last updated: 2026-05-06
 
-AI Knowledge Base is a local technical intelligence system for AI, LLM, RAG, and agent tooling. Version `0.5.0` replaces the old linear `pipeline/` flow with a LangGraph workflow under `workflows/`.
+> Last updated: 2026-05-19  
+> 中文: [README.zh-CN.md](README.zh-CN.md)
 
-## What Changed In v0.5.0
+Automated technical intelligence for AI, LLM, RAG, and agent tooling. Version **0.5.1** runs a LangGraph workflow under `workflows/` that collects GitHub and RSS sources, analyzes each item with an LLM, reviews quality in a loop, and writes structured JSON articles to `knowledge/articles/`.
 
-- `workflows/` is now the only supported runtime.
-- The workflow is explicit: `Planner -> Collector -> Analyzer -> Reviewer -> Reviser -> Organizer`, with `HumanFlag` as the abnormal terminal path.
-- `pipeline/` and `scripts/` were removed. There is no backward compatibility layer.
-- GitHub and RSS remain supported collection sources.
+## How It Works
 
-See [spec/upgrade-0.4.0-to-0.5.0.md](/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/spec/upgrade-0.4.0-to-0.5.0.md:1) for the migration rationale and tradeoffs.
+```text
+plan → collect → analyze → review
+                          ├─ pass → organize → END (rebuild index.json)
+                          ├─ fail & iterations left → revise → review
+                          └─ fail & max iterations → human_flag → END
+```
+
+- **Planner** — per-run strategy (limits, thresholds).
+- **Collector** — GitHub Search API + RSS (`workflows/rss_sources.yaml`).
+- **Analyzer / Reviewer / Reviser** — LLM analysis, five-dimension weighted review, targeted revision.
+- **Organizer** — dedupe by `source_url`, write `knowledge/articles/<slug>-<YYYYMMDD>-<NNN>.json`.
+- **HumanFlag** — batches that exhaust the review loop go to `knowledge/pending_review/` (local only, not committed by CI).
+
+Skipped or filtered items are audited in `knowledge/articles/_skipped.jsonl` (one JSON object per line: id, source, reason).
 
 ## Project Layout
 
 ```text
 ai-kb/
 ├── workflows/               # LangGraph nodes, state, graph CLI, RSS config
-├── patterns/                # Router / Supervisor pattern demos
-├── hooks/                   # JSON validation and article quality checks
-├── tests/                   # pytest suite
-├── notebooks/               # Demo notebooks for the workflow
-├── spec/                    # Requirements, tech spec, migration notes
+├── scripts/
+│   └── build_index.py       # Rebuild knowledge/articles/index.json from disk
+├── hooks/                   # JSON schema + quality scoring
+├── tests/                   # pytest (non_llm / llm_e2e)
+├── notebooks/               # LangGraph demo notebook
 ├── knowledge/
-│   ├── raw/                 # Collected raw JSON
-│   ├── articles/            # Published article JSON and index
+│   ├── articles/            # Published JSON + index.json + _skipped.jsonl
 │   └── pending_review/      # Failed review-loop batches
-├── mcp_knowledge_server.py  # MCP search server over JSON-RPC stdio
-├── opencode.json            # OpenCode MCP config
-├── .claude/mcp.json         # Claude Code MCP config
-└── .codex/mcp.json          # Codex MCP config
+├── ui/                      # Notion-like local management panel (Flask)
+├── mcp_knowledge_server.py  # MCP search over articles (stdio JSON-RPC)
+├── openspec/                # Change proposals and capability specs
+├── .github/workflows/       # daily-collect.yml, llm-e2e.yml
+└── AGENTS.md                # Maintainer guide (structure, conventions, CLI)
 ```
 
 ## Setup
@@ -39,14 +49,13 @@ uv sync
 cp .env.example .env
 ```
 
-Optional API keys:
+Configure as needed:
 
-- `GITHUB_TOKEN`
-- `DEEPSEEK_API_KEY`
-- `DASHSCOPE_API_KEY`
-- `OPENAI_API_KEY`
-
-Default provider is `qwen`.
+| Variable | Purpose |
+|----------|---------|
+| `GITHUB_TOKEN` | GitHub Search API (public repos) |
+| `LLM_PROVIDER` | `qwen` (default), `deepseek`, or `openai` |
+| `DASHSCOPE_API_KEY` / `DEEPSEEK_API_KEY` / `OPENAI_API_KEY` | Provider API keys |
 
 ## Run The Workflow
 
@@ -61,19 +70,50 @@ uv run python -m workflows.graph --sources github --limit 5 --dry-run
 uv run python -m workflows.graph --sources rss --limit 5 --provider openai
 uv run python -m workflows.graph --sources github,rss --limit 10 --verbose
 uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag
+uv run python -m workflows.graph --sources github,rss --limit 20 --json
 ```
 
-The Organizer writes approved articles to `knowledge/articles/`. Review-loop failures are written to `knowledge/pending_review/`.
+After a non–dry-run completes, the graph **rebuilds** `knowledge/articles/index.json` from all article files (derived artifact, not incrementally patched during organize).
+
+Rebuild the index manually:
+
+```bash
+uv run python scripts/build_index.py
+uv run python scripts/build_index.py --dry-run
+```
+
+## Browse & Edit (UI)
+
+```bash
+uv pip install -r ui/requirements.txt
+uv run python ui/app.py
+```
+
+Open http://localhost:5050 — list, filter, search, edit, and batch-update articles. See [ui/README.md](ui/README.md).
+
+## MCP Server
+
+Expose the local knowledge base to agents (Cursor, Claude Code, Codex, OpenCode):
+
+```bash
+uv run python mcp_knowledge_server.py
+```
+
+Tools: `search_articles`, `get_article`, `knowledge_stats`. Wire-up examples live in `opencode.json`, `.claude/mcp.json`, and `.codex/mcp.json`.
 
 ## Scheduled Runs
 
-The daily GitHub Actions workflow uses:
+GitHub Actions ([`.github/workflows/daily-collect.yml`](.github/workflows/daily-collect.yml)) runs daily (UTC 08:00):
 
 ```bash
-uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human-flag
+uv run python -m workflows.graph --sources github,rss --limit 20 --verbose
 ```
 
-That means `HumanFlag` is treated as a failed run in automation. `knowledge/pending_review/` is an operational fallback for local inspection and is not committed by the scheduled workflow.
+- Commits new files under `knowledge/articles/` only (not `pending_review/`).
+- Validates **newly staged** article JSON with hooks before push.
+- `human_flag` emits a workflow warning locally/CI; use `--fail-on-human-flag` when you want a hard exit.
+
+Real-provider E2E tests run separately in [`.github/workflows/llm-e2e.yml`](.github/workflows/llm-e2e.yml).
 
 ## Validate Articles
 
@@ -82,40 +122,55 @@ uv run python hooks/validate_json.py tests/fixtures/articles/example-published.j
 uv run python hooks/check_quality.py tests/fixtures/articles/example-published.json
 ```
 
-For generated articles:
+For on-disk articles (exclude `index.json`):
 
 ```bash
-uv run python hooks/validate_json.py knowledge/articles/*.json
-uv run python hooks/check_quality.py knowledge/articles/*.json
+uv run python hooks/validate_json.py knowledge/articles/github-*.json
+uv run python hooks/check_quality.py knowledge/articles/github-*.json
 ```
+
+OpenCode can also run validation on write via `.opencode/plugins/validate.ts`.
+
+## Data Contract
+
+**File naming:** `knowledge/articles/{source-slug}-{YYYYMMDD}-{NNN}.json`  
+**ID:** same as basename without `.json`; pattern `^[a-z0-9-]+-\d{8}-\d{3}$` (lowercase slug, no colons).
+
+**Required fields** (enforced by `hooks/validate_json.py`):
+
+- `id`, `title`, `source_url`, `url`, `summary`, `tags`, `status`
+- `key_insight`, `category` (single enum value), `relevance_score` (0–1)
+
+**Nullable when unknown:** `author`, `published_at` — use JSON `null`, not source-name or collection-time placeholders.
+
+**Common optional fields:** `source`, `collected_at`, `score`, `audience`, `published_at`, `author`.
+
+**Index:** `knowledge/articles/index.json` — compact list (`id`, `title`, `source`, `source_url`, `category`, `relevance_score`) rebuilt from articles; not validated as an article file.
+
+Fixture reference: [tests/fixtures/articles/example-published.json](tests/fixtures/articles/example-published.json).
 
 ## Development
 
 ```bash
 uv run pytest -q -m non_llm
-uv run python -m compileall workflows hooks mcp_knowledge_server.py
+uv run python -m compileall workflows hooks scripts mcp_knowledge_server.py
 ```
 
-## Testing
+### Testing
 
-Two separate runs are supported:
+| Marker | Purpose |
+|--------|---------|
+| `non_llm` | Deterministic tests (mocked / no live LLM) |
+| `llm_e2e` | Real provider workflow verification (needs API keys) |
 
 ```bash
 uv run pytest -q -m non_llm
 uv run pytest -q -m llm_e2e
 ```
 
-`non_llm` is the default deterministic lane. `llm_e2e` is a separate real-provider workflow verification run and requires provider credentials. See [spec/testing-strategy.md](/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/spec/testing-strategy.md:1).
+## Further Reading
 
-## Data Contract
-
-Published article JSON files must satisfy the hook contract:
-
-- `id`
-- `title`
-- `source_url`
-- `summary`
-- `tags`
-- `status`
-
-Common fields emitted by the workflow include `source`, `url`, `collected_at`, `score`, `audience`, `relevance_score`, `category`, and `key_insight`.
+- [AGENTS.md](AGENTS.md) — conventions, workflow rules, agent-oriented CLI reference
+- [CHANGELOG.md](CHANGELOG.md) — release history
+- [project-vision.md](project-vision.md) — original scope and go/no-go criteria
+- [docs/archive/](docs/archive/) — historical audits and strategy memos (2026-05)

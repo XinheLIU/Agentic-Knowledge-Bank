@@ -1,0 +1,22 @@
+{
+  "id": "reddit-ml-20260518-006",
+  "title": "could refusal layers be masking dialect-conditioned safety failures in MoE models [d]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tggu0j/could_refusal_layers_be_masking/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-18T11:48:28.408206+00:00",
+  "summary": "该研究揭示MoE大模型中拒绝层可能掩盖方言（如AAVE）触发的安全失效，证明路由机制本身存在注册依赖性偏差，拒绝层仅起表层对齐作用，而非根治安全漏洞。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "advanced",
+  "relevance_score": 0.95,
+  "category": "security",
+  "key_insight": "拒绝层不是解决安全问题的根源机制，而是遮蔽了底层专家路由对语言变体的敏感性，导致方言条件下的隐性安全失效。",
+  "updated_at": "2026-05-18T11:51:23.893083+00:00"
+}

@@ -6,6 +6,7 @@ import json
 from typing import Any
 
 from workflows.model_client import accumulate_usage, chat_json_with_model
+from workflows.skipped import append_skipped
 from workflows.state import KBState
 
 REVIEWER_WEIGHTS: dict[str, float] = {
@@ -92,6 +93,16 @@ def review_node(state: KBState) -> dict[str, Any]:
         weighted_score = 7.0
         feedback = f"审核 LLM 调用失败，自动通过: {error}"
         passed = True
+
+    if not passed:
+        for item in analyses:
+            append_skipped(
+                item_id=item.get("id", "unknown"),
+                source=str(item.get("source", "unknown")),
+                source_url=item.get("source_url") or item.get("url", ""),
+                stage="reviewer",
+                reason=f"reviewer veto (weighted_score={weighted_score}, threshold={REVIEWER_PASS_THRESHOLD})",
+            )
 
     print(f"[Reviewer] 加权总分: {weighted_score}/10, 通过: {passed}")
     return {

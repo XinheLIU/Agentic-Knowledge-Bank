@@ -8,5 +8,8 @@
   "summary": "Synthetic fixture article for CI and manual hook checks. It describes a sample repository layout without real captured content.",
   "tags": ["llm", "agent", "evaluation"],
   "status": "published",
-  "score": 8
+  "score": 8,
+  "key_insight": "A sample key insight for fixture validation.",
+  "category": "llm",
+  "relevance_score": 0.85
 }
