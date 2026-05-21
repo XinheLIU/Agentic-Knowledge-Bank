@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-005",
+  "title": "Any tool to get accepted conference papers sorted by citation count? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tiqlsu/any_tool_to_get_accepted_conference_papers_sorted/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tiqlsu/any_tool_to_get_accepted_conference_papers_sorted/",
+  "author": "/u/baghalipolo",
+  "published_at": "2026-05-20T16:19:54+00:00",
+  "collected_at": "2026-05-21T11:30:46.805476+00:00",
+  "summary": "用户寻求能按引用次数排序检索顶会（如NeurIPS）已录用论文的工具，反映学术信息检索中 citation-aware conference paper ranking 的实际需求缺口。",
+  "tags": [
+    "evaluation",
+    "rag"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.75,
+  "category": "evaluation",
+  "key_insight": "当前缺乏将会议录用数据（如OpenReview）与权威引文指标（如Google Scholar）自动对齐并排序的轻量级工具链。"
+}

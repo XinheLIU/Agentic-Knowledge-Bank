@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-003",
+  "title": "Looking for real world comparisons between WALL OSS pi0.6 and OpenVLA[D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/",
+  "author": "/u/Dense-Sir-6707",
+  "published_at": "2026-05-21T08:23:45+00:00",
+  "collected_at": "2026-05-21T11:30:46.803746+00:00",
+  "summary": "聚焦真实机器人操作栈部署场景，对比WALL OSS、pi0.6和OpenVLA在LIBERO/ManipArena任务中的推理延迟、微调成本、硬件兼容性及模型漂移等工程实践指标。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "用户明确拒绝论文分数而渴求硬件实测失败模式、数据预算与持续更新稳定性等落地细节，凸显AI代理从研究到部署的关键鸿沟。"
+}

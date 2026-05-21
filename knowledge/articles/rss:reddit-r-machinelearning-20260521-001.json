@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-001",
+  "title": "OpenAI claims a general-purpose reasoning model found a counterexample to Erdos's unit-distance bound [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/",
+  "author": "/u/NutInBobby",
+  "published_at": "2026-05-20T20:37:12+00:00",
+  "collected_at": "2026-05-21T11:30:46.801023+00:00",
+  "summary": "OpenAI宣称其通用推理模型自主发现Erdős单位距离问题的反例，挑战经典上界猜想，标志LLM在离散几何领域实现突破性数学发现。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "该成果本质是推理型智能体（而非纯语言模型）在目标驱动下完成问题重构、构造搜索与验证闭环的范例，凸显'AI科学家'范式的初步可行性。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-004",
+  "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tj9tna/masked_diffusion_language_models_are_strong_and/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tj9tna/masked_diffusion_language_models_are_strong_and/",
+  "author": "/u/MegixistAlt",
+  "published_at": "2026-05-21T04:36:46+00:00",
+  "collected_at": "2026-05-21T11:30:46.804615+00:00",
+  "summary": "提出掩码扩散语言模型（MDLM）作为强泛化、可调控的文本世界模型，通过任意顺序去噪机制克服自回归模型的全局不一致性问题，在世界建模与智能体强化学习任务中显著提升生成质量与任务成功率。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "advanced",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "MDLM 的任意序去噪目标使模型能统一学习所有条件依赖方向，从而支撑更一致、可控的世界状态推演，是面向具身智能体的高质量世界模型新范式。"
+}

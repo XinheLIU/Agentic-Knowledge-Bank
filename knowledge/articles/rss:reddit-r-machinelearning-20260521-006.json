@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-006",
+  "title": "CANTANTE: Optimizing Agentic Systems via Contrastive Credit Attribution [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tij4st/cantante_optimizing_agentic_systems_via/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tij4st/cantante_optimizing_agentic_systems_via/",
+  "author": "/u/finitearth",
+  "published_at": "2026-05-20T11:43:12+00:00",
+  "collected_at": "2026-05-21T11:30:46.807175+00:00",
+  "summary": "CANTANTE 提出对比式信用归因方法，解决多智能体系统中全局奖励难以分解到各代理的信用分配难题，实现端到端可学习的提示优化，显著提升编程、数学与检索任务性能。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "将代理提示视为可学习参数，通过对比不同配置的推理轨迹来解耦全局奖励，使多智能体系统具备真正自主优化能力。"
+}

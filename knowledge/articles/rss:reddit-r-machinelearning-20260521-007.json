@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260521-007",
+  "title": "NOML-NOML: hierarchical TD3 + anchor policy for flight control [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tikbux/nomlnoml_hierarchical_td3_anchor_policy_for/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tikbux/nomlnoml_hierarchical_td3_anchor_policy_for/",
+  "author": "/u/9138NOMS",
+  "published_at": "2026-05-20T12:33:45+00:00",
+  "collected_at": "2026-05-21T11:30:46.809753+00:00",
+  "summary": "提出NOML算法，通过锚点策略、分层Actor和镜像学习改进TD3，解决6自由度飞行控制中策略崩溃与俯仰振荡问题，提升连续控制稳定性。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "agent",
+  "key_insight": "锚点策略将安全先验编码进动作空间，使策略退化时仍能保持基本可控性，替代了传统探索噪声的核心作用。"
+}
