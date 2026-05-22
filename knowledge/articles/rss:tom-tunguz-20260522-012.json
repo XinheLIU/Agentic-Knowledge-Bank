@@ -1,0 +1,21 @@
+{
+  "id": "rss:tom-tunguz-20260522-012",
+  "title": "SpaceX's Limitless Ambition : An AI Conglomerate",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/spacex-s1-analysis/",
+  "url": "https://www.tomtunguz.com/spacex-s1-analysis/",
+  "author": null,
+  "published_at": "2026-05-21T00:00:00+00:00",
+  "collected_at": "2026-05-22T10:54:59.022288+00:00",
+  "summary": "SpaceX通过S-1文件揭示其已转型为AI时代 conglomerate，以Starlink为现金引擎、Space为技术底座、xAI为长期杠杆，构建天地协同的AI基础设施新范式。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "SpaceX将AI定位为资本密集型战略资产，通过COLOSSUS超算集群与未来轨道AI卫星，突破地面算力的能源与物理约束，重新定义大模型训练基础设施的边界。"
+}

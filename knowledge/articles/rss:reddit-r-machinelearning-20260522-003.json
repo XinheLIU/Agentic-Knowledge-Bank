@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260522-003",
+  "title": "One thing that's been bothering me lately: benchmark performance often tells me almost nothing about whether a workflow will survive production usage.[D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tkauvf/one_thing_thats_been_bothering_me_lately/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tkauvf/one_thing_thats_been_bothering_me_lately/",
+  "author": "/u/Bladerunner_7_",
+  "published_at": "2026-05-22T06:43:48+00:00",
+  "collected_at": "2026-05-22T10:54:55.133180+00:00",
+  "summary": "指出当前AI基准测试过度关注清洁任务性能，忽视真实生产中模糊意图、混乱上下文、指令冲突和长会话等鲁棒性挑战，呼吁转向行为稳健性评估。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "基准性能≠生产可用性；真实世界的行为鲁棒性比标准任务准确率更能决定AI系统成败。"
+}

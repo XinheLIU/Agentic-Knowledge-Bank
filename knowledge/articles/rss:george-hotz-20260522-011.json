@@ -1,0 +1,21 @@
+{
+  "id": "rss:george-hotz-20260522-011",
+  "title": "What will better AI mean?",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
+  "author": null,
+  "published_at": "2026-05-20T07:00:00+00:00",
+  "collected_at": "2026-05-22T10:54:58.802360+00:00",
+  "summary": "文章指出当前前沿AI（如Claude Mythos）并无神秘技术壁垒，其成功源于已知方法的工程实现与规模扩展；在可验证领域，进步主要依赖bug修复与算力/数据扩展，而非算法突破。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI前沿能力缺乏技术护城河，核心瓶颈是工程化与规模化，而非原创算法。"
+}

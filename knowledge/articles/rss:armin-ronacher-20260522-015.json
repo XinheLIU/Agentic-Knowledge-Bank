@@ -1,0 +1,21 @@
+{
+  "id": "rss:armin-ronacher-20260522-015",
+  "title": "Pushing Local Models With Focus And Polish",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/5/8/local-models/",
+  "url": "https://lucumr.pocoo.org/2026/5/8/local-models/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-05-08T00:00:00+00:00",
+  "collected_at": "2026-05-22T10:55:05.579417+00:00",
+  "summary": "本文聚焦提升本地大模型在编程智能体中的实际可用性，主张通过聚焦单一模型（DeepSeek V4 Flash）与专用推理引擎（ds4.c）实现端到端体验打磨，解决碎片化、配置复杂和工具流缺失等关键瓶颈。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "本地模型的真正挑战不在‘能否运行’，而在‘是否像托管API一样开箱即用且可信赖’——需以产品思维而非实验思维推进堆栈整合与体验 polish。"
+}

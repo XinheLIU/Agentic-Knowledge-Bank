@@ -1,0 +1,21 @@
+{
+  "id": "rss:arxiv-cs-cl-20260522-006",
+  "title": "CR4T: Rewrite-Based Guardrails for Adolescent LLM Safety",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2605.21609",
+  "url": "https://arxiv.org/abs/2605.21609",
+  "author": "Heajun An, Qi Zhang, Vedanth Achanta, Jin-Hee Cho",
+  "published_at": "2026-05-22T04:00:00+00:00",
+  "collected_at": "2026-05-22T10:54:56.151900+00:00",
+  "summary": "提出CR4T框架，通过轻量风险检测与领域条件重写，将不安全或拒绝式LLM输出转化为适龄、引导型响应，兼顾安全性与青少年发展需求，避免简单拒答导致的对话中断。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "security",
+  "key_insight": "面向青少年的LLM安全不应依赖拒绝式过滤，而应通过发展心理学对齐的响应重构实现人本化防护。"
+}

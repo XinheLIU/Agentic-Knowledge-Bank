@@ -1,0 +1,21 @@
+{
+  "id": "rss:max-woolf-20260522-010",
+  "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+  "url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+  "author": null,
+  "published_at": "2026-02-27T18:00:00+00:00",
+  "collected_at": "2026-05-22T10:54:58.618436+00:00",
+  "summary": "一位持怀疑态度的开发者以极细粒度实测AI编程智能体的实际表现，涵盖提示工程、调试循环、工具调用失败分析等真实场景，揭示当前AI编码代理在复杂任务中的能力边界与工程代价。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "AI编码智能体的真实效能不取决于单次生成质量，而取决于其在多步推理、错误恢复和工具交互中的鲁棒性，而这恰恰是当前系统最薄弱的环节。"
+}

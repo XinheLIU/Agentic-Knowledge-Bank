@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-localllama-20260522-004",
+  "title": "Heretic has been served a legal notice by Meta, Inc.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+  "author": "/u/-p-e-w-",
+  "published_at": "2026-05-21T14:50:44+00:00",
+  "collected_at": "2026-05-22T10:54:55.729510+00:00",
+  "summary": "Heretic项目因衍生使用Meta的Llama模型收到法律通知，主动下架相关权重并转向去中心化托管（如Codeberg），凸显开源AI社区在版权合规与技术自主间的张力。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "法律风险正加速推动LLM下游生态向合规化、去中心化和模型无关架构演进。"
+}

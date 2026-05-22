@@ -1,0 +1,20 @@
+{
+  "id": "rss:hugging-face-blog-20260522-007",
+  "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+  "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+  "author": null,
+  "published_at": "2026-05-19T18:38:09+00:00",
+  "collected_at": "2026-05-22T10:54:57.510130+00:00",
+  "summary": "OlmoEarth v1.1 是面向地球观测任务优化的高效视觉基础模型家族，支持多光谱、SAR 和光学遥感数据联合建模，在保持精度的同时显著降低计算开销与推理延迟。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "将大语言模型架构思想迁移至多源遥感数据建模，实现跨模态地球观测表征的统一与轻量化。"
+}

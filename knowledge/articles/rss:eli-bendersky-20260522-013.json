@@ -1,0 +1,20 @@
+{
+  "id": "rss:eli-bendersky-20260522-013",
+  "title": "Scaling, stretching and shifting sinusoids",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/scaling-stretching-and-shifting-sinusoids/",
+  "url": "https://eli.thegreenplace.net/2026/scaling-stretching-and-shifting-sinusoids/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-05-02T14:17:00+00:00",
+  "collected_at": "2026-05-22T10:55:05.139461+00:00",
+  "summary": "本文通俗讲解如何通过调整振幅A、角频率w和相位θ来缩放、拉伸和平移正弦函数sin(x)，帮助读者直观理解三角函数参数化变换的几何意义与信号处理基础。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "other",
+  "key_insight": "A控制垂直缩放（振幅），w控制水平压缩/拉伸（影响周期），θ实现水平平移（相位偏移），三者独立且正交地调控正弦波形态。"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "rss:deepmind-blog-20260522-008",
+  "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+  "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+  "author": null,
+  "published_at": "2026-05-21T19:46:42+00:00",
+  "collected_at": "2026-05-22T10:54:57.901119+00:00",
+  "summary": "Google DeepMind 推出亚太地区加速器计划，聚焦利用AI技术（如气候建模、环境监测AI代理）应对气候变化、自然灾害等环境风险，支持本地初创与研究团队将AI解决方案落地。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "该计划强调AI agent在真实世界环境决策中的系统性部署能力，而非单纯模型性能提升。"
+}

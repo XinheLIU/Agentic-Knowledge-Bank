@@ -1,0 +1,21 @@
+{
+  "id": "rss:hillel-wayne-20260522-016",
+  "title": "Assumptions weaken properties",
+  "source": "rss:Hillel Wayne",
+  "source_url": "https://buttondown.com/hillelwayne/archive/assumptions-weaken-properties/",
+  "url": "https://buttondown.com/hillelwayne/archive/assumptions-weaken-properties/",
+  "author": null,
+  "published_at": "2026-05-20T15:13:16+00:00",
+  "collected_at": "2026-05-22T10:55:05.796384+00:00",
+  "summary": "本文从逻辑蕴含出发，论证添加运行时假设（如输入限制、环境约束）必然削弱系统性质的强度，揭示了形式化验证中‘假设即降级’的根本规律，并分析其在Rust内存安全、公平性、测试Mock等场景的实践权衡。",
+  "tags": [
+    "evaluation",
+    "security"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "任何附加假设都会扩大反例空间，使性质验证的保证范围收缩，因此‘Assume ⇒ Prop’严格弱于‘Prop’。"
+}

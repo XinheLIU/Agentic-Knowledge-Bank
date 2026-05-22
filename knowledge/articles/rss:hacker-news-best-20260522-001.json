@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260522-001",
+  "title": "AI is just unauthorised plagiarism at a bigger scale",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+  "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+  "author": "speckx",
+  "published_at": "2026-05-21T13:38:12+00:00",
+  "collected_at": "2026-05-22T10:54:54.359762+00:00",
+  "summary": "文章批判性指出大语言模型训练过程未经许可使用海量受版权保护文本，本质是规模化、系统化的未经授权抄袭，引发关于AI知识产权、数据来源合法性与作者权益的深层伦理与法律讨论。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.92,
+  "category": "security",
+  "key_insight": "LLM的‘学习’若缺乏授权机制与透明溯源，本质上构成对原作者权利的结构性侵蚀，而非技术中立的知识整合。"
+}

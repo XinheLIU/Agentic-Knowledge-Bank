@@ -1,0 +1,21 @@
+{
+  "id": "rss:the-decoder-20260522-017",
+  "title": "Google checks websites for llms.txt in new agentic browsing audit",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/google-tests-websites-for-llms-txt-and-agent-compatibility/",
+  "url": "https://the-decoder.com/google-tests-websites-for-llms-txt-and-agent-compatibility/",
+  "author": "Jonathan Kemper",
+  "published_at": "2026-05-21T19:07:33+00:00",
+  "collected_at": "2026-05-22T10:55:06.913084+00:00",
+  "summary": "Google 在 Lighthouse 中新增 'Agentic Browsing' 实验性审计类别，通过检测网站根目录是否存在 llms.txt 文件，评估其对 AI 代理（如浏览器自动化智能体）的兼容性与可访问性，推动 Web 基础设施面向代理时代演进。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "llms.txt 是面向 AI 代理的 robots.txt 类标准雏形，标志着 Web 可访问性正从人类中心向代理中心扩展。"
+}
