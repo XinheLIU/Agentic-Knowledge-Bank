@@ -7,69 +7,200 @@ sources:
     url: "https://hnrss.org/best?q=AI+OR+LLM+OR+agent"
     category: "general"
     enabled: true
+    per_source_limit: 10
 
   - name: "Reddit r/MachineLearning"
     slug: "reddit-ml"
     url: "https://www.reddit.com/r/MachineLearning/hot.rss"
     category: "research"
     enabled: true
+    per_source_limit: 3
 
   - name: "Reddit r/LocalLLaMA"
     slug: "reddit-localllama"
     url: "https://www.reddit.com/r/LocalLLaMA/hot.rss"
     category: "open-source"
     enabled: true
+    per_source_limit: 5
 
   - name: "arXiv cs.AI"
     slug: "arxiv-cs-ai"
     url: "https://rss.arxiv.org/rss/cs.AI"
     category: "research"
     enabled: true
+    per_source_limit: 3
 
   - name: "arXiv cs.CL"
     slug: "arxiv-cs-cl"
     url: "https://rss.arxiv.org/rss/cs.CL"
     category: "research"
-    enabled: false
+    enabled: true
+    per_source_limit: 3
 
   - name: "OpenAI Blog"
     slug: "openai-blog"
     url: "https://openai.com/blog/rss.xml"
     category: "industry"
     enabled: true
+    per_source_limit: 5
 
   - name: "Anthropic Research"
     slug: "anthropic-research"
     url: "https://www.anthropic.com/research/rss.xml"
     category: "industry"
     enabled: true
+    per_source_limit: 5
 
   - name: "Google AI Blog"
     slug: "google-ai-blog"
     url: "https://blog.google/technology/ai/rss/"
     category: "industry"
     enabled: true
+    per_source_limit: 5
 
   - name: "Hugging Face Blog"
     slug: "huggingface-blog"
     url: "https://huggingface.co/blog/feed.xml"
     category: "open-source"
     enabled: true
+    per_source_limit: 5
 
   - name: "LangChain Blog"
     slug: "langchain-blog"
     url: "https://blog.langchain.dev/rss/"
     category: "framework"
     enabled: true
+    per_source_limit: 3
 
   - name: "机器之心"
     slug: "jiqizhixin"
     url: "https://www.jiqizhixin.com/rss"
     category: "chinese"
     enabled: false
+    per_source_limit: 5
 
   - name: "量子位"
     slug: "qbitai"
     url: "https://www.qbitai.com/feed"
     category: "chinese"
     enabled: false
+    per_source_limit: 5
+
+  - name: "DeepMind Blog"
+    slug: "deepmind-blog"
+    url: "https://deepmind.google/blog/rss.xml"
+    category: "industry"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Simon Willison"
+    slug: "simonwillison"
+    url: "https://simonwillison.net/atom/everything/"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Gary Marcus"
+    slug: "garymarcus"
+    url: "https://garymarcus.substack.com/feed"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Dwarkesh Patel"
+    slug: "dwarkesh"
+    url: "https://www.dwarkeshpatel.com/feed"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Max Woolf"
+    slug: "minimaxir"
+    url: "https://minimaxir.com/index.xml"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Gwern"
+    slug: "gwern"
+    url: "https://gwern.substack.com/feed"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "George Hotz"
+    slug: "geohot"
+    url: "https://geohot.github.io/blog/feed.xml"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Tom Tunguz"
+    slug: "tomtunguz"
+    url: "https://tomtunguz.com/index.xml"
+    category: "analyst"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "antirez"
+    slug: "antirez"
+    url: "http://antirez.com/rss"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Mitchell Hashimoto"
+    slug: "mitchellh"
+    url: "https://mitchellh.com/feed.xml"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "matklad"
+    slug: "matklad"
+    url: "https://matklad.github.io/feed.xml"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Rachel by the Bay"
+    slug: "rachelbythebay"
+    url: "https://rachelbythebay.com/w/atom.xml"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Eli Bendersky"
+    slug: "eli-thegreenplace"
+    url: "https://eli.thegreenplace.net/feeds/all.atom.xml"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Fabien Sanglard"
+    slug: "fabiensanglard"
+    url: "https://fabiensanglard.net/rss.xml"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Armin Ronacher"
+    slug: "lucumr"
+    url: "https://lucumr.pocoo.org/feed.atom"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "Hillel Wayne"
+    slug: "hillelwayne"
+    url: "https://buttondown.com/hillelwayne/rss"
+    category: "engineering"
+    enabled: true
+    per_source_limit: 5
+
+  - name: "The Decoder"
+    slug: "the-decoder"
+    url: "https://the-decoder.com/feed/"
+    category: "news"
+    enabled: true
+    per_source_limit: 5

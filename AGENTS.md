@@ -1,6 +1,6 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-12
+> Last updated: 2026-05-22
 > 本文件是项目的长期记忆，描述当前版本 `0.5.1` 的真实结构与运行方式。
 
 ## 项目定义
@@ -105,9 +105,11 @@ plan -> collect -> analyze -> review
 1. **单向数据流**：Planner → Collector → Analyzer → Reviewer → Reviser/Organizer/HumanFlag
 2. **职责隔离**：每个节点只修改自己负责的状态字段
 3. **幂等性**：Organizer 以 `source_url` 去重，避免重复文章
-4. **质量门控**：Reviewer 用代码重算五维加权分；未通过且达到上限则进入 `pending_review/`
-5. **可追溯**：每个条目保留 `source_url` 与 `collected_at`
-6. **自动校验**：写入 `knowledge/articles/*.json` 时自动运行 `validate_json.py` + `check_quality.py`
+4. **per_source_limit + 比例缩放**：RSS 采集时，每个源在 `rss_sources.yaml` 中配置 `per_source_limit`（默认 5）；当总和超过全局 limit 时，按比例缩放，每个源至少保留 1 条
+5. **fingerprint 去重**：Collector 在采集 RSS 时，会计算 `fingerprint = normalize(title) + "|" + domain(url)`，在内存去重的同时，也会排除 `knowledge/articles/` 中已有的相同 fingerprint 条目
+6. **质量门控**：Reviewer 用代码重算五维加权分；未通过且达到上限则进入 `pending_review/`
+7. **可追溯**：每个条目保留 `source_url` 与 `collected_at`
+8. **自动校验**：写入 `knowledge/articles/*.json` 时自动运行 `validate_json.py` + `check_quality.py`
 
 ### CLI 命令
 
@@ -136,6 +138,7 @@ uv run pytest -q -m non_llm
 uv run pytest -q -m llm_e2e
 
 # 启动知识库管理 UI（本地浏览 http://localhost:5050）
+# UI 提供来源管理视图，可查看所有 RSS 源、近 7 天采集数，以及启用/禁用源
 uv run python ui/app.py
 ```
 

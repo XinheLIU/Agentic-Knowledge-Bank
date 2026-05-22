@@ -16,6 +16,13 @@
       </div>
       <nav class="nav-sections">
         <div class="nav-group">
+          <div class="nav-title">视图</div>
+          <ul id="view-tabs">
+            <li id="tab-articles" class="active">文章</li>
+            <li id="tab-sources">来源</li>
+          </ul>
+        </div>
+        <div class="nav-group" id="filters-group">
           <div class="nav-title">日期范围</div>
           <div class="date-filters">
             <input type="date" id="date-from" placeholder="开始">
@@ -79,6 +86,7 @@
       <section class="content" id="content">
         <div class="articles-list" id="articles-list"></div>
         <div class="pagination" id="pagination"></div>
+        <div class="sources-list" id="sources-list" style="display:none;"></div>
       </section>
     </main>
 

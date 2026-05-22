@@ -672,6 +672,43 @@ body.dark .drawer-body .drawer-insight { background: #252525; }
 body.dark .shortcuts-hint kbd { background: #2a2a2a; }
 body.dark .card-actions button { background: #252525; }
 
+/* Sources Table */
+.sources-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.sources-table th, .sources-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.sources-table th {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-page);
+  letter-spacing: 0.5px;
+}
+
+.sources-table td {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.source-toggle {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar { display: none; }

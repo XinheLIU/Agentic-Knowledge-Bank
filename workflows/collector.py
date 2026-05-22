@@ -3,10 +3,13 @@
 from __future__ import annotations
 
 import logging
+import math
 import os
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 import feedparser
 import httpx
@@ -19,6 +22,7 @@ logger = logging.getLogger(__name__)
 RSS_CONFIG = Path(__file__).with_name("rss_sources.yaml")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_DIR = PROJECT_ROOT / "knowledge" / "articles"
+DEFAULT_PER_SOURCE_LIMIT = 5
 
 
 def _utc_now() -> str:
@@ -127,6 +131,32 @@ def collect_github(limit: int = 10, articles_dir: Path = ARTICLES_DIR) -> list[d
     return items
 
 
+def _fingerprint(title: str, url: str) -> str:
+    """Compute a normalized fingerprint from title and URL domain."""
+    norm_title = re.sub(r"[^\w\u4e00-\u9fff]+", "", title.lower())
+    domain = urlparse(url).netloc.lower().removeprefix("www.")
+    return f"{domain}|{norm_title}"
+
+
+def _existing_fingerprints(articles_dir: Path) -> set[str]:
+    """Reconstruct existing fingerprints from articles_dir."""
+    fingerprints: set[str] = set()
+    if not articles_dir.exists():
+        return fingerprints
+    for path in articles_dir.glob("*.json"):
+        if path.name in ("index.json", "_skipped.jsonl"):
+            continue
+        try:
+            import json
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if "title" in data and "source_url" in data:
+                fp = _fingerprint(data["title"], data["source_url"])
+                fingerprints.add(fp)
+        except Exception:  # noqa: BLE001
+            continue
+    return fingerprints
+
+
 def collect_rss(
     limit: int = 10,
     config_path: Path = RSS_CONFIG,
@@ -138,18 +168,36 @@ def collect_rss(
 
     config = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
     sources = [source for source in config.get("sources", []) if source.get("enabled", True)]
-    items: list[dict[str, Any]] = []
-
+    
+    # Validate all sources have slugs first
     for source in sources:
-        if len(items) >= limit:
-            break
-
         slug = source.get("slug")
         if not slug:
             raise ValueError(f"RSS source '{source.get('name', '?')}' missing required 'slug' field")
 
+    # Compute per-source quotas with proportional scaling
+    total_requested = sum(src.get("per_source_limit", DEFAULT_PER_SOURCE_LIMIT) for src in sources)
+    actual_quotas: dict[str, int] = {}
+    if total_requested <= limit:
+        for src in sources:
+            actual_quotas[src["slug"]] = src.get("per_source_limit", DEFAULT_PER_SOURCE_LIMIT)
+    else:
+        scale = limit / total_requested
+        for src in sources:
+            base = src.get("per_source_limit", DEFAULT_PER_SOURCE_LIMIT)
+            actual_quotas[src["slug"]] = max(1, math.ceil(base * scale))
+
+    items: list[dict[str, Any]] = []
+    existing_fps = _existing_fingerprints(articles_dir)
+    seen_fps: set[str] = set()
+
+    for source in sources:
+        slug = source["slug"]  # Already validated
+        quota = actual_quotas.get(slug, DEFAULT_PER_SOURCE_LIMIT)
+        collected_from_source = 0
+
         try:
-            with httpx.Client(timeout=20.0) as client:
+            with httpx.Client(timeout=httpx.Timeout(10.0, connect=5.0)) as client:
                 response = client.get(source["url"])
                 response.raise_for_status()
                 feed = feedparser.parse(response.text)
@@ -158,12 +206,16 @@ def collect_rss(
             continue
 
         for entry in feed.entries:
-            if len(items) >= limit:
+            if collected_from_source >= quota:
                 break
 
             title = entry.get("title", "").strip()
             link = entry.get("link", "").strip()
             if not title or not link:
+                continue
+
+            fp = _fingerprint(title, link)
+            if fp in existing_fps or fp in seen_fps:
                 continue
 
             collected_at = _utc_now()
@@ -181,8 +233,11 @@ def collect_rss(
                 "category": source.get("category", "general"),
                 "collected_at": collected_at,
             })
+            seen_fps.add(fp)
+            collected_from_source += 1
 
-    return items
+    # Enforce hard global limit (in case ceil made it over)
+    return items[:limit]
 
 
 def collect_node(state: KBState) -> dict[str, list[dict[str, Any]]]:

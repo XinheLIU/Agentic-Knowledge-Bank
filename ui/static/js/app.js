@@ -3,6 +3,7 @@
 const API_BASE = '';
 
 const state = {
+  currentView: 'articles',
   filters: { source: '', tag: '', category: '', status: '', audience: '', q: '', from_date: '', to_date: '' },
   sort: 'updated_at',
   page: 1,
@@ -11,6 +12,7 @@ const state = {
   selectedIds: new Set(),
   filterOptions: null,
   stats: null,
+  sources: null,
   drawerOpen: false,
   focusIndex: -1
 };
@@ -76,6 +78,92 @@ function importArticles(articles) {
 
 function fetchFilters() { return api('/api/filters'); }
 function fetchStats() { return api('/api/stats'); }
+function fetchSources() { return api('/api/sources'); }
+function patchSource(slug, data) {
+  return api(`/api/sources/${slug}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+}
+
+/* View Switching */
+function switchView(view) {
+  state.currentView = view;
+  document.getElementById('tab-articles').classList.toggle('active', view === 'articles');
+  document.getElementById('tab-sources').classList.toggle('active', view === 'sources');
+  document.getElementById('articles-list').style.display = view === 'articles' ? 'block' : 'none';
+  document.getElementById('pagination').style.display = view === 'articles' ? 'flex' : 'none';
+  document.getElementById('sources-list').style.display = view === 'sources' ? 'block' : 'none';
+  document.getElementById('filters-group').style.display = view === 'articles' ? 'block' : 'none';
+  if (view === 'sources') {
+    loadSources();
+  }
+}
+
+/* Rendering Sources */
+function renderSourcesView() {
+  const container = document.getElementById('sources-list');
+  container.innerHTML = '';
+  if (!state.sources || state.sources.length === 0) {
+    container.innerHTML = '<div style="text-align:center;color:#999;padding:40px;">暂无来源数据</div>';
+    return;
+  }
+  const table = document.createElement('table');
+  table.className = 'sources-table';
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Slug</th>
+        <th>名称</th>
+        <th>分类</th>
+        <th>近7天</th>
+        <th>启用</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  `;
+  const tbody = table.querySelector('tbody');
+  for (const src of state.sources) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${escapeHtml(src.slug)}</td>
+      <td>${escapeHtml(src.name || src.slug)}</td>
+      <td>${escapeHtml(src.category || '')}</td>
+      <td>${src.last_7d_count}</td>
+      <td><input type="checkbox" class="source-toggle" ${src.enabled ? 'checked' : ''} data-slug="${escapeHtml(src.slug)}"></td>
+    `;
+    tbody.appendChild(tr);
+  }
+  container.appendChild(table);
+  // Attach toggle listeners
+  document.querySelectorAll('.source-toggle').forEach(cb => {
+    cb.addEventListener('change', async (e) => {
+      const slug = e.target.dataset.slug;
+      const enabled = e.target.checked;
+      try {
+        const updatedSources = await patchSource(slug, { enabled });
+        state.sources = updatedSources;
+        renderSourcesView();
+      } catch (err) {
+        console.error('Patch failed:', err);
+        alert('更新失败: ' + err.message);
+        e.target.checked = !enabled; // revert
+      }
+    });
+  });
+}
+
+async function loadSources() {
+  try {
+    state.sources = await fetchSources();
+    renderSourcesView();
+  } catch (err) {
+    console.error('Load sources failed:', err);
+    document.getElementById('sources-list').innerHTML = `<div style="text-align:center;color:#c00;padding:40px;">加载失败: ${escapeHtml(err.message)}</div>`;
+  }
+}
 
 /* Rendering */
 function renderFilters() {
@@ -401,6 +489,10 @@ function handleKey(e) {
 
 /* Event Bindings */
 function init() {
+  // View tabs
+  document.getElementById('tab-articles').addEventListener('click', () => switchView('articles'));
+  document.getElementById('tab-sources').addEventListener('click', () => switchView('sources'));
+
   // Theme
   applyTheme();
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);

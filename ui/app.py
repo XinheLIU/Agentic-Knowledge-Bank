@@ -6,10 +6,11 @@ Reads/writes knowledge/articles/*.json directly.
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+import yaml
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -18,6 +19,7 @@ CORS(app)
 
 KNOWLEDGE_DIR = Path(__file__).parent.parent / "knowledge" / "articles"
 INDEX_PATH = KNOWLEDGE_DIR / "index.json"
+RSS_CONFIG = Path(__file__).resolve().parent.parent / "workflows" / "rss_sources.yaml"
 
 
 class ArticleStore:
@@ -82,6 +84,61 @@ class ArticleStore:
 
 
 store = ArticleStore(KNOWLEDGE_DIR)
+
+
+def _load_sources() -> list[dict]:
+    """Load RSS sources from config with defaults."""
+    if not RSS_CONFIG.exists():
+        return []
+    config = yaml.safe_load(RSS_CONFIG.read_text(encoding="utf-8")) or {}
+    sources = []
+    for src in config.get("sources", []):
+        sources.append({
+            "slug": src.get("slug"),
+            "name": src.get("name"),
+            "url": src.get("url"),
+            "category": src.get("category", "general"),
+            "per_source_limit": src.get("per_source_limit", 5),
+            "enabled": src.get("enabled", True),
+        })
+    return sources
+
+
+def _last_7d_count_by_source(articles_dir: Path) -> dict[str, int]:
+    """Count articles from last 7 days by source slug."""
+    counts: dict[str, int] = {}
+    if not articles_dir.exists():
+        return counts
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    for path in articles_dir.glob("*.json"):
+        if path.name in ("index.json", "_skipped.jsonl"):
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            collected_at_str = data.get("collected_at")
+            if not collected_at_str:
+                continue
+            collected_at = datetime.fromisoformat(collected_at_str)
+            if collected_at >= cutoff:
+                # source is like "rss:Source Name", try to match back to slug
+                # fallback: use slug if id starts with slug
+                source = data.get("source", "")
+                # For now, let's just use the filename prefix as the slug
+                filename = path.stem
+                # filename is like "slug-YYYYMMDD-NNN"
+                if "-" in filename:
+                    slug_candidate = filename.split("-", 1)[0]
+                    counts[slug_candidate] = counts.get(slug_candidate, 0) + 1
+        except Exception:  # noqa: BLE001
+            continue
+    return counts
+
+
+def _atomic_write_yaml(config: dict, path: Path) -> None:
+    """Write YAML config atomically using tmp file then replace."""
+    tmp_path = path.with_suffix(".yaml.tmp")
+    tmp_path.write_text(yaml.safe_dump(config, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    os.replace(tmp_path, path)
 
 
 def _normalize_article(data: dict) -> dict:
@@ -382,6 +439,41 @@ def get_filters():
             "audiences": audiences,
         }
     )
+
+
+@app.route("/api/sources", methods=["GET"])
+def list_sources():
+    sources = _load_sources()
+    counts = _last_7d_count_by_source(KNOWLEDGE_DIR)
+    for src in sources:
+        src["last_7d_count"] = counts.get(src["slug"], 0)
+    return jsonify(sources)
+
+
+@app.route("/api/sources/<slug>", methods=["PATCH"])
+def patch_source(slug: str):
+    if not RSS_CONFIG.exists():
+        return jsonify({"error": "RSS config not found"}), 404
+    payload = request.get_json(silent=True) or {}
+    if "enabled" not in payload or not isinstance(payload["enabled"], bool):
+        return jsonify({"error": "Invalid body: 'enabled' boolean required"}), 400
+    config = yaml.safe_load(RSS_CONFIG.read_text(encoding="utf-8")) or {}
+    sources = config.get("sources", [])
+    found = False
+    for src in sources:
+        if src.get("slug") == slug:
+            src["enabled"] = payload["enabled"]
+            found = True
+            break
+    if not found:
+        return jsonify({"error": "Source not found"}), 404
+    _atomic_write_yaml(config, RSS_CONFIG)
+    # Return updated sources list
+    updated_sources = _load_sources()
+    counts = _last_7d_count_by_source(KNOWLEDGE_DIR)
+    for src in updated_sources:
+        src["last_7d_count"] = counts.get(src["slug"], 0)
+    return jsonify(updated_sources)
 
 
 # ─── SPA static serving ─────────────────────────────────────────────────────
