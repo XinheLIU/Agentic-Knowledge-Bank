@@ -1,0 +1,21 @@
+{
+  "id": "rss:max-woolf-20260523-009",
+  "title": "Nano Banana Pro is the best AI image generator, with caveats",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2025/12/nano-banana-pro/",
+  "url": "https://minimaxir.com/2025/12/nano-banana-pro/",
+  "author": null,
+  "published_at": "2025-12-22T18:45:00+00:00",
+  "collected_at": "2026-05-23T09:58:05.420669+00:00",
+  "summary": "Nano Banana Pro 是一款高性能AI图像生成器，以极简设计和卓越生成质量著称，但存在可控性与可解释性方面的隐忧。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "生成能力过强反而暴露了在提示鲁棒性、内容安全与用户意图对齐上的基础缺陷。"
+}

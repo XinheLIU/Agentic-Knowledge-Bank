@@ -1,0 +1,21 @@
+{
+  "id": "rss:tom-tunguz-20260523-011",
+  "title": "Plastic User Interfaces",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/plastic-user-interfaces/",
+  "url": "https://www.tomtunguz.com/plastic-user-interfaces/",
+  "author": null,
+  "published_at": "2026-05-22T00:00:00+00:00",
+  "collected_at": "2026-05-23T09:58:05.744785+00:00",
+  "summary": "AI使用户界面从固定形态转向动态可塑形态，系统可根据场景（如语音摘要、交互式图表、HTML报告）实时生成适配的专用UI，实现‘一个系统、多种头’的范式升级。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "UI不再是一个静态层，而是由AI按需编排、可销毁可沉淀的临时/半永久性交互工件，其生命周期管理成为新核心能力。"
+}

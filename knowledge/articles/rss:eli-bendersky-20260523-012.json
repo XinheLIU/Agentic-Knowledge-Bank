@@ -1,0 +1,20 @@
+{
+  "id": "rss:eli-bendersky-20260523-012",
+  "title": "Thoughts on WebAssembly as a stack machine",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/thoughts-on-webassembly-as-a-stack-machine/",
+  "url": "https://eli.thegreenplace.net/2026/thoughts-on-webassembly-as-a-stack-machine/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-04-30T02:28:00+00:00",
+  "collected_at": "2026-05-23T09:58:11.890151+00:00",
+  "summary": "本文探讨 WebAssembly（WASM）是否可被严格归类为栈式虚拟机，指出其虽以栈为核心执行模型，但因支持局部变量和缺乏经典栈操作（如 dup/swap），在语义上偏离纯栈机设计，对编译器后端与运行时理解有重要启示。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "other",
+  "key_insight": "WASM 是‘以栈为中心’而非‘纯栈机器’，其局部变量机制实质引入了寄存器式命名空间，模糊了传统栈机边界。"
+}

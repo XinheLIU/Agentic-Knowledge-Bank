@@ -1,0 +1,20 @@
+{
+  "id": "rss:simon-willison-20260523-008",
+  "title": "The memory shortage is causing a repricing of consumer electronics",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-22T22:01:31+00:00",
+  "collected_at": "2026-05-23T09:58:04.866705+00:00",
+  "summary": "AI算力爆发导致HBM内存需求激增，挤占DDR/LPDDR产能，引发全球消费电子（尤其是低端智能手机）内存涨价，凸显AI基础设施扩张对下游硬件供应链的结构性冲击。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "AI硬件需求正通过晶圆产能分配这一物理瓶颈，重构全球消费电子的成本结构与市场可及性。"
+}

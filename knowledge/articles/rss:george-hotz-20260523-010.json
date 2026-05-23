@@ -1,0 +1,21 @@
+{
+  "id": "rss:george-hotz-20260523-010",
+  "title": "The Real Singularity is the Friends We Made Along the Way",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html",
+  "author": null,
+  "published_at": "2026-05-09T07:00:00+00:00",
+  "collected_at": "2026-05-23T09:58:05.545842+00:00",
+  "summary": "文章以幽默反讽方式解构‘技术奇点’叙事，强调AI发展的真实价值在于人类协作关系与社区共建，而非单一技术突破。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "真正的‘奇点’不是模型能力的临界跃迁，而是人与人之间因AI协作而形成的信任网络与共同实践。"
+}

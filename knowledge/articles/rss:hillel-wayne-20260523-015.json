@@ -1,0 +1,20 @@
+{
+  "id": "rss:hillel-wayne-20260523-015",
+  "title": "Points are a weird and inconsistent unit of measure",
+  "source": "rss:Hillel Wayne",
+  "source_url": "https://buttondown.com/hillelwayne/archive/points-are-a-weird-and-inconsistent-unit-of/",
+  "url": "https://buttondown.com/hillelwayne/archive/points-are-a-weird-and-inconsistent-unit-of/",
+  "author": null,
+  "published_at": "2026-05-13T15:56:37+00:00",
+  "collected_at": "2026-05-23T09:58:12.971508+00:00",
+  "summary": "文章深入剖析了排版单位'点（point）'在数字技术中的历史分歧与标准混乱，揭示 LaTeX 与 Inkscape/PostScript 因采用不同英寸换算（1/72.27 vs 1/72 英寸）导致的微小但顽固的不一致性，体现底层计量基础对工程实践的深远影响。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "同一术语‘point’在关键数字工具链中存在不可忽略的标准化分裂，根源在于历史演进中计量定义、行业惯性与计算便利性的多重博弈。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:deepmind-blog-20260523-007",
+  "title": "Fast-tracking genetic leads to reverse cellular aging",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+  "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+  "author": null,
+  "published_at": "2026-05-18T18:21:39+00:00",
+  "collected_at": "2026-05-23T09:58:04.753755+00:00",
+  "summary": "DeepMind 推出 Co-Scientist AI 系统，通过多步推理与实验闭环，辅助生物学家快速识别新型遗传因子，实验证实其可有效逆转人类细胞衰老表型，显著加速衰老生物学发现周期。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "将AI作为具备目标分解、工具调用与迭代验证能力的‘协作科学家’，而非仅文本生成器，是加速真实世界科学发现的关键范式跃迁。"
+}

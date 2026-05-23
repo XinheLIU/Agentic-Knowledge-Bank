@@ -1,0 +1,20 @@
+{
+  "id": "rss:hugging-face-blog-20260523-006",
+  "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+  "author": null,
+  "published_at": "2026-05-23T00:02:03+00:00",
+  "collected_at": "2026-05-23T09:58:04.332301+00:00",
+  "summary": "Nemotron-Labs 提出基于扩散机制的语言模型，突破自回归范式限制，实现接近光速的并行文本生成，在保持质量前提下显著提升推理吞吐量。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "扩散语言模型通过去噪生成范式替代自回归解码，为文本生成带来真正的并行化潜力。"
+}

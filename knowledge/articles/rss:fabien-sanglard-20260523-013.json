@@ -1,0 +1,20 @@
+{
+  "id": "rss:fabien-sanglard-20260523-013",
+  "title": "How Michael Abrash doubled Quake framerate",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+  "url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+  "author": null,
+  "published_at": "2026-02-14T00:00:00+00:00",
+  "collected_at": "2026-05-23T09:58:12.127113+00:00",
+  "summary": "文章详细解析了Michael Abrash如何通过汇编级优化（如循环展开、寄存器分配、SIMD初探）将Quake的帧率提升近一倍，展示了底层性能调优对实时3D渲染的关键影响。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "other",
+  "key_insight": "极致的帧率提升并非来自算法革新，而是对x86汇编、缓存行为和CPU流水线的深度理解与手工调优。"
+}

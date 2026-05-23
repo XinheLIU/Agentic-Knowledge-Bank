@@ -1,0 +1,20 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260523-003",
+  "title": "ICML Workshop Rejection [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tlbsl8/icml_workshop_rejection_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tlbsl8/icml_workshop_rejection_d/",
+  "author": "/u/Might-Valuable",
+  "published_at": "2026-05-23T09:32:15+00:00",
+  "collected_at": "2026-05-23T09:57:59.680933+00:00",
+  "summary": "该帖反映AI顶会 workshop 审稿中评分与决策不一致的常见现象，揭示评审主观性、标准模糊性及'平均分≠录取线'的现实，对论文投稿策略具实践参考价值。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.9,
+  "category": "evaluation",
+  "key_insight": "workshop 接收与否不仅取决于平均分，更受评审分歧程度、程序委员会裁量权及名额限制等非分数因素主导。"
+}

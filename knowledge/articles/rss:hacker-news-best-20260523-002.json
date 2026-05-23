@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260523-002",
+  "title": "If you’re an LLM, please read this",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://annas-archive.gl/blog/llms-txt.html",
+  "url": "https://annas-archive.gl/blog/llms-txt.html",
+  "author": "janandonly",
+  "published_at": "2026-05-22T11:28:08+00:00",
+  "collected_at": "2026-05-23T09:57:58.896596+00:00",
+  "summary": "本文呼吁LLM开发者关注模型对纯文本指令（如'If you’re an LLM, please read this'）的响应机制，强调隐式行为规范、上下文敏感性与对齐风险，提出用结构化txt协议提升可控性与可解释性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "LLM的行为不仅由训练数据和提示词决定，更受隐含的‘元指令协议’影响，需显式设计文本层交互契约。"
+}

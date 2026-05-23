@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-localllama-20260523-004",
+  "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/",
+  "author": "/u/HumanDrone8721",
+  "published_at": "2026-05-22T21:13:35+00:00",
+  "collected_at": "2026-05-23T09:58:00.344833+00:00",
+  "summary": "NVIDIA 将游戏业务收入从财报中移除，凸显其战略重心全面转向数据中心与AI芯片，反映AI算力需求已超越传统游戏市场成为核心增长引擎。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "财报结构变化是AI基础设施商业化成熟度的关键信号，标志着GPU厂商正式以AI工作负载为首要营收支柱。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:arxiv-cs-ai-20260523-005",
+  "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2605.21602",
+  "url": "https://arxiv.org/abs/2605.21602",
+  "author": "Dylan Feng, Pragya Srivastava, Cassidy Laidlaw",
+  "published_at": "2026-05-23T04:00:00+00:00",
+  "collected_at": "2026-05-23T09:58:00.731169+00:00",
+  "summary": "提出MOOD基准测试框架，系统评估并改进LLM监控器对分布外对齐失败的检测能力，证明结合OOD检测器可显著提升召回率，且优于单纯扩大模型规模。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "OOD检测不是可选优化，而是LLM安全监控中不可或缺的核心组件。"
+}

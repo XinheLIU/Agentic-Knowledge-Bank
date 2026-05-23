@@ -1,0 +1,21 @@
+{
+  "id": "rss:armin-ronacher-20260523-014",
+  "title": "Content for Content’s Sake",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
+  "url": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-05-04T00:00:00+00:00",
+  "collected_at": "2026-05-23T09:58:12.418816+00:00",
+  "summary": "本文探讨LLM生成内容对语言演化、人类写作习惯及社会信任的侵蚀性影响，揭示'LLM slop'泛滥导致的信号稀释、交互失真与平台治理危机。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "LLM不仅生成内容，更通过高频暴露重塑人类语言习惯与认知模式，造成不可逆的社会级信任衰减。"
+}
