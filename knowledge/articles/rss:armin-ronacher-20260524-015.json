@@ -1,0 +1,21 @@
+{
+  "id": "rss:armin-ronacher-20260524-015",
+  "title": "Before GitHub",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+  "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-04-28T00:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:47.999885+00:00",
+  "summary": "本文回顾开源协作基础设施的演进，从自建 Trac/Subversion 到 SourceForge、Bitbucket，再到 GitHub 的兴衰，剖析中心化平台对信任、依赖管理与知识存档的影响，并呼吁建设去商业化的公共开源软件档案。",
+  "tags": [
+    "deployment",
+    "security"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "GitHub 的本质角色已从代码托管平台升维为开源社会基础设施与事实性档案库，其衰落暴露的是整个生态在可移植性、持久性与去中心化治理上的系统性缺失。"
+}

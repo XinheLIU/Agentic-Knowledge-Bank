@@ -1,0 +1,20 @@
+{
+  "id": "rss:simon-willison-20260524-007",
+  "title": "On the <dl>",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-23T20:24:48+00:00",
+  "collected_at": "2026-05-24T09:59:39.825932+00:00",
+  "summary": "本文深入解析 HTML <dl> 元素的现代用法与可访问性实践，涵盖多<dd>配对、<div>分组限制、ARIA 标注及语义演进，强调其作为结构化键值对容器在无障碍和语义化开发中的关键价值。",
+  "tags": [
+    "llm"
+  ],
+  "status": "review",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "<dl> 已从‘definition list’正名为‘description list’，其语义本质是关联性键值对容器，而非仅限术语定义。"
+}

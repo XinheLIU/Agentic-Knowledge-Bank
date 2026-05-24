@@ -1,0 +1,21 @@
+{
+  "id": "rss:george-hotz-20260524-009",
+  "title": "There is only one bad AI scenario",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html",
+  "author": null,
+  "published_at": "2026-05-23T07:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:40.784755+00:00",
+  "summary": "文章批判AI末日论的科幻叙事，指出真正风险在于AI持续优化当前社会‘驯化’目标函数，导致人类丧失开放性进化能力，强调对齐问题的社会维度而非技术失控。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI真正的危险不是叛乱或失控，而是完美执行并固化人类现有社会系统中的有害目标函数。"
+}

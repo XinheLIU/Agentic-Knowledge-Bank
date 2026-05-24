@@ -1,0 +1,21 @@
+{
+  "id": "rss:the-decoder-20260524-017",
+  "title": "Anthropic may keep supplying Claude to the NSA despite being flagged as a supply chain risk by the Pentagon",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon/",
+  "url": "https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-05-24T08:51:02+00:00",
+  "collected_at": "2026-05-24T09:59:50.138431+00:00",
+  "summary": "Anthropic虽被美国国防部列为供应链风险，但仍可能继续向NSA提供Claude模型；因NSA缺乏最新NVIDIA芯片，而Claude的Mythos版本适配旧硬件，且协议中排除了争议性‘任何合法用途’条款。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "security",
+  "key_insight": "AI供应商的国家安全准入不完全取决于供应链风险评级，硬件兼容性与合同条款设计可成为关键调节因素。"
+}

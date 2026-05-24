@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260524-002",
+  "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+  "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+  "author": "jetter",
+  "published_at": "2026-05-22T10:38:26+00:00",
+  "collected_at": "2026-05-24T09:59:32.276555+00:00",
+  "summary": "Antigravity 2.0 在 OpenSCAD 建筑级 3D LLM 基准测试中排名第一，专为生成可编译、结构正确的参数化 3D 建模代码（OpenSCAD）而优化，显著提升几何逻辑理解与约束满足能力。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "首个面向参数化 3D 建模任务的专用 LLM 基准，将代码功能性、编译性与设计合理性纳入核心评估维度。"
+}

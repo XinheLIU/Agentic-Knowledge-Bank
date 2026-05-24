@@ -1,0 +1,20 @@
+{
+  "id": "rss:eli-bendersky-20260524-013",
+  "title": "Debugging WASM in Chrome DevTools",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/debugging-wasm-in-chrome-devtools/",
+  "url": "https://eli.thegreenplace.net/2026/debugging-wasm-in-chrome-devtools/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-04-23T02:23:00+00:00",
+  "collected_at": "2026-05-24T09:59:47.405912+00:00",
+  "summary": "介绍如何使用 Chrome DevTools 调试 WebAssembly（WASM）代码，涵盖源码映射、断点设置、变量检查等实用技巧，显著提升 WASM 开发调试效率。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "deployment",
+  "key_insight": "Chrome DevTools 已原生支持带 source map 的 WASM 符号化调试，使底层编译器生成的二进制代码具备接近高级语言的可观测性。"
+}

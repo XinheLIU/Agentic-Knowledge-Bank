@@ -1,0 +1,20 @@
+{
+  "id": "rss:hillel-wayne-20260524-016",
+  "title": "New Logic for Programmers (and the future of this newsletter)",
+  "source": "rss:Hillel Wayne",
+  "source_url": "https://buttondown.com/hillelwayne/archive/new-logic-for-programmers-and-the-future-of-this/",
+  "url": "https://buttondown.com/hillelwayne/archive/new-logic-for-programmers-and-the-future-of-this/",
+  "author": null,
+  "published_at": "2026-05-06T17:03:46+00:00",
+  "collected_at": "2026-05-24T09:59:48.574808+00:00",
+  "summary": "本文宣布《Logic for Programmers》书稿即将完成1.0版本，并透露作者将加入Antithesis专注开发者教育；重点阐释了逻辑量词（all/some）和时序逻辑算子（always/eventually）的单调性本质，为理解空集真值、LTL语义等提供直观数学洞见。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "other",
+  "key_insight": "量词和时序算子的单调性决定了其在边界情况（如空集、初始状态）下的必然真值，这是形式化语义设计的深层数学依据。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rss:hacker-news-best-20260524-001",
+  "title": "Is AI Profitable Yet?",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://isaiprofitable.com/",
+  "url": "https://isaiprofitable.com/",
+  "author": "poyu",
+  "published_at": "2026-05-23T02:10:38+00:00",
+  "collected_at": "2026-05-24T09:59:32.275386+00:00",
+  "summary": "该网站通过实时追踪和可视化AI公司（如OpenAI、Anthropic、Cohere等）的营收、成本与融资数据，探讨大模型商业化现状，核心价值在于提供首个公开、透明的AI盈利性实证分析框架。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "当前头部AI公司尚未实现整体盈利，收入增长快于成本控制，盈利拐点依赖于推理成本下降与产品化效率提升。"
+}

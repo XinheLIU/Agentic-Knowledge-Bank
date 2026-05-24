@@ -1,0 +1,20 @@
+{
+  "id": "rss:matklad-20260524-012",
+  "title": "TIL: Symlinking NixOS Dotfiles",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/05/21/symlinking-nixos-dotfiles.html",
+  "url": "https://matklad.github.io/2026/05/21/symlinking-nixos-dotfiles.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-05-21T00:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:41.954841+00:00",
+  "summary": "本文探讨在 NixOS 中通过符号链接（symlinking）管理 dotfiles 的替代方案，对比 home-manager 的主流做法，聚焦配置可维护性、美学偏好与实际部署约束。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "other",
+  "key_insight": "dotfiles 管理的本质是声明式配置与开发者工作流的权衡，而非工具选择本身。"
+}

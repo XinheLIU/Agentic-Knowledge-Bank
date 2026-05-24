@@ -1,0 +1,21 @@
+{
+  "id": "rss:max-woolf-20260524-008",
+  "title": "Nano Banana can be prompt engineered for extremely nuanced AI image generation",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2025/11/nano-banana-prompts/",
+  "url": "https://minimaxir.com/2025/11/nano-banana-prompts/",
+  "author": null,
+  "published_at": "2025-11-13T17:30:00+00:00",
+  "collected_at": "2026-05-24T09:59:40.553165+00:00",
+  "summary": "Nano Banana 是一种支持高达 32,768 输入 token 的轻量级图像生成模型，通过精细的 prompt engineering 实现高度细腻、可控的 AI 图像生成，显著拓展了小模型在复杂视觉提示理解上的能力边界。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "超长上下文支持（32K tokens）使 Nano Banana 能解析极其详尽的多模态 prompt，将传统小模型的图像生成精度推向新高度。"
+}

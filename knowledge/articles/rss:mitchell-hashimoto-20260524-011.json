@@ -1,0 +1,20 @@
+{
+  "id": "rss:mitchell-hashimoto-20260524-011",
+  "title": "Ghostty Is Leaving GitHub",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/ghostty-leaving-github",
+  "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+  "author": null,
+  "published_at": "2026-04-28T00:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:41.813968+00:00",
+  "summary": "Ghostty 是一个高性能终端模拟器，宣布将代码仓库从 GitHub 迁移至自托管 Git 服务器，强调对开源自主性、构建可验证性和长期可持续性的承诺。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "other",
+  "key_insight": "基础设施类开源项目迁移托管平台反映对去中心化协作与构建链完整性的技术主权诉求。"
+}

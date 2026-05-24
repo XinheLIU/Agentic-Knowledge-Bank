@@ -1,0 +1,20 @@
+{
+  "id": "rss:fabien-sanglard-20260524-014",
+  "title": "Let's compile Quake like it's 1997!",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/compile_like_1997/index.html",
+  "url": "https://fabiensanglard.net/compile_like_1997/index.html",
+  "author": null,
+  "published_at": "2026-02-05T00:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:47.781414+00:00",
+  "summary": "文章重现1997年Quake源码编译环境，通过Docker模拟旧版Linux、GCC 2.7.2和libc 5，揭示早期C语言工程实践与现代工具链差异，强调构建可复现历史软件环境的技术价值。",
+  "tags": [
+    "deployment"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "deployment",
+  "key_insight": "可复现性不仅是现代AI工程的要求，也是理解经典软件演进的关键路径。"
+}

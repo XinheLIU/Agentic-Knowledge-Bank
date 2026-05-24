@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-localllama-20260524-004",
+  "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-APEX-MTP",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tm3toi/qwen3635ba3buncensoredgenesisapexmtp/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tm3toi/qwen3635ba3buncensoredgenesisapexmtp/",
+  "author": "/u/EvilEnginer",
+  "published_at": "2026-05-24T06:08:22+00:00",
+  "collected_at": "2026-05-24T09:59:34.181872+00:00",
+  "summary": "Qwen3.6-35B定制模型，支持MTP（Multi-Task Processing）、APEX量化与无审查输出，实测200k长上下文稳定无崩溃，具备强任务切换与工具调用鲁棒性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "MTP支持与APEX/MTP-APEX量化组合显著提升了大模型在长上下文、多任务连续推理场景下的稳定性与实用性。"
+}

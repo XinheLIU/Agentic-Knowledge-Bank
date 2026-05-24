@@ -1,0 +1,21 @@
+{
+  "id": "rss:deepmind-blog-20260524-006",
+  "title": "Simulate real-world places with Project Genie and Street View",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+  "url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+  "author": null,
+  "published_at": "2026-05-17T19:53:18+00:00",
+  "collected_at": "2026-05-24T09:59:39.685145+00:00",
+  "summary": "Project Genie 结合 Street View 数据，使 Google AI Ultra 订阅者能高保真模拟真实世界地点，提升地理空间理解与具身智能任务的仿真能力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "将大规模街景视觉数据与生成式AI结合，为具身智能体提供可交互的真实世界数字孪生环境。"
+}

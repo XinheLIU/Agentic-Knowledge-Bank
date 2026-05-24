@@ -1,0 +1,20 @@
+{
+  "id": "rss:tom-tunguz-20260524-010",
+  "title": "The Unsustainable Subsidy",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/ai-model-inflation/",
+  "url": "https://www.tomtunguz.com/ai-model-inflation/",
+  "author": null,
+  "published_at": "2026-05-20T00:00:00+00:00",
+  "collected_at": "2026-05-24T09:59:40.932421+00:00",
+  "summary": "分析三大AI厂商（Google、OpenAI、Anthropic）大模型API定价趋势，揭示其从补贴扩张转向盈利导向的战略转变，反映AI基础设施成本压力与商业化路径分化。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI模型定价正经历从资本驱动的补贴竞争转向利润优先的可持续商业模式，价格通胀本质是算力资本开支不可持续的市场反馈。"
+}

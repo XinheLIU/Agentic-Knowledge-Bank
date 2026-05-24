@@ -1,0 +1,21 @@
+{
+  "id": "rss:hugging-face-blog-20260524-005",
+  "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+  "url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+  "author": null,
+  "published_at": "2026-05-22T15:25:59+00:00",
+  "collected_at": "2026-05-24T09:59:39.008197+00:00",
+  "summary": "文章指出在AI采购决策中，模型专业化能力（如领域适配性、任务精度）比单纯追求参数规模或通用能力更具战略价值，强调垂直场景优化对实际业务效果的决定性影响。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "llm",
+  "key_insight": "AI采购不应迷信‘更大即更好’，而应优先评估模型在目标业务场景中的专业化表现。"
+}

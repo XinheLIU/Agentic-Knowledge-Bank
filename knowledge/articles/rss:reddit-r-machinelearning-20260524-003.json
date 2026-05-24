@@ -1,0 +1,21 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260524-003",
+  "title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/",
+  "author": "/u/Uiqueblhats",
+  "published_at": "2026-05-24T03:11:52+00:00",
+  "collected_at": "2026-05-24T09:59:33.304026+00:00",
+  "summary": "对比视觉大模型原生PDF解析与OCR流水线在长文档（含图表、表格）问答任务上的性能，发现OCR方案在准确率、成本和稳定性上全面优于当前视觉LLM，尤其在图表密集场景。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "evaluation",
+  "key_insight": "视觉LLM原生处理PDF在真实长文档QA中尚未取代OCR，其精度更低、成本更高、且存在不可恢复的文件传输级失败。"
+}
