@@ -1,0 +1,36 @@
+{
+  "id": "rss:eli-bendersky-20260525-015",
+  "title": "watgo - a WebAssembly Toolkit for Go",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/watgo-a-webassembly-toolkit-for-go/",
+  "url": "https://eli.thegreenplace.net/2026/watgo-a-webassembly-toolkit-for-go/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-04-10T02:28:00+00:00",
+  "collected_at": "2026-05-25T11:56:16.676577+00:00",
+  "summary": "watgo 是一个用纯 Go 实现的零依赖 WebAssembly 工具包，提供 WAT 解析、验证与转换能力；虽不直接涉及 AI agent，但其轻量、可嵌入的 CLI/API 设计模式对构建本地化、可控的 agent 工具链（如 browser/computer-use agents 的底层执行沙箱）具参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "WebAssembly 作为安全、跨平台的轻量执行层，正成为 AI agent 系统中工具调用与沙箱化执行的关键基础设施候选。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户学习路线含 computer-use agents 和 tool-use，需理解底层安全执行环境；WASM 是实现隔离化、可验证工具运行时的重要技术路径，watgo 提供 Go 生态中简洁可审计的实现范例，契合 local-model-serving 与 agent-harness 构建需求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

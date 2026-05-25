@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260525-001",
+  "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+  "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+  "author": "intelkishan",
+  "published_at": "2026-05-24T16:31:29+00:00",
+  "collected_at": "2026-05-25T11:56:05.138258+00:00",
+  "summary": "文章揭示AI芯片中内存成本占比已近三分之二，凸显内存瓶颈对LLM推理、agent状态管理及RAG系统延迟/吞吐的关键制约；对用户构建生产级agent系统（尤其browser/computer-use agents需高频状态缓存）具有硬件层架构认知价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI系统性能瓶颈正从计算转向内存带宽与容量，直接影响agent state persistence、tool-use context window和RAG检索延迟。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项'agent engineering'和'production evaluation'需理解底层硬件约束；memory cost shift directly impacts agent-systems design (e.g., stateful LangGraph workflows) and RAG knowledge systems latency — 属于高价值上下文（P1）中'engineering architecture'的具象化案例。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

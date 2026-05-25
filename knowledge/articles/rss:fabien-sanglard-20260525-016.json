@@ -1,0 +1,36 @@
+{
+  "id": "rss:fabien-sanglard-20260525-016",
+  "title": "Is QSpy still cool? Let's play QuakeWorld!",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/quakeworld/index.html",
+  "url": "https://fabiensanglard.net/quakeworld/index.html",
+  "author": null,
+  "published_at": "2026-01-16T00:00:00+00:00",
+  "collected_at": "2026-05-25T11:56:16.943074+00:00",
+  "summary": "本文是 Fabien Sanglard 对 QuakeWorld 协议逆向工程与 QSpy 工具的技术剖析，涵盖网络协议解析、实时状态同步与客户端-服务器交互机制。虽非 AI 领域内容，但其对协议级 agent 行为建模、低延迟响应系统设计及工具链调试方法论具有强类比价值，可迁移至 browser/computer-use agent 的底层通信与状态协调学习。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "协议级状态同步与轻量代理行为建模的工程实践，为 computer-use 和 browser agents 提供系统级设计隐喻。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 computer-use agents 和 browser agents，需理解底层交互协议与实时状态协调机制；本文虽属游戏网络协议领域，但其逆向分析方法、状态机建模和工具链构建（QSpy）高度契合 agent-harness 和 implementation-pattern 学习目标。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

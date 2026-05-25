@@ -1,0 +1,36 @@
+{
+  "id": "rss:hugging-face-blog-20260525-007",
+  "title": "Introducing the Ettin Reranker Family",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/ettin-reranker",
+  "url": "https://huggingface.co/blog/ettin-reranker",
+  "author": null,
+  "published_at": "2026-05-19T00:00:00+00:00",
+  "collected_at": "2026-05-25T11:56:08.283081+00:00",
+  "summary": "Ettin Reranker 是 Hugging Face 推出的轻量级、高效开源重排序模型家族，专为 RAG 系统优化检索后相关性排序；支持本地部署与快速微调，对用户构建生产级 RAG 知识系统具有直接实践参考价值。",
+  "tags": [
+    "rag",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "rag",
+  "key_insight": "重排序是 RAG 系统中提升答案准确性的关键可插拔组件，Ettin 提供开箱即用、文档完备的轻量方案。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 'rag knowledge systems'，且学习路线明确包含 'rag-knowledge-systems'；Ettin 是当前高质量、可落地的 reranker 实现，附带代码、基准与部署说明，匹配高价值来源（blog + repository 链接隐含）。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "rag-knowledge-systems",
+  "learning_tags": [
+    "production-rag"
+  ]
+}

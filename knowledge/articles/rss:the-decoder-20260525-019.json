@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260525-019",
+  "title": "Google Deepmind's AlphaProof Nexus solves decades-old math problems for a few hundred dollars",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/",
+  "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-05-25T10:41:19+00:00",
+  "collected_at": "2026-05-25T11:56:19.024320+00:00",
+  "summary": "AlphaProof Nexus 使用 Lean 形式化验证自动求解 Erdős 数学难题，强调可验证推理与低成本推理实践，对构建可信 agent 系统（尤其 tool-use 和 proof-as-tool 场景）具启发性。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "形式化验证工具链（如 Lean）可作为 agent 的核心 tool-use 组件，提升推理可信度与可审计性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项含 tool-use、browser agents、computer-use agents，而 AlphaProof Nexus 是 tool-use agent 的典型范式：将外部形式化证明器（Lean）作为不可信 LLM 的确定性校验层；其架构思想可迁移至 LangGraph workflow 设计中。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

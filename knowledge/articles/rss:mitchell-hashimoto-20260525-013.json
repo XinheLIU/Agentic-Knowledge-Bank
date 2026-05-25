@@ -1,0 +1,37 @@
+{
+  "id": "rss:mitchell-hashimoto-20260525-013",
+  "title": "Simdutf Can Now Be Used Without libc++ or libc++abi",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/simdutf-no-libcxx",
+  "url": "https://mitchellh.com/writing/simdutf-no-libcxx",
+  "author": null,
+  "published_at": "2026-04-15T00:00:00+00:00",
+  "collected_at": "2026-05-25T11:56:11.100408+00:00",
+  "summary": "simdutf 是一个高性能 UTF-8 处理库，现支持无 libc++/libc++abi 环境（如嵌入式、WASI、bare-metal），显著降低 agent 或本地 LLM 服务的依赖体积与启动开销，对构建轻量、可移植的 data-agent 和 local-model-serving 系统具工程价值。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "脱离标准 C++ 运行时的能力，使 simdutf 成为构建最小化、跨平台 AI agent runtime 的关键底层组件。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户学习路线含 'local-model-serving' 和 'agent-systems'，而无 libc++ 依赖是实现轻量、安全、可嵌入 agent harness（如 browser/computer-use agents）的关键前提；该文提供可复用的构建约束与 ABI 解耦实践。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "agent-harness",
+    "local-llm"
+  ]
+}

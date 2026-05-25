@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260525-009",
+  "title": "datasette 1.0a30",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-24T23:52:37+00:00",
+  "collected_at": "2026-05-25T11:56:09.326837+00:00",
+  "summary": "Datasette 1.0a30 引入可扩展的 'Jump to...' 菜单及 jump_items_sql() 插件钩子，支持动态搜索数据库/表/调试项，为数据代理（data agents）提供轻量级、可插拔的本地数据发现与导航能力，契合用户 P0 中 data-agents 和 production evaluation 的实践需求。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "数据代理不只依赖 LLM 调用，更需底层数据环境的可发现性与可操作性接口；Datasette 的 jump menu 是一种低开销、高可用的 agent-harness 原语。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑 P0 'data agents' 学习目标：Datasette 提供生产就绪的本地结构化数据交互界面，其插件机制（jump_items_sql）可被封装为 data-agent 的标准工具调用入口，且具备真实部署案例（latest.datasette.io），符合高价值来源中 'repository' 和 'tutorial' 的复合特征。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "data-agent",
+    "agent-harness"
+  ]
+}
