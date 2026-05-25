@@ -216,10 +216,17 @@ class TestEvaluateQuality:
             "status": "review",
             "score": 9,
             "updated_at": "2026-05-01T00:00:00Z",
+            "personal_fit_score": 0.9,
+            "technical_depth_score": 0.85,
+            "reading_priority": "study-now",
+            "relevance_reason": "Core P0 topic",
+            "suggested_action": "clone-and-study",
+            "source_type": "repository",
+            "learning_track": "agent-systems",
         }
         report = evaluate_quality("test.json", data)
         assert report.grade == "A"
-        assert report.total_score >= 80
+        assert report.total_score >= 90
 
     def test_low_quality_article_gets_c(self):
         data = {
@@ -233,7 +240,7 @@ class TestEvaluateQuality:
         }
         report = evaluate_quality("test.json", data)
         assert report.grade == "C"
-        assert report.total_score < 60
+        assert report.total_score < 70
 
     def test_medium_quality_article_gets_b(self):
         data = {
@@ -245,10 +252,14 @@ class TestEvaluateQuality:
             "status": "published",
             "score": 6,
             "updated_at": "2026-05-01T00:00:00Z",
+            "reading_priority": "skim",
+            "relevance_reason": "Background context",
+            "source_type": "blog",
+            "learning_track": "background",
         }
         report = evaluate_quality("test.json", data)
         assert report.grade in ("A", "B")
-        assert report.total_score >= 60
+        assert report.total_score >= 70
 
     def test_hollow_words_penalty(self):
         data = {
@@ -265,3 +276,239 @@ class TestEvaluateQuality:
         hollow_dim = next(d for d in report.dimensions if d.name == "空洞词检测")
         assert hollow_dim.score < 15
         assert "groundbreaking" in hollow_dim.details or "revolutionary" in hollow_dim.details
+
+
+class TestValidateNewFields:
+    def test_valid_reading_priority(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "reading_priority": "study-now",
+        }
+        errors = validate_article(data)
+        assert not any("reading_priority" in e for e in errors)
+
+    def test_invalid_reading_priority(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "reading_priority": "urgent",
+        }
+        errors = validate_article(data)
+        assert any("无效的 reading_priority" in e for e in errors)
+
+    def test_valid_source_type(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "source_type": "repository",
+        }
+        errors = validate_article(data)
+        assert not any("source_type" in e for e in errors)
+
+    def test_invalid_source_type(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "source_type": "vlog",
+        }
+        errors = validate_article(data)
+        assert any("无效的 source_type" in e for e in errors)
+
+    def test_component_score_out_of_range(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "personal_fit_score": 1.5,
+        }
+        errors = validate_article(data)
+        assert any("personal_fit_score 超出范围" in e for e in errors)
+
+    def test_priority_score_out_of_range(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "priority_score": 150,
+        }
+        errors = validate_article(data)
+        assert any("priority_score 超出范围" in e for e in errors)
+
+    def test_historical_article_without_new_fields_still_valid(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Old Article",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "published",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+        }
+        errors = validate_article(data)
+        assert errors == []
+
+    def test_learning_tags_must_be_list(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "learning_tags": "not-a-list",
+        }
+        errors = validate_article(data)
+        assert any("learning_tags 应为列表" in e for e in errors)
+
+    def test_valid_learning_track(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "learning_track": "agent-systems",
+        }
+        errors = validate_article(data)
+        assert not any("learning_track" in e for e in errors)
+
+    def test_invalid_learning_track(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass.",
+            "tags": ["llm"],
+            "status": "review",
+            "key_insight": "insight",
+            "category": "llm",
+            "relevance_score": 0.5,
+            "learning_track": "astro-physics",
+        }
+        errors = validate_article(data)
+        assert any("无效的 learning_track" in e for e in errors)
+
+
+class TestPersonalRelevanceQuality:
+    def test_high_personal_fit_article_gets_high_quality(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "LangGraph Agent Framework",
+            "source_url": "https://github.com/example/repo",
+            "summary": (
+                "This repository provides a comprehensive LangGraph agent framework "
+                "with tool-use integration, MCP support, and production-ready evaluation "
+                "pipelines for multi-agent systems."
+            ),
+            "tags": ["agent", "tool-use"],
+            "status": "published",
+            "score": 9,
+            "updated_at": "2026-05-01T00:00:00Z",
+            "personal_fit_score": 0.92,
+            "technical_depth_score": 0.88,
+            "reading_priority": "study-now",
+            "relevance_reason": "Direct P0 match: agent engineering with LangGraph",
+            "suggested_action": "clone-and-study",
+            "source_type": "repository",
+            "learning_track": "agent-systems",
+            "learning_tags": ["langgraph", "agent-harness"],
+        }
+        report = evaluate_quality("test.json", data)
+        assert report.grade == "A"
+        personal_dim = next(d for d in report.dimensions if d.name == "个人相关性")
+        assert personal_dim.score >= 12
+
+    def test_generic_low_priority_article_lower_quality(self):
+        data = {
+            "id": "github-20260501-001",
+            "title": "Generic AI News",
+            "source_url": "https://example.com/news",
+            "summary": "This is a generic news article about AI industry trends and market forecasts.",
+            "tags": ["llm"],
+            "status": "published",
+            "score": 3,
+            "updated_at": "2026-05-01T00:00:00Z",
+        }
+        report = evaluate_quality("test.json", data)
+        personal_dim = next(d for d in report.dimensions if d.name == "个人相关性")
+        assert personal_dim.score == 0
+
+    def test_learning_tags_improve_tag_score(self):
+        data_no_learning = {
+            "id": "github-20260501-001",
+            "title": "Test",
+            "source_url": "https://example.com",
+            "summary": "A sufficiently long summary for the test to pass validation requirements.",
+            "tags": ["llm"],
+            "status": "published",
+            "score": 5,
+        }
+        data_with_learning = {
+            **data_no_learning,
+            "learning_tags": ["langgraph", "agent-harness"],
+        }
+        report_no = evaluate_quality("test.json", data_no_learning)
+        report_with = evaluate_quality("test.json", data_with_learning)
+        tags_no = next(d for d in report_no.dimensions if d.name == "标签精度")
+        tags_with = next(d for d in report_with.dimensions if d.name == "标签精度")
+        assert tags_with.score > tags_no.score

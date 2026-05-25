@@ -1,9 +1,22 @@
 # Changelog
-> Last updated: 2026-05-19
+> Last updated: 2026-05-24
 
 All notable changes are listed by release. There are no `git` tags yet; older sections may name commit hashes for traceability.
 
 ## [Unreleased]
+
+## [0.6.0] — 2026-05-24
+
+- Add configurable relevance profile (`workflows/relevance_profile.yaml` + loader) with user status, focus topics (P0/P1/P2), learning tracks, source type preferences, learning tag allowlist, and negative patterns.
+- Expand analyzer output with personal scoring fields: `personal_fit_score`, `technical_depth_score`, `actionability_score`, `source_credibility_score`, `novelty_score`, `priority_score`, `reading_priority`, `relevance_reason`, `suggested_action`, `confidence`, `source_type`, `learning_track`, `learning_tags`.
+- Add rule caps: discussion/news without technical mechanism capped at `low-priority`; P0 match with tutorial value floored at `save-for-context`; `skip` reserved for clearly irrelevant/duplicate/broken items.
+- Preserve `relevance_score` (mirrors `personal_fit_score`) and `score` (derived from `priority_score`) for backward compatibility.
+- Expand tag system: separate broad tags (`tags`) from learning-intent tags (`learning_tags`); add 21 learning-intent tags to allowlist.
+- Update quality scoring to 6 dimensions / 115 points: summary (25), tech depth (25), format (20), tag precision (15, split broad+learning), hollow-word (15), personal relevance (15). Grades: A (≥90), B (≥70), C (<70).
+- Extend `hooks/validate_json.py` with optional validation for new enum/range fields; historical articles without new fields remain valid.
+- Update reviewer to profile-aware scoring with `personal_relevance` and `actionability` dimensions replacing `relevance` and `originality`.
+- Persist all new fields in organizer with safe defaults and clamping for partial LLM output.
+- Add `docs/personal-knowledge-strategy-plan.md` strategy document.
 
 ## [0.5.1] — 2026-05-19
 

@@ -17,6 +17,13 @@ ARTICLES_DIR = PROJECT_ROOT / "knowledge" / "articles"
 CATEGORIES = {"llm", "agent", "rag", "mcp", "evaluation", "deployment", "security", "other"}
 
 
+def _clamp_float(value: Any, lo: float, hi: float, default: float) -> float:
+    try:
+        return max(lo, min(hi, float(value)))
+    except (TypeError, ValueError):
+        return default
+
+
 def _slug_source(source: str) -> str:
     slug = re.sub(r"[^a-z0-9:-]+", "-", source.lower()).strip("-")
     return slug or "unknown"
@@ -124,6 +131,27 @@ def build_articles(
             "relevance_score": float(item.get("relevance_score", 0.5)),
             "category": item.get("category", "other"),
             "key_insight": item.get("key_insight", ""),
+            "personal_fit_score": _clamp_float(item.get("personal_fit_score"), 0.0, 1.0, 0.0),
+            "technical_depth_score": _clamp_float(item.get("technical_depth_score"), 0.0, 1.0, 0.0),
+            "actionability_score": _clamp_float(item.get("actionability_score"), 0.0, 1.0, 0.0),
+            "source_credibility_score": _clamp_float(item.get("source_credibility_score"), 0.0, 1.0, 0.0),
+            "novelty_score": _clamp_float(item.get("novelty_score"), 0.0, 1.0, 0.0),
+            "priority_score": max(0, min(100, int(item.get("priority_score", 0)))),
+            "reading_priority": item.get("reading_priority", "low-priority")
+            if item.get("reading_priority") in {"study-now", "save-for-context", "skim", "low-priority", "skip"}
+            else "low-priority",
+            "relevance_reason": str(item.get("relevance_reason", "")).strip(),
+            "suggested_action": item.get("suggested_action", "skim")
+            if item.get("suggested_action") in {"clone-and-study", "deep-read", "skim", "archive", "skip"}
+            else "skim",
+            "confidence": _clamp_float(item.get("confidence"), 0.0, 1.0, 0.5),
+            "source_type": item.get("source_type", "unknown")
+            if item.get("source_type") in {"repository", "paper", "blog", "discussion", "benchmark", "tutorial", "product", "news", "documentation", "unknown"}
+            else "unknown",
+            "learning_track": item.get("learning_track", "background")
+            if item.get("learning_track") in {"agent-systems", "langgraph-workflows", "data-agents", "rag-knowledge-systems", "evaluation", "local-model-serving", "ml-rl-foundations", "quant-data-science", "engineering-leadership", "business-context", "background"}
+            else "background",
+            "learning_tags": item.get("learning_tags") if isinstance(item.get("learning_tags"), list) else [],
         }
 
         article = _normalize_category(article)

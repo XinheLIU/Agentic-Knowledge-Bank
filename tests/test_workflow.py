@@ -62,11 +62,14 @@ def test_calculate_weighted_score_uses_code_weights():
     score = calculate_weighted_score({
         "summary_quality": 8,
         "technical_depth": 6,
-        "relevance": 9,
-        "originality": 5,
+        "personal_relevance": 9,
+        "actionability": 5,
         "formatting": 8,
     })
-    assert score == 7.25
+    expected = (
+        8 * 0.20 + 6 * 0.20 + 9 * 0.25 + 5 * 0.20 + 8 * 0.15
+    )
+    assert score == round(expected, 2)
 
 
 def test_parse_sources_rejects_unknown_source():

@@ -48,6 +48,22 @@ VALID_AUDIENCES = {"beginner", "intermediate", "advanced"}
 
 VALID_CATEGORIES = {"llm", "agent", "rag", "mcp", "evaluation", "deployment", "security", "other"}
 
+VALID_READING_PRIORITIES = {"study-now", "save-for-context", "skim", "low-priority", "skip"}
+
+VALID_SOURCE_TYPES = {
+    "repository", "paper", "blog", "discussion", "benchmark",
+    "tutorial", "product", "news", "documentation", "unknown",
+}
+
+VALID_LEARNING_TRACKS = {
+    "agent-systems", "langgraph-workflows", "data-agents",
+    "rag-knowledge-systems", "evaluation", "local-model-serving",
+    "ml-rl-foundations", "quant-data-science", "engineering-leadership",
+    "business-context", "background",
+}
+
+VALID_SUGGESTED_ACTIONS = {"clone-and-study", "deep-read", "skim", "archive", "skip"}
+
 
 def _is_valid_type(value: Any, expected: type | tuple[type, ...]) -> bool:
     if isinstance(expected, tuple):
@@ -152,6 +168,59 @@ def validate_article(data: dict[str, Any]) -> list[str]:
                     f"字段类型错误: {nullable_field} 应为 str 或 null，"
                     f"实际为 {type(value).__name__}"
                 )
+
+    if "reading_priority" in data:
+        rp = data["reading_priority"]
+        if rp not in VALID_READING_PRIORITIES:
+            errors.append(
+                f"无效的 reading_priority: '{rp}'，"
+                f"允许值: {', '.join(sorted(VALID_READING_PRIORITIES))}"
+            )
+
+    if "source_type" in data:
+        st = data["source_type"]
+        if st not in VALID_SOURCE_TYPES:
+            errors.append(
+                f"无效的 source_type: '{st}'，"
+                f"允许值: {', '.join(sorted(VALID_SOURCE_TYPES))}"
+            )
+
+    if "learning_track" in data:
+        lt = data["learning_track"]
+        if lt not in VALID_LEARNING_TRACKS:
+            errors.append(
+                f"无效的 learning_track: '{lt}'，"
+                f"允许值: {', '.join(sorted(VALID_LEARNING_TRACKS))}"
+            )
+
+    if "suggested_action" in data:
+        sa = data["suggested_action"]
+        if sa not in VALID_SUGGESTED_ACTIONS:
+            errors.append(
+                f"无效的 suggested_action: '{sa}'，"
+                f"允许值: {', '.join(sorted(VALID_SUGGESTED_ACTIONS))}"
+            )
+
+    for score_field in ("personal_fit_score", "technical_depth_score", "actionability_score",
+                        "source_credibility_score", "novelty_score", "confidence"):
+        if score_field in data:
+            val = data[score_field]
+            if not isinstance(val, (int, float)):
+                errors.append(f"{score_field} 应为数字，实际为 {type(val).__name__}")
+            elif not (0.0 <= val <= 1.0):
+                errors.append(f"{score_field} 超出范围: {val}，允许范围: 0.0-1.0")
+
+    if "priority_score" in data:
+        ps = data["priority_score"]
+        if not isinstance(ps, (int, float)):
+            errors.append(f"priority_score 应为数字，实际为 {type(ps).__name__}")
+        elif not (0 <= ps <= 100):
+            errors.append(f"priority_score 超出范围: {ps}，允许范围: 0-100")
+
+    if "learning_tags" in data:
+        lt = data["learning_tags"]
+        if not isinstance(lt, list):
+            errors.append(f"learning_tags 应为列表，实际为 {type(lt).__name__}")
 
     return errors
 

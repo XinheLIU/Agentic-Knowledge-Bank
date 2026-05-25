@@ -1,7 +1,7 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-22
-> 本文件是项目的长期记忆，描述当前版本 `0.5.1` 的真实结构与运行方式。
+> Last updated: 2026-05-24
+> 本文件是项目的长期记忆，描述当前版本 `0.6.0` 的真实结构与运行方式。
 
 ## 项目定义
 
@@ -34,19 +34,21 @@ ai-kb/
 │   ├── state.py                       # 工作流状态定义
 │   ├── planner.py                     # 节点 ① 动态规划策略
 │   ├── collector.py                   # 节点 ② GitHub + RSS 采集
-│   ├── analyzer.py                    # 节点 ③ 单条 LLM 分析
-│   ├── reviewer.py                    # 节点 ④ 五维加权审核
+│   ├── analyzer.py                    # 节点 ③ 单条 LLM 分析（含个人相关性评分）
+│   ├── reviewer.py                    # 节点 ④ 个人相关性加权审核
 │   ├── reviser.py                     # 节点 ⑤ 根据反馈定向修订
 │   ├── organizer.py                   # 节点 ⑥ 整理入库
 │   ├── human_flag.py                  # 节点 ⑦ 人工介入终点
 │   ├── model_client.py                # OpenAI-compatible LLM 客户端
+│   ├── relevance_profile.py           # 个人相关性配置加载器
+│   ├── relevance_profile.yaml         # 默认个人相关性配置
 │   └── rss_sources.yaml               # RSS 源配置
 ├── patterns/
 │   ├── router.py                      # Router 模式示例
 │   └── supervisor.py                  # Supervisor 模式示例
 ├── hooks/
 │   ├── validate_json.py               # JSON Schema 校验
-│   └── check_quality.py               # 五维度质量评分
+│   └── check_quality.py               # 六维度质量评分
 ├── tests/                             # pytest 测试套件
 ├── notebooks/
 │   └── langgraph_workflow_demo.ipynb  # 新工作流演示 notebook
@@ -84,6 +86,8 @@ ai-kb/
 - 字符编码：UTF-8
 - 文章必须满足 hook 约束：`id`, `title`, `source_url`, `summary`, `tags`, `status`
 - 常见附加字段：`source`, `url`, `collected_at`, `score`, `audience`, `relevance_score`, `category`, `key_insight`
+- 个人相关性字段（v0.6.0 新增）：`personal_fit_score`, `technical_depth_score`, `actionability_score`, `source_credibility_score`, `novelty_score`, `priority_score`, `reading_priority`, `relevance_reason`, `suggested_action`, `confidence`, `source_type`, `learning_track`, `learning_tags`
+- 学习标签允许列表：`agent-harness`, `langgraph`, `langchain`, `data-agent`, `mcp`, `tool-use`, `browser-agent`, `computer-use`, `evaluation`, `repo-tutorial`, `reference-architecture`, `paper-to-code`, `production-rag`, `local-llm`, `quant-ai`, `business-context`, `implementation-pattern`, `architecture-reference`, `production-lesson`, `research-method`, `noise`
 
 ### 语言约定
 - 代码、JSON 键名、文件名：英文
@@ -107,9 +111,52 @@ plan -> collect -> analyze -> review
 3. **幂等性**：Organizer 以 `source_url` 去重，避免重复文章
 4. **per_source_limit + 比例缩放**：RSS 采集时，每个源在 `rss_sources.yaml` 中配置 `per_source_limit`（默认 5）；当总和超过全局 limit 时，按比例缩放，每个源至少保留 1 条
 5. **fingerprint 去重**：Collector 在采集 RSS 时，会计算 `fingerprint = normalize(title) + "|" + domain(url)`，在内存去重的同时，也会排除 `knowledge/articles/` 中已有的相同 fingerprint 条目
-6. **质量门控**：Reviewer 用代码重算五维加权分；未通过且达到上限则进入 `pending_review/`
+6. **质量门控**：Reviewer 用代码重算个人相关性加权分；未通过且达到上限则进入 `pending_review/`
 7. **可追溯**：每个条目保留 `source_url` 与 `collected_at`
 8. **自动校验**：写入 `knowledge/articles/*.json` 时自动运行 `validate_json.py` + `check_quality.py`
+
+### 个人相关性评分体系（v0.6.0）
+
+**配置**：`workflows/relevance_profile.yaml` 定义用户学习画像，包含：
+- `user_status`：用户当前状态描述
+- `focus_topics`：三级优先主题（P0 必学、P1 有价值上下文、P2 背景）
+- `learning_tracks`：学习路线分类
+- `preferred_source_types`：来源类型偏好（高/中/低）
+- `learning_tag_allowlist`：学习标签允许列表
+- `negative_patterns`：噪音模式
+
+**评分字段**：
+| 字段 | 范围 | 含义 |
+|------|------|------|
+| `personal_fit_score` | 0.0-1.0 | 与用户学习路线的匹配度 |
+| `technical_depth_score` | 0.0-1.0 | 技术深度 |
+| `actionability_score` | 0.0-1.0 | 学习行动价值 |
+| `source_credibility_score` | 0.0-1.0 | 来源可信度 |
+| `novelty_score` | 0.0-1.0 | 新颖度 |
+| `priority_score` | 0-100 | 加权综合优先级 |
+| `reading_priority` | enum | `study-now`, `save-for-context`, `skim`, `low-priority`, `skip` |
+| `confidence` | 0.0-1.0 | 评分置信度 |
+| `source_type` | enum | `repository`, `paper`, `blog`, `discussion`, `benchmark`, `tutorial`, `product`, `news`, `documentation`, `unknown` |
+| `learning_track` | enum | 学习路线归属 |
+| `learning_tags` | list | 学习意图标签，从允许列表选取 |
+
+**规则约束**：
+- `relevance_score` 兼容字段，镜像 `personal_fit_score`
+- `score` 兼容字段（1-10），从 `priority_score` 派生
+- 泛泛讨论/新闻无技术机制信号时，`reading_priority` 最多为 `low-priority`
+- P0 匹配且有教程/参考架构价值时，`reading_priority` 至少为 `save-for-context`
+- `skip` 仅用于明确无关、重复、损坏或低质量条目；不确定条目用 `low-priority`
+- 缺失或部分配置时自动回退到内置默认值
+
+**质量评分（v0.6.0）**：6 维度共 115 分
+1. 摘要质量 (25)
+2. 技术深度 (25) — 优先使用 `personal_fit_score` + `technical_depth_score`
+3. 格式规范 (20)
+4. 标签精度 (15) — 宽标签 + 学习标签分别评分
+5. 空洞词检测 (15)
+6. 个人相关性 (15) — 奖励 `reading_priority`, `relevance_reason`, `suggested_action`, `source_type`, `learning_track`, `personal_fit_score`
+
+等级：A (>=90), B (>=70), C (<70)
 
 ### CLI 命令
 

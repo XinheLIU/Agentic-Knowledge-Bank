@@ -11,5 +11,18 @@
   "score": 8,
   "key_insight": "A sample key insight for fixture validation.",
   "category": "llm",
-  "relevance_score": 0.85
+  "relevance_score": 0.85,
+  "personal_fit_score": 0.7,
+  "technical_depth_score": 0.65,
+  "actionability_score": 0.6,
+  "source_credibility_score": 0.7,
+  "novelty_score": 0.5,
+  "priority_score": 70,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "Sample fixture for CI validation",
+  "suggested_action": "skim",
+  "confidence": 0.75,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": ["langgraph"]
 }

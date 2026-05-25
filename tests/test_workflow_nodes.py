@@ -30,6 +30,19 @@ def test_analyze_node_success(mocker):
                 "key_insight": "重点在于工作流闭环。",
                 "score": 8,
                 "audience": "advanced",
+                "personal_fit_score": 0.8,
+                "technical_depth_score": 0.7,
+                "actionability_score": 0.75,
+                "source_credibility_score": 0.8,
+                "novelty_score": 0.6,
+                "priority_score": 78,
+                "reading_priority": "study-now",
+                "relevance_reason": "匹配 P0 主题",
+                "suggested_action": "deep-read",
+                "confidence": 0.8,
+                "source_type": "repository",
+                "learning_track": "agent-systems",
+                "learning_tags": ["langgraph"],
             },
             MagicMock(prompt_tokens=10, completion_tokens=5),
             "qwen-plus",
@@ -39,6 +52,7 @@ def test_analyze_node_success(mocker):
         "workflows.analyzer.accumulate_usage",
         return_value={"prompt_tokens": 10, "completion_tokens": 5, "total_cost_usd": 0.01},
     )
+    mocker.patch("workflows.analyzer.load_relevance_profile", return_value={"profile_id": "test", "user_status": "test", "focus_topics": {"p0_must_learn": ["agent engineering", "langgraph"], "p1_valuable_context": [], "p2_background": []}, "learning_tracks": [], "preferred_source_types": {}, "learning_tag_allowlist": ["langgraph", "agent-harness"], "negative_patterns": []})
 
     state = {
         "sources": [
@@ -55,10 +69,12 @@ def test_analyze_node_success(mocker):
     assert len(result["analyses"]) == 1
     assert result["analyses"][0]["status"] == "review"
     assert result["analyses"][0]["tags"] == ["llm", "agent"]
+    assert result["analyses"][0]["reading_priority"] == "study-now"
 
 
 def test_analyze_node_falls_back_on_llm_error(mocker):
     mocker.patch("workflows.analyzer.chat_json_with_model", side_effect=RuntimeError("boom"))
+    mocker.patch("workflows.analyzer.load_relevance_profile", return_value={"profile_id": "test", "user_status": "test", "focus_topics": {"p0_must_learn": [], "p1_valuable_context": [], "p2_background": []}, "learning_tracks": [], "preferred_source_types": {}, "learning_tag_allowlist": [], "negative_patterns": []})
 
     state = {
         "sources": [
@@ -86,12 +102,12 @@ def test_review_node_success(mocker):
                 "scores": {
                     "summary_quality": 8,
                     "technical_depth": 8,
-                    "relevance": 9,
-                    "originality": 7,
+                    "personal_relevance": 9,
+                    "actionability": 7,
                     "formatting": 8,
                 },
                 "feedback": "ok",
-                "weak_dimensions": ["originality"],
+                "weak_dimensions": ["actionability"],
             },
             MagicMock(prompt_tokens=10, completion_tokens=5),
             "qwen-plus",
@@ -101,6 +117,7 @@ def test_review_node_success(mocker):
         "workflows.reviewer.accumulate_usage",
         return_value={"prompt_tokens": 10, "completion_tokens": 5, "total_cost_usd": 0.01},
     )
+    mocker.patch("workflows.reviewer.load_relevance_profile", return_value={"profile_id": "test", "focus_topics": {"p0_must_learn": []}, "learning_tracks": [], "preferred_source_types": {}, "learning_tag_allowlist": [], "negative_patterns": []})
 
     result = review_node({"analyses": [{"title": "x"}], "iteration": 0, "cost_tracker": {}})
     assert result["review_passed"] is True
@@ -110,6 +127,7 @@ def test_review_node_success(mocker):
 
 def test_review_node_auto_passes_on_llm_error(mocker):
     mocker.patch("workflows.reviewer.chat_json_with_model", side_effect=RuntimeError("boom"))
+    mocker.patch("workflows.reviewer.load_relevance_profile", return_value={"profile_id": "test", "focus_topics": {"p0_must_learn": []}, "learning_tracks": [], "preferred_source_types": {}, "learning_tag_allowlist": [], "negative_patterns": []})
     result = review_node({"analyses": [{"title": "x"}], "iteration": 0, "cost_tracker": {}})
     assert result["review_passed"] is True
     assert "自动通过" in result["review_feedback"]
@@ -281,6 +299,19 @@ def test_analyzer_skips_low_relevance_and_logs_skipped(mocker, tmp_path):
                 "key_insight": "",
                 "score": 3,
                 "audience": "beginner",
+                "personal_fit_score": 0.2,
+                "technical_depth_score": 0.1,
+                "actionability_score": 0.1,
+                "source_credibility_score": 0.3,
+                "novelty_score": 0.1,
+                "priority_score": 15,
+                "reading_priority": "low-priority",
+                "relevance_reason": "低相关性",
+                "suggested_action": "skim",
+                "confidence": 0.3,
+                "source_type": "discussion",
+                "learning_track": "background",
+                "learning_tags": [],
             },
             MagicMock(prompt_tokens=10, completion_tokens=5),
             "qwen-plus",
@@ -291,6 +322,7 @@ def test_analyzer_skips_low_relevance_and_logs_skipped(mocker, tmp_path):
         return_value={"prompt_tokens": 10, "completion_tokens": 5, "total_cost_usd": 0.01},
     )
     mocker.patch("workflows.analyzer.append_skipped")
+    mocker.patch("workflows.analyzer.load_relevance_profile", return_value={"profile_id": "test", "user_status": "test", "focus_topics": {"p0_must_learn": [], "p1_valuable_context": [], "p2_background": []}, "learning_tracks": [], "preferred_source_types": {}, "learning_tag_allowlist": [], "negative_patterns": []})
 
     state = {
         "sources": [

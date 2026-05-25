@@ -6,14 +6,15 @@ import json
 from typing import Any
 
 from workflows.model_client import accumulate_usage, chat_json_with_model
+from workflows.relevance_profile import load_relevance_profile, profile_summary_text
 from workflows.skipped import append_skipped
 from workflows.state import KBState
 
 REVIEWER_WEIGHTS: dict[str, float] = {
-    "summary_quality": 0.25,
-    "technical_depth": 0.25,
-    "relevance": 0.20,
-    "originality": 0.15,
+    "summary_quality": 0.20,
+    "technical_depth": 0.20,
+    "personal_relevance": 0.25,
+    "actionability": 0.20,
     "formatting": 0.15,
 }
 
@@ -42,28 +43,41 @@ def review_node(state: KBState) -> dict[str, Any]:
             "cost_tracker": tracker,
         }
 
+    profile = load_relevance_profile()
+    profile_text = profile_summary_text(profile)
+
     sample = analyses[:5]
     prompt = f"""你是知识库质量审核员。请审核以下分析结果：
 
+用户学习画像:
+{profile_text}
+
+分析结果:
 {json.dumps(sample, ensure_ascii=False, indent=2)}
 
 按 1-10 分评分：
 - summary_quality: 摘要准确性、可读性、信息密度
 - technical_depth: 技术深度和实现细节
-- relevance: 与 AI/LLM/Agent 主题相关性
-- originality: 独立洞察，不只是复述
-- formatting: 字段完整、标签规范
+- personal_relevance: 与用户学习路线的匹配度、个人相关性字段的准确性
+- actionability: 学习价值、行动建议是否合理、是否回答了"我该怎么做"
+- formatting: 字段完整、标签规范、reading_priority 和 learning_track 是否合理
+
+重点审核：
+- 个人匹配度低但标记为 study-now 的条目应扣分
+- 缺少技术机制描述的泛泛讨论应扣分
+- 不确定但可能相关的内容不应被标记为 skip
+- reading_priority 与内容实际价值是否匹配
 
 只返回 JSON:
 {{
   "scores": {{
     "summary_quality": 8,
     "technical_depth": 7,
-    "relevance": 9,
-    "originality": 6,
+    "personal_relevance": 9,
+    "actionability": 7,
     "formatting": 8
   }},
-  "feedback": "具体、可执行的改进建议",
+  "feedback": "具体、可执行的改进建议，指出弱个人匹配、不清晰学习收益、缺失技术机制或无效优先级分配",
   "weak_dimensions": ["technical_depth"]
 }}"""
 

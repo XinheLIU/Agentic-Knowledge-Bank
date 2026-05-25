@@ -1,0 +1,83 @@
+profile_id: default
+user_status: "AI/agent engineering learner building a personal technical intelligence system"
+updated_at: "2026-05-24"
+
+focus_topics:
+  p0_must_learn:
+    - agent engineering
+    - langgraph
+    - langchain
+    - tool-use
+    - mcp
+    - browser agents
+    - computer-use agents
+    - data agents
+    - rag knowledge systems
+    - production evaluation
+  p1_valuable_context:
+    - llm engineering
+    - ai coding systems
+    - local model workflows
+    - applied ml
+    - reinforcement learning
+    - quantitative analysis
+    - data science methodology
+    - engineering architecture
+  p2_background:
+    - generic ai discourse
+    - business context
+    - technical communication
+
+learning_tracks:
+  - agent-systems
+  - langgraph-workflows
+  - data-agents
+  - rag-knowledge-systems
+  - evaluation
+  - local-model-serving
+  - ml-rl-foundations
+  - quant-data-science
+  - engineering-leadership
+
+preferred_source_types:
+  high:
+    - repository
+    - tutorial
+    - documentation
+    - paper
+    - benchmark
+  medium:
+    - blog
+    - product
+  low:
+    - discussion
+    - news
+
+learning_tag_allowlist:
+  - agent-harness
+  - langgraph
+  - langchain
+  - data-agent
+  - mcp
+  - tool-use
+  - browser-agent
+  - computer-use
+  - evaluation
+  - repo-tutorial
+  - reference-architecture
+  - paper-to-code
+  - production-rag
+  - local-llm
+  - quant-ai
+  - business-context
+  - implementation-pattern
+  - architecture-reference
+  - production-lesson
+  - research-method
+  - noise
+
+negative_patterns:
+  - hype without technical mechanism
+  - hiring or conference administration
+  - shallow product launch
+  - generic enterprise AI commentary
