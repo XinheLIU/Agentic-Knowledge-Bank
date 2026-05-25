@@ -7,15 +7,33 @@
   "author": "Jonathan Kemper",
   "published_at": "2026-05-21T19:07:33+00:00",
   "collected_at": "2026-05-22T10:55:06.913084+00:00",
-  "summary": "Google 在 Lighthouse 中新增 'Agentic Browsing' 实验性审计类别，通过检测网站根目录是否存在 llms.txt 文件，评估其对 AI 代理（如浏览器自动化智能体）的兼容性与可访问性，推动 Web 基础设施面向代理时代演进。",
+  "summary": "Google在Lighthouse中新增'Agentic Browsing'实验性审计，通过检测llms.txt文件评估网站对AI代理（尤其是浏览器Agent）的兼容性，为构建可被自动化智能体可靠访问的Web基础设施提供首个可验证标准，直接支撑用户P0中browser agents与agent engineering的工程实践。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "llms.txt 是面向 AI 代理的 robots.txt 类标准雏形，标志着 Web 可访问性正从人类中心向代理中心扩展。"
+  "key_insight": "llms.txt是首个面向生产级浏览器Agent的标准化入口协议，标志着Web基础设施正从‘人可读’向‘Agent可发现、可协商’演进。",
+  "raw_description": "Google 在 Lighthouse 中新增 'Agentic Browsing' 实验性审计类别，通过检测网站根目录是否存在 llms.txt 文件，评估其对 AI 代理（如浏览器自动化智能体）的兼容性与可访问性，推动 Web 基础设施面向代理时代演进。",
+  "description": "Google 在 Lighthouse 中新增 'Agentic Browsing' 实验性审计类别，通过检测网站根目录是否存在 llms.txt 文件，评估其对 AI 代理（如浏览器自动化智能体）的兼容性与可访问性，推动 Web 基础设施面向代理时代演进。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击用户P0必学项中的'browser agents'和'agent engineering'，且提供真实工程信号（Lighthouse集成+llms.txt规范），具备可复现的协议设计、部署验证与调试路径，契合'agent-systems'和'agent-harness'学习轨道。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "browser-agent"
+  ]
 }

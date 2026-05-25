@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2026-05-17T19:53:18+00:00",
   "collected_at": "2026-05-24T09:59:39.685145+00:00",
-  "summary": "Project Genie 结合 Street View 数据，使 Google AI Ultra 订阅者能高保真模拟真实世界地点，提升地理空间理解与具身智能任务的仿真能力。",
+  "summary": "Project Genie 利用 Street View 构建高保真地理空间仿真环境，增强具身智能体对真实世界地点的感知与交互能力；虽非直接讲授 agent 工程实现，但为 browser-agent 和 computer-use agent 提供关键仿真基础设施与评估场景，补充用户 P0 中的 browser agents 和 computer-use agents 学习上下文。",
   "tags": [
-    "llm",
-    "agent"
+    "agent",
+    "llm"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "将大规模街景视觉数据与生成式AI结合，为具身智能体提供可交互的真实世界数字孪生环境。"
+  "key_insight": "高保真地理空间仿真可作为具身 agent 的闭环测试与训练沙盒，是 browser/computer-use agent 的关键环境层支撑。",
+  "raw_description": "Project Genie 结合 Street View 数据，使 Google AI Ultra 订阅者能高保真模拟真实世界地点，提升地理空间理解与具身智能任务的仿真能力。",
+  "description": "Project Genie 结合 Street View 数据，使 Google AI Ultra 订阅者能高保真模拟真实世界地点，提升地理空间理解与具身智能任务的仿真能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容聚焦具身智能与真实世界仿真，直接支撑用户 P0 中的 browser agents 和 computer-use agents 学习目标；虽未提供代码或 workflow，但定义了关键环境接口范式，属 high-value context for agent-systems and langgraph-workflows track.",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "browser-agent"
+  ]
 }

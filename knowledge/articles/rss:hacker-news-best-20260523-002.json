@@ -7,15 +7,33 @@
   "author": "janandonly",
   "published_at": "2026-05-22T11:28:08+00:00",
   "collected_at": "2026-05-23T09:57:58.896596+00:00",
-  "summary": "本文呼吁LLM开发者关注模型对纯文本指令（如'If you’re an LLM, please read this'）的响应机制，强调隐式行为规范、上下文敏感性与对齐风险，提出用结构化txt协议提升可控性与可解释性。",
+  "summary": "本文探讨LLM对纯文本指令的隐式响应机制，强调上下文敏感性与对齐风险，并提出结构化txt协议以提升可控性与可解释性。对用户构建agent系统（尤其langgraph workflow中指令解析与行为约束）具有直接启发价值。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "LLM的行为不仅由训练数据和提示词决定，更受隐含的‘元指令协议’影响，需显式设计文本层交互契约。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "LLM对自然语言指令的隐式响应构成agent行为基底，需显式建模与协议化约束以保障可靠性。",
+  "raw_description": "本文呼吁LLM开发者关注模型对纯文本指令（如'If you’re an LLM, please read this'）的响应机制，强调隐式行为规范、上下文敏感性与对齐风险，提出用结构化txt协议提升可控性与可解释性。",
+  "description": "本文呼吁LLM开发者关注模型对纯文本指令（如'If you’re an LLM, please read this'）的响应机制，强调隐式行为规范、上下文敏感性与对齐风险，提出用结构化txt协议提升可控性与可解释性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'langgraph workflows'中的核心挑战——如何让LLM在复杂工作流中稳定响应结构化意图；其提出的txt协议可作为agent harness设计参考，匹配learning_tags中的'agent-harness'和'langgraph'。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
 }

@@ -1704,6 +1704,150 @@
     "relevance_score": 0.92
   },
   {
+    "id": "rss:armin-ronacher-20260522-015",
+    "title": "Pushing Local Models With Focus And Polish",
+    "source": "rss:Armin Ronacher",
+    "source_url": "https://lucumr.pocoo.org/2026/5/8/local-models/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:armin-ronacher-20260523-014",
+    "title": "Content for Content’s Sake",
+    "source": "rss:Armin Ronacher",
+    "source_url": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:armin-ronacher-20260524-015",
+    "title": "Before GitHub",
+    "source": "rss:Armin Ronacher",
+    "source_url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:arxiv-cs-ai-20260522-005",
+    "title": "SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation",
+    "source": "rss:arXiv cs.AI",
+    "source_url": "https://arxiv.org/abs/2605.20189",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:arxiv-cs-ai-20260523-005",
+    "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
+    "source": "rss:arXiv cs.AI",
+    "source_url": "https://arxiv.org/abs/2605.21602",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:arxiv-cs-cl-20260522-006",
+    "title": "CR4T: Rewrite-Based Guardrails for Adolescent LLM Safety",
+    "source": "rss:arXiv cs.CL",
+    "source_url": "https://arxiv.org/abs/2605.21609",
+    "category": "security",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:deepmind-blog-20260522-008",
+    "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+    "source": "rss:DeepMind Blog",
+    "source_url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:deepmind-blog-20260523-007",
+    "title": "Fast-tracking genetic leads to reverse cellular aging",
+    "source": "rss:DeepMind Blog",
+    "source_url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:deepmind-blog-20260524-006",
+    "title": "Simulate real-world places with Project Genie and Street View",
+    "source": "rss:DeepMind Blog",
+    "source_url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:eli-bendersky-20260522-013",
+    "title": "Scaling, stretching and shifting sinusoids",
+    "source": "rss:Eli Bendersky",
+    "source_url": "https://eli.thegreenplace.net/2026/scaling-stretching-and-shifting-sinusoids/",
+    "category": "other",
+    "relevance_score": 0.25
+  },
+  {
+    "id": "rss:eli-bendersky-20260523-012",
+    "title": "Thoughts on WebAssembly as a stack machine",
+    "source": "rss:Eli Bendersky",
+    "source_url": "https://eli.thegreenplace.net/2026/thoughts-on-webassembly-as-a-stack-machine/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:eli-bendersky-20260524-013",
+    "title": "Debugging WASM in Chrome DevTools",
+    "source": "rss:Eli Bendersky",
+    "source_url": "https://eli.thegreenplace.net/2026/debugging-wasm-in-chrome-devtools/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:fabien-sanglard-20260522-014",
+    "title": "Magic the Gathering format: Fun 40",
+    "source": "rss:Fabien Sanglard",
+    "source_url": "https://fabiensanglard.net/mtg/fun//index.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:fabien-sanglard-20260523-013",
+    "title": "How Michael Abrash doubled Quake framerate",
+    "source": "rss:Fabien Sanglard",
+    "source_url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:fabien-sanglard-20260524-014",
+    "title": "Let's compile Quake like it's 1997!",
+    "source": "rss:Fabien Sanglard",
+    "source_url": "https://fabiensanglard.net/compile_like_1997/index.html",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:george-hotz-20260522-011",
+    "title": "What will better AI mean?",
+    "source": "rss:George Hotz",
+    "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:george-hotz-20260523-010",
+    "title": "The Real Singularity is the Friends We Made Along the Way",
+    "source": "rss:George Hotz",
+    "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:george-hotz-20260524-009",
+    "title": "There is only one bad AI scenario",
+    "source": "rss:George Hotz",
+    "source_url": "https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
     "id": "rss:hacker-news-best-20260519-001",
     "title": "We stopped AI bot spam in our GitHub repo using Git's –author flag",
     "source": "rss:Hacker News (Best)",
@@ -1725,6 +1869,166 @@
     "source": "rss:Hacker News (Best)",
     "source_url": "https://www.nbcnews.com/tech/tech-news/former-google-ceo-booed-graduation-speech-ai-rcna345585",
     "category": "security",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260522-001",
+    "title": "AI is just unauthorised plagiarism at a bigger scale",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+    "category": "other",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260522-002",
+    "title": "Shunning AI is the human choice",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260523-001",
+    "title": "AI has a multiplying effect on existing technical skills",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260523-002",
+    "title": "If you’re an LLM, please read this",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://annas-archive.gl/blog/llms-txt.html",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260524-001",
+    "title": "Is AI Profitable Yet?",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://isaiprofitable.com/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hacker-news-best-20260524-002",
+    "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+    "source": "rss:Hacker News (Best)",
+    "source_url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hillel-wayne-20260522-016",
+    "title": "Assumptions weaken properties",
+    "source": "rss:Hillel Wayne",
+    "source_url": "https://buttondown.com/hillelwayne/archive/assumptions-weaken-properties/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hillel-wayne-20260523-015",
+    "title": "Points are a weird and inconsistent unit of measure",
+    "source": "rss:Hillel Wayne",
+    "source_url": "https://buttondown.com/hillelwayne/archive/points-are-a-weird-and-inconsistent-unit-of/",
+    "category": "other",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hillel-wayne-20260524-016",
+    "title": "New Logic for Programmers (and the future of this newsletter)",
+    "source": "rss:Hillel Wayne",
+    "source_url": "https://buttondown.com/hillelwayne/archive/new-logic-for-programmers-and-the-future-of-this/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hugging-face-blog-20260522-007",
+    "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
+    "source": "rss:Hugging Face Blog",
+    "source_url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hugging-face-blog-20260523-006",
+    "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+    "source": "rss:Hugging Face Blog",
+    "source_url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+    "category": "llm",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:hugging-face-blog-20260524-005",
+    "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
+    "source": "rss:Hugging Face Blog",
+    "source_url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:matklad-20260524-012",
+    "title": "TIL: Symlinking NixOS Dotfiles",
+    "source": "rss:matklad",
+    "source_url": "https://matklad.github.io/2026/05/21/symlinking-nixos-dotfiles.html",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:max-woolf-20260522-010",
+    "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+    "source": "rss:Max Woolf",
+    "source_url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:max-woolf-20260523-009",
+    "title": "Nano Banana Pro is the best AI image generator, with caveats",
+    "source": "rss:Max Woolf",
+    "source_url": "https://minimaxir.com/2025/12/nano-banana-pro/",
+    "category": "agent",
+    "relevance_score": 0.4
+  },
+  {
+    "id": "rss:max-woolf-20260524-008",
+    "title": "Nano Banana can be prompt engineered for extremely nuanced AI image generation",
+    "source": "rss:Max Woolf",
+    "source_url": "https://minimaxir.com/2025/11/nano-banana-prompts/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:mitchell-hashimoto-20260524-011",
+    "title": "Ghostty Is Leaving GitHub",
+    "source": "rss:Mitchell Hashimoto",
+    "source_url": "https://mitchellh.com/writing/ghostty-leaving-github",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260522-004",
+    "title": "Heretic has been served a legal notice by Meta, Inc.",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260523-004",
+    "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-localllama-20260524-004",
+    "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-APEX-MTP",
+    "source": "rss:Reddit r/LocalLLaMA",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tm3toi/qwen3635ba3buncensoredgenesisapexmtp/",
+    "category": "agent",
     "relevance_score": 0.85
   },
   {
@@ -1822,5 +2126,213 @@
     "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgqyo8/witchcraft_fast_local_semantic_search_on_top_of/",
     "category": "agent",
     "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-001",
+    "title": "Machine Learning on Spherical Manifold [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tif576/machine_learning_on_spherical_manifold_r/",
+    "category": "other",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-002",
+    "title": "Instructions for (ICML) workshop reviews [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ticoy5/instructions_for_icml_workshop_reviews_d/",
+    "category": "evaluation",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-003",
+    "title": "What do you think about Tabular Foundation Models [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thofoe/what_do_you_think_about_tabular_foundation_models/",
+    "category": "llm",
+    "relevance_score": 0.92
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-004",
+    "title": "[ECCV 2026] No modified date next to reviews [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thxv15/eccv_2026_no_modified_date_next_to_reviews_d/",
+    "category": "evaluation",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-005",
+    "title": "All fundamental knowledge in ML Course by Andrew NG that I noted and create into a repo github [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tho7b2/all_fundamental_knowledge_in_ml_course_by_andrew/",
+    "category": "other",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-006",
+    "title": "I built a tool that shows you what GPT-2 is \"thinking\" in real-time as it generates 3D graph of concept activations per token [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thwad9/i_built_a_tool_that_shows_you_what_gpt2_is/",
+    "category": "llm",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260520-007",
+    "title": "Backprop-free Pong: PC + distributional Hebbian plasticity vs. PPO: 57% vs. 59%, ~1500 lines from scratch [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1thrlix/backpropfree_pong_pc_distributional_hebbian/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-001",
+    "title": "OpenAI claims a general-purpose reasoning model found a counterexample to Erdos's unit-distance bound [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tiy6s4/openai_claims_a_generalpurpose_reasoning_model/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-002",
+    "title": "How competitive are PhD admissions currently [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tiw739/how_competitive_are_phd_admissions_currently_d/",
+    "category": "other",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-003",
+    "title": "Looking for real world comparisons between WALL OSS pi0.6 and OpenVLA[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tje2qd/looking_for_real_world_comparisons_between_wall/",
+    "category": "deployment",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-004",
+    "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tj9tna/masked_diffusion_language_models_are_strong_and/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-005",
+    "title": "Any tool to get accepted conference papers sorted by citation count? [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tiqlsu/any_tool_to_get_accepted_conference_papers_sorted/",
+    "category": "evaluation",
+    "relevance_score": 0.75
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-006",
+    "title": "CANTANTE: Optimizing Agentic Systems via Contrastive Credit Attribution [R]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tij4st/cantante_optimizing_agentic_systems_via/",
+    "category": "agent",
+    "relevance_score": 0.8
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260521-007",
+    "title": "NOML-NOML: hierarchical TD3 + anchor policy for flight control [P]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tikbux/nomlnoml_hierarchical_td3_anchor_policy_for/",
+    "category": "agent",
+    "relevance_score": 0.95
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260522-003",
+    "title": "One thing that's been bothering me lately: benchmark performance often tells me almost nothing about whether a workflow will survive production usage.[D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tkauvf/one_thing_thats_been_bothering_me_lately/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260523-003",
+    "title": "ICML Workshop Rejection [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tlbsl8/icml_workshop_rejection_d/",
+    "category": "evaluation",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:reddit-r-machinelearning-20260524-003",
+    "title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA [D]",
+    "source": "rss:Reddit r/MachineLearning",
+    "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tm0cqg/visioncapable_llms_vs_ocr_for_longdocument/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:simon-willison-20260522-009",
+    "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+    "source": "rss:Simon Willison",
+    "source_url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:simon-willison-20260523-008",
+    "title": "The memory shortage is causing a repricing of consumer electronics",
+    "source": "rss:Simon Willison",
+    "source_url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:simon-willison-20260524-007",
+    "title": "On the <dl>",
+    "source": "rss:Simon Willison",
+    "source_url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
+    "category": "other",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:the-decoder-20260522-017",
+    "title": "Google checks websites for llms.txt in new agentic browsing audit",
+    "source": "rss:The Decoder",
+    "source_url": "https://the-decoder.com/google-tests-websites-for-llms-txt-and-agent-compatibility/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:the-decoder-20260523-016",
+    "title": "Google CEO Pichai now calls links a \"part\" of search, redefining the web's role in its own product",
+    "source": "rss:The Decoder",
+    "source_url": "https://the-decoder.com/google-ceo-pichai-now-calls-links-a-part-of-search-redefining-the-webs-role-in-its-own-product/",
+    "category": "rag",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:the-decoder-20260524-017",
+    "title": "Anthropic may keep supplying Claude to the NSA despite being flagged as a supply chain risk by the Pentagon",
+    "source": "rss:The Decoder",
+    "source_url": "https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon/",
+    "category": "deployment",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:tom-tunguz-20260522-012",
+    "title": "SpaceX's Limitless Ambition : An AI Conglomerate",
+    "source": "rss:Tom Tunguz",
+    "source_url": "https://www.tomtunguz.com/spacex-s1-analysis/",
+    "category": "other",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:tom-tunguz-20260523-011",
+    "title": "Plastic User Interfaces",
+    "source": "rss:Tom Tunguz",
+    "source_url": "https://www.tomtunguz.com/plastic-user-interfaces/",
+    "category": "agent",
+    "relevance_score": 0.85
+  },
+  {
+    "id": "rss:tom-tunguz-20260524-010",
+    "title": "The Unsustainable Subsidy",
+    "source": "rss:Tom Tunguz",
+    "source_url": "https://www.tomtunguz.com/ai-model-inflation/",
+    "category": "deployment",
+    "relevance_score": 0.85
   }
 ]

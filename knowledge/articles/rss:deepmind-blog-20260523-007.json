@@ -7,15 +7,31 @@
   "author": null,
   "published_at": "2026-05-18T18:21:39+00:00",
   "collected_at": "2026-05-23T09:58:04.753755+00:00",
-  "summary": "DeepMind 推出 Co-Scientist AI 系统，通过多步推理与实验闭环，辅助生物学家快速识别新型遗传因子，实验证实其可有效逆转人类细胞衰老表型，显著加速衰老生物学发现周期。",
+  "summary": "DeepMind 的 Co-Scientist 是一个闭环多步推理 AI 系统，融合实验规划、执行反馈与迭代优化，体现 agent engineering 在跨学科科学发现中的高阶应用；对用户构建技术智能系统具有架构范式与 tool-use/mcp 实践参考价值。",
   "tags": [
-    "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "将AI作为具备目标分解、工具调用与迭代验证能力的‘协作科学家’，而非仅文本生成器，是加速真实世界科学发现的关键范式跃迁。"
+  "key_insight": "真正的科学 agent 不是单次调用 LLM，而是具备目标分解、工具编排、异步验证与状态维持的闭环认知系统。",
+  "raw_description": "DeepMind 推出 Co-Scientist AI 系统，通过多步推理与实验闭环，辅助生物学家快速识别新型遗传因子，实验证实其可有效逆转人类细胞衰老表型，显著加速衰老生物学发现周期。",
+  "description": "DeepMind 推出 Co-Scientist AI 系统，通过多步推理与实验闭环，辅助生物学家快速识别新型遗传因子，实验证实其可有效逆转人类细胞衰老表型，显著加速衰老生物学发现周期。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接体现 P0 必学项 'agent engineering' 和 'tool-use' 的前沿工业实践，且属于高价值来源 'blog'（DeepMind 官方技术博客），虽非代码教程但提供了 agent-harness 设计原则与 multi-step reasoning 架构线索，契合 learning_track 'agent-systems' 和 'data-agents'。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
 }

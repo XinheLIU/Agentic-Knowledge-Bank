@@ -7,14 +7,33 @@
   "author": null,
   "published_at": "2026-05-13T15:56:37+00:00",
   "collected_at": "2026-05-23T09:58:12.971508+00:00",
-  "summary": "文章深入剖析了排版单位'点（point）'在数字技术中的历史分歧与标准混乱，揭示 LaTeX 与 Inkscape/PostScript 因采用不同英寸换算（1/72.27 vs 1/72 英寸）导致的微小但顽固的不一致性，体现底层计量基础对工程实践的深远影响。",
+  "summary": "文章剖析排版单位'点'在不同工具链（LaTeX vs PostScript）中的历史换算差异，揭示底层计量标准不一致对工程精确性的隐性影响；对AI/agent工程师构建高可靠性系统具有方法论警示价值：需警惕基础假设的隐蔽偏差。",
   "tags": [
-    "llm"
+    "agent",
+    "evaluation"
   ],
   "status": "published",
-  "score": 9,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.95,
+  "relevance_score": 0.85,
   "category": "other",
-  "key_insight": "同一术语‘point’在关键数字工具链中存在不可忽略的标准化分裂，根源在于历史演进中计量定义、行业惯性与计算便利性的多重博弈。"
+  "key_insight": "工程系统的鲁棒性常被底层未声明的假设（如单位定义）悄然侵蚀，而非显性逻辑错误。",
+  "raw_description": "文章深入剖析了排版单位'点（point）'在数字技术中的历史分歧与标准混乱，揭示 LaTeX 与 Inkscape/PostScript 因采用不同英寸换算（1/72.27 vs 1/72 英寸）导致的微小但顽固的不一致性，体现底层计量基础对工程实践的深远影响。",
+  "description": "文章深入剖析了排版单位'点（point）'在数字技术中的历史分歧与标准混乱，揭示 LaTeX 与 Inkscape/PostScript 因采用不同英寸换算（1/72.27 vs 1/72 英寸）导致的微小但顽固的不一致性，体现底层计量基础对工程实践的深远影响。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，强调生产级可靠性与评估严谨性；该文虽非AI直接主题，但其对‘隐性基础假设导致系统级偏差’的分析，精准映射P0中production evaluation和agent engineering对可复现性、跨环境一致性的核心诉求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "implementation-pattern"
+  ]
 }

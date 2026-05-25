@@ -7,14 +7,32 @@
   "author": null,
   "published_at": "2026-04-28T00:00:00+00:00",
   "collected_at": "2026-05-24T09:59:41.813968+00:00",
-  "summary": "Ghostty 是一个高性能终端模拟器，宣布将代码仓库从 GitHub 迁移至自托管 Git 服务器，强调对开源自主性、构建可验证性和长期可持续性的承诺。",
+  "summary": "Ghostty 迁移至自托管 Git 服务器，实践开源自主性与可验证构建，其构建系统、CI/CD 设计及安全发布流程对构建可信 AI agent 运行时环境（如 computer-use agents 的本地执行沙箱）具参考价值。",
   "tags": [
-    "llm"
+    "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "other",
-  "key_insight": "基础设施类开源项目迁移托管平台反映对去中心化协作与构建链完整性的技术主权诉求。"
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "基础设施自主性是 production-grade agent 系统（尤其 computer-use 和 browser-agent）长期可维护与安全演进的前提。",
+  "raw_description": "Ghostty 是一个高性能终端模拟器，宣布将代码仓库从 GitHub 迁移至自托管 Git 服务器，强调对开源自主性、构建可验证性和长期可持续性的承诺。",
+  "description": "Ghostty 是一个高性能终端模拟器，宣布将代码仓库从 GitHub 迁移至自托管 Git 服务器，强调对开源自主性、构建可验证性和长期可持续性的承诺。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建 personal technical intelligence system，P0 明确包含 computer-use agents 和 production evaluation；Ghostty 的自托管部署、可验证构建与可持续运维实践，直接映射到 agent-systems 和 local-model-serving 轨迹中对可信执行环境的工程要求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
 }

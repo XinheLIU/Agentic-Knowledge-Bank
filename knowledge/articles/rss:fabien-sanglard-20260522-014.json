@@ -7,14 +7,32 @@
   "author": null,
   "published_at": "2026-05-20T00:00:00+00:00",
   "collected_at": "2026-05-22T10:55:05.326397+00:00",
-  "summary": "该页面介绍了一种名为'Fun 40'的《万智牌》非官方轻量级对战格式，规则简化（40张牌、无禁限牌表、强调趣味性），旨在降低新手门槛并提升游戏节奏。虽非AI技术内容，但其设计思想可类比AI系统中简化协议、降低使用复杂度的工程实践。",
+  "summary": "该页面介绍的'Fun 40'万智牌轻量格式，通过极简规则（40张牌、无禁限表、强调趣味性）降低参与门槛并加速迭代节奏，其设计哲学高度类比AI agent系统中简化协议、收敛接口、降低用户认知负荷的工程实践，对构建易用、可演进的agent-harness或langgraph workflow具有隐喻性启发。",
   "tags": [
-    "llm"
+    "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "other",
-  "key_insight": "游戏规则设计中的极简主义与可用性优化，可映射至AI产品交互设计的核心原则。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "复杂系统的可用性常不取决于功能密度，而取决于约束边界的清晰度与最小可行交互单元的设计。",
+  "raw_description": "该页面介绍了一种名为'Fun 40'的《万智牌》非官方轻量级对战格式，规则简化（40张牌、无禁限牌表、强调趣味性），旨在降低新手门槛并提升游戏节奏。虽非AI技术内容，但其设计思想可类比AI系统中简化协议、降低使用复杂度的工程实践。",
+  "description": "该页面介绍了一种名为'Fun 40'的《万智牌》非官方轻量级对战格式，规则简化（40张牌、无禁限牌表、强调趣味性），旨在降低新手门槛并提升游戏节奏。虽非AI技术内容，但其设计思想可类比AI系统中简化协议、降低使用复杂度的工程实践。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，P0必学项包含agent engineering和langgraph；该内容虽非AI技术文档，但以具象游戏机制映射了agent-harness设计中的核心权衡——简化输入/输出契约、移除非必要治理开销、优先保障可玩性（即快速反馈循环），可作为教学隐喻和架构反思素材。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
 }

@@ -7,15 +7,32 @@
   "author": "Heajun An, Qi Zhang, Vedanth Achanta, Jin-Hee Cho",
   "published_at": "2026-05-22T04:00:00+00:00",
   "collected_at": "2026-05-22T10:54:56.151900+00:00",
-  "summary": "提出CR4T框架，通过轻量风险检测与领域条件重写，将不安全或拒绝式LLM输出转化为适龄、引导型响应，兼顾安全性与青少年发展需求，避免简单拒答导致的对话中断。",
+  "summary": "CR4T是一种基于重写的轻量级LLM安全守卫框架，通过风险检测+领域条件重写，将不安全或拒答响应转化为适龄、引导式输出，适用于需兼顾安全与对话连续性的青少年交互场景；对用户构建具备伦理感知与上下文适应能力的agent系统具有方法论启发。",
   "tags": [
     "llm",
     "security"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "security",
-  "key_insight": "面向青少年的LLM安全不应依赖拒绝式过滤，而应通过发展心理学对齐的响应重构实现人本化防护。"
+  "key_insight": "安全不应仅靠拒答，而应通过可控重写实现‘安全即服务’，可嵌入agent响应链作为guardrail组件。",
+  "raw_description": "提出CR4T框架，通过轻量风险检测与领域条件重写，将不安全或拒绝式LLM输出转化为适龄、引导型响应，兼顾安全性与青少年发展需求，避免简单拒答导致的对话中断。",
+  "description": "提出CR4T框架，通过轻量风险检测与领域条件重写，将不安全或拒绝式LLM输出转化为适龄、引导型响应，兼顾安全性与青少年发展需求，避免简单拒答导致的对话中断。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含agent engineering与tool-use，且学习路线含evaluation与rag-knowledge-systems；CR4T提供可插拔、低开销的响应层守卫机制，可直接复用于browser/computer-use agents的输出净化环节，亦为RAG+agent联合系统的安全增强提供轻量参考架构。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
 }

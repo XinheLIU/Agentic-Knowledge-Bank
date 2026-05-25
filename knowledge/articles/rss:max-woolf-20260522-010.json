@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2026-02-27T18:00:00+00:00",
   "collected_at": "2026-05-22T10:54:58.618436+00:00",
-  "summary": "一位持怀疑态度的开发者以极细粒度实测AI编程智能体的实际表现，涵盖提示工程、调试循环、工具调用失败分析等真实场景，揭示当前AI编码代理在复杂任务中的能力边界与工程代价。",
+  "summary": "一位经验开发者以怀疑视角实测AI编码智能体，详细记录提示工程、调试循环与工具调用失败等真实工程瓶颈，为用户构建agent engineering能力提供高保真实践参照和边界认知，直接支撑P0必学项中的tool-use、agent engineering与production evaluation。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "AI编码智能体的真实效能不取决于单次生成质量，而取决于其在多步推理、错误恢复和工具交互中的鲁棒性，而这恰恰是当前系统最薄弱的环节。"
+  "key_insight": "当前AI编码代理的工程代价（调试开销、失败归因复杂度）常超过其自动化收益，需以系统化agent harness设计而非单次提示来缓解。",
+  "raw_description": "一位持怀疑态度的开发者以极细粒度实测AI编程智能体的实际表现，涵盖提示工程、调试循环、工具调用失败分析等真实场景，揭示当前AI编码代理在复杂任务中的能力边界与工程代价。",
+  "description": "一位持怀疑态度的开发者以极细粒度实测AI编程智能体的实际表现，涵盖提示工程、调试循环、工具调用失败分析等真实场景，揭示当前AI编码代理在复杂任务中的能力边界与工程代价。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击用户P0必学项中的agent engineering、tool-use与production evaluation，且以实证方式揭示真实工程挑战，匹配其构建个人技术智能系统的高保真实践需求；细粒度调试分析对langgraph-workflows和agent-harness设计具强迁移价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
 }

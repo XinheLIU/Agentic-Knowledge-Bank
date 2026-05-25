@@ -7,15 +7,32 @@
   "author": null,
   "published_at": "2026-05-20T07:00:00+00:00",
   "collected_at": "2026-05-22T10:54:58.802360+00:00",
-  "summary": "文章指出当前前沿AI（如Claude Mythos）并无神秘技术壁垒，其成功源于已知方法的工程实现与规模扩展；在可验证领域，进步主要依赖bug修复与算力/数据扩展，而非算法突破。",
+  "summary": "文章指出当前AI进步主要依赖工程实现、规模扩展与bug修复，而非算法突破，强调扎实的系统工程能力比追逐'黑科技'更重要。这对用户构建生产级agent系统具有方法论指导意义，强化其P0中agent engineering与production evaluation的学习重心。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "AI前沿能力缺乏技术护城河，核心瓶颈是工程化与规模化，而非原创算法。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "更好的AI = 更好的工程 + 更多数据/算力 + 更少bug，而非神秘新算法。",
+  "raw_description": "文章指出当前前沿AI（如Claude Mythos）并无神秘技术壁垒，其成功源于已知方法的工程实现与规模扩展；在可验证领域，进步主要依赖bug修复与算力/数据扩展，而非算法突破。",
+  "description": "文章指出当前前沿AI（如Claude Mythos）并无神秘技术壁垒，其成功源于已知方法的工程实现与规模扩展；在可验证领域，进步主要依赖bug修复与算力/数据扩展，而非算法突破。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑用户P0核心目标——构建可落地的agent engineering能力；强调工程实现与评估优先于概念炒作，契合其production evaluation与agent-systems学习路线；作者为一线实践者，内容具技术诚实性。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
 }

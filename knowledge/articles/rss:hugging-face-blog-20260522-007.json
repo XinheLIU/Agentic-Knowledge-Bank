@@ -7,14 +7,33 @@
   "author": null,
   "published_at": "2026-05-19T18:38:09+00:00",
   "collected_at": "2026-05-22T10:54:57.510130+00:00",
-  "summary": "OlmoEarth v1.1 是面向地球观测任务优化的高效视觉基础模型家族，支持多光谱、SAR 和光学遥感数据联合建模，在保持精度的同时显著降低计算开销与推理延迟。",
+  "summary": "OlmoEarth v1.1 是面向地球观测的高效多模态视觉基础模型，支持光学、SAR与多光谱数据联合建模，在精度不降前提下显著降低推理延迟与计算开销；对用户构建数据代理（data-agents）和本地模型服务（local-model-serving）具有直接参考价值，尤其在遥感领域专用模型轻量化与部署实践层面。",
   "tags": [
-    "llm"
+    "llm",
+    "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "将大语言模型架构思想迁移至多源遥感数据建模，实现跨模态地球观测表征的统一与轻量化。"
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "面向垂直领域（地球观测）的视觉基础模型优化范式可迁移至数据代理系统的感知层设计与边缘/本地推理部署。",
+  "raw_description": "OlmoEarth v1.1 是面向地球观测任务优化的高效视觉基础模型家族，支持多光谱、SAR 和光学遥感数据联合建模，在保持精度的同时显著降低计算开销与推理延迟。",
+  "description": "OlmoEarth v1.1 是面向地球观测任务优化的高效视觉基础模型家族，支持多光谱、SAR 和光学遥感数据联合建模，在保持精度的同时显著降低计算开销与推理延迟。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'data agents'和'local-model-serving'，而OlmoEarth v1.1提供了真实场景中多源遥感数据代理所需的感知模型轻量化、多模态融合与低延迟部署实践，属于高价值'local-model-serving'与'data-agents'交叉上下文；虽非LLM/Agent框架本身，但构成数据代理系统的关键感知组件。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "data-agent",
+    "local-llm"
+  ]
 }

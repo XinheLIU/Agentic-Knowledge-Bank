@@ -7,15 +7,33 @@
   "author": "Dylan Feng, Pragya Srivastava, Cassidy Laidlaw",
   "published_at": "2026-05-23T04:00:00+00:00",
   "collected_at": "2026-05-23T09:58:00.731169+00:00",
-  "summary": "提出MOOD基准测试框架，系统评估并改进LLM监控器对分布外对齐失败的检测能力，证明结合OOD检测器可显著提升召回率，且优于单纯扩大模型规模。",
+  "summary": "提出MOOD基准测试框架，系统评估LLM监控器对分布外对齐失败的检测能力，验证OOD检测器可显著提升召回率，为agent系统中鲁棒性监控与failure detection提供可复现的评估方法和实践路径。",
   "tags": [
     "llm",
     "evaluation"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "evaluation",
-  "key_insight": "OOD检测不是可选优化，而是LLM安全监控中不可或缺的核心组件。"
+  "key_insight": "分布外对齐失败的监控不能依赖模型规模扩大，而需专用OOD检测机制与结构化评估框架。",
+  "raw_description": "提出MOOD基准测试框架，系统评估并改进LLM监控器对分布外对齐失败的检测能力，证明结合OOD检测器可显著提升召回率，且优于单纯扩大模型规模。",
+  "description": "提出MOOD基准测试框架，系统评估并改进LLM监控器对分布外对齐失败的检测能力，证明结合OOD检测器可显著提升召回率，且优于单纯扩大模型规模。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含'production evaluation'，且学习路线明确含'evaluation'轨道；该论文提供面向agent系统实际部署中failure detection的benchmark设计、指标定义与改进验证，具备直接迁移至langgraph/agent-harness监控层的能力。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
 }

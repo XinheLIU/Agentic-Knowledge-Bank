@@ -7,15 +7,33 @@
   "author": "/u/EvilEnginer",
   "published_at": "2026-05-24T06:08:22+00:00",
   "collected_at": "2026-05-24T09:59:34.181872+00:00",
-  "summary": "Qwen3.6-35B定制模型，支持MTP（Multi-Task Processing）、APEX量化与无审查输出，实测200k长上下文稳定无崩溃，具备强任务切换与工具调用鲁棒性。",
+  "summary": "Qwen3.6-35B定制模型支持MTP多任务处理、APEX量化与200k长上下文稳定运行，实测工具调用鲁棒性强，适合作为本地Agent系统（如LangGraph workflow）的底层执行引擎，对构建生产级computer-use/data-agent有直接参考价值。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "MTP支持与APEX/MTP-APEX量化组合显著提升了大模型在长上下文、多任务连续推理场景下的稳定性与实用性。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "长上下文+多任务+工具调用鲁棒性是构建可靠Agent系统的关键LLM能力基线，该模型提供了可验证的本地化实现范例。",
+  "raw_description": "Qwen3.6-35B定制模型，支持MTP（Multi-Task Processing）、APEX量化与无审查输出，实测200k长上下文稳定无崩溃，具备强任务切换与工具调用鲁棒性。",
+  "description": "Qwen3.6-35B定制模型，支持MTP（Multi-Task Processing）、APEX量化与无审查输出，实测200k长上下文稳定无崩溃，具备强任务切换与工具调用鲁棒性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'agent engineering'、'tool-use'、'computer-use agents'及'local-model-serving'，该模型在MTP和工具调用稳定性上提供实证指标，且属于高价值来源中的repository/tutorials类（Reddit帖含实测细节与链接，常导向HuggingFace/GitHub），可支撑langgraph-workflows和local-model-serving学习轨道。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
 }

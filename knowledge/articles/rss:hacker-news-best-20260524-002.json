@@ -7,15 +7,33 @@
   "author": "jetter",
   "published_at": "2026-05-22T10:38:26+00:00",
   "collected_at": "2026-05-24T09:59:32.276555+00:00",
-  "summary": "Antigravity 2.0 在 OpenSCAD 建筑级 3D LLM 基准测试中排名第一，专为生成可编译、结构正确的参数化 3D 建模代码（OpenSCAD）而优化，显著提升几何逻辑理解与约束满足能力。",
+  "summary": "Antigravity 2.0 在专用于 OpenSCAD 参数化3D建模的LLM基准测试中登顶，其核心价值在于提升几何逻辑理解与约束满足能力——这对构建具备物理世界推理能力的computer-use agents和tool-use agents具有直接参考意义，尤其可支撑agent engineering中‘代码即动作’的执行可靠性。",
   "tags": [
     "llm",
-    "evaluation"
+    "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "evaluation",
-  "key_insight": "首个面向参数化 3D 建模任务的专用 LLM 基准，将代码功能性、编译性与设计合理性纳入核心评估维度。"
+  "key_insight": "专用领域（3D建模）的结构化代码生成基准揭示了LLM在硬约束环境下的泛化瓶颈，为agent系统设计提供了可量化的鲁棒性评估视角。",
+  "raw_description": "Antigravity 2.0 在 OpenSCAD 建筑级 3D LLM 基准测试中排名第一，专为生成可编译、结构正确的参数化 3D 建模代码（OpenSCAD）而优化，显著提升几何逻辑理解与约束满足能力。",
+  "description": "Antigravity 2.0 在 OpenSCAD 建筑级 3D LLM 基准测试中排名第一，专为生成可编译、结构正确的参数化 3D 建模代码（OpenSCAD）而优化，显著提升几何逻辑理解与约束满足能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "该内容属于P0必学项中的'production evaluation'，且以具体benchmark形式呈现，提供可复用的评估范式（结构正确性+可编译性），对用户构建data agents和computer-use agents的验证体系有强迁移价值；虽非直接讲LangGraph或RAG，但属于evaluation学习路线的核心高价值来源（benchmark）。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "benchmark",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
 }

@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2026-05-09T07:00:00+00:00",
   "collected_at": "2026-05-23T09:58:05.545842+00:00",
-  "summary": "文章以幽默反讽方式解构‘技术奇点’叙事，强调AI发展的真实价值在于人类协作关系与社区共建，而非单一技术突破。",
+  "summary": "文章以反讽解构‘技术奇点’叙事，强调AI工程的真实突破依赖人类协作、开源共建与系统性实践——这对构建个人技术情报系统的学习者极具认知校准价值，提醒避免陷入 hype 而忽视 agent-systems 的协作设计、tool-use 的社区协议、MCP 等互操作标准的落地本质。",
   "tags": [
-    "llm",
-    "agent"
+    "agent",
+    "llm"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "真正的‘奇点’不是模型能力的临界跃迁，而是人与人之间因AI协作而形成的信任网络与共同实践。"
+  "key_insight": "真正的AI系统成熟度不取决于单点模型能力，而在于人-工具-代理协同的接口稳定性、可观测性与社区共识。",
+  "raw_description": "文章以幽默反讽方式解构‘技术奇点’叙事，强调AI发展的真实价值在于人类协作关系与社区共建，而非单一技术突破。",
+  "description": "文章以幽默反讽方式解构‘技术奇点’叙事，强调AI发展的真实价值在于人类协作关系与社区共建，而非单一技术突破。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术情报系统，P0 必学项包含 agent engineering、MCP、tool-use 和 production evaluation；该文虽非教程，但精准锚定 agent-systems 中被忽略的‘社会技术层’（social-technical layer），为 langgraph-workflows 和 agent-harness 设计提供关键元认知框架，防止陷入纯技术实现而脱离协作上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "mcp"
+  ]
 }

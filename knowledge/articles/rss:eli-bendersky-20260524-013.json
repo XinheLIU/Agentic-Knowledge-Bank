@@ -7,14 +7,33 @@
   "author": "Eli Bendersky",
   "published_at": "2026-04-23T02:23:00+00:00",
   "collected_at": "2026-05-24T09:59:47.405912+00:00",
-  "summary": "介绍如何使用 Chrome DevTools 调试 WebAssembly（WASM）代码，涵盖源码映射、断点设置、变量检查等实用技巧，显著提升 WASM 开发调试效率。",
+  "summary": "本文详解Chrome DevTools中WASM调试的核心技术（源码映射、断点、变量检查），虽不直接涉及AI/agent工程，但对构建浏览器代理（browser agents）、本地模型服务（local-model-serving）及生产级AI应用的底层调试能力具有强支撑价值。",
   "tags": [
-    "llm"
+    "agent",
+    "deployment"
   ],
   "status": "published",
   "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.95,
+  "relevance_score": 0.85,
   "category": "deployment",
-  "key_insight": "Chrome DevTools 已原生支持带 source map 的 WASM 符号化调试，使底层编译器生成的二进制代码具备接近高级语言的可观测性。"
+  "key_insight": "WASM调试能力是browser agent和computer-use agent在客户端可靠执行的关键基础设施技能。",
+  "raw_description": "介绍如何使用 Chrome DevTools 调试 WebAssembly（WASM）代码，涵盖源码映射、断点设置、变量检查等实用技巧，显著提升 WASM 开发调试效率。",
+  "description": "介绍如何使用 Chrome DevTools 调试 WebAssembly（WASM）代码，涵盖源码映射、断点设置、变量检查等实用技巧，显著提升 WASM 开发调试效率。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含browser agents和computer-use agents，二者常依赖WASM运行时（如LLM推理、tool-use沙箱）；掌握WASM调试是保障其生产鲁棒性的底层工程能力，匹配learning_track: local-model-serving和browser-agent场景。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "browser-agent",
+    "computer-use"
+  ]
 }

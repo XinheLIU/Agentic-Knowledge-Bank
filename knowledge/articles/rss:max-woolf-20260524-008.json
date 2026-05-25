@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2025-11-13T17:30:00+00:00",
   "collected_at": "2026-05-24T09:59:40.553165+00:00",
-  "summary": "Nano Banana 是一种支持高达 32,768 输入 token 的轻量级图像生成模型，通过精细的 prompt engineering 实现高度细腻、可控的 AI 图像生成，显著拓展了小模型在复杂视觉提示理解上的能力边界。",
+  "summary": "Nano Banana 是支持32k token输入的轻量图像生成模型，通过精细prompt engineering实现高可控性视觉生成，为AI agent中多模态工具调用与视觉感知模块提供低开销、高响应的本地化候选模型，契合用户构建personal technical intelligence system中computer-use agents与tool-use的技术栈需求。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "超长上下文支持（32K tokens）使 Nano Banana 能解析极其详尽的多模态 prompt，将传统小模型的图像生成精度推向新高度。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "轻量级多模态模型若具备长上下文理解与可解释prompt接口，可作为agent系统中专用视觉子代理（vision sub-agent）的高效执行单元。",
+  "raw_description": "Nano Banana 是一种支持高达 32,768 输入 token 的轻量级图像生成模型，通过精细的 prompt engineering 实现高度细腻、可控的 AI 图像生成，显著拓展了小模型在复杂视觉提示理解上的能力边界。",
+  "description": "Nano Banana 是一种支持高达 32,768 输入 token 的轻量级图像生成模型，通过精细的 prompt engineering 实现高度细腻、可控的 AI 图像生成，显著拓展了小模型在复杂视觉提示理解上的能力边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑P0必学项中的'computer-use agents'和'tool-use'，且模型轻量、长上下文、prompt可控等特性对构建本地化、可调试的agent视觉工具链具有架构参考价值；虽非纯文本agent，但属于multi-modal agent engineering的关键外围组件。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
 }

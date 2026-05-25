@@ -7,14 +7,33 @@
   "author": "/u/-p-e-w-",
   "published_at": "2026-05-21T14:50:44+00:00",
   "collected_at": "2026-05-22T10:54:55.729510+00:00",
-  "summary": "Heretic项目因衍生使用Meta的Llama模型收到法律通知，主动下架相关权重并转向去中心化托管（如Codeberg），凸显开源AI社区在版权合规与技术自主间的张力。",
+  "summary": "Heretic项目因Llama权重衍生使用遭Meta法律警告，转向Codeberg去中心化托管，揭示开源LLM分发中的版权边界与合规实践，对构建本地模型服务系统（P0）和生产级agent工程（如tool-use、browser-agent）具有关键合规警示与架构迁移参考价值。",
   "tags": [
-    "llm"
+    "llm",
+    "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "法律风险正加速推动LLM下游生态向合规化、去中心化和模型无关架构演进。"
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "法律风险正成为本地LLM部署与agent系统落地的核心非技术约束，需在架构设计初期嵌入许可证审计与权重重分发策略。",
+  "raw_description": "Heretic项目因衍生使用Meta的Llama模型收到法律通知，主动下架相关权重并转向去中心化托管（如Codeberg），凸显开源AI社区在版权合规与技术自主间的张力。",
+  "description": "Heretic项目因衍生使用Meta的Llama模型收到法律通知，主动下架相关权重并转向去中心化托管（如Codeberg），凸显开源AI社区在版权合规与技术自主间的张力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'local-model-serving'和'agent engineering'，而Heretic事件直接关联本地模型分发合规性、权重托管架构变更（Codeberg替代HuggingFace）、以及后续agent系统对合法模型源的依赖链设计，属于production evaluation与deployment交叉的关键现实案例。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "implementation-pattern"
+  ]
 }

@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2026-05-22T00:00:00+00:00",
   "collected_at": "2026-05-23T09:58:05.744785+00:00",
-  "summary": "AI使用户界面从固定形态转向动态可塑形态，系统可根据场景（如语音摘要、交互式图表、HTML报告）实时生成适配的专用UI，实现‘一个系统、多种头’的范式升级。",
+  "summary": "文章提出'可塑用户界面'概念，强调AI系统应能动态生成适配场景的专用UI（如语音摘要、交互图表、HTML报告），实现'一个系统、多种头'。这对用户构建agent engineering中的多模态输出能力与langgraph workflow的UI适配层设计具有直接启发。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "agent",
-  "key_insight": "UI不再是一个静态层，而是由AI按需编排、可销毁可沉淀的临时/半永久性交互工件，其生命周期管理成为新核心能力。"
+  "key_insight": "UI不再是静态前端，而是可编程、上下文感知的agent输出编排层。",
+  "raw_description": "AI使用户界面从固定形态转向动态可塑形态，系统可根据场景（如语音摘要、交互式图表、HTML报告）实时生成适配的专用UI，实现‘一个系统、多种头’的范式升级。",
+  "description": "AI使用户界面从固定形态转向动态可塑形态，系统可根据场景（如语音摘要、交互式图表、HTML报告）实时生成适配的专用UI，实现‘一个系统、多种头’的范式升级。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽非代码教程，但精准锚定P0必学项'agent engineering'与'browser agents'中UI动态生成这一关键接口范式，且与'langgraph-workflows'学习路线中output routing和tool-use的呈现层扩展高度相关；博客形式提供可迁移的设计思维，属高价值上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
 }

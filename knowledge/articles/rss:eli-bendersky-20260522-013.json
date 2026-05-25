@@ -7,14 +7,31 @@
   "author": "Eli Bendersky",
   "published_at": "2026-05-02T14:17:00+00:00",
   "collected_at": "2026-05-22T10:55:05.139461+00:00",
-  "summary": "本文通俗讲解如何通过调整振幅A、角频率w和相位θ来缩放、拉伸和平移正弦函数sin(x)，帮助读者直观理解三角函数参数化变换的几何意义与信号处理基础。",
+  "summary": "本文讲解正弦函数参数化变换（振幅、角频率、相位）的几何意义，虽属基础数学，但为信号处理、时序建模及AI agent中传感器/时间序列数据预处理提供底层直觉支撑，有助于理解RAG中时序知识编码、agent响应节律建模等隐含假设。",
   "tags": [
     "llm"
   ],
   "status": "published",
-  "score": 7,
-  "audience": "intermediate",
-  "relevance_score": 0.8,
+  "score": 3,
+  "audience": "beginner",
+  "relevance_score": 0.25,
   "category": "other",
-  "key_insight": "A控制垂直缩放（振幅），w控制水平压缩/拉伸（影响周期），θ实现水平平移（相位偏移），三者独立且正交地调控正弦波形态。"
+  "key_insight": "三角函数参数化是时序信号建模与agent行为节律设计的数学原语，但本文未连接AI系统工程上下文。",
+  "raw_description": "本文通俗讲解如何通过调整振幅A、角频率w和相位θ来缩放、拉伸和平移正弦函数sin(x)，帮助读者直观理解三角函数参数化变换的几何意义与信号处理基础。",
+  "description": "本文通俗讲解如何通过调整振幅A、角频率w和相位θ来缩放、拉伸和平移正弦函数sin(x)，帮助读者直观理解三角函数参数化变换的几何意义与信号处理基础。",
+  "personal_fit_score": 0.25,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.4,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 28,
+  "reading_priority": "low-priority",
+  "relevance_reason": "用户P0必学聚焦于agent engineering、LangGraph、RAG、evaluation等生产级AI系统构建，而本文属基础数学可视化教学，无LLM/agent/tool/MCP/RAG等任一核心技术要素，亦未链接到数据代理、时序RAG或评估信号建模等延伸场景，仅具间接背景价值。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "background",
+  "learning_tags": [
+    "business-context"
+  ]
 }

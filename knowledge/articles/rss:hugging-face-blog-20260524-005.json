@@ -7,15 +7,33 @@
   "author": null,
   "published_at": "2026-05-22T15:25:59+00:00",
   "collected_at": "2026-05-24T09:59:39.008197+00:00",
-  "summary": "文章指出在AI采购决策中，模型专业化能力（如领域适配性、任务精度）比单纯追求参数规模或通用能力更具战略价值，强调垂直场景优化对实际业务效果的决定性影响。",
+  "summary": "文章强调AI采购中模型专业化（如领域适配、任务精度）比参数规模更具战略价值，对用户构建生产级agent系统有直接启示：需优先选择或微调适配垂直任务的模型，而非盲目追求通用大模型，支撑其P0中tool-use、data-agents和evaluation的实践决策。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
-  "category": "llm",
-  "key_insight": "AI采购不应迷信‘更大即更好’，而应优先评估模型在目标业务场景中的专业化表现。"
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "在agent系统设计中，任务级专业化能力（而非模型通用性）是决定端到端可靠性与业务效果的核心变量。",
+  "raw_description": "文章指出在AI采购决策中，模型专业化能力（如领域适配性、任务精度）比单纯追求参数规模或通用能力更具战略价值，强调垂直场景优化对实际业务效果的决定性影响。",
+  "description": "文章指出在AI采购决策中，模型专业化能力（如领域适配性、任务精度）比单纯追求参数规模或通用能力更具战略价值，强调垂直场景优化对实际业务效果的决定性影响。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽为博客形式，但直击用户P0必学项'agent engineering'与'production evaluation'中的关键权衡——如何为agent选择/定制底层模型。其主张与langgraph workflow中模型选型、tool-use精度校准、data-agent领域适配等实践强相关，提供可迁移的评估框架。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
 }

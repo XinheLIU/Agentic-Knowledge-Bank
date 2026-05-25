@@ -7,15 +7,33 @@
   "author": "/u/HumanDrone8721",
   "published_at": "2026-05-22T21:13:35+00:00",
   "collected_at": "2026-05-23T09:58:00.344833+00:00",
-  "summary": "NVIDIA 将游戏业务收入从财报中移除，凸显其战略重心全面转向数据中心与AI芯片，反映AI算力需求已超越传统游戏市场成为核心增长引擎。",
+  "summary": "NVIDIA移除游戏收入分类反映其战略重心全面转向AI数据中心芯片，对用户构建本地大模型与agent系统具有宏观产业信号价值：验证算力基础设施向AI原生架构演进，强化local-model-serving与agent-deployment的长期技术合理性。",
   "tags": [
     "llm",
     "agent"
   ],
   "status": "published",
-  "score": 7,
+  "score": 8,
   "audience": "intermediate",
-  "relevance_score": 0.8,
+  "relevance_score": 0.85,
   "category": "deployment",
-  "key_insight": "财报结构变化是AI基础设施商业化成熟度的关键信号，标志着GPU厂商正式以AI工作负载为首要营收支柱。"
+  "key_insight": "硬件厂商财报结构变化是AI基础设施成熟度的关键先行指标，预示local LLM和agent系统进入规模化部署临界点。",
+  "raw_description": "NVIDIA 将游戏业务收入从财报中移除，凸显其战略重心全面转向数据中心与AI芯片，反映AI算力需求已超越传统游戏市场成为核心增长引擎。",
+  "description": "NVIDIA 将游戏业务收入从财报中移除，凸显其战略重心全面转向数据中心与AI芯片，反映AI算力需求已超越传统游戏市场成为核心增长引擎。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "虽无直接技术实现细节，但该信号高度契合用户P0必学项中的'local-model-serving'与'agent engineering'，为技术选型提供产业级佐证；属于高价值上下文（P1）中'engineering architecture'与'production evaluation'的宏观支撑依据。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "production-lesson"
+  ]
 }
