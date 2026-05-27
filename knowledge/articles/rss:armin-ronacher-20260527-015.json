@@ -1,0 +1,36 @@
+{
+  "id": "rss:armin-ronacher-20260527-015",
+  "title": "Clanker: A Word For The Machine",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/5/26/clankers/",
+  "url": "https://lucumr.pocoo.org/2026/5/26/clankers/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-05-26T00:00:00+00:00",
+  "collected_at": "2026-05-27T11:43:28.910283+00:00",
+  "summary": "本文提出'clanker'一词替代'agent'，强调LLM系统本质是机械工具而非拟人化主体，对AI/agent engineering学习者厘清责任边界、避免 anthropomorphism 具有关键认知价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "术语选择直接影响工程实践中的责任归属与系统设计心智模型：用'clanker'强化工具属性，可防止将LLM系统误当作具备agency的代理者。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户处于agent engineering学习阶段，P0必学项包含'agent engineering'和'tool-use'，本文直击核心概念层——如何正确定义、命名和归责agent系统，为langgraph工作流、tool-use设计及production evaluation提供底层认知锚点。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

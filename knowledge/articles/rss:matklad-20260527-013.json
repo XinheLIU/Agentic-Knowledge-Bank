@@ -1,0 +1,35 @@
+{
+  "id": "rss:matklad-20260527-013",
+  "title": "Catch Flakes On Main",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/05/14/catch-flakes-on-main.html",
+  "url": "https://matklad.github.io/2026/05/14/catch-flakes-on-main.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-05-14T00:00:00+00:00",
+  "collected_at": "2026-05-27T11:43:23.109525+00:00",
+  "summary": "本文介绍了一种在 CI/CD 中捕获测试‘flakes’（偶发失败）的轻量级机械习惯，强调确定性验证与可复现调试，对构建高可靠性 agent 系统的测试基础设施有直接参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "稳定性不是靠重试，而是靠消除非确定性——这对生产级 agent 工作流的可观测性与可靠性设计至关重要。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户正在构建个人技术智能系统，P0 必学项包含 production evaluation 和 agent engineering；该文提供可落地的测试稳定性实践，属于 agent-systems 轨迹中关键的 production-lesson 组件。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

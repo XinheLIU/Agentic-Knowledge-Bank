@@ -1,0 +1,37 @@
+{
+  "id": "rss:fabien-sanglard-20260527-014",
+  "title": "Building a 1997 Quake PC: Benchmarking GLquake",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/quake_pc/glquake/index.html",
+  "url": "https://fabiensanglard.net/quake_pc/glquake/index.html",
+  "author": null,
+  "published_at": "2026-01-14T00:00:00+00:00",
+  "collected_at": "2026-05-27T11:43:28.604313+00:00",
+  "summary": "本文详细复现1997年Quake PC硬件与GLquake OpenGL渲染器的基准测试过程，涵盖驱动、显卡、CPU性能调优及底层系统集成方法，其系统级工程思维、性能归因分析框架和可复现benchmark构建实践，对用户构建生产级agent系统评估体系（尤其是computer-use agents和evaluation）具有强迁移价值。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "经典系统级benchmarking方法论——控制变量、硬件/驱动/软件栈分层归因、可复现性设计——是构建现代AI agent生产评估体系的核心元能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'production evaluation'，且学习路线含'evaluation'轨道；本文虽非AI主题，但提供了经时间验证的系统级benchmarking范式，可直接迁用于computer-use agents性能基线设计、tool-use延迟归因、RAG pipeline端到端latency分解等场景。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "implementation-pattern"
+  ]
+}

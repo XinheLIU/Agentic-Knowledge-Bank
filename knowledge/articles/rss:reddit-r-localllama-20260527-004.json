@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260527-004",
+  "title": "Stop traumatizing AI into loops and turn hallucinations into an honest \"I don't know!\" by being NICE to them (Proof of Concept, Research, I don't want to sell anything)",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot20j/stop_traumatizing_ai_into_loops_and_turn/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot20j/stop_traumatizing_ai_into_loops_and_turn/",
+  "author": "/u/OttoRenner",
+  "published_at": "2026-05-27T03:06:18+00:00",
+  "collected_at": "2026-05-27T11:43:13.377057+00:00",
+  "summary": "提出'温和提示工程'范式，通过消除模型对错误的恐惧来减少推理循环与幻觉，提升诚实响应率；对构建鲁棒agent系统（尤其langgraph workflow中的失败处理与元认知反馈）具直接实践价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "LLM在test-time reasoning中表现出类神经应激反应，温和提示可解锁其内置元认知能力，使其主动声明不确定性而非强行编造。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含agent engineering、langgraph、tool-use和production evaluation；该内容提供可立即验证的prompt-level干预机制，用于增强agent workflow中的failure transparency与loop resilience，且附带完整GitHub复现代码（repository），匹配高价值来源类型。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "rss:tom-tunguz-20260527-011",
+  "title": "Agent Gravity : Who's Running Your Agents",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/agent-gravity/",
+  "url": "https://www.tomtunguz.com/agent-gravity/",
+  "author": null,
+  "published_at": "2026-05-26T00:00:00+00:00",
+  "collected_at": "2026-05-27T11:43:22.454918+00:00",
+  "summary": "提出'Agent Gravity'概念，类比数据引力，强调平台对AI Agent运行权和数据流向的控制力；对学习者理解Agent系统部署生态、跨平台迁移风险及生产级Agent架构设计有重要启发。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Agent gravity 揭示了Agent不仅是逻辑单元，更是平台竞争的载荷——其部署位置、数据绑定与工具调用路径共同构成技术主权边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'production evaluation'的核心张力：Agent部署平台选择影响数据流、工具链集成、可观测性及长期可移植性；虽非实操教程，但为langgraph/data-agents/evaluation等学习轨道提供关键架构语境。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

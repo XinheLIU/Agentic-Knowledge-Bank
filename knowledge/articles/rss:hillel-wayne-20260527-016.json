@@ -1,0 +1,36 @@
+{
+  "id": "rss:hillel-wayne-20260527-016",
+  "title": "People get confused when language implementations break language guarantees",
+  "source": "rss:Hillel Wayne",
+  "source_url": "https://buttondown.com/hillelwayne/archive/people-get-confused-when-language-implementations/",
+  "url": "https://buttondown.com/hillelwayne/archive/people-get-confused-when-language-implementations/",
+  "author": null,
+  "published_at": "2026-04-21T17:40:17+00:00",
+  "collected_at": "2026-05-27T11:43:29.116302+00:00",
+  "summary": "文章剖析TLA+中语言语义与模型检查器（TLC）实现之间的抽象泄漏，揭示声明式语言中‘保证 vs 实现’的张力，对构建可靠Agent系统（如LangGraph状态机、RAG状态协调、工具调用原子性）具有关键警示意义。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Agent系统设计者必须警惕底层执行引擎对声明式语义的破坏——LangGraph的StateGraph、MCP的tool-calling协议、RAG的检索-生成时序耦合，均隐含类似TLA+中'x' vs x'的语义鸿沟。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户正构建个人技术智能系统，P0必学项包含agent engineering、langgraph、mcp、evaluation；本文直击状态驱动Agent（如LangGraph StateGraph、MCP tool-use协议）的核心挑战：如何确保高层声明式逻辑不被底层执行细节（如异步调度、副作用顺序、状态快照时机）破坏，属生产级Agent系统可靠性基石知识。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}
