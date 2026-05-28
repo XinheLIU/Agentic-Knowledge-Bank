@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260528-005",
+  "title": "Identifying and Understanding Human Values in Text: A Tailorable LLM-based Architecture",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2605.27373",
+  "url": "https://arxiv.org/abs/2605.27373",
+  "author": "Eduardo de la Cruz Fern\\'andez, Marcelo Karanik, Sascha Ossowski",
+  "published_at": "2026-05-28T04:00:00+00:00",
+  "collected_at": "2026-05-28T11:42:02.074594+00:00",
+  "summary": "本文提出一种可定制的LLM架构，通过三模块协同实现文本中人类价值观的识别与强度量化，解耦价值概念化与检测过程，支持多理论框架适配，对构建具备伦理对齐能力的智能体系统具有方法论参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将价值对齐建模为可插拔、可验证的模块化代理任务，而非黑箱提示工程。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含agent engineering和evaluation，该论文提供了一种结构化、可评估的价值对齐代理架构，其三模块设计（value spec generation → labeling → graded support/resistance）直接对应LangGraph工作流建模范式，且具备RAG知识系统中价值schema注入潜力，属于agent-systems与evaluation交叉高价值内容。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

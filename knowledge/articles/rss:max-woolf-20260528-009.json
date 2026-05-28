@@ -1,0 +1,37 @@
+{
+  "id": "rss:max-woolf-20260528-009",
+  "title": "Can modern LLMs actually count the number of b's in \"blueberry\"?",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2025/08/llm-blueberry/",
+  "url": "https://minimaxir.com/2025/08/llm-blueberry/",
+  "author": null,
+  "published_at": "2025-08-12T16:00:00+00:00",
+  "collected_at": "2026-05-28T11:42:09.598831+00:00",
+  "summary": "文章通过'blueberry中b的数量'这一看似简单但具对抗性的测试，揭示现代LLM在基础符号计数任务上的系统性失败模式，对用户构建可靠agent时的tool-use边界识别、evaluation设计及rag知识校验机制具有直接警示价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "LLM的tokenization与推理机制缺陷导致其无法稳定执行确定性符号操作，暴露了agent系统中必须外包给工具或规则引擎的关键能力边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "该内容直击P0必学项'production evaluation'和'tool-use'——它提供可复现的微基准案例，帮助用户设计agent的fail-safe机制、选择何时调用外部工具（如regex）、并为RAG知识验证建立轻量级truthfulness check pattern。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "tool-use"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260528-008",
+  "title": "sqlite AGENTS.md",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-27T23:44:37+00:00",
+  "collected_at": "2026-05-28T11:42:05.224640+00:00",
+  "summary": "SQLite官方明确拒绝接受AI生成代码（agentic code），但欢迎带可复现测试用例的AI生成bug报告，反映了生产级开源项目对agent工程的边界定义与协作范式，对构建可靠agent系统具有重要实践警示价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "生产级基础设施项目正主动定义‘人机协作接口’——接受AI作为问题发现者，但坚持人类作为代码决策与实现者。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含'agent engineering'和'computer-use agents'，该内容直击agent在真实开源系统中的落地边界、责任划分与反馈闭环设计，是理解production-grade agent-harness约束条件的关键案例。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "documentation",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

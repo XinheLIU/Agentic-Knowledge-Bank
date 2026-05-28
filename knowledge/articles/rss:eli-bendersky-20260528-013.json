@@ -1,0 +1,35 @@
+{
+  "id": "rss:eli-bendersky-20260528-013",
+  "title": "Notes on Fourier series",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
+  "url": "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-05-28T02:30:00+00:00",
+  "collected_at": "2026-05-28T11:42:16.304487+00:00",
+  "summary": "傅里叶级数是信号处理与函数逼近的数学基础，其在频域建模、特征分解及后续应用于AI中的时序建模、注意力机制解释、模型压缩等领域具有潜在支撑价值，可强化用户在ML/RL基础与量化分析方向的数学直觉。",
+  "tags": [
+    "llm"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "intermediate",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "傅里叶分析为理解周期性模式建模和线性算子谱分解提供核心数学语言，是深入时序AI、频域LLM解释性及高效计算的隐性前置知识。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.3,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属经典数学理论，不直接覆盖P0必学项（如agent engineering、LangGraph、RAG等），仅间接支撑P1中ML/RL基础与量化分析的学习路径；无代码、架构或工程实践元素，无法用于构建技术情报系统。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "research-method"
+  ]
+}

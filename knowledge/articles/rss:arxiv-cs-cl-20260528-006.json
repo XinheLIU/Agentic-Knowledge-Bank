@@ -1,0 +1,36 @@
+{
+  "id": "rss:arxiv-cs-cl-20260528-006",
+  "title": "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2605.27374",
+  "url": "https://arxiv.org/abs/2605.27374",
+  "author": "Zhipeng Bian, Jieming Zhu, Qijiong Liu, Wang Lin, Guohao Cai, Zhaocheng Du, Jiacheng Sun, Zhou Zhao, Zhenhua Dong",
+  "published_at": "2026-05-28T04:00:00+00:00",
+  "collected_at": "2026-05-28T11:42:02.287818+00:00",
+  "summary": "ICG提出一种融合MLLM提示与用户偏好对齐的封面图生成框架，通过元标记提取语义、用户嵌入调制、多奖励学习及端到端适配器桥接MLLM与扩散模型，在无标注前提下提升个性化、语义保真与图像质量，对构建数据/浏览器/计算机使用类agent中视觉-语义协同模块具参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将MLLM作为可微分提示引擎+用户偏好注入接口，与扩散模型通过轻量适配器联合训练，实现免标注的个性化生成闭环。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项含browser agents、computer-use agents、data agents及tool-use；ICG展示了MLLM驱动视觉生成的端到端agent式编排范式（语义解析→偏好调制→扩散执行→多目标评估），其adapter桥接设计、reward组合策略、无监督偏好建模等机制可迁移至多模态agent harness构建，匹配learning_track中agent-systems与learning_tags中agent-harness。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:matklad-20260528-012",
+  "title": "Learning Software Architecture",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/05/12/software-architecture.html",
+  "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-05-12T00:00:00+00:00",
+  "collected_at": "2026-05-28T11:42:10.841518+00:00",
+  "summary": "文章以物理学家转软件工程为背景，系统阐述软件架构的核心思维：关注边界、契约与演化，强调通过小步重构、接口抽象和可测试性构建长期可维护系统。对AI/agent工程师构建生产级智能体系统具有架构方法论启示。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "软件架构的本质不是画框图，而是管理变化——通过明确定义的接口、可验证的契约和渐进式演化能力来应对不确定性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需扎实的工程架构能力支撑agent-systems和production-evaluation；文中关于接口契约、演化式设计、测试驱动边界的实践原则，直接适配langgraph工作流设计、tool-use封装及data-agent系统解耦需求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "architecture-reference",
+    "implementation-pattern"
+  ]
+}

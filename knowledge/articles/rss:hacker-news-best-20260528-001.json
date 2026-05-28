@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260528-001",
+  "title": "YouTube to automatically label AI-generated videos",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+  "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+  "author": "nopg",
+  "published_at": "2026-05-27T20:00:51+00:00",
+  "collected_at": "2026-05-28T11:41:59.799419+00:00",
+  "summary": "YouTube 推出自动识别并标注 AI 生成视频的机制，涉及内容指纹、多模态检测与可信元数据嵌入，虽非直接面向 agent 工程，但为构建可信 AI 内容代理（如 browser/computer-use agents）提供了现实世界的内容真实性校验接口参考。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "AI 内容水印与自动标注是 production-grade agent 系统中 content-provenance 和 trust-layer 的关键外部信号源。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 'production evaluation' 和 'browser agents'，该机制提供真实平台级 content authenticity 评估实践案例，可映射到 agent 系统中对第三方生成内容的可信度判定模块设计，属高价值上下文输入。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "browser-agent"
+  ]
+}
