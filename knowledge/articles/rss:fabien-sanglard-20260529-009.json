@@ -1,0 +1,37 @@
+{
+  "id": "rss:fabien-sanglard-20260529-009",
+  "title": "Building a 1997 Quake PC: Benchmarking Quake",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/quake_pc/quake/index.html",
+  "url": "https://fabiensanglard.net/quake_pc/quake/index.html",
+  "author": null,
+  "published_at": "2026-01-12T00:00:00+00:00",
+  "collected_at": "2026-05-29T11:33:44.165385+00:00",
+  "summary": "本文详细复现1997年Quake PC硬件架构与性能基准方法，强调系统级工程思维、可复现性设计和底层性能归因分析，对构建AI agent系统的可观测性、evaluation框架及本地模型部署的硬件-软件协同优化具有强类比启发价值。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "经典系统级benchmarking方法论（如隔离变量、硬件指纹、确定性回放）是现代AI agent production evaluation体系的重要思想源头。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'production evaluation'，且学习路线含'evaluation'轨道；本文虽非AI主题，但提供了高信噪比的系统级benchmarking实践范式，可迁移至agent行为评估、tool-use稳定性测试、RAG延迟/正确性联合度量等场景，符合'high-value source: benchmark'定位。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "implementation-pattern"
+  ]
+}

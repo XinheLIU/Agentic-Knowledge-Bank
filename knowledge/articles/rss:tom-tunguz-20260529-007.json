@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260529-007",
+  "title": "Security in the Age of AI Agents: Office Hours with Jonathan Jaffe",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/jonathan-jaffe-office-hours-post-event/",
+  "url": "https://www.tomtunguz.com/jonathan-jaffe-office-hours-post-event/",
+  "author": null,
+  "published_at": "2026-05-28T00:00:00+00:00",
+  "collected_at": "2026-05-29T11:33:37.976414+00:00",
+  "summary": "本文探讨AI代理时代安全工程的范式转变，强调安全团队需成为工程团队，构建带身份与策略治理的自动化代理系统，对用户构建生产级agent-systems和langgraph-workflows具有直接架构参考价值。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "安全团队必须转型为工程团队，通过赋予每个AI代理唯一身份并实施细粒度运行时策略治理，才能应对代理规模化带来的新攻击面。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'production evaluation'中的安全治理维度，提出'agent identity + runtime policy governance'这一可落地的架构原则，且源自一线实践（Lemonade自建AI平台），匹配learning_track中'agent-systems'和'engineering-leadership'路径。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

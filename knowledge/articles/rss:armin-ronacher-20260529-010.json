@@ -1,0 +1,36 @@
+{
+  "id": "rss:armin-ronacher-20260529-010",
+  "title": "The Center Has a Bias",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/",
+  "url": "https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-04-11T00:00:00+00:00",
+  "collected_at": "2026-05-29T11:33:44.230928+00:00",
+  "summary": "本文批判性探讨AI编码代理的两极化讨论，强调‘中心立场’实为基于深度实践的审慎参与，对用户构建技术判断力和agent工程实操评估能力极具启发。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正的中立不是不作为，而是以足够时长和真实工作流投入换取可落地的批评能力——这对agent engineering learner构建生产级判断标准至关重要。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户处于agent engineering实践阶段，需培养对工具链（如langgraph、tool-use、browser agents）的真实评估能力；本文直接回应P0中'production evaluation'与'agent engineering'的核心痛点——如何避免抽象批评、建立基于接触的判断框架。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

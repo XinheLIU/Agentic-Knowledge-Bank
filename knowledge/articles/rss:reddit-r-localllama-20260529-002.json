@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260529-002",
+  "title": "Beware!! Users trying to fork and steal your projects",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tqnx5n/beware_users_trying_to_fork_and_steal_your/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tqnx5n/beware_users_trying_to_fork_and_steal_your/",
+  "author": "/u/Glittering_Focus1538",
+  "published_at": "2026-05-29T02:12:09+00:00",
+  "collected_at": "2026-05-29T11:33:29.860934+00:00",
+  "summary": "该帖揭示开源项目中 fork 后冒名顶替的实践风险，附带真实 SmallCode → LightAgent 的 fork 对比案例，对构建 agent-systems 的学习者具有生产环境协作与版权意识警示价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "开源 agent 项目在早期阶段面临贡献治理与归属界定的实际挑战，需从工程流程层面（如 CONTRIBUTING.md、CLA、CI 签名）防范‘伪原创’行为。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建 personal technical intelligence system，P0 明确包含 agent engineering 和 production evaluation；此案例提供真实 agent 项目（SmallCode/LightAgent）的协作失范样本，可用于反向推导 robust agent-harness 设计原则和 repo-tutorial 最佳实践。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "repo-tutorial"
+  ]
+}
