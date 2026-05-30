@@ -1,0 +1,36 @@
+{
+  "id": "rss:hugging-face-blog-20260530-005",
+  "title": "Reachy Mini goes fully local",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+  "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+  "author": null,
+  "published_at": "2026-05-27T00:00:00+00:00",
+  "collected_at": "2026-05-30T10:04:23.651987+00:00",
+  "summary": "Reachy Mini 实现端到端本地化对话系统，集成轻量级LLM、语音I/O与机器人控制闭环，提供可复现的agent-harness参考实现。对用户构建personal technical intelligence system中computer-use agents和local model serving环节具直接实践参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "本地化机器人agent是computer-use agent的具身化落地范式，其系统集成模式可迁移至通用AI agent工程架构设计。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容覆盖P0必学项中的computer-use agents与local-model-serving，且以Hugging Face官方博客形式发布完整技术栈（Whisper+TinyLlama+custom control loop），具备agent-harness和implementation-pattern双重学习价值，匹配learning_track 'agent-systems' 和 'local-model-serving'。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "computer-use"
+  ]
+}

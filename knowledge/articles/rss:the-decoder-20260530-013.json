@@ -1,0 +1,35 @@
+{
+  "id": "rss:the-decoder-20260530-013",
+  "title": "Salesforce claims AI agents cut a 231-day migration to 13 days with fewer incidents",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/",
+  "url": "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-05-30T09:32:57+00:00",
+  "collected_at": "2026-05-30T10:04:32.961640+00:00",
+  "summary": "Salesforce 声称使用 AI 代理将 231 天的开发环境迁移压缩至 13 天，并提升 PR 数量与降低事故率。虽缺乏可验证技术细节，但作为真实企业级 agent 工程落地案例，对理解 agent-harness 设计权衡、规模化编排挑战及生产评估指标具有高上下文价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "大规模 agent 系统的价值不在于单次任务加速，而在于跨生命周期的工程熵控制与 incident surface reduction。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接对应用户 P0 必学项 'agent engineering' 和 'production evaluation'，且属于 'agent-systems' 学习路线；虽为新闻体，但提供了稀缺的企业级 agent 应用规模、指标（PR/developer, incidents）和迁移周期数据，可用于反向推导 agent-harness 架构约束与评估维度。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

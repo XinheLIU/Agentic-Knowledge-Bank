@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260530-007",
+  "title": "Anthropic's run-rate revenue hits $47 billion",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-29T01:23:08+00:00",
+  "collected_at": "2026-05-30T10:04:24.214587+00:00",
+  "summary": "Anthropic公布的$47B年化营收数据虽属商业新闻，但隐含企业级AI产品规模化落地信号，可反推其agent-native产品（如Claude for Enterprise）在真实生产环境中的tool-use、browser-agent和RAG知识系统集成强度，为学习者提供高价值实践参照系。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "爆炸性营收增长本质是企业级agent系统（tool-use + browser + RAG + evaluation闭环）在真实IT基础设施中被大规模采购的间接证据。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'browser agents'、'tool-use'、'rag knowledge systems'和'production evaluation'，而Anthropic营收跃升直接反映这些能力已在企业生产环境形成闭环价值；文中提及的Claude Opus 4.8自动生成Matplotlib图表也暗示其内部agent-harness已支持复杂工具链编排，属于langgraph-workflows与agent-harness交叉验证的稀缺现实案例。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

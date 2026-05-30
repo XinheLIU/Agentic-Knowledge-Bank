@@ -1,0 +1,38 @@
+{
+  "id": "rss:tom-tunguz-20260530-009",
+  "title": "Skill Distillation",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/the-pi-agent-skill-distillation/",
+  "url": "https://www.tomtunguz.com/the-pi-agent-skill-distillation/",
+  "author": null,
+  "published_at": "2026-05-29T00:00:00+00:00",
+  "collected_at": "2026-05-30T10:04:25.183845+00:00",
+  "summary": "提出‘技能蒸馏’新范式：用前沿大模型编写可版本化、可热替换的SKILL.md流程文件，由本地小模型执行，实现程序性知识迁移，显著区别于传统知识蒸馏、RAG和指令微调。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "技能蒸馏将程序性知识解耦为人类可读、模型可执行的Markdown技能单元，使本地Agent具备可审计、可迭代、模型无关的流程智能。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直接覆盖用户P0必学项中的agent engineering、tool-use、mcp、local-model-serving，并提供完整参考架构（QMD+SKILL.md+Agent Loop）、生产级实践信号（17个Rust API、MCP集成、夜间技能演化），且来源为高价值blog（技术深度远超同类）。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "mcp",
+    "tool-use"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "github-20260530-002",
+  "title": "labring/FastGPT",
+  "source": "github",
+  "source_url": "https://github.com/labring/FastGPT",
+  "url": "https://github.com/labring/FastGPT",
+  "author": "labring",
+  "published_at": "2026-05-30T06:29:42Z",
+  "collected_at": "2026-05-30T10:04:17.582079+00:00",
+  "summary": "FastGPT 是一个基于 LLM 的开箱即用知识平台，集成数据处理、RAG 检索与可视化 AI 工作流编排能力，适合快速构建和部署问答系统；对用户构建 personal technical intelligence system 具有 RAG 知识系统落地参考价值。",
+  "tags": [
+    "rag",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "rag",
+  "key_insight": "将 RAG 流程封装为可配置、可视化的工作流引擎，降低了生产级知识系统开发门槛。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接覆盖用户 P0 必学项 'rag knowledge systems' 和 'agent engineering'，提供完整开源实现、可视化编排与生产部署路径，符合高价值来源（repository）且具备 tutorial + reference-architecture 属性。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "rag-knowledge-systems",
+  "learning_tags": [
+    "production-rag",
+    "agent-harness"
+  ]
+}
