@@ -1,0 +1,36 @@
+{
+  "id": "rss:the-decoder-20260531-010",
+  "title": "Anthropic bans AI tools during job interviews to see how candidates actually think",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think/",
+  "url": "https://the-decoder.com/anthropic-bans-ai-tools-during-job-interviews-to-see-how-candidates-actually-think/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-05-31T10:10:14+00:00",
+  "collected_at": "2026-05-31T10:19:43.503875+00:00",
+  "summary": "Anthropic在面试中禁用AI工具以评估候选人真实思维能力，反映对AI原生工程人才底层认知与伦理判断的重视，提示用户需强化非工具依赖的问题建模、系统推理与价值对齐能力，这对构建鲁棒agent系统具有隐性方法论启示。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "真实系统级工程能力无法被工具链掩盖，评估范式反向定义了agent工程师的核心素养边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'production evaluation'，该案例虽非技术教程，但提供了高信度的工业界评估实践锚点，可映射至agent行为评测设计、human-in-the-loop验证框架及可信AI系统工程标准，支撑evaluation学习路线中的contextual grounding。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation"
+  ]
+}

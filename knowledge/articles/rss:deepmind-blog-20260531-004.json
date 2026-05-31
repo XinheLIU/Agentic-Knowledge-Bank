@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260531-004",
+  "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/",
+  "url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/",
+  "author": null,
+  "published_at": "2026-05-17T13:50:34+00:00",
+  "collected_at": "2026-05-31T10:19:34.859070+00:00",
+  "summary": "DeepMind 发布 Gemini for Science，聚焦AI驱动的科学发现工具链，涵盖实验设计、数据建模与跨模态推理能力。虽未开源具体agent实现，但其科学工作流抽象（如假设生成→实验模拟→结果验证闭环）为构建data-agent和rag-knowledge-systems提供高价值参考范式。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "科学发现本质是结构化agent工作流：将假设、实验、验证建模为可编排、可评估的tool-use序列。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑用户P0必学项中的data-agents和rag-knowledge-systems，其科学工作流抽象可映射到LangGraph workflow设计与MCP-compliant tool interfaces；虽非tutorial，但作为reference-architecture级案例具备强迁移价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

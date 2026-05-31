@@ -1,0 +1,37 @@
+{
+  "id": "rss:armin-ronacher-20260531-009",
+  "title": "Absurd In Production",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/4/4/absurd-in-production/",
+  "url": "https://lucumr.pocoo.org/2026/4/4/absurd-in-production/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-04-04T00:00:00+00:00",
+  "collected_at": "2026-05-31T10:19:42.210584+00:00",
+  "summary": "Absurd 是一个基于 Postgres 的轻量级持久化工作流系统，专为 AI agent 工作负载设计，支持 checkpoint-based 恢复、pull-based 调度和多语言 SDK，可替代 Temporal 等重型运行时，对构建生产级 agent-systems 具有高实践参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将复杂性下沉至 SQL 层、保持 SDK 极简，是构建可调试、可移植、易理解的 agent 执行基座的关键架构选择。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户 P0 必学项包含 agent engineering、langgraph-workflows 和 production evaluation；Absurd 提供了与 LangGraph 同源但更底层、更可控的 durable execution 实现范式，其 checkpoint 模型、agent 集成模式（如 absurdctl 调试技能）、pull-based 架构均直接支撑用户构建 personal technical intelligence system 的核心能力。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

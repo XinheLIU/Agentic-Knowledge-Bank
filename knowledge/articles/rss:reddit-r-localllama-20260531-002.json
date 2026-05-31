@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260531-002",
+  "title": "It's funny how everything changes, yet somehow stays the same.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tsjgol/its_funny_how_everything_changes_yet_somehow/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tsjgol/its_funny_how_everything_changes_yet_somehow/",
+  "author": "/u/bigattichouse",
+  "published_at": "2026-05-31T03:06:02+00:00",
+  "collected_at": "2026-05-31T10:19:28.472119+00:00",
+  "summary": "Reddit 帖子以图像形式呈现本地 LLM 社区对技术演进的反思，隐含对 agent 工程中工具调用、状态管理与长期架构稳定性的经验观察，虽无代码但可作为 local-model-serving 与 agent-systems 的社区实践锚点。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "本地 LLM 实践者在工具链迭代中持续复用核心抽象（如 prompt orchestration、stateful execution），印证 agent-harness 设计模式的稳定性价值。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽为 Reddit 讨论，但源自 r/LocalLLaMA 高信噪比社区，图像隐含对 agent 状态管理与本地模型协同的实践共识，直接支撑 user 的 P0 必学项 'agent engineering' 和学习路线 'agent-systems' 与 'local-model-serving'，且匹配 high-value source 类型中的 'discussion'（仅当来自专业子社区时）。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "agent-harness",
+    "local-llm"
+  ]
+}

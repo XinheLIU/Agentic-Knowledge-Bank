@@ -1,0 +1,37 @@
+{
+  "id": "rss:fabien-sanglard-20260531-008",
+  "title": "Why WinQuake exists and how it works",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/winquake/index.html",
+  "url": "https://fabiensanglard.net/winquake/index.html",
+  "author": null,
+  "published_at": "2025-12-03T00:00:00+00:00",
+  "collected_at": "2026-05-31T10:19:42.142922+00:00",
+  "summary": "WinQuake 是一个轻量级 Quake 引擎模拟器，用于教学和系统理解；虽非 AI/agent 原生项目，但其清晰的模块化架构、状态机设计与可调试执行模型，为构建 agent harness 和 tool-use runtime 提供优秀参考范式。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "经典游戏引擎的确定性仿真架构可迁移为 agent 执行环境（harness）的设计蓝本，强调可控状态流转与可观测工具调用。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建 personal technical intelligence system，需参考高信噪比的 reference-architecture 类资源；WinQuake 展示了极简、可验证、可插拔的状态驱动执行模型，直接支撑 agent-harness 和 tool-use 子能力的学习目标，且来源为资深工程师深度技术博客（非 hype 或 news），符合高价值来源标准。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

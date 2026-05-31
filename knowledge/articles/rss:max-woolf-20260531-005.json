@@ -1,0 +1,37 @@
+{
+  "id": "rss:max-woolf-20260531-005",
+  "title": "Predicting Average IMDb Movie Ratings Using Text Embeddings of Movie Metadata",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2025/06/movie-embeddings/",
+  "url": "https://minimaxir.com/2025/06/movie-embeddings/",
+  "author": null,
+  "published_at": "2025-06-30T17:00:00+00:00",
+  "collected_at": "2026-05-31T10:19:35.600552+00:00",
+  "summary": "该文使用文本嵌入（非LLM微调）预测IMDb评分，展示了轻量级特征工程与嵌入模型在结构化+非结构化元数据上的应用，对用户构建data-agents和rag-knowledge-systems中的特征表示模块有直接参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "review",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "文本嵌入可作为data-agent的轻量、可解释、低延迟特征提取层，替代黑盒LLM调用以提升可控性与可观测性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容聚焦于从电影元数据生成嵌入并用于预测任务，属于data-agents核心能力（结构化+非结构化数据融合建模），且提供完整代码与评估逻辑，契合用户P0中'data agents'与'evaluation'学习目标。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "data-agent",
+    "evaluation"
+  ]
+}

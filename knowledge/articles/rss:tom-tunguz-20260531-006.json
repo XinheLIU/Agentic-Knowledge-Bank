@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260531-006",
+  "title": "The First Derivative of Inference",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/first-derivative-of-inference/",
+  "url": "https://www.tomtunguz.com/first-derivative-of-inference/",
+  "author": null,
+  "published_at": "2026-05-15T00:00:00+00:00",
+  "collected_at": "2026-05-31T10:19:35.901210+00:00",
+  "summary": "文章提出‘推理的一阶导数’概念，指出AI基础设施公司（如Datadog、Twilio）通过观测、编排或增强LLM推理链路实现高增长，对构建生产级agent系统具有架构启示价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正受益于AI爆发的不是直接卖模型的公司，而是嵌入在agent推理生命周期中提供可观测性、通信、执行保障等关键能力的基础设施。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建个人技术智能系统，P0必学项包含agent engineering、tool-use、evaluation和production evaluation；本文虽非教程，但揭示了真实生产环境中agent系统依赖的关键基础设施层（LLM observability、voice/SMS as agent interface），为langgraph-workflows和evaluation学习提供高价值商业-工程对齐上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}

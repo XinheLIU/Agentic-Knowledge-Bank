@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260531-001",
+  "title": "Bayesian Opt. GPs vs Linear models and Neural Networks for parameter optimizations [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tsi17b/bayesian_opt_gps_vs_linear_models_and_neural/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tsi17b/bayesian_opt_gps_vs_linear_models_and_neural/",
+  "author": "/u/InevitableCut1243",
+  "published_at": "2026-05-31T01:57:20+00:00",
+  "collected_at": "2026-05-31T10:19:27.912825+00:00",
+  "summary": "讨论高斯过程（GP）在贝叶斯优化中相比线性模型和神经网络的计算权衡，适用于时间序列与谱分析场景；对用户构建数据代理（data agents）和本地模型服务中的参数调优实践具参考价值。",
+  "tags": [
+    "llm"
+  ],
+  "status": "review",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.75,
+  "category": "other",
+  "key_insight": "GP在小样本、高不确定性场景下提供可解释的置信度估计，而NN/LM在大数据量下更高效但缺乏不确定性建模能力。",
+  "personal_fit_score": 0.75,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.65,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 73,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'data agents'和'local-model-serving'，而参数优化是其核心子任务；该帖虽为Reddit讨论，但聚焦具体技术对比（GP vs NN vs LM），可补充生产级数据代理中的超参/信号建模决策依据。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "research-method",
+    "implementation-pattern"
+  ]
+}

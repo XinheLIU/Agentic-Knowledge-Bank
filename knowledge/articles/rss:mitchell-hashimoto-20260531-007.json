@@ -1,0 +1,35 @@
+{
+  "id": "rss:mitchell-hashimoto-20260531-007",
+  "title": "Ghostty Is Now Non-Profit",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/ghostty-non-profit",
+  "url": "https://mitchellh.com/writing/ghostty-non-profit",
+  "author": null,
+  "published_at": "2025-12-03T00:00:00+00:00",
+  "collected_at": "2026-05-31T10:19:36.499512+00:00",
+  "summary": "Ghostty 作为开源终端项目转为非营利组织，体现基础设施类工具的可持续治理模式，对构建长期可维护的 AI agent 运行时环境（如 browser/computer-use agents）有参考价值，但无直接技术实现细节。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "开源基础设施的治理转型是 agent-systems 可持续演进的关键隐性前提，而非技术实现本身。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需理解底层运行时（如终端、浏览器、OS交互层）的可持续性与工程治理逻辑；Ghostty 的非营利转型为 computer-use agents 和 browser agents 提供了可信基础设施演进范式，契合 P0 中 'computer-use agents' 和 'agent engineering' 的长期架构认知需求。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
