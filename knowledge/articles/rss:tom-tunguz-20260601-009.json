@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260601-009",
+  "title": "What Would AI Email Cost?",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/cost-of-ai-email/",
+  "url": "https://www.tomtunguz.com/cost-of-ai-email/",
+  "author": null,
+  "published_at": "2026-05-14T00:00:00+00:00",
+  "collected_at": "2026-06-01T13:42:37.508002+00:00",
+  "summary": "文章量化了AI邮件系统的运行成本，指出本地化部署和模型-任务匹配可降本100倍，对构建低成本生产级agent系统有直接工程启示。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI agent的经济可行性取决于推理组件的确定性分层（规则过滤+轻量模型+本地执行），而非单纯依赖SOTA云模型。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击用户P0必学项中的'agent engineering'与'local model workflows'，提供成本建模、模型选型、本地执行等生产级agent系统关键决策依据，且含可复用的量化分析框架。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "local-llm"
+  ]
+}

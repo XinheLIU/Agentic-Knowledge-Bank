@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260601-001",
+  "title": "What’s the actual focus in World Models right now? [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1ttei2r/whats_the_actual_focus_in_world_models_right_now_r/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1ttei2r/whats_the_actual_focus_in_world_models_right_now_r/",
+  "author": "/u/nat-abhishek",
+  "published_at": "2026-06-01T02:09:02+00:00",
+  "collected_at": "2026-06-01T13:42:28.247607+00:00",
+  "summary": "该 Reddit 讨论聚焦当前世界模型（World Models）学术界真实研究焦点，对比 SSL 时代与当前视频生成主导范式，有助于用户厘清 RL/ML 基础中 world modeling 与 agent 内部状态建模的关联，补全 agent-systems 学习中关于环境表征与预测性建模的认知缺口。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "世界模型研究重心正从无监督表征学习转向具身预测控制与多模态闭环仿真，与 agent 的 planning 和 tool-use 能力深度耦合。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "虽非直接讲 LangGraph 或 RAG，但世界模型是构建具备环境理解与长期规划能力的智能体（computer-use/browsing agents）的核心理论基础，属于 P1 中 'ml-rl-foundations' 和 'agent-systems' 路线的关键上下文支撑。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "research-method",
+    "agent-harness"
+  ]
+}

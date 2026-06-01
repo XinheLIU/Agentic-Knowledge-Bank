@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260601-006",
+  "title": "Making it easier to understand how content was created and edited",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/making-it-easier-to-understand-how-content-was-created-and-edited/",
+  "url": "https://deepmind.google/blog/making-it-easier-to-understand-how-content-was-created-and-edited/",
+  "author": null,
+  "published_at": "2026-05-17T13:43:50+00:00",
+  "collected_at": "2026-06-01T13:42:36.581136+00:00",
+  "summary": "DeepMind 探讨内容生成与编辑溯源机制，聚焦可解释性、编辑追踪与模型行为透明度，对构建可信 agent 系统（如 browser/computer-use agents）中的操作审计、RAG 编辑链路可追溯性及生产级 evaluation 具有方法论参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "内容溯源能力是可信 agent 系统的核心可观测性组件，需嵌入 workflow 层（如 LangGraph 节点审计日志）而非仅作为后处理功能。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建个人技术智能系统，P0 必学项包含 browser agents、computer-use agents 和 production evaluation；该文虽非代码教程，但提供了 agent 操作可追溯性的设计原则，可直接映射到 LangGraph workflow 审计节点、MCP trace protocol 扩展或 RAG 编辑版本控制等实践环节。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

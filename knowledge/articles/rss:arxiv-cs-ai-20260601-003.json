@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260601-003",
+  "title": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2605.30512",
+  "url": "https://arxiv.org/abs/2605.30512",
+  "author": "Nafiul Haque, Syed Nazmus Sakib, Shifat E Arman",
+  "published_at": "2026-06-01T04:00:00+00:00",
+  "collected_at": "2026-06-01T13:42:29.128953+00:00",
+  "summary": "PhyDrawGen 提出神经符号协同的物理图生成框架，通过LLM提取场景图、确定性求解器编码物理约束、多模态模型迭代修正，显著提升力学/光学/电磁学图表的物理准确性，为AI agent在科学推理与工具调用中嵌入领域知识提供可复现范式。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将符号化物理约束求解作为agent pipeline中的确定性tool-use环节，实现LLM语义理解与领域规则执行的可靠解耦。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑P0必学项'agent engineering'和'tool-use'，其神经符号pipeline是LangGraph workflow中典型tool-calling+constraint-verification模式的高质量案例；同时为'data agents'（物理数据建模）和'evaluation'（物理准确性基准）提供跨领域方法论参考。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:hugging-face-blog-20260601-005",
+  "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+  "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+  "author": null,
+  "published_at": "2026-06-01T04:44:55+00:00",
+  "collected_at": "2026-06-01T13:42:36.124600+00:00",
+  "summary": "NVIDIA Cosmos 3 是首个开源的物理AI通用模型，支持跨模态感知、推理与具身动作规划；对用户构建 browser/computer-use agents 和 agent-systems 具有参考价值，尤其在物理世界交互建模层面。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "物理AI模型首次以开源方式提供端到端感知-推理-动作闭环能力，为computer-use agents提供了新的基础模型范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑用户P0必学项中的'computer-use agents'和'agent engineering'，且Hugging Face博客通常附带可运行示例/链接，具备tutorial或reference-architecture潜力；虽非纯LangGraph实现，但为agent-harness层提供新型执行器接口范式。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

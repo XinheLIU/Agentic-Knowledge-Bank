@@ -1,0 +1,37 @@
+{
+  "id": "rss:max-woolf-20260601-008",
+  "title": "As an Experienced LLM User, I Actually Don't Use Generative LLMs Often",
+  "source": "rss:Max Woolf",
+  "source_url": "https://minimaxir.com/2025/05/llm-use/",
+  "url": "https://minimaxir.com/2025/05/llm-use/",
+  "author": null,
+  "published_at": "2025-05-05T17:15:00+00:00",
+  "collected_at": "2026-06-01T13:42:37.177219+00:00",
+  "summary": "作者反思LLM实际使用场景的稀缺性与高价值性，强调聚焦于可嵌入工作流、具备确定性输出的LLM用例——这对构建可靠agent系统极具启发：需区分'演示型调用'与'生产级agent harness'，推动用户从prompt实验转向工程化agent设计。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正有价值的LLM使用不是泛化生成，而是作为受控、可观测、可集成的子系统嵌入技术栈。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需建立对LLM真实能力边界的清醒认知；该文直击P0中'agent engineering'和'tool-use'的核心矛盾——避免LLM滥用，聚焦可控、可组合、可评估的agent harness模式，与langgraph-workflows和agent-systems学习路线强耦合。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

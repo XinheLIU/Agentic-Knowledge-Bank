@@ -1,0 +1,37 @@
+{
+  "id": "rss:armin-ronacher-20260601-013",
+  "title": "Some Things Just Take Time",
+  "source": "rss:Armin Ronacher",
+  "source_url": "https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/",
+  "url": "https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/",
+  "author": "Armin Ronacher",
+  "published_at": "2026-03-20T00:00:00+00:00",
+  "collected_at": "2026-06-01T13:42:44.357926+00:00",
+  "summary": "本文以‘时间不可压缩’为隐喻，批判AI工程中过度追求速度而忽视长期承诺、信任构建与系统韧性的问题，对用户构建生产级agent系统具有关键方法论警示价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正的agent系统可靠性、社区信任与生产就绪性无法通过加速迭代获得，必须经由持续维护、摩擦保留和时间沉淀来构建。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，P0必学项包含agent engineering、production evaluation及rag knowledge systems——本文直击生产级agent系统的核心非功能性需求（trust, longevity, maintenance discipline），弥补技术栈教程中普遍缺失的工程哲学与组织韧性维度，可作为langgraph-workflows和evaluation学习路径的价值锚点。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "production-lesson"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260601-002",
+  "title": "Entire world: We need more GPUs. Meanwhile, Jensen Huang:",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ttn15z/entire_world_we_need_more_gpus_meanwhile_jensen/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ttn15z/entire_world_we_need_more_gpus_meanwhile_jensen/",
+  "author": "/u/Nunki08",
+  "published_at": "2026-06-01T09:32:38+00:00",
+  "collected_at": "2026-06-01T13:42:28.870312+00:00",
+  "summary": "Reddit 帖子以幽默对比呈现全球GPU短缺与英伟达产能扩张现实，隐含对本地大模型部署瓶颈的具象认知——对用户构建local-model-serving和data-agents技术栈具有关键上下文价值。",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "硬件供给约束是本地Agent系统落地的底层硬约束，理解GPU供需动态比单纯调参更能指导架构选型。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'local model workflows'和'computer-use agents'，该内容虽非教程，但提供了本地LLM/Agent工程中不可绕过的硬件基础设施现实约束，属于高价值上下文（P1），支撑其技术决策合理性。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "implementation-pattern"
+  ]
+}

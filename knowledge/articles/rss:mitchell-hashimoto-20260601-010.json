@@ -1,0 +1,36 @@
+{
+  "id": "rss:mitchell-hashimoto-20260601-010",
+  "title": "Vibing a Non-Trivial Ghostty Feature",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/non-trivial-vibing",
+  "url": "https://mitchellh.com/writing/non-trivial-vibing",
+  "author": null,
+  "published_at": "2025-10-11T00:00:00+00:00",
+  "collected_at": "2026-06-01T13:42:38.494561+00:00",
+  "summary": "文章探讨在 Ghostty 终端中实现非平凡交互功能的技术思路，虽未直接涉及 AI agent，但其对底层系统可扩展性、插件化设计与用户意图建模的思考，为构建 computer-use agents 和 agent-harness 提供类比性工程启发。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "复杂终端交互的设计哲学可迁移至 computer-use agent 的行为抽象与执行沙箱构建。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正学习 computer-use agents 和 agent engineering，该文虽非 AI 主题，但其对‘非平凡用户意图→系统可扩展响应’的工程解法，构成 agent-harness 和 langgraph workflow 中 control-plane 设计的优质类比上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

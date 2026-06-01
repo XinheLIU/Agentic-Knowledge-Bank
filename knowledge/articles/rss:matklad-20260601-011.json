@@ -1,0 +1,37 @@
+{
+  "id": "rss:matklad-20260601-011",
+  "title": "Steering Zig Fmt",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/05/08/steering-zig-fmt.html",
+  "url": "https://matklad.github.io/2026/05/08/steering-zig-fmt.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-05-08T00:00:00+00:00",
+  "collected_at": "2026-06-01T13:42:38.597759+00:00",
+  "summary": "本文介绍 Zig 代码格式化工具 zig fmt 的两个实用技巧，涵盖配置控制与 formatter 实现原理。对用户构建技术智能系统虽无直接关联，但其关于代码规范自动化、工具链集成和 formatter 设计的工程实践，可迁移至 agent 工具调用、tool-use 协议设计及本地模型服务中的代码预处理环节。",
+  "tags": [
+    "agent",
+    "tool-use"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "代码格式化器是 tool-use 范式的最小可行实例，其配置抽象与执行契约可映射到 agent 工具注册与调用协议设计中。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 tool-use 和 computer-use agents，而 zig fmt 是轻量级、确定性、可嵌入的代码工具范例，其配置机制与执行接口为设计自定义 agent 工具提供可借鉴的 implementation-pattern；虽不属核心 AI 栈，但属 high-value engineering context（P1）。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "tool-use",
+    "implementation-pattern"
+  ]
+}
