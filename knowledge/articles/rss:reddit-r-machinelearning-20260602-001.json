@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260602-001",
+  "title": "Browse CVPR 2026 papers on PapersWithCode [P]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tukrf4/browse_cvpr_2026_papers_on_paperswithcode_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tukrf4/browse_cvpr_2026_papers_on_paperswithcode_p/",
+  "author": "/u/NielsRogge",
+  "published_at": "2026-06-02T08:32:17+00:00",
+  "collected_at": "2026-06-02T12:09:14.756011+00:00",
+  "summary": "Hugging Face 团队复兴 PapersWithCode 并新增 CVPR 2026 等顶会论文索引功能，支持按任务分类、GitHub/HF 资源链接、评估指标标注，为 agent engineering 学习者提供可直接检索的 SOTA 论文-代码对齐入口。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "PapersWithCode 的会议索引能力将加速从前沿 agent 论文（如 browser/computer-use agents）到可运行代码的转化路径。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 agent engineering、browser agents、computer-use agents 和 evaluation；该工具直接支持在 CVPR 等会议中高效定位相关 SOTA 论文及其实现资源，契合 data-agents 和 evaluation 学习轨道，且来源为高价值 repository+documentation 混合形态。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}

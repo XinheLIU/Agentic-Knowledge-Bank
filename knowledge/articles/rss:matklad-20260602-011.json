@@ -1,0 +1,37 @@
+{
+  "id": "rss:matklad-20260602-011",
+  "title": "Minimal Viable Zig Error Contexts",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/05/03/zig-error-context.html",
+  "url": "https://matklad.github.io/2026/05/03/zig-error-context.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-05-03T00:00:00+00:00",
+  "collected_at": "2026-06-02T12:09:22.574321+00:00",
+  "summary": "Zig 的错误处理机制强调类型安全与用户自定义诊断输出，其‘最小可行错误上下文’设计思想对构建高可靠性 agent harness 和 tool-use 错误传播层有直接启发，尤其适用于本地模型服务与 computer-use agent 的健壮性工程。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "错误上下文不应由框架自动注入，而应作为可组合、可传递的显式上下文参数（如 Diagnostics sink），这与 LangGraph 中 stateful error propagation 和 MCP 的 tool-call diagnostics 设计哲学高度一致。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建 personal technical intelligence system，需吸收跨语言/跨范式的 robustness engineering 模式；Zig 的 error context 设计可迁移至 agent-harness 错误链路建模、tool-use 失败诊断和 local-model-serving 的可观测性增强，属于 P1 中 'engineering architecture' 与 P0 'agent engineering' 的交叉高价值模式。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

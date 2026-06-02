@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260602-006",
+  "title": "Strengthening Singapore’s AI Future: A New National Partnership",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/",
+  "url": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/",
+  "author": null,
+  "published_at": "2026-05-16T09:13:34+00:00",
+  "collected_at": "2026-06-02T12:09:20.950735+00:00",
+  "summary": "DeepMind与新加坡政府合作推动前沿AI在健康、教育和可持续发展等领域的落地应用，虽未披露具体技术栈，但暗示了国家级agent系统集成与跨领域RAG知识协同的实践场景，为用户构建生产级agent系统提供宏观架构参考和政策级落地信心。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "国家级AI合作项目隐含对可扩展、可验证、多领域协同的agent系统架构的真实需求，而非纯研究导向。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽属政策合作新闻，但出自DeepMind官方博客，具备高可信度；其聚焦‘复杂挑战’解决路径，直接呼应用户P0中browser agents、data agents、rag knowledge systems及evaluation的生产集成目标，可作为engineering-leadership与agent-systems学习路线的现实锚点。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "business-context"
+  ]
+}

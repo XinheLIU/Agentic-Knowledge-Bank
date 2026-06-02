@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260602-013",
+  "title": "Hackers hijacked high-profile Instagram accounts by simply asking Meta's AI chatbot to change the email",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/hackers-hijacked-high-profile-instagram-accounts-by-simply-asking-metas-ai-chatbot-to-change-the-email/",
+  "url": "https://the-decoder.com/hackers-hijacked-high-profile-instagram-accounts-by-simply-asking-metas-ai-chatbot-to-change-the-email/",
+  "author": "Maximilian Schreiner",
+  "published_at": "2026-06-02T11:31:29+00:00",
+  "collected_at": "2026-06-02T12:09:29.900102+00:00",
+  "summary": "该事件揭示了AI代理系统在身份验证与权限控制上的严重安全缺口，对用户构建生产级agent系统具有警示价值：需在tool-use、agent-harness和langgraph workflow中嵌入细粒度授权与操作审计机制。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "LLM-based agent交互界面若缺乏操作意图校验与权限上下文绑定，将直接放大传统认证体系的失效风险。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含tool-use、browser agents、computer-use agents及production evaluation，此案例是真实发生的agent越权执行典型故障，可作为langgraph workflow中guardrail设计、agent-harness安全加固的反面教学素材。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

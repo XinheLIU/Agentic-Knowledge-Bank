@@ -1,0 +1,35 @@
+{
+  "id": "rss:mitchell-hashimoto-20260602-010",
+  "title": "Zig Builds Are Getting Faster",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/zig-builds-getting-faster",
+  "url": "https://mitchellh.com/writing/zig-builds-getting-faster",
+  "author": null,
+  "published_at": "2025-10-03T00:00:00+00:00",
+  "collected_at": "2026-06-02T12:09:22.450206+00:00",
+  "summary": "Zig 构建速度优化涉及编译器后端改进与增量构建机制，虽非 AI 专属，但其构建系统设计思想可迁移至 agent 工程中的本地模型服务、tool-use runtime 和轻量 agent harness 的构建效率优化，对构建生产级 AI 系统有间接工程启发。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "底层构建性能优化范式（如增量编译、零依赖链接）可映射到 AI agent runtime 的冷启加速与 tool-use 执行环境精简。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户学习路线含 'local-model-serving' 和 'agent-systems'，Zig 的构建效率实践为构建轻量、可复现、低开销的 agent runtime（如基于 Zig 的 tool-use executor 或 browser-agent harness）提供跨领域工程参考；来源为 Mitchell Hashimoto（Terraform/Vault 创始人），属高可信工程实践输出。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

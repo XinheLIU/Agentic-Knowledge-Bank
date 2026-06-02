@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260602-005",
+  "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+  "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+  "author": null,
+  "published_at": "2026-06-01T15:45:17+00:00",
+  "collected_at": "2026-06-02T12:09:20.433733+00:00",
+  "summary": "JetBrains 发布 12B MoE 模型 Mellum2，支持本地轻量部署与推理优化，对用户构建 personal technical intelligence system 中的 local-model-serving 和 agent-harness 环节具实践参考价值，尤其适配 browser/computer-use agents 的轻量化模型底座需求。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "MoE 架构在 12B 规模下实现推理效率与能力平衡，为 agent-systems 提供可嵌入、低延迟的本地模型选项。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑 P0 必学项 'local-model-serving' 和 'browser agents'，提供可实测的开源 MoE 模型及 Hugging Face 集成示例，符合高价值来源（blog）中技术深度与可操作性兼备的标准。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "agent-harness"
+  ]
+}

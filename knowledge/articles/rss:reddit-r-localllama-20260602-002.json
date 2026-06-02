@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260602-002",
+  "title": "Stop asking what model to run. There are literally only two.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tu82wi/stop_asking_what_model_to_run_there_are_literally/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tu82wi/stop_asking_what_model_to_run_there_are_literally/",
+  "author": "/u/Wrong_Mushroom_7350",
+  "published_at": "2026-06-01T22:29:23+00:00",
+  "collected_at": "2026-06-02T12:09:15.222788+00:00",
+  "summary": "该帖以讽刺口吻指出当前本地大模型生态中真正具备实用价值的开源模型极少，强调应聚焦于高质量大模型（如Qwen3.6系列）的量化部署与工程调优，而非纠结硬件适配；对用户构建本地模型服务与agent系统具有现实选型警示和实践优先级提示。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "模型选择的本质是权衡推理质量、延迟、内存开销与工程可维护性，而非盲目追求'能跑'。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'local-model-serving'和'agent engineering'，该内容直击本地模型落地中的核心权衡问题——模型选型与量化策略，且隐含对agent系统底层LLM依赖质量的警示；虽为Reddit讨论，但观点犀利、反映真实工程困境，具备上下文锚点价值。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "quant-ai"
+  ]
+}

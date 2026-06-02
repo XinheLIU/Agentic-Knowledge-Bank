@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260602-007",
+  "title": "Pasted File Editor",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-02T04:13:36+00:00",
+  "collected_at": "2026-06-02T12:09:21.087648+00:00",
+  "summary": "Pasted File Editor 是一个轻量级前端工具，支持文本粘贴自动转文件、拖拽上传及图像缩略图预览，展示了 AI 辅助编程中客户端文件处理的实用模式，对构建 agent-harness 和 tool-use 能力有直接参考价值。",
+  "tags": [
+    "agent",
+    "tool-use"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "客户端文件处理是 tool-use 的关键前置能力，尤其在 browser-agent 和 computer-use agent 场景中需可靠解析用户输入的非结构化内容。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "该工具虽小，但精准覆盖 P0 必学项中的 'tool-use' 和 'browser agents'，且以可运行代码（Gist）形式提供，符合高价值来源中的 'repository' 和 'tutorial' 特征，可作为 agent-harness 的最小可行实现范例。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

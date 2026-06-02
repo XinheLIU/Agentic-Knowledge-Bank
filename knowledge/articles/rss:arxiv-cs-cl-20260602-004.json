@@ -1,0 +1,36 @@
+{
+  "id": "rss:arxiv-cs-cl-20260602-004",
+  "title": "DraDDP: A Multimodal Multi-Party Dialogue Discourse Parsing Dataset",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2606.00012",
+  "url": "https://arxiv.org/abs/2606.00012",
+  "author": "Shannan Liu, Peifeng Li, Yaxin Fan, Qiaoming Zhu",
+  "published_at": "2026-06-02T04:00:00+00:00",
+  "collected_at": "2026-06-02T12:09:16.368028+00:00",
+  "summary": "DraDDP 是首个面向多模态、多方对话的公开话语解析数据集，含视频+文本双模态标注，适用于构建具备上下文理解能力的智能体系统，尤其增强 agent 在复杂对话场景中的结构化推理与工具调用能力。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "多模态对话结构建模是提升 agent 在真实交互（如会议、协作场景）中语义理解与决策连贯性的关键基础能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需支撑复杂多轮、多角色、多模态交互的 agent；DraDDP 提供高质量 benchmark 和可复现数据，直接服务于 data-agents 和 agent-systems 学习路线中对真实对话结构建模的需求，且其标注规范与评估框架可迁移至 tool-use 和 browser-agent 场景。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
