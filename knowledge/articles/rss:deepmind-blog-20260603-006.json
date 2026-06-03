@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260603-006",
+  "title": "Finding the molecular switches behind new infectious diseases",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/",
+  "url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/",
+  "author": null,
+  "published_at": "2026-05-16T08:16:06+00:00",
+  "collected_at": "2026-06-03T12:45:18.578677+00:00",
+  "summary": "DeepMind 博客介绍 Clare Bryant 使用 Co-Scientist（一种AI科研代理系统）识别传染病的遗传触发机制，展示了多步推理、工具调用与生物数据交互的agent工作流，对用户构建data-agents和agent-harness实践具直接参考价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Co-Scientist 将科学假设生成、实验设计、数据库查询与结果解释封装为可复现的agent工作流，是data-agent与tool-use的端到端范例。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容聚焦于真实场景下的AI agent（Co-Scientist）在生物数据领域的tool-use与multi-step reasoning实现，契合用户P0必学项中的'data agents'和'tool-use'，且来源为DeepMind官方博客，含技术机制描述而非纯 hype。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

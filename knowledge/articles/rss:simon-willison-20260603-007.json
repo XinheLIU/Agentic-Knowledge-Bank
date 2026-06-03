@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260603-007",
+  "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-03T12:01:27+00:00",
+  "collected_at": "2026-06-03T12:45:18.705852+00:00",
+  "summary": "Uber对Claude Code等编码代理工具实施每人每月1500美元token限额，揭示了生产环境中agent成本管控的实际策略，为学习者提供agent engineering在真实工程约束下的落地参考。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "生产级agent系统必须与成本建模、配额治理和ROI量化深度耦合，而非仅关注功能实现。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'agent engineering'和'production evaluation'，该案例直接呈现编码agent在规模化部署中的成本边界、配额设计与工程权衡，属于agent-systems和evaluation学习轨道的高价值生产上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

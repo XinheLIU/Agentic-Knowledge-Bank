@@ -1,0 +1,37 @@
+{
+  "id": "rss:mitchell-hashimoto-20260603-009",
+  "title": "Libghostty Is Coming",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/libghostty-is-coming",
+  "url": "https://mitchellh.com/writing/libghostty-is-coming",
+  "author": null,
+  "published_at": "2025-09-22T00:00:00+00:00",
+  "collected_at": "2026-06-03T12:45:20.574476+00:00",
+  "summary": "Libghostty 是一个即将开源的轻量级终端仿真库，聚焦于可嵌入性、低依赖与跨平台能力。对 AI agent 工程学习者而言，其模块化设计与可集成终端接口能力，为构建 browser/computer-use agents 提供底层基础设施参考。",
+  "tags": [
+    "agent",
+    "tool-use"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "终端仿真能力是 computer-use agents 的关键执行层组件，libghostty 的设计哲学与最小化依赖实践可直接映射到 agent harness 架构决策。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 'computer-use agents'，而 libghostty 提供可嵌入终端仿真能力，属于该类 agent 的核心执行层依赖；其开源动向对构建本地化、可控的 agent harness 具有架构参考价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "computer-use"
+  ]
+}
