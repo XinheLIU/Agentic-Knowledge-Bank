@@ -1,0 +1,36 @@
+{
+  "id": "rss:fabien-sanglard-20260604-011",
+  "title": "Building my childhood dream PC",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/2168/index.html",
+  "url": "https://fabiensanglard.net/2168/index.html",
+  "author": null,
+  "published_at": "2025-05-18T00:00:00+00:00",
+  "collected_at": "2026-06-04T11:19:13.175778+00:00",
+  "summary": "Fabien Sanglard 分享了从零构建高性能个人工作站的完整技术决策过程，涵盖硬件选型、散热设计、电源管理与系统稳定性验证。虽非直接讲AI agent，但其系统级工程思维、可复现的构建流程和对'可靠技术基座'的强调，为构建生产级agent系统（如browser/computer-use agents）提供了关键基础设施认知范式。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "可靠的AI agent系统必须运行在可预测、可观测、可复现的物理/系统基座之上，硬件与OS层的工程严谨性是上层agent鲁棒性的前提。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需兼顾上层agent逻辑与底层执行环境可靠性；该文提供系统级工程实践锚点，支撑computer-use agents和browser agents在真实硬件上的稳定部署，属于P0中'computer-use agents'和'production evaluation'的隐性基础设施上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

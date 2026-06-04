@@ -1,0 +1,36 @@
+{
+  "id": "rss:deepmind-blog-20260604-006",
+  "title": "Opening new paths in aging research",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
+  "url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
+  "author": null,
+  "published_at": "2026-05-16T08:08:44+00:00",
+  "collected_at": "2026-06-04T11:19:05.678966+00:00",
+  "summary": "DeepMind 博客介绍 Calico 使用 Co-Scientist（一种AI科研代理系统）整合碎片化衰老研究文献并生成新假设，展示了多步推理、跨源知识连接与假设生成的agent工作流，对用户构建data-agents和agent-systems具有参考架构与工具链设计启发。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "科研场景中，agent可作为‘认知协作者’完成文献关联、假设生成与实验路径建议，其核心不在单模型能力，而在结构化任务编排与领域知识注入机制。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接体现P0必学项'data agents'与'agent engineering'在真实科研场景中的落地范式，虽未公开代码/架构细节，但提供了高信噪比的agent设计意图、任务分解逻辑与评估信号（如'lead generation quality'），契合用户构建技术情报系统的长期目标。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

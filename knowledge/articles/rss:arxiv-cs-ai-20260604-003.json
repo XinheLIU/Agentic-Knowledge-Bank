@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260604-003",
+  "title": "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.04037",
+  "url": "https://arxiv.org/abs/2606.04037",
+  "author": "Thanh Luong Tuan, Abhijit Sanyal",
+  "published_at": "2026-06-04T04:00:00+00:00",
+  "collected_at": "2026-06-04T11:19:03.598638+00:00",
+  "summary": "提出基于本体的AI代理预部署验证框架，含操作边界定义、本体驱动场景生成和可信证书机制，在金融、医疗等强监管领域验证显著提升监管覆盖度，为用户构建生产级agent系统提供可落地的评估与认证方法论。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "本体建模比persona建模更能系统化生成高保真、高覆盖率的合规测试场景，是agent工程中面向生产可信性的关键基础设施。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接对应用户P0必学项中的'production evaluation'及学习路线中的'evaluation'轨道；其ontology-grounded simulation方法可融入LangGraph workflow验证层，且Trust Certificate设计对构建可信agent harness具有架构参考价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}

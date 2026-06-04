@@ -1,0 +1,36 @@
+{
+  "id": "rss:the-decoder-20260604-012",
+  "title": "AI can now coach amateur virologists, and top tech leaders want Congress to act on DNA security",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/ai-can-now-coach-amateur-virologists-and-top-tech-leaders-want-congress-to-act-on-dna-security/",
+  "url": "https://the-decoder.com/ai-can-now-coach-amateur-virologists-and-top-tech-leaders-want-congress-to-act-on-dna-security/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-06-04T10:07:51+00:00",
+  "collected_at": "2026-06-04T11:19:14.858792+00:00",
+  "summary": "报道AI系统已能指导业余病毒学家执行实验操作，并引发顶级AI领袖呼吁立法监管合成DNA订购。虽具生物安全警示价值，但未披露技术实现细节（如agent架构、tool-use机制或评估方法），对用户P0必学的agent engineering实践帮助有限。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "AI代理能力已延伸至高危生物实验领域，凸显agent系统缺乏护栏时的真实世界风险。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容关联P0中的'agent engineering'和'production evaluation'——强调真实场景中agent能力边界与安全治理缺口，可作为构建负责任agent系统的反面案例和伦理评估上下文；但无代码、架构或工具链细节，不支持直接实践。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
