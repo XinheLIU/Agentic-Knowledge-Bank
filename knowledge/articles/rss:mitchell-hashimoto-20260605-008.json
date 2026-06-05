@@ -1,0 +1,36 @@
+{
+  "id": "rss:mitchell-hashimoto-20260605-008",
+  "title": "Advice for Tech Non-Profits",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/advice-for-tech-nonprofits",
+  "url": "https://mitchellh.com/writing/advice-for-tech-nonprofits",
+  "author": null,
+  "published_at": "2025-08-20T00:00:00+00:00",
+  "collected_at": "2026-06-05T11:31:59.822722+00:00",
+  "summary": "文章探讨技术型非营利组织在工程文化、开源协作与可持续性方面的实践建议，虽不直接讲AI agent技术，但其对构建长期可维护技术系统（如用户正在打造的个人技术智能系统）的组织设计、工具链治理和工程纪律有强隐喻价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "技术非营利的工程可持续性模式，为个人技术智能系统的长期演进提供组织级隐喻和架构纪律参照。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统（P0目标），需兼顾工程可持续性、模块化治理与长期维护——该文虽非AI技术教程，但提供了高度相关的系统性工程实践心智模型，匹配 learning_track: engineering-leadership 和 P1 中的 engineering architecture 背景需求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "implementation-pattern",
+    "architecture-reference"
+  ]
+}

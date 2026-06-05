@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260605-005",
+  "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+  "author": null,
+  "published_at": "2026-06-04T18:57:45+00:00",
+  "collected_at": "2026-06-05T11:31:58.006440+00:00",
+  "summary": "Nemotron 3.5 提供可定制的多模态内容安全模型，支持企业级AI部署中的细粒度风险分类与策略干预。对用户构建生产级agent系统具有直接参考价值，尤其在tool-use安全护栏、browser/computer-use agent的内容过滤集成及RAG知识注入前的安全预检环节。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "内容安全不是后置过滤，而是可插拔、可编排的agent系统组件，需与tool-use和workflow引擎（如LangGraph）深度协同。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含tool-use、browser agents、computer-use agents和production evaluation；该文提供工业级安全机制实现细节，可映射到LangGraph节点安全钩子、MCP合规工具封装、RAG知识清洗前置策略等具体实践路径。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

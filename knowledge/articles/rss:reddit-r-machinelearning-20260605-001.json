@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260605-001",
+  "title": "On-policy distillation: one of the hottest terms on PapersWithCode [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/",
+  "author": "/u/NielsRogge",
+  "published_at": "2026-06-04T12:40:48+00:00",
+  "collected_at": "2026-06-05T11:31:52.420328+00:00",
+  "summary": "On-policy distillation（OPD）是一种针对LLM推理轨迹中局部错误进行精准修正的后训练技术，通过注入提示令牌引导模型降低错误token概率，提升agent决策鲁棒性，对构建高可靠性tool-use和computer-use agent具直接工程参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "OPD将稀疏、延迟的终局奖励转化为细粒度、即时的轨迹级监督信号，是提升agent工具调用准确性的关键post-training范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含tool-use、computer-use agents及production evaluation；OPD直击agent在长程推理中因单步错误导致失败的核心痛点，且原文提供paper链接、白板讲解视频和PwC结构化方法页，具备paper-to-code与implementation-pattern双重价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}
