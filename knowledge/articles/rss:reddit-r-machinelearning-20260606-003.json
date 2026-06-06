@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260606-003",
+  "title": "How do you identify researchers who are good? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1txlxm6/how_do_you_identify_researchers_who_are_good_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1txlxm6/how_do_you_identify_researchers_who_are_good_d/",
+  "author": "/u/roguejedi1",
+  "published_at": "2026-06-05T14:04:59+00:00",
+  "collected_at": "2026-06-06T10:09:13.325409+00:00",
+  "summary": "该 Reddit 讨论聚焦于如何从技术实质（如代码透明度、可复现性、问题定义深度、跨领域迁移能力）而非指标（h-index）或机构光环识别真正扎实的 AI 研究者，对用户构建技术判断力与研究型 agent 设计中的可信信源评估能力有直接启发。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "识别优质研究者的核心是考察其技术诚实性——是否公开方法细节、承认局限、推动可复现实践，而非依赖权威背书。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术情报系统，需建立高质量信源筛选机制；本帖虽为讨论形式，但密集呈现一线实践者的技术甄别标准（如阅读代码比读摘要更重要、关注 arXiv 更新频率与实验日志完整性），可直接转化为 agent 的 researcher-evaluation tool 设计逻辑。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:fabien-sanglard-20260606-011",
+  "title": "Watching sunsets",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/sunset/index.html",
+  "url": "https://fabiensanglard.net/sunset/index.html",
+  "author": null,
+  "published_at": "2024-08-18T00:00:00+00:00",
+  "collected_at": "2026-06-06T10:09:25.179230+00:00",
+  "summary": "Fabien Sanglard 的技术博客文章《Watching sunsets》以系统性视角剖析了大型软件项目中技术债务积累与架构衰变的可视化模式，虽非直接讲AI agent，但其对'可观测性驱动的系统演化分析'方法论可迁移至agent系统监控、langgraph workflow健康度评估等P0主题。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将软件夕阳现象建模为可观测指标退化曲线，为agent系统长期运维与评估提供跨领域隐喻和诊断框架。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需建立production evaluation与agent-systems的长期健康度认知框架；该文提供非AI领域但高度适配的系统演化分析范式，可支撑rag-knowledge-systems中‘经验沉淀’与evaluation track中的‘decay-aware monitoring’设计。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

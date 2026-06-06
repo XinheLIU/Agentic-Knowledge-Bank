@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260606-002",
+  "title": "South Korean forums will need to scan every images with AI censorship tools",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+  "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+  "author": "Cider9986",
+  "published_at": "2026-06-04T23:45:56+00:00",
+  "collected_at": "2026-06-06T10:09:12.574193+00:00",
+  "summary": "韩国强制要求论坛对所有上传图片使用AI审查工具，涉及实时图像识别、内容策略集成与合规性工程，可作为agent-systems中computer-use agent与policy-enforcement agent的现实用例参考。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "政策驱动的AI系统落地常倒逼多模态agent与工具链协同设计，是理解production agent边界与约束的关键案例。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "虽非直接教程或代码库，但提供了agent engineering在真实监管场景下的系统级约束（实时扫描、多图并发、策略嵌入），契合P0中'computer-use agents'与'agent engineering'目标，并支撑'agent-systems'学习路线中的生产约束建模。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "computer-use"
+  ]
+}

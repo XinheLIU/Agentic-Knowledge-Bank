@@ -1,0 +1,36 @@
+{
+  "id": "rss:the-decoder-20260606-012",
+  "title": "SpaceX signs $920 million per month deal with Google for 110,000 Nvidia AI chips ahead of IPO",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/spacex-signs-920-million-per-month-deal-with-google-for-110000-nvidia-ai-chips-ahead-of-ipo/",
+  "url": "https://the-decoder.com/spacex-signs-920-million-per-month-deal-with-google-for-110000-nvidia-ai-chips-ahead-of-ipo/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-06-06T07:57:41+00:00",
+  "collected_at": "2026-06-06T10:09:26.664842+00:00",
+  "summary": "SpaceX向Google出租11万块NVIDIA AI芯片，月租9.2亿美元，凸显AI算力稀缺性与基础设施即服务趋势；对用户构建生产级agent系统有架构启示，但无具体技术实现细节。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "intermediate",
+  "relevance_score": 0.4,
+  "category": "deployment",
+  "key_insight": "大规模AI系统正推动算力成为可租赁的基础设施层，影响agent系统的弹性部署与成本建模。",
+  "personal_fit_score": 0.4,
+  "technical_depth_score": 0.3,
+  "actionability_score": 0.2,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属于宏观产业动态，未涉及agent engineering、LangGraph、tool-use等P0必学主题的技术机制、代码、架构或评估方法；虽暗示算力对agent系统规模化的影响，但无实操价值或学习路径映射。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "business-context",
+  "learning_tags": [
+    "business-context"
+  ]
+}

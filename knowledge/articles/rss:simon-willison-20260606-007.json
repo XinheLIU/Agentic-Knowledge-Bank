@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260606-007",
+  "title": "micropython-wasm 0.1a2",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-06T04:26:06+00:00",
+  "collected_at": "2026-06-06T10:09:18.178005+00:00",
+  "summary": "MicroPython-WASM 0.1a2 发布 CLI 工具，支持在 WebAssembly 沙箱中运行 MicroPython，为轻量级、安全的 agent 执行环境提供新范式，对构建 browser agents 和 computer-use agents 的沙箱化执行层有直接参考价值。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "WASM 沙箱可作为 agent 执行的轻量级、跨平台、隔离化 runtime 基础设施，补全 browser/computer-use agent 的安全执行链路。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 browser agents 和 computer-use agents，而 WASM 沙箱是其实现安全、可控、无依赖执行的关键基础设施；CLI 工具和可复现沙箱示例具备 agent-harness 实践价值，匹配 learning_track 'agent-systems' 和 learning_tags 'agent-harness'。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
