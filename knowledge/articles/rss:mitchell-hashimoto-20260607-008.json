@@ -1,0 +1,37 @@
+{
+  "id": "rss:mitchell-hashimoto-20260607-008",
+  "title": "\"As Code\"",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/as-code",
+  "url": "https://mitchellh.com/writing/as-code",
+  "author": null,
+  "published_at": "2025-03-04T00:00:00+00:00",
+  "collected_at": "2026-06-07T10:32:15.362520+00:00",
+  "summary": "文章提出将基础设施、安全策略、AI系统编排等统一抽象为可版本化、可测试、可协作的代码范式（'As Code'），对构建生产级agent系统具有架构设计启示，尤其契合用户学习路线中agent-systems与engineering-leadership的交叉需求。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI系统工程化的本质不是堆砌工具链，而是建立可声明、可验证、可演进的代码化契约。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击用户P0必学项'agent engineering'与'production evaluation'的底层范式问题，提供从LangGraph工作流到真实部署环境的衔接视角，且作者为Terraform创始人，其'as code'方法论对构建可维护agent harness有强参考性。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

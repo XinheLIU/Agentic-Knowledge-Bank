@@ -1,0 +1,36 @@
+{
+  "id": "rss:eli-bendersky-20260607-009",
+  "title": "Thoughts on starting new projects with LLM agents",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/thoughts-on-starting-new-projects-with-llm-agents/",
+  "url": "https://eli.thegreenplace.net/2026/thoughts-on-starting-new-projects-with-llm-agents/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-06-07T00:38:00+00:00",
+  "collected_at": "2026-06-07T10:32:20.875546+00:00",
+  "summary": "作者分享用LLM agent成功重构Python项目的实战经验，强调agent在真实工程维护中的可行性与稳定性，为学习者提供可复现的agent-harness实践范例。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "LLM agent的价值不在于炫技，而在于可持续交付和可维护性——这是agent engineering learner构建技术智能系统的本质目标。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直接对应P0必学项'agent engineering'和'production evaluation'，且源自真实项目重构（非demo），具备agent-harness、tool-use、maintenance-aware workflow等关键学习信号，匹配learning_track 'agent-systems' 和 learning_tags 'agent-harness'。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

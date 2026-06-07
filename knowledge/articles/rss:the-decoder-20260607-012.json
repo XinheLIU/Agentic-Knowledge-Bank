@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260607-012",
+  "title": "Perplexity's \"Search as Code\" lets AI models write their own search pipelines instead of calling fixed APIs",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/perplexitys-search-as-code-lets-ai-models-write-their-own-search-pipelines-instead-of-calling-fixed-apis/",
+  "url": "https://the-decoder.com/perplexitys-search-as-code-lets-ai-models-write-their-own-search-pipelines-instead-of-calling-fixed-apis/",
+  "author": "Jonathan Kemper",
+  "published_at": "2026-06-07T10:28:33+00:00",
+  "collected_at": "2026-06-07T10:32:22.967951+00:00",
+  "summary": "Perplexity提出'搜索即代码'架构，允许AI模型在沙箱中用Python动态编写搜索流水线，替代固定API调用，显著提升检索质量并降低85% token成本，对构建可编程、自适应的数据代理（data agents）具有直接参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将搜索能力从黑盒API解耦为可编程、可验证、可优化的模块，是数据代理工程范式的关键跃迁。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击用户P0必学项'data agents'与'agent engineering'，展示真实生产级代理如何实现动态工具编排与内省式检索流程控制，且具备langgraph兼容潜力（如作为CustomNode或StatefulTool），属于高价值实践范式而非概念炒作。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "agent-harness",
+    "data-agent"
+  ]
+}

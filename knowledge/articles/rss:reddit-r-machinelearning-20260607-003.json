@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260607-003",
+  "title": "ML reading group to read recent interesting and trending papers from ICML/ICLR/NeurIPS [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tyy0vj/ml_reading_group_to_read_recent_interesting_and/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tyy0vj/ml_reading_group_to_read_recent_interesting_and/",
+  "author": "/u/Ok_Access_9159",
+  "published_at": "2026-06-07T00:58:14+00:00",
+  "collected_at": "2026-06-07T10:32:07.551536+00:00",
+  "summary": "该 Reddit 帖子发起一个聚焦可解释性与鲁棒性的 ML 论文阅读小组，覆盖 ICML/ICLR/NeurIPS 等顶会新论文，适合深入理解前沿 ML 方法论，对用户补全 ML-RL 基础、支撑 RAG/agent 系统的评估与可靠性设计有间接但扎实的价值。",
+  "tags": [
+    "llm"
+  ],
+  "status": "review",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "高质量论文精读是构建技术判断力和系统性评估能力的核心训练方式，尤其对 agent 系统中鲁棒性、可解释性等 P0 评估维度提供底层方法论支撑。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户学习路线明确包含 ml-rl-foundations 轨道，且 P0 中 'production evaluation' 需要扎实的 ML 基础（如鲁棒性、可解释性）；该阅读组虽非 agent 专属，但提供高价值 paper-to-code 和深度讨论场景，契合 'high-value source: paper, benchmark' 偏好。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "paper-to-code",
+    "research-method"
+  ]
+}

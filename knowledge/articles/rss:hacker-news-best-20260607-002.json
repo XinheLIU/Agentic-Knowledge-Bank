@@ -1,0 +1,36 @@
+{
+  "id": "rss:hacker-news-best-20260607-002",
+  "title": "Ask HN: Why is the HN crowd so anti-AI?",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://news.ycombinator.com/item?id=48420827",
+  "url": "https://news.ycombinator.com/item?id=48420827",
+  "author": "Ekami",
+  "published_at": "2026-06-06T02:31:51+00:00",
+  "collected_at": "2026-06-07T10:32:06.372630+00:00",
+  "summary": "该HN讨论揭示了AI工程实践中‘执行速度 vs 代码优雅’的核心权衡，对构建生产级agent系统的学习者具有重要认知价值：强调快速迭代、真实反馈闭环和AI-assisted交付范式，呼应langgraph工作流与evaluation优先的实践哲学。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "在agent系统工程中，端到端交付速度与用户价值验证效率，比单点代码质量更决定系统成败。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽为讨论帖而非教程，但精准锚定P0必学项'agent engineering'与'production evaluation'的认知前提——即为何需构建可快速部署、反馈驱动的agent系统；其观点直接支撑langgraph-workflows和evaluation学习轨道中的工程价值观建设。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

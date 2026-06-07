@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260607-005",
+  "title": "Her · हेर — a detective for your Claude Code sessions",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+  "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+  "author": null,
+  "published_at": "2026-06-07T10:13:41+00:00",
+  "collected_at": "2026-06-07T10:32:13.417693+00:00",
+  "summary": "Her 是一个专为 Claude 代码会话设计的轻量级调试与分析工具，提供会话级 trace 可视化和行为审计能力，帮助开发者理解 agent 内部调用链与工具使用模式，对构建可观察、可调试的 agent 系统具有直接实践参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将 LLM 会话转化为可观测、可审计的工程对象，是 production-grade agent system 的关键中间件能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户当前聚焦 agent engineering 和 langgraph-workflows，Her 提供了真实 agent 会话 trace 分析的轻量实现范式，属于 P0 必学中 'agent engineering' 与 'evaluation' 的交叉实践点，且来源为 Hugging Face 官方博客（高可信教程类 blog），含可复现机制。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}
