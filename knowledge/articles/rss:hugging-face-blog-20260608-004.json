@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260608-004",
+  "title": "Building Pakistan Notice Helper: A Small AI Tool for a Very Local Safety Problem",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+  "url": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+  "author": null,
+  "published_at": "2026-06-08T11:46:56+00:00",
+  "collected_at": "2026-06-08T12:37:46.422274+00:00",
+  "summary": "该博客介绍了使用Hugging Face生态构建面向巴基斯坦本地法律通知场景的轻量AI助手，涵盖LLM调用、结构化输出、规则增强与本地化部署实践，对用户构建data-agent和agent-harness有直接参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "小规模、强上下文约束的agent设计比通用能力更考验tool-use与domain-grounding能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容聚焦真实agent落地（notice parsing + action triggering），覆盖tool-use、local model integration、domain-specific output structuring，契合P0中'agent engineering'与'data agents'目标，且来源为Hugging Face官方博客，具备tutorial与reference-architecture双重属性。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

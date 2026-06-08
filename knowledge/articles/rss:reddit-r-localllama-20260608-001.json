@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260608-001",
+  "title": "Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harness.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/",
+  "author": "/u/knob-0u812",
+  "published_at": "2026-06-08T03:06:48+00:00",
+  "collected_at": "2026-06-08T12:37:44.537154+00:00",
+  "summary": "展示Gemma4-31B-FP8在本地agent harness中与Sonnet-4.6-medium性能相当，并实测了Cypher图查询、实体抽取、工具调用、代码生成和多向量合成等典型agent能力，为AI/agent engineering learner提供可复现的轻量级生产级agent系统参考。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "FP8量化大模型可在消费级硬件上支撑完整tool-use+graph+RAG+code agent pipeline，验证了本地化智能体系统的可行性边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直接覆盖用户P0必学项中的'agent engineering'、'tool-use'、'browser agents'（隐含于harness）、'data agents'及'local-model-serving'，且以真实harness实现为载体，具备高行动性与架构参考价值。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "rss:mitchell-hashimoto-20260608-007",
+  "title": "Welcoming Ghostty Subsystem Maintainers",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/ghostty-subsystem-maintainers",
+  "url": "https://mitchellh.com/writing/ghostty-subsystem-maintainers",
+  "author": null,
+  "published_at": "2025-02-07T00:00:00+00:00",
+  "collected_at": "2026-06-08T12:37:48.368060+00:00",
+  "summary": "Hashimoto 宣布 Ghostty 子系统维护者计划，强调可扩展终端子系统架构、模块化设计与协作治理机制，对构建可维护的 agent harness 和本地工具链集成具有参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "终端子系统抽象是 computer-use agent 的关键基础设施层，其模块化治理模式可迁移至 agent harness 设计。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建 personal technical intelligence system，P0 明确包含 computer-use agents；Ghostty 的子系统抽象、插件接口与维护者模型为 agent-harness 和 tool-use 架构提供轻量级、可复用的工程范式。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

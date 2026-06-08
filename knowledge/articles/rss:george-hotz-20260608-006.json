@@ -1,0 +1,37 @@
+{
+  "id": "rss:george-hotz-20260608-006",
+  "title": "Stairway to Heaven",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/06/07/stairway-to-heaven.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/06/07/stairway-to-heaven.html",
+  "author": null,
+  "published_at": "2026-06-07T07:00:00+00:00",
+  "collected_at": "2026-06-08T12:37:47.628052+00:00",
+  "summary": "George Hotz以讽刺笔法剖析LLM作为编程分布拟合器的本质，指出其输出‘破碎但难以察觉’的演化趋势，呼应agent系统中模型不可靠性与鲁棒性评估的核心挑战，对用户构建生产级agent intelligence系统具警示与方法论启发。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "LLM的‘越来越难察觉的破碎’正是agent系统在tool-use和error-recovery中必须建模与测试的根本属性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'production evaluation'的认知底层——将LLM行为建模为统计失真过程，为设计robust agent harness、langgraph error-handling策略及evaluation benchmark提供哲学锚点与问题意识。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}
