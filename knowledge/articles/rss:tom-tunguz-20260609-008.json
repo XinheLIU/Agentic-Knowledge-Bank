@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260609-008",
+  "title": "The Substitution Wave in AI",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/inflation-deflation-ai/",
+  "url": "https://www.tomtunguz.com/inflation-deflation-ai/",
+  "author": null,
+  "published_at": "2026-06-07T00:00:00+00:00",
+  "collected_at": "2026-06-09T11:21:43.349505+00:00",
+  "summary": "本文系统分析AI成本结构中的'替代浪潮'：闭源前沿模型涨价 vs 开源模型达'够用阈值'，驱动企业级智能系统转向模型路由、后训练与本地化部署。对用户构建生产级agent系统具有直接的架构选型与成本优化指导价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "AI买家不再在'贵而强'和'廉而弱'间二选一，而是在'智能密度-单位成本'曲线上动态滑动——这要求agent系统具备模型感知、路由决策与轻量微调能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击用户P0必学项'agent engineering'与'production evaluation'的核心挑战：如何在真实成本约束下设计鲁棒agent系统；同时支撑'local-model-serving'学习路线，提供Coinbase/Lindy/Harvey等可复现的工程实践锚点。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

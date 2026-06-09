@@ -1,0 +1,35 @@
+{
+  "id": "rss:deepmind-blog-20260609-006",
+  "title": "Uniting biological toolkits for a new approach to ALS",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/uniting-biological-toolkits-for-a-new-approach-to-als/",
+  "url": "https://deepmind.google/blog/uniting-biological-toolkits-for-a-new-approach-to-als/",
+  "author": null,
+  "published_at": "2026-05-16T07:53:11+00:00",
+  "collected_at": "2026-06-09T11:21:41.953827+00:00",
+  "summary": "该博客介绍DeepMind与波士顿儿童医院、MIT合作，利用多生物学工具探索RNA靶向ALS治疗，属AI for Science交叉研究；虽不直接涉及agent工程或RAG系统，但展示了AI系统级协作范式与跨领域toolkit集成思路，对理解agent-harness设计哲学和multi-tool orchestration有隐喻价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "intermediate",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "AI系统价值不仅在于单点模型能力，更在于可组合、可验证、跨域协同的toolkit编排能力。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.25,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容聚焦生物医学AI应用，无agent engineering、LangGraph、tool-use、RAG或评估等P0必学主题的技术机制、代码、架构或工作流；不属于用户学习路线中的任何核心track，仅提供间接的系统协作隐喻，无实操迁移路径。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "background",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

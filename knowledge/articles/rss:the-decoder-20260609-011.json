@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260609-011",
+  "title": "Apple Intelligence gets a second shot with help from Google and Nvidia",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/apple-intelligence-gets-a-second-go-with-the-help-of-google-and-nvidia/",
+  "url": "https://the-decoder.com/apple-intelligence-gets-a-second-go-with-the-help-of-google-and-nvidia/",
+  "author": "Maximilian Schreiner",
+  "published_at": "2026-06-09T11:15:23+00:00",
+  "collected_at": "2026-06-09T11:21:51.867148+00:00",
+  "summary": "Apple 与 Google 合作开发 Siri 新基础模型，并引入 Nvidia GPU 加速复杂查询处理。虽属行业动态，但未披露 agent 架构、tool-use 或 workflow 实现细节，技术深度有限，仅提供高层系统协作范例。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "llm",
+  "key_insight": "大厂联合构建端云协同智能体需跨厂商模型与硬件协同，但落地依赖具体 agent harness 和 tool orchestration 能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容涉及 agent 系统的现实部署形态（端云协同、多厂商模型集成），虽无代码或架构图，但可作为 engineering-leadership 和 agent-systems 学习中的高价值上下文案例，帮助理解 production-grade agent 系统的生态约束与协作模式。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "business-context"
+  ]
+}

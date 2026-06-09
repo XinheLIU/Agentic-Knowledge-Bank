@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260609-002",
+  "title": "Me: Arguing with an AI bot who just posted something on this sub about Llama 3.1.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0ixu0/me_arguing_with_an_ai_bot_who_just_posted/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0ixu0/me_arguing_with_an_ai_bot_who_just_posted/",
+  "author": "/u/Porespellar",
+  "published_at": "2026-06-08T19:57:46+00:00",
+  "collected_at": "2026-06-09T11:21:39.885481+00:00",
+  "summary": "该 Reddit 帖子以幽默方式揭示了当前 LLM/agent 系统在时效性、工具调用（如 web search）和上下文感知上的典型缺陷，对学习者理解 agent engineering 中的 tool-use、stateful reasoning 和 real-world failure 模式具启发意义。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真实用户与 AI 交互中的失败案例是诊断 agent 工具链设计缺陷的天然 benchmark。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽为社区讨论，但精准锚定 P0 必学项 'tool-use' 和 'browser agents' 的核心痛点（缺失 web search），且可作为后续构建 evaluation 或 langgraph workflow 的反例素材；符合高价值来源中 'benchmark' 的隐含信号。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260609-005",
+  "title": "Multimedia Building Blocks",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+  "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+  "author": null,
+  "published_at": "2026-06-09T10:46:19+00:00",
+  "collected_at": "2026-06-09T11:21:41.430589+00:00",
+  "summary": "本文介绍 Hugging Face Spaces 中构建多媒体代理（Spaces Agents）的模块化方法，涵盖工具集成、状态管理与用户交互模式，为 AI/agent engineering 学习者提供可复用的 agent-harness 实践范例。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Spaces Agents 是轻量级、可组合的 agent-harness 实现，弥合了原型开发与生产级 agent 工程之间的抽象鸿沟。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直接覆盖 P0 必学项 'agent engineering' 和 'browser agents'，以 Spaces 为载体演示 tool-use、stateful interaction 与多模态响应集成，属于高价值 tutorial+documentation 混合来源，匹配 learning_track 'agent-systems' 和 learning_tags 'agent-harness'、'langgraph'（因 Spaces Agents 支持 LangGraph 集成）。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

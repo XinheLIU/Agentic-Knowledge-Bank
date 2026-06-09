@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260609-003",
+  "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.07549",
+  "url": "https://arxiv.org/abs/2606.07549",
+  "author": "Chengyang Zhang, Wenchuan Zhang, Bo Li, Mengran Li, Bob Zhang, Yuhao Yi, Hong Bu, Jiancheng Lv",
+  "published_at": "2026-06-09T04:00:00+00:00",
+  "collected_at": "2026-06-09T11:21:40.419294+00:00",
+  "summary": "PathoSage提出三阶段证据裁决框架，分离检索、收集与 adjudication，通过结构化证据审议和无训练的Beta-Bernoulli经验系统提升病理多模态推理鲁棒性，对用户构建高可靠性agent workflow具直接参考价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "显式证据裁决（evidence adjudication）和工具可靠性建模是构建抗幻觉、抗冲突的生产级agent核心机制。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "该论文直击P0必学项'agent engineering'与'evaluation'中的关键痛点——证据冲突、上下文污染与工具不可靠性；其Structured Evidence Deliberation与Beta-Bernoulli经验系统为LangGraph工作流设计、tool-use可靠性建模及production evaluation提供可复用的架构范式。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}
