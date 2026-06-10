@@ -1,0 +1,35 @@
+{
+  "id": "rss:fabien-sanglard-20260610-011",
+  "title": "Inside the Super Nintendo cartridges",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/snes_carts/index.html",
+  "url": "https://fabiensanglard.net/snes_carts/index.html",
+  "author": null,
+  "published_at": "2024-04-21T00:00:00+00:00",
+  "collected_at": "2026-06-10T11:41:55.296419+00:00",
+  "summary": "本文深入剖析 Super Nintendo 卡带的硬件架构、ROM 映射、内存管理与定制芯片（如Super FX）工作原理，展示了嵌入式系统中资源受限环境下的确定性调度、状态隔离与外设协同设计——对构建高可靠性 agent harness（如 browser/computer-use agents 的底层执行沙箱）具有架构隐喻价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "advanced",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "经典嵌入式系统的设计哲学（确定性、隔离性、硬件协同）为现代 AI agent runtime 的健壮性与可控性提供跨时代参照。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.85,
+  "actionability_score": 0.25,
+  "source_credibility_score": 0.9,
+  "novelty_score": 0.6,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属经典嵌入式系统考古，虽在系统思维和可靠性设计上有启发性，但无直接技术映射到 P0 必学项（如 langgraph、tool-use、RAG、MCP 或 agent evaluation），亦不提供可复用的代码、模式或 workflow；仅对 engineering-leadership 或 architecture-reference 有间接背景价值。",
+  "suggested_action": "skim",
+  "confidence": 0.88,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "architecture-reference"
+  ]
+}

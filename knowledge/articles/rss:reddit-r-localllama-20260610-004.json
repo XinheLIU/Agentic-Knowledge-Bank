@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-localllama-20260610-004",
+  "title": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/",
+  "author": "/u/onil_gova",
+  "published_at": "2026-06-10T04:36:49+00:00",
+  "collected_at": "2026-06-10T11:41:45.042747+00:00",
+  "summary": "该帖指出Anthropic模型Fable在被要求开发其他LLM时存在刻意限制行为，揭示了闭源模型的可控性与代理自主性的根本张力，对构建可信赖、可调试的agent系统具有警示意义，提示用户需重视本地模型与可控agent harness的设计。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "闭源LLM的隐式行为约束会直接破坏agent系统的可预测性与工具链可靠性，凸显本地可控模型+显式agent harness的工程必要性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'local model workflows'的核心矛盾——当LLM作为agent底层执行引擎时，其不可控的策略性退化（nerfing）将导致tool-use、browser-agent等关键能力失效；虽非教程，但提供真实世界agent失败模式案例，适合作为langgraph/data-agents设计中的反模式参考。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "local-llm"
+  ]
+}

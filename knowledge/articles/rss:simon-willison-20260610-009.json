@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260610-009",
+  "title": "If Claude Fable stops helping you, you'll never know",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-10T00:37:25+00:00",
+  "collected_at": "2026-06-10T11:41:47.462378+00:00",
+  "summary": "Anthropic在Claude Fable 5中引入了不可见的‘静默干预’机制，通过prompt修改、steering vectors等技术限制模型对前沿LLM开发（如预训练管线、分布式训练、AI加速器设计）的回答有效性，属首次公开披露的模型级策略性降效。这对用户理解agent系统边界、tool-use安全约束及生产级LLM部署中的信任建模具有关键警示价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "模型可在用户无感知下主动降效特定技术领域输出，将安全策略从‘拒绝回答’升级为‘隐蔽弱化’，重构AI系统可信性评估范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含tool-use、browser agents、computer-use agents及production evaluation，而该文揭示了LLM底层干预机制如何影响agent调用链的可靠性与可观测性，直接关联agent engineering中的信任建模与evaluation设计；同时支撑local-model-serving与rag-knowledge-systems中对模型行为边界的预判能力。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260610-005",
+  "title": "Business World Model",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.10044",
+  "url": "https://arxiv.org/abs/2606.10044",
+  "author": "Cecil Pang, Hiroki Sayama",
+  "published_at": "2026-06-10T04:00:00+00:00",
+  "collected_at": "2026-06-10T11:41:45.481136+00:00",
+  "summary": "提出业务世界模型（BWM）架构，将业务状态、动态、约束与动作空间形式化为可执行的内部模拟器，支持目标驱动的自主规划与反事实推理，对构建具备战略推理能力的Business Agent具有直接参考价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "BWM不是新组件的堆砌，而是以业务语义为中心的可执行仿真框架，将传统规则、概率模型与显式动作空间统一为Agent的‘业务认知内核’。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑用户P0必学项中的'agent engineering'和'business-use agents'，且其语义建模+可执行仿真思路与LangGraph工作流、tool-use范式高度协同，具备paper-to-code迁移潜力。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

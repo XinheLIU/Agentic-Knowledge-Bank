@@ -1,0 +1,37 @@
+{
+  "id": "rss:mitchell-hashimoto-20260610-010",
+  "title": "Ghostty 1.0 is Coming",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/ghostty-is-coming",
+  "url": "https://mitchellh.com/writing/ghostty-is-coming",
+  "author": null,
+  "published_at": "2024-10-22T00:00:00+00:00",
+  "collected_at": "2026-06-10T11:41:49.372500+00:00",
+  "summary": "Ghostty 是一个新型终端模拟器，强调可扩展性与插件化架构，支持嵌入式脚本和外部工具集成。虽非 AI agent 专用框架，但其模块化设计、tool-use 接口范式及对本地进程控制的抽象，为构建 computer-use agents 和 agent-harness 提供了底层系统工程参考。",
+  "tags": [
+    "agent",
+    "tool-use"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "终端模拟器的插件化与进程控制抽象，可迁移为 computer-use agent 的底层 harness 设计模式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项包含 'computer-use agents' 和 'agent engineering'，Ghostty 的进程管理、插件协议与外部工具协同机制，构成典型的 agent-harness 实践案例，契合 learning_track 'agent-systems' 和 learning_tags 'agent-harness'。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}
