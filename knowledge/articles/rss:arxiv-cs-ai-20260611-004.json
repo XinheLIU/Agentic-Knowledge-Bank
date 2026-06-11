@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260611-004",
+  "title": "From Explicit Elements to Implicit Intent: A Predefined Library for Auditable Behavioral Inference",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.11207",
+  "url": "https://arxiv.org/abs/2606.11207",
+  "author": "Liu hung ming",
+  "published_at": "2026-06-11T04:00:00+00:00",
+  "collected_at": "2026-06-11T12:13:11.910158+00:00",
+  "summary": "SemantiClean 提出可审计的行为推断框架，通过四层语义元素库与反膨胀机制实现结构化信号提取，其LLM集成推理引擎强调sigma=0可复现性与元素级透明度，为数据代理（data agents）和生产级评估（evaluation）提供可落地的架构范式。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "将行为建模从黑盒预测转向可审计、可约束、可复现的显式语义元件系统，为AI agent决策链提供可追溯的评估基础设施。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑用户P0必学项中的'data agents'和'production evaluation'，其四层架构、anti-inflation机制及LLM-Integrated Semantic Inference Engine构成典型agent-harness + evaluation联合设计，且来源为arXiv论文，具备paper-to-code转化潜力。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}

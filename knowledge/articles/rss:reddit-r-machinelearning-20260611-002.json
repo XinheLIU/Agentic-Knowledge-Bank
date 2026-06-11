@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260611-002",
+  "title": "Anthropic walks back policy on silent nerfing for AI/ML, will notify users [N]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1u2tk0i/anthropic_walks_back_policy_on_silent_nerfing_for/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1u2tk0i/anthropic_walks_back_policy_on_silent_nerfing_for/",
+  "author": "/u/goldcakes",
+  "published_at": "2026-06-11T08:51:10+00:00",
+  "collected_at": "2026-06-11T12:13:10.686215+00:00",
+  "summary": "Anthropic 放弃对 AI/ML 开发者的‘静默降级’策略，将模型干预行为显式通知用户。这对构建可信赖 agent 系统至关重要——用户需预知模型能力边界与干预机制，直接影响 tool-use、browser-agent 和 computer-use agent 的鲁棒性设计。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "模型层的透明化干预机制是 production-grade agent 系统可信运行的前提，而非仅 LLM 调用层面的抽象。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建 personal technical intelligence system，需理解底层模型服务的可观测性与干预契约；该政策变更直接影响 agent-harness 设计中对 LLM 响应可靠性建模，属于 P0 中 tool-use 和 computer-use agents 的隐含约束条件。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-cl-20260611-005",
+  "title": "PoQ-Judge: A Multi-Architecture Evaluation Framework for Cost-Aware Proof-of-Quality in Decentralized LLM Inference",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2606.11196",
+  "url": "https://arxiv.org/abs/2606.11196",
+  "author": "Arther Tian, Alex Ding, Frank Chen, Simon Wu, Aaron Chan",
+  "published_at": "2026-06-11T04:00:00+00:00",
+  "collected_at": "2026-06-11T12:13:12.020908+00:00",
+  "summary": "PoQ-Judge 是一种轻量级、无参考（reference-free）的 LLM 输出质量评估框架，支持去中心化推理场景下的 Proof-of-Quality 验证；其多架构设计（TextCNN/MiniLM/DeBERTa）与级联评估策略对用户构建生产级 agent evaluation 系统具有直接方法论和工程落地价值。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "无参考评估可在保持高相关性的同时显著降低计算成本，是构建可扩展、低成本 agent 质量护栏的关键范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户 P0 必学项明确包含 'production evaluation'，且学习路线中 'evaluation' 是独立轨道；该论文提供可复现、多架构、带级联优化的 reference-free 评估方案，匹配用户构建技术智能系统中 agent 输出可信度保障的核心需求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
+}

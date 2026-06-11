@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260611-009",
+  "title": "The AI Glass Ceiling",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/upper-bound-corporate-ai/",
+  "url": "https://www.tomtunguz.com/upper-bound-corporate-ai/",
+  "author": null,
+  "published_at": "2026-06-10T00:00:00+00:00",
+  "collected_at": "2026-06-11T12:13:16.459553+00:00",
+  "summary": "文章提出AI发展存在‘玻璃天花板’，强调强模型需配合严格安全护栏与渐进式落地策略；对用户构建生产级agent系统有重要警示价值，提示需在能力释放与系统韧性间权衡。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "最强大的AI模型必须通过工程化护栏和分阶段部署来平衡能力释放与系统稳定性，这对agent系统的生产化设计具有核心指导意义。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击P0必学项中的'agent engineering'与'production evaluation'，以Claude Fable真实案例揭示高能力agent在真实系统（如Stripe Ruby迁移）中的部署约束、护栏设计与性能跃迁，提供agent-harness与production-lesson层面的关键上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "production-lesson"
+  ]
+}

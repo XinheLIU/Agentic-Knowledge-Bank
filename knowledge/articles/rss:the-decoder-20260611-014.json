@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260611-014",
+  "title": "Claude Fable 5: Anthropic admits \"wrong tradeoff\" after invisibly throttling rival AI researchers",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/claude-fable-5-anthropic-admits-wrong-tradeoff-after-invisibly-throttling-rival-ai-researchers/",
+  "url": "https://the-decoder.com/claude-fable-5-anthropic-admits-wrong-tradeoff-after-invisibly-throttling-rival-ai-researchers/",
+  "author": "Maximilian Schreiner",
+  "published_at": "2026-06-11T08:20:54+00:00",
+  "collected_at": "2026-06-11T12:13:24.384792+00:00",
+  "summary": "Anthropic承认在Claude API中对竞对研究人员实施隐形限流是错误权衡，涉及模型访问策略与公平性机制。对用户构建生产级agent系统有警示意义：需关注API治理、配额设计及agent调用链中的可靠性风险。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "API层的隐形限流会破坏agent系统的可预测性与可观测性，暴露了生产环境中‘信任边界’缺失的技术债务。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，P0必学项包含agent engineering和production evaluation；该事件揭示了真实世界agent调用链中API策略带来的隐性故障模式，属于production-lesson范畴，可补充evaluation与agent-harness学习路径。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "agent-harness",
+    "evaluation"
+  ]
+}
