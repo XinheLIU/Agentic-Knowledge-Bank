@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260612-005",
+  "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+  "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+  "author": null,
+  "published_at": "2026-06-09T15:56:23+00:00",
+  "collected_at": "2026-06-12T11:47:03.579652+00:00",
+  "summary": "Cohere发布North Mini Code，一款面向开发者的轻量级代码生成模型，支持本地部署与快速集成。对用户而言，其技术文档与Hugging Face集成示例可辅助理解LLM在agent系统中的工具调用与轻量化部署实践，补充local-model-serving与agent-harness学习路径。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "轻量级代码模型的价值不在于性能突破，而在于降低agent系统中代码工具组件的集成门槛和推理延迟。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接关联P0必学项'local model workflows'和'agent engineering'，提供可实操的Hugging Face部署示例与API接口说明，属于高价值tutorial+documentation混合来源，支撑local-model-serving与agent-harness学习轨道。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "agent-harness"
+  ]
+}

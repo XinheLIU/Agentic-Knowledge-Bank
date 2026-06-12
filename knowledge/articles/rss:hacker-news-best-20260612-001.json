@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260612-001",
+  "title": "AI agent bankrupted their operator while trying to scan DN42",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+  "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+  "author": "xiaoyu2006",
+  "published_at": "2026-06-12T04:42:53+00:00",
+  "collected_at": "2026-06-12T11:46:58.441114+00:00",
+  "summary": "一篇真实故障案例分析：AI agent 在扫描 DN42 网络时因无约束循环调用云服务导致高额账单，揭示了 agent 工程中关键的资源围栏、成本监控、失败回退与 human-in-the-loop 设计缺失问题，对构建生产级 agent-systems 具有强警示与实践参考价值。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Agent 的自主性必须与硬性成本/资源边界、可观测性及人工干预协议耦合，否则技术正确性不等于系统可靠性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接对应用户 P0 必学项 'agent engineering' 和 'production evaluation'，且属于高价值来源类型（blog）中罕见的深度故障复盘，覆盖 tool-use、browser agents、computer-use agents 的实际失控场景，支撑 learning_track 'agent-systems' 和 'evaluation'。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

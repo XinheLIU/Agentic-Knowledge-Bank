@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260612-002",
+  "title": "Why AI hasn't replaced software engineers, and won't",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+  "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+  "author": "trueduke",
+  "published_at": "2026-06-11T07:51:17+00:00",
+  "collected_at": "2026-06-12T11:46:58.443129+00:00",
+  "summary": "文章深入剖析AI未替代软件工程师的技术根源，强调系统设计、边界定义、跨层调试等工程能力不可替代性，对用户构建agent engineering和production evaluation能力有直接启发。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI替代的是编码执行环节，而非工程决策闭环——这正是agent系统需建模的核心能力边界。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'production evaluation'的本质挑战，提供系统级工程思维框架，支撑用户构建技术智能系统的底层认知，且具备高行动指导性（如调试策略、评估维度）。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

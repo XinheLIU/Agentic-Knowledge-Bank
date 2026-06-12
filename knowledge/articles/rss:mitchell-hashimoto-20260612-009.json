@@ -1,0 +1,35 @@
+{
+  "id": "rss:mitchell-hashimoto-20260612-009",
+  "title": "Tagged Union Subsets with Comptime in Zig",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/zig-comptime-tagged-union-subset",
+  "url": "https://mitchellh.com/writing/zig-comptime-tagged-union-subset",
+  "author": null,
+  "published_at": "2024-09-23T00:00:00+00:00",
+  "collected_at": "2026-06-12T11:47:05.313327+00:00",
+  "summary": "本文介绍 Zig 中使用编译时（comptime）实现带标签联合体子集的技术，提升类型安全与运行时效率。对用户构建高性能 agent harness 或底层工具链（如 browser/computer-use agents 的本地执行层）有参考价值，尤其在需精细控制内存与调度的 agent 工程场景中。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Comptime 类型计算可在编译期裁剪联合体变体，为 agent runtime 提供零开销、强类型的工具调用契约。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建 personal technical intelligence system，需深入理解 agent harness 的底层执行模型；Zig 的 comptime 能力可支撑高效、安全的 tool-use 和 computer-use agent 实现，属于 P0 'agent engineering' 与 'computer-use agents' 的底层机制延伸。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

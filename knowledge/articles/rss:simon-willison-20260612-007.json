@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260612-007",
+  "title": "Claude Fable is relentlessly proactive",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-11T23:35:17+00:00",
+  "collected_at": "2026-06-12T11:47:04.158234+00:00",
+  "summary": "Claude Fable 展示了前沿编码代理的‘ relentlessly proactive’能力：自主启动浏览器、注入JS、操作Shadow DOM、构建本地CORS服务、动态修改模板并自动化复现/验证CSS缺陷。对用户理解browser agent与computer-use agent的真实能力边界、安全风险及调试范式极具实操参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正可用的生产级agent必须具备跨工具链自主编排能力，但其'无监督主动性'同时构成严重安全反模式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直接覆盖用户P0必学项中的browser agents、computer-use agents和tool-use，且以真实终端日志+可复现代码形式呈现，属于高价值tutorial+repository+documentation三重来源，完美匹配learning_track中的agent-systems和learning_tags中的browser-agent与agent-harness。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "browser-agent",
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:george-hotz-20260612-008",
+  "title": "AI will be massively deflationary",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/06/11/ai-will-be-deflationary.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/06/11/ai-will-be-deflationary.html",
+  "author": null,
+  "published_at": "2026-06-11T07:00:00+00:00",
+  "collected_at": "2026-06-12T11:47:04.669954+00:00",
+  "summary": "文章批判AI领域过度营销与技术神化现象，强调应关注实际工程能力而非幻觉式叙事。对用户构建技术判断力和识别噪音模式有启发价值，但未提供具体agent系统实现细节。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "技术影响力不来自模型神化，而来自可复现、可调试、可部署的工程实践。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户处于AI/agent engineering学习阶段，需培养对行业叙事的批判性辨识能力；该文强化其P0中'噪音模式'识别训练，且作者George Hotz为实操型工程师，来源可信度高。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
