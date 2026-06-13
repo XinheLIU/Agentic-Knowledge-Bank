@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260613-006",
+  "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-13T01:01:50+00:00",
+  "collected_at": "2026-06-13T10:33:10.466271+00:00",
+  "summary": "美国政府以国家安全为由紧急叫停Fable 5/Mythos 5访问，暴露模型 jailbreak 与安全边界定义的技术张力；对AI工程学习者而言，这是理解生产级agent系统中安全约束、模型合规性与真实世界部署风险的鲜活案例。",
+  "tags": [
+    "llm",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "Jailbreak能力本身并非漏洞，而是模型推理能力在特定任务（如代码审计）上的涌现表现，其治理需区分能力、意图与上下文。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含production evaluation和agent engineering，而本事件直接关联agent系统在真实监管环境下的失效模式、模型可用性保障、以及tool-use场景（如自动代码审计）引发的安全判定逻辑，具备高实践警示价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:fabien-sanglard-20260613-009",
+  "title": "How the DevTeam conquered the iPhone",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/iSummer/index.html",
+  "url": "https://fabiensanglard.net/iSummer/index.html",
+  "author": null,
+  "published_at": "2024-01-21T00:00:00+00:00",
+  "collected_at": "2026-06-13T10:33:17.940941+00:00",
+  "summary": "本文详述了iPhone开发团队如何通过系统性工程实践（如工具链定制、自动化测试、跨层协作）攻克早期iOS开发挑战，虽非AI主题，但其agent-harness式工程思维、工具集成范式与复杂系统构建逻辑，对构建browser/computer-use agents及agent-systems有强类比价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "复杂智能体系统的成功依赖于底层工具链、可观测性与人机协作协议的深度耦合，而非仅模型能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需借鉴成熟复杂系统（如iPhone OS开发）中的agent-harness设计哲学、工具协同架构与生产级工程纪律，直接支撑P0中browser agents、computer-use agents和agent-systems学习路线。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

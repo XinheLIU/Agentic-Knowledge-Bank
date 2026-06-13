@@ -1,0 +1,36 @@
+{
+  "id": "rss:mitchell-hashimoto-20260613-008",
+  "title": "Conditionally Disabling Code with Comptime in Zig",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/zig-comptime-conditional-disable",
+  "url": "https://mitchellh.com/writing/zig-comptime-conditional-disable",
+  "author": null,
+  "published_at": "2024-09-12T00:00:00+00:00",
+  "collected_at": "2026-06-13T10:33:12.066133+00:00",
+  "summary": "本文详解 Zig 中 comptime 如何实现编译期条件代码禁用，强调类型安全与零开销抽象。虽非 AI/Agent 领域直接技术，但其编译期元编程范式对构建高可靠性 agent harness、tool-use 调度器及本地模型服务基础设施有重要启发。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "编译期条件控制是构建可验证、无运行时开销的 agent 执行层（如 tool-router 或 computer-use shim）的关键工程能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术智能系统，需扎实的底层系统工程能力；Zig 的 comptime 机制可迁移至 agent-harness 设计（如条件启用 browser-agent 或 computer-use 模块），支撑 production evaluation 与 local-model-serving 的可靠性需求。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

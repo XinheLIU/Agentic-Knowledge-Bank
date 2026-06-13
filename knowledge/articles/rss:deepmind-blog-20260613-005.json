@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260613-005",
+  "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+  "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/",
+  "author": null,
+  "published_at": "2026-06-09T14:10:19+00:00",
+  "collected_at": "2026-06-13T10:33:10.356000+00:00",
+  "summary": "Gemma 4 12B 是 DeepMind 推出的统一、无编码器的多模态大模型，支持文本、图像、音频联合理解，强调轻量部署与开源可复现性。对用户构建本地多模态 agent 系统（如 browser/computer-use agents）提供新型基础模型选择，但需自行适配 tool-use 和 workflow 集成。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "llm",
+  "key_insight": "Encoder-free multimodal design lowers inference latency and simplifies fine-tuning for agent tool orchestration, but lacks built-in RAG or MCP interfaces.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "虽属 LLM 层而非直接 agent 工作流内容，但作为 P0 中 'local model workflows' 和 'computer-use agents' 的潜在基础模型，具备高适配潜力；DeepMind 官方 blog 提供权威技术定位与开源线索，符合高价值来源（blog）中等层级，且无 hype 噪音。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "agent-harness"
+  ]
+}

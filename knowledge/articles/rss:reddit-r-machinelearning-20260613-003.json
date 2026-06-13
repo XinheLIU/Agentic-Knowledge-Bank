@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260613-003",
+  "title": "Unprofessional Coauthor Behavior with Hallucinated References [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1u4m3lz/unprofessional_coauthor_behavior_with/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1u4m3lz/unprofessional_coauthor_behavior_with/",
+  "author": "/u/treeman0469",
+  "published_at": "2026-06-13T09:07:27+00:00",
+  "collected_at": "2026-06-13T10:33:08.121624+00:00",
+  "summary": "该帖揭示LLM在学术写作中生成幻觉参考文献的风险，强调人工验证引用的必要性。对用户构建生产级agent系统有警示价值：tool-use和data-agent需内置引用校验机制，避免信任链断裂。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "LLM辅助写作中的引用幻觉本质是tool-use环节缺乏输入验证与输出审计，属于agent工程中的可靠性设计缺陷。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含tool-use、data-agents和evaluation，该案例直接暴露agent在引用生成场景下的failure mode，可转化为langgraph workflow中的validation node设计范例或evaluation checklist条目。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}
