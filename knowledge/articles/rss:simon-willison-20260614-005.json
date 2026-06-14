@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260614-005",
+  "title": "Publishing WASM wheels to PyPI for use with Pyodide",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-13T23:55:18+00:00",
+  "collected_at": "2026-06-14T10:51:21.840101+00:00",
+  "summary": "Pyodide 314.0 支持将 WebAssembly 轮子（WASM wheels）直接发布至 PyPI，大幅降低浏览器内 Python 生态扩展门槛；对构建 browser agents 和 computer-use agents 具有底层部署价值。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "WASM wheel 标准化使 Pyodide 成为可生产级的 agent 运行时载体，支持轻量、沙箱化、零安装的浏览器端 agent 执行。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户 P0 必学项包含 browser agents 和 computer-use agents，而 Pyodide + WASM wheels 是当前唯一成熟支持完整 Python 生态（含 C/Rust 扩展）在浏览器中运行的生产就绪方案；文中含完整 CI/CD（GitHub Actions + cibuildwheel）、wheel 构建、micropip 集成和 demo 部署链路，属 high-value tutorial+repository 类实践素材。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "browser-agent"
+  ]
+}

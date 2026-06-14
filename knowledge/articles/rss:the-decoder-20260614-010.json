@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260614-010",
+  "title": "KPMG fabricated AI case studies in a report designed to sell clients on AI adoption",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/kpmg-fabricated-ai-case-studies-in-a-report-designed-to-sell-clients-on-ai-adoption/",
+  "url": "https://the-decoder.com/kpmg-fabricated-ai-case-studies-in-a-report-designed-to-sell-clients-on-ai-adoption/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-06-14T09:40:37+00:00",
+  "collected_at": "2026-06-14T10:51:31.899879+00:00",
+  "summary": "KPMG报告虚构AI案例被揭穿，暴露咨询行业‘二次幻觉’风险——即权威机构传播未经验证的AI应用叙事。对用户构建技术情报系统极具警示价值：需建立事实核查机制、识别技术主张可信度信号，并在agent evaluation与RAG知识治理中强化溯源与验证能力。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "权威来源的虚假案例构成系统性评估风险，凸显生产级agent系统必须内置证据溯源与主张验证能力。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接关联P0必学项'production evaluation'与'rag knowledge systems'——用户需在构建个人技术情报系统时识别、过滤并防御此类高信噪比噪音；案例可转化为evaluation benchmark设计反例与验证checklist。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "production-rag"
+  ]
+}

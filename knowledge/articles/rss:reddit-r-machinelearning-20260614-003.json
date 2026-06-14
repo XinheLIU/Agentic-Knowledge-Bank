@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260614-003",
+  "title": "I’m building a free bilingual machine-learning notebook course — looking for feedback on structure and coverage [R]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1u4zbld/im_building_a_free_bilingual_machinelearning/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1u4zbld/im_building_a_free_bilingual_machinelearning/",
+  "author": "/u/abolfazl1363",
+  "published_at": "2026-06-13T19:07:17+00:00",
+  "collected_at": "2026-06-14T10:51:19.273679+00:00",
+  "summary": "该 bilingual ML Notebook 教程覆盖经典机器学习全流程（数据清洗、特征工程、模型训练、评估、MLOps），强调本地可运行与实践性，对用户夯实 ML-RL 基础、支撑 RAG/数据代理中的传统 ML 组件开发具有直接参考价值。",
+  "tags": [
+    "llm"
+  ],
+  "status": "review",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "高质量、可执行的古典 ML 教程是构建数据代理和生产级 RAG 系统中特征工程与评估模块的重要底层能力支撑。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽不直接涉及 agent 或 langgraph，但其覆盖的 ML workflow、evaluation、feature engineering 和 MLOps 概念属于用户 P1 有价值上下文中的 'applied ml' 和 'data science methodology'，且是 data-agents 和 rag-knowledge-systems 的关键前置能力；notebook 形式符合高价值来源 'tutorial' 和 'repository' 标准。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "repo-tutorial",
+    "implementation-pattern"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:eli-bendersky-20260614-007",
+  "title": "Plugins case study: Pluggy",
+  "source": "rss:Eli Bendersky",
+  "source_url": "https://eli.thegreenplace.net/2026/plugins-case-study-pluggy/",
+  "url": "https://eli.thegreenplace.net/2026/plugins-case-study-pluggy/",
+  "author": "Eli Bendersky",
+  "published_at": "2026-06-14T03:21:00+00:00",
+  "collected_at": "2026-06-14T10:51:29.352602+00:00",
+  "summary": "Pluggy 是 pytest 提炼出的轻量级 Python 插件系统库，提供 hookspec/hookimpl 机制与插件注册发现能力，对构建可扩展 agent harness、tool-use 框架及 langgraph 自定义节点扩展具有直接参考价值。",
+  "tags": [
+    "agent",
+    "tool-use"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "插件架构是 agent system 可扩展性的底层基础设施，Pluggy 提供了生产级、低侵入、高测试性的实现范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户 P0 必学项包含 tool-use 和 agent engineering，而 Pluggy 是构建模块化、可插拔 agent harness 的典型基础设施；其 hook 机制与 LangGraph 的 node/executor 扩展、MCP 工具注册模式高度契合，且来源为高质量技术博客（Eli Bendersky），含代码示例与设计权衡分析。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

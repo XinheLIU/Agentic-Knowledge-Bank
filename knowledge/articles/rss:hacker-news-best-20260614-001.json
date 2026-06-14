@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260614-001",
+  "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+  "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+  "author": "austinallegro",
+  "published_at": "2026-06-13T19:54:55+00:00",
+  "collected_at": "2026-06-14T10:51:18.362694+00:00",
+  "summary": "该事件揭示AI工具被滥用于伪造司法证据的现实风险，对学习者构建可信agent系统具有警示意义：需在tool-use和agent-harness设计中嵌入审计日志、操作溯源与权限约束机制。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "security",
+  "key_insight": "Agent系统的真实落地必须将可审计性与责任归属作为核心架构约束，而非事后补救。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含tool-use和computer-use agents，该案例直接暴露缺乏安全护栏的agent行为链风险，为langgraph workflow和agent-harness设计提供真实世界反例与合规边界参考。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}
