@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260615-007",
+  "title": "Quoting Julia Evans",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/15/julia-evans/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/15/julia-evans/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-15T02:05:19+00:00",
+  "collected_at": "2026-06-15T14:28:02.626226+00:00",
+  "summary": "Julia Evans 提倡‘为一个人写作’的实践方法，强调技术内容创作应聚焦具体学习者画像。这对用户构建个人技术情报系统极具启发——可直接用于设计 agent 工作流文档、LangGraph 调试日志或 RAG 知识卡片的表达范式，提升知识沉淀与复用效率。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "技术学习效能取决于能否将抽象概念锚定到具体认知主体；'写给3年前的自己'是构建可演进技术知识系统的元实践。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正构建个人技术情报系统，需高质量知识表达与组织能力；该内容虽非直接讲 agent 或 LangGraph，但提供了底层认知框架——如何定义 target learner（如 'AI/agent engineering learner'）并据此设计文档、调试输出、RAG chunking 策略等，支撑 P0 中 'agent engineering' 和 'rag knowledge systems' 的落地质量。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:the-decoder-20260615-011",
+  "title": "Pokémon Go data helped train AI now linked to military drones",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/pokemon-go-data-helped-train-ai-now-linked-to-military-drones/",
+  "url": "https://the-decoder.com/pokemon-go-data-helped-train-ai-now-linked-to-military-drones/",
+  "author": "Maximilian Schreiner",
+  "published_at": "2026-06-15T13:27:50+00:00",
+  "collected_at": "2026-06-15T14:28:11.832625+00:00",
+  "summary": "Pokémon Go玩家贡献的AR空间扫描数据被用于训练Niantic的空间AI模型，该技术正与国防承包商合作实现GPS拒止环境下的无人机导航。对用户而言，这是真实世界中data-agent与computer-use agent协同构建物理世界感知系统的典型案例，可延伸至RAG知识系统中的多模态空间索引设计。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "众包地理空间数据可作为具身智能体（embodied agent）的低成本、高覆盖物理世界知识源，其采集-处理-部署链路是data-agent工程的典型范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接关联P0必学项'data agents'和'computer-use agents'，且展示了真实生产级data-agent闭环（采集→建模→军事级部署），具备参考架构价值；虽非教程，但提供了跨领域agent系统集成的关键上下文，契合'agent-systems'与'engineering-leadership'学习轨道。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "data-agent",
+    "computer-use"
+  ]
+}

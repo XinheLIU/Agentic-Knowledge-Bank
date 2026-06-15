@@ -1,0 +1,36 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260615-003",
+  "title": "How does the ML community view evolutionary algorithm research? Career implications of an EA PhD? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1u66q3l/how_does_the_ml_community_view_evolutionary/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1u66q3l/how_does_the_ml_community_view_evolutionary/",
+  "author": "/u/NullRecurrentDad",
+  "published_at": "2026-06-15T04:48:39+00:00",
+  "collected_at": "2026-06-15T14:27:57.554836+00:00",
+  "summary": "讨论进化算法（EA）在ML社区的定位与职业影响，强调其在优化、鲁棒性及非梯度场景的价值；对用户构建技术情报系统有方法论启示——如何评估小众但扎实的技术方向长期价值。",
+  "tags": [
+    "llm"
+  ],
+  "status": "review",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "EA研究虽非主流，但其理论严谨性、可解释性与组合优化能力正成为LLM智能体系统中工具调用与策略搜索的潜在补充范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P1明确包含reinforcement learning和applied ml，且学习路线含ml-rl-foundations；EA与RL存在强方法论交叉（如policy search、black-box optimization），可支撑data-agent与computer-use agent中的决策模块设计。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "research-method",
+    "implementation-pattern"
+  ]
+}

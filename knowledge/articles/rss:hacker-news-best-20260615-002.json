@@ -1,0 +1,36 @@
+{
+  "id": "rss:hacker-news-best-20260615-002",
+  "title": "Not everyone is using AI for everything",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+  "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+  "author": "yegg",
+  "published_at": "2026-06-14T14:44:29+00:00",
+  "collected_at": "2026-06-15T14:27:56.914499+00:00",
+  "summary": "文章指出用户对AI的采用呈现渐进式、场景化特征，而非全盘替代；强调真实工程落地需聚焦具体任务闭环与人机协作模式，对构建生产级agent系统具有认知校准价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI adoption is task-first and workflow-integrated—not technology-first—making agent design a human-centered systems engineering problem.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "直接呼应用户P0中'agent engineering'和'production evaluation'目标，提供关于真实世界agent采用模式的关键上下文，支撑其构建技术智能系统时的优先级判断与架构权衡。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

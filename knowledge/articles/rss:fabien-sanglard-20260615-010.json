@@ -1,0 +1,35 @@
+{
+  "id": "rss:fabien-sanglard-20260615-010",
+  "title": "How Apple's Pro Display XDR takes Thunderbolt 3 to its limit",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/xdr/index.html",
+  "url": "https://fabiensanglard.net/xdr/index.html",
+  "author": null,
+  "published_at": "2023-11-23T00:00:00+00:00",
+  "collected_at": "2026-06-15T14:28:10.114487+00:00",
+  "summary": "本文深入剖析 Apple Pro Display XDR 如何通过 Thunderbolt 3 协议极限压榨带宽、时序与电源管理，揭示底层硬件协议协同设计机制；虽非 AI 主题，但其系统级接口协同、实时性约束建模与高可靠性工程实践，可迁移至 computer-use agents 和 tool-use 的底层设备交互抽象设计。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "advanced",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "高性能外设协议的确定性调度与错误恢复机制，为 computer-use agents 提供真实世界硬件交互的工程参照。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.3,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容聚焦显示硬件与 Thunderbolt 协议栈，不涉及 agent engineering、RAG、LangGraph 或任何 P0 必学主题；仅间接关联 computer-use agents 的设备驱动层抽象，但无代码、API 或架构图等可迁移资产。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "background",
+  "learning_tags": [
+    "computer-use"
+  ]
+}

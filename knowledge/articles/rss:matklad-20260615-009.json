@@ -1,0 +1,35 @@
+{
+  "id": "rss:matklad-20260615-009",
+  "title": "CSS: Unavoidable Bad Parts",
+  "source": "rss:matklad",
+  "source_url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
+  "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
+  "author": "Alex Kladov",
+  "published_at": "2026-06-04T00:00:00+00:00",
+  "collected_at": "2026-06-15T14:28:04.373911+00:00",
+  "summary": "本文以非专业前端视角梳理CSS中难以规避的复杂部分，强调实践陷阱与权衡取舍，虽非AI主题，但对构建浏览器代理（browser agents）和AI驱动UI自动化所需的底层Web渲染理解具实操参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "intermediate",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "CSS的‘坏部分’本质是设计权衡的遗留产物，理解其不可回避性比追求完美抽象更利于构建鲁棒的浏览器交互代理。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.65,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.55,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "用户P0目标包含browser agents，需理解真实Web环境中的CSS行为边界；但本文无AI/agent工程直接内容，仅提供间接上下文支撑，且未涉及工具集成、自动化或评估机制。",
+  "suggested_action": "skim",
+  "confidence": 0.78,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "browser-agent"
+  ]
+}
