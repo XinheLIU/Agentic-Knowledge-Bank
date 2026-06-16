@@ -1,0 +1,36 @@
+{
+  "id": "rss:hacker-news-best-20260616-002",
+  "title": "My Homelab AI Dev Platform",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://rsgm.dev/post/ai-dev-platform/",
+  "url": "https://rsgm.dev/post/ai-dev-platform/",
+  "author": "rsgm",
+  "published_at": "2026-06-15T15:09:40+00:00",
+  "collected_at": "2026-06-16T12:57:51.747896+00:00",
+  "summary": "作者构建了一个本地AI开发平台，整合LangGraph、本地LLM服务、工具调用、RAG和评估模块，提供可复现的agent系统参考架构，对学习者构建个人技术智能系统具有直接实践参考价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将LangGraph工作流、本地模型部署与工具集成封装为可复用的开发平台，体现了production-grade agent harness的设计思维。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容覆盖P0必学项中的agent engineering、langgraph、tool-use、rag knowledge systems和evaluation，并以完整homelab平台形式呈现，匹配用户'agent-systems'和'langgraph-workflows'学习路线，且来源为高价值tutorial/repository混合型实践文档。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "tutorial",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "langgraph",
+    "agent-harness"
+  ]
+}

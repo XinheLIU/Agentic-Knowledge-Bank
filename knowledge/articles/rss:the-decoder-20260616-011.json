@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260616-011",
+  "title": "How easily can Russian propaganda fool AI models? A new benchmark finds out",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out/",
+  "url": "https://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out/",
+  "author": "Jonathan Kemper",
+  "published_at": "2026-06-16T11:28:13+00:00",
+  "collected_at": "2026-06-16T12:58:09.680800+00:00",
+  "summary": "爱沙尼亚语言研究所发布新基准，评估LLM对俄语宣传内容的鲁棒性，涵盖提示注入、偏见放大与事实一致性测试，为AI系统安全评估提供可复现指标，对用户P0中'production evaluation'和'agent engineering'中的可信度设计有直接参考价值。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "propaganda robustness 是生产级AI agent必须通过的对抗性评估维度，不能仅依赖通用benchmark。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "该内容属于P0必学项'production evaluation'，提供面向真实威胁（地缘政治宣传）的可落地评估框架，且来源为benchmark，符合高价值来源类型；其技术机制（如构造对抗性宣传prompt、测量幻觉/立场偏移）可直接迁移至agent系统可信度验证。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "benchmark",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
+}

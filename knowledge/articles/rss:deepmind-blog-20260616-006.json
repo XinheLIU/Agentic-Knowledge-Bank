@@ -1,0 +1,37 @@
+{
+  "id": "rss:deepmind-blog-20260616-006",
+  "title": "Uncovering repurposed medicines to fight liver fibrosis",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/uncovering-repurposed-medicines-to-fight-liver-fibrosis/",
+  "url": "https://deepmind.google/blog/uncovering-repurposed-medicines-to-fight-liver-fibrosis/",
+  "author": null,
+  "published_at": "2026-05-16T07:40:27+00:00",
+  "collected_at": "2026-06-16T12:57:59.225318+00:00",
+  "summary": "DeepMind 博客介绍 Co-Scientist（一种AI科研代理系统）在肝纤维化药物重定位中的实际应用，展示了多步推理、文献检索、实验设计协同等agent工作流，对用户构建data-agents和agent-systems有直接参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Co-Scientist 体现了面向真实科研任务的多角色agent协作范式，是tool-use与domain-specific data-agent的典型生产级用例。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容聚焦于AI agent在真实生物医学研究中的端到端应用，涵盖tool-use、data-agent、evaluation闭环，契合用户P0必学项中的'agent engineering'、'data agents'及'production evaluation'，且来源为DeepMind官方博客，具备技术机制描述与系统架构暗示。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "data-agent"
+  ]
+}

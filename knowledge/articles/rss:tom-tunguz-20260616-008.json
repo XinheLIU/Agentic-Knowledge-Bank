@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260616-008",
+  "title": "The Golden Age of AI Applications",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/golden-age-of-applications/",
+  "url": "https://www.tomtunguz.com/golden-age-of-applications/",
+  "author": null,
+  "published_at": "2026-06-15T00:00:00+00:00",
+  "collected_at": "2026-06-16T12:58:00.625850+00:00",
+  "summary": "文章提出AI应用黄金时代的三大核心能力：模型选型、循环系统设计（hill-climbing loop）与端到端性能评估，强调‘harness’（模型之上的系统层）才是护城河，直接支撑用户P0必学的agent engineering与langgraph workflows。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正的AI护城河不在模型本身，而在围绕模型构建的可调优、可评估、可复用的智能系统‘harness’——这正是LangGraph工作流与Agent Engineering的核心目标。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容精准锚定用户P0必学项中的agent engineering、langgraph、tool-use和evaluation，以‘harness’概念统合系统设计、循环建模与token-efficiency评估，且明确指向生产级agent系统构建痛点，匹配其技术情报系统建设目标。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}
