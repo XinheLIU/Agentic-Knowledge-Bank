@@ -1,0 +1,35 @@
+{
+  "id": "rss:mitchell-hashimoto-20260617-008",
+  "title": "Grapheme Clusters and Terminal Emulators",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/grapheme-clusters-in-terminals",
+  "url": "https://mitchellh.com/writing/grapheme-clusters-in-terminals",
+  "author": null,
+  "published_at": "2023-10-02T00:00:00+00:00",
+  "collected_at": "2026-06-17T12:20:39.888383+00:00",
+  "summary": "本文深入解析终端中图元簇（grapheme clusters）的渲染机制与 Unicode 处理逻辑，对构建可靠终端交互型 AI agent（如 browser/computer-use agents）至关重要——此类 agent 需精确解析、生成和响应终端输出，避免因字符截断或宽度误判导致工具调用失败。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "终端中字符显示宽度与逻辑长度的不一致是 agent 执行 shell 工具或解析 CLI 输出时的关键失效点，必须通过 grapheme cluster 级别处理保障鲁棒性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户正在构建 computer-use agents 和 browser agents，这些 agent 必须安全、准确地与终端交互；理解 grapheme clusters 是实现正确 CLI 输入/输出解析、避免 prompt 注入或截断错误的基础底层能力，直接支撑 P0 中 'computer-use agents' 和 'tool-use' 学习目标。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

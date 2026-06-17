@@ -1,0 +1,37 @@
+{
+  "id": "rss:the-decoder-20260617-010",
+  "title": "Hyperscalers may soon be unable to fund their AI buildout from cash flow alone",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/hyperscalers-may-soon-be-unable-to-fund-their-ai-buildout-from-cash-flow-alone/",
+  "url": "https://the-decoder.com/hyperscalers-may-soon-be-unable-to-fund-their-ai-buildout-from-cash-flow-alone/",
+  "author": "Matthias Bastian",
+  "published_at": "2026-06-17T10:54:41+00:00",
+  "collected_at": "2026-06-17T12:20:47.108818+00:00",
+  "summary": "分析超大规模云厂商AI基建支出增速（70%）远超经营现金流增速（23%），预示2026年Q3起可能面临现金流缺口。对用户的价值在于理解AI系统规模化落地的工程约束与成本敏感性，支撑agent系统在生产环境中的资源建模与架构权衡。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "AI工程规模化瓶颈正从算法转向资本与基础设施经济性，agent系统设计需前置考虑部署成本与资源可持续性。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户学习路线含'agent-systems'和'evaluation'，且P0明确包含'production evaluation'；该文揭示AI系统规模化的真实约束（资本效率、硬件密度、TCO），是构建可投产agent系统的必要上下文，尤其影响data-agent和browser-agent的资源调度设计决策。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "agent-harness",
+    "production-lesson"
+  ]
+}

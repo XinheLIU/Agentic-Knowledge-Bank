@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-cl-20260617-003",
+  "title": "Evaluating the Robustness of Proof Autoformalization in Lean 4",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2606.14867",
+  "url": "https://arxiv.org/abs/2606.14867",
+  "author": "Zhengtao Gui, Sheng Yang, Zhouxing Shi",
+  "published_at": "2026-06-17T04:00:00+00:00",
+  "collected_at": "2026-06-17T12:20:33.441322+00:00",
+  "summary": "该论文首次系统评估证明自动形式化模型在扰动下的鲁棒性，提出全局/局部扰动基准，揭示当前LLM在逻辑忠实性上的脆弱性，为AI代理处理形式化推理与工具调用的可靠性提供关键评估视角。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "鲁棒性评估需区分‘稳定性’与‘忠实性’——前者要求输出不变，后者要求输出随输入扰动精确变化，这对tool-use和computer-use agents的可信执行至关重要。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0必学项包含'production evaluation'，且学习路线明确含'evaluation'轨道；该工作构建可复现、自动化、面向agent核心能力（逻辑忠实执行）的评估范式，直接支撑data/proof/computer-use agents的可靠性验证，且附带开源benchmark与代码，具备paper-to-code和evaluation双学习标签价值。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "paper-to-code"
+  ]
+}

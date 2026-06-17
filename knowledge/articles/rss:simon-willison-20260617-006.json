@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260617-006",
+  "title": "<click-to-play> — a still that plays",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-17T03:56:10+00:00",
+  "collected_at": "2026-06-17T12:20:38.659083+00:00",
+  "summary": "一个轻量级 Web Component 实现 GIF 的按需加载，通过渐进增强提升页面性能与用户体验。对 AI 工程师构建浏览器代理（browser agents）或前端集成工具链具有参考价值，尤其在优化 agent UI 响应性与资源调度方面。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Web Component 可作为 browser agent 的轻量级 UI 编排单元，体现‘按需激活’的 agent 行为范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 学习目标包含 browser agents 和 tool-use；该组件展示了如何将交互式 UI 行为封装为可复用、按需执行的 agent-like 单元，契合 browser-agent 和 agent-harness 学习路径。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "tutorial",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "browser-agent"
+  ]
+}

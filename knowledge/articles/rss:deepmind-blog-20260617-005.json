@@ -1,0 +1,35 @@
+{
+  "id": "rss:deepmind-blog-20260617-005",
+  "title": "Unlocking UK house-building with AI-accelerated planning",
+  "source": "rss:DeepMind Blog",
+  "source_url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+  "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+  "author": null,
+  "published_at": "2026-06-16T21:29:50+00:00",
+  "collected_at": "2026-06-17T12:20:38.508490+00:00",
+  "summary": "DeepMind与英国政府合作开发AI规划原型系统，聚焦于自动化审批流程与跨部门数据整合，虽未公开技术细节，但提供了真实世界agent系统落地的政策-工程协同案例，对理解agent在复杂政务场景中的边界、工具编排与人类-AI协作机制有启发价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真实政务场景中，agent的价值不在于单点智能，而在于结构化任务分解、多源异构系统接入与人类决策闭环嵌入。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽为博客形式且缺乏代码/架构细节，但明确涉及browser agents（访问规划门户）、tool-use（对接政府数据库/API）、computer-use agents（文档解析与格式转换）及human-in-the-loop evaluation——全部属于用户P0必学范畴；同时匹配learning_track: agent-systems和learning_tags: agent-harness。",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260617-002",
+  "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.17209",
+  "url": "https://arxiv.org/abs/2606.17209",
+  "author": "Sidhaarth Murali, Jo\\~ao Coelho, Jingjie Ning, Jo\\~ao Magalh\\~aes, Bruno Martins, Chenyan Xiong",
+  "published_at": "2026-06-17T04:00:00+00:00",
+  "collected_at": "2026-06-17T12:20:33.264031+00:00",
+  "summary": "提出DivInit方法，通过在首步生成多样化初始查询提升并行检索效率，避免冗余检索导致的收益递减；对构建多跳问答、RAG增强型agent系统有直接实践价值，尤其适配用户P0中agent engineering与data agents学习目标。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "并行采样失效主因是首步查询同质化，而非模型能力瓶颈；多样性应注入初始决策点而非后期重排序。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击P0必学项'agent engineering'与'data agents'核心挑战——多路径检索效率；提供训练无关、即插即用的首步多样性机制，可直接集成到LangGraph workflow或自研agent harness中，且附开源代码，符合高价值来源（paper+repository）标准。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

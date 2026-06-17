@@ -1,0 +1,36 @@
+{
+  "id": "rss:hugging-face-blog-20260617-004",
+  "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+  "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+  "author": null,
+  "published_at": "2026-06-17T10:18:05+00:00",
+  "collected_at": "2026-06-17T12:20:37.979955+00:00",
+  "summary": "本文介绍如何将 Hugging Face Hub 上的模型（如 LeRobot）部署到真实机器人硬件，通过 Strands Agents 实现端到端 agent-driven 控制闭环。对用户构建 computer-use agents 和 agent-systems 具有直接参考价值，尤其在 tool-use 与物理世界交互层面。",
+  "tags": [
+    "agent",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将预训练策略模型（如 LeRobot）封装为可调度、可观测、可组合的 agent 组件，是 bridging LLM-based reasoning 与 embodied action 的关键工程范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容覆盖 P0 必学项中的 computer-use agents 和 agent engineering，提供从模型库（Hub）到硬件执行的完整 agent harness 流程，含代码集成、状态管理与工具编排，匹配 learning_track 'agent-systems' 和 learning_tags 'agent-harness'。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
