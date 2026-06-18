@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-cl-20260618-005",
+  "title": "Continuous Audio Thinking for Large Audio Language Models",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2606.18273",
+  "url": "https://arxiv.org/abs/2606.18273",
+  "author": "Gyojin Han, Dong-Jae Lee, Changho Choi, Jongsuk Kim, Junmo Kim",
+  "published_at": "2026-06-18T04:00:00+00:00",
+  "collected_at": "2026-06-18T11:53:30.324560+00:00",
+  "summary": "CoAT 提出连续音频思维空间，通过专家蒸馏保留音频模型中的声学信息（如韵律、音高、情感），提升音频理解与推理能力，且不增加解码开销；对构建多模态agent及增强audio-RAG系统有直接技术参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "advanced",
+  "relevance_score": 0.85,
+  "category": "llm",
+  "key_insight": "将声学感知解耦为可蒸馏、可复用的连续潜空间，使LLM在生成前‘思考’原始音频特征，而非仅对齐文本输出。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学中包含'agent engineering'和'data agents'，而多模态音频agent（如browser/computer-use agents处理语音交互）需底层音频理解增强；CoAT提供可插拔的thinking block设计，适配Qwen2-Audio等开源LALM，具备paper-to-code与agent-harness集成潜力，匹配其'production evaluation'与'local-model-serving'学习路线。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "ml-rl-foundations",
+  "learning_tags": [
+    "paper-to-code",
+    "agent-harness"
+  ]
+}

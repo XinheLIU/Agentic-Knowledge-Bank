@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260618-002",
+  "title": "AI demands more engineering discipline. Not less",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline",
+  "url": "https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline",
+  "author": "BerislavLopac",
+  "published_at": "2026-06-17T14:20:44+00:00",
+  "collected_at": "2026-06-18T11:53:29.074189+00:00",
+  "summary": "文章强调AI系统需强化工程纪律，反对将AI视为魔法黑箱，主张用可观测性、测试、监控和模块化设计构建可靠agent系统，对用户构建生产级技术智能系统具有方法论指导价值。",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "AI复杂度提升反而要求更严格的软件工程实践，而非放松工程标准。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直击用户P0目标'agent engineering'与'production evaluation'核心痛点，提供工程化agent系统的顶层原则，契合learning_track中agent-systems和engineering-leadership双路径，且含可迁移的implementation-pattern与production-lesson信号。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "implementation-pattern"
+  ]
+}

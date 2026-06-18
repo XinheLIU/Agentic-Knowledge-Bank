@@ -1,0 +1,37 @@
+{
+  "id": "rss:tom-tunguz-20260618-009",
+  "title": "Databricks Widens the Lead on the Yellow Brick Token Path",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/databricks-widens-lead/",
+  "url": "https://www.tomtunguz.com/databricks-widens-lead/",
+  "author": null,
+  "published_at": "2026-06-17T00:00:00+00:00",
+  "collected_at": "2026-06-18T11:53:34.009959+00:00",
+  "summary": "文章分析Databricks通过AI产品（尤其是token-path模式）实现高速增长，揭示其AI商业化路径与技术产品化节奏，对构建生产级AI系统（如data agents、RAG知识系统）的商业-工程协同设计有参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "Token-path模式本质是将AI能力封装为可计量、可嵌入、可增值的API/服务单元，是agent系统规模化落地的关键商业接口设计范式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "虽非直接技术教程，但清晰阐释了AI系统（尤其是data agents和RAG知识系统）在真实商业场景中如何通过可计量接口（token-path）实现规模化交付与价值闭环，补足用户P1中'engineering architecture'与'business context'交叉认知缺口。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "business-context",
+  "learning_tags": [
+    "business-context",
+    "implementation-pattern"
+  ]
+}

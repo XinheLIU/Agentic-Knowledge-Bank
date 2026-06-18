@@ -1,0 +1,37 @@
+{
+  "id": "rss:simon-willison-20260618-007",
+  "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-17T23:58:39+00:00",
+  "collected_at": "2026-06-18T11:53:32.962232+00:00",
+  "summary": "GLM-5.2 是首个百万 token 上下文、MIT 开源的 753B MoE 文本大模型，Benchmark 表现领先（AI Index 51分），在 WebDev agentic 编码任务中排名第二，对构建本地化、高上下文 agent 系统和 RAG 知识库具有强参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "llm",
+  "key_insight": "超长上下文 + 开源权重 + agentic 编码实测表现优异，为本地 agent 系统提供高潜力基础模型选型依据。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户 P0 必学项含 'local model workflows' 和 'agent engineering'；GLM-5.2 提供可本地部署的开源大模型，支持百万 token 上下文与 MoE 架构，直接支撑 data agents、RAG 知识系统及 browser/computer-use agent 的底层模型选型与性能基线评估。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "agent-harness"
+  ]
+}

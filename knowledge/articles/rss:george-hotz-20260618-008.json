@@ -1,0 +1,37 @@
+{
+  "id": "rss:george-hotz-20260618-008",
+  "title": "Summoning the Demon",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/06/17/summoning-the-demon.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/06/17/summoning-the-demon.html",
+  "author": null,
+  "published_at": "2026-06-17T07:00:00+00:00",
+  "collected_at": "2026-06-18T11:53:33.772911+00:00",
+  "summary": "George Hotz 的这篇博客以讽刺诗开篇，实则探讨 LLM agent 构建中的控制权、工具调用边界与系统可靠性问题，强调从底层 harness 和状态管理出发构建可调试 agent 系统，对用户构建 personal technical intelligence system 中的 agent-harness 和 langgraph workflow 实践具启发性。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "真正的 agent 工程不是堆砌框架，而是驯服不确定性——通过显式状态约束、工具执行沙箱和失败可观测性重建控制权。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "内容直击 P0 必学项 'agent engineering' 和 'tool-use' 的核心矛盾，提供工程化视角而非 hype；其隐含的 agent-harness 设计思想与用户学习路线 'agent-systems' 和 'langgraph-workflows' 高度契合，且来源为作者个人技术博客（高信噪比），含可迁移的系统观。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "langgraph"
+  ]
+}

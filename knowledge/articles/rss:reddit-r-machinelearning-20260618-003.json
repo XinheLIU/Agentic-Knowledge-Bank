@@ -1,0 +1,35 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260618-003",
+  "title": "What does provisional paper acceptance mean in ECCV? Is that the default message everyone gets? [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1u8xghq/what_does_provisional_paper_acceptance_mean_in/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1u8xghq/what_does_provisional_paper_acceptance_mean_in/",
+  "author": "/u/NotGondor",
+  "published_at": "2026-06-18T05:22:57+00:00",
+  "collected_at": "2026-06-18T11:53:29.895788+00:00",
+  "summary": "ECCV 'provisional acceptance' 指论文通过初审但需满足特定条件（如修改、伦理声明、版权协议）方可最终录用，非默认群发消息；对用户理解AI顶会评审机制、构建学术型RAG知识系统及评估流程设计有间接参考价值。",
+  "tags": [
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 3,
+  "audience": "intermediate",
+  "relevance_score": 0.45,
+  "category": "evaluation",
+  "key_insight": "顶会的'provisional acceptance'是条件性录用信号，反映学术质量评估的阶段性与约束性，可类比生产环境中agent workflow的approval gate机制。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.6,
+  "actionability_score": 0.3,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.5,
+  "priority_score": 32,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属学术会议流程说明，不涉及agent engineering、LangGraph、RAG或生产评估技术实现；虽与evaluation category相关，但聚焦学术评审而非AI系统生产级评估方法论，对P0必学目标无直接支撑。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation"
+  ]
+}
