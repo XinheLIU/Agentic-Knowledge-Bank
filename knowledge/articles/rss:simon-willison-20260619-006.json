@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260619-006",
+  "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-18T23:58:38+00:00",
+  "collected_at": "2026-06-19T12:11:40.928568+00:00",
+  "summary": "Datasette Apps 提供沙箱化 iframe 容器，支持 HTML/JS 应用安全调用 Datasette 数据库（含读写），结合 CSP + postMessage/MessageChannel 实现零信任交互，是轻量级数据代理（data-agent）与 LLM 工具集成的典型参考架构。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将数据库后端与沙箱化前端解耦，并通过受控 IPC 暴露数据能力，是构建可扩展、可审计、可 LLM 编程的数据代理系统的关键模式。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接覆盖用户 P0 必学项中的 'data agents' 和 'tool-use'，并提供生产级沙箱、CSP、MessageChannel、stored-query 集成等关键实现细节；其架构与 LangGraph 中的 ToolNode / RunnableBinding 概念高度对齐，且具备完整 tutorial + repo + live demo，符合高价值来源标准。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "tutorial",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "data-agent",
+    "agent-harness"
+  ]
+}

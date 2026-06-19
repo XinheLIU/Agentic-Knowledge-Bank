@@ -1,0 +1,36 @@
+{
+  "id": "rss:george-hotz-20260619-007",
+  "title": "You don’t understand, prices can’t go down",
+  "source": "rss:George Hotz",
+  "source_url": "https://geohot.github.io//blog/jekyll/update/2026/06/18/prices-cant-go-down.html",
+  "url": "https://geohot.github.io//blog/jekyll/update/2026/06/18/prices-cant-go-down.html",
+  "author": null,
+  "published_at": "2026-06-18T07:00:00+00:00",
+  "collected_at": "2026-06-19T12:11:41.502899+00:00",
+  "summary": "本文探讨货币价值与现实脱钩的宏观机制，虽非直接技术内容，但为AI工程学习者理解技术经济约束、系统长期可持续性及AI基础设施成本模型提供关键背景认知。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "other",
+  "key_insight": "技术系统的规模化落地终将受制于不可持续的金融底层逻辑，而非仅算法或架构瓶颈。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户构建个人技术智能系统需理解AI agent部署的长期经济可行性边界；该文揭示货币-价值脱钩对算力成本、模型托管、实时agent服务定价的隐性制约，属P1‘engineering architecture’与P2‘business context’交叉高价值上下文。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "business-context",
+    "implementation-pattern"
+  ]
+}

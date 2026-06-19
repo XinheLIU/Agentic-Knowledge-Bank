@@ -1,0 +1,36 @@
+{
+  "id": "rss:mitchell-hashimoto-20260619-008",
+  "title": "Ghostty Devlog 004",
+  "source": "rss:Mitchell Hashimoto",
+  "source_url": "https://mitchellh.com/writing/ghostty-devlog-004",
+  "url": "https://mitchellh.com/writing/ghostty-devlog-004",
+  "author": null,
+  "published_at": "2023-09-28T00:00:00+00:00",
+  "collected_at": "2026-06-19T12:11:42.391038+00:00",
+  "summary": "Ghostty Devlog 004 记录了终端模拟器 Ghostty 的架构演进与异步 I/O、插件系统设计实践，虽非 AI agent 专用，但其模块化 agent-harness 思路、状态驱动生命周期管理及本地进程协同模式，可迁移至 browser/computer-use agent 系统设计，为用户构建 personal technical intelligence system 提供底层工程范式参考。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "终端作为‘计算机使用代理’的原始形态，其事件驱动、沙箱化执行与插件协议设计是 computer-use agent 的天然参考架构。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户明确学习 computer-use agents 和 agent engineering，而 Ghostty 是一个真实、轻量、开源的本地计算机交互代理（CLI agent）实现；其插件机制、状态同步与异步任务调度设计直接对应 MCP 和 tool-use 实践，属于 P0 必学范畴的 reference-architecture 价值。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "computer-use"
+  ]
+}
