@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-ai-20260620-004",
+  "title": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2606.19469",
+  "url": "https://arxiv.org/abs/2606.19469",
+  "author": "Sherzod Turaev, Mary John, Saja Aldabet, Mamoun Awad, Nazar Zaki, Khaled Shuaib",
+  "published_at": "2026-06-20T04:00:00+00:00",
+  "collected_at": "2026-06-20T10:35:42.236131+00:00",
+  "summary": "提出一种人机协同的课程对齐评估框架，通过语义检索+人工验证量化课程对CS2013/CS2023知识单元、能力项与认知深度的覆盖，为AI系统评估提供可复用的方法论和实证基准。",
+  "tags": [
+    "evaluation",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "评估不能只靠模型打分——需‘retrieve-then-confirm’式人机闭环，且检索器选择必须实证验证。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户P0明确包含'production evaluation'，该论文提供纵向、结构化、可复用的评估pipeline设计，直接支撑其构建技术智能系统的评估模块；其retrieve-then-confirm范式可迁移至agent行为评估、RAG效果归因等场景。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "research-method"
+  ]
+}

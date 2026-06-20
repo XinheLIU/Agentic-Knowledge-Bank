@@ -1,0 +1,37 @@
+{
+  "id": "rss:arxiv-cs-cl-20260620-005",
+  "title": "Ensembles of Large Language Models for Identifying EQ-5D Studies in PubMed Based on Their Abstracts",
+  "source": "rss:arXiv cs.CL",
+  "source_url": "https://arxiv.org/abs/2606.19345",
+  "url": "https://arxiv.org/abs/2606.19345",
+  "author": "Zhyar Rzgar K. Rostam, M\\'arta P\\'entek, J\\'anos Tibor Czere, Zsombor Zrubka, L\\'aszl\\'o Gul\\'acsi, G\\'abor Kert\\'esz",
+  "published_at": "2026-06-20T04:00:00+00:00",
+  "collected_at": "2026-06-20T10:35:42.330458+00:00",
+  "summary": "该论文提出基于Gemini/Gemma的LLM集成框架，通过少样本提示、加权集成与软堆叠元分类器，在PubMed摘要中自动识别EQ-5D研究，F1达0.74。对用户价值在于：提供了可复现的多模型协同决策模式，是构建数据代理（data-agent）和生产级评估（evaluation）系统的典型实践案例。",
+  "tags": [
+    "llm",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "LLM集成不是简单投票，而是通过概率输出+元分类器实现精度-召回平衡与可解释性提升，直击生产评估中的鲁棒性痛点。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接覆盖用户P0必学项'production evaluation'与'data agents'，且提供完整pipeline（few-shot + ensembling + meta-classifier）、明确指标（F1/accuracy）和真实数据源（PubMed），符合高价值来源'paper'与'benchmark'标准，可转化为LangGraph workflow或RAG评估模块。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "data-agent"
+  ]
+}

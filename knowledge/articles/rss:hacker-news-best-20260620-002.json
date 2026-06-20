@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260620-002",
+  "title": "AI Engineer Claims to Have Cracked Linear A",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://aiclambake.com/clamtakes/linear-a/",
+  "url": "https://aiclambake.com/clamtakes/linear-a/",
+  "author": "Kosturdistan",
+  "published_at": "2026-06-19T16:04:42+00:00",
+  "collected_at": "2026-06-20T10:35:40.922545+00:00",
+  "summary": "文章探讨使用LLM与符号推理结合破解古代线性A文字的尝试，虽未真正破译，但展示了agent-style多步工具调用、外部知识检索与验证闭环的设计思路，对构建数据代理和RAG知识系统中的推理-验证范式有启发。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "将语言模型作为‘推理引擎’嵌入考古解码工作流，本质是tool-use + external validation agent的具身实践案例。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容虽属跨学科应用，但其核心是构建具备工具调用、外部API交互、多步验证与失败回溯能力的agent系统，直接对应用户P0必学项中的tool-use、data-agents和agent engineering，且Hacker News高分讨论含大量工程实现细节与批判性反馈。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "tool-use"
+  ]
+}

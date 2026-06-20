@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260620-001",
+  "title": "Is AI ruining our skills? Early results are in – and they're not good",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.nature.com/articles/d41586-026-01947-1",
+  "url": "https://www.nature.com/articles/d41586-026-01947-1",
+  "author": "Michelangelo11",
+  "published_at": "2026-06-19T18:00:48+00:00",
+  "collected_at": "2026-06-20T10:35:40.920207+00:00",
+  "summary": "Nature发表的实证研究指出，过度依赖AI工具可能导致人类认知技能退化，尤其在问题分解、调试和系统性推理方面。对用户构建技术智能系统有警示意义：需设计agent的human-in-the-loop机制与skill-retention评估指标。",
+  "tags": [
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "AI adoption without deliberate skill-scaffolding erodes foundational engineering cognition.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "直接支撑P0中'production evaluation'目标——该研究提供可量化的认知退化指标，可用于设计agent系统的human capability preservation评估框架，契合evaluation学习路线。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
+}

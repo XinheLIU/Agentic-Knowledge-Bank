@@ -1,0 +1,38 @@
+{
+  "id": "rss:the-decoder-20260620-010",
+  "title": "Data2Story turns a CSV file into a verified interactive news article using seven AI agents",
+  "source": "rss:The Decoder",
+  "source_url": "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/",
+  "url": "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/",
+  "author": "Jonathan Kemper",
+  "published_at": "2026-06-20T09:51:55+00:00",
+  "collected_at": "2026-06-20T10:35:53.759659+00:00",
+  "summary": "Data2Story 展示了多智能体协同完成数据新闻生成的完整 pipeline，涵盖数据解析、事实核查、可视化与交互式发布，对用户构建 data-agents 和 agent-systems 具有架构参考与实践启发价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "七代理分工模拟真实新闻编辑室流程，体现 MCP 风格的任务分解与 tool-use 编排，是 langgraph 工作流的典型应用范例。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接对应用户 P0 必学项中的 'data agents' 和 'agent engineering'，且隐含 langgraph-workflows 与 tool-use 实践信号；虽为 blog 形式，但描述了可复现的 agent 协同机制（如验证率93%、读者偏好实验），具备 repo-tutorial 和 reference-architecture 潜力。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "langgraph",
+    "agent-harness",
+    "data-agent",
+    "tool-use"
+  ]
+}
