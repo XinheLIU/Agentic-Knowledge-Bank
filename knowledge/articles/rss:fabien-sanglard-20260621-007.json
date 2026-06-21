@@ -1,0 +1,35 @@
+{
+  "id": "rss:fabien-sanglard-20260621-007",
+  "title": "mDNS Primer",
+  "source": "rss:Fabien Sanglard",
+  "source_url": "https://fabiensanglard.net/mdns/index.html",
+  "url": "https://fabiensanglard.net/mdns/index.html",
+  "author": null,
+  "published_at": "2023-08-11T00:00:00+00:00",
+  "collected_at": "2026-06-21T11:19:30.923273+00:00",
+  "summary": "mDNS（多播DNS）是本地网络服务发现的关键协议，本文深入解析其工作原理、报文结构与实际抓包分析，对构建浏览器/计算机使用类agent时的本地服务发现与工具集成具有底层网络支撑价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "agent在真实环境中调用本地工具（如浏览器、IDE、数据库）依赖可靠的本地服务发现机制，mDNS是其中关键基础设施。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户正在构建computer-use agents和browser agents，这类agent需在局域网内自动发现并连接本地运行的服务（如Ollama、Llama.cpp API、Chrome DevTools、PostgreSQL），mDNS是其实现零配置服务发现的核心协议；虽非AI专属，但属P0中computer-use agents的隐性基础设施依赖。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

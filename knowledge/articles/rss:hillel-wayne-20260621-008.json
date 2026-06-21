@@ -1,0 +1,35 @@
+{
+  "id": "rss:hillel-wayne-20260621-008",
+  "title": "April Cools Post: New York vs Chicago Pizza",
+  "source": "rss:Hillel Wayne",
+  "source_url": "https://buttondown.com/hillelwayne/archive/april-cools-post-new-york-vs-chicago-pizza/",
+  "url": "https://buttondown.com/hillelwayne/archive/april-cools-post-new-york-vs-chicago-pizza/",
+  "author": null,
+  "published_at": "2026-04-01T17:53:29+00:00",
+  "collected_at": "2026-06-21T11:19:31.542092+00:00",
+  "summary": "该文是Hillel Wayne的幽默技术类博客，以披萨对比为隐喻探讨系统设计权衡（如简单性vs完整性），对AI工程学习者理解agent系统架构取舍、评估指标设计有启发，但无直接技术实现细节。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 2,
+  "audience": "intermediate",
+  "relevance_score": 0.45,
+  "category": "other",
+  "key_insight": "用日常类比揭示工程决策中隐含的价值权衡，可迁移至agent系统设计中的可观测性、鲁棒性与简洁性平衡。",
+  "personal_fit_score": 0.45,
+  "technical_depth_score": 0.3,
+  "actionability_score": 0.25,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.6,
+  "priority_score": 25,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属于泛技术类比写作，不涉及agent engineering、LangGraph、RAG等P0必学主题的技术机制或实践；虽具思维启发性，但无代码、架构图、工作流或可复现模式，不符合高价值来源标准（非repository/tutorial/documentation/paper/benchmark）。",
+  "suggested_action": "skim",
+  "confidence": 0.88,
+  "source_type": "blog",
+  "learning_track": "engineering-leadership",
+  "learning_tags": [
+    "implementation-pattern"
+  ]
+}

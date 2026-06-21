@@ -1,0 +1,37 @@
+{
+  "id": "rss:hugging-face-blog-20260621-004",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source": "rss:Hugging Face Blog",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "author": null,
+  "published_at": "2026-06-18T00:00:00+00:00",
+  "collected_at": "2026-06-21T11:19:23.525797+00:00",
+  "summary": "该博客介绍如何基于自定义工具链对开源模型进行代理能力基准测试，涵盖工具调用、状态管理与任务完成评估，为用户构建生产级 agent evaluation 提供可复现的实践框架和指标设计思路。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "evaluation",
+  "key_insight": "代理能力不能仅靠理论定义，需通过可控工具环境+任务闭环来量化验证。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接覆盖用户P0必学项'production evaluation'，且提供可落地的benchmarking方法论与代码实践路径，匹配learning_track中的'evaluation'轨道。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "agent-harness"
+  ]
+}

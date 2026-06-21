@@ -1,0 +1,36 @@
+{
+  "id": "rss:hacker-news-best-20260621-001",
+  "title": "Temporary Cloudflare accounts for AI agents",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://blog.cloudflare.com/temporary-accounts/",
+  "url": "https://blog.cloudflare.com/temporary-accounts/",
+  "author": "farhadhf",
+  "published_at": "2026-06-20T11:19:05+00:00",
+  "collected_at": "2026-06-21T11:19:20.570001+00:00",
+  "summary": "Cloudflare 推出临时账户机制，支持 AI agent 在无持久身份前提下安全调用其 API；对构建 browser/computer-use agents 的身份隔离、权限控制与沙箱化部署有直接参考价值。",
+  "tags": [
+    "agent",
+    "security"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "临时账户是面向 agent 的最小权限身份原语，可作为 agent-harness 的基础设施组件。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑 P0 必学项中的 browser agents、computer-use agents 和 tool-use，提供生产级身份抽象，属于 agent-systems 和 agent-harness 轨道的关键实践信号。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
