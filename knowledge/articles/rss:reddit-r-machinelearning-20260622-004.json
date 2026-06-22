@@ -1,0 +1,37 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260622-004",
+  "title": "[ECCV 2026] Paper Decision Appeals Discussion [D]",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1uc0m1e/eccv_2026_paper_decision_appeals_discussion_d/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1uc0m1e/eccv_2026_paper_decision_appeals_discussion_d/",
+  "author": "/u/Muted-Ad4511",
+  "published_at": "2026-06-21T20:39:17+00:00",
+  "collected_at": "2026-06-22T13:38:40.430902+00:00",
+  "summary": "该帖讨论ECCV 2026论文申诉机制，聚焦学术评审政策执行一致性与元评审透明度，虽非技术实现内容，但为AI工程学习者理解AI研究生态、评估标准及系统性反馈机制提供关键上下文，支撑production evaluation与engineering leadership能力构建。",
+  "tags": [
+    "evaluation",
+    "agent"
+  ],
+  "status": "published",
+  "score": 4,
+  "audience": "intermediate",
+  "relevance_score": 0.65,
+  "category": "evaluation",
+  "key_insight": "评审申诉机制暴露了AI研究中隐性评估协议与实际执行间的gap，是构建可信生产级AI系统必须理解的制度性约束。",
+  "personal_fit_score": 0.65,
+  "technical_depth_score": 0.4,
+  "actionability_score": 0.35,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.6,
+  "priority_score": 42,
+  "reading_priority": "low-priority",
+  "relevance_reason": "内容属于学术治理流程讨论，无技术机制、代码、架构或可复用实践；虽与P0中的'production evaluation'存在弱关联（评估制度设计），但不提供工具链、指标、自动化或系统集成信息，无法直接支撑用户构建技术智能系统。",
+  "suggested_action": "skim",
+  "confidence": 0.82,
+  "source_type": "discussion",
+  "learning_track": "evaluation",
+  "learning_tags": [
+    "evaluation",
+    "research-method"
+  ]
+}

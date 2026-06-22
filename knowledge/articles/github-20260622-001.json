@@ -1,0 +1,37 @@
+{
+  "id": "github-20260622-001",
+  "title": "headroomlabs-ai/headroom",
+  "source": "github",
+  "source_url": "https://github.com/headroomlabs-ai/headroom",
+  "url": "https://github.com/headroomlabs-ai/headroom",
+  "author": "headroomlabs-ai",
+  "published_at": "2026-06-22T05:57:31Z",
+  "collected_at": "2026-06-22T13:38:38.089457+00:00",
+  "summary": "Headroom 是一个用于压缩工具输出、日志、文件和 RAG 分块的轻量级库/代理，可减少 60–95% 的 LLM 输入 token，同时保持语义等价性。对用户构建高效 agent 系统和生产级 RAG 知识系统具有直接优化价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Token 压缩不是预处理技巧，而是 agent 系统中关键的通信层优化，直接影响 tool-use 和 MCP 架构的吞吐与成本效率。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "用户 P0 必学项包含 tool-use、MCP、RAG knowledge systems 和 agent engineering；Headroom 直接作用于这些组件的输入通道压缩，属生产级 agent-systems 和 rag-knowledge-systems 路线中的关键实践模式。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness",
+    "mcp"
+  ]
+}

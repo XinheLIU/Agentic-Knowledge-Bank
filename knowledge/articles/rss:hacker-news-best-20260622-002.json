@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260622-002",
+  "title": "Apertus – Open Foundation Model for Sovereign AI",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://apertvs.ai/",
+  "url": "https://apertvs.ai/",
+  "author": "T-A",
+  "published_at": "2026-06-21T21:29:43+00:00",
+  "collected_at": "2026-06-22T13:38:39.507669+00:00",
+  "summary": "Apertus 是一个开源基础模型项目，强调主权AI与本地化部署能力，提供可商用的轻量级模型及配套工具链，对用户构建本地模型服务和自主agent系统具有参考价值。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "主权AI的核心在于可控的模型分发、本地推理栈与agent可集成接口，而非单纯开源权重。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "内容直接支撑用户P0必学项'local-model-serving'和'agent engineering'，且来源为高价值repository+documentation组合，具备生产级部署参考意义。",
+  "suggested_action": "clone-and-study",
+  "confidence": 0.82,
+  "source_type": "repository",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "agent-harness"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260622-006",
+  "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
+  "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
+  "author": null,
+  "published_at": "2026-06-21T23:35:47+00:00",
+  "collected_at": "2026-06-22T13:38:43.857141+00:00",
+  "summary": "sqlite-utils 4.0rc1 新增数据库迁移和嵌套事务（savepoint）支持，提供轻量、生产验证的Python/CLI数据操作抽象，对构建数据代理（data agents）和RAG知识系统的本地SQLite后端有直接工程价值。",
+  "tags": [
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "轻量级、可嵌入的数据层迁移与事务能力是data agent可靠执行状态变更的关键基础设施，而非仅LLM推理层问题。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "用户P0必学项包含'data agents'和'rag knowledge systems'，而sqlite-utils的迁移+atomic事务能力正对应数据代理中schema演进、多步原子写入、错误恢复等核心工程需求；其作为轻量本地数据枢纽，与langgraph workflow、tool-use、mcp等组件天然协同。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "documentation",
+  "learning_track": "data-agents",
+  "learning_tags": [
+    "data-agent",
+    "implementation-pattern"
+  ]
+}

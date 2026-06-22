@@ -1,0 +1,36 @@
+{
+  "id": "rss:tom-tunguz-20260622-007",
+  "title": "Local in Reality",
+  "source": "rss:Tom Tunguz",
+  "source_url": "https://www.tomtunguz.com/local-tokens/",
+  "url": "https://www.tomtunguz.com/local-tokens/",
+  "author": null,
+  "published_at": "2026-06-04T00:00:00+00:00",
+  "collected_at": "2026-06-22T13:38:45.049637+00:00",
+  "summary": "文章分析本地模型推理中token成本的实际构成，强调硬件、量化、KV缓存等工程因素对‘local’真实性的决定性影响，帮助学习者避开营销话术，建立对local model serving的务实技术判断框架。",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "‘Local’不是部署位置而是token生成成本是否脱离云API计费模型，其真实性由推理延迟、内存带宽和KV缓存效率共同定义。",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "直接支撑用户P0必学项'local-model-serving'，提供可落地的成本归因框架和性能瓶颈识别方法，弥补文档与benchmark间的技术语义断层。",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "blog",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm"
+  ]
+}
