@@ -1,7 +1,7 @@
 # AGENTS.md — AI 知识库项目
 
-> Last updated: 2026-05-24
-> 本文件是项目的长期记忆，描述当前版本 `0.6.0` 的真实结构与运行方式。
+> Last updated: 2026-06-23
+> 本文件是项目的长期记忆，描述当前版本 `0.7.0` 的真实结构与运行方式。
 
 ## 项目定义
 
@@ -40,9 +40,12 @@ ai-kb/
 │   ├── organizer.py                   # 节点 ⑥ 整理入库
 │   ├── human_flag.py                  # 节点 ⑦ 人工介入终点
 │   ├── model_client.py                # OpenAI-compatible LLM 客户端
+│   ├── prompts.py                     # Prompt 模板加载器（提供商覆盖 → 通用回退）
+│   ├── digest.py                      # 每日简报生成 + 邮件发送（独立 CLI）
 │   ├── relevance_profile.py           # 个人相关性配置加载器
 │   ├── relevance_profile.yaml         # 默认个人相关性配置
 │   └── rss_sources.yaml               # RSS 源配置
+├── prompts/                           # 外置 Prompt 模板（analyzer/reviewer/reviser + system）
 ├── patterns/
 │   ├── router.py                      # Router 模式示例
 │   └── supervisor.py                  # Supervisor 模式示例
@@ -158,6 +161,18 @@ plan -> collect -> analyze -> review
 
 等级：A (>=90), B (>=70), C (<70)
 
+### Prompt 模板（v0.7.0）
+
+- LLM prompt 文本外置到 `prompts/*.txt`，不再内联在节点里：`analyzer.txt`、`reviewer.txt`、`reviewer_system.txt`、`reviser.txt`、`reviser_system.txt`。
+- 加载器 `workflows/prompts.py`：`load_prompt(name, provider)` 先找 `prompts/<provider>/<name>.txt`，回退到 `prompts/<name>.txt`；`render(name, mapping)` 用 `string.Template`（`$placeholder`）填充，因模板含大量字面 JSON `{}`，不可用 `str.format`。
+- 迁移时 prompt 文本逐字提取，行为与 v0.6.0 一致。新增 provider 专属变体只需放入 `prompts/<provider>/`。
+
+### 信息简报推送（digest，v0.7.0）
+
+- `workflows/digest.py` 是独立 CLI（非图节点），在运行后读取 `knowledge/articles/`，筛选当日 `study-now` / `save-for-context` 条目，按 `priority_score` 排序、分组渲染 markdown 并发邮件。
+- SMTP 配置走环境变量：`EMAIL_ADDRESS`、`EMAIL_PASSWORD`、`SMTP_HOST`(默认 smtp.gmail.com)、`SMTP_PORT`(默认 587)、`DIGEST_RECIPIENTS`。未配置时打印简报并以 0 退出（优雅跳过）。
+- 仅用标准库 `smtplib`/`email`，无新增依赖。机制借鉴自已退役的 Info-Sentinel-Agent。
+
 ### CLI 命令
 
 所有命令均需在项目根目录执行，并确保 `.env` 已配置。
@@ -180,6 +195,10 @@ uv run python -m workflows.graph --sources github,rss --limit 20 --fail-on-human
 
 # Non-LLM 测试
 uv run pytest -q -m non_llm
+
+# 预览/发送每日简报（未配置 SMTP 时仅打印）
+uv run python -m workflows.digest --stdout
+uv run python -m workflows.digest --since 2026-06-23
 
 # Real-LLM 端到端验证
 uv run pytest -q -m llm_e2e

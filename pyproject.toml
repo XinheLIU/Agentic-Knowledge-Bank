@@ -1,6 +1,6 @@
 [project]
 name = "ai-kb"
-version = "0.5.1"
+version = "0.7.0"
 description = "AI 知识库 — 自动化技术情报收集与分析系统"
 readme = "README.md"
 requires-python = ">=3.12"

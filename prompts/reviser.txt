@@ -1,0 +1,12 @@
+请根据审核反馈定向修改分析结果，只返回修改后的 JSON 数组。
+
+审核反馈:
+$feedback
+
+当前分析结果:
+$analyses_json
+
+要求:
+- 保持数组长度和字段结构。
+- 优先改进反馈指出的弱项。
+- 不要删除 source_url、id、title、source、collected_at 等溯源字段。

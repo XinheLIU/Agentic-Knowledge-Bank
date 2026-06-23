@@ -1,9 +1,9 @@
 # AI 知识库（AI Knowledge Base）
 
-> 最后更新：2026-05-19  
+> 最后更新：2026-06-23  
 > English: [README.md](README.md)
 
-面向 AI、LLM、RAG 与 Agent 工具的自动化技术情报系统。当前版本 **0.5.1** 在 `workflows/` 下用 LangGraph 编排工作流：采集 GitHub 与 RSS、LLM 逐条分析、质量审核与修订循环，最终将结构化 JSON 知识条目写入 `knowledge/articles/`。
+面向 AI、LLM、RAG 与 Agent 工具的自动化技术情报系统。当前版本 **0.7.0** 在 `workflows/` 下用 LangGraph 编排工作流：采集 GitHub 与 RSS、LLM 逐条分析、质量审核与修订循环，最终将结构化 JSON 知识条目写入 `knowledge/articles/`；随后由独立的简报 CLI 将当日高优先级阅读推送到邮箱。
 
 ## 工作流概览
 
@@ -16,7 +16,7 @@ plan → collect → analyze → review
 
 - **Planner** — 单次运行策略（限额、阈值等）。
 - **Collector** — GitHub Search API + RSS（配置见 `workflows/rss_sources.yaml`）。
-- **Analyzer / Reviewer / Reviser** — LLM 分析、五维加权审核、按反馈定向修订。
+- **Analyzer / Reviewer / Reviser** — LLM 分析、五维加权审核、按反馈定向修订。Prompt 文本存放于 `prompts/`（由 `workflows/prompts.py` 加载），不再内联在节点中。
 - **Organizer** — 按 `source_url` 去重，写入 `knowledge/articles/<slug>-<YYYYMMDD>-<NNN>.json`。
 - **HumanFlag** — 审核循环耗尽后整批写入 `knowledge/pending_review/`（仅本地排查，CI 不提交）。
 
@@ -27,6 +27,9 @@ plan → collect → analyze → review
 ```text
 ai-kb/
 ├── workflows/               # LangGraph 节点、状态、CLI、RSS 配置
+│   ├── prompts.py           # Prompt 模板加载器（提供商覆盖 → 通用回退）
+│   └── digest.py            # 每日简报生成 + 邮件发送（标准库 SMTP）
+├── prompts/                 # 外置 Prompt 模板（*.txt）
 ├── scripts/
 │   └── build_index.py       # 从磁盘全量重建 knowledge/articles/index.json
 ├── hooks/                   # JSON Schema 校验与质量评分
@@ -114,6 +117,26 @@ uv run python -m workflows.graph --sources github,rss --limit 20 --verbose
 - 进入 `human_flag` 时在 CI/本地发出 warning；若需非零退出，请加 `--fail-on-human-flag`。
 
 真实 LLM 端到端验证见 [`.github/workflows/llm-e2e.yml`](.github/workflows/llm-e2e.yml)。
+
+## 邮件简报
+
+运行结束后，可将当日 `study-now` / `save-for-context` 条目（读取自 `knowledge/articles/`，按优先级分组、按 `priority_score` 排序）以邮件形式发给自己：
+
+```bash
+uv run python -m workflows.digest --stdout            # 预览，不发送
+uv run python -m workflows.digest --since 2026-06-23  # 发送指定日期的简报
+```
+
+通过环境变量配置 SMTP（未配置时简报会优雅跳过）：
+
+| 变量 | 用途 |
+|------|------|
+| `EMAIL_ADDRESS` | 发件地址（设置后才会发送） |
+| `EMAIL_PASSWORD` | 发件密码 / 应用专用密码 |
+| `SMTP_HOST` / `SMTP_PORT` | 默认 `smtp.gmail.com` / `587` |
+| `DIGEST_RECIPIENTS` | 逗号分隔的收件人（默认回退为发件人） |
+
+当 `EMAIL_ADDRESS` 配置为仓库 Secret 时，每日 CI 会自动发送简报。
 
 ## 校验文章
 

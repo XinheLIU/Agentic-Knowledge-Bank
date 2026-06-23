@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from workflows.model_client import Usage, accumulate_usage, chat_json_with_model
+from workflows.prompts import render
 from workflows.relevance_profile import (
     VALID_LEARNING_TRACKS,
     VALID_READING_PRIORITIES,
@@ -150,52 +151,17 @@ def analyze_item(item: dict[str, Any], profile: dict[str, Any] | None = None) ->
     profile_text = profile_summary_text(active_profile)
     learning_tag_list = active_profile.get("learning_tag_allowlist", list(VALID_LEARNING_TAGS))
 
-    prompt = f"""请分析以下 AI 技术内容，只返回 JSON。
-
-用户学习画像:
-{profile_text}
-
-标题: {item.get('title', '')}
-来源: {item.get('source', '')}
-URL: {item.get('source_url', item.get('url', ''))}
-描述: {item.get('raw_description', item.get('description', ''))}
-
-JSON 格式:
-{{
-  "summary": "50-160字中文技术摘要，说明核心价值和对用户的学习意义",
-  "tags": ["llm", "agent"],
-  "relevance_score": 0.8,
-  "category": "从下列单一值中选一个：llm、agent、rag、mcp、evaluation、deployment、security、other",
-  "key_insight": "一句话洞察",
-  "score": 7,
-  "audience": "beginner|intermediate|advanced",
-  "personal_fit_score": 0.85,
-  "technical_depth_score": 0.75,
-  "actionability_score": 0.90,
-  "source_credibility_score": 0.80,
-  "novelty_score": 0.65,
-  "priority_score": 84,
-  "reading_priority": "study-now|save-for-context|skim|low-priority|skip",
-  "relevance_reason": "为什么这个内容对用户的学习路线有价值或无价值",
-  "suggested_action": "clone-and-study|deep-read|skim|archive|skip",
-  "confidence": 0.82,
-  "source_type": "repository|paper|blog|discussion|benchmark|tutorial|product|news|documentation|unknown",
-  "learning_track": "agent-systems|langgraph-workflows|data-agents|rag-knowledge-systems|evaluation|local-model-serving|ml-rl-foundations|quant-data-science|engineering-leadership|business-context|background",
-  "learning_tags": ["langgraph", "agent-harness"]
-}}
-
-重要约束：
-- category 必须是单个字符串，不要返回 "agent|evaluation" 这种多值字符串，也不要返回数组。
-- audience 判断请先输出理由，再给出取值。
-- component scores (personal_fit_score, technical_depth_score, actionability_score, source_credibility_score, novelty_score) 取值 0.0-1.0。
-- priority_score 取值 0-100。
-- reading_priority: "skip" 仅用于明确无关、重复、损坏或低质量条目；不确定但可能相关请用 "low-priority"。
-- relevance_reason 必须非空，解释为什么对用户重要或无关。
-- suggested_action 指明下一步学习动作。
-- learning_tags 从允许列表选取: {', '.join(learning_tag_list)}
-- 如果内容匹配 P0 必学主题且有教程/参考架构价值，reading_priority 至少为 save-for-context。
-- 如果内容是泛泛讨论或新闻且无技术机制/实践信号，reading_priority 最多为 low-priority。
-"""
+    prompt = render(
+        "analyzer",
+        {
+            "profile_text": profile_text,
+            "title": item.get("title", ""),
+            "source": item.get("source", ""),
+            "url": item.get("source_url", item.get("url", "")),
+            "description": item.get("raw_description", item.get("description", "")),
+            "learning_tags": ", ".join(learning_tag_list),
+        },
+    )
 
     result, usage, model = chat_json_with_model(prompt, temperature=0.3, max_tokens=900)
     if not isinstance(result, dict):

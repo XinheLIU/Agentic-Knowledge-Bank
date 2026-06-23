@@ -71,3 +71,13 @@ jobs:
             git commit -m "chore: daily collection - ${ARTICLE_COUNT} articles [$(date -u +%Y-%m-%d)]"
             git push
           fi
+
+      - name: Send daily digest email
+        if: ${{ secrets.EMAIL_ADDRESS != '' }}
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          DIGEST_RECIPIENTS: ${{ secrets.DIGEST_RECIPIENTS }}
+        run: uv run python -m workflows.digest

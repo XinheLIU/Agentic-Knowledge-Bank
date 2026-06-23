@@ -1,9 +1,9 @@
 # AI Knowledge Base
 
-> Last updated: 2026-05-19  
+> Last updated: 2026-06-23  
 > 中文: [README.zh-CN.md](README.zh-CN.md)
 
-Automated technical intelligence for AI, LLM, RAG, and agent tooling. Version **0.5.1** runs a LangGraph workflow under `workflows/` that collects GitHub and RSS sources, analyzes each item with an LLM, reviews quality in a loop, and writes structured JSON articles to `knowledge/articles/`.
+Automated technical intelligence for AI, LLM, RAG, and agent tooling. Version **0.7.0** runs a LangGraph workflow under `workflows/` that collects GitHub and RSS sources, analyzes each item with an LLM, reviews quality in a loop, and writes structured JSON articles to `knowledge/articles/`. A standalone digest CLI then emails the day's high-priority reading.
 
 ## How It Works
 
@@ -16,7 +16,7 @@ plan → collect → analyze → review
 
 - **Planner** — per-run strategy (limits, thresholds).
 - **Collector** — GitHub Search API + RSS (`workflows/rss_sources.yaml`).
-- **Analyzer / Reviewer / Reviser** — LLM analysis, five-dimension weighted review, targeted revision.
+- **Analyzer / Reviewer / Reviser** — LLM analysis, five-dimension weighted review, targeted revision. Prompt text lives in `prompts/` (loaded via `workflows/prompts.py`), not inline in the nodes.
 - **Organizer** — dedupe by `source_url`, write `knowledge/articles/<slug>-<YYYYMMDD>-<NNN>.json`.
 - **HumanFlag** — batches that exhaust the review loop go to `knowledge/pending_review/` (local only, not committed by CI).
 
@@ -27,6 +27,9 @@ Skipped or filtered items are audited in `knowledge/articles/_skipped.jsonl` (on
 ```text
 ai-kb/
 ├── workflows/               # LangGraph nodes, state, graph CLI, RSS config
+│   ├── prompts.py           # Prompt template loader (provider override → generic)
+│   └── digest.py            # Daily digest builder + email sender (stdlib SMTP)
+├── prompts/                 # Externalized prompt templates (*.txt)
 ├── scripts/
 │   └── build_index.py       # Rebuild knowledge/articles/index.json from disk
 ├── hooks/                   # JSON schema + quality scoring
@@ -114,6 +117,26 @@ uv run python -m workflows.graph --sources github,rss --limit 20 --verbose
 - `human_flag` emits a workflow warning locally/CI; use `--fail-on-human-flag` when you want a hard exit.
 
 Real-provider E2E tests run separately in [`.github/workflows/llm-e2e.yml`](.github/workflows/llm-e2e.yml).
+
+## Email Digest
+
+After a run, email yourself a ranked digest of the day's `study-now` / `save-for-context` items (read from `knowledge/articles/`, grouped by priority, sorted by `priority_score`):
+
+```bash
+uv run python -m workflows.digest --stdout            # preview, no email
+uv run python -m workflows.digest --since 2026-06-23  # send for a given day
+```
+
+Configure SMTP via env (the digest no-ops gracefully when these are unset):
+
+| Variable | Purpose |
+|----------|---------|
+| `EMAIL_ADDRESS` | Sender address (enables sending) |
+| `EMAIL_PASSWORD` | Sender password / app password |
+| `SMTP_HOST` / `SMTP_PORT` | Defaults `smtp.gmail.com` / `587` |
+| `DIGEST_RECIPIENTS` | Comma-separated recipients (defaults to sender) |
+
+The daily CI workflow sends the digest automatically when `EMAIL_ADDRESS` is set as a repo secret.
 
 ## Validate Articles
 

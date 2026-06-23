@@ -10,7 +10,7 @@ info sources
 
 info diagest
 
-1. 信息简报 + track skill（类似语鲸）
+1. 信息简报 + track skill（类似语鲸） — ✅ 简报邮件已实现 (v0.7.0, `workflows/digest.py`)
 2. Ranking: mechanisum relevance to me
 3. tagging involvement -> to index
    1. 深度 精读 浅层沟通

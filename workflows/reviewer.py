@@ -6,6 +6,7 @@ import json
 from typing import Any
 
 from workflows.model_client import accumulate_usage, chat_json_with_model
+from workflows.prompts import load_prompt, render
 from workflows.relevance_profile import load_relevance_profile, profile_summary_text
 from workflows.skipped import append_skipped
 from workflows.state import KBState
@@ -47,44 +48,18 @@ def review_node(state: KBState) -> dict[str, Any]:
     profile_text = profile_summary_text(profile)
 
     sample = analyses[:5]
-    prompt = f"""你是知识库质量审核员。请审核以下分析结果：
-
-用户学习画像:
-{profile_text}
-
-分析结果:
-{json.dumps(sample, ensure_ascii=False, indent=2)}
-
-按 1-10 分评分：
-- summary_quality: 摘要准确性、可读性、信息密度
-- technical_depth: 技术深度和实现细节
-- personal_relevance: 与用户学习路线的匹配度、个人相关性字段的准确性
-- actionability: 学习价值、行动建议是否合理、是否回答了"我该怎么做"
-- formatting: 字段完整、标签规范、reading_priority 和 learning_track 是否合理
-
-重点审核：
-- 个人匹配度低但标记为 study-now 的条目应扣分
-- 缺少技术机制描述的泛泛讨论应扣分
-- 不确定但可能相关的内容不应被标记为 skip
-- reading_priority 与内容实际价值是否匹配
-
-只返回 JSON:
-{{
-  "scores": {{
-    "summary_quality": 8,
-    "technical_depth": 7,
-    "personal_relevance": 9,
-    "actionability": 7,
-    "formatting": 8
-  }},
-  "feedback": "具体、可执行的改进建议，指出弱个人匹配、不清晰学习收益、缺失技术机制或无效优先级分配",
-  "weak_dimensions": ["technical_depth"]
-}}"""
+    prompt = render(
+        "reviewer",
+        {
+            "profile_text": profile_text,
+            "analyses_json": json.dumps(sample, ensure_ascii=False, indent=2),
+        },
+    )
 
     try:
         result, usage, model = chat_json_with_model(
             prompt,
-            system="你是严格但公正的知识库质量审核员。请只返回 JSON。",
+            system=load_prompt("reviewer_system"),
             temperature=0.1,
             max_tokens=800,
         )

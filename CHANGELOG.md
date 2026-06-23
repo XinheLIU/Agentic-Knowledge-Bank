@@ -1,9 +1,16 @@
 # Changelog
-> Last updated: 2026-05-24
+> Last updated: 2026-06-23
 
 All notable changes are listed by release. There are no `git` tags yet; older sections may name commit hashes for traceability.
 
 ## [Unreleased]
+
+## [0.7.0] — 2026-06-23
+
+- Externalize LLM prompts into `prompts/*.txt` (analyzer, reviewer, reviser + their system messages), loaded via `workflows/prompts.py`. A provider-specific file (`prompts/<provider>/<name>.txt`) overrides the generic one; substitution uses `string.Template` to coexist with literal JSON braces. Prompt text was extracted verbatim — pipeline behavior is unchanged.
+- Add `workflows/digest.py`: a standalone CLI that reads `knowledge/articles/`, ranks the day's `study-now` / `save-for-context` items by `priority_score`, renders a grouped markdown digest, and emails it (stdlib SMTP, plain text). No-ops gracefully when SMTP env is unset.
+- Wire the digest into `daily-collect.yml` as a final step, gated on the `EMAIL_ADDRESS` secret.
+- Both features borrowed from the retired Info-Sentinel-Agent (`prompt_manager.py`, `notifier.py`); no new runtime dependencies added.
 
 ## [0.6.0] — 2026-05-24
 

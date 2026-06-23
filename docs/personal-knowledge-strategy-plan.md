@@ -1,6 +1,10 @@
 # Personal Knowledge Strategy Plan
 
-> Last updated: 2026-05-24
+> Last updated: 2026-06-23
+
+> **v0.7.0 update:** the "ranked reading queue" described below is now delivered by
+> `workflows/digest.py` — a daily email of `study-now` / `save-for-context` items,
+> ranked by `priority_score`. See README "Email Digest".
 
 ## Summary
 
