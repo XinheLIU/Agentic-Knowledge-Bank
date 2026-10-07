@@ -1,0 +1,23 @@
+{
+  "id": "rss:reddit-r-machinelearning-20260519-005",
+  "title": "Sanitized title fixture content for legacy record rss:reddit-r-machinelearning-20260519-005.",
+  "source": "rss:Reddit r/MachineLearning",
+  "source_url": "https://www.reddit.com/r/MachineLearning/comments/1tgmwqr/reviving_paperswithcode_by_hugging_face_p/",
+  "url": "https://www.reddit.com/r/MachineLearning/comments/1tgmwqr/reviving_paperswithcode_by_hugging_face_p/",
+  "author": "fixture-author-rss:reddit-r-machinelearning-20260519-005",
+  "published_at": "2026-05-19T11:25:23.628043+00:00",
+  "collected_at": "2026-05-19T11:25:23.628043+00:00",
+  "summary": "Sanitized summary fixture content for legacy record rss:reddit-r-machinelearning-20260519-005. Deterministic synthetic replacement preserving schema shape and validation floor.",
+  "tags": [
+    "llm",
+    "agent",
+    "evaluation"
+  ],
+  "status": "published",
+  "score": 9,
+  "audience": "intermediate",
+  "relevance_score": 0.95,
+  "category": "evaluation",
+  "key_insight": "Sanitized key insight fixture content for legacy record rss:reddit-r-machinelearning-20260519-005.",
+  "updated_at": "2026-05-19T11:28:29.812497+00:00"
+}

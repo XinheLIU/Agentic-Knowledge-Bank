@@ -1,9 +1,12 @@
 # Changelog
-> Last updated: 2026-06-23
+> Last updated: 2026-10-04
 
 All notable changes are listed by release. There are no `git` tags yet; older sections may name commit hashes for traceability.
 
 ## [Unreleased]
+
+- Retire the legacy LangGraph/JSON production path (ticket 16): delete `workflows/`, `hooks/`, `prompts/`, `scripts/build_index.py`, `scripts/backfill_scores.py`, the LangGraph demo notebook, `.opencode/plugins/validate.ts`, `.env.example`, and the `llm-e2e.yml` CI lane; drop the `langgraph`/`feedparser` dependencies. The sanitized legacy fixture corpus (`tests/fixtures/legacy_articles/`) is retained as the migration oracle.
+- Evict the Horizon *run* surface from KB (workspace refactor): delete the `kb/horizon/` provider shims (`adapter.py`, `transport.py`, `source_config.py`), the `scripts/production_run.py` / `scripts/setup_horizon.py` launchers, `kb.ingest.ingest_horizon_run`, the `kb.cli` information-command forwarding, and the run/digest summary types. Provider communication and setup live in `agent-tools`; run orchestration, scheduling and digests live in Information Assistant. KB keeps asset identity, the pure mapper, admission and storage, and admits a completed provider payload through `kb.ingest.ingest_horizon_payload`.
 
 ## [0.7.0] — 2026-06-23
 
@@ -28,7 +31,7 @@ All notable changes are listed by release. There are no `git` tags yet; older se
 ## [0.5.1] — 2026-05-19
 
 - Unify `knowledge/articles/` on v0.5 schema: slug-based IDs, derived `index.json` (`scripts/build_index.py`), `_skipped.jsonl` audit log, nullable `author` / `published_at`.
-- Tighten workflow validation (RSS `slug`, `hooks/validate_json.py`, `workflows/skipped.py`); refresh README / `README.zh-CN.md`; remove root `spec/`; add `docs/archive/` and OpenSpec cleanup archive.
+- Refresh README / `README.zh-CN.md`; remove root `spec/`; add `docs/archive/` and a local Markdown spec archive. Historical release notes above the cutover describe the retired pipeline and are preserved verbatim.
 - Daily CI: validate only newly staged articles; stop committing `knowledge/raw/`.
 
 ## [0.5.0] — 2026-05-06

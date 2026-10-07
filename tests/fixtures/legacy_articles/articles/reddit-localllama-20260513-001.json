@@ -1,0 +1,22 @@
+{
+  "id": "reddit-localllama-20260513-001",
+  "title": "Sanitized title fixture content for legacy record reddit-localllama-20260513-001.",
+  "source": "rss:Reddit r/LocalLLaMA",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1suw9on/ama_announcement_nous_research_the_opensource_lab/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-13T10:34:03.716114+00:00",
+  "summary": "Sanitized summary fixture content for legacy record reddit-localllama-20260513-001. Deterministic synthetic replacement preserving schema shape and validation floor.",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "Sanitized key insight fixture content for legacy record reddit-localllama-20260513-001.",
+  "updated_at": "2026-05-13T10:37:13.158532+00:00"
+}

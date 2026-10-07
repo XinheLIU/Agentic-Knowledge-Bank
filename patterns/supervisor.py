@@ -14,8 +14,7 @@ Supervisor 模式的核心思想:
 import json
 from dataclasses import dataclass, field
 
-from workflows.model_client import accumulate_usage, chat, chat_json
-
+from patterns.model_client import accumulate_usage, chat, chat_json
 
 # ---------------------------------------------------------------------------
 # Worker 定义

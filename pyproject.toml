@@ -5,9 +5,10 @@ description = "AI 知识库 — 自动化技术情报收集与分析系统"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "feedparser>=6.0.11",
+    "xinhe-agent-tools>=0.1.0",
+    "flask>=3.1.3",
+    "flask-cors>=6.0.5",
     "httpx>=0.27.0",
-    "langgraph>=0.2.60",
     "python-dotenv>=1.0.0",
     "pyyaml>=6.0",
 ]
@@ -20,14 +21,30 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = [".", "hooks"]
+pythonpath = ["."]
 addopts = "-q --tb=short"
 markers = [
     "non_llm: deterministic tests with mocked or avoided LLM calls",
     "llm_e2e: real-provider end-to-end workflow verification",
 ]
 
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["mcp_knowledge_server"]
+
+[tool.setuptools.packages.find]
+include = ["kb*", "ui*"]
+
+[tool.setuptools.package-data]
+ui = ["static/**/*"]
+
 [tool.ruff]
 line-length = 100
 select = ["E", "F", "W", "I"]
 ignore = ["E501"]
+
+[tool.uv.sources]
+xinhe-agent-tools = { path = "../../tools/agent-tools", editable = true }

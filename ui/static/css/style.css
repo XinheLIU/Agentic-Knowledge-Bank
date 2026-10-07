@@ -714,3 +714,38 @@ body.dark .card-actions button { background: #252525; }
   .sidebar { display: none; }
   .drawer { width: 100%; }
 }
+
+/* ── ticket 12: canonical-store UI additions ─────────────────────────── */
+.placeholder {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+.placeholder.error { color: #c00; }
+.sources-dir {
+  font-size: 12px;
+  color: #888;
+  padding: 4px 0 10px;
+}
+.lang-badge, .profile-badge {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+.asset-id {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  color: #888;
+}
+.artifact-block {
+  border-left: 2px solid #e5e7eb;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+}
+.artifact-block.primary { border-left-color: #4f46e5; }
+.artifact-title { font-weight: 600; font-size: 13px; margin-bottom: 2px; }
+.artifact-content { font-size: 13px; color: #444; white-space: pre-wrap; }
+body.dark .lang-badge, body.dark .profile-badge { background: #312e81; color: #c7d2fe; }
+body.dark .artifact-content { color: #bbb; }

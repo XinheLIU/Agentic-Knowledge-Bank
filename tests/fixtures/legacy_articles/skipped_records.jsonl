@@ -1,0 +1,5 @@
+{"id": "reddit-ml-20260520-001", "source": "rss:Example Subreddit", "source_url": "https://example.com/post/low-relevance", "stage": "analyzer", "reason": "relevance_score 0.3 < threshold 0.4", "ts": "2026-05-20T10:58:39.570127+00:00"}
+{"id": "unknown", "source": "github", "source_url": "https://example.com/repo/unknown-attribution", "stage": "analyzer", "reason": "relevance_score 0.0 < threshold 0.5", "ts": "2026-05-19T10:45:32.189114+00:00"}
+{"id": "rss:example-feed-20260519-001", "source": "rss:Example Feed", "source_url": "https://example.com/feed/colon-id-drop", "stage": "analyzer", "reason": "relevance_score 0.15 < threshold 0.4", "ts": "2026-05-19T10:47:12.000001+00:00"}
+{"id": "rss:example-feed-20260519-002", "source": "rss:Example Feed", "source_url": "https://example.com/feed/missing-insight", "stage": "organizer", "reason": "schema validation failed: missing key_insight", "ts": "2026-05-19T10:50:31.869573+00:00"}
+{"id": "github-20260519-001", "source": "github", "source_url": "https://example.com/repo/schema-fail", "stage": "organizer", "reason": "schema validation failed: missing key_insight", "ts": "2026-05-19T10:50:31.870198+00:00"}

@@ -1,0 +1,22 @@
+{
+  "id": "hn-best-20260518-002",
+  "title": "Sanitized title fixture content for legacy record hn-best-20260518-002.",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+  "url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+  "author": null,
+  "published_at": null,
+  "collected_at": "2026-05-18T11:48:27.565692+00:00",
+  "summary": "Sanitized summary fixture content for legacy record hn-best-20260518-002. Deterministic synthetic replacement preserving schema shape and validation floor.",
+  "tags": [
+    "llm",
+    "agent"
+  ],
+  "status": "published",
+  "score": 7,
+  "audience": "intermediate",
+  "relevance_score": 0.8,
+  "category": "agent",
+  "key_insight": "Sanitized key insight fixture content for legacy record hn-best-20260518-002.",
+  "updated_at": "2026-05-18T11:51:23.893083+00:00"
+}

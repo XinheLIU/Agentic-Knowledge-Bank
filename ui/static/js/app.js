@@ -1,11 +1,18 @@
-/* AI Knowledge Base UI - Frontend */
+/* AI Knowledge Base UI — canonical-store frontend (ticket 12)
+ *
+ * Talks only to the canonical SQLite store API (/api/articles, /api/stats,
+ * /api/filters, /api/sources → Horizon config). Legacy fields/controls
+ * (audience/category filters, JSON file import, edit/delete batch actions)
+ * are intentionally removed; enrichment artifacts and localization badges
+ * are the new first-class concepts.
+ */
 
 const API_BASE = '';
 
 const state = {
   currentView: 'articles',
-  filters: { source: '', tag: '', category: '', status: '', audience: '', q: '', from_date: '', to_date: '' },
-  sort: 'updated_at',
+  filters: { source_type: '', tag: '', profile: '', status: '', q: '', from_date: '', to_date: '' },
+  sort: 'score',
   page: 1,
   limit: 20,
   totalPages: 1,
@@ -13,6 +20,7 @@ const state = {
   filterOptions: null,
   stats: null,
   sources: null,
+  horizonDir: null,
   drawerOpen: false,
   focusIndex: -1
 };
@@ -20,7 +28,11 @@ const state = {
 /* API */
 async function api(path, opts = {}) {
   const res = await fetch(API_BASE + path, opts);
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) {
+    let msg = `HTTP ${res.status}`;
+    try { msg = (await res.json()).error || msg; } catch { /* keep default */ }
+    throw new Error(msg);
+  }
   return res.json();
 }
 
@@ -29,35 +41,10 @@ function fetchArticles() {
   qs.set('page', state.page);
   qs.set('limit', state.limit);
   qs.set('sort', state.sort);
-  if (state.filters.source) qs.set('source', state.filters.source);
-  if (state.filters.tag) qs.set('tag', state.filters.tag);
-  if (state.filters.category) qs.set('category', state.filters.category);
-  if (state.filters.status) qs.set('status', state.filters.status);
-  if (state.filters.audience) qs.set('audience', state.filters.audience);
-  if (state.filters.q) qs.set('q', state.filters.q);
-  if (state.filters.from_date) qs.set('from_date', state.filters.from_date);
-  if (state.filters.to_date) qs.set('to_date', state.filters.to_date);
+  for (const [key, value] of Object.entries(state.filters)) {
+    if (value) qs.set(key, value);
+  }
   return api(`/api/articles?${qs}`);
-}
-
-function patchArticle(id, data) {
-  return api(`/api/articles/${id}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  });
-}
-
-function deleteArticle(id) {
-  return api(`/api/articles/${id}`, { method: 'DELETE' });
-}
-
-function batchAction(action, ids, params = {}) {
-  return api('/api/articles/batch', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ action, ids, params })
-  });
 }
 
 function exportArticles(ids) {
@@ -68,19 +55,11 @@ function exportArticles(ids) {
   });
 }
 
-function importArticles(articles) {
-  return api('/api/articles/import', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ articles })
-  });
-}
-
 function fetchFilters() { return api('/api/filters'); }
 function fetchStats() { return api('/api/stats'); }
 function fetchSources() { return api('/api/sources'); }
 function patchSource(slug, data) {
-  return api(`/api/sources/${slug}`, {
+  return api(`/api/sources/${encodeURIComponent(slug)}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
@@ -96,17 +75,22 @@ function switchView(view) {
   document.getElementById('pagination').style.display = view === 'articles' ? 'flex' : 'none';
   document.getElementById('sources-list').style.display = view === 'sources' ? 'block' : 'none';
   document.getElementById('filters-group').style.display = view === 'articles' ? 'block' : 'none';
-  if (view === 'sources') {
-    loadSources();
-  }
+  if (view === 'sources') loadSources();
 }
 
-/* Rendering Sources */
+/* Sources view (Horizon source governance) */
 function renderSourcesView() {
   const container = document.getElementById('sources-list');
   container.innerHTML = '';
+  if (state.horizonDir) {
+    const dir = document.createElement('div');
+    dir.className = 'sources-dir';
+    dir.textContent = `Horizon 配置: ${state.horizonDir}`;
+    container.appendChild(dir);
+  }
   if (!state.sources || state.sources.length === 0) {
-    container.innerHTML = '<div style="text-align:center;color:#999;padding:40px;">暂无来源数据</div>';
+    container.insertAdjacentHTML('beforeend',
+      '<div class="placeholder">暂无来源数据</div>');
     return;
   }
   const table = document.createElement('table');
@@ -116,13 +100,13 @@ function renderSourcesView() {
       <tr>
         <th>Slug</th>
         <th>名称</th>
+        <th>类型</th>
         <th>分类</th>
         <th>近7天</th>
         <th>启用</th>
       </tr>
     </thead>
-    <tbody>
-    </tbody>
+    <tbody></tbody>
   `;
   const tbody = table.querySelector('tbody');
   for (const src of state.sources) {
@@ -130,6 +114,7 @@ function renderSourcesView() {
     tr.innerHTML = `
       <td>${escapeHtml(src.slug)}</td>
       <td>${escapeHtml(src.name || src.slug)}</td>
+      <td>${escapeHtml(src.source_type)}</td>
       <td>${escapeHtml(src.category || '')}</td>
       <td>${src.last_7d_count}</td>
       <td><input type="checkbox" class="source-toggle" ${src.enabled ? 'checked' : ''} data-slug="${escapeHtml(src.slug)}"></td>
@@ -137,58 +122,45 @@ function renderSourcesView() {
     tbody.appendChild(tr);
   }
   container.appendChild(table);
-  // Attach toggle listeners
   document.querySelectorAll('.source-toggle').forEach(cb => {
     cb.addEventListener('change', async (e) => {
       const slug = e.target.dataset.slug;
       const enabled = e.target.checked;
       try {
-        const updatedSources = await patchSource(slug, { enabled });
-        state.sources = updatedSources;
+        const payload = await patchSource(slug, { enabled });
+        state.sources = payload.sources;
+        state.horizonDir = payload.horizon_dir || state.horizonDir;
         renderSourcesView();
       } catch (err) {
         console.error('Patch failed:', err);
         alert('更新失败: ' + err.message);
-        e.target.checked = !enabled; // revert
+        e.target.checked = !enabled; // revert on validation failure
       }
     });
   });
 }
 
 async function loadSources() {
+  const container = document.getElementById('sources-list');
   try {
-    state.sources = await fetchSources();
+    const payload = await fetchSources();
+    state.sources = payload.sources;
+    state.horizonDir = payload.horizon_dir;
     renderSourcesView();
   } catch (err) {
     console.error('Load sources failed:', err);
-    document.getElementById('sources-list').innerHTML = `<div style="text-align:center;color:#c00;padding:40px;">加载失败: ${escapeHtml(err.message)}</div>`;
+    container.innerHTML = `<div class="placeholder error">加载失败: ${escapeHtml(err.message)}</div>`;
   }
 }
 
-/* Rendering */
+/* Filters */
 function renderFilters() {
   if (!state.filterOptions) return;
-  const { sources, tags, categories, statuses } = state.filterOptions;
-  renderFilterList('source-filters', sources, 'source');
-  renderFilterList('category-filters', categories, 'category');
+  const { sources, tags, profiles, statuses } = state.filterOptions;
+  renderFilterList('source-filters', sources, 'source_type');
+  renderFilterList('profile-filters', profiles, 'profile');
   renderFilterList('tag-filters', tags, 'tag');
   renderFilterList('status-filters', statuses, 'status');
-  populateSelect('batch-tag-select', tags, '打标签...');
-  populateSelect('batch-untag-select', tags, '删标签...');
-  populateSelect('batch-cat-select', categories, '改分类...');
-  populateSelect('batch-status-select', statuses, '改状态...');
-}
-
-function populateSelect(selectId, items, placeholder) {
-  const sel = document.getElementById(selectId);
-  if (!sel) return;
-  sel.innerHTML = `<option value="">${escapeHtml(placeholder)}</option>`;
-  for (const item of items) {
-    const opt = document.createElement('option');
-    opt.value = item;
-    opt.textContent = item;
-    sel.appendChild(opt);
-  }
 }
 
 function renderFilterList(ulId, items, filterKey) {
@@ -212,16 +184,20 @@ function renderFilterList(ulId, items, filterKey) {
 function renderStats() {
   if (!state.stats) return;
   document.getElementById('stat-total').innerHTML = `${state.stats.total} <span>条目</span>`;
-  document.getElementById('stat-sources').innerHTML = `${Object.keys(state.stats.sources).length} <span>来源</span>`;
+  document.getElementById('stat-sources').innerHTML =
+    `${Object.keys(state.stats.sources).length} <span>来源类型</span>`;
   document.getElementById('stat-tags').innerHTML = `${Object.keys(state.stats.tags).length} <span>标签</span>`;
+  const ver = document.getElementById('kb-version');
+  if (ver) ver.textContent = `v${state.stats.version || '?'}`;
 }
 
+/* Articles */
 function renderArticles(data) {
   const container = document.getElementById('articles-list');
   container.innerHTML = '';
   state.focusIndex = -1;
   if (!data.items || data.items.length === 0) {
-    container.innerHTML = '<div style="text-align:center;color:#999;padding:40px;">暂无数据</div>';
+    container.innerHTML = '<div class="placeholder">暂无数据</div>';
     renderPagination(data);
     return;
   }
@@ -235,8 +211,10 @@ function createArticleCard(article) {
   const div = document.createElement('div');
   div.className = 'article-card' + (state.selectedIds.has(article.id) ? ' selected' : '');
   div.dataset.id = article.id;
-  const categories = article.categories || [];
-  const catStr = categories.length > 0 ? categories.join(' | ') : '';
+
+  const badges = [];
+  if (article.has_zh) badges.push('<span class="lang-badge">中文</span>');
+  if (article.has_en) badges.push('<span class="lang-badge">EN</span>');
 
   div.innerHTML = `
     <div class="article-header">
@@ -244,20 +222,16 @@ function createArticleCard(article) {
       <div class="article-title">${escapeHtml(article.title)}</div>
     </div>
     <div class="article-meta">
-      <span class="source-badge">${escapeHtml(article.source || '')}</span>
+      <span class="source-badge">${escapeHtml(article.source_type)}</span>
       ${article.score != null ? `<span class="score">★ ${article.score}</span>` : ''}
-      <span class="status-badge status-${article.status || 'draft'}">${article.status || 'draft'}</span>
-      ${catStr ? `<span class="source-badge">${escapeHtml(catStr)}</span>` : ''}
+      ${article.profile ? `<span class="profile-badge">${escapeHtml(article.profile)}</span>` : ''}
+      <span class="status-badge status-published">asset</span>
+      ${badges.join('')}
       <span>${formatDate(article.updated_at)}</span>
     </div>
     <div class="article-summary">${escapeHtml(article.summary || '')}</div>
     <div class="article-tags">
       ${(article.tags || []).map(t => `<span class="tag" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('')}
-    </div>
-    <div class="card-actions">
-      <button class="quick-edit" title="编辑标签">🏷</button>
-      <button class="quick-cat" title="编辑分类">📂</button>
-      <button class="quick-status" title="编辑状态">⚡</button>
     </div>
   `;
 
@@ -279,28 +253,6 @@ function createArticleCard(article) {
     });
   });
 
-  div.querySelector('.quick-edit').addEventListener('click', (e) => {
-    e.stopPropagation();
-    const value = prompt('编辑标签（逗号分隔）:', (article.tags || []).join(', '));
-    if (value === null) return;
-    const tags = value.split(',').map(s => s.trim()).filter(Boolean);
-    patchArticle(article.id, { tags }).then(() => loadData());
-  });
-
-  div.querySelector('.quick-cat').addEventListener('click', (e) => {
-    e.stopPropagation();
-    const value = prompt('编辑分类:', article.category || '');
-    if (value === null) return;
-    patchArticle(article.id, { category: value.trim() }).then(() => loadData());
-  });
-
-  div.querySelector('.quick-status').addEventListener('click', (e) => {
-    e.stopPropagation();
-    const value = prompt('编辑状态 (draft/review/published/archived):', article.status || 'draft');
-    if (value === null) return;
-    patchArticle(article.id, { status: value.trim() }).then(() => loadData());
-  });
-
   return div;
 }
 
@@ -310,7 +262,7 @@ function renderPagination(data) {
   state.totalPages = data.pages || 1;
   const prev = document.createElement('button');
   prev.textContent = '上一页';
-  prev.disabled = data.page <= 1;
+  prev.disabled = (data.page || 1) <= 1;
   prev.addEventListener('click', () => { state.page--; loadData(); });
   container.appendChild(prev);
   const info = document.createElement('span');
@@ -319,7 +271,7 @@ function renderPagination(data) {
   container.appendChild(info);
   const next = document.createElement('button');
   next.textContent = '下一页';
-  next.disabled = data.page >= data.pages;
+  next.disabled = (data.page || 1) >= (data.pages || 1);
   next.addEventListener('click', () => { state.page++; loadData(); });
   container.appendChild(next);
 }
@@ -328,24 +280,35 @@ function renderPagination(data) {
 function openDrawer(article) {
   const drawer = document.getElementById('drawer');
   const body = document.getElementById('drawer-body');
-  const categories = article.categories || [];
-  const catStr = categories.length > 0 ? categories.join(' | ') : '';
+
+  const artifacts = article.artifacts || [];
+  const artifactHtml = artifacts.map(a => `
+    <div class="drawer-section">
+      <h3>${escapeHtml(a.title || a.language || 'enrichment')} <span class="lang-badge">${escapeHtml(a.language)}</span></h3>
+      ${(a.blocks || []).map(b => `
+        <div class="artifact-block ${b.is_primary ? 'primary' : ''}">
+          ${b.title ? `<div class="artifact-title">${escapeHtml(b.title)}</div>` : ''}
+          <div class="artifact-content">${escapeHtml(b.content || '')}</div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
 
   body.innerHTML = `
     <div class="drawer-title">${escapeHtml(article.title)}</div>
     <div class="drawer-meta">
-      <span class="source-badge">${escapeHtml(article.source || '')}</span>
-      <span class="status-badge status-${article.status || 'draft'}">${article.status || 'draft'}</span>
+      <span class="source-badge">${escapeHtml(article.source_type)}</span>
+      ${article.profile ? `<span class="profile-badge">${escapeHtml(article.profile)}</span>` : ''}
       ${article.score != null ? `<span class="score">★ ${article.score}</span>` : ''}
-      ${catStr ? `<span class="source-badge">${escapeHtml(catStr)}</span>` : ''}
-      <span>${formatDate(article.updated_at)}</span>
+      <span class="asset-id">${escapeHtml(article.id)}</span>
+      <span>${formatDate(article.published_at || article.updated_at)}</span>
     </div>
     <div class="drawer-section"><h3>摘要</h3><div class="drawer-summary">${escapeHtml(article.summary || '')}</div></div>
-    ${article.key_insight ? `<div class="drawer-section"><h3>核心洞察</h3><div class="drawer-insight">${escapeHtml(article.key_insight)}</div></div>` : ''}
+    ${article.score_reason ? `<div class="drawer-section"><h3>评分理由</h3><div class="drawer-summary">${escapeHtml(article.score_reason)}</div></div>` : ''}
+    ${artifactHtml}
     <div class="drawer-section"><h3>标签</h3><div class="drawer-tags">${(article.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div></div>
-    <div class="drawer-section"><h3>链接</h3><a href="${article.source_url}" target="_blank" class="drawer-link">${escapeHtml(article.source_url || '')}</a></div>
+    <div class="drawer-section"><h3>链接</h3><a href="${escapeHtml(article.url || '')}" target="_blank" rel="noopener" class="drawer-link">${escapeHtml(article.url || '')}</a></div>
     ${article.author ? `<div class="drawer-section"><h3>作者</h3><div class="drawer-summary">${escapeHtml(article.author)}</div></div>` : ''}
-    ${article.published_at ? `<div class="drawer-section"><h3>发布时间</h3><div class="drawer-summary">${formatDate(article.published_at)}</div></div>` : ''}
   `;
 
   drawer.classList.add('open');
@@ -357,24 +320,7 @@ function closeDrawer() {
   state.drawerOpen = false;
 }
 
-/* Batch Bar */
-function updateBatchBar() {
-  const bar = document.getElementById('batch-bar');
-  const count = document.getElementById('batch-count');
-  if (state.selectedIds.size > 0) {
-    bar.classList.add('visible');
-    count.textContent = `已选中 ${state.selectedIds.size} 项`;
-  } else {
-    bar.classList.remove('visible');
-  }
-}
-
-function clearSelection() {
-  state.selectedIds.clear();
-  updateBatchBar();
-  loadData();
-}
-
+/* Export (read-only JSON export stays; import is `kb ingest`/`kb restore`) */
 async function doExport() {
   const ids = Array.from(state.selectedIds);
   if (!ids.length) { alert('请先选择条目'); return; }
@@ -383,20 +329,9 @@ async function doExport() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `kb-export-${new Date().toISOString().slice(0,10)}.json`;
+  a.download = `kb-export-${new Date().toISOString().slice(0, 10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
-}
-
-async function doImport(file) {
-  const text = await file.text();
-  let data;
-  try { data = JSON.parse(text); } catch { alert('JSON 格式错误'); return; }
-  const articles = Array.isArray(data) ? data : (data.articles || []);
-  if (!articles.length) { alert('文件中未找到条目'); return; }
-  const result = await importArticles(articles);
-  alert(`导入完成: ${result.imported} 成功, ${result.skipped} 跳过`);
-  loadData();
 }
 
 /* Data Loading */
@@ -410,15 +345,16 @@ async function loadData() {
     renderArticles(articles);
   } catch (err) {
     console.error('Load failed:', err);
-    document.getElementById('articles-list').innerHTML = `<div style="text-align:center;color:#c00;padding:40px;">加载失败: ${escapeHtml(err.message)}</div>`;
+    document.getElementById('articles-list').innerHTML =
+      `<div class="placeholder error">加载失败: ${escapeHtml(err.message)}</div>`;
   }
 }
 
 /* Utilities */
 function escapeHtml(text) {
-  if (!text) return '';
+  if (text == null) return '';
   const div = document.createElement('div');
-  div.textContent = text;
+  div.textContent = String(text);
   return div.innerHTML;
 }
 
@@ -471,8 +407,7 @@ function handleKey(e) {
 
   if (e.key === 'x' || e.key === 'X') {
     if (state.focusIndex >= 0 && state.focusIndex < cards.length) {
-      const card = cards[state.focusIndex];
-      const cb = card.querySelector('.article-checkbox');
+      const cb = cards[state.focusIndex].querySelector('.article-checkbox');
       cb.checked = !cb.checked;
       cb.dispatchEvent(new Event('change'));
     }
@@ -487,17 +422,32 @@ function handleKey(e) {
   }
 }
 
+function clearSelection() {
+  state.selectedIds.clear();
+  updateBatchBar();
+  loadData();
+}
+
+function updateBatchBar() {
+  const bar = document.getElementById('batch-bar');
+  const count = document.getElementById('batch-count');
+  if (!bar || !count) return;
+  if (state.selectedIds.size > 0) {
+    bar.classList.add('visible');
+    count.textContent = `已选中 ${state.selectedIds.size} 项`;
+  } else {
+    bar.classList.remove('visible');
+  }
+}
+
 /* Event Bindings */
 function init() {
-  // View tabs
   document.getElementById('tab-articles').addEventListener('click', () => switchView('articles'));
   document.getElementById('tab-sources').addEventListener('click', () => switchView('sources'));
 
-  // Theme
   applyTheme();
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
-  // Date filters
   document.getElementById('date-from').addEventListener('change', (e) => {
     state.filters.from_date = e.target.value;
     state.page = 1;
@@ -509,11 +459,14 @@ function init() {
     loadData();
   });
 
-  // Search
+  let searchTimer = null;
   document.getElementById('search-input').addEventListener('input', (e) => {
-    state.filters.q = e.target.value;
-    state.page = 1;
-    loadData();
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.filters.q = e.target.value;
+      state.page = 1;
+      loadData();
+    }, 250);
   });
 
   document.getElementById('sort-select').addEventListener('change', (e) => {
@@ -521,75 +474,18 @@ function init() {
     loadData();
   });
 
-  // Export / Import
-  document.getElementById('export-btn').addEventListener('click', doExport);
-  document.getElementById('import-btn').addEventListener('click', () => {
-    document.getElementById('import-file').click();
-  });
-  document.getElementById('import-file').addEventListener('change', (e) => {
-    if (e.target.files[0]) doImport(e.target.files[0]);
+  document.getElementById('export-btn').addEventListener('click', () => {
+    doExport().catch(err => alert('导出失败: ' + err.message));
   });
 
-  // Keyboard shortcuts
   document.addEventListener('keydown', handleKey);
 
   document.getElementById('refresh-btn').addEventListener('click', () => loadData());
   document.getElementById('drawer-close').addEventListener('click', closeDrawer);
 
   document.getElementById('batch-clear').addEventListener('click', clearSelection);
-
-  document.getElementById('batch-archive').addEventListener('click', async () => {
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length) return;
-    await batchAction('archive', ids);
-    clearSelection();
-  });
-
-  document.getElementById('batch-delete').addEventListener('click', async () => {
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length || !confirm(`确定删除 ${ids.length} 项？`)) return;
-    await batchAction('delete', ids);
-    clearSelection();
-  });
-
-  document.getElementById('batch-tag-select').addEventListener('change', async (e) => {
-    const tag = e.target.value;
-    if (!tag) return;
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length) return;
-    await batchAction('tag', ids, { tags: [tag] });
-    e.target.value = '';
-    clearSelection();
-  });
-
-  document.getElementById('batch-untag-select').addEventListener('change', async (e) => {
-    const tag = e.target.value;
-    if (!tag) return;
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length) return;
-    await batchAction('untag', ids, { tags: [tag] });
-    e.target.value = '';
-    clearSelection();
-  });
-
-  document.getElementById('batch-cat-select').addEventListener('change', async (e) => {
-    const cat = e.target.value;
-    if (!cat) return;
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length) return;
-    await batchAction('category', ids, { category: cat });
-    e.target.value = '';
-    clearSelection();
-  });
-
-  document.getElementById('batch-status-select').addEventListener('change', async (e) => {
-    const st = e.target.value;
-    if (!st) return;
-    const ids = Array.from(state.selectedIds);
-    if (!ids.length) return;
-    await batchAction('status', ids, { status: st });
-    e.target.value = '';
-    clearSelection();
+  document.getElementById('batch-export').addEventListener('click', () => {
+    doExport().catch(err => alert('导出失败: ' + err.message));
   });
 
   loadData();

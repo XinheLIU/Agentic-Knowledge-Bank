@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge-assistant",
+  "kind": "harness",
+  "status": "structural-refactor",
+  "repository": "https://github.com/XinheLIU/Agentic-Knowledge-Bank",
+  "publicationStatus": "local-unreleased",
+  "primaryHost": "claude-code",
+  "verifiedHosts": [],
+  "evaluationStatus": "not-run",
+  "plan": "docs/exec-plans/workspace-refactor.md"
+}

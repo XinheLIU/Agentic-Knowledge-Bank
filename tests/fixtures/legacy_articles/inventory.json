@@ -1,0 +1,216 @@
+{
+  "schema_version": 2,
+  "purpose": "Immutable pre-cutover inventory for the Horizon cutover baseline (ticket 04, revised). Article fixtures are sanitized structural copies; provenance is proven by source_file + source_sha256 recorded here, not by byte identity. The live knowledge/ corpus is never modified by this ticket.",
+  "generated_at": "2026-09-12T00:00:00Z",
+  "production_baseline": {
+    "commit": "6054488",
+    "article_files_including_index": 625,
+    "article_records_excluding_index": 624,
+    "colon_id_records": 406,
+    "skipped_rows": 77,
+    "raw_snapshots": 4
+  },
+  "row_counts": {
+    "articles": 20,
+    "skipped_records": 5,
+    "raw_snapshots": 1
+  },
+  "checksum_scope": "all fixture files except inventory.json itself and __pycache__",
+  "files": [
+    {
+      "path": "BACKUP_RESTORE.md",
+      "bytes": 7491,
+      "sha256": "de0df0185ae128eec53a82ebf830961acf0365f342ae3b657184ba65c162301f"
+    },
+    {
+      "path": "EXPECTED_RESULTS.md",
+      "bytes": 11271,
+      "sha256": "d1e51f99cf6424c3886bfc39600116f3235a4580cdc6a9aeccb5c29f528b503b"
+    },
+    {
+      "path": "articles/github-20260502-021.json",
+      "bytes": 827,
+      "sha256": "21dccc6812873b04d5c6571f2bb8e2c6dd29ae28823266ddb9e4a6ae0dd7fd64",
+      "source_file": "knowledge/articles/github-20260502-021.json",
+      "source_id": "github-20260502-021",
+      "source_sha256": "ed8b263eb88f1e49ef39a138c233db98ba92d46f16c82aa39e10118553f1075d"
+    },
+    {
+      "path": "articles/github-20260502-022.json",
+      "bytes": 852,
+      "sha256": "88a069651086e55c963cb43db9fa6a8bb49b0f4b369b493bea66935572b2f5dd",
+      "source_file": "knowledge/articles/github-20260502-022.json",
+      "source_id": "github-20260502-022",
+      "source_sha256": "3c82c05d0591cedffbe1db39ab6f0362041b6eb00031314cf89f2ed9dff114bb"
+    },
+    {
+      "path": "articles/github-20260502-023.json",
+      "bytes": 853,
+      "sha256": "fba361e5d82621a54ca83eba83260c252a2bc3be5019d23723ef9ea86b978bd3",
+      "source_file": "knowledge/articles/github-20260502-023.json",
+      "source_id": "github-20260502-023",
+      "source_sha256": "8e3c9bc378a108c1a99134a8767bd97e1deaef7a49e1f80d2ecdde08791ac35b"
+    },
+    {
+      "path": "articles/github-20260507-001.json",
+      "bytes": 881,
+      "sha256": "e1a2746cf9ad174d1cae85aa0dc722818c6cebb4deb9c448341baadc28e6e071",
+      "source_file": "knowledge/articles/github-20260507-001.json",
+      "source_id": "github-20260507-001",
+      "source_sha256": "df716110535400bb9ed6b6103e4f0b380ad51ba1eae5d55a24f456b92b9cf947"
+    },
+    {
+      "path": "articles/github-20260507-002.json",
+      "bytes": 816,
+      "sha256": "d658899f5ccfa2998c2881a57642e69687b87f62ba59ce15f3c09e40f6db73c3",
+      "source_file": "knowledge/articles/github-20260507-002.json",
+      "source_id": "github-20260507-002",
+      "source_sha256": "8b83fa73f619e56edf625b3de880fc569c2677a7de97c758f99e13f19e580510"
+    },
+    {
+      "path": "articles/github-20260530-001.json",
+      "bytes": 1335,
+      "sha256": "883685b88570881b1cb7dd63a55906ec6b1ac9486783320d8d4983c3d37fc16e",
+      "source_file": "knowledge/articles/github-20260530-001.json",
+      "source_id": "github-20260530-001",
+      "source_sha256": "c8d3726a354ca9825e66e756841720a19c4a8f3b81da8196879b5ea6ce346a21"
+    },
+    {
+      "path": "articles/hn-best-20260518-002.json",
+      "bytes": 966,
+      "sha256": "076d88f64a7661e290d72dc114e08a605d69ff059c8d5bc7e9b594d788ab524d",
+      "source_file": "knowledge/articles/hn-best-20260518-002.json",
+      "source_id": "hn-best-20260518-002",
+      "source_sha256": "23ada513157e5993ecf97ad8f18f941c569296b5d1529e2c2b2ee70069a30b74"
+    },
+    {
+      "path": "articles/hn-best-20260518-003.json",
+      "bytes": 821,
+      "sha256": "d377f9c40c74d63b7ea94987ecd3004b925ea7de50c36ce7fcce636f4cf15616",
+      "source_file": "knowledge/articles/hn-best-20260518-003.json",
+      "source_id": "hn-best-20260518-003",
+      "source_sha256": "bee7664c074a6e4d62b3d8a8ad8d05dc3f4df3aaf5ca0537847f0ad5f0ac2e6d"
+    },
+    {
+      "path": "articles/reddit-localllama-20260513-001.json",
+      "bytes": 1015,
+      "sha256": "ec44cbb5af423025c422779dd308030c06e99244790ea1d4489076f48f6c480c",
+      "source_file": "knowledge/articles/reddit-localllama-20260513-001.json",
+      "source_id": "reddit-localllama-20260513-001",
+      "source_sha256": "6e99b0342992d75d8c00ab0966c9166a7ff4a8b03e0b962815693b4864ff5227"
+    },
+    {
+      "path": "articles/rss:armin-ronacher-20260522-015.json",
+      "bytes": 1668,
+      "sha256": "d8d71e97346b07aaf49487f99285343da838e09e1ebb8bc01240761609462d3b",
+      "source_file": "knowledge/articles/rss:armin-ronacher-20260522-015.json",
+      "source_id": "rss:armin-ronacher-20260522-015",
+      "source_sha256": "9af15c812c1fd310c5c2b3e66af6a7a62af338ecf432ff30056f3dab34d585a0"
+    },
+    {
+      "path": "articles/rss:arxiv-cs-ai-20260522-005.json",
+      "bytes": 1584,
+      "sha256": "8fbff4c741ea6d49b15a3f5a772cb6258c124e505250d56dc418471cc2aaf45e",
+      "source_file": "knowledge/articles/rss:arxiv-cs-ai-20260522-005.json",
+      "source_id": "rss:arxiv-cs-ai-20260522-005",
+      "source_sha256": "9305b2a2f93ceb64339ad460b61a8b2b00d7e05905c2dec097bdff053fe5281d"
+    },
+    {
+      "path": "articles/rss:deepmind-blog-20260609-006.json",
+      "bytes": 1421,
+      "sha256": "730f49fc07d3eecab719607a5bc0cad549f84fd8f2bb3a483e95835c188128d9",
+      "source_file": "knowledge/articles/rss:deepmind-blog-20260609-006.json",
+      "source_id": "rss:deepmind-blog-20260609-006",
+      "source_sha256": "e1eb861dde455057011b148046706fe0ec5041f31e9f405e8b6268e31eeec3a7"
+    },
+    {
+      "path": "articles/rss:fabien-sanglard-20260608-008.json",
+      "bytes": 1384,
+      "sha256": "2a94f95b2cb83b20e1ffa63040858e2b2da19aa56be6d61d4309abd9ce51634e",
+      "source_file": "knowledge/articles/rss:fabien-sanglard-20260608-008.json",
+      "source_id": "rss:fabien-sanglard-20260608-008",
+      "source_sha256": "aef1b97a5f9ebab37acc5f57f81cd75ae292ac62c0f805237409bda68cb5ae5a"
+    },
+    {
+      "path": "articles/rss:hacker-news-best-20260524-002.json",
+      "bytes": 1698,
+      "sha256": "f282822f89f61308fa27e61fdf672b174c5ff02fe92bd38718a41ac1853fdfec",
+      "source_file": "knowledge/articles/rss:hacker-news-best-20260524-002.json",
+      "source_id": "rss:hacker-news-best-20260524-002",
+      "source_sha256": "e955a67f1a390b09c1340f92ae32f9d87dfea35a72dd4b7518426d0f93695594"
+    },
+    {
+      "path": "articles/rss:hacker-news-best-20260525-002.json",
+      "bytes": 1513,
+      "sha256": "dede7142b4e645b52fabeb690f4bafa408ae281b06e1acd1c49a55c463791342",
+      "source_file": "knowledge/articles/rss:hacker-news-best-20260525-002.json",
+      "source_id": "rss:hacker-news-best-20260525-002",
+      "source_sha256": "3677c9af8bdea2d6ea18a45b83cbdc9dfd3932602131205ab8b986cf2fdeb44c"
+    },
+    {
+      "path": "articles/rss:hacker-news-best-20260606-002.json",
+      "bytes": 1630,
+      "sha256": "b3c9ffe0caae7b43c72ca142ead27bef7395843b7bfc5a1edabc414505d03a82",
+      "source_file": "knowledge/articles/rss:hacker-news-best-20260606-002.json",
+      "source_id": "rss:hacker-news-best-20260606-002",
+      "source_sha256": "b5d17269cc95bc54872fc6b7f6c2364bc912e6404debe1432449eda750ae1273"
+    },
+    {
+      "path": "articles/rss:mitchell-hashimoto-20260530-010.json",
+      "bytes": 1432,
+      "sha256": "c9a44d73e715432a94ce5c3266aa1bb486a6f7b67bb31152452f65a15fcecdb4",
+      "source_file": "knowledge/articles/rss:mitchell-hashimoto-20260530-010.json",
+      "source_id": "rss:mitchell-hashimoto-20260530-010",
+      "source_sha256": "890a488c5e4b30a2b701689feff4cb1f3f8315970c6d607ae0c9c5854b319f03"
+    },
+    {
+      "path": "articles/rss:reddit-r-machinelearning-20260519-005.json",
+      "bytes": 1166,
+      "sha256": "3b506fb28027b468368aff20b300229198a0768a3096e28c052a2f2e37c41955",
+      "source_file": "knowledge/articles/rss:reddit-r-machinelearning-20260519-005.json",
+      "source_id": "rss:reddit-r-machinelearning-20260519-005",
+      "source_sha256": "f9142ce00427de4ea9fb06be0d2843d43284ebdc29df5a7c8d715e9d707fabdb"
+    },
+    {
+      "path": "articles/rss:reddit-r-machinelearning-20260519-013.json",
+      "bytes": 1068,
+      "sha256": "58c3b7d0db4762128143ef5351d7a2d6d213119a300b7d18c347b5a66ad78d69",
+      "source_file": "knowledge/articles/rss:reddit-r-machinelearning-20260519-013.json",
+      "source_id": "rss:reddit-r-machinelearning-20260519-013",
+      "source_sha256": "13a3f7047e133003018da6c621119c5b55ffd30fa17ecc1f7192a8dde5154726"
+    },
+    {
+      "path": "articles/rss:simon-willison-20260528-008.json",
+      "bytes": 1421,
+      "sha256": "8ce2074e0ca95b8fc35ce7b6a828ee45deecbf882eea1c2e6c09845251e7d7b0",
+      "source_file": "knowledge/articles/rss:simon-willison-20260528-008.json",
+      "source_id": "rss:simon-willison-20260528-008",
+      "source_sha256": "f8ffe49ae56f4caefc171743cf66621024402ef3f59b0e1b7e99dd0609fcb11b"
+    },
+    {
+      "path": "expected_mapped.jsonl",
+      "bytes": 17070,
+      "sha256": "6655fc011c9f5d5ea074060d12aa5194b7b5feae4e2ce44d28a31a9c57be1425"
+    },
+    {
+      "path": "expected_mapping.py",
+      "bytes": 4982,
+      "sha256": "94fb4ea38a362fd73a92f1f184348bbcef3385d82562365d3fc14742d0645a2e"
+    },
+    {
+      "path": "expected_search.json",
+      "bytes": 1632,
+      "sha256": "1d788c622c939a015d44e34bd2a42062804dbe49be00890830c36583ca957ee4"
+    },
+    {
+      "path": "raw/raw_sanitized_sample.json",
+      "bytes": 1544,
+      "sha256": "13c28c58ed4ee07b139870475ad02a32d2c80a5e6f1610c119abba0f2e81cc49"
+    },
+    {
+      "path": "skipped_records.jsonl",
+      "bytes": 1165,
+      "sha256": "221554826dbdc8e4932e7a98f64172074b236b711638014c5c2534eb80a1953e"
+    }
+  ]
+}

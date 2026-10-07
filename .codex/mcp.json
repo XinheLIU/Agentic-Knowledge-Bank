@@ -1,8 +1,16 @@
 {
   "mcpServers": {
     "knowledge": {
-      "command": "python3",
-      "args": ["/Users/xhl/Desktop/Personal-Projects/Learning/AI和多Agent行动营/ai-kb/mcp_knowledge_server.py"]
+      "command": "uv",
+      "args": [
+        "run",
+        "--frozen",
+        "--directory",
+        "/Users/xhl/GitHub/products/Agentic-Knowledge-Bank",
+        "python",
+        "-m",
+        "mcp_knowledge_server"
+      ]
     }
   }
 }

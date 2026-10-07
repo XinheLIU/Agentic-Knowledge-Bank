@@ -1,7 +1,6 @@
 # Environment variables and local secrets
 .env
 .env.*
-!.env.example
 
 # Dependencies
 node_modules/
@@ -34,3 +33,20 @@ __pycache__/
 # Pipeline output — committed by daily automation workflow
 # Directories kept via .gitkeep inside knowledge/raw/ and knowledge/articles/
 knowledge/pending_review/
+
+# Working memory (init-context)
+.scratch/
+
+# Canonical asset store (binary; JSONL export is the committable snapshot)
+knowledge/kb.sqlite
+knowledge/backups/
+
+# Editable-install metadata
+*.egg-info/
+
+# Cutover rehearsal scratch
+.rehearsal-tmp/
+
+.claude/skills/
+.codex/skills/
+.opencode/skills/

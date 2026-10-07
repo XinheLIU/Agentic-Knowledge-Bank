@@ -1,0 +1,36 @@
+{
+  "id": "rss:simon-willison-20260528-008",
+  "title": "Sanitized title fixture content for legacy record rss:simon-willison-20260528-008.",
+  "source": "rss:Simon Willison",
+  "source_url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+  "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+  "author": null,
+  "published_at": "2026-05-27T23:44:37+00:00",
+  "collected_at": "2026-05-28T11:42:05.224640+00:00",
+  "summary": "Sanitized summary fixture content for legacy record rss:simon-willison-20260528-008. Deterministic synthetic replacement preserving schema shape and validation floor.",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Sanitized key insight fixture content for legacy record rss:simon-willison-20260528-008.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "Sanitized relevance reason fixture content for legacy record rss:simon-willison-20260528-008.",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "documentation",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}

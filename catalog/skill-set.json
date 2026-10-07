@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "knowledge-assistant",
+  "title": "Knowledge Assistant",
+  "tagline": "Maintain traceable knowledge assets",
+  "description": "Maintain traceable knowledge assets",
+  "version": "0.1.0-dev",
+  "repository": "https://github.com/XinheLIU/Agentic-Knowledge-Bank",
+  "publicationStatus": "local-unreleased",
+  "accent": "sage",
+  "sourcePattern": "skills/{category}/{skill}/SKILL.md",
+  "install": "Local source only; installation acceptance is tracked in P2.",
+  "categories": [
+    {
+      "id": "knowledge",
+      "label": "Knowledge",
+      "skills": [
+        "archive-materials",
+        "clean-notes",
+        "llm-wiki-ingest",
+        "llm-wiki-init",
+        "llm-wiki-lint",
+        "map-materials",
+        "organize-docs"
+      ]
+    }
+  ]
+}

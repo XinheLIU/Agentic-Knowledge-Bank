@@ -1,0 +1,37 @@
+{
+  "id": "rss:hacker-news-best-20260525-002",
+  "title": "Sanitized title fixture content for legacy record rss:hacker-news-best-20260525-002.",
+  "source": "rss:Hacker News (Best)",
+  "source_url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+  "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+  "author": "fixture-author-rss:hacker-news-best-20260525-002",
+  "published_at": "2026-05-24T14:09:33+00:00",
+  "collected_at": "2026-05-25T11:56:05.139456+00:00",
+  "summary": "Sanitized summary fixture content for legacy record rss:hacker-news-best-20260525-002.",
+  "tags": [
+    "llm",
+    "deployment"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "deployment",
+  "key_insight": "Sanitized key insight fixture content for legacy record rss:hacker-news-best-20260525-002.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "save-for-context",
+  "relevance_reason": "Sanitized relevance reason fixture content for legacy record rss:hacker-news-best-20260525-002.",
+  "suggested_action": "archive",
+  "confidence": 0.82,
+  "source_type": "news",
+  "learning_track": "local-model-serving",
+  "learning_tags": [
+    "local-llm",
+    "production-rag"
+  ]
+}

@@ -1,8 +1,8 @@
 # 知识库爬取 / 筛选 / 加工 / 验证策略评审
 
-> Last updated: 2026-05-13
+> Last updated: 2026-10-04
 > 目的：检视现行 collector → analyzer → reviewer → organizer 链路的策略问题，给出可执行的更新建议
-> 配套：与 [knowledge-content-review.md](knowledge-content-review.md)（数据现状审计）共同食用
+> 配套：与 knowledge-content-review.md (`knowledge-content-review.md`, absent in the pre-migration worktree)（数据现状审计）共同食用
 
 ---
 

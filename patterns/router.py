@@ -14,8 +14,7 @@ import os
 import urllib.request
 from typing import Callable
 
-from workflows.model_client import chat, chat_json
-
+from patterns.model_client import chat
 
 # ---------------------------------------------------------------------------
 # 处理器定义 — 每个处理器负责一种意图
@@ -41,7 +40,7 @@ def github_search_handler(query: str) -> str:
         for repo in data.get("items", []):
             results.append(f"- [{repo['full_name']}]({repo['html_url']}) ⭐{repo['stargazers_count']} — {repo.get('description', '')}")
 
-        return f"GitHub 搜索结果:\n" + "\n".join(results) if results else "未找到相关仓库"
+        return "GitHub 搜索结果:\n" + "\n".join(results) if results else "未找到相关仓库"
     except Exception as e:
         return f"GitHub 搜索失败: {e}"
 

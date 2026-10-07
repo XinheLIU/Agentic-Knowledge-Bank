@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-assistant",
+  "version": "0.1.0-dev",
+  "description": "Maintain traceable knowledge assets; local P1 source, runtime verification pending.",
+  "skills": "./.claude-plugin/skills"
+}

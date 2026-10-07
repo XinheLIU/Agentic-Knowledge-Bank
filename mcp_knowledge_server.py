@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
-"""
-MCP server for searching and reading local knowledge-base articles.
+"""MCP server over the canonical SQLite asset store (ticket 11).
 
-Tools:
-  - search_articles: search article titles and summaries by keyword
-  - get_article: fetch one article by ID
-  - knowledge_stats: summarize the local knowledge base
+Tools (same names, arguments, and stdio JSON-RPC framing as the legacy JSON
+scanner, so existing client configurations keep working):
+
+  - search_articles: full-text search over accepted assets (FTS5 with the
+    store's tested LIKE fallback; structured ``source_type`` filter through
+    the reader seam, never direct SQL here).
+  - get_article: one asset by canonical ID (``horizon:...`` / ``legacy:...``).
+  - knowledge_stats: whole-store counters, top tags, and score summary.
+
+Responses expose only canonical fields (G7: the legacy ``relevance_score``,
+``stars``, ``forks``, ``score_breakdown``, ``analyzed_at``, and ``_file``
+fields are gone). ``get_article`` renders real stored data with an explicit
+``null`` marker — never ``N/A`` placeholders.
+
+Store resolution (the only supported persistence contract):
+  1. explicit ``KB_STORE_PATH`` (env var);
+  2. ``KB_DATA_ROOT/kb.sqlite``; otherwise the user-local knowledge data root.
+
+If the canonical store is absent, the server launches (compatibility) and
+reports the fact explicitly through ``knowledge_stats`` and per-call errors
+until ingestion creates it. It never falls back to scanning ``knowledge/``.
 
 Usage:
     python3 mcp_knowledge_server.py
@@ -22,181 +38,243 @@ OpenCode configuration example (opencode.json):
 """
 from __future__ import annotations
 
-import glob
 import json
 import os
 import sys
-from collections import Counter
+from pathlib import Path
 from typing import Any
 
-ARTICLES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "knowledge", "articles")
+from kb.store import fts as fts_mod
+from kb.store.model import AssetStore, ItemRecord, StoreStats
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+from kb.paths import data_root
+
+DEFAULT_STORE_PATH = data_root() / "kb.sqlite"
+STORE_PATH_ENV = "KB_STORE_PATH"
+
+NOT_FOUND_PREFIX = "Article"
+NOT_FOUND_SUFFIX = "not found."
 
 
-def load_articles() -> dict[str, dict[str, Any]]:
-    """Load article JSON files and skip index.json."""
-    articles: dict[str, dict[str, Any]] = {}
-    pattern = os.path.join(ARTICLES_DIR, "*.json")
-    for filepath in sorted(glob.glob(pattern)):
-        basename = os.path.basename(filepath)
-        if basename == "index.json":
-            continue
-        try:
-            with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            aid = data.get("id")
-            if aid:
-                articles[aid] = data
-                articles[aid]["_file"] = basename
-        except (json.JSONDecodeError, OSError):
-            continue
-    return articles
+# ---------------------------------------------------------------------------
+# Store seam: canonical store open + narrow ticket-10 compatibility wrappers
+# ---------------------------------------------------------------------------
 
 
-def match_keyword(keyword: str, article: dict[str, Any]) -> bool:
-    """Return whether keyword matches the title or summary case-insensitively."""
-    kw = keyword.lower()
-    fields = [article.get("title", ""), article.get("summary", "")]
-    return any(kw in str(f).lower() for f in fields)
+def store_path() -> Path:
+    """Resolved canonical store path (``KB_STORE_PATH`` beats the default)."""
+    override = os.environ.get(STORE_PATH_ENV)
+    return Path(override) if override else DEFAULT_STORE_PATH
 
 
-def search_articles(keyword: str, limit: int = 5) -> str:
-    articles = load_articles()
-    scored: list[tuple[float, dict[str, Any]]] = []
-    kw = keyword.lower()
+def open_store(path: Path | None = None) -> AssetStore | None:
+    """Open the canonical store, or ``None`` when it does not exist yet.
 
-    for article in articles.values():
-        if not match_keyword(keyword, article):
-            continue
+    A missing file must not be created by a read-only consumer — ingestion
+    (ticket 10) owns store creation. An existing file is opened and migrated
+    by the store's own versioned, transactional migrations.
+    """
+    target = store_path() if path is None else path
+    if not target.exists():
+        return None
+    return AssetStore.open(target)
 
-        score = 0
-        title = article.get("title", "").lower()
-        summary = article.get("summary", "").lower()
-        if kw in title:
-            score += 10
-        if kw in summary:
-            score += 3
-        score += article.get("relevance_score", 0) * 2
-        scored.append((score, article))
 
-    scored.sort(key=lambda x: x[0], reverse=True)
-    results = scored[:limit]
+def _utcnow() -> str:
+    import time
+
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+def open_or_seeded_store(path: Path | None = None) -> AssetStore | None:
+    """Open the canonical store (read-only consumer; no seeding)."""
+    return open_store(path)
+
+
+# ---------------------------------------------------------------------------
+# Rendering (canonical fields only)
+# ---------------------------------------------------------------------------
+
+
+def format_score(score: float | None) -> str:
+    """Canonical score as text; ``null`` is explicit, never ``N/A``."""
+    return "null" if score is None else f"{score:g}"
+
+
+def render_search_item(record: ItemRecord) -> list[str]:
+    lines = [
+        f"■ {record.title}  (id: {record.id}, source_type: {record.source_type})"
+    ]
+    tags = ", ".join(record.tags) if record.tags else "none"
+    lines.append(f"  Tags: {tags}")
+    lines.append(f"  Summary: {record.summary if record.summary is not None else 'null'}")
+    lines.append(f"  Score: {format_score(record.score)}")
+    lines.append("")
+    return lines
+
+
+def search_articles(keyword: str, limit: int = 5, source_type: str | None = None) -> str:
+    """Search accepted assets through the store's FTS/reader seam."""
+    store = open_or_seeded_store()
+    if store is None:
+        return (
+            f"Knowledge store not initialized ({store_path()}). "
+            "Run 'information-run' (Information Assistant) to collect and admit assets."
+        )
+    try:
+        records, mode = store.search(
+            keyword, source_type=source_type, limit=max(int(limit), 0)
+        )
+    finally:
+        store.close()
+
+    if not records:
+        return f"No articles found for '{keyword}'"
 
     lines: list[str] = []
-    for _, article in results:
-        lines.append(
-            f"■ {article['title']}  (id: {article['id']}, source: {article.get('source','?')})"
-        )
-        lines.append(f"  Tags: {', '.join(article.get('tags', []))}")
-        lines.append(f"  Summary: {article.get('summary', 'N/A')}")
-        lines.append(f"  Relevance: {article.get('relevance_score', 'N/A')}")
-        lines.append("")
-
-    return "\n".join(lines).strip() if lines else f"No articles found for '{keyword}'"
+    for record in records:
+        lines.extend(render_search_item(record))
+    body = "\n".join(lines).rstrip()
+    if mode == fts_mod.FTS_LIKE_FALLBACK:
+        body += "\n  (served by the explicit LIKE fallback; FTS5 unavailable)"
+    return body
 
 
 def get_article(article_id: str) -> str:
-    articles = load_articles()
-    article = articles.get(article_id)
-    if not article:
-        return f"Article '{article_id}' not found."
+    """One asset by canonical ID with real stored data (explicit nulls)."""
+    store = open_or_seeded_store()
+    if store is None:
+        return (
+            f"{NOT_FOUND_PREFIX} '{article_id}' {NOT_FOUND_SUFFIX} "
+            f"(knowledge store not initialized at {store_path()})"
+        )
+    try:
+        record = store.get_item(article_id)
+    finally:
+        store.close()
+    if record is None:
+        return f"{NOT_FOUND_PREFIX} '{article_id}' {NOT_FOUND_SUFFIX}"
 
-    fields = [
-        ("id", article.get("id")),
-        ("title", article.get("title")),
-        ("source", article.get("source")),
-        ("source_url", article.get("source_url", article.get("url"))),
-        ("collected_at", article.get("collected_at")),
-        ("analyzed_at", article.get("analyzed_at")),
-        ("status", article.get("status")),
-        ("summary", article.get("summary")),
-        ("tags", ", ".join(article.get("tags", []))),
-        ("relevance_score", str(article.get("relevance_score", "N/A"))),
-        ("stars", str(article.get("stars", "N/A"))),
-        ("forks", str(article.get("forks", "N/A"))),
-        ("language", article.get("language", "N/A")),
-        ("description", article.get("description", "")),
+    fields: list[tuple[str, str]] = [
+        ("id", record.id),
+        ("state", record.state),
+        ("title", record.title),
+        ("source_type", record.source_type),
+        ("url", record.url),
+        ("author", record.author),
+        ("published_at", record.published_at),
+        ("fetched_at", record.fetched_at),
+        ("story_fp", record.story_fp),
+        ("score", format_score(record.score)),
+        ("score_reason", record.score_reason),
+        ("summary", record.summary),
+        ("content_main", record.content_main),
+        ("tags", ", ".join(record.tags) if record.tags else None),
     ]
-
-    score_breakdown = article.get("score_breakdown")
-    if score_breakdown:
-        fields.extend([
-            ("score_tech_depth", str(score_breakdown.get("tech_depth", "N/A"))),
-            ("score_practical_value", str(score_breakdown.get("practical_value", "N/A"))),
-            ("score_timeliness", str(score_breakdown.get("timeliness", "N/A"))),
-            ("score_community_heat", str(score_breakdown.get("community_heat", "N/A"))),
-            ("score_domain_match", str(score_breakdown.get("domain_match", "N/A"))),
-        ])
-
-    out: list[str] = []
-    for k, v in fields:
-        if v is not None and v != "":
-            out.append(f"{k}: {v}")
+    out = [f"{k}: {v if v is not None else 'null'}" for k, v in fields]
+    if record.superseded_by:
+        out.append(f"superseded_by: {record.superseded_by}")
     return "\n".join(out)
 
 
 def knowledge_stats() -> str:
-    articles = load_articles()
-    total = len(articles)
-
-    source_counter = Counter()
-    tag_counter = Counter()
-    scores = []
-
-    for article in articles.values():
-        source_counter[article.get("source", "unknown")] += 1
-        for tag in article.get("tags", []):
-            tag_counter[tag] += 1
-        relevance_score = article.get("relevance_score")
-        if relevance_score is not None:
-            scores.append(relevance_score)
+    """Store counters, tag distribution, and score summary (canonical only)."""
+    store = open_or_seeded_store()
+    if store is None:
+        return (
+            f"Knowledge store not initialized ({store_path()}). "
+            "Total articles: 0."
+        )
+    try:
+        stats: StoreStats = store.stats()
+        top_items = store.list_items(limit=None)
+        mode = store.fts_mode()
+    finally:
+        store.close()
 
     lines = [
-        f"Total articles: {total}",
+        f"Total articles: {stats.item_count}",
         "",
-        "Source distribution:",
+        "Store:",
+        f"  Accepted assets: {stats.accepted_count}",
+        f"  Superseded assets: {stats.superseded_count}",
+        f"  Ingestion runs: {stats.run_count}",
+        f"  Admission decisions: {stats.admission_count}",
     ]
-    for src, cnt in source_counter.most_common():
-        lines.append(f"  {src}: {cnt}")
-    lines.append("")
-    lines.append("Top tags:")
-    for tag, cnt in tag_counter.most_common(10):
-        lines.append(f"  {tag}: {cnt}")
-    lines.append("")
+    if mode != fts_mod.FTS_TRIGRAM:
+        lines.append(f"  FTS mode: {mode} (LIKE fallback; FTS5 unavailable)")
+
+    source_counter: dict[str, int] = {}
+    tag_counter: dict[str, int] = {}
+    scores: list[float] = []
+    for record in top_items:
+        source_counter[record.source_type] = source_counter.get(record.source_type, 0) + 1
+        for tag in record.tags:
+            tag_counter[tag] = tag_counter.get(tag, 0) + 1
+        if record.score is not None:
+            scores.append(record.score)
+
+    if source_counter:
+        lines += ["", "Source distribution:"]
+        for src, cnt in sorted(source_counter.items(), key=lambda kv: (-kv[1], kv[0])):
+            lines.append(f"  {src}: {cnt}")
+
+    if tag_counter:
+        lines += ["", "Top tags:"]
+        top_tags = sorted(tag_counter.items(), key=lambda kv: (-kv[1], kv[0]))[:10]
+        for tag, cnt in top_tags:
+            lines.append(f"  {tag}: {cnt}")
+
     if scores:
         avg = sum(scores) / len(scores)
-        lines.append(f"Average relevance score: {avg:.2f}")
-        lines.append(f"Score range: {min(scores):.2f} - {max(scores):.2f}")
+        lines += [
+            "",
+            f"Average score: {avg:.2f}",
+            f"Score range: {min(scores):.2f} - {max(scores):.2f}",
+        ]
 
     return "\n".join(lines)
 
 
+# ---------------------------------------------------------------------------
+# MCP stdio JSON-RPC framing (unchanged external contract)
+# ---------------------------------------------------------------------------
+
 TOOLS = [
     {
         "name": "search_articles",
-        "description": "按关键词搜索本地知识库中的文章标题和摘要，返回匹配结果列表",
+        "description": "按关键词全文检索知识库已收录资产（FTS5），返回匹配结果列表",
         "inputSchema": {
             "type": "object",
             "properties": {
                 "keyword": {"type": "string", "description": "搜索关键词"},
-                "limit": {"type": "integer", "description": "返回结果数量上限，默认 5"},
+                "limit": {
+                    "type": "integer",
+                    "description": "返回结果数量上限，默认 5",
+                },
+                "source_type": {
+                    "type": "string",
+                    "description": "按来源类型过滤（repository/paper/blog 等）",
+                },
             },
             "required": ["keyword"],
         },
     },
     {
         "name": "get_article",
-        "description": "按文章 ID 获取完整信息",
+        "description": "按资产 ID 获取完整信息（canonical ID，如 horizon:... / legacy:...）",
         "inputSchema": {
             "type": "object",
             "properties": {
-                "article_id": {"type": "string", "description": "文章 ID"},
+                "article_id": {"type": "string", "description": "资产 ID"},
             },
             "required": ["article_id"],
         },
     },
     {
         "name": "knowledge_stats",
-        "description": "返回知识库统计信息：文章总数、来源分布、热门标签",
+        "description": "返回知识库统计信息：资产总数、来源分布、热门标签",
         "inputSchema": {
             "type": "object",
             "properties": {},
@@ -232,13 +310,13 @@ def send_tool_result(rpc_id: Any, text: str) -> None:
 def handle_message(msg: dict[str, Any]) -> None:
     method = msg.get("method")
     rpc_id = msg.get("id")
-    params = msg.get("params", {})
+    params = msg.get("params") or {}
 
     if method == "initialize":
         send_response(rpc_id, {
             "protocolVersion": "2024-11-05",
             "capabilities": {"tools": {}},
-            "serverInfo": {"name": "knowledge-mcp", "version": "1.0.0"},
+            "serverInfo": {"name": "knowledge-mcp", "version": "2.0.0"},
         })
         return
 
@@ -251,7 +329,7 @@ def handle_message(msg: dict[str, Any]) -> None:
 
     if method == "tools/call":
         tool_name = params.get("name", "")
-        arguments = params.get("arguments", {})
+        arguments = params.get("arguments") or {}
 
         if tool_name not in HANDLERS:
             send_error(rpc_id, -32601, f"Tool not found: {tool_name}")

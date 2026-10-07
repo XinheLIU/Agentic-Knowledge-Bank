@@ -1,0 +1,38 @@
+{
+  "id": "rss:arxiv-cs-ai-20260522-005",
+  "title": "Sanitized title fixture content for legacy record rss:arxiv-cs-ai-20260522-005.",
+  "source": "rss:arXiv cs.AI",
+  "source_url": "https://arxiv.org/abs/2605.20189",
+  "url": "https://arxiv.org/abs/2605.20189",
+  "author": "fixture-author-rss:arxiv-cs-ai-20260522-005",
+  "published_at": "2026-05-22T04:00:00+00:00",
+  "collected_at": "2026-05-22T10:54:56.023458+00:00",
+  "summary": "Sanitized summary fixture content for legacy record rss:arxiv-cs-ai-20260522-005. Deterministic synthetic replacement preserving schema shape and validation floor.",
+  "tags": [
+    "agent",
+    "llm"
+  ],
+  "status": "published",
+  "score": 8,
+  "audience": "intermediate",
+  "relevance_score": 0.85,
+  "category": "agent",
+  "key_insight": "Sanitized key insight fixture content for legacy record rss:arxiv-cs-ai-20260522-005.",
+  "raw_description": "Sanitized raw description fixture content for legacy record rss:arxiv-cs-ai-20260522-005.",
+  "description": "Sanitized description fixture content for legacy record rss:arxiv-cs-ai-20260522-005.",
+  "personal_fit_score": 0.85,
+  "technical_depth_score": 0.75,
+  "actionability_score": 0.9,
+  "source_credibility_score": 0.8,
+  "novelty_score": 0.65,
+  "priority_score": 84,
+  "reading_priority": "study-now",
+  "relevance_reason": "Sanitized relevance reason fixture content for legacy record rss:arxiv-cs-ai-20260522-005.",
+  "suggested_action": "deep-read",
+  "confidence": 0.82,
+  "source_type": "paper",
+  "learning_track": "agent-systems",
+  "learning_tags": [
+    "agent-harness"
+  ]
+}
