@@ -13,7 +13,7 @@ Last updated: 2026-10-09
 
 # Map Materials
 
-Stage 0 of the pipeline in [docs/knowledge-model.md](../../../docs/knowledge-model.md):
+Stage 0 of the pipeline in [docs/knowledge-model.md](https://github.com/XinheLIU/Agentic-Knowledge-Bank/blob/main/docs/knowledge-model.md):
 an external, read-only **archive** in, one inventory out — `materials.md` in the knowledge
 **instance**, one row per material, saying what it is and how much of it is worth attention.
 
@@ -26,6 +26,21 @@ fixed.
 The map is **processing, not curation**. It says "these five notebooks are the same notebook" and
 "this folder is about vision, not this topic". It does not decide what a page will use, and it does
 not rate how good a source is.
+
+## Normative dependency (source and deployed copies)
+
+Read the canonical model before acting. Use explicit `KB_MODEL_ROOT` when supplied: read
+`$KB_MODEL_ROOT/docs/knowledge-model.md` and `$KB_MODEL_ROOT/CONTEXT.md` (the glossary is at
+repository root). In a source checkout, the repository containing this skill is that root.
+A flattened installed copy must **not** resolve `../../../docs/` from its install directory.
+Without a checkout, read `docs/knowledge-model.md` and `CONTEXT.md` from
+`https://github.com/XinheLIU/Agentic-Knowledge-Bank` at the installed source revision recorded by
+the installer; if unavailable, use `main` and record that revision choice explicitly. Record the
+resolved location/revision or working-tree hash in the run report. Never vendor another canonical
+copy or proceed without reading the contract; report an unavailable dependency before writes.
+
+Gates follow the model's caller-authorization rule: with explicit unattended delegation, record
+question, options, choice and reason in the existing report/log and continue within that scope.
 
 ## Invocation and inputs
 
@@ -68,7 +83,9 @@ archive moved.
    `archive-materials` (Writing Assistant). At mapping time every cell is `—`, and a re-run leaves
    it byte-identical.
 6. **A re-run appends and refreshes; it never rewrites.** New files get new ids; existing rows keep
-   their id, their `used-in`, and any `concepts` the author edited. Ids are never reused. A file
+   their id, all foreign-column bytes, and their existing `concepts` by default. Propose revised
+   descriptions for changed sources; replace them only with caller authorization recorded at the
+   gate. Derived folder counts refresh separately from the preserved descriptive text. Ids are never reused. A file
    that disappeared keeps its row and gains the `missing` flag — rows are never silently deleted.
 7. **A row's `path` is relative to the archive root.** A section row is `file.md § Heading`. A folder
    row ends in `/**` and carries its file count in `concepts`.
@@ -143,7 +160,7 @@ A row's role is about **this archive**, not about the world.
 ### 1 — Manifest, then inventory
 
 **Before any write**, capture the manifest — the mechanism behind the read-only proof, the `sha256`
-cells and re-run drift, all three:
+cells. Re-run drift uses the previous map rows, not a persisted session manifest:
 
 ```bash
 ARCHIVE=<absolute archive root>
@@ -157,20 +174,36 @@ import hashlib, os, sys
 root = sys.argv[1]
 rows = []
 for dirpath, dirnames, filenames in os.walk(root):
-    dirnames[:] = [d for d in dirnames
-                   if d not in {'.git', '__pycache__', '.ipynb_checkpoints'}]
     for name in filenames:
-        if name in {'.DS_Store', 'Thumbs.db', 'materials.md'} or name.endswith('.tmp'):
-            continue
         p = os.path.join(dirpath, name)
         rel = os.path.relpath(p, root)
         h = hashlib.sha256()
         with open(p, 'rb') as f:
             for chunk in iter(lambda: f.read(1 << 20), b''):
                 h.update(chunk)
-        rows.append(f"{h.hexdigest()}\t{int(os.path.getmtime(p))}\t{rel}")
+        rows.append(f"{h.hexdigest()}\t{os.stat(p).st_mtime_ns}\t{rel}")
 print("\n".join(sorted(rows, key=lambda r: r.split(chr(9), 2)[2])))
 PY
+```
+
+The proof manifest above includes **all files**, including junk. Derive a separate eligible
+inventory view by excluding `.DS_Store`, `Thumbs.db`, `*.tmp`, `.git/`, `__pycache__/` and
+`.ipynb_checkpoints/`. Do not exclude an archive-local `materials.md`: it is input.
+
+```bash
+INVENTORY_MANIFEST=$(mktemp -t map-inventory.XXXXXX)
+python3 - "$MANIFEST_BEFORE" <<'PY' > "$INVENTORY_MANIFEST"
+from pathlib import PurePosixPath, Path
+import sys
+for row in Path(sys.argv[1]).read_text().splitlines():
+    path = PurePosixPath(row.split('\t', 2)[2])
+    if path.name in {'.DS_Store', 'Thumbs.db'} or path.name.endswith('.tmp'):
+        continue
+    if set(path.parts[:-1]) & {'.git', '__pycache__', '.ipynb_checkpoints'}:
+        continue
+    print(row)
+PY
+wc -l < "$INVENTORY_MANIFEST"       # eligible physical-file denominator
 ```
 
 Then inventory filenames — recursive, junk excluded. This count is the denominator every later step
@@ -181,7 +214,7 @@ find "$ARCHIVE" -type f \
   ! -name '.DS_Store' ! -name 'Thumbs.db' ! -name '*.tmp' \
   ! -path '*/.git/*' ! -path '*/__pycache__/*' ! -path '*/.ipynb_checkpoints/*' \
   | sed "s|^$ARCHIVE/||" | sort
-wc -l < "$MANIFEST_BEFORE"          # the denominator
+# Count this eligible listing, not the all-file proof manifest: this is the denominator.
 ```
 
 Report it compressed: top-level folders with counts, loose files by name. A folder with more than
@@ -190,13 +223,13 @@ Report it compressed: top-level folders with counts, loose files by name. A fold
 If `$KB_PATH/materials.md` already exists, read it first — this is a re-run, and Hard Rules 6 and 10
 apply.
 
-A **folder digest** for a folder row comes from the same manifest — the sha256 of the
+A **folder digest** for a folder row comes from the eligible inventory view of the manifest — the sha256 of the
 `«file sha256»\t«archive-relative path»` lines for the files the row covers (the remainder), sorted by
 hash then path, joined by newlines with a trailing newline:
 
 ```bash
 # all files under images/, minus any path that has its own exception row (here: the 11 off-topic images)
-awk -F'\t' -v p='images/' '$3 ~ "^"p {print $1"\t"$3}' "$MANIFEST_BEFORE" | sort | shasum -a 256
+awk -F'\t' -v p='images/' '$3 ~ "^"p {print $1"\t"$3}' "$INVENTORY_MANIFEST" | LC_ALL=C sort | shasum -a 256
 ```
 
 For a plain folder the filter is just the prefix; for a mixed folder, drop the exception paths first
@@ -294,20 +327,23 @@ MANIFEST_AFTER=$(mktemp -t map-after.XXXXXX)
 diff "$MANIFEST_BEFORE" "$MANIFEST_AFTER"    # expect no output
 
 # the mtime assertion the knowledge model names: expect no output
-find "$ARCHIVE" -type f -newer "$SESSION_MARKER" \
-  ! -name '.DS_Store' ! -name 'Thumbs.db'
+find "$ARCHIVE" -type f -newer "$SESSION_MARKER"
 
-rm -f "$MANIFEST_BEFORE" "$MANIFEST_AFTER" "$SESSION_MARKER"
+rm -f "$MANIFEST_BEFORE" "$MANIFEST_AFTER" "$INVENTORY_MANIFEST" "$SESSION_MARKER"
 ```
 
 The two checks are not redundant: the manifest diff is **content-level** (it catches an edit that
 preserved mtime, and files added or removed), while `find -newer` is the plain mtime assertion the
 model states. Both must come back empty.
 
-On a **re-run**, diff the before-manifest against the *previous* run's manifest keyed by `path` and
-apply the re-run rules: unchanged hash → keep the row; changed hash → refresh `sha256`, re-read, and
-refresh `concepts`/`role`/`flags` while keeping the `id`; new file → new row and id; a path absent
-from the new manifest → keep the row, add `missing`.
+On a **re-run**, compare the current eligible file hashes and remainder-folder digests with
+persisted `materials.md` rows. Unchanged hash → keep the row; changed hash → re-read and refresh
+`sha256`/`role`/`flags`, preserving `id`, foreign columns and existing descriptive `concepts` unless
+a replacement was authorized. Refresh derived folder counts. New uncovered path → new row/id;
+missing row path → retain it with `missing`. A changed folder digest triggers reinspection of its
+current remainder; without an old per-file manifest, do not claim which old member changed.
+New members already covered by a folder stay in that folder row unless they need an exception.
+No previous session manifest is needed or persisted.
 
 Then report:
 
@@ -325,8 +361,9 @@ Nothing about the mapping is persisted except `materials.md`.
 Given a fixture archive containing a duplicate pair, an off-topic folder, a flat mixed `images/`
 folder with one off-topic file, and a multi-section note:
 
-- every file is covered by a row or an ancestor folder row (rows + folder-row file counts equal the
-  denominator);
+- the union of covered physical paths equals the eligible file set exactly; section rows count
+  their shared file once, folder rows count only their remainder, and missing historical rows
+  are reported separately (never add row counts to file counts);
 - the duplicate's second copy is `redundant-of` the first and names its id;
 - the off-topic folder is a single `peripheral` row ending `/**` with a file count, not one row per
   file; the off-topic file inside the mixed `images/` folder has its own `off-topic` row while the
@@ -337,7 +374,7 @@ folder with one off-topic file, and a multi-section note:
 - `$KB_PATH/materials.md` exists with the `archive:` header and counts; **no other file was
   created** and the fixture is byte-identical (manifest diff empty, no file newer than session
   start);
-- a second run adds no duplicate ids, preserves every existing id, `concepts` and `used-in`, keeps a
+- a second run adds no duplicate ids, preserves every existing id, unauthorized descriptive `concepts` and foreign columns, keeps a
   deleted file's row with `missing`, and refreshes only changed rows;
 - the `off-topic` gate list was printed before the writing step.
 

@@ -7,7 +7,7 @@ Last updated: 2026-10-09
 
 # LLM Wiki — Lint
 
-The audit stage of the pipeline in [docs/knowledge-model.md](../../../docs/knowledge-model.md):
+The audit stage of the pipeline in [docs/knowledge-model.md](https://github.com/XinheLIU/Agentic-Knowledge-Bank/blob/main/docs/knowledge-model.md):
 a knowledge **instance** in, one report out. It reads the whole instance and re-hashes the external
 archive, checks the pages against the model, and writes **nothing** — not a page, not the archive,
 not `log.md`.
@@ -19,6 +19,21 @@ There is no cadence: the report includes a readout of how many `log.md` actions 
 the last lint, so staleness is visible rather than assumed. Lint is not a gate and holds nothing;
 everything it finds is either a defect to fix in the stage that owns it or an honest coverage state.
 
+## Normative dependency (source and deployed copies)
+
+Read the canonical model before acting. Use explicit `KB_MODEL_ROOT` when supplied: read
+`$KB_MODEL_ROOT/docs/knowledge-model.md` and `$KB_MODEL_ROOT/CONTEXT.md` (the glossary is at
+repository root). In a source checkout, the repository containing this skill is that root.
+A flattened installed copy must **not** resolve `../../../docs/` from its install directory.
+Without a checkout, read `docs/knowledge-model.md` and `CONTEXT.md` from
+`https://github.com/XinheLIU/Agentic-Knowledge-Bank` at the installed source revision recorded by
+the installer; if unavailable, use `main` and record that revision choice explicitly. Record the
+resolved location/revision or working-tree hash in the run report. Never vendor another canonical
+copy or proceed without reading the contract; report an unavailable dependency before writes.
+
+Gates follow the model's caller-authorization rule: with explicit unattended delegation, record
+question, options, choice and reason in the existing report/log and continue within that scope.
+
 ## Invocation and inputs
 
 | Input | Rule |
@@ -28,7 +43,7 @@ everything it finds is either a defect to fix in the stage that owns it or an ho
 | Topic | Optional. Read it from `SCHEMA.md`'s Domain section — never derive it from the folder name. |
 
 Each expected instance file is located **only** at its canonical name under `$KB_PATH`:
-`SCHEMA.md`, `narrative.md`, `sources.md`, `materials.md`, `wiki/`, `index.md`, `log.md`. There is no
+`SCHEMA.md`, `narrative.md`, `sources.md`, `materials.md`, `notes/`, `wiki/`, `index.md`, `log.md`. There is no
 fallback search and no `wiki/`-as-root guess. **A missing expected file is itself a finding**: report
 it once at the severity its class earns (`narrative.md`, `sources.md` and `materials.md` are
 Critical — the structural and provenance checks have no referent without them), then skip the checks
@@ -45,20 +60,18 @@ that depend on it with a note, rather than aborting the report.
    needs a rule the model does not state, say the model is silent — do not invent one.
 4. **Report every finding with path + issue + suggested action.** A finding without a location is not
    actionable.
-5. **The archive is read-only, absolutely.** Re-hashing is the only thing lint does to it, and
+5. **The archive is read-only, absolutely.** Re-hashing and reading asset signatures are the only things lint does to it, and
    re-hashing reads.
 
 ## What lint reads, what it audits, what it does not
 
 **Reads:** `SCHEMA.md` (conventions), `narrative.md` (the agreed architecture), `sources.md` (the
-registry), `materials.md` (`sha256`, `archive:`), `index.md`, `log.md`, `wiki/*.md`, and the external
-archive **read-only** (re-hash only).
+registry), `materials.md` (`sha256`, `archive:`), `index.md`, `log.md`, `wiki/*.md`, `notes/*.md` for asset checks, and the external
+archive **read-only** (hashes and asset signatures).
 
-**Audits:** the page set, and the two registries' consistency with the pages — nothing else.
-
-**Does not audit `notes/`.** The evidence layer is `clean-notes`'s output and the model defines no
-lint check over it. This is a boundary, not a gap. Pages cite `mat:`/`ext:` ids, never note files, so
-there is deliberately no page ↔ note link check either.
+**Audits:** the page set, registry consistency, and image/asset links in both `notes/` and `wiki/`
+(model § Assets and audit scope). **Does not certify notes' semantic fidelity or deduplication.**
+Pages cite `mat:`/`ext:` ids, so there is no page ↔ note semantic correspondence check.
 
 ## Orientation (always first)
 
@@ -124,8 +137,9 @@ catches a page whose provenance index has drifted from its claims.
 
 **P3 · Provenance coverage** `[human-review]`
 Every body **paragraph** carries at least one footnote (model Invariant 2, "every claim traces").
-A paragraph is a non-empty prose block in an `## L1`–`## L4` body, outside any fenced code block, any
-table, the frontmatter and the `## References` section. **A one-statement `gap` body is exempt** — a
+A paragraph is a non-empty claim block anywhere in the page body, including folded sections after
+L4, outside frontmatter, code syntax and `## References`. Check claim-bearing list items, table
+rows and diagram captions too, allowing a citation in their introducing paragraph. **A one-statement `gap` body is exempt** — a
 gap names an absence, it makes no claim (its body may wrap over several source lines). Count
 paragraphs with zero `[^…]` references.
 
@@ -145,13 +159,16 @@ Cross-check each value
 against the body: a non-`gap` level must have a non-empty body; a `gap` level's body is one explicit
 statement naming what is missing; a level with an empty body is a violation regardless of the declared
 value. Report the whole matrix — page × level → declared value and body state — so coverage is read
-at a glance.
+at a glance. Separately review required template items: `full` L1 without a sourced diagram
+is a coverage violation. Report semantic completeness as reviewed/not reviewed, never infer it
+from non-empty bodies alone.
 
 **S2 · `narrative.md` ↔ pages consistency** `[human-review]` — the collectively-exhaustive half of
 wiki-level MECE. Both directions:
 
 - **narrative → pages:** every concept row in `narrative.md`'s core-concept list has a page.
-- **pages → narrative:** every page's `threads:` is non-empty and names threads `narrative.md`
+- **pages → narrative:** every page slug is in the Core concepts list; assert exact set equality
+  between that list and page slugs, reporting both missing and extra members. Every page's `threads:` is non-empty and names threads `narrative.md`
   declares; every declared thread has at least one page; every `parent:` resolves to another page or
   to the domain root (`—`, the only non-page value, and the root page is the only page that uses it).
 
@@ -196,6 +213,28 @@ A page with zero inbound `[[links]]` **and** named as no page's `parent` **and**
 **L3 · Outbound-link readout** `[info]`
 Pages with fewer than two outbound `[[links]]` (SCHEMA convention). Readout only.
 
+**L4 · Image and asset links** `[human-review]` — model § Assets and audit scope.
+Audit every intended image and local asset link in `notes/*.md` and `wiki/*.md`, including
+reference-style links and malformed syntax that the renderer leaves as text. Render with a
+CommonMark/GFM engine; an intended image must produce `<img>`, with non-empty alt. Decode its
+`src` once, resolve relative to the Markdown file, then check regular-file existence, non-zero
+size and recognized image magic bytes (SVG by valid markup). Check non-image local asset links
+render as `<a>` and resolve to non-zero files. Report path + line + target + each failure; never
+fetch, copy or rewrite. Remote images: check rendering/alt, report bytes **not verified**.
+
+Run the bundled [asset checker](scripts/check-assets.mjs) with an already available `marked`
+module (explicit path; no automatic install):
+
+```bash
+node <skill-dir>/scripts/check-assets.mjs --kb "$KB_PATH" --marked /absolute/path/to/marked.esm.js
+```
+
+It emits JSON per reference, totals and all failures; exit 1 means defects, exit 2 means unavailable
+verification. If the renderer is unavailable, report NOT VERIFIED rather than substitute existence
+checks. Unsupported image formats must be reported, not treated as valid by extension.
+Contract fixtures must include raw-space failure, encoded and `<...>` success, missing/empty/fake
+images and missing alt; the actual KB must pass the same check after owner-stage repair.
+
 ### Registries and materials
 
 **M1 · `materials.md` sha256 drift (read-only, external archive)** `[human-review]`
@@ -211,7 +250,8 @@ Resolve the archive from `materials.md`'s `archive:` header; if absent or nonexi
   defines it**: the sha256 of the `«file sha256»\t«archive-relative path»` lines for the row's
   **covered files** (the remainder — the prefix minus any paths that have their own exception row),
   sorted by hash then path, joined by newlines **with a trailing newline**, with the same exclusions
-  (`*.tmp`, `.DS_Store`, `Thumbs.db`, `materials.md`, `.git/`, `__pycache__/`, `.ipynb_checkpoints/`).
+  (`*.tmp`, `.DS_Store`, `Thumbs.db`, `.git/`, `__pycache__/`, `.ipynb_checkpoints/`).
+  An archive-local `materials.md` is eligible input.
 
 Every row is verified regardless of `kind`/`role` — an `off-topic`, `peripheral` or `redundant-of` row
 is still a row a later stage may read. A mismatch means the archive changed after the map was written;
@@ -252,18 +292,19 @@ before claims harden (model § `SCHEMA.md`, update policy).
 **C2 · Confidence readout** `[info]`
 Pages with `confidence: low`.
 
-**C3 · Page size** `[info]`
+**C3 · Page size** `[info]` — advisory heuristic, model § Assets and audit scope
 Pages over 200 lines — a split candidate, advisory only.
 
 **C4 · Should-graduate** `[info]`
-A `##` section whose body has outgrown its host (roughly 60+ lines, or 2+ of the page's `sources:`
-aimed at it). The mirror of folding: report parent + section + signals; never auto-split.
+A folded `##` section (not L1–L4 or References) with roughly 60+ body lines is a review candidate.
+Report size, distinct cited sources and narrative/admission support. Two sources alone do not
+trigger graduation; a tiny well-cited fold should stay folded. Never auto-split.
 
 **C5 · Language consistency** `[human-review]`
 Body prose in `SCHEMA.md`'s declared language. Flag genuine drift into another language, **not** bare
 canonical terms or book titles — a repeated term like `财商` in otherwise-English prose is not drift.
-Report path + snippet + "rewrite to {body_language}"; never auto-rewrite. Reuse the same two-signal
-heuristic: CJK sentence punctuation in a CJK-title-stripped body, or a prose line >30% CJK.
+Report path + snippet + "rewrite to {body_language}"; never auto-rewrite. Use this advisory candidate-detection
+heuristic and confirm by reading (model § Assets and audit scope): CJK sentence punctuation in a CJK-title-stripped body, or a prose line >30% CJK.
 
 ### Housekeeping
 
@@ -276,13 +317,15 @@ Count `log.md` entries since the last `## […] lint |` entry; report "lint last
 and the action count since. No counter state, no threshold — just visibility.
 
 **H3 · Read-only proof** `[info]`
-Touch a session marker **outside both trees** before reading, then assert nothing changed:
+Capture full before/after manifests of both trees (relative path, sha256, nanosecond mtime,
+including junk) per model § Read-only proof. Diff them to detect deletions and byte changes even
+when mtimes are preserved; git status is optional context only. Also touch a marker **outside both
+trees** before reading, then assert nothing changed:
 
 ```bash
 MARK=$(mktemp -t lint-session.XXXXXX)
 # ... run every check ...
-find "$KB" "$ARCHIVE" -type f -newer "$MARK" \
-  ! -name '.DS_Store' ! -name 'Thumbs.db'
+find "$KB" "$ARCHIVE" -type f -newer "$MARK"
 rm -f "$MARK"
 ```
 
@@ -308,6 +351,7 @@ matrix (S1) is reported in full. Then the executive summary, weighted by the tri
 - Coverage-matrix violations: N (page: level)
 - narrative.md ↔ pages: N (concept without page / page outside narrative / parent unresolved)
 - Broken wikilinks: N
+- Image/asset failures: N (notes and wiki; render, target, size, signature, alt)
 - Provenance-coverage gaps: N (page: paragraph)
 - Archive drift: N (row: old → new) / missing: N / unreadable: N
 
@@ -360,12 +404,13 @@ Given a fixture instance and a fixture archive containing byte-changed files:
   undeclared thread is caught;
 - a file whose bytes changed after mapping is caught with old vs new hash; a folder row's digest is
   recomputed with the same recipe `map-materials` uses; a missing file is reported `missing`;
-- a paragraph with no footnote is counted (a `gap` level's one-statement body is not);
+- a paragraph with no footnote is counted in levels **and folds** (a `gap` level's absence statement
+  is not); an extra page with valid parent/threads but absent from Core concepts is caught;
 - a page present in `wiki/` but absent from `index.md` (or vice versa) is caught (S5);
 - a missing `narrative.md` is reported once and its dependent checks are skipped with a note, not
   crashed;
-- running lint leaves `git status` for the instance and the archive byte-identical, and the
-  read-only proof returns empty;
+- running lint leaves complete byte/mtime manifests for the instance and archive identical,
+  even outside git; a byte mutation with preserved mtime is detected by the proof;
 - the log line was **printed**, not appended.
 
 ## Handoffs
@@ -377,6 +422,6 @@ Given a fixture instance and a fixture archive containing byte-changed files:
 **Boundaries:**
 - vs `map-materials`: that writes `materials.md`; lint checks its `sha256` column for drift and its
   `used-in` grammar, and never edits a cell.
-- vs `clean-notes`: that writes `notes/`; lint does not audit the evidence layer.
+- vs `clean-notes`: that writes `notes/`; lint checks its asset links but does not certify semantic fidelity.
 - vs `llm-wiki-ingest`: that bootstraps `SCHEMA.md` and writes the pages; lint checks the pages
   against `narrative.md`, `sources.md` and the model, and writes nothing.

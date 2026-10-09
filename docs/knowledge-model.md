@@ -4,6 +4,16 @@ Last updated: 2026-10-09
 
 Status: frozen 2026-10-08 (wayfinder ticket **Lock the knowledge model**). The four KB skills — `map-materials`, `clean-notes`, `llm-wiki-ingest`, `llm-wiki-lint` — cite this file as their single source. Change it here first, then in the skills.
 
+## Locating this contract
+
+The canonical owner is `XinheLIU/Agentic-Knowledge-Bank`, path `docs/knowledge-model.md`;
+the glossary is **root-level** `CONTEXT.md`. A deployed skill uses an explicit
+`KB_MODEL_ROOT` checkout, or reads these paths from the canonical repository at its installed
+source revision. Record the resolved location and revision (or working-tree hash). Do not resolve
+repository-relative links from a flattened installation, vendor a model copy into each skill, or
+silently substitute another product's conventions. If the contract cannot be read, report the
+missing dependency before writing instance content.
+
 ## Purpose
 
 Agentic-Knowledge-Bank builds **provenance-tracked concept wikis**. A knowledge instance is the durable output: a topic's understanding, structured by narrative, deep enough inside each concept to be studied from, and traceable paragraph by paragraph to the raw material or the primary source a claim came from.
@@ -36,6 +46,24 @@ archive/  ──map-materials──▶  materials.md  ──clean-notes──▶
 
 The stages have different jobs on purpose. `materials.md` inventories. `notes/` **is evidence** — what the material says, deduplicated and grouped, with nothing added and nothing improved. `wiki/` **is presentation** — a concept explained to four depths, in an order a reader follows. Collapsing any two of them loses either traceability or readability.
 
+**Evidence grouping is block-level.** Each retained claim block has one topic home; a material row
+may feed several notes. Split mixed-topic lists into coherent claim blocks without separating a
+claim from its qualifications or provenance. Merge repeated claims into the fuller block; retain
+distinct angles. Each merge names the actual destination section/block and the unique claims it
+absorbed, not merely a same-topic introduction.
+
+**Stage-1 supplementation is provisional.** For a fact without which a note is unreadable,
+`clean-notes` may include a visibly marked supplement and a `## Supplementation (ext:)` block
+with candidate id, fact, URL, version, fetch date and hash. It never writes `sources.md`.
+These are handoff candidates, not registered page citations. Ingest 2b verifies the exact claim
+and version before registration, or reuses an already verified row for that work/version; it
+never edits the note. Unverifiable candidates are omitted from pages and the missing coverage is
+reported. A conflicting id gets a new page-side id and an explicit mapping in the ingest log.
+
+**Gates respect caller authorization.** Normally await the author's decision. When the caller
+explicitly delegates unattended decisions, record question, options, choice and reason in the
+stage's report (and ingest's existing log); this adds no new artifact writer or permission.
+
 ### Instance layout
 
 The **archive is not inside the instance**. It is an external folder, referenced by absolute path, and never written to. `materials.md` lives in the instance, not the archive.
@@ -57,6 +85,12 @@ Example: archive `/Users/…/Transformer/Transformer-materials`, instance `/User
 **Location.** The instance root is an explicit parameter (`$KB_PATH`), never a default. The archive path is recorded in `materials.md`'s header as an `archive: <abs-path>` line — the instance knows its own archive, so no skill hard-codes a path and no `$WIKI_PATH`-style env default exists.
 
 **The archive is read-only, absolutely.** No skill writes into it — not a map, not a rename, not a hash refresh, not a `.DS_Store` sweep. `map-materials` proves it by asserting no file in the archive is newer than the session start.
+
+**Read-only proof is distinct from inventory.** Before/after manifests cover every file, including
+junk, with relative path, byte hash and nanosecond mtime; also check a session-start marker.
+Temporary proof files live outside protected trees and are removed afterwards. All stages may
+read/hash for this proof; only map-materials updates inventory hashes. Lint extends the proof to
+the whole instance. Git status alone is insufficient, and no git repository is required.
 
 > Decision record: [ADR 0002 — The archive is external and read-only; the wiki is a derived view](adr/0002-external-read-only-archive.md).
 
@@ -131,6 +165,41 @@ footnotes → sources.md / materials.md
 | `gap` | No material and no verified source exists |
 
 A `gap` body is **one explicit statement** — a single block, possibly wrapped over several source lines — naming what is missing. It is never silently empty, and it is never filled by invention. `partial` and `stub` are honest self-assessments, not failures — the coverage matrix is the point.
+
+`full` requires the listed template content, not merely a non-empty body. In particular L1 includes
+a sourced diagram (an inherited image or a diagram of sourced relationships). If a required item
+is unavailable, declare `partial`, name it, and revisit admission at the gate. Lint separates its
+executed presence checks from semantic review; it never certifies pedagogical completeness from
+heading presence alone.
+
+## Assets and audit scope
+
+Local image and asset destinations in `notes/` and `wiki/` must be valid CommonMark/GFM:
+percent-encode spaces and reserved path characters (for example `image%20name.png`), or use
+an angle-bracket destination (`![alt](</absolute/image name.png>)`). Never emit a bare raw-space
+destination. Decode the URL path once when resolving the file; resolve relative paths against the
+containing Markdown file. Stage 1 emits absolute archive paths and preserves external URLs.
+Stage 2 preserves the valid destination and the image's provenance. Archive relocation requires
+stage-owned link repair as well as updating the inventory header; changing the header alone does
+not repair absolute links.
+
+An image must render as an `<img>` with non-empty alt text; its decoded local `src` must name an
+existing, non-zero image with recognized image magic bytes (or valid SVG markup). Existence or a
+`.png` suffix alone is insufficient. Audit intended image syntax as well as successfully parsed
+images, so malformed raw-space destinations cannot disappear from the denominator. Other local
+asset links must render as links and resolve to existing non-zero files. Lint reports failures and
+unsupported formats without fetching or rewriting. External URLs remain external: rendering/alt
+can be checked offline, but remote bytes are reported **not verified**, never a local-file pass.
+
+Lint audits page structure/provenance plus image and asset links in **both notes and pages**.
+It does not certify notes' semantic deduplication or fidelity. Claim provenance covers folded
+sections as well as L1–L4; lists, tables and diagrams need citations on the claim or its introducing
+paragraph. References, frontmatter, code syntax and explicit absence statements are not claims.
+The core-concept slug set in `narrative.md` must equal the page slug set in both directions.
+
+Size, orphan, tag-sprawl, language-detection and staleness formulas in lint are **advisory
+heuristics**, not model invariants. A source count alone never establishes that a fold has outgrown
+its host. Confirm language drift by reading the prose. No heuristic authorizes a split or rewrite.
 
 ## Provenance
 
@@ -250,6 +319,20 @@ Files: 156 · key 22 · redundant 4 · peripheral 12 · off-topic 10
 
 **A folder row's manifest digest** (the `sha256` cell of a `path` ending `/**`) is the sha256 of the `«file sha256»\t«archive-relative path»` lines for the folder's covered files, sorted by hash then path, joined by newlines **with a trailing newline**. A mixed folder with individually-rowed exceptions carries the digest and file count of the **remainder** — its subtree minus those exception rows.
 
+Inventory excludes `.DS_Store`, `Thumbs.db`, `*.tmp`, `.git/`, `__pycache__/` and
+`.ipynb_checkpoints/`; an archive-local `materials.md` is ordinary input, not the instance output.
+Coverage is set equality between eligible physical paths and the union of row-covered paths:
+section rows share one physical path; folder rows cover only their remainder. Never add row counts
+to file counts. Read-only proof manifests have no inventory exclusions.
+
+On a re-run, compare current file hashes/folder digests with persisted **row** hashes in
+`materials.md`, not a deleted prior session manifest. Re-read changed rows; recompute a changed
+folder's current remainder and count without claiming which old member changed. Discover new
+uncovered paths, retain missing rows and stable ids. `concepts` is preserved by default on existing
+rows; report proposed changed descriptions and replace only those explicitly authorized by the
+caller (including recorded delegated decisions). Folder counts are derived and may refresh while
+preserving the descriptive text. This needs no author-edit marker and preserves foreign columns.
+
 **The cross-product interface, settled.** `materials.md` is one file with disjoint column owners, and `used-in`'s owner (`archive-materials`) lives in Writing Assistant. The write protocol is part of this model, not of either product:
 
 1. **One writer per column.** A writer writes only its own columns and leaves every other column byte-identical. `map-materials` owns everything except `used-in`; `archive-materials` owns only `used-in`.
@@ -276,6 +359,69 @@ Bootstrapped by `llm-wiki-ingest` on first run (it replaced `llm-wiki-init`). Se
 | Granularity | the fold-first admission rule and the target range |
 | Update policy | contradictions: never silently overwrite; keep both positions; `contested: true`; human resolution |
 
+### Bootstrap convention text
+
+Copy the following nine sections verbatim into `SCHEMA.md`, replacing only angle-bracket
+placeholders with gate-confirmed instance values (provisional `unknown` before 2a). Add a citation
+to the resolved model location/revision. Do not copy the descriptive table as the conventions.
+
+````markdown
+# Schema — <domain>
+
+Last updated: <YYYY-MM-DD>
+
+## Domain
+This instance covers <domain-and-scope>.
+
+## Language policy
+Body language: <language>. Preserve canonical terms and source titles. Never switch language silently.
+
+## Conventions
+Pages use flat `wiki/<kebab-case-slug>.md` filenames and `[[slug]]` or `[[slug#anchor]]` links.
+Each page has at least two distinct outbound wikilinks. Bump `updated` and a near-top Last updated
+date on edits; update index and append an action log entry in the same pass as page writes.
+Local asset destinations must render: percent-encode spaces/reserved characters or use `<...>`.
+Images need alt text and an existing non-zero image target verified by signature.
+
+## Frontmatter
+Required: title, parent, threads, levels, sources, created, updated. Optional: tags, contested,
+contradictions, confidence. Lists are lists, dates use YYYY-MM-DD, contested is a boolean.
+The root alone uses parent: —; every other parent names a page. Threads names declared threads.
+
+## Provenance
+Every claim paragraph, including folds, carries mat: or registered ext: footnotes. Definitions
+resolve to materials.md or verified sources.md rows. Sources lists equal used footnote id sets.
+Ext rows pin the exact version and the hash of bytes read at registration; never re-fetch for lint.
+Mark supplementation visibly. Without material or a verified source, state the gap.
+
+## Depth template
+Keep L1 What it is, L2 Relations, L3 Math & code, L4 Extensions, in order, then References.
+L1: problem, origin, use cases, core sub-concepts, sourced diagram.
+L2: typed relations and core questions. L3: derivation, shapes, reference implementation.
+L4: adjacent topics, further reading, open questions. Folded sections go after L4, before References.
+Levels are full (all required items), partial (name missing items), stub (pointer/sentence), or
+gap (one explicit absence statement). No level body may be empty.
+
+## Tags
+Prefer existing tags; the list is open. Maintain the tags in use below.
+
+| tag | pages |
+| :-- | :-- |
+
+## Granularity
+Fold first. A page must carry a narrative thread, fill L1 fully and L2 meaningfully.
+Core-concept target: <N–M>, an agreed assumption reviewed at the gate, not a hard cap.
+
+## Update policy
+Keep conflicting positions with their dates and sources; never silently overwrite. Set
+contested: true. Contradictions lists other affected page slugs; use [] for a conflict entirely
+within this page and name both claims in the body. Resolution requires the author's decision.
+````
+
+Bootstrap schema and empty skeletons may precede 2a; no wiki content may precede its gate.
+An unchanged-input ingest appends skip entries to `log.md` (and updates its date); every other
+file stays byte-identical. Same-page contradictions use `contested: true`, `contradictions: []`.
+
 **The tag list is open, deliberately.** The old closed list was seeded by an interview in `llm-wiki-init`, and the agent now writes `SCHEMA.md` itself — a closed list the agent also authors is self-referential. The sprawl-control purpose survives as an audit: lint reports near-duplicate tags and one-offs, and the agent prefers an existing tag before minting one.
 
 **No `_archive/`.** Superseding a page is the contradiction policy's job; deleting one is git's. `_archive/` was declared in the old SCHEMA and implemented by nothing.
@@ -289,7 +435,7 @@ These replace `docs/domain-invariants.md` (ticket **Rewrite the positioning docs
 3. **No verified source → `gap`.** Content is never invented, and a gap is always explicit.
 4. **Provenance survives every stage.** A note keeps its materials' `mat:` ids through dedupe and merge; a page keeps its notes' provenance through writing.
 5. **A page exists only for a threaded concept** that can fill L1 and L2. Everything else folds.
-6. **One instance per domain**, external to this repository. Instance data is never packaged, never a fixture.
+6. **One canonical production instance per domain**, external to this repository. Explicitly authorized acceptance runs may use isolated sibling instances; they are not additional production authorities. Instance data is never packaged, never a repository fixture.
 7. **One canonical implementation per skill.** A stage has exactly one owner.
 8. **AKB never writes learner state.** Attempts, mastery and evidence belong to Learning OS.
 

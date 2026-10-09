@@ -26,7 +26,7 @@ notes/<topic>.md              MECE clusters, provenance ids intact
 wiki/<slug>.md                L1–L4 concept pages, per-paragraph footnotes
 ```
 
-`llm-wiki-lint` is read-only over the result: level coverage, unresolved footnotes, archive sha drift, `narrative.md` ↔ pages consistency, `index.md` completeness, orphans and broken links.
+`llm-wiki-lint` is read-only over the result: level coverage, unresolved footnotes, archive sha drift, `narrative.md` ↔ pages consistency, `index.md` completeness, orphans and broken links. Its asset audit covers both notes and pages; note fidelity and deduplication remain stage 1's responsibility.
 
 **Evidence and presentation are different layers on purpose.** A note reports what the material says — nothing added, improved or judged. A page explains a concept to a reader. Collapsing them loses either traceability or readability.
 
@@ -34,7 +34,8 @@ wiki/<slug>.md                L1–L4 concept pages, per-paragraph footnotes
 
 ## Instance layout
 
-One instance per domain, external to this repository:
+One canonical production instance per domain, external to this repository; explicitly authorized
+isolated acceptance instances are not additional production authorities:
 
 ```
 <domain>-kb/

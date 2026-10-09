@@ -1,6 +1,6 @@
 # Domain invariants
 
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 Source: [docs/knowledge-model.md](knowledge-model.md) § Invariants. These are the invariants the four skills and the instance layout must satisfy; change the model first, then this mirror.
 
@@ -9,6 +9,6 @@ Source: [docs/knowledge-model.md](knowledge-model.md) § Invariants. These are t
 3. **No verified source → `gap`.** Content is never invented, and a gap is always explicit.
 4. **Provenance survives every stage.** A note keeps its materials' `mat:` ids through dedupe and merge; a page keeps its notes' provenance through writing.
 5. **A page exists only for a threaded concept** that can fill L1 and L2. Everything else folds.
-6. **One instance per domain**, external to this repository. Instance data is never packaged, never a fixture.
+6. **One canonical production instance per domain**, external to this repository. Explicitly authorized acceptance runs may use isolated sibling instances; they are not additional production authorities. Instance data is never packaged, never a repository fixture.
 7. **One canonical implementation per skill.** A stage has exactly one owner.
 8. **AKB never writes learner state.** Attempts, mastery and evidence belong to Learning OS.

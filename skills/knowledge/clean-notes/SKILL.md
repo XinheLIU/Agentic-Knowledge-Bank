@@ -1,6 +1,6 @@
 ---
 name: clean-notes
-description: "Stage 1 of the knowledge pipeline: turn materials.md plus the read-only archive into MECE evidence notes under notes/<topic>.md — topic understanding across all files, an outline derived from the material and confirmed with you before anything is written, duplicate and near-duplicate blocks merged, recurring angles kept, provenance ids carried through, and image paths repaired. A note merges many sources and is evidence: nothing is added, improved or judged. Use for 'clean up these notes', '整理笔记', 'dedupe this dump', 'restructure these materials by topic', or after map-materials has inventoried an archive. Does NOT write wiki pages or split a concept into pages (llm-wiki-ingest), inventory the archive (map-materials), add unmarked knowledge, write into the archive, or touch learner state."
+description: "Stage 1 of the knowledge pipeline: turn materials.md plus the read-only archive into MECE evidence notes under notes/ — topic understanding across all files, an outline derived from the material and confirmed with you before anything is written, duplicate and near-duplicate blocks merged, recurring angles kept, provenance ids carried through, and image paths repaired. A note merges many sources and is evidence: nothing is added, improved or judged. Use for 'clean up these notes', '整理笔记', 'dedupe this dump', 'restructure these materials by topic', or after map-materials has inventoried an archive. Does NOT write wiki pages or split a concept into pages (llm-wiki-ingest), inventory the archive (map-materials), add unmarked knowledge, write into the archive, or touch learner state."
 license: MIT
 metadata:
   hermes:
@@ -13,7 +13,7 @@ Last updated: 2026-10-09
 
 # Clean Notes
 
-Stage 1 of the pipeline in [docs/knowledge-model.md](../../../docs/knowledge-model.md):
+Stage 1 of the pipeline in [docs/knowledge-model.md](https://github.com/XinheLIU/Agentic-Knowledge-Bank/blob/main/docs/knowledge-model.md):
 `materials.md` **plus the read-only archive** in, `notes/<topic>.md` out. Raw material does not
 just repeat itself — it repeats itself *far apart*, so the repetition never sits next to itself long
 enough to be seen. Read the material as a whole, derive its topics, cluster by topic, then dedupe; a
@@ -24,6 +24,21 @@ duplicate that was invisible three files away becomes obvious once its twin is n
 **When to run:** after `map-materials` has written `materials.md`; before `llm-wiki-ingest` reads
 `notes/`. Run once per material set. `map-materials` decides what a material *is*; this skill decides
 what a note *contains*; ingest decides what a page *explains*.
+
+## Normative dependency (source and deployed copies)
+
+Read the canonical model before acting. Use explicit `KB_MODEL_ROOT` when supplied: read
+`$KB_MODEL_ROOT/docs/knowledge-model.md` and `$KB_MODEL_ROOT/CONTEXT.md` (the glossary is at
+repository root). In a source checkout, the repository containing this skill is that root.
+A flattened installed copy must **not** resolve `../../../docs/` from its install directory.
+Without a checkout, read `docs/knowledge-model.md` and `CONTEXT.md` from
+`https://github.com/XinheLIU/Agentic-Knowledge-Bank` at the installed source revision recorded by
+the installer; if unavailable, use `main` and record that revision choice explicitly. Record the
+resolved location/revision or working-tree hash in the run report. Never vendor another canonical
+copy or proceed without reading the contract; report an unavailable dependency before writes.
+
+Gates follow the model's caller-authorization rule: with explicit unattended delegation, record
+question, options, choice and reason in the existing report/log and continue within that scope.
 
 ## Invocation and inputs
 
@@ -62,8 +77,8 @@ map already holds.
 8. **Subagents clean; they never write files.** An inline mapping step hands each confirmed topic to
    a subagent; the subagent returns markdown, the parent writes the note.
 9. **A re-run rewrites only what changed.** Unchanged notes are skipped and named in the report.
-10. **Bump the note's `updated:` frontmatter field** on every note you write. (A note has no
-    `Last updated:` line; that convention belongs to `materials.md`, `SCHEMA.md` and the page files.)
+10. **Bump the note's `updated:` frontmatter field and near-top `Last updated:` date** on every
+    note you write.
 
 ## The note set — MECE
 
@@ -104,6 +119,8 @@ updated: YYYY-MM-DD
 ---
 # <topic>
 
+Last updated: YYYY-MM-DD
+
 ## <sub-topic>
 <cleaned, deduplicated evidence — the material's claims, in the material's order> [^mat:m007][^mat:m012]
 
@@ -122,7 +139,7 @@ updated: YYYY-MM-DD
 [^mat:m012]: `Shrijeeth/03-attention.md`
 ````
 
-`materials:` and the footnote ids are a **two-way index**: every footnote id used appears in
+`materials:` and the footnote ids are a **two-way index**: every `mat:` footnote id used appears in
 `materials:`, and every entry in `materials:` is used by at least one footnote — the note-level
 mirror of the page's `sources:` check.
 
@@ -175,8 +192,13 @@ For each candidate topic record: label, one-line definition, the `mat:` rows (or
 headings) that carry it, and a rough block count. Mark a candidate `misc` only after it has survived
 the map.
 
-*Done when:* every kept `mat:` row is assigned to exactly one candidate topic, or flagged as a
-genuine one-off for `misc`.
+Split a mixed-topic paragraph or long list into coherent claim blocks before assignment; keep
+qualifications, examples and citations attached. Each retained block has exactly one topic home.
+A `mat:` row may feed several notes; record row + source heading/block locator → destination
+note + section. Do not rewrite stage-0 rows to force topic exclusivity.
+
+*Done when:* every retained block has one candidate home (including genuine one-offs in `misc`),
+and every kept row has an explicit disposition and all its block destinations.
 
 ### 3 — Gate: propose the MECE outline, then stop
 
@@ -211,7 +233,14 @@ content: a source that returns to one idea from four angles usually means four a
 copies. Each kept block carries its own `mat:` footnote — a merged block names **every** row it came
 from (Hard Rule 3).
 
-*Done when:* each duplicate cluster is resolved, and every surviving block names its source row(s).
+For every merge record source row + block locator → actual retained note/section/block, repeated
+claims removed, and unique qualifications/examples absorbed. A same-topic heading without those
+claims is not a valid target. Compare summaries with detailed passages too; a literal-line scan or
+merge count does not establish semantic deduplication. If claim preservation cannot be shown,
+retain both with the unresolved overlap named rather than claiming a completed merge.
+
+*Done when:* each duplicate cluster is resolved or explicitly unresolved, every surviving block
+names its source row(s), and the merge ledger demonstrates absorption into the named target.
 
 ### 5 — Supplement, only as marked `ext:`
 
@@ -229,8 +258,9 @@ threshold is met:
    `> **ext:vaswani-2017** — <one sentence completing the material>`
 
    and carry its verification data in the note's `## Supplementation (ext:)` block.
-4. **Never write `sources.md`.** `llm-wiki-ingest` (2b) re-verifies and registers these ids; lint's
-   two-way check catches any id that never gets a row. One writer per artifact.
+4. **Never write `sources.md`.** `llm-wiki-ingest` (2b) verifies these provisional candidates before
+   registration (or reuses an existing verified work/version row). A provisional note id is not
+   yet a usable page citation; lint checks registered page citations. One writer per artifact.
 
 *Done when:* every supplement is gate-approved, inline-marked, and present in the note's
 `Supplementation (ext:)` block.
@@ -247,9 +277,12 @@ silent correction.
 ### 7 — Repair image paths and links
 
 A note lives in `$KB_PATH/notes/`; the material it came from lives elsewhere, so an inherited
-relative link (`../../../../images/foo.png`) is wrong by construction. Rewrite each link as an
-**absolute path into the archive**, computed from `materials.md`'s `archive:` line plus the source
-file's directory:
+relative link (`../../../../images/foo.png`) is wrong by construction. Rewrite each inherited
+**local asset link** as an absolute archive path, computed from the source file's directory and
+`archive:` root. Percent-encode spaces/reserved path characters, or wrap the destination in `<...>`:
+`![alt](/abs/archive/image%20name.png)` or `![alt](</abs/archive/image name.png>)`.
+Preserve alt text and provenance exactly. Keep valid external URLs and document anchors as such.
+Decode existing percent escapes once for filesystem resolution; do not double-encode them.
 
 - **Resolvable target** → the absolute archive path.
 - **Known-broken target** (flagged `broken-link` in `materials.md`, e.g. the 34 `../../../../images`
@@ -259,26 +292,30 @@ file's directory:
 - Record `original → rewritten` for every change in the note's `## Links from material` block, so
   the rewrite is auditable.
 
-Never copy an image out of the archive. If the archive itself moves, the `archive:` line is the one
-place that changes — a mismatch is a lint concern, not something this stage fixes.
+Never copy an image out of the archive. If the archive moves, report the mismatch; absolute links
+need stage-owned repair as well as an updated inventory header.
 
-*Done when:* every image/link reference in the note resolves to an absolute archive path, carries a
-`broken-link` marker, and appears in the link ledger.
+*Done when:* every inherited local asset link either renders and resolves to an absolute archive
+path or has an explicit `broken-link` marker; every rewrite appears in the ledger. Render the
+Markdown with a CommonMark/GFM renderer: each intended image must become an `<img>` with non-empty
+alt and a decoded `src` pointing to an existing, non-zero image verified by magic bytes (SVG by
+markup). File existence alone is not completion. Use lint's L4 asset checker or an equivalent
+renderer-backed check and report every failure; external bytes remain unverified without fetching.
 
 ### 8 — Write and report
 
 Write each `notes/<topic>.md` from the confirmed outline. Report in chat:
 
 - The outline actually used and the axis chosen; how many notes were produced.
-- The **full per-row assignment table** — every `mat:` row, its target note, its action.
+- The **full per-row assignment table** — every `mat:` row, all target notes/sections, its action and block locators.
 - Duplicates removed by kind; recurrences kept.
 - Images re-pathed and links left broken; anything marked `ext:`.
 - The 15% check on `notes/misc.md`.
 
 Nothing about the cleaning is persisted except the notes themselves.
 
-*Done when:* every note in the confirmed outline exists, every footnote id resolves to a
-`materials.md` row, and the report is complete.
+*Done when:* every note in the confirmed outline exists, every `mat:` footnote id resolves to a
+`materials.md` row and every provisional supplement carries its handoff metadata, and the report is complete.
 
 ## Input size
 
@@ -324,5 +361,6 @@ mapping is never reversed.
 - vs `llm-wiki-ingest`: that writes the presentation layer (`wiki/`, `narrative.md`, `sources.md`,
   `SCHEMA.md`, `index.md`, `log.md`); this writes the evidence layer (`notes/`) and never writes a
   wiki page, a narrative, or a source registry row.
-- vs `llm-wiki-lint`: that audits the notes and pages read-only; this is where the notes are made.
+- vs `llm-wiki-lint`: that audits pages and asset links in both layers read-only; it does not certify notes'
+  semantic fidelity or deduplication. This is where notes are made.
 - Learner state (attempts, mastery) belongs to Learning OS and is never read or written here.

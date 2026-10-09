@@ -13,7 +13,7 @@ Last updated: 2026-10-09
 
 # LLM Wiki — Ingest (stage 2)
 
-Stage 2 of the pipeline in [docs/knowledge-model.md](../../../docs/knowledge-model.md):
+Stage 2 of the pipeline in [docs/knowledge-model.md](https://github.com/XinheLIU/Agentic-Knowledge-Bank/blob/main/docs/knowledge-model.md):
 `notes/` in, `wiki/` out, in **three sub-stages** — 2a proposes the narrative, 2b verifies and
 registers primary sources, 2c writes the pages. Two human gates, one at each end. On the instance's
 first run this skill also **bootstraps the instance** (`SCHEMA.md`, and the empty skeleton of
@@ -29,6 +29,21 @@ The distinction that governs everything here: **a note is evidence, a page is pr
 note reports what the material says. The page explains a concept to a reader, at four depths, in the
 order the narrative gives. That difference is the reason both layers exist, and it is why a page is
 never written by copying a note.
+
+## Normative dependency (source and deployed copies)
+
+Read the canonical model before acting. Use explicit `KB_MODEL_ROOT` when supplied: read
+`$KB_MODEL_ROOT/docs/knowledge-model.md` and `$KB_MODEL_ROOT/CONTEXT.md` (the glossary is at
+repository root). In a source checkout, the repository containing this skill is that root.
+A flattened installed copy must **not** resolve `../../../docs/` from its install directory.
+Without a checkout, read `docs/knowledge-model.md` and `CONTEXT.md` from
+`https://github.com/XinheLIU/Agentic-Knowledge-Bank` at the installed source revision recorded by
+the installer; if unavailable, use `main` and record that revision choice explicitly. Record the
+resolved location/revision or working-tree hash in the run report. Never vendor another canonical
+copy or proceed without reading the contract; report an unavailable dependency before writes.
+
+Gates follow the model's caller-authorization rule: with explicit unattended delegation, record
+question, options, choice and reason in the existing report/log and continue within that scope.
 
 ## Invocation and inputs
 
@@ -52,8 +67,9 @@ Read, in this order: `SCHEMA.md` → `narrative.md` → `sources.md` → `index.
 
 **Bootstrap (first run only).** When `$KB_PATH/SCHEMA.md` is absent, this run bootstraps the
 instance. Write `SCHEMA.md` with all nine sections, taking their **convention text verbatim from
-`docs/knowledge-model.md` § `SCHEMA.md`** and citing it — the model stays the single source, this
-skill does not re-invent it:
+`docs/knowledge-model.md` § `SCHEMA.md` → Bootstrap convention text** and citing it — the model stays the single source, this
+skill does not re-invent it. Replace only the template's instance placeholders; the table below
+is a checklist, not the convention prose:
 
 | Section | Holds |
 | :-- | :-- |
@@ -154,8 +170,12 @@ let a level say more than the notes can, and registers only what genuinely verif
 
 **Candidate sourcing — propose, confirm, then verify.**
 1. Collect candidates from the notes' **own cited works** — read the note bodies' prose and inline
-   links. Stage 1 writes no `## Supplementation` block (`ext:` is 2b's job), so provenance here is a
-   prose mention, not a structured note block.
+   links **and** any `## Supplementation (ext:)` block. Stage 1's supplement ids/metadata are
+   provisional handoff candidates; this stage alone writes `sources.md`. Verify the exact claim
+   and version before registering, or reuse an existing verified row for the same work/version.
+   On failed verification, omit the supplement from pages and name the missing coverage; never
+   repair the note. If a proposed id collides with another work/version, allocate a new page-side
+   id and log the candidate → registered id mapping.
 2. Add a **bounded search** for the canonical work behind a concept the narrative admits but the
    notes only sketch.
 3. Show the candidate list to the user inline — one line per candidate: title, why, the concept it
@@ -260,11 +280,16 @@ and primary sources). `## L2 · Relations` — how it connects and what to ask n
 from primary sources). `## L4 · Extensions` — what is adjacent and what is open (primary sources,
 explicitly marked as beyond the raw).
 
+**Asset preservation.** Keep destinations valid under the model's Assets and audit scope rule:
+percent-encoded or angle-bracket paths, non-empty alt, provenance retained. Before completion,
+render every page image and verify decoded local targets, size and image signature (lint L4's
+checker or equivalent). Never turn an encoded note path back into raw-space Markdown.
+
 **Coverage, not content.** `levels:` records coverage with exactly four values:
 
 | Value | Meaning |
 | :-- | :-- |
-| `full` | the level answers its question from real material |
+| `full` | every required template item is supported, including L1's sourced diagram |
 | `partial` | answers it in part; the page says what is missing |
 | `stub` | a pointer to where it belongs, or a single sentence |
 | `gap` | no material and no verified source exists |
@@ -284,11 +309,12 @@ invention. `partial` and `stub` are honest self-assessments, not failures.
   appears in `sources:`, and every entry in `sources:` is used by at least one footnote.
 - **An image inside a folded folder row** is cited with the folder row (`mat:m0NN`) plus the note row
   whose body carried the reference, so the aggregation stays traceable.
-- `updated` is bumped on every edit; minimum 2 outbound `[[wikilinks]]` per page.
+- `updated` and a near-top `Last updated` date are bumped on every edit; minimum 2 outbound `[[wikilinks]]` per page.
 
 **Contradictions — never silently overwrite.** Keep both positions with their dates and sources
 (per-paragraph footnotes now make those expressible), set `contested: true` — a **bare boolean** —
-and `contradictions: [other-page-slug]`, and tell the user. These require human resolution before
+and `contradictions: [other-page-slug]` for cross-page conflicts. For a conflict entirely within
+one page, use `contradictions: []`, name both claims in its body, and tell the user. These require human resolution before
 claims harden into accepted fact. `llm-wiki-lint` surfaces them for resolution.
 
 **The gap-vs-fold asymmetry.** A gap is a normal, always-acceptable outcome: write it and continue.
@@ -323,6 +349,8 @@ hash — the archive hash is `map-materials`'s job, read from `materials.md`. A 
 content hash (in the last `log.md` ingest entry) is unchanged and whose derived pages all still exist
 is skipped: the run writes one `skip` log line and stops for that note. A changed or new note
 re-derives only the pages it feeds. Never refresh a page just to look busy.
+On a skip-only run, update only `log.md` and its Last updated date; defer log rotation to a writing
+run so the unchanged-output contract has exactly one exception.
 
 ## Hard Rules
 
@@ -350,7 +378,7 @@ re-derives only the pages it feeds. Never refresh a page just to look busy.
 
 ### `log.md` — append-only
 
-Header format `## [YYYY-MM-DD] action | subject`; rotate to `log-YYYY.md` past 500 entries. One entry
+Keep a near-top `Last updated` date; entries remain append-only. Header format `## [YYYY-MM-DD] action | subject`; rotate to `log-YYYY.md` past 500 entries. One entry
 per sub-stage that wrote, plus skips and the bootstrap:
 
 ```markdown
@@ -372,7 +400,7 @@ material for L1–L3 and nothing for L4, and one note that contradicts a claim i
   `narrative.md` / `sources.md` / `index.md` / `log.md` skeletons — and it wrote nothing into the
   archive or `notes/`;
 - the 2a gate printed the hierarchy, threads, core-concept list and a **proposed target range**, and
-  nothing was written before it was answered;
+  no wiki content was written before it was answered; Orientation bootstrap/skeletons are allowed;
 - the 2b candidate list was shown and confirmed before any row was registered; every registered row
   has `url`, `version`, `fetched_at`, a 64-hex `sha256` and `verified: ✅`; a candidate with no
   determinable version produced no row and its level is `gap`;
@@ -386,7 +414,7 @@ material for L1–L3 and nothing for L4, and one note that contradicts a claim i
 - `index.md` has one entry per page and the bumped header; `log.md` gained one appended entry per
   sub-stage and no earlier entry changed;
 - a second run over unchanged notes adds no page, writes a `skip` log line, and leaves every file
-  byte-identical.
+  byte-identical except `log.md` (skip entries and its Last updated date).
 
 ## Handoffs
 
@@ -399,7 +427,8 @@ downstream (read-only). `index.md` is the query front door; `log.md` is the acti
 
 **Boundaries:**
 - vs `map-materials`: that inventories the archive into `materials.md` with `mat:` ids and sha256;
-  this reads those ids and never re-hashes the archive.
+  this reads those ids and never refreshes inventory hashes. Read-only archive hashing for
+  before/after proof is required and does not change inventory ownership.
 - vs `clean-notes`: that is stage 1 — evidence, one note per topic, deduplicated with provenance
   kept. This is stage 2 — presentation; it never edits a note and never re-derives one.
 - vs `llm-wiki-lint`: that is read-only and reports; this writes. Lint never writes a page, and this
