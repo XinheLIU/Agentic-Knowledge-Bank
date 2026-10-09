@@ -136,7 +136,11 @@ After A2 moves `kb/` and its runtime surface to Information Assistant, the store
 - [x] Refresh the migrated installed skills through Skills Manager, retaining IDs, presets and deployments. Do not edit the manager database or any global skill copy by hand.
 - [x] Regenerate discovery links with `uv run python scripts/export-skills.py` and confirm they match `catalog/skill-set.json` and the `SKILL.md` directories on disk.
 - [x] Skills Manager reassociation: the four entries now track the committed public repository as a git source.
-- [ ] **Deferred, Writing Assistant is the owner:** `archive-materials` and `llm-wiki-book` still point at their pre-migration `learning-os-standalone` local copies. The Skills Manager CLI can only re-point a *git* source, and Writing Assistant has no commits and no remote yet, so this waits on that repository's first commit. Regenerate its standalone export, then re-point and update through the manager. Retiring `llm-wiki-init` also leaves `llm-wiki-book` naming it in `related_skills` and its *See also* line — a Writing Assistant doc fix, not this repository's.
+- [x] **Writing Assistant: done.** Its repository got its first commit and a private remote (`XinheLIU/writing-assistant`), then all **23** of its entries — including `archive-materials` and `llm-wiki-book` — were re-pointed from the pre-migration `learning-os-standalone` local copies to the repository as a git source. Preset membership and deployments unchanged; 3 dangling references left by the repositioning (`archive-materials`' `survey.md` archive lookup, its `organize-docs` handoffs, `llm-wiki-book`'s retired `llm-wiki-init`) were repaired in Writing Assistant, together with two broken links and a missing discovery symlink.
+- [ ] **Deferred, gated on the owning repository's own migration:** the manager CLI can re-point a *git* source only, and re-pointing fetches the **remote** revision — so an entry cannot be refreshed before its repository has committed the moved layout. Two entries remain:
+  - Learning OS — `recall` (`skills/learning/recall`) and `survey`. Learning OS has commits and a remote, but its P0/P1 migration (130 uncommitted changes) is not committed, and `skills/planning/survey` does not exist at its remote revision. Re-pointing now would either fail or pull pre-migration content, so it waits on that repository committing its own migration.
+  - Information Assistant — `curate-sources` (`skills/sources/curate-sources`). That repository still has no commits at all.
+  Once each owner commits, regenerate its standalone export and re-point through the manager the same way.
 
 **D2. Publication** → verify: no published description presents the retired collector or the admission store as current — **done 2026-10-09**
 - [x] Correct stale LangGraph / collector descriptions only as part of the website/Profile publication change, and link actual evidence rather than asserting behaviour.
@@ -153,8 +157,11 @@ The public repository was committed and pushed first (`19dc1b7`), because the ma
 | `llm-wiki-ingest` | `af8cdcaa-4532-4d9e-8616-64db543a6806` | `GitHub/agent-projects/learning-os/…` (path no longer exists) → `…/skills/knowledge/llm-wiki-ingest` | Knowledge & Learning | none |
 | `llm-wiki-lint` | `5b5fba4b-7104-4775-a766-2051402280a6` | `GitHub/agent-projects/learning-os/…` → `…/skills/knowledge/llm-wiki-lint` | Knowledge & Learning | none |
 
+Writing Assistant (23 entries, all re-pointed `local → git` at `https://github.com/XinheLIU/writing-assistant`, revision `f043cf4`): `add-pedagogy`, `archive-materials`, `assess-readiness`, `book-diagrams`, `book-translator`, `build-skeleton`, `create-tech-slides`, `define-audience`, `develop-argument`, `develop-examples`, `edit-targeted`, `elevate-draft`, `frame`, `grill`, `insert-inline-images`, `llm-wiki-book`, `outcome-design`, `package-chapter`, `pre-write-grill`, `review-draft`, `sequence-design`, `snapshot-writing`, `write-content`.
+
 - All four were re-pointed in place with `skills set-source … --git-url https://github.com/XinheLIU/Agentic-Knowledge-Bank --subpath skills/knowledge/<name> --branch main --force`; the manager resolved revision `19dc1b7` and reported `content_changed: true`. Each installed `SKILL.md` is byte-identical to the repository's, and `skills check` reports `up_to_date`.
 - `llm-wiki-init` and `organize-docs` were **removed** from the library (no deployments existed); the library went 480 → 478 entries and the *Knowledge & Learning* preset 27 → 25.
+- The four KB skills were then **deployed** to `pi`, `claude_code` and `codex` (the three hosts the library's other actively used skills target), each as a symlink into the central library. `deployed_to` is now `[claude_code, codex, pi]` for all four; the writing-era state was empty, so this is an addition, not a retained relationship.
 - The library CLI supports re-pointing **git** sources only; `skills install` on an existing name creates a suffixed duplicate, which the migration rules forbid, so no local export was re-installed.
 
 ```text
@@ -176,4 +183,4 @@ The only published description naming this product was the GitHub Profile README
 ## Out of scope / noted
 - Step 2 (compounding): only the draft extraction in A3.
 - `/Users/xhl/GitHub/CLAUDE.md` routing table and `skills/agent-skills/catalog/sources.json` still use the pre-`Learning-Products/` paths. They are mentioned here, not edited.
-- Skills-manager `origin.json` reassociation for the Writing Assistant-owned entries stays with that repository (see D1).
+- Skills-manager reassociation is complete for this repository and Writing Assistant; the two outstanding entries belong to Learning OS (`recall`, `survey`) and Information Assistant (`curate-sources`) and are gated on those repositories committing their own migrations — see D1. Not this effort's to force.
