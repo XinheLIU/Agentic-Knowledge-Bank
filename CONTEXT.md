@@ -1,76 +1,69 @@
 # Context
 
-> Last updated: 2026-10-04
+> Last updated: 2026-10-08
 
-Canonical terminology for the AI 知识库 (AI Knowledge Base) project. Source of truth for vocabulary that must stay consistent across the admission pipeline and personal-relevance policy. Extracted from `AGENTS.md`.
+Canonical terminology for Agentic-Knowledge-Bank. A glossary and nothing else — no implementation, no procedure.
 
-## Focus topics (三级优先主题)
+The former admission vocabulary (focus topics, learning tracks, reading priority, scoring, quality grades, the Horizon cutover terms) **moves to Information Assistant** with the admission pipeline — recover its text from git (`git show HEAD:CONTEXT.md`) before the move, since this file no longer holds it. Do not reintroduce it here.
 
-Configured in the Horizon profile `ai-kb-personal/` shipped with Information Assistant (`information_assistant/resources/horizon-profiles/ai-kb-personal/`; formerly `workflows/relevance_profile.yaml`, retired with the legacy pipeline in ticket 16), ordered by priority:
-
-- **P0 必学** — must-learn topics, highest weight.
-- **P1 有价值上下文** — valuable context.
-- **P2 背景** — background awareness.
-
-## Learning tracks (学习路线)
-
-The `learning_track` field assigns each article to one learning route defined in the relevance profile. Values come from the profile's `learning_tracks` mapping.
-
-## Reading priority (阅读优先级)
-
-The `reading_priority` enum, in descending order:
-
-| Value | Meaning |
-|---|---|
-| `study-now` | Study immediately |
-| `save-for-context` | Save for context |
-| `skim` | Skim |
-| `low-priority` | Low priority |
-| `skip` | Skip — reserved for clearly irrelevant, duplicate, broken, or low-quality items |
-
-Rule caps: discussion/news without a technical mechanism cap at `low-priority`; a P0 match with tutorial/reference value floors at `save-for-context`; uncertain items use `low-priority` rather than `skip`.
-
-## Learning tags allowlist (学习标签)
-
-`learning_tags` draws only from this closed allowlist (21 tags):
-
-`agent-harness`, `langgraph`, `langchain`, `data-agent`, `mcp`, `tool-use`, `browser-agent`, `computer-use`, `evaluation`, `repo-tutorial`, `reference-architecture`, `paper-to-code`, `production-rag`, `local-llm`, `quant-ai`, `business-context`, `implementation-pattern`, `architecture-reference`, `production-lesson`, `research-method`, `noise`
-
-## Source types (来源类型)
-
-The `source_type` enum: `repository`, `paper`, `blog`, `discussion`, `benchmark`, `tutorial`, `product`, `news`, `documentation`, `unknown`.
-
-## Negative patterns (噪音模式)
-
-Configured in the Horizon profile `ai-kb-personal/` (owned by Information Assistant) and enforced as executable negative patterns in `kb/admission/patterns.py`. These are noise patterns that lower or reject a candidate's relevance.
-
-## Horizon cutover vocabulary
+## The knowledge model
 
 | Term | Meaning |
 |---|---|
-| Horizon radar | The upstream system that fetches, scores, and enriches candidate information. It does not own this project's durable knowledge model. |
-| Knowledge asset | An admitted, durable item available to retrieval and downstream consumption. A fetched candidate is not yet a knowledge asset. |
-| Admission decision | The per-item, explainable outcome that accepts or rejects a candidate under a versioned personal policy. |
-| Ingestion run | One auditable attempt that accounts for every candidate as accepted, rejected, or failed. |
+| **Knowledge instance** | One topic's knowledge base. The durable product of this repository: an agreed structure, filled with depth, over a body of material. |
+| **Archive** | The external folder of accumulated raw material — what you collected, not what you wrote. Read-only, and never a *stage*. |
+| **Material** | One file in the archive, or one section of one file. The atom the archive is inventoried at. |
+| **Provenance** | Where a claim came from, recorded per claim. The property the whole product is organised around. |
 
-## Scoring vocabulary
+## The stages
 
-| Field | Meaning |
+`archive → materials → notes → wiki` is a pipeline, not a filing system. Each stage transforms what it receives and no stage is skipped.
+
+| Term | Meaning |
 |---|---|
-| `personal_fit_score` | Match to the user's learning tracks (0.0–1.0) |
-| `technical_depth_score` | Technical depth (0.0–1.0) |
-| `actionability_score` | Learning/action value (0.0–1.0) |
-| `source_credibility_score` | Source credibility (0.0–1.0) |
-| `novelty_score` | Novelty (0.0–1.0) |
-| `priority_score` | Weighted composite priority (0–100) |
-| `confidence` | Scoring confidence (0.0–1.0) |
-| `relevance_score` | Compatibility field; mirrors `personal_fit_score` |
-| `score` | Compatibility field (1–10); derived from `priority_score` |
+| **Inventory** | Stage 0. One row per material: what it is, how much of it is worth attention, and how it is identified. |
+| **Note** | Stage 1. A topic's material merged, deduplicated, clustered and cleaned with its provenance intact. |
+| **Wiki** | Stage 2. The presentation layer: concepts explained to depth, in narrative order. |
+| **Evidence** | What a note is. It reports what the material says. Nothing is added, improved, or judged. |
+| **Presentation** | What a wiki page is. It explains a concept to a reader. The difference from evidence is the reason both layers exist. |
 
-## Quality grades
+## Structure
 
-Six dimensions, 115 points total: summary (25), technical depth (25), format (20), tag precision (15, split broad + learning), hollow-word detection (15), personal relevance (15). Grades: A (≥90), B (≥70), C (<70).
+| Term | Meaning |
+|---|---|
+| **Domain** | The subject one knowledge instance covers. |
+| **Thread** | A named line the narrative follows — a sequence of concepts that belongs together. |
+| **Core concept** | A concept substantial enough to carry a thread and stand on its own. |
+| **Hierarchy** | Domain → thread → core concept. A concept's position in it is declared, not implied. |
+| **Parent** | The concept a page hangs under. Sub-variants live inside their parent, not beside it. |
+| **Fold** | To place a concept inside the page that owns it rather than giving it a page. The default when a concept's status is unclear. |
+| **Admission** | The decision that a concept deserves its own page. It requires carrying a thread and standing at depth. |
 
-## Broad tags
+## Depth
 
-`tags` is the open-ended broad tag field (English, lowercase, prefer quality-script-recognized tags). Distinct from the closed `learning_tags` allowlist.
+| Term | Meaning |
+|---|---|
+| **Level** | One of the four things a concept page must answer: what it is, how it relates, how it computes, where it extends. |
+| **Coverage** | How well a level is answered — fully, in part, by a pointer, or not at all. |
+| **Gap** | A level with no material and no verified source behind it, named explicitly. A gap is an honest answer; invented content is not. |
+
+## Sources
+
+| Term | Meaning |
+|---|---|
+| **Primary source** | The work itself — a paper, official documentation, a canonical repository. It can carry a claim, including a priority claim. |
+| **Secondary source** | An exposition of a work — a textbook, lecture notes, a course. It can explain; it cannot be the authority for what came first. |
+| **Verified source** | A primary or secondary source actually fetched, with its identity and version recorded. Only a verified source may be cited. |
+| **Material id** | A stable identifier for one row of the inventory. What a note-derived claim points at. |
+| **Source id** | A stable identifier for one verified source. What a supplemented claim points at. |
+| **Trust** | How much a source's word is worth. Owned across topics by Information Assistant — a different question from where this instance's claims came from, which is why the two are recorded apart. |
+
+## Narrative and agreement
+
+| Term | Meaning |
+|---|---|
+| **Narrative** | The agreed architecture of an instance: its hierarchy, its threads, and which concepts are core. |
+| **Granularity** | How coarse or fine the page set is. Too fine scatters one idea across thin pages; too coarse buries a concept inside another. |
+| **Gate** | A point where the agent stops and the agreement is made before anything is written. Every run has them. |
+| **Run** | One end-to-end pass over an instance — inventory, notes, wiki. |
+| **Instance schema** | An instance's own conventions, written on first run: its language, its tags, its depth template, its update policy. |

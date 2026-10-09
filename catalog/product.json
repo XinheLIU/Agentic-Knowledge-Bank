@@ -8,5 +8,5 @@
   "primaryHost": "claude-code",
   "verifiedHosts": [],
   "evaluationStatus": "not-run",
-  "plan": "docs/exec-plans/workspace-refactor.md"
+  "plan": "docs/exec-plans/wiki-repositioning.md"
 }

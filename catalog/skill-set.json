@@ -10,18 +10,16 @@
   "accent": "sage",
   "sourcePattern": "skills/{category}/{skill}/SKILL.md",
   "install": "Local source only; installation acceptance is tracked in P2.",
+  "plan": "docs/exec-plans/wiki-repositioning.md",
   "categories": [
     {
       "id": "knowledge",
       "label": "Knowledge",
       "skills": [
-        "archive-materials",
         "clean-notes",
         "llm-wiki-ingest",
-        "llm-wiki-init",
         "llm-wiki-lint",
-        "map-materials",
-        "organize-docs"
+        "map-materials"
       ]
     }
   ]

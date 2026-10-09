@@ -1,17 +1,22 @@
 # Memory routing
 
-Last updated: 2026-10-04
+Last updated: 2026-10-08
 
 ## Current ownership
 
-This repository owns knowledge assets, admission, storage, knowledge-maintenance skills, UI and MCP. Information orchestration/digests moved to Information Assistant; provider tooling moved to agent-tools.
+This repository owns the **knowledge model** and the four concept-wiki skills: `map-materials` (inventory), `clean-notes` (MECE evidence notes), `llm-wiki-ingest` (concept pages) and `llm-wiki-lint` (audit).
 
+It does not own source discovery or the cross-topic source registry (Information Assistant), learner state / attempts / mastery (Learning OS), or writing output (Writing Assistant, which also owns `archive-materials`).
+
+- Domain model: [knowledge model](../knowledge-model.md); glossary: [CONTEXT.md](../../CONTEXT.md).
 - Current rules: [AGENTS](../../AGENTS.md) and [domain invariants](../domain-invariants.md).
-- Test harness: `tests/conftest.py` pins the `agent-tools` profile constants to this repository's structural fixtures (`tests/fixtures/horizon-profiles/`), because the canonical profile set lives with Information Assistant and the library binds those constants at import time. Sibling-repository failures are recorded in [sibling-repo-failures.md](../sibling-repo-failures.md).
-- Horizon-run surface retired (2026-10-04): the KB-side provider shims, the `scripts/production_run.py` / `scripts/setup_horizon.py` launchers, `kb.ingest.ingest_horizon_run`, the `kb.cli` information-command forwarding and the run/digest summaries are removed. Provider plumbing belongs to agent-tools; orchestration, scheduling and digests belong to Information Assistant; KB only admits a completed payload via `kb.ingest.ingest_horizon_payload`.
-- Current architecture: [ownership and interfaces](../architecture.md).
-- Pending execution: [P2–P5](../exec-plans/workspace-refactor.md).
-- Prior Horizon effort: `.scratch/horizon-kb-design/` (including its `state.md`) remains local historical working evidence. Its original paths and completed tickets are not new acceptance evidence.
-- Historical technical design: [Horizon cutover](../product/ai-kb/design.md).
+- Architecture and boundaries: [ownership and interfaces](../architecture.md).
+- Current plan: [wiki repositioning](../exec-plans/wiki-repositioning.md).
 
-Do not rewrite user-authored TODOs or resurrect retired LangGraph workflows. The current migration has not run behavioral checks.
+A knowledge instance is external and read-only over its archive; no instance data is a fixture. The previous runtime's harness, fixtures and docs (`docs/product/ai-kb/`, `docs/adr/0001-*`) travel to Information Assistant with the code — see the plan.
+
+## Retired work
+
+The previous provider/runtime surface and its test harness left this repository with the runtime; provider plumbing belongs to agent-tools and orchestration, scheduling and digests belong to Information Assistant. Do not reconstruct the retired LangGraph workflows, prompts or hooks, and do not rewrite user-authored TODOs.
+
+The repositioning has not completed its Transformer acceptance run, so runtime behavior under the new model is not yet verified.

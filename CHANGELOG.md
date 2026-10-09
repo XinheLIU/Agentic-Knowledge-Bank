@@ -1,5 +1,5 @@
 # Changelog
-> Last updated: 2026-10-04
+> Last updated: 2026-10-09
 
 All notable changes are listed by release. There are no `git` tags yet; older sections may name commit hashes for traceability.
 
@@ -7,6 +7,12 @@ All notable changes are listed by release. There are no `git` tags yet; older se
 
 - Retire the legacy LangGraph/JSON production path (ticket 16): delete `workflows/`, `hooks/`, `prompts/`, `scripts/build_index.py`, `scripts/backfill_scores.py`, the LangGraph demo notebook, `.opencode/plugins/validate.ts`, `.env.example`, and the `llm-e2e.yml` CI lane; drop the `langgraph`/`feedparser` dependencies. The sanitized legacy fixture corpus (`tests/fixtures/legacy_articles/`) is retained as the migration oracle.
 - Evict the Horizon *run* surface from KB (workspace refactor): delete the `kb/horizon/` provider shims (`adapter.py`, `transport.py`, `source_config.py`), the `scripts/production_run.py` / `scripts/setup_horizon.py` launchers, `kb.ingest.ingest_horizon_run`, the `kb.cli` information-command forwarding, and the run/digest summary types. Provider communication and setup live in `agent-tools`; run orchestration, scheduling and digests live in Information Assistant. KB keeps asset identity, the pure mapper, admission and storage, and admits a completed provider payload through `kb.ingest.ingest_horizon_payload`.
+- Move the KB runtime surface into Information Assistant (wiki repositioning): `kb/`, `ui/` and `mcp_knowledge_server.py` travel by working-tree copy — so the uncommitted edits in `kb/` are preserved — together with the eight KB test modules, `tests/conftest.py`, the `horizon-profiles` / `horizon` / `legacy_articles` fixture sets (the legacy fixture corpus moves but is flagged for pruning there), `docs/product/ai-kb/`, `docs/adr/0001-radar-minted-immutable-item-ids.md` and `docs/personal-knowledge-strategy-plan.md`. AKB's `pyproject.toml` is reduced to a harness around `scripts/export-skills.py`; the `ai-kb` path dependency is replaced by local packaging in Information Assistant, whose version source (`kb.store.model.project_version`) now resolves the `information-assistant` distribution with `ai-kb` as a legacy fallback.
+- Delete `docs/export-contract.md` and `docs/installed-skill-migration.md` — byte-identical copies already live in Information Assistant. Delete `tests/test_legacy_retirement.py` and `tests/test_project_memory.py` as completed-migration receipts: their subjects either moved or were rewritten.
+- Delete the unrelated legacy: `.opencode/` (retired-pipeline agents, 13 non-KB skills, `node_modules`), `opencode.json`, the repo-local `openspec-*` copies under `.claude/` and `.codex/`, the broken MCP configs, `patterns/`, `.rehearsal-tmp/`, `docs/archive/`, `docs/pre-split-instructions.md`, `docs/sibling-repo-failures.md` and `TODO.md` (its 认知复合引擎 epic and 泛读/精读 model extracted first into `docs/compounding/draft.md` for step 2). `docs/exec-plans/workspace-refactor.md` folds into `docs/exec-plans/wiki-repositioning.md`, which is now the single execution plan.
+- Cut the skill set to the four the destination needs (`map-materials`, `clean-notes`, `llm-wiki-ingest`, `llm-wiki-lint`): delete `organize-docs` and `llm-wiki-init`, move `archive-materials` to Writing Assistant, and regenerate the discovery links from `catalog/` rather than editing the symlinks.
+- Freeze the knowledge model in `docs/knowledge-model.md` and rewrite the four skills against it: stage 0 inventories a read-only external archive into `materials.md`; stage 1 restructures it into MECE `notes/`; stage 2 writes L1–L4 concept pages against a narrative gate and a verified `sources.md`; lint audits the result read-only. Record the two hard-to-reverse decisions as ADR [0002](docs/adr/0002-external-read-only-archive.md) and [0003](docs/adr/0003-provenance-and-trust-separate-files.md).
+- Phase C Transformer test run passed every structural acceptance criterion: all four level sections on all 7 pages (18 full / 9 partial / 0 stub / 1 named gap), 353 footnotes resolving, every `ext:` id verified with a pinned version, all 41 `materials.md` sha256 values matching the archive, and the main narrative surviving a side-by-side read against the 119-page plain-LLM-Wiki baseline.
 
 ## [0.7.0] — 2026-06-23
 
@@ -31,7 +37,7 @@ All notable changes are listed by release. There are no `git` tags yet; older se
 ## [0.5.1] — 2026-05-19
 
 - Unify `knowledge/articles/` on v0.5 schema: slug-based IDs, derived `index.json` (`scripts/build_index.py`), `_skipped.jsonl` audit log, nullable `author` / `published_at`.
-- Refresh README / `README.zh-CN.md`; remove root `spec/`; add `docs/archive/` and a local Markdown spec archive. Historical release notes above the cutover describe the retired pipeline and are preserved verbatim.
+- Refresh README / `README.zh-CN.md`; remove root `spec/`; add a local Markdown spec archive. Historical release notes above the cutover describe the retired pipeline and are preserved verbatim.
 - Daily CI: validate only newly staged articles; stop committing `knowledge/raw/`.
 
 ## [0.5.0] — 2026-05-06

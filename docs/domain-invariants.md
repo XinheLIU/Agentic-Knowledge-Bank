@@ -1,12 +1,14 @@
-# Knowledge domain invariants
+# Domain invariants
 
-Last updated: 2026-10-04
+Last updated: 2026-10-08
 
-- Asset identity is minted by KB mapping: preserve the opaque Horizon ID and its namespace; do not infer identity from URLs or colons.
-- Reason codes and enum vocabulary are owned by `kb/model.py`; schema CHECK values derive from them.
-- Accepted assets, admission decisions and run accounting retain provenance. Replays and duplicates preserve the existing store invariants.
-- UI/MCP/Information consume the public AssetStore reader interface. Product consumers do not issue direct SQL or use `_conn`.
-- Empty collection is an explicit empty result; partial failures remain visible. Missing SMTP configuration is not successful delivery.
-- Real knowledge data is external; do not silently fall back to retired JSON articles.
-- The legacy LangGraph production path is retired. Do not reconstruct its workflows, prompts or hooks.
-- Fixture tests and the pending plan distinguish implemented source from unverified runtime behavior.
+Source: [docs/knowledge-model.md](knowledge-model.md) § Invariants. These are the invariants the four skills and the instance layout must satisfy; change the model first, then this mirror.
+
+1. **The archive is read-only.** Nothing is ever written into it — no map, no hash refresh, no rename, no reorganisation.
+2. **Every claim traces.** Each paragraph carries a provenance id resolving to a `materials.md` row or a verified `sources.md` row.
+3. **No verified source → `gap`.** Content is never invented, and a gap is always explicit.
+4. **Provenance survives every stage.** A note keeps its materials' `mat:` ids through dedupe and merge; a page keeps its notes' provenance through writing.
+5. **A page exists only for a threaded concept** that can fill L1 and L2. Everything else folds.
+6. **One instance per domain**, external to this repository. Instance data is never packaged, never a fixture.
+7. **One canonical implementation per skill.** A stage has exactly one owner.
+8. **AKB never writes learner state.** Attempts, mastery and evidence belong to Learning OS.
