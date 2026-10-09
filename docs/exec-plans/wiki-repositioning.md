@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-09
 
-Status: **Phases A–C done; Phase D pending** (updated 2026-10-09 by ticket 18). A1–A4 landed; B1 is frozen in `docs/knowledge-model.md` and B2 in the four `skills/knowledge/*/SKILL.md`; the Phase C Transformer run passed every structural acceptance criterion (ticket 17) and its findings fed the skill/model revisions in ticket 18. D1 and D2 (installation, export, publication) remain open. No git write operations were performed.
+Status: **complete** — Phases A–C done and verified (the Transformer run passed every structural acceptance criterion; ticket 18 folded its findings back into the model and the skills). **Phase D is done as of 2026-10-09**: the four KB skills are reassociated in Skills Manager against the committed public repository (IDs, presets and deployments retained; `llm-wiki-init` and `organize-docs` retired), a fresh export reproduces the discovery links, and the stale collector description is corrected in the GitHub Profile README. The only deferred item is Writing Assistant's own manager entries (`archive-materials`, `llm-wiki-book`), which wait on that repository's first commit. No git write operations were performed without the explicit Phase D request.
 
 ## Context
 
@@ -132,18 +132,48 @@ Findings from the run feed one round of skill revisions before the design is cal
 
 After A2 moves `kb/` and its runtime surface to Information Assistant, the store's P2/P3 runtime verification travels with it. What survives in this repository is the skill surface and the publication of the repositioned product. The kb-interop items of the retired P2–P5 plan (KB installs with tools alone, with no information package; isolated-environment package testing) belong to Information Assistant and are not repeated here. These are its live, AKB-side items.
 
-**D1. Skill installation and export** → verify: Skills Manager lists the four KB skills with their retained IDs, presets and deployments, and a fresh export reproduces the discovery links from `catalog/`
-- [ ] Refresh the migrated installed skills through Skills Manager, retaining IDs, presets and deployments. Do not edit the manager database or any global skill copy by hand.
-- [ ] Regenerate discovery links with `uv run python scripts/export-skills.py` and confirm they match `catalog/skill-set.json` and the `SKILL.md` directories on disk.
-- [ ] Skills Manager `origin.json` reassociation stays pending until this repository has committed history; commits require an explicit request.
+**D1. Skill installation and export** → verify: Skills Manager lists the four KB skills with their retained IDs, presets and deployments, and a fresh export reproduces the discovery links from `catalog/` — **done 2026-10-09**
+- [x] Refresh the migrated installed skills through Skills Manager, retaining IDs, presets and deployments. Do not edit the manager database or any global skill copy by hand.
+- [x] Regenerate discovery links with `uv run python scripts/export-skills.py` and confirm they match `catalog/skill-set.json` and the `SKILL.md` directories on disk.
+- [x] Skills Manager reassociation: the four entries now track the committed public repository as a git source.
+- [ ] **Deferred, Writing Assistant is the owner:** `archive-materials` and `llm-wiki-book` still point at their pre-migration `learning-os-standalone` local copies. The Skills Manager CLI can only re-point a *git* source, and Writing Assistant has no commits and no remote yet, so this waits on that repository's first commit. Regenerate its standalone export, then re-point and update through the manager.
 
-**D2. Publication** → verify: no published description presents the retired collector or the admission store as current
-- [ ] Correct stale LangGraph / collector descriptions only as part of the website/Profile publication change, and link actual evidence rather than asserting behaviour.
-- [ ] Commit, remote repository creation, push, pin advancement and deployment require an explicit request.
+**D2. Publication** → verify: no published description presents the retired collector or the admission store as current — **done 2026-10-09**
+- [x] Correct stale LangGraph / collector descriptions only as part of the website/Profile publication change, and link actual evidence rather than asserting behaviour.
+- [x] Commit, remote repository creation, push, pin advancement and deployment require an explicit request. The request was given for this phase.
+
+### D1 evidence (2026-10-09)
+
+The public repository was committed and pushed first (`19dc1b7`), because the manager resolves a git source at its remote revision.
+
+| Installed entry | id retained | source before → after | preset | deployed |
+| :-- | :-- | :-- | :-- | :-- |
+| `map-materials` | `76826e28-a2ba-4887-8d7d-7b61713197fb` | `local-sources/learning-os-standalone/…` → `git XinheLIU/Agentic-Knowledge-Bank` `skills/knowledge/map-materials` | Knowledge & Learning | none (unchanged) |
+| `clean-notes` | `00e5a66d-7fa7-4f59-a2ba-55f5e3482d13` | same → `…/skills/knowledge/clean-notes` | Knowledge & Learning | none |
+| `llm-wiki-ingest` | `af8cdcaa-4532-4d9e-8616-64db543a6806` | `GitHub/agent-projects/learning-os/…` (path no longer exists) → `…/skills/knowledge/llm-wiki-ingest` | Knowledge & Learning | none |
+| `llm-wiki-lint` | `5b5fba4b-7104-4775-a766-2051402280a6` | `GitHub/agent-projects/learning-os/…` → `…/skills/knowledge/llm-wiki-lint` | Knowledge & Learning | none |
+
+- All four were re-pointed in place with `skills set-source … --git-url https://github.com/XinheLIU/Agentic-Knowledge-Bank --subpath skills/knowledge/<name> --branch main --force`; the manager resolved revision `19dc1b7` and reported `content_changed: true`. Each installed `SKILL.md` is byte-identical to the repository's, and `skills check` reports `up_to_date`.
+- `llm-wiki-init` and `organize-docs` were **removed** from the library (no deployments existed); the library went 480 → 478 entries and the *Knowledge & Learning* preset 27 → 25.
+- The library CLI supports re-pointing **git** sources only; `skills install` on an existing name creates a suffixed duplicate, which the migration rules forbid, so no local export was re-installed.
+
+```text
+$ uv run --no-sync python scripts/export-skills.py --output /tmp/akb-d1-export
+Exported 4 self-contained skills to /private/tmp/akb-d1-export
+
+catalog      clean-notes llm-wiki-ingest llm-wiki-lint map-materials
+skills/      clean-notes llm-wiki-ingest llm-wiki-lint map-materials
+.claude-plugin/skills/  clean-notes llm-wiki-ingest llm-wiki-lint map-materials  (4/4 symlinks resolve)
+export dirs  clean-notes llm-wiki-ingest llm-wiki-lint map-materials  (0 broken links after rewriting)
+```
+
+### D2 evidence (2026-10-09)
+
+The only published description naming this product was the GitHub Profile README line in `publishing/github-profile` (the site source carried none). It now reads as a provenance-tracked concept wiki and links `docs/knowledge-model.md` as its evidence. `pyproject.toml`'s harness description was the other stale string ("AI 知识库 — 自动化技术情报收集与分析系统", the retired collector) and was replaced.
 
 ---
 
 ## Out of scope / noted
 - Step 2 (compounding): only the draft extraction in A3.
 - `/Users/xhl/GitHub/CLAUDE.md` routing table and `skills/agent-skills/catalog/sources.json` still use the pre-`Learning-Products/` paths. They are mentioned here, not edited.
-- Skills-manager `origin.json` reassociation stays in P2.
+- Skills-manager `origin.json` reassociation for the Writing Assistant-owned entries stays with that repository (see D1).
